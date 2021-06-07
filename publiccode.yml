@@ -51,7 +51,7 @@ localisation:
     - it
   localisationReady: true
 logo: |-
-  https://raw.githubusercontent.com/italia/design-comuni-pagine-statiche/master/assets/images/icons/logo-comune.svg
+  https://raw.githubusercontent.com/italia/design-comuni-pagine-statiche/main/assets/images/icons/logo-comune.svg
 maintenance:
   contacts:
     - name: Francesco Zaia
