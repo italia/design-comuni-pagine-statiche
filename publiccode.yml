@@ -10,6 +10,9 @@ description:
     documentation: 'https://designers.italia.it/kit/comuni'
     features:
       - Template Sito Web
+      - PNRR
+      - PNRR/Misura/1.4.1
+      - PNRR/Beneficiari/Comuni
     genericName: Template siti web Comuni Italiani
     longDescription: |
       In questo repository è possibile trovare alcune pagine statiche
