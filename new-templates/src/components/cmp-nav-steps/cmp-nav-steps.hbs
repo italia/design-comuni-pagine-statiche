@@ -1,0 +1,28 @@
+<div class="cmp-nav-steps">
+  <nav class="steppers-nav">
+    <button type="button" class="btn btn-sm steppers-btn-prev p-0">
+      <svg class="icon icon-primary icon-sm">
+        <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-chevron-left"></use>
+      </svg>
+      <span class="text-button-sm t-primary">Indietro</span>
+    </button>
+
+    <button  type="button" class="btn btn-outline-primary btn-sm steppers-btn-save d-none d-lg-block saveBtn">
+      <span class="text-button-sm t-primary">Salva Richiesta</span>
+    </button>
+
+    <button  type="button" class="btn btn-outline-primary btn-sm steppers-btn-save d-block d-lg-none saveBtn center">
+      <span class="text-button-sm t-primary">Salva</span>
+    </button>
+
+    <button type="button" class="btn btn-primary btn-sm steppers-btn-confirm" data-bs-toggle="modal" data-bs-target="#{{modalId}}">
+      <span class="text-button-sm">Avanti</span>
+      <svg class="icon icon-white icon-sm">
+        <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-chevron-right"></use>
+      </svg>
+
+    </button>
+  </nav>
+  {{>cmp-disclaimer/cmp-disclaimer}}
+
+</div>

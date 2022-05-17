@@ -1,0 +1,70 @@
+{
+  "categories": [
+    {
+      "name": "category",
+      "id": "water",
+      "value": "acqua,allagamenti,fogne",
+      "label": "Acqua, allagamenti, problemi fognari (21)"
+    },
+    {
+      "name": "category",
+      "id": "enviroment",
+      "value": "inquinamneto",
+      "label": "Ambiente, inquinamento, protezione ambientale (14)"
+    },
+    {
+      "name": "category",
+      "id": "street-furniture",
+      "value": "arredo-urbano",
+      "label": "Arredo urbano (7)"
+    },
+    {
+      "name": "category",
+      "id": "rodent-control",
+      "value": "derattizazione",
+      "label": "Disinfestazione, derattizazione, animali randagi (208)"
+    },
+    {
+      "name": "category",
+      "id": "waste",
+      "value": "igiene",
+      "label": "Igiene urbana, rifiuti, pulizia e decoro (321)"
+    },
+    {
+      "name": "category",
+      "id": "maintenance",
+      "value": "manutenzione",
+      "label": "Manutenzione immobili, edifici pubblici, scuole, barriere architettoniche, cimiteri (302)"
+    },
+    {
+      "name": "category",
+      "id": "public-order",
+      "value": "ordine-pubblico",
+      "label": "Ordine pubblico, disturbo della quiete (302)"
+    },
+    {
+      "name": "category",
+      "id": "green",
+      "value": "parchi",
+      "label": "Parchi e verde pubblico (302)"
+    },
+    {
+      "name": "category",
+      "id": "service",
+      "value": "servizi",
+      "label": "Servizi del comune (302)"
+    },
+    {
+      "name": "category",
+      "id": "security",
+      "value": "sicurezza",
+      "label": "Sicurezza, degrado urbano e sociale (302)"
+    },
+    {
+      "name": "category",
+      "id": "road",
+      "value": "strade",
+      "label": "Strade, marciapiedi, segnaletica e viabilità (302)"
+    }
+  ]
+}

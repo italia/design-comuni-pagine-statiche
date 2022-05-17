@@ -1,0 +1,32 @@
+.cmp-text-button{
+  margin-top: um(32px);
+
+  &:last-child {
+    @include media-breakpoint-up (md) {
+      margin-bottom: um(40px);
+    }
+
+    @include media-breakpoint-up (lg) {
+      margin-bottom: um(80px);
+    }
+  }
+
+    .button-wrapper {
+      button {
+        &:not(:first-child) {
+          margin: um(16px) 0 um(40px);
+
+          @include media-breakpoint-up(md) {
+            margin: 0 0 0 um(24px);
+          }
+        }
+      }
+    }
+
+    .simple-link {
+      font-size: um(16px);
+      font-weight: 400;
+      text-decoration: underline;
+    }
+  }
+

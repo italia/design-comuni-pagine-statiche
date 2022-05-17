@@ -1,0 +1,22 @@
+.cmp-icon-list {
+  .shadow {
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 0.71rem um(26px);
+
+    &:not(:first-child) {
+      margin: um(10px) 0 um(50px) 0;
+
+      @include media-breakpoint-up(lg) {
+        margin: um(24px) 0 um(80px) 0;
+      }
+    }
+
+    .list-item-title{
+      color: get-color(primary, main);
+    }
+  }
+  .icon-color{
+    fill:get-color(light,grey);
+  }
+}

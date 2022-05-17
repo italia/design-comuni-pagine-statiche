@@ -1,0 +1,17 @@
+{
+
+   
+
+
+    "PADIGITALE2026.GOV.IT":"https://padigitale2026.gov.it",
+    
+
+    "ITALIADOMANI.GOV.IT": "https://italiadomani.gov.it/",
+  
+    "video": false,
+    "viewportWidth": 1900,
+    "viewportHeight": 960,
+    "experimentalSessionAndOrigin":true,
+
+    "testFiles": "**/**/*.spec.js"
+}

@@ -1,0 +1,26 @@
+html, body {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Titillium Web';
+  font-size: 1rem;
+  color: get-color(black, main);
+}
+
+.shadow-contacts {
+  @include media-breakpoint-up(md) {
+    box-shadow: inset 0 10px 14px -12px rgba(0,0,0,0.34);
+  }
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.t-primary{
+  color: get-color(primary,main);
+}
+
+
+

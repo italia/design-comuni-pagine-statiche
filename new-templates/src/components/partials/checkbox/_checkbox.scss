@@ -1,0 +1,39 @@
+.form-check {
+
+	&.multi-check-md {
+		padding: um(16px) um(24px);
+
+		@include media-breakpoint-up(md) {
+			padding: um(40px) um(48px);
+			margin-top: 0;
+		}
+	}
+
+	.checkbox-body {
+		border-bottom: um(1px) solid;
+
+		&:last-child {
+			border-bottom: unset;
+		}
+	}
+
+	[type=checkbox]+label {
+
+		&:before {
+			margin: um(2px) 0;
+		}
+
+		&:after {
+			margin: um(6px) 0;
+		}
+
+		@include media-breakpoint-up(md) {
+			font-size: um(18px);
+			line-height: um(28px);
+		}
+	}
+
+	&.my-24 {
+		margin: um(24px) 0;
+	}
+}

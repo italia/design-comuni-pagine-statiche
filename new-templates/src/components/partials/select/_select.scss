@@ -1,0 +1,23 @@
+.select-partials {
+  padding: um(16px);
+
+  label{ //visually-hidden
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+  }
+
+  @include media-breakpoint-up(md) {
+    padding: um(40px);
+  }
+}
+
+.select-wrapper select{
+  color: get-color(medium,grey);
+}

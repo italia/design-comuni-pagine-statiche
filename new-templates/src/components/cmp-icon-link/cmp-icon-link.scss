@@ -1,0 +1,14 @@
+.cmp-icon-link {
+  font-size: um(16px);
+  font-weight: 400;
+  line-height: um(24px);
+
+  .list-item:not(:last-child){
+    margin-bottom: um(30px);
+  }
+
+  @include media-breakpoint-up(md) {
+    font-size: um(18px);
+    line-height: um(28px);
+  }
+}

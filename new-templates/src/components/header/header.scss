@@ -1,0 +1,39 @@
+.it-header-wrapper {
+  .navbar .navbar-collapsable .navbar-nav li a.nav-link {
+    @include media-breakpoint-up(lg) {
+      padding: um(15px);
+    }
+
+    @include media-breakpoint-up(xl) {
+      padding: um(15px) um(24px);
+    }
+  }
+
+  .search-link {
+    width: um(48px);
+    height: um(48px);
+    border-radius: 24px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 16px;
+    transition: all .3s;
+
+    @include media-breakpoint-up(md) {
+      width: um(48px);
+      height: um(48px);
+      background: #fff;
+    }
+
+    svg {
+      fill: #fff;
+      width: um(24px);
+      height: um(24px);
+      
+      @include media-breakpoint-up(md) {
+        fill: get-color(primary, main);
+      }
+    }
+  }
+}

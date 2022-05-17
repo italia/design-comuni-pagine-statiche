@@ -1,0 +1,83 @@
+.cmp-info-summary {
+  &__item {
+    border-bottom: um(1px) solid;
+  }
+
+  .icon-primary {
+    fill: get-color(primary, main);
+  }
+
+  .card-header {
+    .title-large-semi-bold {
+      margin-bottom: um(24px);
+
+      @include media-breakpoint-up(md) {
+        font-size: um(28px);
+        line-height: um(40px);
+        margin-bottom: um(16px);
+      }
+    }
+  }
+
+  .card-body {
+    .data-text {
+      font-size: um(16px);
+      line-height: um(18px);
+      font-weight: 600;
+
+      @include media-breakpoint-up(md) {
+        font-size: um(18px);
+        line-height: um(28px);
+      }
+
+      &.description-alert {
+        color: get-color(alert, main);
+      }
+
+      &.description-success {
+        color: get-color(primary, main);
+      }
+    }
+
+    .summary-inline {
+      font-weight: 400;
+      line-height: um(24px);
+
+      &:not(:first-child) {
+        padding-top: um(10px);
+      }
+    }
+  }
+
+  .card-footer {
+    padding: um(8px) 0 0;
+    background-color: unset;
+    border-top: unset;
+
+    button {
+      font-weight: 700;
+    }
+
+    .icon {
+      width: um(16px);
+      height:  um(16px);
+      margin-right: um(3px);
+    }
+  }
+}
+.card-summary-inline {
+  padding: um(24px);
+  margin-top: um(16px);
+  margin-bottom: um(24px);
+  @include media-breakpoint-up(lg) {
+    padding: um(40px);
+  }
+}
+
+.card-white {
+  padding: um(16px) um(12px);
+
+  @include media-breakpoint-up(lg) {
+    padding: um(40px);
+  }
+}

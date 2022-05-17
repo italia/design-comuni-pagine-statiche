@@ -1,0 +1,1 @@
+export const titoloH1 = () => cy.get('h1'); 

@@ -1,0 +1,140 @@
+.title {
+  &-xxxlarge {
+    font-size: um(40px);
+    font-weight: 700;
+    line-height: um(48px);
+
+    @include media-breakpoint-up(lg) {
+      font-size: um(48px);
+    }
+  }
+
+  &-xxlarge {
+    font-size: um(32px);
+    font-weight: 700;
+    line-height: um(40px);
+
+    @include media-breakpoint-up(md) {
+      font-size: um(40px);
+    }
+  }
+
+  &-xxlarge-regular {
+    font-size: um(32px);
+    font-weight: 400;
+    line-height: 40px;
+
+    @include media-breakpoint-up(md) {
+      font-size: um(40px);
+    }
+  }
+
+  &-xlarge {
+    font-size: um(28px);
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+
+  &-large {
+    font-size: um(24px);
+    font-weight: 700;
+    line-height: um(30px);
+  }
+
+  &-large-semi-bold {
+    font-size: um(24px);
+    font-weight: 600;
+    line-height: um(28px);
+
+    @include media-breakpoint-up(md) {
+      font-size: um(28px);
+      line-height: um(40px);
+    }
+  }
+
+  &-medium-2 {
+    font-size: um(20px);
+    font-weight: 400;
+    line-height: 24px;
+
+    @include media-breakpoint-up(md) {
+      font-size: um(24px);
+    }
+  }
+
+  &-medium-2-bold {
+    font-size: um(20px);
+    font-weight: 700;
+    line-height: 24px;
+
+    @include media-breakpoint-up(md) {
+      font-size: um(24px);
+    }
+  }
+
+  &-medium-bold {
+    font-size: um(18px);
+    font-weight: 700;
+    line-height: um(26px);
+  }
+
+  &-medium-semi-bold {
+    font-size: um(18px);
+    font-weight: 600;
+    line-height: um(26px);
+  }
+
+  &-medium {
+    font-size: um(18px);
+    font-weight: 400;
+    line-height: um(26px);
+  }
+
+  &-small {
+    font-size: um(16px);
+    font-weight: 700;
+    line-height: um(24px);
+  }
+
+  &-small-semi-bold {
+    font-size: um(16px);
+    font-weight: 600;
+    line-height: um(24px);
+
+    @include media-breakpoint-up(md) {
+
+      font-size: um(18px);
+
+    }
+
+    @include media-breakpoint-up(md) {
+      font-size: um(18px);
+    }
+  }
+
+  &-xsmall-bold {
+    font-size: um(14px);
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  &-xsmall-semi-bold {
+    font-size: um(14px);
+    font-weight: 600;
+    line-height: 24px;
+  }
+
+  &-xsmall {
+    font-size: um(14px);
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  &-xsmall-regular {
+    font-size: um(14px);
+    font-weight: 400;
+    line-height: 24px;
+  }
+}

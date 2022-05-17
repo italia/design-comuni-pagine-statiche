@@ -1,0 +1,174 @@
+{
+  "link-list": {
+    "links-iscrizione-step-2": [
+      {
+        "item": "Richiedente",
+        "anchor": "applicant-info"
+      },
+      {
+        "item": "Beneficiario",
+        "anchor": "beneficiary-info"
+      },
+      {
+        "item": "Altro Genitore",
+        "anchor": "other-parent-info"
+      },
+      {
+        "item": "ISEE",
+        "anchor": "isee-info"
+      }
+    ],
+    "links-area-servizio-page": [
+      {
+        "item": "A chi è rivolto",
+        "anchor": "who-needs"
+      },
+      {
+        "item": "Descrizione",
+        "anchor": "description"
+      },
+      {
+        "item": "Come fare",
+        "anchor": "how-to"
+      },
+      {
+        "item": "Cosa serve",
+        "anchor": "needed"
+      },
+      {
+        "item": "Cosa si ottiene",
+        "anchor": "obtain"
+      },
+      {
+        "item": "Tempi e scadenze",
+        "anchor": "deadlines"
+      },
+      {
+        "item": "Costi",
+        "anchor": "costs"
+      },
+      {
+        "item": "Accedi al servizio",
+        "anchor": "service-access"
+      },
+      {
+        "item": "Ulteriori informazioni",
+        "anchor": "more-info"
+      },
+      {
+        "item": "Condizioni di servizio",
+        "anchor": "conditions"
+      },
+      {
+        "item": "Contatti",
+        "anchor": "contacts"
+      }
+    ],
+    "links-preferenze-servizio-page": [
+      {
+        "item": "Scegli la scuola",
+        "anchor": "school-choice"
+      },
+      {
+        "item": "Religione cattolica",
+        "anchor": "religion-choice"
+      },
+      {
+        "item": "Uscite didattiche",
+        "anchor": "outings-choice"
+      },
+      {
+        "item": "Riprese multimediali",
+        "anchor": "media-choice"
+      }
+    ],
+    "links-area-personale-scrivania": [
+      {
+        "item": "Ultimi messaggi",
+        "anchor": "latest-posts"
+      },
+      {
+        "item": "Ultime attività",
+        "anchor": "latest-activities"
+      }
+    ],
+    "links-finalizzazione-domanda": [
+      {
+        "item": "Prossimi passi",
+        "anchor": "next-step"
+      },
+      {
+        "item": "Servizi correlati",
+        "anchor": "related-service"
+      }
+    ],
+    "links-perfezionamento-richiesta": [
+      {
+        "item": "Doposcuola",
+        "anchor": "after-school-activity"
+      },
+      {
+        "item": "Sezione",
+        "anchor": "school-section"
+      }
+    ],
+    "area-personale-page-3": [
+      {
+        "item": "Pratiche",
+        "anchor": "practices"
+      },
+      {
+        "item": "Pagamenti",
+        "anchor": "payments"
+      }
+    ],
+    "segnalazioni-disservizio-1": [
+      {
+        "item": "A chi è rivolto",
+        "anchor": "who-needs"
+      },
+      {
+        "item": "Descrizione",
+        "anchor": "description"
+      },
+      {
+        "item": "Come fare",
+        "anchor": "how-to"
+      },
+      {
+        "item": "Cosa serve",
+        "anchor": "needed"
+      },
+      {
+        "item": "Cosa si ottiene",
+        "anchor": "obtain"
+      },
+      {
+        "item": "Costi",
+        "anchor": "costs"
+      },
+      {
+        "item": "Accedi al servizio",
+        "anchor": "service-access"
+      },
+      {
+        "item": "Condizioni di servizio",
+        "anchor": "conditions"
+      },
+      {
+        "item": "Contatti",
+        "anchor": "contacts"
+      }
+    ],
+    "links-ztl-dati-servizio": [
+      {
+        "item": "Tipo di permesso",
+        "anchor": "permission"
+      },
+      {
+        "item": "Periodo di validità",
+        "anchor": "validity-period"
+      }
+    ]
+  }
+}

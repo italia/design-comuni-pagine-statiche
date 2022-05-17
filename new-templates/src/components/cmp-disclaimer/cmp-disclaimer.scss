@@ -1,0 +1,36 @@
+.cmp-disclaimer {
+  background-clip: padding-box;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+  animation: moveInBottom 0.35s ease-in 0.35s backwards;
+  display: flex;
+  align-items: center;
+  &__message {
+    font-size: um(16px);
+    line-height: 1.5;
+    font-weight: 600;
+    @include media-breakpoint-up(lg) {
+      font-size: um(18px);
+    }
+  }
+}
+
+.alert-success {
+  background-image: none;
+}
+
+.alert {
+  padding-left: 1rem;
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translate(0, 50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+
+  }
+}

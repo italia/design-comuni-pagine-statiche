@@ -1,0 +1,29 @@
+.cmp-input-search{
+  .form-group {
+    position: relative;
+    margin-bottom: um(40px);
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: um(16px);
+    }
+
+    input {
+      padding-left:  um(45px);
+    }
+  }
+
+  .autocomplete-icon {
+    position: absolute;
+    left: 0;
+    right: auto;
+    top: um(6px);
+    background-color: #fff;
+  }
+
+  .filter-wrapper {
+    .icon.icon-sm {
+      width: 13px;
+      height: 13px;
+    }
+  }
+}

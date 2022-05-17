@@ -1,0 +1,83 @@
+.cmp-info-button-card {
+  &.radio-card {
+    position: relative;
+
+    &+.radio-card {
+      margin-top: um(24px);
+    }
+  }
+
+  .radio-input {
+    &+label {
+      position: absolute !important;
+      right: 30px;
+      top: 20px;
+      z-index: 1;
+      width: um(24px);
+      height: um(24px);
+    }
+
+    &:checked {
+      &+label+.card {
+        outline: 1px solid get-color(primary, main);
+      }
+    }
+  }
+
+  .big-title {
+    font-size: um(28px);
+    font-weight: 700;
+    line-height: um(32px);
+    border-bottom: 1px solid #E5E5E5;
+    padding-bottom: um(8px);
+
+    @include media-breakpoint-up(md) {
+      font-size: um(32px);
+      line-height: um(32px);
+      padding-bottom: um(16px);
+    }
+  }
+
+  .name {
+    font-size: um(18px);
+    line-height: 1.5;
+    font-weight: 700;
+    margin-bottom: um(8px);
+  }
+
+  .card-info {
+    font-size: um(14px);
+    line-height: 1.5;
+    margin: um(4px) 0;
+
+    @include media-breakpoint-up(md) {
+      font-size: um(16px);
+    }
+
+    &+.card-info {
+      margin-top: um(4px);
+    }
+
+    span {
+      font-size: um(16px);
+      font-weight: 600;
+
+      @include media-breakpoint-up(md) {
+        font-size: um(18px);
+      }
+    }
+  }
+
+  .cmp-alert-box {
+    margin-top: um(16px);
+  }
+
+  .accordion-button {
+    padding-left: 0;
+    font-weight: normal;
+
+    &::after {
+      margin-left: 0;
+    }
+  }
+}

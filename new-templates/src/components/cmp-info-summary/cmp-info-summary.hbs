@@ -1,0 +1,82 @@
+<div class="cmp-info-summary bg-white {{class}}">
+  <div class="card">
+    {{#if info-title}}
+      <div class="card-header border-bottom border-light p-0">
+        <h4 class="title-large-semi-bold">{{info-title}}</h4>
+      </div>
+    {{/if}}
+    <div class="card-body mt-8 p-0">
+      {{#if info}}
+        {{#each info-list as |info|}}
+          {{#if info.name}}
+            <div class="text-paragraph-small border-light pt-1">{{info.name}}</div>
+          {{/if}}
+          {{#if info.warning}}
+            <p
+              class=" fw-semibold pb-2 mb-1 data-text description-alert d-flex align-items-center border-light cmp-info-summary__item">
+              <span class="d-flex align-items-center">
+                <svg class="icon icon-sm icon-warning">
+                  <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-error"></use>
+                </svg>
+                {{info.warning-message}}
+              </span>
+            </p>
+          {{else}}
+            <div
+              class="border-light cmp-info-summary__item pb-10 {{#if summary-item-class}} border-0 {{/if}} {{#if info.summary}}summary-inline{{/if}}">
+              {{#if info.description}}
+                <p class="data-text {{#if info.summary}}summary-inline{{/if}}">
+                  {{info.description}}
+                  {{#if info.summary}}
+                    <strong>{{info.summary}}</strong>
+                  {{/if}}
+                </p>
+              {{/if}}
+
+              {{#if description-image}}
+                <div class="d-lg-flex gap-2 mt-3">
+                  <div>
+                    <img src="./assets/images/image-disservizio.png" alt="Mappa" class="img-fluid w-100 mb-3 mb-lg-0">
+                  </div>
+                  <div>
+                    <img src="./assets/images/image-disservizio.png" alt="Mappa" class="img-fluid w-100 mb-3 mb-lg-0">
+                  </div>
+                  <div>
+                    <img src="./assets/images/image-disservizio.png" alt="Mappa" class="img-fluid w-100">
+                  </div>
+                </div>
+              {{/if}}
+
+
+              {{#if info.success}}
+                <p class="fw-semibold pb-2 pt-2 data-text description-success d-flex align-items-center">
+                  <span class="d-flex align-items-center">
+                    <svg class="icon icon-sm icon-success">
+                      <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-check-circle"></use>
+                    </svg>
+                    {{info.success-message}}
+                  </span>
+                </p>
+              {{/if}}
+            </div>
+
+          {{/if}}
+        {{/each}}
+      {{/if}}
+    </div>
+    <div class="card-footer p-0 {{#if disservizio-page}} d-none {{/if}} ">
+      {{#if btn}}
+        {{>partials/button/button label="Aggiungi documento" iconBtn="it-pencil" outline-primary=true class="w-100 mt-3"
+      sm=true}}
+      {{else}}
+        <span class="d-block pt-3">
+          <svg class="icon icon-primary mb-1">
+            <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-pencil"></use>
+          </svg>
+          <a href="#" data-bs-toggle="modal" data-bs-target="#{{modalId}}"
+            class="text-button-semi t-primary">Modifica</a>
+        </span>
+      {{/if}}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+{{#>cmp-modal/cmp-modal-structure id="modal-address" modalTitle="Indirizzi" buttons=true modalInfo="I campi
+contraddistinti dal
+simbolo asterisco (*) sono obbligatori"}}
+<div class="modal-address">
+  <form action="" id="address-form">
+    {{>partials/input/input id="residence" type="text" label="Residenza" text="Campo non modificabile" required=true
+    placeholder="Via Roma 16, 00100 Roma"}}
+
+    <div class="form-check">
+      <div class="toggles">
+        <label for="toggleAddress" class="title-xsmall d-flex justify-content-between align-items-center">
+          Il domicilio coincide con residenza
+          <input type="checkbox" id="toggleAddress">
+          <span class="lever"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="mt-50">
+      {{>partials/input/input id="domicile" type="text" label="Domicilio" text="standard instructions" required=true
+      placeholder="Yellow Street 16, 00100 Liverpool, UK"}}
+    </div>
+  </form>
+</div>
+{{/cmp-modal/cmp-modal-structure}}

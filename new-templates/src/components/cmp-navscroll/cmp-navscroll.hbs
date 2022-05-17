@@ -1,0 +1,29 @@
+<div class="cmp-navscroll {{#if br-none}}br-none{{/if}}" aria-labelledby="accordion-title">
+  <nav class="inline-menu">
+    <div class="link-list-wrapper">
+      <ul class="link-list">
+        <li>
+          <a class="list-item large medium right-icon p-0 text-decoration-none" href="#collapseOne" data-bs-toggle="collapse"
+            aria-expanded="true" aria-controls="collapseOne" data-focus-mouse="true">
+            <span class="list-item-title-icon-wrapper pb-10 px-3">
+              <span id="accordion-title" class="title-xsmall-semi-bold">{{accordion-title}}</span>
+              <svg class="icon icon-xs right">
+                <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-expand"></use>
+              </svg>
+            </span>
+            <!-- Progress Bar -->
+            <div class="progress bg-light">
+              <div class="progress-bar" role="progressbar" aria-label="Progress bar dell'indice della pagina" style="width: 15%" aria-valuenow="15" aria-valuemin="0"
+                aria-valuemax="100"></div>
+            </div>
+          </a>
+          <ul class="link-sublist collapse show" id="collapseOne">
+            {{#each link-list as |link| }}
+            <li><a class="list-item" href="#{{link.anchor}}"><span class="title-medium">{{link.item}}</span></a></li>
+            {{/each}}
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>

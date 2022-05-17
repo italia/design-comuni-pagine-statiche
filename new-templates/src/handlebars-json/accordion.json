@@ -1,0 +1,202 @@
+{
+  "accordion": {
+    "area-personale-page-3":{
+      "pratiche": [
+        {
+          "num": "1",
+          "title": "Iscrizione scuola d’infanzia",
+          "date": "15/02/2022",
+          "icon": "it-folder",
+          "icon-label": "Da completare",
+          "color":"u-main-alert",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "class": "shadow"
+            },
+            {
+              "icon": "it-clip",
+              "link": "Graduatoria",
+              "class": "shadow"
+            }
+          ]
+        },
+        {
+          "num": "2",
+          "title": "Richiesta assegno maternità",
+          "date": "24/06/2021",
+          "icon": "it-folder",
+          "icon-label": "In sospeso",
+          "color":"u-main-error",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "class": "shadow"
+            },
+            {
+              "icon": "it-clip",
+              "link": "Graduatoria",
+              "class": "shadow"
+            }
+          ]
+        },
+        {
+          "num": "3",
+          "title": "Iscrizione corso di formazione",
+          "date": "24/06/2021",
+          "icon": "it-folder",
+          "icon-label": "Conclusa",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "class": "shadow"
+            },
+            {
+              "icon": "it-clip",
+              "link": "Graduatoria",
+              "class": "shadow"
+            }
+          ]
+        },
+        {
+          "num": "4",
+          "title": "Richiesta permesso ZTL",
+          "date": "10/05/2021",
+          "icon": "it-folder",
+          "icon-label": "Conclusa",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "class": "shadow"
+            },
+            {
+              "icon": "it-clip",
+              "link": "Graduatoria",
+              "class": "shadow"
+            }
+          ]
+        },
+        {
+          "num": "5",
+          "title": "Richiesta parcheggio residenti",
+          "date": "06/03/2021",
+          "icon": "it-folder",
+          "icon-label": "Conclusa",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "class": "shadow"
+            },
+            {
+              "icon": "it-clip",
+              "link": "Graduatoria",
+              "class": "shadow"
+            }
+          ]
+        }
+      ],
+      "pagamenti": [
+        {
+          "num": "6",
+          "title": "Pagamento servizio mensa",
+          "date": "07/01/2022",
+          "icon": "it-check",
+          "icon-label": "Pagato",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "class": "shadow"
+            },
+            {
+              "icon": "it-clip",
+              "link": "Graduatoria",
+              "class": "shadow"
+            }
+          ]
+        },
+        {
+          "num": "7",
+          "title": "Pagamento contravvenzioni",
+          "date": "01/10/2021",
+          "icon": "it-check",
+          "icon-label": "Pagato",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "class": "shadow"
+            },
+            {
+              "icon": "it-clip",
+              "link": "Graduatoria",
+              "class": "shadow"
+            }
+          ]
+        },
+        {
+          "num": "8",
+          "title": "Pagamento contravvenzioni",
+          "date": "24/06/2021",
+          "icon": "it-check",
+          "icon-label": "Pagato",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "class": "shadow"
+            },
+            {
+              "icon": "it-clip",
+              "link": "Graduatoria",
+              "class": "shadow"
+            }
+          ]
+        },
+        {
+          "num": "9",
+          "title": "Pagamento contravvenzioni",
+          "date": "10/05/2021",
+          "icon": "it-check",
+          "icon-label": "Pagato",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "class": "shadow"
+            },
+            {
+              "icon": "it-clip",
+              "link": "Graduatoria",
+              "class": "shadow"
+            }
+          ]
+        },
+        {
+          "num": "10",
+          "title": "Pagamento contravvenzioni",
+          "date": "06/03/2021",
+          "icon": "it-check",
+          "icon-label": "Pagato",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "class": "shadow"
+            },
+            {
+              "icon": "it-clip",
+              "link": "Graduatoria",
+              "class": "shadow"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

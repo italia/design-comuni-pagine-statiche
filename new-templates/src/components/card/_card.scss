@@ -1,0 +1,34 @@
+.cmp-cardBorder {
+  .card::after{
+    margin: 0;
+  }
+  &__content {
+    &-date {
+      font-size: um(12px);
+      font-weight: 400;
+      line-height: um(18px);
+    }
+    &-title {
+      font-size: um(16px);
+      font-weight: 600;
+      color: red;
+      line-height: um(24px);
+    }
+    &-message {
+      font-size: um(16px);
+      font-weight: 400;
+      line-height: um(24px);
+    }
+    &-link{
+      .iconLink{
+        border: 1px solid red;
+        width: 16px;
+        height: 16px;
+      }
+
+    font-size: um(14px);
+    font-weight: 400;
+    line-height: um(21px);
+    }
+  }
+}

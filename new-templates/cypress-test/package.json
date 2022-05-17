@@ -1,0 +1,17 @@
+{
+  "name": "t_runner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "axe-core": "^4.4.1",
+    "cypress": "^9.6.0",
+    "cypress-axe": "^0.14.0"
+  },
+  "scripts": {
+    "cypress:open": "cypress open"
+  },
+  "author": "",
+  "license": "ISC"
+}

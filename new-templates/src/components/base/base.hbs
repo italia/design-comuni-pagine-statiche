@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>{{ title }}</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ htmlWebpackPlugin.options.description }}" />
+  <link rel="stylesheet" href="./assets/bootstrap-italia/dist/css/bootstrap-italia.min.css">
+</head>
+
+<body>
+  {{> header/header }}
+  {{> @partial-block}}
+  {{> cmp-modal/modal-header-search}}
+  {{>cmp-footer/cmp-footer}}
+  <script>window.__PUBLIC_PATH__ = "./assets/bootstrap-italia/dist/fonts"</script>
+  <script src="./assets/bootstrap-italia/dist/js/bootstrap-italia.bundle.min.js"></script>
+</body>
+
+</html>

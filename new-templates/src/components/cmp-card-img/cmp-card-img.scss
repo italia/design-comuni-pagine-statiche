@@ -1,0 +1,17 @@
+.cmp-card-img{
+  display: flex;
+  &::before{
+    content: "";
+    width: 10px;
+    height: auto;
+    background-color: get-color(card, grey);
+    border-radius: 10px 0 0 10px;
+    border-right: 1px solid get-color(card, grey);
+  }
+  &__shadow{
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.1);
+  }
+
+}
+
+

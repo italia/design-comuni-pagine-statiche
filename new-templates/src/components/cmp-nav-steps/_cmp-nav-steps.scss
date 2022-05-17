@@ -1,0 +1,37 @@
+.cmp-nav-steps {
+  box-shadow: 0 -0.6375rem 1.125rem -0.9rem rgb(0,0,0,0.1);
+  margin-top: um(62px);
+
+  @include media-breakpoint-up(md) {
+    border-top: um(1px) solid get-color(card,grey);
+    margin-top: um(40px);
+    box-shadow: unset;
+  }
+
+  .steppers-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: um(11px) 0 um(51px) 0;
+  }
+
+  .btn:not(:first-child) {
+    padding: um(10px) um(16px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    .icon.icon-sm {
+      width: um(21px);
+      height: um(21px);
+    }
+
+    @include media-breakpoint-up(md) {
+      width: um(160px);
+    }
+  }
+
+  .btn.center{
+    min-width: um(80px)
+  }
+}

@@ -1,0 +1,70 @@
+.text-paragraph {
+  font-size: um(16px) !important;
+  font-weight: 400;
+  line-height: um(24px);
+
+  @include media-breakpoint-up(md) {
+    font-size: um(18px) !important;
+    line-height: um(28px);
+  }
+
+  &-small {
+    font-size: um(14px);
+    font-weight: 400;
+    line-height: um(18px);
+
+    @include media-breakpoint-up(md) {
+      font-size: um(16px);
+      line-height: um(24px);
+    }
+  }
+
+  &-small-semi {
+    font-size: um(14px);
+    font-weight: 600;
+    line-height: um(22px);
+  }
+}
+
+.lora {
+  font-family: Lora;
+}
+
+.titillium {
+  font-family: "Titillium Web";
+}
+
+.text-info {
+  font-size: um(12px);
+  font-weight: 400;
+  line-height: um(18px);
+}
+
+.text-tab {
+  font-size: um(14px);
+  font-weight: 400;
+  line-height: um(28px);
+
+  @include media-breakpoint-up(md) {
+    font-size: um(18px);
+    font-weight: 400;
+    line-height: um(28px);
+  }
+}
+
+.text-button {
+  font-family: Titillium Web;
+  font-size: um(18px);
+  font-weight: 700;
+  line-height: um(28px);
+
+  &-semi{
+    font-weight: 600;
+    @extend .text-button
+  }
+
+  &-sm {
+    font-size: um(16px);
+    line-height: um(24px);
+  }
+}

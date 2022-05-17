@@ -1,0 +1,49 @@
+.cmp-info-progress {
+  .info-progress-body {
+    border-bottom: 2px solid transparent;
+  }
+
+  .completed{
+    .title-medium {
+      font-weight: 700;
+      color: get-color(secondary,main);
+    }
+  }
+
+  .step-active {
+    .title-medium {
+      font-weight: 700;
+      color: get-color(secondary,main);
+    }
+
+      .info-progress-body {
+        border-bottom: 2px solid get-color(secondary,main);;
+      }
+  }
+
+  .iscrizioni-header {
+    .drop-shadow {
+      box-shadow: 0 0.9375rem 1.325rem -0.9rem rgba(0, 0, 0, 0.1);
+    }
+
+    .step-wrapper {
+      font-size: um(24px);
+      font-weight: 700;
+      line-height: 30px;
+    }
+
+    .step-title {
+      font-size: um(18px);
+      font-weight: 600;
+      line-height: 36px;
+      padding: um(14px) 0;
+      margin: um(16px) 0 um(40px) 0;
+    }
+
+    .step {
+      font-size: um(14px);
+      font-weight: 600;
+      line-height: 21.29px;
+    }
+  }
+}

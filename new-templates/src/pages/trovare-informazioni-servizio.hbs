@@ -1,0 +1,148 @@
+{{#>base/base title="Iscrizione scheda servizio"}}
+<main>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi" link3="Iscrizioni"}}
+        {{> cmp-heading/cmp-heading
+          title="Iscrizione alla Scuola dell’infanzia"
+          subTitle="Come iscrivere i propri figlialle Scuole dell'infanzia comunali o nelle strutture accreditate."
+          pClass="mt-3"
+          button=true
+          label="Richiedi iscrizione online"
+          description="Termine presentazione: <span><strong>entro 10 giorni</strong></span>"
+          primary=true
+          btnClass="mt-4"
+          class="text-button"
+          label-tag="Servizio attivo"
+          }}
+      </div>
+      <hr class="d-none d-lg-block mb-0 mt-2">
+    </div>
+
+    <div class="row mt-lg-40">
+      <div class="col-12 col-lg-3 mb-4 ">
+        {{>cmp-navscroll/cmp-navscroll accordion-title="INDICE DELLA PAGINA"
+          link-list=link-list.links-area-servizio-page}}
+      </div>
+      <div class="col-12 col-lg-8 offset-lg-1">
+        {{#>cmp-card/cmp-card-content-box card-title="A chi è rivolto" h2-class="mb-3" id-title="who-needs"}}
+
+        {{>cmp-ul-list/cmp-ul-list
+        info-list=scheda-servizio-lista-1.lista-1 font-list="lora"}}
+        {{/cmp-card/cmp-card-content-box}}
+
+
+        {{#>cmp-card/cmp-card-content-box card-title="Descrizione" id-title="description"}}
+        <p class="text-paragraph lora">
+          La scuola dell’infanzia fa parte del Sistema integrato di educazione e di istruzione dalla nascita ai 6 anni.
+          È il primo gradino del percorso di istruzione e ha durata triennale. Fanno parte del sistema nazionale di
+          istruzione le scuole dell’infanzia statali e paritarie a gestione pubblica e privata.
+        </p>
+        {{/cmp-card/cmp-card-content-box}}
+
+
+        {{#>cmp-card/cmp-card-content-box card-title="Come fare" id-title="how-to"}}
+        <p class="text-paragraph lora">
+          Puoi presentare la richiesta di iscrizione esclusivamente online dalle ore 10:00 del 4 gennaio 2022 alle 20:00
+          del 4 febbraio 2022. I posti assegnati vanno accettati entro 15 giorni dalla pubblicazione della graduatoria.
+        </p>
+        {{/cmp-card/cmp-card-content-box}}
+
+
+
+        {{#>cmp-card/cmp-card-content-box card-title="Cosa serve" id-title="needed" bg-grey="true" }}
+        {{>cmp-ul-list/cmp-ul-list heading-title="Per accedere al servizio, assicurati di avere:" font-title="lora" font-list="titillium" info-list=scheda-servizio-lista-2.lista-2 }}
+        {{/cmp-card/cmp-card-content-box}}
+
+        {{#>cmp-card/cmp-card-content-box card-title="Cosa si ottiene" id-title="obtain" subtitle="Se - in base ai requisiti e alla
+        graduatoria - la richiesta verrà accettata, sarà possibile perfezionare l’iscrizione all’asilo." }}
+        {{/cmp-card/cmp-card-content-box}}
+
+        {{>cmp-timeline/cmp-timeline
+        title="Tempi e scadenze"
+        id-title="deadlines"
+        timeline=timeline.scheda-servizio
+        description="Le graduatorie verranno aggiornate ogni mese con nuove assegnazioni e trasferimenti in base ai
+        posti disponibili."
+        }}
+
+        {{#>cmp-card/cmp-card-content-box card-title="Costi" id-title="costs" subtitle="L’importo della retta si basa sul reddito del
+        nucleo famigliare in base al certificato ISEE. Per maggiori informazioni, consulta la tabella allegata al
+        bando." class="mb-2 mt-40" }}
+        {{>cmp-icon-link/cmp-icon-link link="Tabella rette in base al reddito (PDF 80KB)"}}
+        {{/cmp-card/cmp-card-content-box}}
+
+
+        {{#>cmp-card/cmp-card-content-box card-title="Accedi al servizio" id-title="service-access" subtitle="Puoi richiedere l’iscrizione alla
+        Scuola dell’infanzia direttamente online tramite identità digitale." bg-grey="true" }}
+        {{>partials/button/button label="Richiedi iscrizione online" primary="true" class="mobile-full"  }}
+        <p class="text-paragraph mt-25 mb-25">Oppure, puoi prenotare un appuntamento e presentarti presso gli uffici.
+        </p>
+        {{>partials/button/button label="Prenota appuntamento" primary="true" class="mobile-full btn-outline-primary t-primary" }}
+        {{/cmp-card/cmp-card-content-box}}
+
+
+        {{#>cmp-card/cmp-card-content-box card-title="Ulteriori informazioni" id-title="more-info" second-title="Graduatorie di accesso"
+        subtitle="I bambini già ammessi alla frequenza nell’anno scolastico in corso sono riammessi di diritto nell’anno
+        scolastico successivo previa richiesta, su appositi moduli trasmessi alle strutture di riferimento.<br>
+        Alle domande viene attribuito un punteggio secondo i criteri stabiliti dall'Amministrazione Comunale. La
+        famiglia può in qualsiasi momento rinunciare al posto, presentando al responsabile del servizio specifica
+        dichiarazione scritta di rinuncia.<br><br>Se hai già inviato la richiesta di iscrizione puoi vedere le
+        graduatorie d’accesso nella sezione documenti." }}
+        {{/cmp-card/cmp-card-content-box}}
+
+        {{#>cmp-card/cmp-card-content-box card-title="Condizioni di servizio" id-title="conditions" subtitle="Per conoscere i dettagli di
+        scadenze, requisiti e altre informazioni importanti, leggi i termini e le condizioni di servizio." }}
+        {{>cmp-icon-link/cmp-icon-link link="Termini e condizioni di servizio (PDF 1MB)"}}
+        {{/cmp-card/cmp-card-content-box}}
+
+
+        {{#>cmp-card/cmp-card-content-box card-title="Contatti" id-title="contacts"}}
+
+        <div class="mt-15">
+          {{>cmp-card-img/cmp-card-img card-title="Ufficio scuola" card-description="Via Dei Transiti 21, 50302<br> 05
+          0505 <br> ufficioscuola@email.it"}}
+        </div>
+        {{/cmp-card/cmp-card-content-box}}
+
+
+        {{#>cmp-card/cmp-card-content-box }}
+        <span class="text-paragraph-small" >Argomenti:</span>
+        <div class="d-flex flex-wrap gap-2 mt-10 mb-30 ">
+          {{>partials/cmp-tag/cmp-tag label-tag="Educazione" class="t-primary"}}
+          {{>partials/cmp-tag/cmp-tag label-tag="Famiglia" class="t-primary"}}
+          {{>partials/cmp-tag/cmp-tag label-tag="Scuola d’infanzia" class="t-primary"}}
+          {{>partials/cmp-tag/cmp-tag label-tag="Bambini 3 - 5 anni" class="t-primary"}}
+        </div>
+        <p class="text-paragraph-small">Pagina aggiornata il 14/04/2022</p>
+        {{/cmp-card/cmp-card-content-box}}
+      </div>
+    </div>
+    </div>
+
+
+  <div class="bg-primary">
+    <div class="container">
+      <div class="row d-flex justify-content-center bg-primary">
+        <div class="col-12 col-lg-6 p-lg-0 px-3">
+          {{>cmp-rating/cmp-rating}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-grey-card">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 py-4">
+          {{>cmp-carousel/cmp-carousel carousel-title="Contenuti correlati" class="carousel-4-card"}}
+        </div>
+        <div class="col-12 col-lg-6 offset-lg-3 py-5">
+          {{>cmp-contacts/cmp-contacts}}
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{{/base/base }}

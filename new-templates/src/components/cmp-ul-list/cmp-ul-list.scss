@@ -1,0 +1,29 @@
+.cmp-ul-list {
+  &__description {
+    font-weight: 600;
+
+    @include media-breakpoint-up(md) {
+      font-weight: 400;
+    }
+
+    padding-right: um(24px);
+  }
+
+  .link-list {
+    padding-left: um(30px);
+    list-style: none;
+    list-style-type:  square !important;
+  }
+
+  .link-list li {
+    font-size: um(16px);
+    font-weight: 400;
+    line-height: um(24px);
+
+    @include media-breakpoint-up(md) {
+      // font-family: Lora;
+      font-size: um(18px);
+      line-height: um(28px);
+    }
+  }
+}

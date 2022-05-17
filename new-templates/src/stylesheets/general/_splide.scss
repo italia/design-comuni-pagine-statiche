@@ -1,0 +1,13 @@
+.splide {
+  &__sr {
+    display: none;
+  }
+
+  &__pagination {
+    li {
+      &:not([role="presentation"]) {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.info-card {
+  background-color: #fff;
+  padding: um(16px);
+  border-radius: 4px;
+  border: 1px solid #baccd9;
+
+  .name {
+    font-size: um(16px);
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: um(5px);
+  }
+
+  .info-item {
+    font-size: um(14px);
+    font-weight: 400;
+  }
+
+  .alert-box {
+    display: flex;
+    align-items: center;
+    height: um(62px);
+    margin-top: um(16px);
+
+    .icon {
+      height: 100%;
+      min-width: um(47px);
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+      border: 1px solid #baccd9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .text {
+      height: 100%;
+      font-size: um(16px);
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      border: 1px solid #baccd9;
+      border-left: none;
+      display: flex;
+      align-items: center;
+      padding: um(12px) um(10px);
+    }
+  }
+}

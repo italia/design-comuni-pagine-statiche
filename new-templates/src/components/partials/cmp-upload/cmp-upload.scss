@@ -1,0 +1,66 @@
+.cmp-upload {
+  .upload-file-list .upload-file {
+    max-width: 100%;
+
+    p {
+      margin-left: um(10px);
+    }
+  }
+
+  .upload-file-list .upload-file.success svg {
+    fill: get-color(extra-light, grey);
+  }
+
+  span.splide__sr {
+    display: none;
+  }
+
+  .upload[type=file]+label {
+    font-size: um(16px);
+    padding: um(12px) um(24px);
+
+    @include media-breakpoint-up(md) {
+      max-width: um(380px);
+    }
+
+    svg {
+      margin-right: um(12px);
+    }
+  }
+
+  &__label {
+    font-family: Titillium Web;
+    color: get-color(dark, grey);
+    font-size: um(14px);
+    font-weight: 700;
+    line-height: um(24px);
+    margin-left: um(8px);
+
+    @include media-breakpoint-up(md) {
+      font-size: um(16px);
+      margin-bottom: um(12px);
+    }
+
+    &__info {
+      font-family: Titillium Web;
+      color: get-color(dark, grey);
+      font-size: um(14px);
+      font-weight: 400;
+      line-height: um(21px);
+      margin-left: um(8px);
+
+      @include media-breakpoint-up(sm) {
+        font-size: um(16px);
+      }
+    }
+  }
+}
+
+.modal .modal-dialog .modal-content .modal-body p:not(.cmp-upload__info) {
+  font-size: um(16px);
+  font-weight: 600;
+
+  @include media-breakpoint-up(md) {
+    font-size: um(18px);
+  }
+}

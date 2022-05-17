@@ -1,0 +1,30 @@
+.cmp-input{
+  margin-bottom: 2rem;
+  &:not(:first-child){
+    margin-top: 2rem;
+  }
+  &__text{
+  font-size: um(14px);
+  font-weight: 400;
+  line-height: um(21px);
+  }
+
+  // .form-group label.active{
+
+  // font-size: um(14px);
+  // font-weight: 700;
+  // line-height: um(20px);
+  // }
+
+
+  &__icon-input{
+    position: absolute;
+    right: 0;
+    top: 8px;
+    z-index: 8;
+    padding: 0 8px;
+    background-color: #fff;
+
+  }
+
+}

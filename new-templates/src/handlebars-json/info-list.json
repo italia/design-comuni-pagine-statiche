@@ -1,0 +1,528 @@
+{
+  "info-genitore": {
+    "info": [
+      {
+        "name": "Codice Fiscale",
+        "description": "GLABNC72H25H501Y"
+      },
+      {
+        "name": "Data di nascita",
+        "description": "02/03/1975"
+      },
+      {
+        "name": "Luogo di nascita",
+        "description": "Roma"
+      },
+      {
+        "name": "Sesso",
+        "description": "Femmina"
+      },
+      {
+        "name": "Nazionalità",
+        "description": "Italiana"
+      },
+      {
+        "name": "Professione",
+        "description": "Impiegata"
+      },
+      {
+        "name": "Scolarità",
+        "description": "Laurea Magistrale"
+      }
+    ]
+  },
+  "indirizzo-genitore": {
+    "info": [
+      {
+        "name": "Residenza",
+        "description": "Via Roma 16, 00100 Roma, IT"
+      },
+      {
+        "name": "Domicilio",
+        "description": "Piazza Risorgimento 16, 00100 Roma, It"
+      }
+    ]
+  },
+  "contatti-genitore": {
+    "info": [
+      {
+        "name": "Telefono",
+        "description": "+39 331 1234567"
+      },
+      {
+        "name": "Email",
+        "description": "giulia.bianchi@gmail.com"
+      },
+      {
+        "name": "Recapito postale",
+        "description": "P.zza Risorgimento 16, 00100 Roma"
+      }
+    ]
+  },
+  "documenti-genitore": {
+    "info": [
+      {
+        "name": "Carta d'identità",
+        "description": "giulia_bianchi_carta_di_identità_fronte_retro.pdf"
+      },
+      {
+        "name": "Modulo condizione lavorativa",
+        "description": "giulia_bianchi_modulo.pdf"
+      }
+    ]
+  },
+  "info-figli": {
+    "info": [
+      {
+        "name": "Codice Fiscale",
+        "description": "FRARSS72H25H501Y"
+      },
+      {
+        "name": "Data di nascita",
+        "description": "26/03/2018"
+      },
+      {
+        "name": "Luogo di nascita",
+        "description": "Roma"
+      },
+      {
+        "name": "Sesso",
+        "description": "Maschio"
+      },
+      {
+        "name": "Nazionalità",
+        "description": "Italiana"
+      }
+    ]
+  },
+  "indirizzo-figli": {
+    "info": [
+      {
+        "name": "Residenza",
+        "description": "Via Roma 16, 00100 Roma, IT"
+      },
+      {
+        "name": "Domicilio",
+        "description": "Piazza Risorgimento 16, 00100 Roma, It"
+      }
+    ]
+  },
+  "documenti-figli": {
+    "info": [
+      {
+        "name": "Carta d'identità",
+        "description": "francesco_rossi_carta_di_identità_fronte_retro.pdf"
+      },
+      {
+        "name": "Certificato Vaccinale",
+        "description": "francesco_rossi.pdf"
+      }
+    ]
+  },
+  "anagrafica-indirizzo-altro-genitore": {
+    "info": [
+      {
+        "name": "Residenza",
+        "description": "Via Roma 16, 00100 Roma, It"
+      },
+      {
+        "name": "Domicilio ",
+        "description": "Piazza Risorgimento 16, 00100 Roma, It"
+      }
+    ]
+  },
+  "info-altro-genitore": {
+    "info": [
+      {
+        "name": "Codice Fiscale",
+        "description": "MRARSS72H25H501Y"
+      },
+      {
+        "name": "Data di nascita",
+        "description": "03/07/1975"
+      },
+      {
+        "name": "Luogo di nascita",
+        "description": "Roma"
+      },
+      {
+        "name": "Sesso",
+        "description": "Maschio"
+      },
+      {
+        "name": "Nazionalità",
+        "description": "Italiana"
+      },
+      {
+        "name": "Professione",
+        "description": "Impiegato"
+      },
+      {
+        "name": "Scolarità",
+        "description": "Laurea Magistrale"
+      }
+    ]
+  },
+  "indirizzo-altro-genitore": {
+    "info": [
+      {
+        "name": "Residenza",
+        "description": "Via Roma 16, 00100 Roma, IT"
+      },
+      {
+        "name": "Domicilio",
+        "description": "Piazza Risorgimento 16, 00100 Roma, It"
+      }
+    ]
+  },
+  "contatti-altro-genitore": {
+    "info": [
+      {
+        "name": "Telefono",
+        "description": "+39 331 1234567"
+      },
+      {
+        "name": "Email",
+        "description": "mario.rossi@gmail.com"
+      },
+      {
+        "name": "Recapito postale",
+        "description": "P.zza Risorgimento 16, 00100 Roma"
+      }
+    ]
+  },
+  "allegati-altro-genitore": {
+    "info": [
+      {
+        "name": "Carta d'identità",
+        "description": "mario_rossi_carta_di_identità.pdf"
+      },
+      {
+        "name": "Modulo condizione lavorativa",
+        "description": "mario_rossi_modulo.pdf"
+      }
+    ]
+  },
+  "isee-familiare": {
+    "info": [
+      {
+        "name": "Scadenza ISEE",
+        "description": "06/10/2023"
+      },
+      {
+        "name": "Anno protocollo",
+        "description": "2022"
+      },
+      {
+        "name": "Numero protocollo",
+        "description": "1234567"
+      },
+      {
+        "name": "Codice filiale protocollo",
+        "description": "1234567"
+      },
+      {
+        "name": "Certificato ISEE",
+        "description": "documento_ISEE-2022.pdf"
+      }
+    ]
+  },
+  "preferenze-servizio": {
+    "info": [
+      {
+        "name": "Istituto",
+        "description": "Istituto Narcisi"
+      },
+      {
+        "name": "Religione cattolica",
+        "description": "No"
+      },
+      {
+        "name": "Uscite didattiche",
+        "description": "Sì"
+      },
+      {
+        "name": "Riprese Multimediali",
+        "description": "Sì"
+      }
+    ]
+  },
+  "isee": {
+    "info": [
+      {
+        "name": "Valore ISEE",
+        "description": "18.000,00€"
+      },
+      {
+        "name": "Scadenza ISEE",
+        "description": "06/10/2023"
+      },
+      {
+        "name": "Anno protocollo",
+        "description": "2022"
+      },
+      {
+        "name": "Numero protocollo",
+        "description": "12345678"
+      },
+      {
+        "name": "Codice filiale protocollo",
+        "description": "12345678"
+      },
+      {
+        "name": "Certificato ISEE",
+        "description": "documento_ISEE-2019.pdf",
+        "warning": false,
+        "success": true,
+        "warning-message": "Documento scaduto",
+        "success-message": "Documento inserito con successo"
+      }
+    ]
+  },
+  "anagrafica-altro-genitore": {
+    "info": [
+      {
+        "name": "Nome",
+        "description": "Mario"
+      },
+      {
+        "name": "Cognome",
+        "description": "Rossi"
+      },
+      {
+        "name": "Codice fiscale",
+        "description": "MRARSS72H25H501Y"
+      },
+      {
+        "name": "Data di Nascita",
+        "description": "03/07/1975"
+      },
+      {
+        "name": "Luogo di Nascita",
+        "description": "Roma"
+      },
+      {
+        "name": "Sesso",
+        "description": "Maschio"
+      },
+      {
+        "name": "Nazionalità",
+        "description": "Italiana"
+      },
+      {
+        "name": "Professione",
+        "description": "Insegnante"
+      },
+      {
+        "name": "Scolarità",
+        "description": "Laurea Magistrale"
+      }
+    ]
+  },
+  "perfezionamento-richiesta-checkbox": {
+    "checkbox": [
+      {
+        "id": "green-section",
+        "label": "Classe verde",
+        "name": "green-section",
+        "value": "green-section"
+      },
+      {
+        "id": "blue-section",
+        "label": "Classe blu",
+        "name": "blue-section",
+        "value": "blue-section"
+      },
+      {
+        "id": "yellow-section",
+        "label": "Classe gialla",
+        "name": "yellow-section",
+        "value": "yellow-section"
+      },
+      {
+        "id": "no-section",
+        "label": "Nessuna preferenza",
+        "name": "no-section",
+        "value": "no-section"
+      }
+    ]
+  },
+  "ztl-dati-checkbox": {
+    "checkbox": [
+      {
+        "id": "ztl-a",
+        "label": "Zona Traffico Limitato A",
+        "name": "ztl-a",
+        "value": "ztl-a"
+      },
+      {
+        "id": "ztl-b",
+        "label": "Zona Traffico Limitato B",
+        "name": "ztl-b",
+        "value": "ztl-b"
+      },
+      {
+        "id": "ztl-c",
+        "label": "Zona Traffico Limitato C",
+        "name": "ztl-c",
+        "value": "ztl-c"
+      }
+    ]
+  },
+  "anagrafica-allegati-altro-genitore": {
+    "info": [
+      {
+        "name": "Carta d'identità",
+        "description": "mario_rossi_ci.pdf",
+        "warning": false,
+        "success": false
+      },
+      {
+        "name": "Modulo condizione lavorativa",
+        "description": "",
+        "warning": true,
+        "success": false,
+        "warning-message": "Documento mancante",
+        "success-message": "Documento inserito con successo"
+      }
+    ]
+  },
+  "scheda-servizio-lista-1": {
+    "lista-1": [
+      {
+        "text": "Bambini di età compresa tra i 3 e i 5 anni compiuti o da compiere entro il 31 dicembre di ogni anno."
+      },
+      {
+        "text": "Bambini che compiranno i 3 anni dopo il 31 dicembre e, comunque, entro e non oltre il 30 aprile dell’anno successivo (ammissione anticipata)."
+      }
+    ]
+  },
+  "scheda-servizio-lista-2": {
+    "lista-2": [
+      {
+        "text": "SPID (Sistema Pubblico per la gestione dell'Identità Digitale), Carta identità elettronica (CIE) o Carta Nazionale dei Servizi (CNS);"
+      },
+      {
+        "text": "la documentazione attestante eventuali disabilità"
+      },
+      {
+        "text": "il permesso di soggiorno del genitore che presenta la richiesta"
+      },
+      {
+        "text": "l’ISEE in corso di validità"
+      }
+    ]
+  },
+  "scheda-servizio-lista-disservizio": {
+    "lista-2": [
+      {
+        "text": "informazioni sul tipo di disservizio e sul luogo all'interno del territorio comunale;"
+      },
+      {
+        "text": "foto, se disponibili."
+      }
+    ]
+  },
+  "area-personale-page-2": {
+    "list-1": [
+      {
+        "text": "<strong>Ammessi</strong> - Elencati in ordine alfabetico"
+      },
+      {
+        "text": "<strong>Lista d'attesa</strong> - Elencati secondo la posizione in graduatoria"
+      }
+    ]
+  },
+  "segnalazione-disservizio": {
+    "list": [
+      {
+        "text": " Informazioni sul luogo del disservizio all’interno del territorio comunale"
+      },
+      {
+        "text": "Foto, se disponibili"
+      }
+    ]
+  },
+  "disservizio": {
+    "info": [
+      {
+        "name": "Indirizzo",
+        "description": "Via Solferino - 50100 Firenze"
+      },
+      {
+        "name": "Dettaglio",
+        "description": "Sulla strada c’è una buca piuttosto profonda che andrebbe  sistemata con urgenza"
+      },
+      {
+        "name": "Immagini",
+        "description": "",
+        "description-image": true,
+        "summary-item-class": true
+      }
+    ]
+  },
+  "disservizio-info": {
+    "list": [
+      {
+        "name": "Indirizzo",
+        "description": "Via Solferino - 50100(FI)"
+      },
+      {
+        "name": "Tipo di disservizio",
+        "description": "Danneggiamento proprietà pubblica"
+      },
+      {
+        "name": "Titolo",
+        "description": "Panchina danneggiata"
+      },
+      {
+        "name": "Dettagli",
+        "description": "La seduta della panchina risulta inutilizzabile e pericolosa dato che ci sono molte schegge e parti appuntite"
+      },
+      {
+        "name": "Immagini",
+        "description": "6yhakandsahm413d8da.jpg"
+      }
+    ],
+    "info-author": [
+      {
+        "name": "Codice Fiscale",
+        "description": "GLABNC72H25H501Y"
+      }
+    ],
+    "info-contacts": [
+      {
+        "name": "Telefono",
+        "description": "+39 331 1234567"
+      },
+      {
+        "name": "Email",
+        "description": "giulia.bianchi@gmail.com"
+      }
+    ]
+  },
+    "rating-list": {
+    "list": [
+      {
+        "id": "radio-1",
+        "label": "Alcune indicazioni non erano chiare",
+        "name": "rating"
+      },
+      {
+        "id": "radio-2",
+        "label": "Alcune indicazioni non erano corrette",
+        "name": "rating"
+      },
+      {
+        "id": "radio-3",
+        "label": "Non capivo se quello che facevo era corretto",
+        "name": "rating"
+      },
+      {
+        "id": "radio-4",
+        "label": "Ho avuto problemi tecnici",
+        "name": "rating"
+      }
+    ]
+  }
+}

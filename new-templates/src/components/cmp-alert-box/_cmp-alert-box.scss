@@ -1,0 +1,66 @@
+.cmp-alert-box {
+  border-left: 2px solid get-color(error, main);
+  padding-left: um(16px);
+
+  .alert-box-icon {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: get-color(error, main);
+
+    svg {
+      fill: get-color(error, main);
+      margin-right: um(10px);
+    }
+  }
+
+  .description {
+    margin-top: um(5px);
+    font-size: um(16px);
+    line-height: 1.5;
+  }
+}
+
+.cmp-warning-box{
+  padding-left: um(16px);
+  margin-top: um(15px);
+
+  .warning-box-icon {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    svg {
+      max-width: um(20px);
+      fill: get-color(warning, main);
+      margin-right: um(10px);
+
+      @include media-breakpoint-up(lg) {
+        max-width: um(24px);
+      }
+    }
+  }
+
+  .description {
+    margin-top: um(5px);
+    font-size: um(14px);
+    line-height: 18px;
+
+    @include media-breakpoint-up(lg) {
+      font-size: um(18px);
+    }
+    
+    .data-add{
+      font-size: um(14px);
+      font-weight: 600;
+      line-height: 18px;
+      // color: $primary;
+
+      @include media-breakpoint-up(lg) {
+        font-size: um(18px);
+      }
+    }
+  }
+}

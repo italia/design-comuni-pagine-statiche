@@ -1,0 +1,64 @@
+.cmp-carousel {
+  &__title {
+    color: get-color(light, grey);
+    font-size: um(24px);
+    font-weight: 600;
+    line-height: um(30px);
+    @include media-breakpoint-up(md) {
+      font-size: um(32px);
+      line-height: um(40px);
+    }
+  }
+
+  .card.card-bg {
+    @include media-breakpoint-down(md) {
+      box-shadow: 2px 2px 1px get-color(light-black, gradient);
+    }
+  }
+
+  .card {
+    &::after {
+      margin: 0;
+    }
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid get-color(light-grey, grey);
+    .icon {
+      fill: get-color(light, grey);
+    }
+    &-title {
+      color: get-color(light, grey);
+      font-size: um(20px);
+      font-weight: 600;
+      line-height: um(30px);
+      @include media-breakpoint-up(md) {
+        font-size: um(24px);
+        line-height: um(37px);
+      }
+    }
+  }
+
+  .card-body {
+    .link-list-wrapper ul li a span {
+      font-size: um(16px);
+      font-weight: 400;
+      line-height: um(24px);
+    }
+    .single-card {
+      height: 300px;
+    }
+
+    .link-list-wrapper ul li a span.show-more {
+      margin-top: um(15px);
+      font-size: um(16px);
+      font-weight: 700;
+      line-height: um(24px);
+    }
+  }
+
+  .link-list li a svg {
+    margin-left: um(15px);
+  }
+}

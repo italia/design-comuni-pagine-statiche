@@ -1,0 +1,52 @@
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+@function get-color($kind, $sub: null) {
+  @if ($sub) {
+    @return map-get(map-get($global-theme, $sub), $kind);
+  }
+  @else {
+    @return map-get($global-theme, $kind);
+  }
+}
+
+$themes: (colors: $ca-colors);
+@function set-theme($theme) {
+  @return map-get($themes, $theme);
+}
+$global-theme: set-theme(colors);
+
+
+@function hsb($h-hsb, $s-hsb, $b-hsb) {
+  // Checking hsb values for 0 and turning them into 1 to avoid issues with SASS compiler
+  @if $h-hsb < 1 {
+    $h-hsb: 1;
+  }
+  @if $s-hsb < 1 {
+    $s-hsb: 1;
+  }
+  @if $b-hsb < 1 {
+    $b-hsb: 1;
+  }
+
+  @if $b-hsb < 1 {
+    @return hsl(0, 0%, 0%);
+  } @else {
+    $l-hsl: calc($b-hsb / 2) * (2 - calc($s-hsb / 100));
+    $s-hsl: calc(($b-hsb * $s-hsb) / if($l-hsl < 50, $l-hsl * 2, 200 - $l-hsl * 2));
+    @return hsl($h-hsb, $s-hsl * 1%, $l-hsl * 1%);
+  }
+}
+
+// Convert PX to REM global function
+@function um(
+  $pixels,
+  $context: 16px,
+  $unit-measure: rem
+) {
+  @return #{$pixels/$context}#{$unit-measure};
+}

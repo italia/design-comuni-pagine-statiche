@@ -1,0 +1,51 @@
+{
+   "icon-list": {
+     "scheda-servizio": [
+       {
+         "icon": "it-pa",
+         "link": "Ufficio via C. Benso Conte di Cavour [prenota]"
+       },
+       {
+        "icon": "it-pa",
+        "link": "Ufficio largo Michelangelo Buonarroti [prenota]"
+      }
+     ],
+    "finalizzazione-domanda": [
+      {
+        "icon": "it-settings",
+        "link": "Iscrizione servizio mensa",
+        "class": "shadow"
+      },
+      {
+        "icon": "it-settings",
+        "link": "Iscrizione trasporto scolastico",
+        "class": "shadow"
+      }
+    ],
+    "allegati-area-personale": [
+      {
+        "icon": "it-clip",
+        "link": "Ammessi",
+        "description": "Elenco dei bambini ammessi alle scuole dell’Infanzia  comunali per l'anno educativo 2022/23",
+        "classLink":"fw-normal",
+        "icon-class":"icon-primary"
+      },
+      {
+        "icon": "it-clip",
+        "link": "Lista d'attesa",
+        "description":"Lista d'attesa per le scuole dell’Infanzia comunali per l'anno educativo 2022/23",
+        "classLink":"fw-normal",
+        "icon-class":"icon-primary"
+      }
+    ],
+    "disservizio-servizi-correlati": [
+      {
+        "icon": "it-clip",
+        "link": "Richiesta appuntamento",
+        "classLink":"fw-normal",
+        "icon-class":"icon-primary"
+      }
+    ]
+   }
+
+}

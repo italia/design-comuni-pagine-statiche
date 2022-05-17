@@ -1,0 +1,40 @@
+.cmp-filter {
+  // margin-top: um(16px);
+
+  &:not(:last-child) {
+    @include media-breakpoint-up(lg) {
+      margin-top: 0;
+    }
+  }
+
+  &:not(:first-child) {
+    margin-top: um(32px);
+
+    @include media-breakpoint-up(lg) {
+      margin-top: um(52px);
+    }
+  }
+
+  &__title {
+    margin-bottom: um(8px);
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: um(16px);
+    }
+  }
+
+  .filter-section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .filter-wrapper button span {
+    font-size: um(14px);
+    font-weight: 600;
+    color: get-color(primary, main);
+
+    @include media-breakpoint-up(lg) {
+      font-size: um(16px);
+    }
+  }
+}

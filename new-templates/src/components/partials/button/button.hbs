@@ -1,0 +1,41 @@
+{{#if link}}
+<a href="#" class=" ps-0
+  {{#if primary}}btn-primary{{/if}}
+  {{#if secondary}}btn-secondary{{/if}}
+  {{#if outline-primary}}btn-outline-primary{{/if}}
+  {{#if outline-secondary}}btn-outline-secondary{{/if}}
+  {{#if disabled}}disabled{{/if}}
+  {{#if fullMobile}}full-mobile{{/if}}
+  {{class}}">
+  {{#if icon-url}}
+    <svg class="icon {{icon-class}}">
+      <use href="{{icon-url}}" xlink:href="{{icon-url}}"></use>
+    </svg>
+  {{/if}}
+  {{label}}
+</a>
+{{else}}
+<button type="button" data-bs-toggle="modal" data-bs-target="#{{modalId}}"
+class="btn
+  {{#if primary}}btn-primary{{/if}}
+  {{#if success}}btn-success{{/if}}
+  {{#if secondary}}btn-secondary{{/if}}
+  {{#if outline-primary}}btn-outline-primary{{/if}}
+  {{#if outline-secondary}}btn-outline-secondary{{/if}}
+  {{#if disabled}}disabled{{/if}}
+  {{#if fullMobile}}full-mobile{{/if}}
+  {{class}}
+">
+
+{{#if iconBtn}}
+  <span class="rounded-icon">
+    <svg class="icon {{#if iconWhite}}icon-white{{else}}icon-primary{{/if}} {{#if sm}}icon-sm{{/if}} {{#if xs}}icon-xs{{/if}} mb-1">
+      <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#{{iconBtn}}"></use>
+    </svg>
+  </span>
+{{/if}}
+
+
+ <span class="{{label-class}}">{{label}}</span>
+</button>
+{{/if}}

@@ -1,0 +1,70 @@
+{{#>base/base title="Modali"}}
+<main>
+  <div class="container">
+
+    <div class="steppers-content" aria-live="polite">
+      <div class="row mt-20 mb-20 d-flex flex-column">
+        <div class="col-12 col-lg-4 mt-20 mb-20">
+          {{!-- Modale Documenti --}}
+          {{>partials/button/button label="Open for Modal Documents" modalId="modal-documents" outline-primary=true}}
+          {{>cmp-modal/modal-documents}}
+        </div>
+
+        <div class="col-12 col-lg-4 mt-20 mb-20">
+          {{!-- Modale ISEE --}}
+          {{>partials/button/button label="Open for Modal ISEE" modalId="modal-isee" outline-primary=true}}
+          {{>cmp-modal/modal-isee}}
+        </div>
+
+        <div class="col-12 col-lg-4 mt-20 mb-20">
+          {{!-- Modale Dati generali salvataggio 1 con buttons --}}
+          {{>partials/button/button label="Open for Modal Dati generali 1" modalId="modal-save-1" outline-primary=true
+          }}
+          {{>cmp-modal/modal-save}}
+        </div>
+
+        <div class="col-12 col-lg-4 mt-20 mb-20">
+          {{!-- Modale Dati generali salvataggio 2 con iconsa success --}}
+          {{>partials/button/button label="Open for Modal Dati generali 2" modalId="modal-save-2" outline-primary=true
+          }}
+          {{>cmp-modal/modal-save}}
+        </div>
+
+        <div class="col-12 col-lg-4 mt-20 mb-20">
+          {{!-- Modale Riepilogo Termini e condizioni --}}
+          {{>partials/button/button label="Open for Modal Termini e Condizioni" modalId="modal-terms"
+          outline-primary=true }}
+          {{>cmp-modal/modal-terms-and-conditions}}
+        </div>
+
+        <div class="col-12 col-lg-4 mt-20 mb-20">
+          {{!-- Modale Area Personale --}}
+          {{>partials/button/button label="Open for Modal Area Personale message" modalId="modal-message"
+          outline-primary=true }}
+          {{>cmp-modal/modal-message }}
+        </div>
+
+        <div class="col-12 col-lg-4 mt-20 mb-20">
+          {{!-- Modale Area Personale --}}
+          {{>partials/button/button label="Open for Modal Disservizio" modalId="modal-disservizio"
+          outline-primary=true }}
+          {{>cmp-modal/modal-clickMap}}
+        </div>
+
+        <div class="col-12 col-lg-4 mt-20 mb-20">
+          {{!-- Modale ZTL Dati generali --}}
+          {{>partials/button/button label="Open for Modal Address" modalId="modal-address"
+          outline-primary=true }}
+          {{>cmp-modal/modal-address}}
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+</main>
+{{/base/base }}

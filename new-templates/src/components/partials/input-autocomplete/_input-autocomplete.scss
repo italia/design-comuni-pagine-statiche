@@ -1,0 +1,15 @@
+.cmp-input-autocomplete {
+  .autocomplete-list {
+    width: auto;
+    margin: 0 um(16px);
+    border: 1px solid get-color(dark, grey);
+
+    &.autocomplete-list-show {
+      margin-top: um(-10px);
+
+      a{
+        padding: um(7px);
+      }
+    }
+  }
+}

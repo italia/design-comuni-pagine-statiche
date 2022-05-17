@@ -1,0 +1,37 @@
+.cmp-nav-tab {
+  .nav-tabs {
+    border-bottom: unset;
+
+    .nav-link {
+      margin-bottom: unset;
+
+      .text-tab {
+        font-weight: 400;
+        font-size: um(14px);
+
+        @include media-breakpoint-up(md) {
+          font-weight: 700;
+          font-size: um(18px);
+        }
+      }
+
+      .icon {
+        width: um(13px);
+        height: um(13px);
+
+        @include media-breakpoint-up(md) {
+          width: um(20px);
+          height: um(20px);
+        }
+      }
+
+      &:not(.active) {
+        color: get-color(black, main);
+
+        .icon {
+          fill: get-color(black, main);
+        }
+      }
+    }
+  }
+}

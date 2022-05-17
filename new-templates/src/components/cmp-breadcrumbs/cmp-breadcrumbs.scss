@@ -1,0 +1,24 @@
+.cmp-breadcrumbs {
+  .breadcrumb-container .breadcrumb .breadcrumb-item a,
+  .separator {
+    color: get-color(light, grey);
+    font-weight: 400;
+  }
+
+  margin-top: um(24px);
+  margin-bottom: um(16px);
+  @include media-breakpoint-up(md) {
+    margin-top: um(40px);
+    margin-bottom: um(24px);
+  }
+  .breadcrumb > li {
+    font-size: um(14px);
+    font-weight: 400;
+    line-height: um(21px);
+
+    @include media-breakpoint-up(md) {
+      font-size: um(18px);
+      line-height: um(28px);
+    }
+  }
+}

@@ -1,0 +1,20 @@
+<div class="cmp-icon-list">
+  {{#if title}}
+  <h2 class="title-xxlarge mt-40 mb-10 mb-lg-3" id="{{id-title}}">{{title}}</h2>
+  {{/if}}
+<div class="link-list-wrapper">
+  <ul class="link-list">
+    {{#each icon-list as |item|}}
+    <li class="{{class}} mb-3">
+      <a class="list-item icon-left t-primary" href="#">
+        <span class="list-item-title-icon-wrapper">
+          <svg class="icon icon-sm align-self-start {{item.icon-class}} icon-color"><use href="./assets/bootstrap-italia/dist/svg/sprite.svg#{{item.icon}}"></use></svg>
+          <span class="list-item-title title-small-semi-bold {{item.classLink}}">{{item.link}}</span>
+        </span>
+      </a>
+      <p class="ml-30">{{item.description}}</p>
+    </li>
+    {{/each}}
+  </ul>
+</div>
+</div>

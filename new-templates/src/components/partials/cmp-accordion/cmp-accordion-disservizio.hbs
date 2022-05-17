@@ -1,0 +1,19 @@
+<div class="accordion-item">
+  <div class="accordion-header" id="heading2">
+    <button class="collapsed accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#{{collapse-id}}"
+      aria-expanded="false" aria-controls="{{collapse-id}}">
+      <span class="d-flex align-items-center">
+      Mostra tutto
+        <svg class="icon icon-primary icon-md">
+          <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-expand"></use>
+        </svg>
+      </span>
+    </button>
+
+  </div>
+  <div id="{{collapse-id}}" class="accordion-collapse collapse" role="region">
+    <div class="accordion-body p-0">
+      {{>cmp-info-summary/cmp-info-summary info=true info-list=disservizio.info disservizio-page=true description-image=true class="border-0" summary-item-class="border-0"}}
+    </div>
+  </div>
+</div>

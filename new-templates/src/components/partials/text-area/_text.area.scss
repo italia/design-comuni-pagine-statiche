@@ -1,0 +1,19 @@
+.cmp-text-area{
+  padding: um(16px);
+
+  .form-group {
+    margin-bottom: 0;
+
+    .text-area {
+      height: um(40px);
+      border: none;
+      border-bottom: 1px solid get-color(dark, grey);
+    }
+  }
+
+  label {
+    color: get-color(dark, grey);
+  }
+
+
+}

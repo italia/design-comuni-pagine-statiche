@@ -1,0 +1,14 @@
+.save-request {
+  box-shadow: 0 um(15px) um(10px) um(-18px) #ddd;
+    
+    .card {
+      &:after {
+        content: unset;
+      }
+    }
+
+    .btn{
+      margin-bottom: um(48px);
+      padding: um(16px) um(24px);
+    }
+  }

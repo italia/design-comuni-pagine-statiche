@@ -1,0 +1,32 @@
+<div class="cmp-info-progress d-flex">
+
+  {{#each step-list as |step| }}
+  <!-- Desktop -->
+  <div
+    class="info-progress-wrapper d-none d-lg-flex mb-40 w-100 px-3  border border-light border-top-0 flex-column justify-content-end mt-3 {{#if step.completed}} completed {{/if}} {{#if step.active}} step-active{{/if}}">
+    <div class="info-progress-body d-flex justify-content-between align-self-end align-items-end  w-100 py-3">
+      <span class="d-block h-100 title-medium text-uppercase">{{step.title}}</span>
+
+      {{#if step.completed}}
+      <svg class="d-block icon icon-primary icon-sm">
+        <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-check"></use>
+      </svg>
+      {{/if}}
+
+    </div>
+  </div>
+  {{/each}}
+
+  <!-- Mobile -->
+  <div class="iscrizioni-header d-lg-none w-100">
+    <h4 class="step-title d-flex align-items-center justify-content-between drop-shadow">
+      <span class="d-block d-lg-inline">
+        {{step-title}}
+      </span>
+      <span class="step">{{step-num}}/{{step-tot}}</span>
+    </h4>
+    {{#if subtitle}}
+    <p class="title-xsmall mb-40">{{subtitle}}</p>
+    {{/if}}
+  </div>
+</div>

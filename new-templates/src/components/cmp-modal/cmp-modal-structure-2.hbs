@@ -1,0 +1,36 @@
+<div class="cmp-modal">
+  <div class="modal fade" tabindex="-1" role="dialog" id="{{id}}" aria-labelledby="{{id}}-modal-title">
+    <div class="modal-dialog modal-dialog-centered {{class}}" role="document">
+      <div class="modal-content modal-dimensions">
+        <div class="cmp-modal__header modal-header pb-0">
+          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Chiudi finestra modale">
+            {{!-- <svg class="icon">
+              <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-close"></use>
+            </svg> --}}
+          </button>
+          {{#if date}}
+            <date class="date-xsmall w-100">{{date}}</date>
+          {{/if}}
+          <h4 class="cmp-modal__header-title title-mini" id="{{id}}-modal-title">{{modalTitle}}</h4>
+          {{#if subtitle}}
+            <h5 class="subtitle-small_semi-bold w-100">{{subtitle}}</h5>
+          {{/if}}
+          <p class="cmp-modal__header-info">{{modalInfo}}</p>
+          {{#if link}}
+          <a href="#" class="cmp-modal__header-link text-success">{{link}}</a>
+          {{/if}}
+        </div>
+        <div class="modal-body">
+          {{> @partial-block}}
+        </div>
+        {{#if buttons}}
+        <div class="modal-footer pb-70 {{#if no-body}}pt-0{{/if}}">
+          <button class="btn btn-primary  w-100 mx-0 fw-bold mb-4" type="submit" data-bs-toggle="modal" data-bs-target="#{{modalId}}" form="{{id-form}}">{{labelBtnSave}}</button>
+          <button class="btn btn-outline-primary w-100 mx-0" data-bs-dismiss="modal fw-bold"
+            type="button">{{labelBtnCancel}}</button>
+        </div>
+        {{/if}}
+      </div>
+    </div>
+  </div>
+</div>

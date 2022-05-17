@@ -1,0 +1,45 @@
+.cmp-rating {
+  .shadow-rating {
+    box-shadow: inset 0 -1.3rem 0.125rem -0.9rem rgb(0 0 0 / 5%);
+  }
+
+  .form-group {
+    margin-bottom: 0;
+    min-height: um(100px);
+  }
+
+  .card {
+    padding: um(16px);
+
+    @include media-breakpoint-up(lg) {
+      padding: um(32px);
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .card-header {
+    padding: 0;
+    margin-bottom: um(20px);
+  }
+
+  .card-body {
+    padding: 0;
+  }
+
+  // .rating {
+  //   & >label svg {
+  //     fill: get-color(primary, main);
+  //   }
+  // }
+}
+
+.cmp-rating-section {
+  padding: um(24px) um(16px);
+
+  @include media-breakpoint-up(lg) {
+    padding: um(80px) 0;
+  }
+}

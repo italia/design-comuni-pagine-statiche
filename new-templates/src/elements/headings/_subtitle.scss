@@ -1,0 +1,37 @@
+.subtitle {
+  &-large {
+    font-size: um(28px);
+    font-weight: 700;
+    line-height: um(32px);
+
+    @include media-breakpoint-up(md) {
+      font-size: um(32px);
+      line-height: um(40px);
+    }
+  }
+
+  &-medium {
+    font-size: um(24px);
+    font-weight: 600;
+    line-height: um(28px);
+
+    @include media-breakpoint-up(md) {
+      font-size: um(28px);
+      line-height: um(40px);
+    }
+  }
+
+  &-small {
+    font-size: um(16px);
+    line-height: 1.5;
+    font-weight: 400;
+
+    &_semi-bold {
+      font-weight: 600;
+    }
+
+    @include media-breakpoint-up(md) {
+      font-size: um(18px);
+    }
+  }
+}

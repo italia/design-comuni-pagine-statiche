@@ -1,0 +1,20 @@
+.btn1 {
+  width: 100%;
+  height: um(40px);
+  border-radius: um(4px);
+  font-weight: 600;
+  font-size: um(16px);
+  line-height: um(24px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: um(276px);
+
+  &__full-width{
+
+  @include media-breakpoint-up(sm) {
+    width: 100%;
+  }
+
+  }
+}

@@ -1,0 +1,107 @@
+{{#>base/base title="Preferenze di Servizio"}}
+<main>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi" link3="Segnalazione disservizio"}}
+        {{> cmp-heading/cmp-heading title="Segnalazione disservizio"}}
+      </div>
+      <div class="col-12">
+        {{> cmp-info-progress/cmp-info-progress
+        step-list=step-list.disservizio-step-2
+        step-num="2"
+        step-title="Dati di segnalazione"
+        subtitle="I campi contraddistinti dal simbolo asterisco (*) sono obbligatori"
+        disservizio-step=true
+        }}
+      </div>
+    </div>
+
+    <div class="row mt-lg-50">
+      <div class="col-12 col-lg-3 d-lg-block mb-4 d-none ">
+          {{>cmp-navscroll/cmp-navscroll
+          accordion-title="INFORMAZIONI RICHIESTE"
+          link-list=link-list.links-preferenze-servizio-page}}
+      </div>
+      <div class="col-12 col-lg-8 offset-lg-1">
+        <div class="steppers-content" aria-live="polite">
+          <div>
+
+            {{#>cmp-card/cmp-card-content-box
+            class="p-big"
+            id-title="place"
+            bg-grey=true
+            h2-class="mb-0"
+            card-title="Luogo"
+            subtitle="Indica il luogo del disservizio"
+            }}
+           {{> partials/input-autocomplete/input-autocomplete placeholder="Cerca un luogo*" link=true}}
+            {{/cmp-card/cmp-card-content-box}}
+          </div>
+
+          <div class="mt-4">
+            {{#>cmp-card/cmp-card-content-box
+            class="p-big"
+            id-title="religion-choice"
+            bg-grey=true
+            h2-class="mb-1"
+            required-icon=true
+            card-title="Disservizio"
+            }}
+            {{>partials/select/select placeholder="Tipo di disservizio*" class="p-md-3"}}
+            {{>partials/text-area/text-area placeholder="Titolo*" class="m-0 py-2 px-3 bg-white" num="1"}}
+            {{>partials/text-area/text-area placeholder="Dettagli*" class="m-0 p-3 bg-white" num="2" label=true}}
+            <div class="btn-wrapper px-3 pt-2 pb-3 bg-white">.
+              <label class="title-xsmall-bold u-grey-dark pb-2">Immagini</label>
+              <div class="upload-wrapper d-flex justify-content-between">
+              <img src="https://via.placeholder.com/60x60/ebebeb/808080/?text=Immagine" alt="..." class="image-fluid" />
+              <span class="t-primary fw-bold align-self-center">6yhakandsahm413d8...</span>
+              <a href="#" class="align-self-center">
+              <svg class="icon icon-primary icon-sm mb-1 ">
+                <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-close"></use>
+              </svg>
+              </a>
+              </div>
+                <hr>
+              {{> partials/button/button label="Carica file" primary=true iconBtn="it-upload" iconWhite=true sm=true class="w-100 fw-bold"}}
+              <p class="title-xsmall u-grey-dark pt-10 mb-0">Seleziona una o più immagini da allegare alla segnalzione</p>
+            </div>
+            {{/cmp-card/cmp-card-content-box}}
+          </div>
+
+          <div class="mt-4">
+            {{#>cmp-card/cmp-card-content-box
+            h2-class="mb-1"
+            bg-grey=true
+            card-title="Autore della segnalazione"
+            id-title="applicant-info"
+            subtitle="Informazione su di te"}}
+
+            {{> cmp-info-button-card/cmp-info-button-card big-title="Giulia Bianchi"
+            label-2="Codice Fiscale <br> <span>GLABNC72H25H501Y</span>"
+            data-add="Aggiungi dati"
+            show-more-anagrafica="true"
+            collapse-id="collapse-parents"
+            modalId="modal-documents"}}
+            {{/cmp-card/cmp-card-content-box}}
+          </div>
+
+          {{> cmp-nav-steps/cmp-nav-steps save="true"}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="bg-grey-card shadow-contacts">
+    <div class="container">
+      <div class="row d-flex justify-content-center pt-50 pb-50">
+        <div class="col-12 col-lg-5">
+          {{>cmp-contacts/cmp-contacts}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+{{/base/base }}

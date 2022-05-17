@@ -1,0 +1,130 @@
+.cmp-timeline {
+  margin-top: um(40px);
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 0;
+  }
+}
+.calendar-vertical {
+  color: hsl(160deg, 100%, 24%);
+  &::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+}
+
+.calendar-vertical .calendar-date {
+  display: flex;
+}
+.calendar-vertical .calendar-date .calendar-date-day {
+  width: um(65px);
+  flex-shrink: 0;
+  position: relative;
+  z-index: 0;
+  padding: 0;
+}
+
+@include media-breakpoint-down(md) {
+  .calendar-vertical .calendar-date .calendar-date-day {
+    width: um(60px);
+  }
+}
+
+.calendar-vertical .calendar-date .calendar-date-day p {
+  font-family: "Roboto Mono", monospace;
+  font-size: 2.5rem;
+  line-height: 1;
+  margin: 0 0 5px 0;
+  /* text-align: center; */
+  padding-right: 34px;
+  display: block;
+}
+
+@include media-breakpoint-down(md) {
+  .calendar-vertical .calendar-date .calendar-date-day span {
+    font-size: 2rem;
+    padding-right: 24px;
+    font-weight: 100!important;
+  }
+}
+
+.calendar-vertical .calendar-date .calendar-date-day small {
+  font-size: um(14px);
+  line-height: 1;
+  font-weight: 400;
+  padding-right: 34px;
+  display: block;
+  margin-left: um(3px);
+}
+
+@include media-breakpoint-up(lg) {
+  .calendar-vertical .calendar-date .calendar-date-day small {
+    font-size: um(16px);
+    padding-right: 24px;
+  }
+}
+.calendar-vertical .calendar-date .calendar-date-day:before {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 5px;
+  width: 1px;
+  height: 100%;
+  background-color: hsl(160deg, 100%, 24%);
+  content: "";
+}
+.calendar-vertical .calendar-date .calendar-date-day:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  z-index: 1;
+  top: um(30px);
+  right: 0.5px;
+  background-color: hsl(160deg, 100%, 24%);
+  border-radius: um(5px);
+}
+
+@include media-breakpoint-down(md) {
+  .calendar-vertical .calendar-date .calendar-date-day:after {
+    top: um(28px);
+  }
+}
+
+.calendar-vertical .calendar-date .calendar-date-description {
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.17);
+  width: 100%;
+  margin: 0 0 um(24px) um(13px);
+  overflow: hidden;
+}
+.calendar-vertical .calendar-date .calendar-date-description .calendar-date-description-content {
+  padding: um(20px) um(16px) um(20px) um(24px);
+  position: relative;
+  z-index: 0;
+}
+
+.calendar-vertical .calendar-date .calendar-date-description .calendar-date-description-content span {
+  margin: 0;
+}
+
+.calendar-vertical .calendar-date .calendar-date-description .calendar-date-description-content:before {
+  content: "";
+  width: um(8px);
+  height: 120%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #F0F8F5;
+}
+
+.calendar-date:last-child {
+  .calendar-date-description{
+    margin-bottom: 0;
+  }
+}
+
+
+
+

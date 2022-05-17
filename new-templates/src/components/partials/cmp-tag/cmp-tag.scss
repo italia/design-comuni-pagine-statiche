@@ -1,0 +1,12 @@
+.cmp-tag{
+ &__tag{
+    font-size: um(14px);
+    font-weight: 700;
+    color: get-color(success, main);
+    padding: 0 um(12px);
+    border: 1px solid get-color(success, main);
+    text-decoration: none;
+    border-radius: 50px;
+  }
+
+}

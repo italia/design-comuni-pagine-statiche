@@ -1,0 +1,25 @@
+.cmp-icon-card {
+
+  .card {
+    &.notice-border {
+      border-left: 1px solid get-color(notice, main);
+    }
+
+    &:after {
+      content: unset;
+    }
+  }
+
+  .drop-shadow {
+    box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.1);
+  }
+
+  .icon-notice {
+    fill: get-color(notice, main);
+  }
+
+  .text-notice {
+    color: get-color(notice, main);
+  }
+
+}

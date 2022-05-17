@@ -1,0 +1,122 @@
+.search-modal {
+  .modal-dialog {
+    max-width: 100%;
+    margin: 0;
+    height: 100vh;
+
+    .modal-content {
+      height: 100%;
+  
+      .modal-body {
+        @include media-breakpoint-down(sm) {
+          padding: 0;
+        }
+
+        .container {
+          @include media-breakpoint-down(sm) {
+            max-width: 100%;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .modal-title {
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.06);
+    padding: um(18px) um(24px);
+    font-size: um(18px);
+    font-weight: 600;
+    line-height: 1.5;
+    color: get-color(light, grey);
+    margin-bottom: um(70px);
+
+    @include media-breakpoint-up(md) {
+      box-shadow: none;
+      justify-content: space-between;
+      font-size: um(48px);
+      line-height: 1.1;
+
+    }
+
+    .search-link {
+      margin-right: um(25px);
+
+      svg {
+        fill: get-color(primary, main);
+      }
+    }
+  }
+
+  .form-group {
+    display: flex;
+    align-items: center;
+    gap: um(30px);
+    padding-left: um(24px);
+    padding-right: um(24px);
+    
+    .input-group-prepend {
+      svg {
+        fill: get-color(primary, main);
+
+        @include media-breakpoint-down(sm) {
+          width: um(16px);
+          height: um(16px);
+        }
+      }
+    }
+
+    label {
+      opacity: 0;
+      visibility: hidden;
+    }
+    
+
+    input {
+      font-size: um(16px);
+
+      @include media-breakpoint-up(md) {
+        height: um(60px);
+        font-size: um(40px);
+      }
+
+      &::placeholder {
+        font-weight: normal;
+        color: #455B71;
+        opacity: 0.4;
+      }
+    }
+  }
+
+  .searches-list-wrapper {
+    padding: um(18px) um(24px);
+    .other-link-title {
+      font-size: um(14px);
+      font-weight: 600;
+      line-height: 1.5;
+      color: get-color(black, main);
+      margin-bottom: um(16px);
+    }
+  }
+
+  .searches-list {
+    li {
+      & + li {
+        margin-top: um(16px);
+      }
+
+      a {
+        color: get-color(primary, main);
+        font-size: um(18px);
+        line-height: 1.5;
+        text-decoration: underline;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
