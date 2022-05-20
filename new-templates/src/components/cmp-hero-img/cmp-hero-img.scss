@@ -1,0 +1,15 @@
+.cmp-hero-img-small {
+
+  &__description {
+    color: get-color(light, grey);
+    display: flex;
+    justify-content: center;
+    margin-top: um(22px);
+  }
+}
+  .it-hero-wrapper.it-hero-small-size {
+    min-height: um(340px);
+    @include media-breakpoint-up(md) {
+      min-height: um(450px);
+    }
+  }

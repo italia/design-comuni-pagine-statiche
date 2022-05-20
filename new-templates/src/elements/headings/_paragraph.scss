@@ -31,7 +31,7 @@
 }
 
 .titillium {
-  font-family: "Titillium Web";
+  font-family: "Titillium Web" !important;
 }
 
 .text-info {
@@ -66,5 +66,11 @@
   &-sm {
     font-size: um(16px);
     line-height: um(24px);
+  }
+
+  &-xs-bold {
+    font-size: um(12px);
+    line-height: um(18px);
+    font-weight: 700;
   }
 }

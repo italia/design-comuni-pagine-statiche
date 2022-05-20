@@ -1,0 +1,707 @@
+{
+  "servizi-pagamento": {
+    "trovare-informazioni-servizio": {
+      "navscroll": [
+        {
+          "item": "A chi è rivolto",
+          "anchor": "who-needs"
+        },
+        {
+          "item": "Descrizione",
+          "anchor": "description"
+        },
+        {
+          "item": "Come fare",
+          "anchor": "how-to"
+        },
+        {
+          "item": "Cosa serve",
+          "anchor": "needed"
+        },
+        {
+          "item": "Tempi e scadenze",
+          "anchor": "deadlines"
+        },
+        {
+          "item": "Costi",
+          "anchor": "costs"
+        },
+        {
+          "item": "Accedi al servizio",
+          "anchor": "service-access"
+        },
+        {
+          "item": "Condizioni di servizio",
+          "anchor": "conditions"
+        },
+        {
+          "item": "Contatti",
+          "anchor": "contacts"
+        }
+      ],
+      "list-1": [
+        {
+          "text": "Alunni iscritti alla Scuola dell'infanzia"
+        },
+        {
+          "text": "Alunni iscritti alla Scuola primaria"
+        }
+      ],
+      "list-2": [
+        {
+          "text": "SPID (Sistema Pubblico per la gestione dell'Identità Digitale), Carta identità elettronica (CIE) o Carta Nazionale dei Servizi (CNS);"
+        },
+        {
+          "text": "attestazione ISEE in corso di validità"
+        },
+        {
+          "text": "certificazioni per diete speciali"
+        },
+        {
+          "text": "certificazione per disabilità"
+        }
+      ],
+      "timeline": [
+        {
+          "year": "2022",
+          "day": "01",
+          "month": "FEB",
+          "event": "Apertura domande"
+        },
+        {
+          "year": "2022",
+          "day": "02",
+          "month": "MAR",
+          "event": "Termine presentazione domande"
+        },
+        {
+          "year": "2022",
+          "day": "28",
+          "month": "APR",
+          "event": "Pagamento servizio mensa"
+        }
+      ]
+    },
+    "acconsentire-trattamento-dati-inseriti": {
+      "step-1":[
+        {
+          "title": "Informativa sulla privacy",
+          "active": true,
+          "completed": false
+        },
+
+        {
+          "title": "Dati Generali",
+          "active": false,
+          "completed": false
+        },
+
+        {
+          "title": "Preferenze di servizio",
+          "active": false,
+          "completed": false
+        },
+        {
+          "title": "Riepilogo",
+          "active": false,
+          "completed": false
+        }
+      ],
+      "step-2": [
+        {
+          "title": "Informativa sulla privacy",
+          "active": false,
+          "completed": true
+        },
+
+        {
+          "title": "Dati Generali",
+          "active": true,
+          "completed": false
+        },
+
+        {
+          "title": "Preferenze di servizio",
+          "active": false,
+          "completed": false
+        },
+        {
+          "title": "Riepilogo",
+          "active": false,
+          "completed": false
+        }
+      ],
+      "step-3":[
+        {
+          "title": "Informativa sulla privacy",
+          "active": false,
+          "completed": true
+        },
+
+        {
+          "title": "Dati Generali",
+          "active": false,
+          "completed": true
+        },
+
+        {
+          "title": "Preferenze di servizio",
+          "active": true,
+          "completed": false
+        },
+        {
+          "title": "Riepilogo",
+          "active": false,
+          "completed": false
+        }
+      ],
+      "step-4": [
+        {
+          "title": "Informativa sulla privacy",
+          "active": false,
+          "completed": true
+        },
+
+        {
+          "title": "Dati Generali",
+          "active": false,
+          "completed": true
+        },
+
+        {
+          "title": "Preferenze di servizio",
+          "active": false,
+          "completed": true
+        },
+        {
+          "title": "Riepilogo",
+          "active": true,
+          "completed": false
+        }
+      ]
+    },
+    "controllare-dati-personali": {
+      "navscroll":[
+        {
+          "item": "Richiedente",
+          "anchor": "applicant-info"
+        },
+        {
+          "item": "Beneficiario",
+          "anchor": "beneficiary-info"
+        },
+        {
+          "item": "Altro Genitore",
+          "anchor": "other-parent-info"
+        },
+        {
+          "item": "ISEE",
+          "anchor": "isee-info"
+        }
+      ],
+      "anagrafica":[
+        {
+          "name": "Nome",
+          "description": "Francesco"
+        },
+        {
+          "name": "Cognome",
+          "description": "Rossi"
+        },
+        {
+          "name": "Codice fiscale",
+          "description": "FRARSS72H25H501Y"
+        },
+        {
+          "name": "Data di Nascita",
+          "description": "26/03/2018"
+        },
+        {
+          "name": "Luogo di Nascita",
+          "description": "Roma"
+        },
+        {
+          "name": "Sesso",
+          "description": "Maschio"
+        },
+        {
+          "name": "Nazionalità",
+          "description": "Italiana"
+        }
+      ],
+      "indirizzo":[
+        {
+          "name": "Residenza",
+          "description": "Via Roma 16, 00100 Roma, It"
+        },
+        {
+          "name": "Domicilio ",
+          "description": "Via Roma 16, 00100 Roma, It"
+        }
+      ],
+      "documenti":[
+        {
+          "name": "Certificato disabilità",
+          "description": "",
+          "warning": true,
+          "warning-message": "Documento mancante"
+        },
+        {
+          "name": "Certificato dieta patologica",
+          "description": "",
+          "warning": false,
+          "success": true,
+          "warning-message": "Documento mancante",
+          "success-message": "Documento inserito con successo"
+        }
+      ]
+    },
+    "inserire-dati-specifici": {
+      "navscroll":[
+        {
+          "item": "Richiedente",
+          "anchor": "applicant-info"
+        },
+        {
+          "item": "Beneficiario",
+          "anchor": "beneficiary-info"
+        },
+        {
+          "item": "ISEE",
+          "anchor": "isee-info"
+        }
+      ]
+    },
+    "conferma-riepilogo": {
+      "list": [
+        {
+          "name": "Scuola",
+          "description": "Istituto Narcisi"
+        },
+        {
+          "name": "Tariffa esonero",
+          "description": "Nessuna"
+        },
+        {
+          "name": "Tariffa riduzione",
+          "description": "Nessuna"
+        },
+        {
+          "name": "Frequenza",
+          "description": "5 giorni"
+        },
+        {
+          "name": "Dieta diversificata",
+          "description": "Dieta per patologia"
+        }
+      ]
+    },
+    "finalizzare-procedura": {
+      "navscroll":[
+        {
+          "item": "Prossimi passi",
+          "anchor": "next-steps"
+        },
+        {
+          "item": "Servizi correlati",
+          "anchor": "related services"
+        }
+      ],
+      "timeline": [
+        {
+          "year": "2022",
+          "day": "23",
+          "month": "MAR",
+          "event": "Termine presentazione domande"
+        },
+        {
+          "year": "2022",
+          "day": "10",
+          "month": "APR",
+          "event": "Pagamento servizio mensa"
+        }
+      ],
+      "servizi-correlati": [
+        {
+          "icon": "it-settings",
+          "link": "Iscrizione servizio mensa",
+          "class": "shadow"
+        },
+        {
+          "icon": "it-settings",
+          "link": "Iscrizione trasporto scolastico",
+          "class": "shadow"
+        }
+      ],
+      "servizi-correlati-disservizio": [
+        {
+          "icon": "it-clip",
+          "link": "Richiesta appuntamento",
+          "class": "shadow"
+        }
+      ]
+    },
+    "area-personale": {
+      "tab-area-personale-1": [
+        {
+          "title": "Scrivania",
+          "icon": true,
+          "icon-name": "it-pa",
+          "active": "active",
+          "id-link": "data-ex-tab1",
+          "controls": "tab1"
+        },
+        {
+          "title": "Messaggi",
+          "icon": true,
+          "icon-name": "it-mail",
+          "active": "",
+          "id-link": "data-ex-tab2",
+          "controls": "tab2"
+        },
+        {
+          "title": "Attività",
+          "icon": true,
+          "icon-name": "it-files",
+          "active": "",
+          "id-link": "data-ex-tab3",
+          "controls": "tab3"
+        },
+        {
+          "title": "Servizi",
+          "icon": true,
+          "icon-name": "it-settings",
+          "active": "",
+          "id-link": "data-ex-tab4",
+          "controls": "tab4"
+        }
+      ],
+      "area-personale-page-3": [
+        {
+          "item": "Pratiche",
+          "anchor": "practices"
+        },
+        {
+          "item": "Pagamenti",
+          "anchor": "payments"
+        }
+      ],
+      
+      "accordion": [
+        {
+          "num": "1",
+          "title": "Iscrizione scuola d’infanzia",
+          "date": "15/02/2022",
+          "icon": "it-folder",
+          "icon-label": "Da completare",
+          "color": "u-main-alert",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "class": "shadow"
+            },
+            {
+              "icon": "it-clip",
+              "link": "Graduatoria",
+              "class": "shadow"
+            }
+          ]
+        },
+        {
+          "num": "2",
+          "title": "Richiesta assegno maternità",
+          "date": "24/06/2021",
+          "icon": "it-folder",
+          "icon-label": "In sospeso",
+          "color": "u-main-error",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "class": "shadow"
+            },
+            {
+              "icon": "it-clip",
+              "link": "Graduatoria",
+              "class": "shadow"
+            }
+          ]
+        },
+        {
+          "num": "3",
+          "title": "Iscrizione corso di formazione",
+          "date": "24/06/2021",
+          "icon": "it-folder",
+          "icon-label": "Conclusa",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "class": "shadow"
+            },
+            {
+              "icon": "it-clip",
+              "link": "Graduatoria",
+              "class": "shadow"
+            }
+          ]
+        },
+        {
+          "num": "4",
+          "title": "Richiesta permesso ZTL",
+          "date": "10/05/2021",
+          "icon": "it-folder",
+          "icon-label": "Conclusa",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "class": "shadow"
+            },
+            {
+              "icon": "it-clip",
+              "link": "Graduatoria",
+              "class": "shadow"
+            }
+          ]
+        },
+        {
+          "num": "5",
+          "title": "Richiesta parcheggio residenti",
+          "date": "06/03/2021",
+          "icon": "it-folder",
+          "icon-label": "Conclusa",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "class": "shadow"
+            },
+            {
+              "icon": "it-clip",
+              "link": "Graduatoria",
+              "class": "shadow"
+            }
+          ]
+        }
+      ],
+      "pagamenti": [
+        {
+          "num": "6",
+          "title": "Pagamento servizio mensa",
+          "date": "07/01/2022",
+          "icon": "it-check",
+          "icon-label": "Pagato",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "class": "shadow"
+            },
+            {
+              "icon": "it-clip",
+              "link": "Graduatoria",
+              "class": "shadow"
+            }
+          ]
+        },
+        {
+          "num": "7",
+          "title": "Pagamento contravvenzioni",
+          "date": "01/10/2021",
+          "icon": "it-check",
+          "icon-label": "Pagato",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "class": "shadow"
+            },
+            {
+              "icon": "it-clip",
+              "link": "Graduatoria",
+              "class": "shadow"
+            }
+          ]
+        },
+        {
+          "num": "8",
+          "title": "Pagamento contravvenzioni",
+          "date": "24/06/2021",
+          "icon": "it-check",
+          "icon-label": "Pagato",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "class": "shadow"
+            },
+            {
+              "icon": "it-clip",
+              "link": "Graduatoria",
+              "class": "shadow"
+            }
+          ]
+        },
+        {
+          "num": "9",
+          "title": "Pagamento contravvenzioni",
+          "date": "10/05/2021",
+          "icon": "it-check",
+          "icon-label": "Pagato",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "class": "shadow"
+            },
+            {
+              "icon": "it-clip",
+              "link": "Graduatoria",
+              "class": "shadow"
+            }
+          ]
+        },
+        {
+          "num": "10",
+          "title": "Pagamento contravvenzioni",
+          "date": "06/03/2021",
+          "icon": "it-check",
+          "icon-label": "Pagato",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "class": "shadow"
+            },
+            {
+              "icon": "it-clip",
+              "link": "Graduatoria",
+              "class": "shadow"
+            }
+          ]
+        }
+      ],
+      "pratiche": [
+        {
+          "num": "1",
+          "title": "Iscrizione scuola d’infanzia",
+          "date": "15/02/2022",
+          "icon": "it-folder",
+          "icon-label": "Da completare",
+          "color":"u-main-alert",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "class": "shadow"
+            },
+            {
+              "icon": "it-clip",
+              "link": "Graduatoria",
+              "class": "shadow"
+            }
+          ]
+        },
+        {
+          "num": "2",
+          "title": "Richiesta assegno maternità",
+          "date": "24/06/2021",
+          "icon": "it-folder",
+          "icon-label": "In sospeso",
+          "color":"u-main-error",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "class": "shadow"
+            },
+            {
+              "icon": "it-clip",
+              "link": "Graduatoria",
+              "class": "shadow"
+            }
+          ]
+        },
+        {
+          "num": "3",
+          "title": "Iscrizione corso di formazione",
+          "date": "24/06/2021",
+          "icon": "it-folder",
+          "icon-label": "Conclusa",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "class": "shadow"
+            },
+            {
+              "icon": "it-clip",
+              "link": "Graduatoria",
+              "class": "shadow"
+            }
+          ]
+        },
+        {
+          "num": "4",
+          "title": "Richiesta permesso ZTL",
+          "date": "10/05/2021",
+          "icon": "it-folder",
+          "icon-label": "Conclusa",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "class": "shadow"
+            },
+            {
+              "icon": "it-clip",
+              "link": "Graduatoria",
+              "class": "shadow"
+            }
+          ]
+        },
+        {
+          "num": "5",
+          "title": "Richiesta parcheggio residenti",
+          "date": "06/03/2021",
+          "icon": "it-folder",
+          "icon-label": "Conclusa",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "class": "shadow"
+            },
+            {
+              "icon": "it-clip",
+              "link": "Graduatoria",
+              "class": "shadow"
+            }
+          ]
+        }
+      ]
+    },
+    "effettuare-pagamento":{
+      "info-list":[
+        {
+          "description":"Pratica:",
+          "summary": "AN4059281"
+        },
+        {
+          "description":"Data di pagamento:",
+          "summary": "07/04/2022"
+        },
+        {
+          "description":"Importo totale dovuto:",
+          "summary": "23,00 €"
+        },
+        {
+          "description":"Descrizione pagamento:",
+          "summary": "Pagamento del servizio per la mensa scolastica"
+        }
+      ]
+    }
+  }
+}

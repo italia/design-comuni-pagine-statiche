@@ -1,11 +1,11 @@
 .title {
   &-xxxlarge {
-    font-size: um(40px);
+    font-size: um(40px) !important;
     font-weight: 700;
     line-height: um(48px);
 
     @include media-breakpoint-up(lg) {
-      font-size: um(48px);
+      font-size: um(48px) !important;
     }
   }
 
@@ -22,7 +22,7 @@
   &-xxlarge-regular {
     font-size: um(32px);
     font-weight: 400;
-    line-height: 40px;
+    line-height: um(40px);
 
     @include media-breakpoint-up(md) {
       font-size: um(40px);
@@ -32,9 +32,14 @@
   &-xlarge {
     font-size: um(28px);
     font-weight: 700;
-    line-height: 32px;
+    line-height: um(32px);
     letter-spacing: 0px;
     text-align: left;
+
+    @include media-breakpoint-up(md) {
+      font-size: um(32px);
+      line-height: um(40px);
+    }
   }
 
   &-large {
@@ -67,10 +72,21 @@
   &-medium-2-bold {
     font-size: um(20px);
     font-weight: 700;
-    line-height: 24px;
+    line-height: um(24px);
 
     @include media-breakpoint-up(md) {
       font-size: um(24px);
+    }
+  }
+
+  &-medium-2-semi-bold {
+    font-size: um(20px);
+    font-weight: 600;
+    line-height: um(24px);
+
+    @include media-breakpoint-up(md) {
+      font-size: um(24px);
+      line-height: um(28px);
     }
   }
 
@@ -101,12 +117,10 @@
   &-small-semi-bold {
     font-size: um(16px);
     font-weight: 600;
-    line-height: um(24px);
+    line-height: um(24px) !important;
 
     @include media-breakpoint-up(md) {
-
       font-size: um(18px);
-
     }
 
     @include media-breakpoint-up(md) {

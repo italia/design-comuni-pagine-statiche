@@ -22,5 +22,13 @@ body {
   color: get-color(primary,main);
 }
 
+.t-alert{
+  color: get-color(alert,main);
+}
 
+.bg-grey-dsk {
+	@include media-breakpoint-up(md) {
+    background-color: #EBEEF0;
+  }
+}
 

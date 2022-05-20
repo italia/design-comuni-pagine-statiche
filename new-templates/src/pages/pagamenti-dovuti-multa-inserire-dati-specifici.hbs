@@ -1,0 +1,68 @@
+{{#>base/base title="Archetipo: Pagamenti dovuti"}}
+<main>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi" link3="Pagamenti"}}
+        {{> cmp-heading/cmp-heading
+        title="Pagamento multa"
+        subTitle="Inserisci le informazioni necessarie per il pagamento della multa. Potrai ricontrollare tutti i dati nel riepilogo, prima di effettuare il pagamento."
+        }}
+      </div>
+      <div class="col-12">
+        {{> cmp-info-progress/cmp-info-progress
+        step-list=pagamenti-dovuti-multa.info-progress.step-3
+        step-num="3"
+        step-tot="4"
+        step-title="Dati specifici del servizio"
+        subtitle="I campi contraddistinti dal simbolo asterisco (*) sono obbligatori"
+        }}
+      </div>
+    </div>
+    <div class="steppers-content" aria-live="polite">
+      <div class="row justify-content-center">
+        {{!-- <div class="col-12 col-lg-3 mb-4 d-none d-lg-block">
+          {{>cmp-navscroll/cmp-navscroll accordion-title="INFORMAZIONI RICHIESTE"
+            link-list=pagamenti-dovuti-multa.controllare-dati-personali.navscroll
+            br-none="true"
+          }}
+        </div> --}}
+        <div class="col-12 col-lg-8">
+          <div>
+            {{#>cmp-card/cmp-card-content-box
+              class="p-big"
+              bg-grey=true
+              h2-class="mb-0"
+              card-title="Codice avviso"
+              required-icon=true
+            }}
+            <p class="subtitle-small">Inserisci il codice di 18 cifre presente nell’avviso della multa.</p>
+            <a href="#" class="t-primary underline pb-3">Dove trovare il codice</a>
+            {{>partials/input-autocomplete/input-autocomplete placeholder="Codice avviso*" class="px-0 py-0 mt-3"}}
+            {{/cmp-card/cmp-card-content-box}}
+          </div>
+          </div>
+          {{>cmp-nav-steps/cmp-nav-steps save="true"
+          modalId="modal-save-1"
+          }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-grey-card">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6 offset-lg-3 py-5">
+          {{>cmp-contacts/cmp-contacts appuntamento=true}}
+        </div>
+      </div>
+    </div>
+  </div>
+  {{>cmp-modal/modal-documents}}
+
+  {{>cmp-modal/modal-isee}}
+
+  {{>cmp-modal/modal-save}}
+</main>
+{{/base/base }}

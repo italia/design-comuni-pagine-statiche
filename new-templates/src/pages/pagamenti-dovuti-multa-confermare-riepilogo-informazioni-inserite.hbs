@@ -1,0 +1,95 @@
+{{#>base/base title="Archetipo: Pagamenti dovuti"}}
+<main>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi" link3="Pagamenti"}}
+        {{> cmp-heading/cmp-heading title="Pagamento multa"}}
+      </div>
+
+      <div class="col-12">
+        {{> cmp-info-progress/cmp-info-progress
+        step-list=pagamenti-dovuti-multa.info-progress.step-4
+        step-num="4"
+        step-title="Riepilogo"
+        step-tot="4"
+        }}
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+
+        {{>cmp-icon-card/cmp-icon-card
+        icon-color="icon-notice"
+        title-class="text-notice text-uppercase title-medium-bold mb-4"
+        notice-card=true
+        no-h-title=true
+        icon="it-horn"
+        card-title="Attenzione"
+        description="Le informazioni che hai fornito hanno valore di dichiarazione. Verifica che siano corrette."}}
+
+        <h2 class="title-xxlarge mb-4 mt-40">Dati Generali</h2>
+
+        {{#>cmp-card/cmp-card-content-box
+          class="mb-0"
+          bg-grey=true
+          h3-title=true
+          card-title="Effettuato da"
+        }}
+          {{>cmp-info-summary/cmp-info-summary
+            class="mt-4 p-4"
+            info-title="Giulia Rossi"
+            info=true
+            disservizio-page=true
+            info-list=pagamenti-dovuti-multa.confermare-riepilogo-informazioni-inserite.info-1.list
+          }}
+
+          {{>cmp-info-summary/cmp-info-summary
+            class="mt-4 p-4"
+            info-title="Indirizzo"
+            info=true
+            disservizio-page=true
+            info-list=pagamenti-dovuti-multa.confermare-riepilogo-informazioni-inserite.info-1.indirizzo
+          }}
+        {{/cmp-card/cmp-card-content-box}}
+
+      <h2 class="title-xxlarge mb-4 mt-40">Dati specifici del servizio</h2>
+
+        <div class="mt-4">
+          {{#>cmp-card/cmp-card-content-box
+          class="mb-0"
+          bg-grey=true
+          h3-title=true
+          card-title="Estremi della multa"
+        }}
+          {{>cmp-info-summary/cmp-info-summary
+            class="mt-4 mb-30 p-4"
+            info=true
+            disservizio-page=true
+            info-list=pagamenti-dovuti-multa.confermare-riepilogo-informazioni-inserite.multa-info-1.list
+          }}
+        {{/cmp-card/cmp-card-content-box}}
+        </div>
+        {{>cmp-nav-steps/cmp-nav-steps modalId="modal-terms" }}
+      </div>
+
+
+    </div>
+  </div>
+  </div>
+
+  <div class="bg-grey-card">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6 offset-lg-3 py-5">
+          {{>cmp-contacts/cmp-contacts appuntamento=true}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{>cmp-modal/modal-terms-and-conditions}}
+</main>
+{{/base/base }}
+

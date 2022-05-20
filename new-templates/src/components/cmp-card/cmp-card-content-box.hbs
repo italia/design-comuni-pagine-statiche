@@ -1,5 +1,5 @@
-<div class="cmp-card w-100">
-  <div class="card {{#if bg-grey}}has-bkg-grey{{/if}}  {{#if contacts}}contacts has-bkg-grey {{/if}} {{class}}" >
+<div class="cmp-card w-100 {{cmpClass}} {{margin-class}}">
+  <div class="card {{#if bg-grey}}has-bkg-grey{{/if}} {{#if bg-grey-primary}}has-bkg-primary-grey{{/if}}  {{#if contacts}}contacts has-bkg-grey {{/if}} {{class}}" >
     <div class="card-header border-0 p-0">
       <div class="d-flex">
         {{#if card-title}}
@@ -14,8 +14,18 @@
       <h3 class="subtitle-medium cmp-card__second-title" >{{second-title}}</h3>
       {{/if}}
       {{#if subtitle}}
-      <div class="subtitle-small mb-4">{{{subtitle}}}</div>
+      <div class="subtitle-small {{#if lora}}lora{{/if}}">{{{subtitle}}}</div>
       {{/if}}
+
+      {{#if toggle}}
+        {{>partials/toggle/toggle label="C’è un coobbligato"}}
+      {{/if}}
+
+      {{#if select}}
+        {{>partials/select/select no-bg=true class="mt-40 mb-3" label-text=labelSelect}}
+      {{/if}}
+
+
     </div>
     <div class="card-body p-0">
       {{> @partial-block}}

@@ -1,12 +1,22 @@
-.cmp-tag{
- &__tag{
+.cmp-tag {
+  &__tag {
     font-size: um(14px);
-    font-weight: 700;
-    color: get-color(success, main);
+    font-weight: 600;
+    color: get-color(primary, main);
     padding: 0 um(12px);
-    border: 1px solid get-color(success, main);
+    border: 1px solid get-color(primary, main);
     text-decoration: none;
     border-radius: 50px;
+
+    @include media-breakpoint-up(md) {
+      font-weight: 700;
+    }
   }
 
+  .bg-tag {
+    @include media-breakpoint-down (md) {
+      background-color: get-color(primary, main);
+      color: get-color(white, main);
+    }
+  }
 }

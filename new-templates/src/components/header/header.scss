@@ -1,4 +1,8 @@
 .it-header-wrapper {
+  @include media-breakpoint-up(lg) {
+    font-size: 18px;
+  }
+
   .navbar .navbar-collapsable .navbar-nav li a.nav-link {
     @include media-breakpoint-up(lg) {
       padding: um(15px);
@@ -9,11 +13,19 @@
     }
   }
 
+  .it-header-slim-wrapper .it-header-slim-wrapper-content a {
+    background-color: transparent;
+
+    &:hover {
+      text-decoration: underline !important;
+    }
+  }
+
+
   .search-link {
     width: um(48px);
     height: um(48px);
     border-radius: 24px;
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,8 +33,6 @@
     transition: all .3s;
 
     @include media-breakpoint-up(md) {
-      width: um(48px);
-      height: um(48px);
       background: #fff;
     }
 
@@ -30,7 +40,7 @@
       fill: #fff;
       width: um(24px);
       height: um(24px);
-      
+
       @include media-breakpoint-up(md) {
         fill: get-color(primary, main);
       }

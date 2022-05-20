@@ -3,6 +3,7 @@
 import Splide from '@splidejs/splide';
 
 import '../components/cmp-rating/cmp-rating';
+import '../components/partials/toggle/toggle';
 
 const alertMessage = document.getElementById('alert-message');
 

@@ -20,6 +20,7 @@
     .accordion-button {
       font-size: um(16px);
       padding: um(14px) 0 0;
+      border-top: 1px solid get-color(light-grey, grey) !important;
 
       @include media-breakpoint-up(lg) {
       font-size: um(18px);
@@ -132,3 +133,5 @@
     }
   }
 }
+
+

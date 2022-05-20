@@ -1,0 +1,149 @@
+{{#>base/base title="Riepilogo"}}
+<main>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi" link3="Servizi sociali"}}
+        {{> cmp-heading/cmp-heading title="Iscrizione alla scuola dell'infanzia"
+        title-class="w-75"}}
+      </div>
+
+      <div class="col-12">
+        {{> cmp-info-progress/cmp-info-progress
+        step-list=vantaggi-economici.conferma-riepilogo-informazioni-inserite.step-list.step-3
+        step-num="3"
+        step-title="Riepilogo"
+        step-tot="3"
+        }}
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+
+        {{>cmp-icon-card/cmp-icon-card
+        icon-color="icon-notice"
+        title-class="text-notice text-uppercase title-medium-bold mb-4"
+        notice-card=true
+        no-h-title=true
+        icon="it-horn"
+        card-title="Attenzione"
+        description="Le informazioni che hai fornito hanno valore di dichiarazione. <br> Verifica che siano corrette."}}
+
+        <h2 class="title-xxlarge mb-4 mt-40">Dati Generali</h2>
+
+        {{#>cmp-card/cmp-card-content-box
+        class="mb-0"
+        bg-grey=true
+        h3-title=true
+        card-title="Richiedente" }}
+
+        {{>cmp-info-summary/cmp-info-summary
+        class="mt-4 mb-30 p-4"
+        info-title="Julie Crampton Smith"
+        info=true
+        info-list=vantaggi-economici.conferma-riepilogo-informazioni-inserite.anagrafica.info
+        }}
+
+        {{>cmp-info-summary/cmp-info-summary
+        class="mb-30 p-4"
+        info-title="Indirizzo"
+        info=true
+        info-list=vantaggi-economici.conferma-riepilogo-informazioni-inserite.indirizzo.info
+        }}
+
+        {{>cmp-info-summary/cmp-info-summary
+        class="mb-30 p-4"
+        info-title="Contatti"
+        info=true
+        info-list=vantaggi-economici.conferma-riepilogo-informazioni-inserite.contatti.info
+        }}
+
+        {{>cmp-info-summary/cmp-info-summary
+        class="p-4 mb-0"
+        info-title="Documenti"
+        info=true
+        info-list=vantaggi-economici.conferma-riepilogo-informazioni-inserite.documenti.info
+        }}
+
+        {{/cmp-card/cmp-card-content-box}}
+
+        <div class="mt-4">
+          {{#>cmp-card/cmp-card-content-box
+          class="mb-0"
+          bg-grey=true
+          h3-title=true
+          card-title="Minore" }}
+
+          {{>cmp-info-summary/cmp-info-summary
+          class="mt-4 mb-30 p-4"
+          info-title="Luigi Rossi"
+          info=true
+          info-list=vantaggi-economici.conferma-riepilogo-informazioni-inserite.anagrafica-2.info
+          }}
+
+
+          {{>cmp-info-summary/cmp-info-summary
+          class="p-4"
+          info-title="Documenti"
+          info=true
+          info-list=vantaggi-economici.conferma-riepilogo-informazioni-inserite.documenti-2.info
+          }}
+          {{/cmp-card/cmp-card-content-box}}
+        </div>
+
+        <div class="mt-4">
+          {{#>cmp-card/cmp-card-content-box
+          class="mb-0"
+          bg-grey=true
+          h3-title=true
+          card-title="ISEE" }}
+
+          {{>cmp-info-summary/cmp-info-summary
+          class="mt-4 mb-30 p-4"
+          info-title="ISEE: 18.000,00€"
+          info=true
+          info-list=vantaggi-economici.conferma-riepilogo-informazioni-inserite.isee.info
+          }}
+
+          {{/cmp-card/cmp-card-content-box}}
+        </div>
+
+
+        <div class="mt-4">
+          {{#>cmp-card/cmp-card-content-box
+          class="mb-0"
+          bg-grey=true
+          h3-title=true
+          card-title="Conto bancario per l’accredito" }}
+
+            {{>cmp-info-summary/cmp-info-summary
+            class="mt-4 p-4"
+            info-title="Intesa Sanpaolo"
+            info=true
+            info-list=vantaggi-economici.conferma-riepilogo-informazioni-inserite.conto-bancario.info
+            }}
+          {{/cmp-card/cmp-card-content-box}}
+        </div>
+
+        {{>cmp-nav-steps/cmp-nav-steps modalId="modal-terms" }}
+      </div>
+
+
+    </div>
+  </div>
+  </div>
+
+  <div class="bg-grey-card">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6 offset-lg-3 py-5">
+          {{>cmp-contacts/cmp-contacts appuntamento=true}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{>cmp-modal/modal-terms-and-conditions}}
+</main>
+{{/base/base }}

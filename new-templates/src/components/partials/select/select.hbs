@@ -1,11 +1,15 @@
-<div class="select-partials card select-wrapper {{class}}">
-  <label for="school-option">Seleziona Istituto</label>
-  <select id="school-option">
-    <option selected="" value="">{{placeholder}}</option>
-    <option value="ist-narcisi">Istituto Narcisi</option>
-    <option value="ist-montessori">Istituto Montessori</option>
-    <option value="ist-3">Istituto 3</option>
-    <option value="ist-4">Istituto 2</option>
-    <option value="ist-5">Istituto 1</option>
+<div class="card select-wrapper {{class}} {{#if no-bg}}bg-transparent p-0 {{else}}select-partials{{/if}}">
+  <label for="{{id}}" class="{{#if label-hidden}}hidden{{/if}}" {{label-class}}>{{label-text}}{{#if required}}*{{/if}}</label>
+  <select id="{{id}}" class="{{#if no-bg}}bg-transparent{{/if}}" {{#if required}}required{{/if}}>
+    <option selected value="placeholder">{{placeholder}}</option>
+    {{#each select-option-list as |item|}}
+      <option value="{{item.value}}">{{item.value}}</option>
+    {{/each}}
   </select>
+    {{#if text}}
+      <div class="d-flex {{text-class}}">
+      <span class="form-text cmp-input__text">
+      {{text}}</span>
+      </div>
+    {{/if}}
 </div>

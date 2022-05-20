@@ -1,53 +1,53 @@
 <div class="cmp-heading pb-3 pb-lg-4">
   {{#if iconTitle}}
-    <div class="categoryicon-top d-flex">
-      <svg class="icon icon-sm icon-success align-self-center">
-        <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#{{iconTitle}}"></use>
-      </svg>
-      {{#if h2}}
-      <h2 class="title-xxxlarge mb-0 ml-10">{{title}}</h2>
-      {{else}}
-      <h1 class="title-xxxlarge ml-10">{{title}}</h1>
-      {{/if}}
-    </div>
-  {{else}}
+  <div class="categoryicon-top d-flex">
+    <svg class="icon icon-success align-self-center {{iconClass}}">
+      <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#{{iconTitle}}"></use>
+    </svg>
     {{#if h2}}
-    <h2 class="title-xxxlarge">{{title}}</h2>
+    <h2 class="title-xxxlarge mb-0 ml-10">{{title}}</h2>
     {{else}}
-    <h1 class="title-xxxlarge">{{title}}</h1>
+    <h1 class="title-xxxlarge {{title-class}}">{{title}}</h1>
     {{/if}}
+  </div>
+  {{else}}
+  {{#if h2}}
+  <h2 class="title-xxxlarge">{{title}}</h2>
+  {{else}}
+  <h1 class="title-xxxlarge">{{title}}</h1>
+  {{/if}}
   {{/if}}
 
   {{#if subTitle}}
-    <p class="subtitle-small mb-2 {{pClass}}">{{{subTitle}}}</p>
+  <p class="subtitle-small mb-2 {{pClass}}">{{{subTitle}}}</p>
   {{/if}}
 
-   {{#if label-tag}}
-    <div class="d-flex flex-wrap gap-2 cmp-heading__tag">
-      {{>partials/cmp-tag/cmp-tag}}
-    </div>
+  {{#if label-tag}}
+  <div class="d-flex flex-wrap gap-2 cmp-heading__tag">
+    {{>partials/cmp-tag/cmp-tag}}
+  </div>
   {{/if}}
 
   {{#if descriptionAfterTag}}
-    <p class="text-paragraph mb-30">
+  <p class="text-paragraph mb-30">
     {{descriptionAfterTag}}
-    </p>
+  </p>
   {{/if}}
 
   {{#if description}}
-    <p class="subtitle-small">{{{description}}}</p>
+  <p class="subtitle-small {{desClass}}">{{{description}}}</p>
   {{/if}}
 
   {{#if button}}
-    <div class="{{btnClass}}">
+  <div class="{{btnClass}}">
     {{>partials/button/button class="fw-bold"}}
-    </div>
+  </div>
   {{/if}}
 
   {{#if double-button}}
   <div class="d-lg-flex gap-30 mb-2">
     <div class="{{btnClass}}">
-    {{>partials/button/button class="fw-bold btn-primary mr-lg-30"}}
+      {{>partials/button/button class="fw-bold btn-primary mr-lg-30"}}
     </div>
 
     <div class="{{second-btnClass}}">

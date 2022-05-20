@@ -413,6 +413,13 @@
       }
     ]
   },
+  "info-prenotazione": {
+    "lista-1": [
+      {
+        "text": "Documento di identità"
+      }
+    ]
+  },
   "scheda-servizio-lista-disservizio": {
     "lista-2": [
       {
@@ -501,7 +508,7 @@
       }
     ]
   },
-    "rating-list": {
+  "rating-list": {
     "list": [
       {
         "id": "radio-1",
@@ -524,5 +531,19 @@
         "name": "rating"
       }
     ]
+  },
+  "controllare-dati-appuntamento": {
+    "contatti-altro-genitore": {
+      "info": [
+        {
+          "name": "Telefono",
+          "description": "+39 331 1234567"
+        },
+        {
+          "name": "Email",
+          "description": "mario.rossi@gmail.com"
+        }
+      ]
+    }
   }
 }

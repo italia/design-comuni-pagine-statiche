@@ -1,8 +1,11 @@
 <div class="cmp-ul-list">
-  {{#if heading-title}}
+{{#if heading-title}}
   <div class="cmp-ul-list__description {{font-title}}">
     {{heading-title}}
   </div>
+  {{/if}}
+  {{#if description}}
+  <p class="description {{font-list}}">{{{description}}}</p>
   {{/if}}
   <ul class="link-list {{font-list}}">
     {{#each info-list as |list|}}
@@ -10,8 +13,14 @@
       <span>
         {{{list.text}}}
       </span>
+      {{#if list.other-list}}
+      <ul class="pl-30">
+      {{#each list.other-list as |second-list|}}
+        <li>{{second-list.text-2}}</li>
+        {{/each}}
+      </ul>
+      {{/if}}
     </li>
     {{/each}}
   </ul>
 </div>
-

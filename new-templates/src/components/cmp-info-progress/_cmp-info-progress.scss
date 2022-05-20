@@ -1,23 +1,35 @@
 .cmp-info-progress {
+  margin-bottom: um(40px);
+  
   .info-progress-body {
     border-bottom: 2px solid transparent;
+  }
+
+  .info-progress-wrapper {
+    &:first-child {
+      border-left: 1px solid #E7EAED;
+    }
+
+    &:not(:last-child) {
+      border-right: 1px solid #E7EAED;
+    }
   }
 
   .completed{
     .title-medium {
       font-weight: 700;
-      color: get-color(secondary,main);
+      color: get-color(primary, main);
     }
   }
 
   .step-active {
     .title-medium {
       font-weight: 700;
-      color: get-color(secondary,main);
+      color: get-color(primary, main);
     }
 
       .info-progress-body {
-        border-bottom: 2px solid get-color(secondary,main);;
+        border-bottom: 2px solid get-color(primary, main);;
       }
   }
 
@@ -37,7 +49,7 @@
       font-weight: 600;
       line-height: 36px;
       padding: um(14px) 0;
-      margin: um(16px) 0 um(40px) 0;
+      margin: um(8px) 0 um(40px) 0;
     }
 
     .step {

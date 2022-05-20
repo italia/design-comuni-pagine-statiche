@@ -45,6 +45,26 @@
         "classLink":"fw-normal",
         "icon-class":"icon-primary"
       }
+    ],
+        "calendario-reservation-pagamento": [
+      {
+        "icon": "it-calendar",
+        "link": "Outlook",
+        "classLink":"fw-normal",
+        "icon-class":"icon-primary"
+      },
+      {
+        "icon": "it-calendar",
+        "link": "Google Calendar",
+        "classLink":"fw-normal",
+        "icon-class":"icon-primary"
+      },
+      {
+        "icon": "it-calendar",
+        "link": "iCloud Calendar",
+        "classLink":"fw-normal",
+        "icon-class":"icon-primary"
+      }
     ]
    }
 

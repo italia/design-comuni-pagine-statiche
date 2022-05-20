@@ -1,0 +1,44 @@
+.cmp-list-card-img {
+  .card-wrapper {
+    padding-bottom: um(10px);
+    background-color: #fff;
+  }
+
+  &__wrapper{
+    min-height: um(160px);
+  }
+  .card.card-img .card-body {
+    padding: um(32px) um(24px);
+  }
+  &__body {
+    &-heading-title {
+      font-family: Titillium Web;
+      font-size: um(14px);
+      font-weight: 400;
+      line-height: um(21px);
+    }
+    &-title {
+      font-family: Titillium Web;
+      font-size: um(24px);
+      font-weight: 700;
+      line-height: um(28px);
+      margin-bottom: um(24px);
+    }
+    &-description{
+      font-family: Lora;
+      font-size: um(16px);
+      font-weight: 400;
+      line-height: um(24px);
+      margin-bottom: um(90px);
+    }
+    &-link{
+      display: flex;
+      align-items: center;
+      font-family: Titillium Web;
+      font-size: um(12px);
+      font-weight: 700;
+      line-height: um(18px);
+
+    }
+  }
+}

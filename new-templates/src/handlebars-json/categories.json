@@ -1,0 +1,436 @@
+{
+  "categories-results-filter": [
+    {
+      "title":"Tipologie",
+      "list":[
+            {
+      "name": "category",
+      "id": "unit",
+      "value": "unità organizzativa",
+      "label": "Unità organizzativa (21)"
+    },
+    {
+      "name": "category",
+      "id": "public-person",
+      "value": "persona pubblica",
+      "label": "Persona pubblica (14)"
+    },
+    {
+      "name": "category",
+      "id": "documents",
+      "value": "documenti",
+      "label": "Documenti (7)"
+    },
+    {
+      "name": "category",
+      "id": "services",
+      "value": "servizi",
+      "label": "Servizi (208)"
+    },
+    {
+      "name": "category",
+      "id": "news",
+      "value": "notizie",
+      "label": "Notizie (321)"
+    },
+    {
+      "name": "category",
+      "id": "places",
+      "value": "luoghi",
+      "label": "Luoghi (42)"
+    },
+    {
+      "name": "category",
+      "id": "events",
+      "value": "eventi",
+      "label": "Eventi (302)"
+    }
+
+      ]
+    },
+    {
+      "title":"Argomenti",
+      "list":[
+                    {
+      "name": "category",
+      "id": "access",
+      "value": "accesso all'informazione",
+      "label": "Accesso all'informazione (8)"
+    },
+    {
+      "name": "category",
+      "id": "water",
+      "value": "acqua",
+      "label": "Acqua (15)"
+    },
+    {
+      "name": "category",
+      "id": "documents",
+      "value": "documenti",
+      "label": "Documenti (7)"
+    },
+    {
+      "name": "category",
+      "id": "agriculture",
+      "value": "agricoltura",
+      "label": "Agricoltura (3)"
+    },
+    {
+      "name": "category",
+      "id": "pet",
+      "value": "notianimale domestico",
+      "label": "Animale domestico (3)"
+    },
+    {
+      "name": "category",
+      "id": "air",
+      "value": "aria",
+      "label": "Aria (2)"
+    },
+    {
+      "name": "category",
+      "id": "assistance-disabled",
+      "value": "assistenza agli invalidi",
+      "label": "Assistenza agli invalidi (2)"
+    },
+    {
+      "name": "category",
+      "id": "social-care",
+      "value": "assistenza sociale",
+      "label": "Assistenza sociale (2)"
+    },
+    {
+      "name": "category",
+      "id": "associations",
+      "value": "associazioni",
+      "label": "Associazioni (13)"
+    },
+    {
+      "name": "category",
+      "id": "balance",
+      "value": "bilancio",
+      "label": "Bilancio (2)"
+    },
+    {
+      "name": "category",
+      "id": "wholesale",
+      "value": "commercio all'ingrosso",
+      "label": "Commercio all'ingrosso (10)"
+    },
+    {
+      "name": "category",
+      "id": "retail-trade",
+      "value": "commercio al minuto",
+      "label": "Commercio al minuto (6)"
+    },
+    {
+      "name": "category",
+      "id": "itinerant-trade",
+      "value": "commercio ambulante",
+      "label": "Commercio ambulante (8)"
+    },
+    {
+      "name": "category",
+      "id": "institutional-communication",
+      "value": "comunicazione istituzionale",
+      "label": "Comunicazione istituzionale (6)"
+    },
+    {
+      "name": "category",
+      "id": "political-communication",
+      "value": "comunicazione politica",
+      "label": "Comunicazione politica (3)"
+    },
+    {
+      "name": "category",
+      "id": "competitions",
+      "value": "concorsi",
+      "label": "Concorsi (21)"
+    },
+    {
+      "name": "category",
+      "id": "covid-19",
+      "value": "covid-19",
+      "label": "Covid-19 (9)"
+    },
+    {
+      "name": "category",
+      "id": "elections",
+      "value": "elezioni",
+      "label": "Elezioni (7)"
+    },
+    {
+      "name": "category",
+      "id": "abroad",
+      "value": "estero",
+      "label": "Estero (6)"
+    },
+    {
+      "name": "category",
+      "id": "renewable-energies",
+      "value": "Energie rinnovabili",
+      "label": "Energie rinnovabili (13)"
+    },
+    {
+      "name": "category",
+      "id": "forests",
+      "value": "foreste",
+      "label": "Foreste (2)"
+    },
+    {
+      "name": "category",
+      "id": "professional-training",
+      "value": "formazione professionale",
+      "label": "Formazione professionale (27)"
+    },
+    {
+      "name": "category",
+      "id": "twinning",
+      "value": "gemellaggi",
+      "label": "Gemellaggi (6)"
+    },
+    {
+      "name": "category",
+      "id": "waste-management",
+      "value": "gestione-rigiuti",
+      "label": "Gestione rifiuti (10)"
+    },
+    {
+      "name": "category",
+      "id": "justice",
+      "value": "giustizia",
+      "label": "Giustizia (3)"
+    },
+    {
+      "name": "category",
+      "id": "public-hygiene",
+      "value": "igiene pubblica",
+      "label": "Igiene pubblica (7)"
+    },
+    {
+      "name": "category",
+      "id": "immigration",
+      "value": "immigrazione",
+      "label": "Immigrazione (34)"
+    },
+    {
+      "name": "category",
+      "id": "taxes",
+      "value": "imposte",
+      "label": "Imposte (3)"
+    },
+    {
+      "name": "category",
+      "id": "businesses",
+      "value": "imprese",
+      "label": "Imprese (14)"
+    },
+    {
+      "name": "category",
+      "id": "pollution",
+      "value": "inquinamento",
+      "label": "Inquinamento (36)"
+    },
+    {
+      "name": "category",
+      "id": "social-integration",
+      "value": "integrazione sociale",
+      "label": "Integrazione sociale (18)"
+    },
+    {
+      "name": "category",
+      "id": "thermal-insulation",
+      "value": "isolamento termico",
+      "label": "Isolamento termico (21)"
+    },
+    {
+      "name": "category",
+      "id": "instruction",
+      "value": "istruzione",
+      "label": "Istruzione (13)"
+    },
+    {
+      "name": "category",
+      "id": "work",
+      "value": "lavoro",
+      "label": "Lavoro (24)"
+    },
+    {
+      "name": "category",
+      "id": "marriage",
+      "value": "matrimonio",
+      "label": "Matrimonio (16)"
+    },
+    {
+      "name": "category",
+      "id": "market",
+      "value": "mercato",
+      "label": "Mercato (11)"
+    },
+    {
+      "name": "category",
+      "id": "sustainable mobility",
+      "value": "mobilità sostenibile",
+      "label": "Mobilità sostenibile (32)"
+    },
+    {
+      "name": "category",
+      "id": "death",
+      "value": "Morte",
+      "label": "Morte (6)"
+    },
+    {
+      "name": "category",
+      "id": "birth",
+      "value": "nascita",
+      "label": "Nascita (13)"
+    },
+    {
+      "name": "category",
+      "id": "parking",
+      "value": "parcheggi",
+      "label": "Parcheggi (2)"
+    },
+    {
+      "name": "category",
+      "id": "cultural-heritage",
+      "value": "patrimonio culturale",
+      "label": "Patrimonio culturale (27)"
+    },
+    {
+      "name": "category",
+      "id": "fishing",
+      "value": "pesca",
+      "label": "Pesca (6)"
+    },
+    {
+      "name": "category",
+      "id": "development-plan",
+      "value": "piano di sviluppo",
+      "label": "Piano di sviluppo (10)"
+    },
+    {
+      "name": "category",
+      "id": "bicycle-lane",
+      "value": "pista ciclabile",
+      "label": "Pista ciclabile (3)"
+    },
+    {
+      "name": "category",
+      "id": "commercial-policy",
+      "value": "politica commerciale",
+      "label": "Politica commerciale (7)"
+    },
+    {
+      "name": "category",
+      "id": "police",
+      "value": "polizia",
+      "label": "Polizia (34)"
+    },
+    {
+      "name": "category",
+      "id": "foodstuffs",
+      "value": "prodotti alimentari",
+      "label": "Prodotti alimentari (3)"
+    },
+    {
+      "name": "category",
+      "id": "civil-protection",
+      "value": "protezione civile",
+      "label": "Protezione civile (14)"
+    },
+    {
+      "name": "category",
+      "id": "residence",
+      "value": "residenza",
+      "label": "Residenza (36)"
+    },
+    {
+      "name": "category",
+      "id": "emergency-response",
+      "value": "risposta alle emergenze",
+      "label": "Risposta alle emergenze (18)"
+    },
+    {
+      "name": "category",
+      "id": "legal-system",
+      "value": "Sistema giuridico",
+      "label": "Sistema giuridico (21)"
+    },
+    {
+      "name": "category",
+      "id": "green-space",
+      "value": "Spazio verde",
+      "label": "Spazio verde (13)"
+    },
+    {
+      "name": "category",
+      "id": "sport",
+      "value": "sport",
+      "label": "Sport (24)"
+    },
+    {
+      "name": "category",
+      "id": "sustainable-development",
+      "value": "Sviluppo sostenibile",
+      "label": "Sviluppo sostenibile (16)"
+    },
+    {
+      "name": "category",
+      "id": "service-charge",
+      "value": "Tassa sui servizi",
+      "label": "Tassa sui servizi (11)"
+    },
+    {
+      "name": "category",
+      "id": "free-time",
+      "value": "Tempo libero",
+      "label": "Tempo libero (32)"
+    },
+    {
+      "name": "category",
+      "id": "administrative-transparency",
+      "value": "Trasparenza amministrativa",
+      "label": "Trasparenza amministrativa (13)"
+    },
+    {
+      "name": "category",
+      "id": "public-transport",
+      "value": "Trasporto pubblico",
+      "label": "Trasporto pubblico (24)"
+    },
+    {
+      "name": "category",
+      "id": "tourism",
+      "value": "Turismo",
+      "label": "Turismo (16)"
+    },
+    {
+      "name": "category",
+      "id": "urbanization",
+      "value": "Urbanizzazione",
+      "label": "Urbanizzazione (11)"
+    },
+    {
+      "name": "category",
+      "id": "travel",
+      "value": "Viaggi",
+      "label": "Viaggi (32)"
+    },
+    {
+      "name": "category",
+      "id": "areas",
+      "value": "Zone pedonali",
+      "label": "Zone pedonali (6)"
+    },
+    {
+      "name": "category",
+      "id": "ztl",
+      "value": "ztl",
+      "label": "ZTL (13)"
+    }
+      ]
+    }
+
+  ]
+}

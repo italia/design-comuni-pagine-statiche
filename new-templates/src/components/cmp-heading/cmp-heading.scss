@@ -1,21 +1,30 @@
-.cmp-heading{
-  .btn{
-    width: 100%;
-      @include media-breakpoint-up(md) {
-      width: auto;
-      }
+.cmp-heading {
+  .categoryicon-top {
+    .icon {
+      width: um(34px);
+      height: um(34px);
+    }
   }
+
+  .btn {
+    width: 100%;
+
+    @include media-breakpoint-up(md) {
+      width: um(340px);
+    }
+  }
+
 
   .text-button {
     font-weight: 700;
   }
 
-  &__tag{
-      margin: um(18px) 0 um(10px) 0;
+  &__tag {
+    margin: um(18px) 0 um(10px) 0;
 
-     @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(md) {
       margin: um(18px) 0 um(26px) 0;
-     }
+    }
   }
 
   .subtitle-small {
@@ -23,6 +32,7 @@
 
     @include media-breakpoint-up(md) {
       margin-bottom: 0;
+      max-width: 60%;
     }
   }
 

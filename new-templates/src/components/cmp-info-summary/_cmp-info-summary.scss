@@ -1,8 +1,4 @@
 .cmp-info-summary {
-  &__item {
-    border-bottom: um(1px) solid;
-  }
-
   .icon-primary {
     fill: get-color(primary, main);
   }
@@ -20,6 +16,10 @@
   }
 
   .card-body {
+    .single-line-info {
+      border-bottom: 1px solid;
+    }
+
     .data-text {
       font-size: um(16px);
       line-height: um(18px);

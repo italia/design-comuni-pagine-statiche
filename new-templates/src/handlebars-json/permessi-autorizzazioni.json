@@ -1,0 +1,682 @@
+{
+  "permessi-autorizzazioni": {
+    "trovare-informazioni-servizio": {
+      "navscroll": [
+        {
+          "item": "A chi è rivolto",
+          "anchor": "who-needs"
+        },
+        {
+          "item": "Descrizione",
+          "anchor": "description"
+        },
+        {
+          "item": "Come fare",
+          "anchor": "how-to"
+        },
+        {
+          "item": "Cosa serve",
+          "anchor": "needed"
+        },
+        {
+          "item": "Cosa si ottiene",
+          "anchor": "obtain"
+        },
+        {
+          "item": "Tempi e scadenze",
+          "anchor": "deadlines"
+        },
+        {
+          "item": "Costi",
+          "anchor": "costs"
+        },
+        {
+          "item": "Accedi al servizio",
+          "anchor": "service-access"
+        },
+        {
+          "item": "Ulteriori informazioni",
+          "anchor": "more-info"
+        },
+        {
+          "item": "Condizioni di servizio",
+          "anchor": "conditions"
+        },
+        {
+          "item": "Contatti",
+          "anchor": "contacts"
+        }
+      ],
+      "list-1": [
+        {
+          "text": "proprietarie di veicolo;"
+        },
+        {
+          "text": "con veicolo in leasing;"
+        },
+        {
+          "text": "con veicolo acquistato con patto di riservato dominio;"
+        },
+        {
+          "text": "con veicolo in locazione con facoltà di acquisto o in usufrutto (regolarmente trascritti sui documenti del veicolo);"
+        },
+        {
+          "text": "con veicolo a noleggio intestato ad azienda della quale il residente è titolare;"
+        },
+        {
+          "text": "con veicolo concesso in fringe benefit."
+        }
+      ],
+      "list-2": [
+        {
+          "text": "SPID (Sistema Pubblico per la gestione dell'Identità Digitale), Carta identità elettronica (CIE) o Carta Nazionale dei Servizi (CNS);"
+        },
+        {
+          "text": "Numero di targa del veicolo;"
+        },
+        {
+          "text": "Patente di guida del richiedente."
+        }
+      ],
+      "timeline": [
+        {
+          "event": "Esito richiesta",
+          "info": "Si riceve all’indirizzo email indicato nella richiesta"
+        },
+        {
+          "day": "10",
+          "month": "giorni",
+          "event": "Pagamento"
+        },
+        {
+          "day": "2",
+          "month": "giorni",
+          "event": "Rilascio permesso ZTL"
+        }
+      ]
+    },
+    "acconsentire-trattamento-dati-inseriti": {
+      "step-1": [
+        {
+          "title": "Informativa sulla privacy",
+          "active": true,
+          "completed": false
+        },
+        {
+          "title": "Dati Generali",
+          "active": false,
+          "completed": false
+        },
+        {
+          "title": "Preferenze di servizio",
+          "active": false,
+          "completed": false
+        },
+        {
+          "title": "Riepilogo",
+          "active": false,
+          "completed": false
+        }
+      ]
+    },
+    "controllare-dati-personali": {
+      "step-2": [
+        {
+          "title": "Informativa sulla privacy",
+          "active": false,
+          "completed": true
+        },
+        {
+          "title": "Dati Generali",
+          "active": true,
+          "completed": false
+        },
+        {
+          "title": "Preferenze di servizio",
+          "active": false,
+          "completed": false
+        },
+        {
+          "title": "Riepilogo",
+          "active": false,
+          "completed": false
+        }
+      ],
+      "navscroll": [
+        {
+          "item": "Tipo di permesso",
+          "anchor": "permission"
+        },
+        {
+          "item": "Periodo di validità",
+          "anchor": "validity-period"
+        }
+      ],
+      "anagrafica": [
+        {
+          "name": "Nome",
+          "description": "Mario"
+        },
+        {
+          "name": "Cognome",
+          "description": "Rossi"
+        },
+        {
+          "name": "Codice fiscale",
+          "description": "MRARSS72H25H501Y"
+        },
+        {
+          "name": "Data di Nascita",
+          "description": "03/07/1975"
+        },
+        {
+          "name": "Luogo di Nascita",
+          "description": "Roma"
+        },
+        {
+          "name": "Sesso",
+          "description": "Maschio"
+        }
+      ],
+      "indirizzo": [
+        {
+          "name": "Residenza",
+          "description": "Via Roma 16, 00100 Roma, IT"
+        },
+        {
+          "name": "Domicilio",
+          "description": "Piazza Risorgimento 16, 00100 Roma, It"
+        }
+      ],
+      "contatti": [
+        {
+          "name": "Telefono",
+          "description": "+39 331 1234567"
+        },
+        {
+          "name": "Email",
+          "description": "mario.rossi@gmail.com"
+        },
+        {
+          "name": "Recapito postale",
+          "description": "P.zza Risorgimento 16, 00100 Roma"
+        }
+      ],
+      "documenti": [
+        {
+          "name": "Patente auto",
+          "warning": true,
+          "warning-message": "Documento mancante"
+        }
+      ],
+      "vehicle-1": [
+        {
+          "name": "Intestatario",
+          "description": "Mario Rossi"
+        },
+        {
+          "name": "Tipo",
+          "description": "Auto"
+        },
+        {
+          "name": "Targa",
+          "description": "CK 345 HB"
+        },
+        {
+          "name": "Relazione",
+          "description": "Uso esclusivo"
+        },
+        {
+          "name": "Dichiarazione di concessione",
+          "warning": true,
+          "warning-message": "Documento mancante"
+        },
+        {
+          "name": "Libretto di circolazione",
+          "warning": true,
+          "warning-message": "Documento mancante"
+        }
+      ],
+      "vehicle-2": [
+        {
+          "name": "Intestatario",
+          "description": "Mario Rossi"
+        },
+        {
+          "name": "Tipo",
+          "description": "Auto"
+        },
+        {
+          "name": "Targa",
+          "description": "EF 123 JR"
+        },
+        {
+          "name": "Relazione",
+          "description": "Uso esclusivo"
+        },
+        {
+          "name": "Dichiarazione di concessione",
+          "description": "dichiarazione_concessione.pdf"
+        },
+        {
+          "name": "Libretto di circolazione",
+          "description": "libretto_circolazione.pdf"
+        }
+      ]
+    },
+    "inserire-dati-specifici": {
+      "step-3": [
+        {
+          "title": "Informativa sulla privacy",
+          "active": false,
+          "completed": true
+        },
+        {
+          "title": "Dati Generali",
+          "active": false,
+          "completed": true
+        },
+        {
+          "title": "Preferenze di servizio",
+          "active": true,
+          "completed": false
+        },
+        {
+          "title": "Riepilogo",
+          "active": false,
+          "completed": false
+        }
+      ],
+      "navscroll": [
+        {
+          "item": "Richiedente",
+          "anchor": "applicant-info"
+        },
+        {
+          "item": "Veicolo",
+          "anchor": "vehicles-info"
+        }
+      ]
+    },
+    "conferma-riepilogo-informazioni": {
+      "step-4": [
+        {
+          "title": "Informativa sulla privacy",
+          "active": false,
+          "completed": true
+        },
+        {
+          "title": "Dati Generali",
+          "active": false,
+          "completed": true
+        },
+        {
+          "title": "Preferenze di servizio",
+          "active": false,
+          "completed": true
+        },
+        {
+          "title": "Riepilogo",
+          "active": true,
+          "completed": false
+        }
+      ],
+      "anagrafica": [
+        {
+          "name": "Codice fiscale",
+          "description": "MRARSS72H25H501Y"
+        },
+        {
+          "name": "Data di Nascita",
+          "description": "03/07/1975"
+        },
+        {
+          "name": "Luogo di Nascita",
+          "description": "Roma"
+        },
+        {
+          "name": "Sesso",
+          "description": "Maschio"
+        }
+      ],
+      "indirizzo": [
+        {
+          "name": "Residenza",
+          "description": "Via Roma 16, 00100 Roma, IT"
+        },
+        {
+          "name": "Domicilio",
+          "description": "Piazza Risorgimento 16, 00100 Roma, It"
+        }
+      ],
+      "contatti": [
+        {
+          "name": "Telefono",
+          "description": "+39 331 1234567"
+        },
+        {
+          "name": "Email",
+          "description": "mario.rossi@gmail.com"
+        },
+        {
+          "name": "Recapito postale",
+          "description": "P.zza Risorgimento 16, 00100 Roma"
+        }
+      ],
+      "documenti": [
+        {
+          "name": "Patente auto",
+          "description": "mario_rossi-patente.pdf"
+        }
+      ],
+      "vehicle": [
+        {
+          "name": "Intestatario",
+          "description": "Mario Rossi"
+        },
+        {
+          "name": "Tipo",
+          "description": "Auto"
+        },
+        {
+          "name": "Targa",
+          "description": "CK 345 HB"
+        },
+        {
+          "name": "Relazione",
+          "description": "Uso esclusivo"
+        },
+        {
+          "name": "Dichiarazione di concessione",
+          "description": "dichiarazione_concessione.pdf"
+        },
+        {
+          "name": "Libretto di circolazione",
+          "description": "libretto_circolazione.pdf"
+        }
+      ],
+      "preferenze-servizio": [
+        {
+          "name": "Tipo di permesso",
+          "description": "ZTL A"
+        },
+        {
+          "name": "Periodo di validità",
+          "description": "01/04/2022 - 01/05/2022"
+        }
+      ]
+    },
+    "finalizzare-procedura": {
+      "navscroll": [
+        {
+          "item": "Prossimi passi",
+          "anchor": "next-step"
+        },
+        {
+          "item": "Valuta il servizio",
+          "anchor": "rate-service"
+        },
+        {
+          "item": "Servizi correlati",
+          "anchor": "related-service"
+        }
+      ],
+      "timeline": [
+        {
+          "year": "2022",
+          "day": "02",
+          "month": "mar",
+          "event": "Esito richiesta"
+        },
+        {
+          "year": "2022",
+          "day": "10",
+          "month": "mar",
+          "event": "Pagamento"
+        },
+        {
+          "year": "2022",
+          "day": "12",
+          "month": "mar",
+          "event": "Rilascio permesso ZTL"
+        }
+      ],
+      "servizi-correlati": [
+        {
+          "icon": "it-settings",
+          "link": "Richiedi pass residenti",
+          "class": "shadow"
+        }
+      ]
+    },
+    "area-personale": {
+      "tab-area-personale": [
+        {
+          "title": "Scrivania",
+          "icon": true,
+          "icon-name": "it-pa",
+          "active": "active",
+          "id-link": "data-ex-tab1",
+          "controls": "tab1"
+        },
+        {
+          "title": "Messaggi",
+          "icon": true,
+          "icon-name": "it-mail",
+          "active": "",
+          "id-link": "data-ex-tab2",
+          "controls": "tab2"
+        },
+        {
+          "title": "Attività",
+          "icon": true,
+          "icon-name": "it-files",
+          "active": "",
+          "id-link": "data-ex-tab3",
+          "controls": "tab3"
+        },
+        {
+          "title": "Servizi",
+          "icon": true,
+          "icon-name": "it-settings",
+          "active": "",
+          "id-link": "data-ex-tab4",
+          "controls": "tab4"
+        }
+      ],
+      "navscroll": [
+        {
+          "item": "Ultimi messaggi",
+          "anchor": "latest-posts"
+        },
+        {
+          "item": "Ultime attività",
+          "anchor": "latest-activities"
+        }
+      ],
+      "navscroll-attivita": [
+        {
+          "item": "Pratiche",
+          "anchor": "practices"
+        },
+        {
+          "item": "Pagamenti",
+          "anchor": "payments"
+        }
+      ],
+      "pratiche": [
+        {
+          "num": "1",
+          "title": "Richiesta permesso ZTL",
+          "date": "28/02/2022",
+          "icon": "it-folder",
+          "icon-label": "In sospeso",
+          "label-tag":"Atto autorizzativo",
+          "color": "u-main-alert",
+          "warning-icon":true,
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "class": "shadow"
+            }
+          ]
+        },
+        {
+          "num": "2",
+          "title": "Iscrizione alla scuola d'infanzia",
+          "date": "01/10/2021",
+          "icon": "it-folder",
+          "icon-label": "Conclusa ",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "class": "shadow"
+            },
+            {
+              "icon": "it-clip",
+              "link": "Graduatoria",
+              "class": "shadow"
+            }
+          ]
+        },
+        {
+          "num": "3",
+          "title": "Iscrizione corso di formazione",
+          "date": "02/09/2021",
+          "icon": "it-folder",
+          "icon-label": "Conclusa",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "class": "shadow"
+            }
+          ]
+        },
+        {
+          "num": "4",
+          "title": "Richiesta sussidio maternità",
+          "date": "06/08/2021",
+          "icon": "it-folder",
+          "icon-label": "Conclusa",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "class": "shadow"
+            }
+          ]
+        },
+        {
+          "num": "5",
+          "title": "Richiesta parcheggio residenti",
+          "date": "01/06/2021",
+          "icon": "it-folder",
+          "icon-label": "Conclusa",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "class": "shadow"
+            }
+          ]
+        }
+      ],
+      "pagamenti": [
+        {
+          "num": "6",
+          "title": "Pagamento permesso ZTL",
+          "date": "04/03/2022",
+          "icon": "it-check",
+          "icon-label": "Pagato",
+          "label-tag":"Richiesta permesso ZTL",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta pagamento",
+              "class": "shadow"
+            }
+          ]
+        },
+        {
+          "num": "7",
+          "title": "Pagamento contravvenzioni",
+          "date": "04/03/2022",
+          "icon": "it-check",
+          "icon-label": "Pagato",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta pagamento",
+              "class": "shadow"
+            }
+          ]
+        },
+        {
+          "num": "8",
+          "title": "Pagamento contravvenzione",
+          "date": "24/06/2021",
+          "icon": "it-check",
+          "icon-label": "Pagato",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta pagamento",
+              "class": "shadow"
+            }
+          ]
+        },
+        {
+          "num": "9",
+          "title": "Pagamento contravvenzione",
+          "date": "10/05/2021",
+          "icon": "it-check",
+          "icon-label": "Pagato",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta pagamento",
+              "class": "shadow"
+            }
+          ]
+        },
+        {
+          "num": "10",
+          "title": "Pagamento contravvenzione",
+          "date": "01/10/2022",
+          "icon": "it-check",
+          "icon-label": "Pagato",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta pagamento",
+              "class": "shadow"
+            }
+          ]
+        }
+      ]
+    },
+    "effettuare-pagamento": {
+      "pagamento-ztl": [
+        {
+          "description": "Pratica:",
+          "summary": "AN4059281"
+        },
+        {
+          "description": "Data di pagamento:",
+          "summary": "04/03/2022"
+        },
+        {
+          "description": "Importo totale dovuto:",
+          "summary": "16,00 €"
+        },
+        {
+          "description": "Descrizione pagamento:",
+          "summary": "Descrizione pagamento richiesta permesso ZTL"
+        }
+      ]
+    }
+  }
+}

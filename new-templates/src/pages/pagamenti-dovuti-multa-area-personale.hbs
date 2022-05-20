@@ -1,0 +1,158 @@
+{{#>base/base title="Archetipo: Pagamenti dovuti"}}
+  <main>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-10">
+          {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Area personale"}}
+          {{> cmp-heading/cmp-heading title="Giulia Rossi" subTitle="CF: GLARSS72H25H501Y"}}
+        </div>
+        <div class="col-12 p-0">
+          {{> cmp-nav-tab/cmp-nav-tab
+        step-list=pagamenti-dovuti-multa.area-personale.tab-area-personale-1
+        }}
+        </div>
+      </div>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div class="tab-pane fade show active" id="data-ex-tab1" role="tabpanel" aria-labelledby="data-ex-tab1-tab">
+          <div class="row">
+            <div class="col-12 col-lg-3 d-lg-block mb-4 d-none ">
+              {{>cmp-navscroll/cmp-navscroll accordion-title="INDICE DI PAGINA"
+            link-list=pagamenti-dovuti-multa.area-personale.navscroll.page-1}}
+            </div>
+
+            <div class="col-12 col-lg-8 offset-lg-1">
+              <div class="mb-40 mb-lg-60">
+                {{#>cmp-card/cmp-card-content-box
+              card-title="Ultimi messaggi"
+              id-title="latest-posts"
+              h2-class="mb-3"}}
+
+                  {{>cmp-card-latest-messages/cmp-card-latest-messages
+              date="21/07/2022"
+              card-title="Pagamento multa"
+              description="Il pagamento PA3028/17 è stato ricevut..."
+              modalId="modal-message"
+              id="1"
+              description-class="text-truncate" }}
+
+                  {{>cmp-card-latest-messages/cmp-card-latest-messages
+              date="02/03/2022"
+              card-title="Richiesta permesso ZTL"
+              description="La richiesta AT4059281 è stata accetta..."
+              modalId="modal-message"
+              id="2"
+              description-class="text-truncate"}}
+
+                  {{>cmp-card-latest-messages/cmp-card-latest-messages
+              date="28/02/2022"
+              card-title="Richiesta permesso ZTL"
+              description="La richiesta AT4059281 è stata ricevut..."
+              modalId="modal-message"
+              id="3"
+              description-class="text-truncate"}}
+
+                  {{>partials/button/button link=true label="Vedi altri messaggi" class="btn-xs btn-me btn-label
+              t-primary"}}
+                  {{/cmp-card/cmp-card-content-box}}
+              </div>
+
+              <div class="mb-50 mb-lg-90">
+                {{#>cmp-card/cmp-card-content-box
+              card-title="Ultime attività"
+              id-title="latest-activities"
+              h2-class="mb-3" }}
+
+                  {{>cmp-icon-card/cmp-icon-card
+              icon-color="icon-primary"
+              card-class="pt-20 pb-4 pl-30 pr-30"
+              title-class="t-primary mb-2 underline title-small-semi-bold"
+              shadow-card=true
+              card-title="Pagamento multa"
+              date="21/07/2022"
+              icon="it-files"}}
+
+                  {{>cmp-icon-card/cmp-icon-card
+              icon-color="icon-primary"
+              card-class="pt-20 pb-4 pl-30 pr-30"
+              title-class="t-primary mb-2 underline title-small-semi-bold"
+              shadow-card=true
+              card-title="Pagamento contravvenzione"
+              date="23/01/2022"
+              icon="it-files"}}
+
+                  {{>cmp-icon-card/cmp-icon-card
+              icon-color="icon-primary"
+              card-class="pt-20 pb-4 pl-30 pr-30"
+              title-class="t-primary mb-2 underline title-small-semi-bold"
+              shadow-card=true
+              card-title="Richiesta assegno maternità"
+              date="01/10/2021"
+              icon="it-files"}}
+
+                  {{>partials/button/button
+              link=true
+              label="Vedi altre attività"
+              class="btn-xs btn-me btn-label t-primary"
+              icon="it-files"}}
+                  {{/cmp-card/cmp-card-content-box}}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="data-ex-tab2" role="tabpanel" aria-labelledby="data-ex-tab2-tab"></div>
+        <div class="tab-pane" id="data-ex-tab3" role="tabpanel" aria-labelledby="data-ex-tab3-tab">
+          <div class="row">
+            <div class="d-none d-sm-none d-lg-block col-lg-3">
+              {{>cmp-navscroll/cmp-navscroll
+            accordion-title="INDICE DELLA PAGINA"
+            link-list=pagamenti-dovuti-multa.area-personale.navscroll.page-3
+            }}
+            </div>
+
+            <div class="col-12 col-lg-8 offset-lg-1">
+              {{>cmp-filter/cmp-filter
+                title="Pratiche"
+                id-title="practices"
+              }}
+                {{>cmp-accordion/cmp-accordion
+                    accordion=pagamenti-dovuti-multa.area-personale.accordion.pratiche
+                }}
+                {{>partials/button/button label="Vedi altre pratiche" class="p-0 mb-2 pt-3 t-primary title-xsmall-semi-bold
+                  ps-lg-3"}}
+              {{>cmp-filter/cmp-filter
+                title="Pagamenti"
+                id-title="payments"
+              }}
+                {{>cmp-accordion/cmp-accordion
+                  accordion=pagamenti-dovuti-multa.area-personale.accordion.pagamenti
+                }}
+                {{>partials/button/button label="Vedi altre pratiche" class="p-0 mt-3 mb-40 t-primary title-xsmall-semi-bold
+                  ps-lg-3"}}
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane" id="data-ex-tab4" role="tabpanel" aria-labelledby="data-ex-tab4-tab">
+
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="bg-grey-card">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6 offset-lg-3 py-5">
+            {{>cmp-contacts/cmp-contacts appuntamento=true}}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {{>cmp-modal/modal-message date="15/03/2022" card-title="Iscrizione alla Scuola dell’infanzia" description="La
+  graduatoria per l’iscrizione alla Scuola dell’Infanzia, a.a. 2022/2023 è stata pubblicata. Consulta la graduatoria
+  online e perfeziona la pratica." subtitle="Graduatoria 2022/23" link="Graduatoria Scuola dell'infanzia per l'anno
+  scolastico 2022/23" }}
+  </main>
+  {{/base/base }}

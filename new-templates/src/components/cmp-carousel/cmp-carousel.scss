@@ -25,6 +25,8 @@
     display: flex;
     align-items: center;
     border-bottom: 1px solid get-color(light-grey, grey);
+    margin: um(24px) um(24px) 0 um(24px);
+    padding-bottom: um(9px);
     .icon {
       fill: get-color(light, grey);
     }

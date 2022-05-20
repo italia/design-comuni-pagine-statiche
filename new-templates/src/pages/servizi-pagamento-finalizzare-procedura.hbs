@@ -1,0 +1,72 @@
+{{#>base/base title="Iscrizione mensa richiesta"}}
+<main>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi" link3="Servizi scolastici"}}
+      </div>
+    </div>
+    <div class="section-request">
+      <div class="row">
+        <div class="col-12 col-lg-10 offset-lg-1">
+         {{>cmp-heading/cmp-heading
+          title="Richiesta inviata"
+          pClass="d-lg-flex flex-column"
+          btnClass="mt-3"
+          subTitle="Grazie, abbiamo ricevuto la tua richiesta per la pratica <strong>richiesta AN4059281 servizio mensa scolastica.</strong></p><p class='subtitle-small pt-3 d-lg-flex flex-column'>Abbiamo inviato il riepilogo all’email: <strong>giulia.bianchi@gmail.com</strong>"
+          iconTitle="it-check-circle"
+          button=true
+          label="Scarica la ricevuta (PDF 100KB)"
+          outline-primary=true
+          iconBtn="it-download"
+          sm=true
+          }}
+        </div>
+      </div>
+      <hr class="d-none d-lg-block mt-40 mb-40">
+      <div class="row mb-3 mb-md-5">
+        <div class="d-none d-sm-none d-lg-block col-lg-3">
+          {{>cmp-navscroll/cmp-navscroll
+          accordion-title="INDICE DELLA PAGINA"
+          link-list=servizi-pagamento.finalizzare-procedura.navscroll
+          }}
+        </div>
+
+        <div class="col-12 col-lg-8 offset-lg-1">
+          {{>cmp-timeline/cmp-timeline
+            title="Prossimi passi"
+            id-title="next-step"
+            timeline=servizi-pagamento.finalizzare-procedura.timeline
+            label="<a class='t-primary underline' href='#''>Consulta la richiesta</a> nella tua area riservata."
+          }}
+           {{>cmp-icon-list/cmp-icon-list
+           title="Servizi correlati"
+           id-title="related-service"
+           icon-list=servizi-pagamento.finalizzare-procedura.servizi-correlati
+           }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-primary">
+    <div class="container">
+      <div class="row d-flex justify-content-center bg-primary">
+          <div class="col-12 col-lg-6 p-lg-0 px-3">
+          {{>cmp-rating/cmp-rating}}
+          </div>
+        </div>
+    </div>
+  </div>
+
+   <div class="bg-grey-card">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6 offset-lg-3 py-5">
+          {{>cmp-contacts/cmp-contacts appuntamento=true}}
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{{/base/base }}

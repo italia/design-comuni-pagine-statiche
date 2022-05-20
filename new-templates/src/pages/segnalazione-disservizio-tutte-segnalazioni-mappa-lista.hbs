@@ -1,0 +1,133 @@
+{{#>base/base title="Disservizio Lista Segnalazioni"}}
+  <main>
+    <div class="container">
+      <div class="row justify-content-center mb-md-5">
+        <div class="col-12 col-lg-10">
+          {{> cmp-breadcrumbs/cmp-breadcrumbs
+        link1="Home"
+        link2="Elenco segnalazioni"
+        }}
+          {{> cmp-heading/cmp-heading
+        title="Elenco segnalazioni"
+        subTitle="Negli ultimi 12 mesi sono state <strong>risolte 73 segnalazioni.</strong>"
+        }}
+        </div>
+        <hr class="d-none d-lg-block mb-2">
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-3 d-none d-lg-block">
+          {{> cmp-category-list/category-list category=categories}}
+        </div>
+        <div class="col-lg-8 offset-lg-1">
+          <div class="d-flex justify-content-between border-bottom border-light pb-3 mt-5">
+            <span class="search-results"><strong>645</strong> Risultati</span>
+            {{>partials/button/button label="Filtra" label-class="t-primary title-xsmall-semi-bold ms-1"
+            iconBtn="it-funnel" class="p-0 pe-2 d-lg-none" xs=true modalId="modal-categories"}}
+            {{>partials/button/button label="Rimuovi tutti filtri" label-class="title-xsmall-semi-bold ms-1"
+            class="p-0 pe-2 d-none d-lg-block" xs=true}}
+          </div>
+
+          <ul class="nav nav-tabs w-100 flex-nowrap border-bottom border-light mb-40 mt-20 shadow-none"
+            id="tabDisservizio" role="tablist">
+            <li class="nav-item w-100">
+              <a class="nav-link active title-medium-semi-bold" href="#data-ex-disservizio1" aria-current="page"
+                data-bs-toggle="tab" role="tab" aria-controls="disservizio1" aria-selected="true">
+                Mappa
+              </a>
+            </li>
+            <li class="nav-item w-100">
+              <a class="nav-link title-medium-semi-bold" href="#data-ex-disservizio2" aria-current="page"
+                data-bs-toggle="tab" role="tab" aria-controls="disservizio2" aria-selected="true">
+                Elenco
+              </a>
+            </li>
+          </ul>
+
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="data-ex-disservizio1" role="tabpanel"
+              aria-labelledby="data-ex-disservizio1-tab">
+              <div class="row">
+                <div class="col-12">
+                  {{> cmp-map/cmp-map}}
+                </div>
+                <div class="col-lg-6 mt-50">
+                  {{#>cmp-text-button/cmp-text-button
+              cardTitle="Fai una segnalazione"
+              cardDescription="Se vuoi aggiungere una segnalazione, puoi farlo dopo esserti autenticato con le tue
+              credenziali SPID o CIE."
+              subtitle-class="mt-3"
+              disservizioBtn=true}}
+                    {{>partials/button/button label="Segnala disservizio" class="btn btn-primary mobile-full py-3 mt-2 mb-50"}}
+                    {{/cmp-text-button/cmp-text-button}}
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="data-ex-disservizio2" role="tabpanel"
+              aria-labelledby="data-ex-disservizio2-tab">
+              <div class="row">
+                {{#>cmp-card/cmp-card-content-box bg-grey=true}}
+                  {{> cmp-info-button-card/cmp-info-button-card
+                  big-title="Buca in via Solferino"
+                  label-2="Tipologia di segnalazione <br>
+                  <span>Verde pubblico e arredo urbano</span>"
+                  show-more-disservizio="true"
+                  collapse-id="collapse1"
+                  info=true
+                  }}
+                  {{/cmp-card/cmp-card-content-box}}
+
+                  {{#>cmp-card/cmp-card-content-box bg-grey=true}}
+                    {{> cmp-info-button-card/cmp-info-button-card
+                  big-title="Titolo segnalazione 2"
+                  label-2="Tipologia segnalazione"
+                  show-more-disservizio="true"
+                  collapse-id="collapse2"
+                  info=true
+                  }}
+                    {{/cmp-card/cmp-card-content-box}}
+
+                    {{#>cmp-card/cmp-card-content-box bg-grey=true}}
+                      {{> cmp-info-button-card/cmp-info-button-card
+                    big-title="Titolo segnalazione 3"
+                    label-2="Tipologia segnalazione"
+                    show-more-disservizio="true"
+                    collapse-id="collapse3"
+                    info=true
+                  }}
+                      {{/cmp-card/cmp-card-content-box}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-primary">
+      <div class="container">
+        <div class="row d-flex justify-content-center bg-primary">
+          <div class="col-12 col-lg-6 p-lg-0 px-3">
+            {{>cmp-rating/cmp-rating}}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-grey-card">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 py-4">
+            {{>cmp-carousel/cmp-carousel carousel-title="Contenuti correlati" class="carousel-4-card"}}
+          </div>
+          <div class="col-12 col-lg-6 offset-lg-3 py-5">
+            {{>cmp-contacts/cmp-contacts appuntamento=true}}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {{> cmp-modal/modal-filter-categories categories=categories}}
+    {{>cmp-modal/modal-clickMap}}
+  </main>
+  {{/base/base}}

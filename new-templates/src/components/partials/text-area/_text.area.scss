@@ -1,6 +1,16 @@
 .cmp-text-area{
   padding: um(16px);
 
+  .text-area .focus--mouse{
+    padding-top: 50px;
+  }
+
+  .label {
+    font-size: um(14px);
+    font-weight: 400;
+    line-height: um(18px);
+  }
+
   .form-group {
     margin-bottom: 0;
 
@@ -8,6 +18,13 @@
       height: um(40px);
       border: none;
       border-bottom: 1px solid get-color(dark, grey);
+      resize: none;
+      overflow: hidden;
+
+
+      &:focus{
+        max-height: auto;
+      }
     }
   }
 

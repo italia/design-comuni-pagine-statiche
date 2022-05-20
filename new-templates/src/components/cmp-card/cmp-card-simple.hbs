@@ -1,0 +1,19 @@
+<div class="cmp-card-simple card-wrapper pb-0">
+  <div class="card shadow rounded">
+    <div class="card-body">
+      <h3 class="card-title t-primary {{classTitle}}">{{card-title}}</h3>
+      <p class="titillium text-paragraph {{classText}}">{{card-text}}</p>
+      {{#if card-link}}
+      <a class="read-more mt-4" href="#">
+        <span class="text text-button-semi">{{card-link}}</span>
+        <span class="visually-hidden">su Lorem ipsum dolor sit amet, consectetur adipiscing elit…</span>
+        {{#if icon}}
+        <svg class="icon icon-primary icon-xs ml-10">
+          <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#{{icon}}"></use>
+        </svg>
+        {{/if}}
+      </a>
+      {{/if}}
+    </div>
+  </div>
+</div>

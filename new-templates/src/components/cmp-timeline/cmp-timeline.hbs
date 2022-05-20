@@ -14,6 +14,9 @@
           <div class="calendar-date-description rounded">
             <div class="calendar-date-description-content">
               <h3 class="text-purplelight title-medium-2 mb-0">{{date.event}}</h3>
+                {{#if date.info}}
+                <p class="info-text">{{date.info}}</p>
+              {{/if}}
             </div><!-- /calendar-date-description-content -->
           </div><!-- /calendar-date-description -->
         </div><!-- /calendar-date -->
@@ -21,6 +24,6 @@
 
   </div>
   {{#if label}}
-    <p class="section-reques__status mt-4 mt-lg-40">{{{label}}}</p>
+    <p class="section-reques__status mt-4 mt-lg-40 text-paragraph">{{{label}}}</p>
   {{/if}}
 </div>

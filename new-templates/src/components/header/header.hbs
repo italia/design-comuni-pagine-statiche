@@ -27,6 +27,52 @@
                   </div>
                 </div>
               </div>
+              {{#if logged}}
+              <div class="it-user-wrapper nav-item dropdown">
+                <a aria-expanded="false" class="btn btn-primary btn-icon btn-full" data-bs-toggle="dropdown" href="#" data-focus-mouse="false">
+                  <span class="rounded-icon">
+                    <img src="https://picsum.photos/20/20" class="border rounded-circle icon-white" alt="Mario Rossi">
+                  </span>
+                  <span class="d-none d-lg-block">Mario Rossi</span>
+                  <svg class="icon icon-white d-none d-lg-block">
+                    <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-expand"></use>
+                  </svg>
+                </a>
+                <div class="dropdown-menu">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="link-list-wrapper">
+                        <ul class="link-list">
+                          <li>
+                            <a class="dropdown-item list-item" href="#"><span>I miei servizi</span></a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item list-item" href="#"><span>Le mie pratiche</span></a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item list-item" href="#"><span>Notifiche</span></a>
+                          </li>
+                          <li>
+                            <span class="divider"></span>
+                          </li>
+                          <li>
+                            <a class="dropdown-item list-item" href="#"><span>Impostazioni</span></a>
+                          </li>
+                          <li>
+                            <a class="list-item left-icon" href="#">
+                              <svg class="icon icon-primary icon-sm left">
+                                <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-external-link"></use>
+                              </svg>
+                              <span class="fw-bold">Esci</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {{else}}
               <a class="btn btn-primary btn-icon btn-full" href="#" title="Accedi all'area personale" aria-label="Accedi all'area personale">
                 <span class="rounded-icon">
                   <svg class="icon icon-primary">
@@ -35,6 +81,7 @@
                 </span>
                 <span class="d-none d-lg-block">Accedi all'area personale</span>
               </a>
+              {{/if}}
             </div>
           </div>
         </div>
@@ -122,42 +169,40 @@
                 </div>
                 <div class="menu-wrapper">
                   <ul class="navbar-nav">
-                    <li class="nav-item ">
-                      <a class="nav-link " href="/docs/esempi/comuni/template-amministrazione/">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" aria-label="Amministrazione" title="vai alla pagina Amministrazione">
                         <span>Amministrazione</span>
-                        
                       </a>
                     </li>
-                    <li class="nav-item ">
-                      <a class="nav-link " href="/docs/esempi/comuni/template-novita/">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" aria-label="Novità" title="vai alla pagina Novità">
                         <span>Novità</span>
-                        
                       </a>
                     </li>
                     <li class="nav-item ">
-                      <a class="nav-link " href="/docs/esempi/comuni/template-servizi/">
+                      <a class="nav-link " href="#" aria-label="Servizi" title="vai alla pagina Servizi">
                         <span>Servizi</span>
-                        
                       </a>
                     </li>
                     <li class="nav-item ">
-                      <a class="nav-link " href="/docs/esempi/comuni/template-documenti/">
-                        <span>Documenti e Dati</span>
-                        
+                      <a class="nav-link " href="#" aria-label="Vivere il Comune" title="vai alla pagina Vivere il Comune">
+                        <span>Vivere il Comune</span>
                       </a>
                     </li>
                   </ul>
                   <ul class="navbar-nav navbar-secondary">
                     <li class="nav-item">
-                      <a class="nav-link" href="/docs/esempi/comuni/template-argomenti-argomento/"> Argomento 1</a>
+                      <a class="nav-link" href="#" aria-label="Iscrizioni" title="vai alla pagina Iscrizioni">Iscrizioni</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#"> Argomento 2</a>
+                      <a class="nav-link" href="#" aria-label="Estate in città" title="vai alla pagina Estate in città">Estate in città</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" aria-label="Polizia locale" title="vai alla pagina Polizia locale">Polizia locale</a>
                     </li>
                     <li class="nav-item ">
-                      <a class="nav-link " href="/docs/esempi/comuni/template-argomenti">
+                      <a class="nav-link " href="#" aria-label="Tutti gli argomenti" title="vai alla pagina Tutti gli argomenti">
                         <span class="fw-bold">Tutti gli argomenti...</span>
-                        
                       </a>
                     </li>
                   </ul>

@@ -1,16 +1,22 @@
-<div class="cmp-card-latest-messages mb-3" data-bs-toggle="modal" data-bs-target="#{{modalId}}" id="{{id}}">
-  <div class="card drop-shadow px-4 pt-4 pb-4">
+<div class="cmp-card-latest-messages mb-3 {{cmp-card-class}}" data-bs-toggle="modal" data-bs-target="#{{modalId}}" id="{{id}}">
+  <div class="card drop-shadow px-4 pt-4 pb-4 {{#if cardRounded}}rounded{{/if}}">
     <div class="card-header border-0 p-0">
       {{#if date}}
       <date class="date-xsmall">{{date}}</date>
       {{/if}}
+      {{#if text-small}}
+      <p class="title-xsmall-bold mb-2 {{text-small-class}}">{{text-small}}</p>
+      {{/if}}
     </div>
     <div class="card-body p-0 my-2">
       {{#if card-title}}
-        <h3 class="title-small-semi-bold t-primary m-0 mb-1"><a href="#" class="underline">{{card-title}}</a></h3>
+      <h3 class="title-small-semi-bold t-primary m-0 mb-1 underline"><a href="#">{{card-title}}</a></h3>
+      {{/if}}
+      {{#if green-title-big}}
+      <h3 class="green-title-big t-primary mb-8"><a href="#">{{green-title-big}}</a></h3>
       {{/if}}
       {{#if description}}
-      <p class="text-truncate text-paragraph">{{description}}</p>
+      <p class="text-paragraph {{description-class}}">{{description}}</p>
       {{/if}}
     </div>
   </div>

@@ -1,0 +1,27 @@
+.cmp-tab{
+  .nav-tabs{
+    overflow: hidden;
+    background-color: get-color(card, grey);
+    box-shadow: none;
+  }
+
+  .nav-tabs .nav-link.active,
+  .nav-tabs .nav-item.show .nav-link {
+    background-color: get-color(card, grey);
+  }
+
+  .form-check [type=radio]+label {
+    height: max-content;
+    margin: um(12px) 0;
+    font-size: um(16px);
+    font-weight: 600;
+    line-height: um(24px);
+    color: get-color(black, main);
+    padding-left: um(40px);
+  }
+
+  .form-check [type=radio]:not(:checked)+label::before {
+    border-color:get-color(black, main) ;
+    top: um(-3px);
+  }
+}

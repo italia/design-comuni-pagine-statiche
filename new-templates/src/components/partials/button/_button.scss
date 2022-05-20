@@ -27,6 +27,12 @@
     }
   }
 
+  &.full-mb {
+    @include media-breakpoint-down(md) {
+      width: 100%;
+    }
+  }
+
   &.btn-icon {
     justify-content: center;
   }

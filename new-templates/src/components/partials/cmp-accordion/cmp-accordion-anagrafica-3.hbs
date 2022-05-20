@@ -1,0 +1,28 @@
+<div class="accordion-item">
+  <div class="accordion-header" id="heading-{{collapse-id}}">
+    <button class="collapsed accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#{{collapse-id}}"
+      aria-expanded="false" aria-controls="{{collapse-id}}">
+      <span class="d-flex align-items-center">
+      Mostra tutto
+        <svg class="icon icon-primary icon-md">
+          <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-expand"></use>
+        </svg>
+      </span>
+    </button>
+  </div>
+  <div id="{{collapse-id}}" class="accordion-collapse collapse" role="region">
+    <div class="accordion-body p-0">
+      {{#if anagrafica-indirizzo}}
+        {{>cmp-info-summary/cmp-info-summary info-title="Anagrafica" info=true info-list=info-anagrafica class="border border-light p-3 p-lg-4 mb-30"}}
+        {{>cmp-info-summary/cmp-info-summary info-title="Indirizzo" info=true info-list=info-indirizzi class="border border-light p-3 p-lg-4 mb-30"}}
+      {{else}}
+          {{>cmp-info-summary/cmp-info-summary info-title="Anagrafica" info=true info-list=anagrafica btn=btnAnagrafica class="border border-light p-3 p-lg-4 mb-30"}}
+          {{#if indirizzo}}
+          {{>cmp-info-summary/cmp-info-summary info-title="Indirizzo" info=true info-list=indirizzo btn=btnIndirizzo class="border border-light p-3 p-lg-4 mb-30"}}
+          {{/if}}
+          {{>cmp-info-summary/cmp-info-summary info-title="Documenti" info=true info-list=documenti btn=btnDocumenti class="border border-light p-3 p-lg-4"}}
+      {{/if}}
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+{
+  "inserire-dati-specifici-appuntamento":{
+    "info":[
+      {
+        "label": "Sportello",
+        "value": "CIE"
+      },
+      {
+        "label": "Indirizzo",
+        "value": "via S. Caterina a Chiaia, 76"
+      },
+      {
+        "label": "Apertura",
+        "value": "lun, mar, mer ore 9:00 – 12:00"
+      }
+    ]
+  },
+  "immobile": {
+    "info": [
+      {
+        "label": "Tipologia",
+        "value": "Abitazione principale"
+      }
+    ]
+  }
+
+}

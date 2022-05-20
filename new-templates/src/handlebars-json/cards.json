@@ -1,0 +1,124 @@
+{
+  "cards": {
+    "card-events": [
+      {
+        "date": "26",
+        "month": "Agosto",
+        "category": "Categoria",
+        "title": "Un'estate indimenticabile",
+        "description": "Una iniziativa di invito alla lettura nel parco della Vittoria, dove verrà presentato il concorso “vivere il comune”",
+        "link": "Leggi di più",
+        "icon": "it-arrow-right",
+        "tag": true,
+        "img-path": "eventi-estate.png"
+      },
+      {
+        "date": "03",
+        "month": "Luglio",
+        "category": "Categoria",
+        "title": "La biblioteca nel parco",
+        "description": "Una iniziativa di invito alla lettura nel parco della Vittoria, dove verrà presentato il concorso “vivere il comune”.",
+        "link": "Leggi di più",
+        "icon": "it-arrow-right",
+        "tag": true,
+        "img-path": "eventi-biblioteca-parco.png"
+      },
+      {
+        "date": "10",
+        "month": "Giugno",
+        "category": "Categoria",
+        "title": "Festa delle associazioni della sesta circoscrizione",
+        "description": "Le associazioni della sesta circoscrizione si troveranno nell’auditorium della musica per presentare le attività dell’anno in corso e per fare festa.",
+        "link": "Leggi di più",
+        "icon": "it-arrow-right",
+        "tag": true,
+        "img-path": "eventi-festa-associazioni.png"
+      },
+      {
+        "date": "30",
+        "month": "Maggio",
+        "category": "Festival",
+        "category-date": "18 MAG 2018",
+        "title": "Celluloide film festival",
+        "description": "Sono più di 120 i film in programma: 27 anteprime mondiali, 13 internazionali e 37 italiane, ben oltre metà del programma sarà composta da film mai visti prima in Italia",
+        "link": "Leggi di più",
+        "icon": "it-arrow-right",
+        "tag": true,
+        "img-path": "eventi-celluloide-festival.png"
+      },
+      {
+        "date": "27",
+        "month": "Aprile",
+        "category": "Categoria",
+        "title": "Street art e murales in città",
+        "description": "Lo sapevi che il nostro Territorio, se imbocchi il vicolo giusto, nasconde opere di street art e bellissimi murales? Scopri con noi dove poterli ammirare.",
+        "link": "Leggi di più",
+        "icon": "it-arrow-right",
+        "tag": true,
+        "img-path": "eventi-street-art.png"
+      },
+      {
+        "date": "16",
+        "month": "Marzo",
+        "category": "Categoria",
+        "title": "Tramvia, dibattito aperto a tutti i cittadini",
+        "description": "In questi giorni si sono aperti o apriranno cantieri che prevedono lavori di risistemazione del fondo stradale, di riqualificazione di spazi verdi..",
+        "link": "Leggi di più",
+        "icon": "it-arrow-right",
+        "tag": true,
+        "img-path": "eventi-tram-via.png"
+      }
+    ],
+    "card-places": [
+      {
+        "category": "Categoria",
+        "title": "Il castello normanno",
+        "description": "Sorta a metà Seicento come residenza di caccia di Carlo Emanuele II, che fece del centrale Salone di Diana uno snodo ideale fra palazzo e giardini.",
+        "link": "Leggi di più",
+        "icon": "it-arrow-right",
+        "img-path": "luoghi-castello-1.png"
+      },
+      {
+        "category": "Categoria",
+        "title": "Il castello normanno",
+        "description": "Scopri il programma degli eventi dell’estate, fra feste, cultura, attività all’aperto e momenti di socializzazione.",
+        "link": "Leggi di più",
+        "icon": "it-arrow-right",
+        "img-path": "luoghi-castello-2.png"
+      },
+      {
+        "category": "Categoria",
+        "title": "Il castello normanno",
+        "description": "Scopri il programma degli eventi dell’estate, fra feste, cultura, attività all’aperto e momenti di socializzazione.",
+        "link": "Leggi di più",
+        "icon": "it-arrow-right",
+        "img-path": "luoghi-castello-3.png"
+      },
+      {
+        "category": "Categoria",
+        "category-date": "18 MAG 2018",
+        "title": "La Gipsoteca canoviana",
+        "description": "Il complesso è situato a Possagno e contiene i modelli in gesso e i bozzetti in argilla dello scultore neoclassico Antonio Canova.",
+        "link": "Leggi di più",
+        "icon": "it-arrow-right",
+        "img-path": "luoghi-gipsoteca.png"
+      },
+      {
+        "category": "Categoria",
+        "title": "Tomba Brion",
+        "description": "La Tomba Brion si trova in via Brioni a San Vito di Altivole. Luogo estremamente affascinante e carico di simbologia, si può raggiungere solamente in auto. ",
+        "link": "Leggi di più",
+        "icon": "it-arrow-right",
+        "img-path": "luoghi-tomba.png"
+      },
+      {
+        "category": "Categoria",
+        "title": "Il castello normanno",
+        "description": "Scopri il programma degli eventi dell’estate, fra feste, cultura, attività all’aperto e momenti di socializzazione.",
+        "link": "Leggi di più",
+        "icon": "it-arrow-right",
+        "img-path": "luoghi-castello-4.png"
+      }
+    ]
+  }
+}

@@ -1,6 +1,7 @@
 $ca-colors: (
 	main: (
 		black: #191919,
+    white: #fff,
 		error: #D9364F,
 		alert: #A66300,
 		primary: #007A52,
@@ -15,8 +16,13 @@ $ca-colors: (
     lighten: #E6E9F2,
     light: #455A64,
     light-grey:#E5E5E5,
-    extra-light: #BCC0CC
+    extra-light: #BCC0CC,
+    border: #7D8C9C,
+    primary-grey:#007A520D
 	),
+  blue:(
+    dark:#17324D
+  ),
 	gradient: (
 		black: rgba(25, 25, 25, 0.7),
     light-black: rgba(0, 0, 0, 0.1)

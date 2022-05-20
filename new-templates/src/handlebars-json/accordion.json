@@ -9,6 +9,8 @@
           "icon": "it-folder",
           "icon-label": "Da completare",
           "color":"u-main-alert",
+          "label-tag":"Servizio non digitale",
+          "btn":true,
           "collapse": [
             {
               "icon": "it-clip",
@@ -29,6 +31,8 @@
           "icon": "it-folder",
           "icon-label": "In sospeso",
           "color":"u-main-error",
+          "label-tag":"Servizio non digitale",
+          "btn":true,
           "collapse": [
             {
               "icon": "it-clip",
@@ -48,6 +52,8 @@
           "date": "24/06/2021",
           "icon": "it-folder",
           "icon-label": "Conclusa",
+          "label-tag":"Servizio non digitale",
+          "btn":true,
           "collapse": [
             {
               "icon": "it-clip",
@@ -67,6 +73,8 @@
           "date": "10/05/2021",
           "icon": "it-folder",
           "icon-label": "Conclusa",
+          "label-tag":"Servizio non digitale",
+          "btn":true,
           "collapse": [
             {
               "icon": "it-clip",
@@ -86,6 +94,8 @@
           "date": "06/03/2021",
           "icon": "it-folder",
           "icon-label": "Conclusa",
+          "label-tag":"Servizio non digitale",
+          "btn":true,
           "collapse": [
             {
               "icon": "it-clip",
@@ -107,6 +117,8 @@
           "date": "07/01/2022",
           "icon": "it-check",
           "icon-label": "Pagato",
+          "label-tag":"Servizio non digitale",
+          "btn":true,
           "collapse": [
             {
               "icon": "it-clip",
@@ -126,6 +138,8 @@
           "date": "01/10/2021",
           "icon": "it-check",
           "icon-label": "Pagato",
+          "label-tag":"Servizio non digitale",
+          "btn":true,
           "collapse": [
             {
               "icon": "it-clip",
@@ -145,6 +159,8 @@
           "date": "24/06/2021",
           "icon": "it-check",
           "icon-label": "Pagato",
+          "label-tag":"Servizio non digitale",
+          "btn":true,
           "collapse": [
             {
               "icon": "it-clip",
@@ -164,6 +180,8 @@
           "date": "10/05/2021",
           "icon": "it-check",
           "icon-label": "Pagato",
+          "label-tag":"Servizio non digitale",
+          "btn":true,
           "collapse": [
             {
               "icon": "it-clip",
@@ -183,6 +201,8 @@
           "date": "06/03/2021",
           "icon": "it-check",
           "icon-label": "Pagato",
+          "label-tag":"Servizio non digitale",
+          "btn":true,
           "collapse": [
             {
               "icon": "it-clip",

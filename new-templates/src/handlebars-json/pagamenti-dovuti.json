@@ -1,0 +1,733 @@
+{
+  "pagamenti-dovuti":{
+    "info-progress":{
+      "step-1": [
+        {
+          "title": "Informativa sulla privacy",
+          "active": true,
+          "completed": false
+        },
+        {
+          "title": "Dati generali",
+          "active": false,
+          "completed": false
+        },
+        {
+          "title": "Riepilogo",
+          "active": false,
+          "completed": false
+        },
+        {
+          "title": "Preferenze pagamento",
+          "active": false,
+          "completed": false
+        },
+        {
+          "title": "Pagamento",
+          "active": false,
+          "completed": false
+        }
+      ],
+      "step-2": [
+        {
+          "title": "Informativa sulla privacy",
+          "active": false,
+          "completed": true
+        },
+        {
+          "title": "Dati generali",
+          "active": true,
+          "completed": false
+        },
+        {
+          "title": "Riepilogo",
+          "active": false,
+          "completed": false
+        },
+        {
+          "title": "Preferenze pagamento",
+          "active": false,
+          "completed": false
+        },
+        {
+          "title": "Pagamento",
+          "active": false,
+          "completed": false
+        }
+      ],
+      "step-3": [
+        {
+          "title": "Informativa sulla privacy",
+          "active": false,
+          "completed": true
+        },
+        {
+          "title": "Dati generali",
+          "active": false,
+          "completed": true
+        },
+        {
+          "title": "Riepilogo",
+          "active": true,
+          "completed": false
+        },
+        {
+          "title": "Preferenze pagamento",
+          "active": false,
+          "completed": false
+        },
+        {
+          "title": "Pagamento",
+          "active": false,
+          "completed": false
+        }
+      ],
+      "step-4": [
+        {
+          "title": "Informativa sulla privacy",
+          "active": false,
+          "completed": true
+        },
+        {
+          "title": "Dati generali",
+          "active": false,
+          "completed": true
+        },
+        {
+          "title": "Riepilogo",
+          "active": false,
+          "completed": true
+        },
+        {
+          "title": "Preferenze pagamento",
+          "active": true,
+          "completed": false
+        },
+        {
+          "title": "Pagamento",
+          "active": false,
+          "completed": false
+        }
+      ],
+      "step-5": [
+        {
+          "title": "Informativa sulla privacy",
+          "active": false,
+          "completed": true
+        },
+        {
+          "title": "Dati generali",
+          "active": false,
+          "completed": true
+        },
+        {
+          "title": "Riepilogo",
+          "active": false,
+          "completed": true
+        },
+        {
+          "title": "Preferenze pagamento",
+          "active": false,
+          "completed": true
+        },
+        {
+          "title": "Pagamento",
+          "active": true,
+          "completed": false
+        }
+      ]
+    },
+    "trovare-informazioni-servizio": {
+      "navscroll":[
+        {
+          "item": "A chi è rivolto",
+          "anchor": "who-needs"
+        },
+        {
+          "item": "Descrizione",
+          "anchor": "description"
+        },
+        {
+          "item": "Come fare",
+          "anchor": "how-to"
+        },
+        {
+          "item": "Cosa serve",
+          "anchor": "needed"
+        },
+        {
+          "item": "Tempi e scadenze",
+          "anchor": "deadlines"
+        },
+        {
+          "item": "Costi",
+          "anchor": "costs"
+        },
+        {
+          "item": "Accedi al servizio",
+          "anchor": "service-access"
+        },
+        {
+          "item": "Condizioni di servizio",
+          "anchor": "conditions"
+        },
+        {
+          "item": "Contatti",
+          "anchor": "contacts"
+        }
+      ],
+      "a-chi-rivolto":{
+        "list-1": [
+          {
+            "text": "dal titolare del diritto reale di usufrutto, uso, abitazione, enfiteusi, superficie;"
+          },
+          {
+            "text": "dal concessionario di aree demaniali"
+          },
+          {
+            "text": "dal locatario per gli immobili concessi in locazione finanziaria."
+          }
+        ],
+        "list-2": [
+          {
+            "text": "in nome del defunto fino alla data del decesso;"
+          },
+          {
+            "text": "in nome proprio dalla data di apertura della successione."
+          }
+        ]
+      },
+      "descrizione": [
+        {
+          "text": "per fabbricato si intende l'unità immobiliare iscritta, o che deve essere iscritta, nel catasto edilizio urbano e nel quale viene ricompresa anche la pertinenza."
+        },
+        {
+          "text": "per area edificabile si intende quella utilizzabile a scopo edificatorio in base agli strumenti urbanistici (PRG-piano regolatore generale) ovvero in base alle possibilità effettive di edificazione"
+        },
+        {
+          "text": "per terreno agricolo si intende un terreno adibito ad attività agricola (coltivazione, silvicoltura, allevamento di  animali, etc.)"
+        }
+      ],
+      "cosa-serve": [
+        {
+          "text": "le informazioni sugli immobili di proprietà (rendita catastale, quota di possesso, etc.)"
+        },
+        {
+          "text": "le informazioni sul contribuente ed eventuali coobbligati"
+        }
+      ],
+      "timeline":[
+        {
+          "text": "il 16 giugno e il 16 dicembre per il pagamento"
+        },
+        {
+          "text": "il 30 giugno dell'anno successivo al pagamento per la presentazione della dichiarazione nei casi obbligatori previsti dalla legge e per le agevolazioni e le aliquote stabilite dal Comuneil 30 giugno dell'anno successivo al pagamento per la presentazione della dichiarazione nei casi obbligatori previsti dalla legge e per le agevolazioni e le aliquote stabilite dal Comune"
+        }
+      ]
+    },
+    "controllare-dati-personali":{
+      "navscroll":[
+        {
+          "item": "Contribuente",
+          "anchor": "taxpayer"
+        },
+        {
+          "item": "Coobbligato",
+          "anchor": "co-obliged"
+        },
+        {
+          "item": "Immobili",
+          "anchor": "properties"
+        }
+      ],
+      "select": [
+        {
+          "value":"Persona fisica"
+        },
+        {
+          "value":"Persona fisica"
+        },
+        {
+          "value":"Persona fisica"
+        },
+        {
+          "value":"Persona fisica"
+        }
+      ],
+      "immobili": {
+        "info-1":[
+          {
+            "label": "Tipologia",
+            "value": "Abitazione principale"
+          }
+        ],
+        "info-2" : [
+          {
+            "label": "Tipologia",
+            "value": "Altro immobile"
+          }
+        ]
+      }
+    },
+    "confermare-riepilogo-informazioni-inserite":{
+      "info-1":{
+        "list":[
+          {
+            "name": "Codice Fiscale",
+            "description": "GLABNC72H25H501Y"
+          },
+          {
+            "name": "Data di nascita",
+            "description": "02/03/1975"
+          },
+          {
+            "name": "Luogo di nascita",
+            "description": "Roma"
+          },
+          {
+            "name": "Sesso",
+            "description": "Femmina"
+          }
+        ],
+        "indirizzo":[
+          {
+            "name": "Domicilio fiscale",
+            "description": "Via Roma 16, 00100 Roma, It"
+          }
+        ]
+      },
+      "info-2":{
+        "list":[
+          {
+            "name": "Codice Fiscale",
+            "description": "GVNRSS72H25H501Y"
+          },
+          {
+            "name": "Data di nascita",
+            "description": "03/12/1938"
+          },
+          {
+            "name": "Luogo di nascita",
+            "description": "Roma"
+          },
+          {
+            "name": "Sesso",
+            "description": "Maschio"
+          }
+        ]
+      },
+      "immobili-info-1": {
+        "list":[
+          {
+            "name": "Tipologia Immobile",
+            "description": "Abitazione principale"
+          },
+          {
+            "name": "Rendita catastale",
+            "description": "471,00€"
+          },
+          {
+            "name": "Aliquota IMU",
+            "description": "2%"
+          },
+          {
+            "name": "Aliquota acconto / base IMU",
+            "description": "2%"
+          },
+          {
+            "name": "Quota di possesso",
+            "description": "100%"
+          },
+          {
+            "name": "Mesi di possesso",
+            "description": "12"
+          },
+          {
+            "name": "Immobile storico / inagibile",
+            "description": "No"
+          },
+          {
+            "name": "Ulteriori contitolari",
+            "description": "0"
+          },
+          {
+            "name": "Pertinenze",
+            "description": "No"
+          }
+        ]
+      }
+    },
+    "preferenze-pagamento":{
+      "info-1": [
+        {
+          "label": "Giorni dalla scadenza",
+          "value": "224 giorni"
+        },
+        {
+          "label": "Sanzione",
+          "value": "234,00 €"
+        }
+      ],
+      "info-2": [
+        {
+          "label": "Giorni dalla scadenza",
+          "value": "224 giorni"
+        },
+        {
+          "label": "Sanzione",
+          "value": "148,67 €"
+        }
+      ]
+    },
+    "effettuare-pagamento":{
+      "motivo-pagamento":{
+        "list-1": [
+          {
+            "name": "Nome:",
+            "description": "Giulia"
+          },
+          {
+            "name": "Cognome:",
+            "description": "Rossi"
+          },
+          {
+            "name": "Data di nascita:",
+            "description": "02/03/1975"
+          },
+          {
+            "name": "Domicilio Fiscale:",
+            "description": "Via Roma 16, 00100 Roma, It"
+          }
+        ],
+        "list-2": [
+          {
+            "name": "Ravvedimento:",
+            "description": "Si"
+          },
+          {
+            "name": "Imm. var.:",
+            "description": "No"
+          },
+          {
+            "name": "Acconto:",
+            "description": "Si"
+          },
+          {
+            "name": "Saldo:",
+            "description": "No"
+          },
+          {
+            "name": "Rateaz/ mese rif:",
+            "description": "01"
+          },
+          {
+            "name": "Anno di rif:",
+            "description": "2022"
+          },
+          {
+            "name": "Detrazione:",
+            "description": "100,00 €"
+          },
+          {
+            "name": "Importi a debito versati:",
+            "description": "500,00 €"
+          },
+          {
+            "name": "Importi a credito compensati:",
+            "description": "700,00 €"
+          }
+        ],
+        "list-3": [
+          {
+            "name": "Ravvedimento:",
+            "description": "Si"
+          },
+          {
+            "name": "Imm. var.:",
+            "description": "No"
+          },
+          {
+            "name": "Acconto:",
+            "description": "Si"
+          },
+          {
+            "name": "Saldo:",
+            "description": "No"
+          },
+          {
+            "name": "Rateaz/ mese rif:",
+            "description": "01"
+          },
+          {
+            "name": "Anno di rif:",
+            "description": "2022"
+          },
+          {
+            "name": "Detrazione:",
+            "description": "-- €"
+          },
+          {
+            "name": "Importi a debito versati:",
+            "description": "-- €"
+          },
+          {
+            "name": "Importi a credito compensati:",
+            "description": "200,00 €"
+          }
+        ],
+        "list-4": [
+          {
+            "name": "Ravvedimento:",
+            "description": "Si"
+          },
+          {
+            "name": "Imm. var.:",
+            "description": "No"
+          },
+          {
+            "name": "Acconto:",
+            "description": "Si"
+          },
+          {
+            "name": "Saldo:",
+            "description": "No"
+          },
+          {
+            "name": "Rateaz/ mese rif:",
+            "description": "01"
+          },
+          {
+            "name": "Anno di rif:",
+            "description": "2022"
+          },
+          {
+            "name": "Detrazione:",
+            "description": "-- €"
+          },
+          {
+            "name": "Importi a debito versati:",
+            "description": "-- €"
+          },
+          {
+            "name": "Importi a credito compensati:",
+            "description": "900,00 €"
+          }
+        ]
+      }
+    },
+    "area-personale":{
+      "tab-area-personale-1": [
+        {
+          "title": "Scrivania",
+          "icon": true,
+          "icon-name": "it-pa",
+          "active": "active",
+          "id-link": "data-ex-tab1",
+          "controls": "tab1"
+        },
+        {
+          "title": "Messaggi",
+          "icon": true,
+          "icon-name": "it-mail",
+          "active": "",
+          "id-link": "data-ex-tab2",
+          "controls": "tab2"
+        },
+        {
+          "title": "Attività",
+          "icon": true,
+          "icon-name": "it-files",
+          "active": "",
+          "id-link": "data-ex-tab3",
+          "controls": "tab3"
+        },
+        {
+          "title": "Servizi",
+          "icon": true,
+          "icon-name": "it-settings",
+          "active": "",
+          "id-link": "data-ex-tab4",
+          "controls": "tab4"
+        }
+      ],
+      "navscroll":{
+        "page-1": [
+          {
+            "item": "Ultimi messaggi",
+            "anchor": "latest-posts"
+          },
+          {
+            "item": "Ultime attività",
+            "anchor": "latest-activities"
+          }
+        ],
+        "page-3": [
+          {
+            "item": "Pratiche",
+            "anchor": "practices"
+          },
+          {
+            "item": "Pagamenti",
+            "anchor": "payments"
+          }
+        ]
+      },
+      "accordion":{
+        "pratiche": [
+          {
+            "num": "1",
+            "title": "Calcolo IMU",
+            "date": "21/07/2022",
+            "icon": "it-folder",
+            "icon-label": "Conclusa",
+            "label-tag": "Pagamento",
+            "collapse": [
+              {
+                "icon": "it-clip",
+                "link": "Documento F24",
+                "class": "shadow"
+              }
+            ]
+          },
+          {
+            "num": "2",
+            "title": "Richiesta assegno maternità",
+            "date": "01/10/2022",
+            "icon": "it-folder",
+            "icon-label": "Conclusa",
+            "label-tag": "Pagamento",
+            "collapse": [
+              {
+                "icon": "it-clip",
+                "link": "Documento F24",
+                "class": "shadow"
+              }
+            ]
+          },
+          {
+            "num": "3",
+            "title": "Iscrizione corso di formazione",
+            "date": "24/06/2021",
+            "icon": "it-folder",
+            "icon-label": "Conclusa",
+            "label-tag": "Pagamento",
+            "collapse": [
+              {
+                "icon": "it-clip",
+                "link": "Documento F24",
+                "class": "shadow"
+              }
+            ]
+          },
+          {
+            "num": "4",
+            "title": "Richiesta permesso ZTL",
+            "date": "10/05/2021",
+            "icon": "it-folder",
+            "icon-label": "Conclusa",
+            "label-tag": "Pagamento",
+            "collapse": [
+              {
+                "icon": "it-clip",
+                "link": "Documento F24",
+                "class": "shadow"
+              }
+            ]
+          },
+          {
+            "num": "5",
+            "title": "Richiesta parcheggio residenti",
+            "date": "06/03/2021",
+            "icon": "it-folder",
+            "icon-label": "Conclusa",
+            "label-tag": "Pagamento",
+            "collapse": [
+              {
+                "icon": "it-clip",
+                "link": "Documento F24",
+                "class": "shadow"
+              }
+            ]
+          }
+        ],
+        "pagamenti": [
+          {
+            "num": "6",
+            "title": "Pagamento servizio mensa",
+            "date": "21/07/2022",
+            "icon": "it-check",
+            "icon-label": "Pagato",
+            "label-tag": "Pagamento",
+            "collapse": [
+              {
+                "icon": "it-clip",
+                "link": "Documento F24",
+                "class": "shadow"
+              }
+            ]
+          },
+          {
+            "num": "7",
+            "title": "Pagamento servizio mensa",
+            "date": "01/10/2021",
+            "icon": "it-check",
+            "icon-label": "Pagato",
+            "label-tag": "Pagamento",
+            "collapse": [
+              {
+                "icon": "it-clip",
+                "link": "Documento F24",
+                "class": "shadow"
+              }
+            ]
+          },
+          {
+            "num": "8",
+            "title": "Pagamento contravvenzione",
+            "date": "24/06/2021",
+            "icon": "it-check",
+            "icon-label": "Pagato",
+            "label-tag": "Pagamento",
+            "collapse": [
+              {
+                "icon": "it-clip",
+                "link": "Documento F24",
+                "class": "shadow"
+              }
+            ]
+          },
+          {
+            "num": "9",
+            "title": "Pagamento contravvenzione",
+            "date": "10/05/2021",
+            "icon": "it-check",
+            "icon-label": "Pagato",
+            "label-tag": "Pagamento",
+            "collapse": [
+              {
+                "icon": "it-clip",
+                "link": "Documento F24",
+                "class": "shadow"
+              }
+            ]
+          },
+          {
+            "num": "10",
+            "title": "Pagamento contravvenzione",
+            "date": "06/03/2021",
+            "icon": "it-check",
+            "icon-label": "Pagato",
+            "label-tag": "Pagamento",
+            "collapse": [
+              {
+                "icon": "it-clip",
+                "link": "Documento F24",
+                "class": "shadow"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

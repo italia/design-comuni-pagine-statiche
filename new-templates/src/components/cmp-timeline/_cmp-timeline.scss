@@ -1,12 +1,38 @@
 .cmp-timeline {
   margin-top: um(40px);
+  .info-text {
+    color: get-color(light, grey);
+    font-size: um(16px);
+    font-weight: 600;
+    line-height: um(24px);
+    @include media-breakpoint-up(md){
+      font-size: um(18px);
+      line-height: um(28px);
+
+    }
+  }
 
   @include media-breakpoint-up(lg) {
     margin-top: 0;
   }
+
+  .info-text{
+    color: get-color(light,grey);
+    font-size: um(16px);
+    font-weight: 600;
+    line-height: um(24px);
+
+    @include media-breakpoint-up(md) {
+      font-size: um(18px);
+      font-weight: 600;
+      line-height: um(28px);
+    }
+  }
 }
+
 .calendar-vertical {
   color: hsl(160deg, 100%, 24%);
+
   &::after {
     display: block;
     clear: both;
@@ -17,6 +43,7 @@
 .calendar-vertical .calendar-date {
   display: flex;
 }
+
 .calendar-vertical .calendar-date .calendar-date-day {
   width: um(65px);
   flex-shrink: 0;
@@ -45,7 +72,7 @@
   .calendar-vertical .calendar-date .calendar-date-day span {
     font-size: 2rem;
     padding-right: 24px;
-    font-weight: 100!important;
+    font-weight: 100 !important;
   }
 }
 
@@ -64,6 +91,7 @@
     padding-right: 24px;
   }
 }
+
 .calendar-vertical .calendar-date .calendar-date-day:before {
   position: absolute;
   z-index: 1;
@@ -74,6 +102,7 @@
   background-color: hsl(160deg, 100%, 24%);
   content: "";
 }
+
 .calendar-vertical .calendar-date .calendar-date-day:after {
   content: "";
   width: 10px;
@@ -98,17 +127,27 @@
   margin: 0 0 um(24px) um(13px);
   overflow: hidden;
 }
-.calendar-vertical .calendar-date .calendar-date-description .calendar-date-description-content {
+.calendar-vertical
+  .calendar-date
+  .calendar-date-description
+  .calendar-date-description-content {
   padding: um(20px) um(16px) um(20px) um(24px);
   position: relative;
   z-index: 0;
 }
 
-.calendar-vertical .calendar-date .calendar-date-description .calendar-date-description-content span {
+.calendar-vertical
+  .calendar-date
+  .calendar-date-description
+  .calendar-date-description-content
+  span {
   margin: 0;
 }
 
-.calendar-vertical .calendar-date .calendar-date-description .calendar-date-description-content:before {
+.calendar-vertical
+  .calendar-date
+  .calendar-date-description
+  .calendar-date-description-content:before {
   content: "";
   width: um(8px);
   height: 120%;
@@ -116,15 +155,11 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #F0F8F5;
+  background-color: #f0f8f5;
 }
 
 .calendar-date:last-child {
-  .calendar-date-description{
+  .calendar-date-description {
     margin-bottom: 0;
   }
 }
-
-
-
-

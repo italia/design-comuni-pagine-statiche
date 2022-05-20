@@ -1,0 +1,151 @@
+{{#>base/base title="Archetipo: Pagamenti dovuti"}}
+<main>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi" link3="Pagamenti"}}
+        {{> cmp-heading/cmp-heading title="Iscrizione alla scuola dell'infanzia"}}
+      </div>
+
+      <div class="col-12">
+        {{> cmp-info-progress/cmp-info-progress
+        step-list=pagamenti-dovuti.info-progress.step-4
+        step-num="4"
+        step-title="Preferenze pagamento"
+        step-tot="5"
+        subtitle="I campi contraddistinti dal simbolo asterisco (*) sono obbligatori"
+        }}
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+        {{#>cmp-card/cmp-card-content-box
+          class="mb-0"
+          bg-grey=true
+          h3-title=true
+          card-title="H501 - Roma"
+        }}
+        <div class="text-area-wrapper p-4 bg-white">
+          {{>partials/input/input type="text" id="amount" label="Importo versato" required=true name="amount" text="Inserisci la somma già versata" formClass="mb-0"}}
+        </div>
+          {{>cmp-info-checkbox/cmp-info-checkbox
+            title="Acconto"
+            subtitleCard="Data di scadenza: <strong>16/06/2021</strong>"
+            id="1"
+            toggle=true
+            labelToggle="Ravvedimento"
+            classToggle="pb-2 border-bottom border-light"
+            accordion=false
+            classCard="p-4"
+            classComponent="mt-4"
+            info-payment=pagamenti-dovuti.preferenze-pagamento.info-1
+            }}
+
+            {{>cmp-info-checkbox/cmp-info-checkbox
+            title="Saldo"
+            subtitleCard="Data di scadenza: <strong>16/12/2021</strong>"
+            id="2"
+            toggle=true
+            labelToggle="Ravvedimento"
+            accordion=false
+            classCard="p-4"
+            classComponent="mt-4"
+            }}
+            {{>cmp-tot/cmp-tot class="mt-4 p-4" id="tot-payed" label-title="Totale da versare" label="Inserisci importo" value="734,00 €" name="tot-payed" text="Inserisci l’importo che desideri versare adesso" rest="Rimanente da versare" rest-value="34,00 €"}}
+        {{/cmp-card/cmp-card-content-box}}
+
+
+
+        <div class="mt-4">
+           {{#>cmp-card/cmp-card-content-box
+          class="mb-0"
+          bg-grey=true
+          h3-title=true
+          card-title="L736 - Venezia"
+        }}
+        <div class="text-area-wrapper p-4 bg-white">
+          {{>partials/input/input type="text" id="amount-1" label="Importo versato" required=true name="amount-1" text="Inserisci la somma già versata" formClass="mb-0"}}
+        </div>
+          {{>cmp-info-checkbox/cmp-info-checkbox
+            title="Acconto"
+            subtitleCard="Data di scadenza: <strong>16/06/2021</strong>"
+            id="3"
+            accordion=false
+            classCard="p-4"
+            classComponent="mt-4"
+            }}
+            {{>cmp-info-checkbox/cmp-info-checkbox
+            title="Saldo"
+            subtitleCard="Data di scadenza: <strong>16/12/2021</strong>"
+            id="4"
+            accordion=false
+            classCard="p-4"
+            classComponent="mt-4"
+            }}
+            {{>cmp-tot/cmp-tot class="mt-4 p-4" id="tot-payed-1" label-title="Totale da versare" label="Inserisci importo" value="600,00 €" name="tot-payed-1" text="Inserisci l’importo che desideri versare adesso" rest="Rimanente da versare" rest-value="400,00 €"}}
+        {{/cmp-card/cmp-card-content-box}}
+
+        </div>
+
+        <div class="mt-4">
+           {{#>cmp-card/cmp-card-content-box
+          class="mb-0"
+          bg-grey=true
+          h3-title=true
+          card-title="L065 - Tavagnacco"
+        }}
+         <div class="text-area-wrapper p-4 bg-white">
+          {{>partials/input/input type="text" id="amount-2" label="Importo versato" required=true name="amount-2" text="Inserisci la somma già versata" formClass="mb-0"}}
+        </div>
+          {{>cmp-info-checkbox/cmp-info-checkbox
+            title="Acconto"
+            subtitleCard="Data di scadenza: <strong>16/06/2021</strong>"
+            id="5"
+            toggle=true
+            labelToggle="Ravvedimento"
+             classToggle="pb-2 border-bottom border-light"
+            accordion=false
+            classCard="p-4"
+            classComponent="mt-4"
+            info-payment=pagamenti-dovuti.preferenze-pagamento.info-2
+            }}
+
+            {{>cmp-info-checkbox/cmp-info-checkbox
+            title="Saldo"
+            subtitleCard="Data di scadenza: <strong>16/06/2021</strong>"
+            id="6"
+            toggle=true
+            labelToggle="Ravvedimento"
+             classToggle="pb-2 border-bottom border-light"
+            accordion=false
+            classCard="p-4"
+            classComponent="mt-4"
+            info-payment=pagamenti-dovuti.preferenze-pagamento.info-2
+            }}
+            {{>cmp-tot/cmp-tot class="mt-4 p-4" id="tot-payed-2" label-title="Totale da versare" label="Inserisci importo" value="900,00 €" name="tot-payed-2" text="Inserisci l’importo che desideri versare adesso" rest="Rimanente da versare" rest-value="00,00 €"}}
+        {{/cmp-card/cmp-card-content-box}}
+
+        </div>
+        {{>cmp-nav-steps/cmp-nav-steps modalId="modal-terms" }}
+      </div>
+
+
+    </div>
+  </div>
+  </div>
+
+  <div class="bg-grey-card">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6 offset-lg-3 py-5">
+          {{>cmp-contacts/cmp-contacts appuntamento=true}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{>cmp-modal/modal-terms-and-conditions}}
+</main>
+{{/base/base }}
+

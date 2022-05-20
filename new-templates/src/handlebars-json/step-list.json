@@ -196,6 +196,141 @@
         "id-link": "data-ex-tab4",
         "controls": "tab4"
       }
+    ],
+    "prenota-appuntamento-step-1": [
+      {
+        "title": "Luogo",
+        "active": true,
+        "completed": false
+      },
+      {
+        "title": "Data e orario",
+        "active": false,
+        "completed": false
+      },
+      {
+        "title": "Dettagli appuntamento",
+        "active": false,
+        "completed": false
+      },
+      {
+        "title": "Richiedente",
+        "active": false,
+        "completed": false
+      },
+      {
+        "title": "Riepilogo",
+        "active": false,
+        "completed": false
+      }
+    ],
+    "prenota-appuntamento-step-2": [
+      {
+        "title": "Luogo",
+        "active": false,
+        "completed": false
+      },
+      {
+        "title": "Data e orario",
+        "active": true,
+        "completed": false
+      },
+      {
+        "title": "Dettagli appuntamento",
+        "active": false,
+        "completed": false
+      },
+      {
+        "title": "Richiedente",
+        "active": false,
+        "completed": false
+      },
+      {
+        "title": "Riepilogo",
+        "active": false,
+        "completed": false
+      }
+    ],
+    "prenota-appuntamento-step-3": [
+      {
+        "title": "Luogo",
+        "active": false,
+        "completed": false
+      },
+      {
+        "title": "Data e orario",
+        "active": false,
+        "completed": false
+      },
+      {
+        "title": "Dettagli appuntamento",
+        "active": true,
+        "completed": false
+      },
+      {
+        "title": "Richiedente",
+        "active": false,
+        "completed": false
+      },
+      {
+        "title": "Riepilogo",
+        "active": false,
+        "completed": false
+      }
+    ],
+    "prenota-appuntamento-step-4": [
+      {
+        "title": "Luogo",
+        "active": false,
+        "completed": false
+      },
+      {
+        "title": "Data e orario",
+        "active": false,
+        "completed": false
+      },
+      {
+        "title": "Dettagli appuntamento",
+        "active": false,
+        "completed": false
+      },
+      {
+        "title": "Richiedente",
+        "active": true,
+        "completed": false
+      },
+      {
+        "title": "Riepilogo",
+        "active": false,
+        "completed": false
+      }
+    ],
+    "prenota-appuntamento-step-5": [
+      {
+        "title": "Luogo",
+        "active": false,
+        "completed": false
+      },
+      {
+        "title": "Data e orario",
+        "active": false,
+        "completed": false
+      },
+      {
+        "title": "Dettagli appuntamento",
+        "active": false,
+        "completed": false
+      },
+      {
+        "title": "Richiedente",
+        "active": false,
+        "completed": false
+      },
+      {
+        "title": "Riepilogo",
+        "active": true,
+        "completed": false
+      }
     ]
   }
 }

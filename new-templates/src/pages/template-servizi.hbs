@@ -1,0 +1,314 @@
+{{#>base/base title="Tutti i servizi"}}
+<main>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi"}}
+
+        {{>cmp-hero/cmp-hero
+        hero-title="Servizi"
+        hero-text="Tutti i servizi comunali per i cittadini, disponibili online o a sportello,
+        per richiedere documenti e permessi, iscriversi a graduatorie ed effettuare pagamenti."
+        wrapper-class="pt-0 ps-0 pb-4 pb-lg-60"}}
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-grey-card">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="title-xxlarge mb-4 mt-5 mb-lg-10">Esplora tutti i servizi</h2>
+        </div>
+
+        <div class="col-12 col-lg-8 pt-lg-50 pb-lg-50">
+          {{>partials/input-search/input-search
+          label-text="Cerca una parola chiave"
+          placeholder-text="Cerca una parola chiave"
+          search-subtitle=true
+          text-subtitle="<strong>620 </strong>servizi trovati in ordine alfabetico"
+          text-subtitle-class="mt-2 mt-lg-3 mb-4"
+          wrapper-class="mb-0"
+          icon-class="icon-primary"
+          }}
+
+          {{>cmp-card-latest-messages/cmp-card-latest-messages
+          text-small="AMBIENTE"
+          text-small-class="underline text-success"
+          green-title-big="Abbandono di rifiuti in aree private"
+          description="Il servizio gestisce gli esposti e le segnalazioni riguardanti l'abbandono di rifiuti in aree
+          private"
+          cmp-card-class="mb-30"
+          cardRounded=true
+          }}
+
+          {{>cmp-card-latest-messages/cmp-card-latest-messages
+          text-small="MOBILITÀ E TRASPORTI"
+          text-small-class="underline text-success"
+          green-title-big="Abbonamento bike sharing"
+          description="Sottoscrizione dell’abbonameno al servizio di bike sharing"
+          cmp-card-class="mb-30"
+          cardRounded=true
+          }}
+
+          {{>cmp-card-latest-messages/cmp-card-latest-messages
+          text-small="ANAGRAFE E STATO CIVILE"
+          text-small-class="underline text-success"
+          green-title-big="Albo dei giudici popolari"
+          description="Tenuta e aggiornamento dell'Albo dei giudici popolari di Corte di assise e di Corte di assise di
+          appello"
+          cmp-card-class="mb-30"
+          cardRounded=true
+          }}
+
+          {{>cmp-card-latest-messages/cmp-card-latest-messages
+          text-small="ANAGRAFE E STATO CIVILE"
+          text-small-class="underline text-success"
+          green-title-big="Abbandono di rifiuti in aree private"
+          description="Albo delle persone idonee a svolgere le funzioni di presidente di seggio in occasione delle
+          elezioni"
+          cmp-card-class="mb-30"
+          cardRounded=true
+          }}
+
+          {{>cmp-card-latest-messages/cmp-card-latest-messages
+          text-small="ANAGRAFE E STATO CIVILE"
+          text-small-class="underline text-success"
+          green-title-big="Albo scrutatori di seggio"
+          description="Tenuta e aggiornamento dell'Albo degli scrutatori di seggio: l'elenco delle persone idonee a
+          svolgere le funzioni di scrutatore in occasione delle elezioni"
+          cardRounded=true
+          }}
+
+          {{>partials/button/button
+          outline-primary="true"
+          class="pt-15 pb-15 pl-90 pr-90 mb-30 mt-3 mb-lg-50 full-mb text-button"
+          label="Carica altri risultati"
+          }}
+        </div>
+
+        <div class="col-12 col-lg-4 pt-30 pt-lg-5 ps-lg-5 order-first order-md-last">
+          <div class="link-list-wrap">
+            <div class="title-xsmall-semi-bold"><span>SERVIZI IN EVIDENZA</span></div>
+            <ul class="link-list t-primary">
+              <li class="mb-3 mt-3">
+                <a class="list-item ps-0 title-medium underline" href="#">
+                  <span>Rilascio Carta Identità Elettronica
+                    (CIE)</span>
+                </a>
+              </li>
+              <li class="mb-3">
+                <a class="list-item ps-0 title-medium underline" href="#">
+                  <span>Cambio di residenza</span>
+                </a>
+              </li>
+              <li class="mb-3">
+                <a class="list-item ps-0 title-medium underline" href="#">
+                  <span>Tributi online</span>
+                </a>
+              </li>
+              <li class="mb-3">
+                <a class="list-item ps-0 title-medium underline" href="#">
+                  <span>Prenotazione appuntamenti</span>
+                </a>
+              </li>
+              <li class="mb-3">
+                <a class="list-item ps-0 title-medium underline" href="#">
+                  <span>Rilascio tessera elettorale</span>
+                </a>
+              </li>
+              <li>
+                <a class="list-item ps-0 title-medium underline" href="#">
+                  <span>Voucher connettività</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2 class="title-xxlarge mt-60 mt-lg-80 mb-lg-40">Esplora per categoria</h2>
+    <div class="row flex-wrap justify-content-between gy-4 gy-lg-5 gx-lg-5 pb-3 pb-lg-60 align-items-stretch">
+
+      <div class="col-12 col-lg-4">
+        {{>cmp-card/cmp-card-simple
+        classTitle="title-xlarge"
+        classText="mb-5"
+        card-title="Agricoltura e pesca"
+        card-text="Autorizzazioni e politiche alimentari per agricoltura e pesca."
+        card-link="Vedi servizi (32)"
+        }}
+      </div>
+
+      <div class="col-12 col-lg-4">
+        {{>cmp-card/cmp-card-simple
+        classTitle="title-xlarge"
+        classText="mb-5"
+        card-title="Ambiente"
+        card-text="Aree verdi e parchi, inquinamento, igiene urbana e rifiuti."
+        card-link="Vedi servizi (32)"
+        }}
+      </div>
+
+      <div class="col-12 col-lg-4">
+        {{>cmp-card/cmp-card-simple
+        classTitle="title-xlarge"
+        classText="mb-5"
+        card-title="Anagrafe e stato civile"
+        card-text="Documenti d’identità, cambio di residenza, servizi elettorali, cimiteriali e certificati per
+        nascita, matrimoni e unioni civili."
+        card-link="Vedi servizi (32)"
+        }}
+      </div>
+
+      <div class="col-12 col-lg-4">
+        {{>cmp-card/cmp-card-simple
+        classTitle="title-xlarge"
+        classText="mb-5"
+        card-title="Appalti pubblici"
+        card-text="Gare d’appalto e avvisi per lavori, servizi e forniture al Comune."
+        card-link="Vedi servizi (32)"
+        }}
+      </div>
+
+      <div class="col-12 col-lg-4">
+        {{>cmp-card/cmp-card-simple
+        classTitle="title-xlarge"
+        classText="mb-5"
+        card-title="Autorizzazioni e concessioni"
+        card-text="Autorizzazioni, permessi, licenze, concessioni di suolo, passi carrabili e prestito di beni del
+        Comune."
+        card-link="Vedi servizi (32)"
+        }}
+      </div>
+
+      <div class="col-12 col-lg-4">
+        {{>cmp-card/cmp-card-simple
+        classTitle="title-xlarge"
+        classText="mb-5"
+        card-title="Catasto e urbanistica"
+        card-text="Piani urbanistici, piani paesaggistici e tutti i certificati per immobili, case, terreni ed
+        edifici. "
+        card-link="Vedi servizi (32)"
+        }}
+      </div>
+
+      <div class="col-12 col-lg-4">
+        {{>cmp-card/cmp-card-simple
+        classTitle="title-xlarge"
+        classText="mb-5"
+        card-title="Cultura e tempo libero"
+        card-text="Luoghi della cultura e dell’arte, impianti sportivi e richieste di contributi per la cultura, lo
+        spettacolo e lo sport."
+        card-link="Vedi servizi (32)"
+        }}
+      </div>
+
+      <div class="col-12 col-lg-4">
+        {{>cmp-card/cmp-card-simple
+        classTitle="title-xlarge"
+        classText="mb-5"
+        card-title="Educazione e formazione"
+        card-text="Iscrizioni, agevolazioni e servizi per nidi, scuole e università."
+        card-link="Vedi servizi (32)"
+        }}
+      </div>
+
+      <div class="col-12 col-lg-4">
+        {{>cmp-card/cmp-card-simple
+        classTitle="title-xlarge"
+        classText="mb-5"
+        card-title="Giustizia e sicurezza pubblica"
+        card-text="Polizia municipale, tribunale e Protezione civile."
+        card-link="Vedi servizi (32)"
+        }}
+      </div>
+
+      <div class="col-12 col-lg-4">
+        {{>cmp-card/cmp-card-simple
+        classTitle="title-xlarge"
+        classText="mb-5"
+        card-title="Imprese e commercio"
+        card-text="Avvio di un’attività, commercio, autorizzazioni e concessioni per attività produttive, mercati,
+        incentivi e supporto alle imprese."
+        card-link="Vedi servizi (32)"
+        }}
+      </div>
+
+      <div class="col-12 col-lg-4">
+        {{>cmp-card/cmp-card-simple
+        classTitle="title-xlarge"
+        classText="mb-5"
+        card-title="Mobilità e trasporti"
+        card-text="Parcheggi, viabilità, automobili e trasporto pubblico."
+        card-link="Vedi servizi (32)"
+        }}
+      </div>
+
+      <div class="col-12 col-lg-4">
+        {{>cmp-card/cmp-card-simple
+        classTitle="title-xlarge"
+        classText="mb-5"
+        card-title="Salute, benessere e assistenza"
+        card-text="Servizi santirari e di sostegno per minori, famiglie, anziani e persone con disabilità."
+        card-link="Vedi servizi (32)"
+        }}
+      </div>
+
+      <div class="col-12 col-lg-4">
+        {{>cmp-card/cmp-card-simple
+        classTitle="title-xlarge"
+        classText="mb-5"
+        card-title="Tributi, finanze e contravvenzioni"
+        card-text="Tasse e tributi su immobili, rifiuti, affissioni e pubblicità."
+        card-link="Vedi servizi (32)"
+        }}
+      </div>
+
+      <div class="col-12 col-lg-4">
+        {{>cmp-card/cmp-card-simple
+        classTitle="title-xlarge"
+        classText="mb-5"
+        card-title="Turismo"
+        card-text="Sostegno e sviluppo del turismo, strutture ricettive e informazioni turistiche."
+        card-link="Vedi servizi (32)"
+        }}
+      </div>
+
+      <div class="col-12 col-lg-4">
+        {{>cmp-card/cmp-card-simple
+        classTitle="title-xlarge"
+        classText="mb-5"
+        card-title="Vita lavorativa"
+        card-text="Lavoro, concorsi e selezioni, licenze, abilitazioni professionali e sicurezza sul lavoro."
+        card-link="Vedi servizi (32)"
+        }}
+      </div>
+    </div>
+  </div>
+
+
+  <div class="bg-primary">
+    <div class="container">
+      <div class="row d-flex justify-content-center bg-primary">
+        <div class="col-12 col-lg-6 p-lg-0 px-3">
+          {{>cmp-rating/cmp-rating}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-grey-card">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6 offset-lg-3 py-5">
+          {{>cmp-contacts/cmp-contacts disservizio=true appuntamento=true}}
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{{/base/base }}

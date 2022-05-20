@@ -1,0 +1,99 @@
+.cmp-info-radio {
+  position: relative;
+  margin-top: um(16px);
+
+  .info-wrapper {
+    padding: um(4px) 0;
+    border-top: 1px solid get-color(light-grey, grey);
+
+    &__label {
+      font-size: um(14px);
+      line-height: um(18px);
+      font-weight: 400;
+    }
+
+    &__value {
+      font-size: um(16px);
+      line-height: um(24px);
+      font-weight: 600;
+    }
+  }
+
+
+  .radio-input {
+    &+label {
+      position: absolute !important;
+      right: um(10px);
+      top: um(20px);
+      z-index: 1;
+      width: um(24px);
+      height: um(24px);
+    }
+
+    &:checked {
+      &+label+.card {
+        outline: 1px solid get-color(primary, main);
+      }
+    }
+  }
+
+  .big-title {
+    font-size: um(24px);
+    font-weight: 700;
+    line-height: um(28px);
+    padding-bottom: um(8px);
+    max-width: 85%;
+
+    @include media-breakpoint-up(md) {
+      font-size: um(32px);
+      line-height: um(32px);
+      padding-bottom: um(16px);
+    }
+  }
+
+  .name {
+    font-size: um(18px);
+    line-height: 1.5;
+    font-weight: 700;
+    margin-bottom: um(8px);
+  }
+
+  .card-info {
+    font-size: um(14px);
+    line-height: 1.5;
+    margin: um(4px) 0;
+
+    @include media-breakpoint-up(md) {
+      font-size: um(16px);
+    }
+
+    &+.card-info {
+      margin-top: um(4px);
+    }
+
+    span {
+      font-size: um(16px);
+      font-weight: 600;
+
+      @include media-breakpoint-up(md) {
+        font-size: um(18px);
+      }
+    }
+
+
+  }
+
+  .cmp-alert-box {
+    margin-top: um(16px);
+  }
+
+  .accordion-button {
+    padding-left: 0;
+    font-weight: normal;
+
+    &::after {
+      margin-left: 0;
+    }
+  }
+}
+

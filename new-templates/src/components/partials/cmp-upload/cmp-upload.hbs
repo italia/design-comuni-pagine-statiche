@@ -6,9 +6,10 @@
       <svg class="icon icon-sm" aria-hidden="true">
         <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-file"></use>
       </svg>
+
       <p class="cmp-upload__list-item">
         <span class="visually-hidden">File caricato:</span>
-        documento_ISEE-2022.pdf
+        {{document}}
       </p>
       <button disabled>
         <span class="visually-hidden">Caricamento ultimato</span>
@@ -25,7 +26,7 @@
       </svg>
       <p>
         <span class="visually-hidden">Errore caricamento file:</span>
-        documento_ISEE-2022.pdf<span class="upload-file-weight"></span>
+        {{document}}<span class="upload-file-weight"></span>
       </p>
       <button>
         <span class="visually-hidden">Elimina file caricato nome-file-04.jpg</span>
@@ -43,5 +44,10 @@
     </svg>
     <span>Carica documento</span>
   </label>
-  <p class="mt-2 cmp-upload__info mb-4">Caricare uno o più file in formato pdf, jpg, png</p>
+  {{#if fronteRetro}}
+    <p class="mt-2 cmp-upload__info mb-4">Caricare uno o più file in formato pdf, jpg, png con fronte e retro del
+    documento</p>
+    {{else}}
+    <p class="mt-2 cmp-upload__info mb-4">Caricare uno o più file in formato pdf, jpg, png</p>
+  {{/if}}
 </div>

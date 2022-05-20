@@ -15,6 +15,15 @@
       <span class="text-button-sm t-primary">Salva</span>
     </button>
 
+{{#if next}}
+    <button type="button" class="btn btn-primary btn-sm steppers-btn-confirm" data-bs-toggle="modal" data-bs-target="#{{modalId}}">
+      <span class="text-button-sm">Conferma</span>
+      <svg class="icon icon-white icon-sm">
+        <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-chevron-right"></use>
+      </svg>
+
+    </button>
+{{else}}
     <button type="button" class="btn btn-primary btn-sm steppers-btn-confirm" data-bs-toggle="modal" data-bs-target="#{{modalId}}">
       <span class="text-button-sm">Avanti</span>
       <svg class="icon icon-white icon-sm">
@@ -22,6 +31,7 @@
       </svg>
 
     </button>
+{{/if}}
   </nav>
   {{>cmp-disclaimer/cmp-disclaimer}}
 

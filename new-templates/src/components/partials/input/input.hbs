@@ -1,5 +1,5 @@
 
-  <div class="form-group cmp-input">
+  <div class="form-group cmp-input {{formClass}}">
     <label class="cmp-input__label" for="{{id}}">{{label}}{{#if required}}*{{/if}}</label>
      <input
     type="{{type}}"
@@ -8,6 +8,7 @@
     name={{id}}
     placeholder="{{placeholder}}"
     {{#if required}} required {{/if}}
+    {{#if disabled}} disabled {{/if}}
   >
     {{#if address}}
     <span class="cmp-input__icon-input">

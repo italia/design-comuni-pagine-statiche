@@ -1,0 +1,142 @@
+{{#>base/base title="Archetipo: Pagamenti dovuti"}}
+<main>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi" link3="Pagamenti"}}
+        {{> cmp-heading/cmp-heading
+        title="Pagamento IMU"
+        subTitle="Inserisci le informazioni necessarie per pagare l’IMU.<br>Potrai ricontrollare tutti i dati nel
+        riepilogo, prima di inviare la richiesta."
+        }}
+      </div>
+      <div class="col-12">
+        {{> cmp-info-progress/cmp-info-progress
+        step-list=pagamenti-dovuti.info-progress.step-2
+        step-num="2"
+        step-tot="5"
+        step-title="Dati generali"
+        subtitle="I campi contraddistinti dal simbolo asterisco (*) sono obbligatori"
+        }}
+      </div>
+    </div>
+    <div class="steppers-content" aria-live="polite">
+      <div class="row">
+        <div class="col-12 col-lg-3 mb-4 d-none d-lg-block">
+          {{>cmp-navscroll/cmp-navscroll accordion-title="INFORMAZIONI RICHIESTE"
+          link-list=pagamenti-dovuti.controllare-dati-personali.navscroll
+          br-none="true"
+          }}
+        </div>
+        <div class="col-12 col-lg-8 offset-lg-1">
+          <div>
+            {{#>cmp-card/cmp-card-content-box
+            class="p-big"
+            id-title="taxpayer"
+            bg-grey=true
+            h2-class="mb-0"
+            card-title="Contribuente"
+            select=true
+            placeholder="Seleziona opzione"
+            subtitle="Seleziona o aggiungi il contribuente che pagherà l’imposta"
+            labelSelect="Tipologia"
+            required=true
+            select-option-list=pagamenti-dovuti.controllare-dati-personali.select
+            }}
+            {{> cmp-info-button-card/cmp-info-button-card radio=true group="beneficiaries" idRadio="first"
+            big-title="Giulia Rossi"
+            label-2="Codice Fiscale <br> <span>GLABNC72H25H501Y</span>"
+            data-add="Aggiungi dati"
+            show-more-anagrafica="true"
+            collapse-id="collapse-benef-1"
+            modalId="modal-documents"
+            btn-label-text="Aggiungi documento"
+            }}
+
+            {{> cmp-info-button-card/cmp-info-button-card radio=true group="beneficiaries" idRadio="second"
+            big-title="Sara Bianchi"
+            label-2="Codice Fiscale <br> <span>SRABNC72H25H501Y</span>"
+            data-add="Aggiungi dati"
+            show-more-anagrafica="true"
+            collapse-id="collapse-benef-2"
+            modalId="modal-documents"
+            btn-label-text="Aggiungi documento"
+            }}
+
+            {{>partials/button/button label="Aggiungi contribuente" link="true"
+            icon-url="./assets/bootstrap-italia/dist/svg/sprite.svg#it-close-circle"
+            icon-class="plus-icon icon-primary"
+            class="plus-text mt-30"
+            }}
+            {{/cmp-card/cmp-card-content-box}}
+          </div>
+
+          <div class="mt-4">
+            {{#>cmp-card/cmp-card-content-box
+            bg-grey=true
+            h2-class="mb-0"
+            card-title="Coobbligato"
+            openToggle=true
+            id-title="co-obliged"
+            label-text="Tipologia"
+            required="true"
+            subtitle="Seleziona o aggiungi il coobbligato per il quale pagherai l’imposta"
+            }}
+            {{>partials/toggle/toggle label="C’è un coobbligato" id="toggle" toggleWhite=true}}
+            {{/cmp-card/cmp-card-content-box}}
+          </div>
+
+          <div class="mt-4">
+            {{#>cmp-card/cmp-card-content-box
+            bg-grey=true
+            h2-class="mb-0"
+            card-title="Immobili"
+            id-title="properties"
+            subtitle="Seleziona o aggiungi uno o più immobili per i quali pagherai l’imposta"
+            }}
+            {{>cmp-info-checkbox/cmp-info-checkbox title="H501 - Roma"
+            info-appointment=pagamenti-dovuti.controllare-dati-personali.immobili.info-1 accordion=true id="1"
+            classCard="p-3" collapse-id="collapse-benef-4"}}
+            {{>cmp-info-checkbox/cmp-info-checkbox title="L736 - Venezia"
+            info-appointment=pagamenti-dovuti.controllare-dati-personali.immobili.info-2 accordion=true id="2"
+            classCard="p-3 mt-30" collapse-id="collapse-benef-5"}}
+
+            {{>partials/button/button label="Aggiungi immobile"
+            iconBtn="it-plus-circle"
+            icon-class="plus-icon icon-primary"
+            modalId="modal-tributes"
+            class="plus-text mt-30"
+            }}
+            {{/cmp-card/cmp-card-content-box}}
+          </div>
+          {{>cmp-nav-steps/cmp-nav-steps save="true"
+          modalId="modal-save-1"
+          }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-grey-card">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6 offset-lg-3 py-5">
+          {{>cmp-contacts/cmp-contacts appuntamento=true}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{>cmp-modal/modal-tributes}}
+  {{>cmp-modal/modal-documents
+            label1-text="Documento d'identità"
+            label1-id="doc-id"
+            document1="giulia_bianchi_carta_di_identit..."
+            label2-text="Modulo condizione lavorativa"
+            label2-id="doc-lav"
+            document2="giulia_bianchi_modulo.pdf"}}
+
+  {{>cmp-modal/modal-save}}
+
+</main>
+{{/base/base }}

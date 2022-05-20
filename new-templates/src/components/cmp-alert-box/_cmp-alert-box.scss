@@ -51,12 +51,12 @@
     @include media-breakpoint-up(lg) {
       font-size: um(18px);
     }
-    
+
     .data-add{
       font-size: um(14px);
       font-weight: 600;
       line-height: 18px;
-      // color: $primary;
+      color: get-color(primary,main);
 
       @include media-breakpoint-up(lg) {
         font-size: um(18px);

@@ -1,0 +1,15 @@
+.category-list {
+  &__title {
+    color:get-color(light,grey);
+    font-family: Titillium Web;
+    font-size: um(16px);
+    font-weight: 600;
+    line-height: um(24px);
+  }
+  &__list{
+    font-family: Titillium Web;
+    font-size: um(16px);
+    font-weight: 600;
+    line-height: um(24px);
+  }
+}

@@ -102,6 +102,20 @@
         "anchor": "related-service"
       }
     ],
+    "links-procedura-pagamento": [
+      {
+        "item": "Cosa serve",
+        "anchor": "needed"
+      },
+      {
+        "item": "Indirizzo",
+        "anchor": "address"
+      },
+      {
+        "item": "Aggiungi al tuo calendario",
+        "anchor": "calendar"
+      }
+    ],
     "links-perfezionamento-richiesta": [
       {
         "item": "Doposcuola",
@@ -168,6 +182,38 @@
       {
         "item": "Periodo di validità",
         "anchor": "validity-period"
+      }
+    ],
+    "prenota-appuntamento-step-1": [
+      {
+        "item": "Ufficio",
+        "anchor": "office"
+      }
+    ],
+    "prenota-appuntamento-step-2": [
+      {
+        "item": "Appuntamenti disponibili",
+        "anchor": "appointment-available"
+      },
+      {
+        "item": "Ufficio",
+        "anchor": "office"
+      }
+    ],
+    "prenota-appuntamento-step-3": [
+      {
+        "item": "Motivo",
+        "anchor": "reason"
+      },
+      {
+        "item": "Dettagli",
+        "anchor": "details"
+      }
+    ],
+    "prenota-appuntamento-step-4": [
+      {
+        "item": "Richiedente",
+        "anchor": "applicant"
       }
     ]
   }

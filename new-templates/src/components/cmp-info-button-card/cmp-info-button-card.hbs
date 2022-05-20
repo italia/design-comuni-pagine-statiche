@@ -6,38 +6,61 @@
   <div class="card card-teaser shadow p-3 p-lg-4">
     <div class="card-body">
       {{#if big-title}}
-      <h3 class="big-title mb-0">{{big-title}}</h3>
+      <h3 class="big-title mb-0">{{{big-title}}}</h3>
       {{/if}}
+
       {{#if name}}
       <p class="name">{{name}}</p>
       {{/if}}
+
       {{#if label-1}}
       <p class="card-info">{{{label-1}}}</p>
       {{/if}}
+
       {{#if label-2}}
       <p class="card-info">{{{label-2}}}</p>
       {{/if}}
+
       {{#if error}}
-      {{> cmp-alert-box/cmp-alert-box message=alertMessage}}
-      <button type="button" class="btn btn-outline-primary mt-3 w-100" data-bs-toggle="modal"
-        data-bs-target="#{{modalId}}">{{btnLabel}}</button>
+        {{> cmp-alert-box/cmp-alert-box message=alertMessage}}
+        <button type="button" class="btn btn-outline-primary mt-3 w-100" data-bs-toggle="modal"
+          data-bs-target="#{{modalId}}">{{btnLabel}}</button>
       {{/if}}
+
       {{#if warning}}
-      {{> cmp-alert-box/cmp-alert-box warning="true" message=warningMessage message2=data-add}}
-      {{#if btnLabel}}
-      <button type="button" class="btn btn-outline-primary mt-3 w-100" data-bs-toggle="modal"
-        data-bs-target="#{{modalId}}">{{btnLabel}}</button>
+        {{> cmp-alert-box/cmp-alert-box warning="true" message=warningMessage message2=data-add}}
+        {{#if btnLabel}}
+        <button type="button" class="btn btn-outline-primary mt-3 w-100" data-bs-toggle="modal"
+          data-bs-target="#{{modalId}}">{{btnLabel}}</button>
+        {{/if}}
       {{/if}}
-      {{/if}}
+
       {{#if show-more-anagrafica}}
       {{>partials/cmp-accordion/cmp-accordion-anagrafica }}
       {{/if}}
+
+      {{#if show-more-anagrafica-2}}
+      {{>partials/cmp-accordion/cmp-accordion-anagrafica-2 }}
+      {{/if}}
+
+      {{#if show-more-anagrafica-3}}
+      {{>partials/cmp-accordion/cmp-accordion-anagrafica-3 }}
+      {{/if}}
+
+      {{#if show-more-vehicle}}
+      {{>partials/cmp-accordion/cmp-accordion-vehicle }}
+      {{/if}}
+
       {{#if show-more-isee}}
       {{>partials/cmp-accordion/cmp-accordion-isee }}
       {{/if}}
 
       {{#if show-more-disservizio}}
       {{>partials/cmp-accordion/cmp-accordion-disservizio }}
+      {{/if}}
+      
+      {{#if show-accordion-bank}}
+      {{>partials/cmp-accordion/cmp-accordion-bank }}
       {{/if}}
     </div>
   </div>

@@ -95,7 +95,16 @@ for (let i = 0; i < pages.length; i++) {
         ...require('../src/handlebars-json/icon-list'),
         ...require('../src/handlebars-json/accordion'),
         ...require('../src/handlebars-json/effettuare-pagamento'),
-        ...require('../src/handlebars-json/disservizio-lista')
+        ...require('../src/handlebars-json/disservizio-lista'),
+        ...require('../src/handlebars-json/categories'),
+        ...require('../src/handlebars-json/cards.json'),
+        ...require('../src/handlebars-json/select-option-list'),
+        ...require('../src/handlebars-json/info-appointment'),
+        ...require('../src/handlebars-json/pagamenti-dovuti'),
+        ...require('../src/handlebars-json/pagamenti-dovuti-multa'),
+        ...require('../src/handlebars-json/servizi-pagamento'),
+        ...require('../src/handlebars-json/permessi-autorizzazioni'),
+        ...require('../src/handlebars-json/vantaggi-economici.json')
       }
     }),
   );

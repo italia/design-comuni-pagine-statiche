@@ -1,4 +1,8 @@
 .cmp-ul-list {
+  &:not(:first-child) {
+    margin-top: um(24px);
+  }
+
   &__description {
     font-weight: 600;
 
@@ -12,10 +16,11 @@
   .link-list {
     padding-left: um(30px);
     list-style: none;
-    list-style-type:  square !important;
+    list-style-type: disc !important
   }
 
-  .link-list li {
+  .link-list li,
+  .description {
     font-size: um(16px);
     font-weight: 400;
     line-height: um(24px);
