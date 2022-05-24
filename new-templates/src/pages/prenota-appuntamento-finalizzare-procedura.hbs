@@ -11,12 +11,12 @@
         <div class="col-12 col-lg-10 offset-lg-1">
           {{>cmp-heading/cmp-heading
           title="Appuntamento confermato"
-          pClass="d-lg-flex flex-column"
           subTitle="L’appuntamento è fissato per<strong> Giovedì 11 marzo 2022 dalle ore 10:00 alle ore 10:30</strong>
           </p>
-          <p class='subtitle-small pt-3 d-lg-flex flex-column'>Abbiamo inviato il riepilogo all’email:
+          <p class='subtitle-small pt-3 pt-lg-4 d-lg-flex flex-column'>Abbiamo inviato il riepilogo all’email:
             <strong>giulia.bianchi@gmail.com</strong>"
             iconTitle="it-check-circle"
+             iconClass="mr-10 icons-sm mb-1"
             }}
         </div>
       </div>
@@ -43,6 +43,7 @@
 
           {{>cmp-icon-list/cmp-icon-list
            title="Aggiungi al tuo calendario"
+           titleClass="mb-lg-4"
            icon-list=icon-list.calendario-reservation-pagamento
            classMenu="mt-4"
            id-title="calendar"

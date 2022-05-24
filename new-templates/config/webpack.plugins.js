@@ -87,6 +87,7 @@ for (let i = 0; i < pages.length; i++) {
       // title: page.content.title,
       // description: page.content.description,
       templateParameters:{
+        ...require('../src/handlebars-json/iscrizione-graduatoria.json'),
         ...require('../src/handlebars-json/helpers-list'),
         ...require('../src/handlebars-json/info-list'),
         ...require('../src/handlebars-json/link-list'),

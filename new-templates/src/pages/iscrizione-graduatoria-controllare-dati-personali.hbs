@@ -12,7 +12,7 @@
       </div>
       <div class="col-12">
         {{> cmp-info-progress/cmp-info-progress
-        step-list=step-list.step-2
+        step-list=iscrizione-graduatoria.info-progress.step-2
         step-num="2"
         step-title="Dati generali"
         step-tot="4"
@@ -20,10 +20,10 @@
       </div>
     </div>
     <div class="steppers-content" aria-live="polite">
-      <div class="row">
+      <div class="row mt-lg-50">
         <div class="col-12 col-lg-3 mb-4 d-none d-lg-block">
           {{>cmp-navscroll/cmp-navscroll accordion-title="INFORMAZIONI RICHIESTE"
-            link-list=link-list.links-iscrizione-step-2
+            link-list=iscrizione-graduatoria.controllare-dati-personali.navscroll
             br-none="true"}}
         </div>
         <div class="col-12 col-lg-8 offset-lg-1">
@@ -38,7 +38,12 @@
             {{> cmp-info-button-card/cmp-info-button-card big-title="Giulia Bianchi"
             label-2="Codice Fiscale <br> <span>GLABNC72H25H501Y</span>"
             data-add="Aggiungi dati"
-            show-more-anagrafica="true"
+            show-more-anagrafica-2=true
+            anagrafica=iscrizione-graduatoria.controllare-dati-personali.anagrafica.list-1
+            indirizzo=iscrizione-graduatoria.controllare-dati-personali.indirizzo
+            contatti=iscrizione-graduatoria.controllare-dati-personali.contatti
+            documenti=iscrizione-graduatoria.controllare-dati-personali.documenti
+            btnDocumenti=true
             collapse-id="collapse-parents"
             modalId="modal-documents"
             btn-label-text="Aggiungi documento"}}
@@ -54,7 +59,12 @@
             big-title="Francesco Rossi"
             label-2="Codice Fiscale <br> <span>FRARSS72H25H501Y</span>"
             data-add="Aggiungi dati"
-            show-more-anagrafica="true"
+            show-more-anagrafica-2=true
+            anagrafica=iscrizione-graduatoria.controllare-dati-personali.anagrafica.list-1
+            indirizzo=iscrizione-graduatoria.controllare-dati-personali.indirizzo
+            contatti=iscrizione-graduatoria.controllare-dati-personali.contatti
+            documenti=iscrizione-graduatoria.controllare-dati-personali.documenti
+            btnDocumenti=true
             collapse-id="collapse-benef-1"
             modalId="modal-documents"
             btn-label-text="Aggiungi documento"}}
@@ -62,7 +72,12 @@
             {{> cmp-info-button-card/cmp-info-button-card radio=true group="beneficiaries" idRadio="daughter"
             big-title="Lucia Rossi" label-2="Codice Fiscale <br> <span>LCARSS72H25H501Y</span>"
             data-add="Aggiungi dati"
-            show-more-anagrafica="true"
+            show-more-anagrafica-2=true
+            anagrafica=iscrizione-graduatoria.controllare-dati-personali.anagrafica.list-1
+            indirizzo=iscrizione-graduatoria.controllare-dati-personali.indirizzo
+            contatti=iscrizione-graduatoria.controllare-dati-personali.contatti
+            documenti=iscrizione-graduatoria.controllare-dati-personali.documenti
+            btnDocumenti=true
             collapse-id="collapse-benef-2"
             modalId="modal-documents"
             btn-label-text="Aggiungi documento"}}
@@ -83,13 +98,18 @@
             big-title="Mario Rossi"
             label-2="Codice Fiscale <br>
             <span>MRARSS72H25H501Y</span>"
-            data-add="Aggiungi dati"
             warning=true
             warningMessage="Informazioni mancanti:"
-            show-more-anagrafica="true"
+            data-add="Aggiungi dati"
+            show-more-anagrafica-2=true
+            anagrafica=iscrizione-graduatoria.controllare-dati-personali.anagrafica.list-2
+            indirizzo=iscrizione-graduatoria.controllare-dati-personali.indirizzo
+            contatti=iscrizione-graduatoria.controllare-dati-personali.contatti
+            documenti=iscrizione-graduatoria.controllare-dati-personali.documenti
+            btnDocumenti=true
             collapse-id="collapse1"
             modalId="modal-documents"
-            btn-label-text="Modifica"
+            btn-label-text="Aggiungi documento"
             }}
             {{/cmp-card/cmp-card-content-box}}
           </div>
@@ -102,8 +122,7 @@
             dichiarazione"}}
             {{> cmp-info-button-card/cmp-info-button-card big-title="ISEE: 18.000,00€" label-2="Scadenza ISEE <br>
             <span>01/10/2019</span>"
-            data-add="Aggiungi dati"
-            show-more-isee="true"
+            show-more-isee=true
             collapse-id="collapse2"
             modalId="modal-isee"
             }}

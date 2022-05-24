@@ -28,7 +28,7 @@
           <div>
 
             {{#>cmp-card/cmp-card-content-box
-            class="p-big"
+            class="p-big p-lg-4"
             id-title="place"
             bg-grey=true
             h2-class="mb-0"
@@ -44,19 +44,19 @@
             class="p-big"
             id-title="religion-choice"
             bg-grey=true
-            h2-class="mb-1"
+            h2-class="mb-2 mb-lg-3"
             required-icon=true
             card-title="Disservizio"
             }}
-            {{>partials/select/select placeholder="Tipo di disservizio*" class="p-md-3"
+            {{>partials/select/select placeholder="Tipo di disservizio*" class="p-md-3 p-lg-4 pb-lg-0"
             select-option-list=serv-1-disservizio.list}}
-            <div class="text-area-wrapper p-3 bg-white">
+            <div class="text-area-wrapper p-3 p-lg-4 pb-lg-0 bg-white">
               {{>partials/input/input type="text" id="title" label="Titolo" required=true name="title"
               formClass="mb-0"}}
             </div>
-            {{>partials/text-area/text-area placeholder="Dettagli*" class="m-0 p-3 bg-white" num="2" label="Inserire al
+            {{>partials/text-area/text-area placeholder="Dettagli*" class="m-0 p-3 p-lg-4 bg-white" num="2" label="Inserire al
             massimo 200 caratteri"}}
-            <div class="btn-wrapper px-3 pt-2 pb-3 bg-white">.
+            <div class="btn-wrapper px-3 pt-2 pb-3 px-lg-4 pb-lg-4 pt-lg-0 bg-white">.
               <label class="title-xsmall-bold u-grey-dark pb-2">Immagini</label>
               <div class="upload-wrapper d-flex justify-content-between">
                 <img src="../images/img-disservizio-thumbnail.png" alt="..."

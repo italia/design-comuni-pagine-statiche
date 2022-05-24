@@ -11,6 +11,12 @@
     margin: um(16px) 0;
     text-decoration: underline;
     color: get-color(primary, main);
+
+    @include media-breakpoint-up(md) {
+      font-size: um(18px);
+      line-height: um(28px);
+    }
+
     &:last-child{
       margin-bottom: 0;
     }

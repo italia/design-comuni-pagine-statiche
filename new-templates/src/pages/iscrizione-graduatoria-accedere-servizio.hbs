@@ -3,11 +3,11 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-10 offset-lg-1">
-        {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Accesso"}}
+        {{>cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Accesso"}}
         {{>cmp-heading/cmp-heading title="Accedi" subTitle="Per accedere al sito e ai suoi servizi, utilizza una delle seguenti modalità"}}
       </div>
     </div>
-    <hr class="d-none d-lg-block mt-0 mb-2">
+   {{!--  <hr class="d-none d-lg-block mt-0 mb-2"> --}}
     <div class="row">
       <div class="col-12 col-lg-8 offset-lg-2">
         {{#>cmp-text-button/cmp-text-button
@@ -16,9 +16,9 @@
           linkLabel="Come attivare SPID"
           class="mb-2"
           classLink="u-main-primary"
-          textBtnClass="mt-lg-30 mt-0"
+          textBtnClass="mt-lg-100 mt-3"
         }}
-          {{>partials/button/button label="Entra con SPID" primary=true class="btn-icon btn-re square"  iconBtn="it-user"}}
+          {{>partials/button/button label="Entra con SPID" primary=true class="btn-icon btn-re square"  iconBtnUrl="../images/spid.svg"}}
         {{/cmp-text-button/cmp-text-button}}
 
         {{#>cmp-text-button/cmp-text-button
@@ -28,7 +28,7 @@
           class="mb-2"
           classLink="u-main-primary"
         }}
-          {{>partials/button/button label="Entra con CIE" primary=true class="btn-icon btn-re square" iconBtn="it-user"}}
+          {{>partials/button/button label="Entra con CIE" primary=true class="btn-icon btn-re square" iconBtnUrl="../images/cie.svg"}}
         {{/cmp-text-button/cmp-text-button}}
 
         {{#>cmp-text-button/cmp-text-button
@@ -45,7 +45,7 @@
   <div class="bg-grey-card">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-lg-6 offset-lg-3 py-5">
+        <div class="col-12 col-lg-6 offset-lg-3 pt-40 pb-40">
           {{>cmp-contacts/cmp-contacts appuntamento=true}}
         </div>
       </div>

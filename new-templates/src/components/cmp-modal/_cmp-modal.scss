@@ -87,12 +87,7 @@
 
     &-title {
       width: 100%;
-      margin-top: um(40px);
-
-
-      @include media-breakpoint-up(sm) {
-        font-size: um(24px);
-      }
+      margin-top: um(24px);
     }
 
     &-info {
@@ -103,6 +98,11 @@
 
       @include media-breakpoint-up(sm) {
         font-size: um(16px);
+      }
+
+      &.header-font{
+        font-size: um(16px);
+        line-height: um(24px);
       }
     }
 

@@ -1,10 +1,10 @@
 .cmp-navscroll {
+  top: um(50px);
 
   .link-list-wrapper ul li a{
     line-height: um(38px);
   }
 
-  height: 100%;
   .link-list-wrapper ul li a:hover:not(.disabled) span {
     color: get-color(black, main);
   }

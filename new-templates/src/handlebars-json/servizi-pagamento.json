@@ -335,7 +335,7 @@
       ],
       "servizi-correlati-disservizio": [
         {
-          "icon": "it-clip",
+          "icon": "it-settings",
           "link": "Richiesta appuntamento",
           "class": "shadow"
         }

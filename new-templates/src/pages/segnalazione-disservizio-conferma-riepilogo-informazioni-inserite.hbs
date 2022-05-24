@@ -20,14 +20,15 @@
     <div class="row justify-content-center">
       <div class="col-12 col-lg-8">
 
-        {{>cmp-icon-card/cmp-icon-card
-        icon-color="icon-notice"
-        title-class="text-notice text-uppercase title-medium-bold mb-4"
-        notice-card=true
+        
+        {{>cmp-callout/callout 
+        calloutType="warning"
         icon="it-horn"
-        card-title="Attenzione"
-        description="Le informazioni che hai fornito hanno valore di dichiarazione. <br> Verifica che siano corrette."}}
-
+        calloutTitle="Attenzione"
+        calloutText="Le informazioni che hai fornito hanno valore di dichiarazione.<br>Verifica che siano corrette."
+        textClass="titillium text-paragraph"
+        }}
+        
         <h2 class="title-xxlarge mb-4 mt-40">Segnalazione</h2>
 
         {{#>cmp-card/cmp-card-content-box
@@ -51,7 +52,7 @@
         class="mb-0"
         bg-grey=true
         h3-title=true
-        card-title="Autore della<br/> segnalazione" }}
+        card-title="Autore della segnalazione" }}
 
         {{>cmp-info-summary/cmp-info-summary
         class="mt-4 mb-30 p-4"

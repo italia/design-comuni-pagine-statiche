@@ -1,32 +1,34 @@
 <div class="cmp-contacts">
   <div class="card w-100">
     <div class="card-body">
-      <h2 class="title-medium-2-semi-bold ">Assistenza e contatti</h2>
+      <h2 class="title-medium-2-semi-bold ">Contatta il comune</h2>
       <ul class="contact-list p-0">
         <li><a class="list-item" href="#">
-            <svg class="icon icon-primary">
+            <svg class="icon icon-primary icon-sm">
               <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-help-circle"></use>
-            </svg><span>Leggi le FAQ</span></a></li>
+            </svg><span>Leggi le domande frequenti</span></a></li>
         <li><a class="list-item" href="#">
-            <svg class="icon icon-primary">
+            <svg class="icon icon-primary icon-sm">
+              <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-mail"></use>
+            </svg><span>Richiedi assistenza</span></a></li>
+        <li><a class="list-item" href="#">
+            <svg class="icon icon-primary icon-sm">
               <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-hearing"></use>
-            </svg><span>Numero verde 05 0505</span></a></li>
+            </svg><span>Chiama il numero verde 05 0505</span></a></li>
             {{#if appuntamento}}
         <li><a class="list-item" href="#">
-            <svg class="icon icon-primary">
+            <svg class="icon icon-primary icon-sm">
               <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-calendar"></use>
             </svg><span>Prenota appuntamento</span></a></li>
             {{/if}}
-            {{#if disservizio}}
+      </ul>
+
+      <h2 class="title-medium-2-semi-bold mt-4">Problemi in città</h2>
+      <ul class="contact-list p-0">
         <li><a class="list-item" href="#">
-            <svg class="icon icon-primary">
-              <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-tool"></use>
+            <svg class="icon icon-primary icon-sm">
+              <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-map-marker-circle"></use>
             </svg><span>Segnala disservizio </span></a></li>
-            {{/if}}
-        <li><a class="list-item" href="#">
-            <svg class="icon icon-primary">
-              <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-settings"></use>
-            </svg><span>Richiedi assistenza</span></a></li>
       </ul>
     </div>
   </div>

@@ -4,10 +4,10 @@
   }
 
   &__description {
-    font-weight: 600;
+    // font-weight: 600;
 
     @include media-breakpoint-up(md) {
-      font-weight: 400;
+      //font-weight: 400;
     }
 
     padding-right: um(24px);

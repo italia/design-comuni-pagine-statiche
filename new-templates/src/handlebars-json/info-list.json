@@ -247,38 +247,6 @@
       }
     ]
   },
-  "isee": {
-    "info": [
-      {
-        "name": "Valore ISEE",
-        "description": "18.000,00€"
-      },
-      {
-        "name": "Scadenza ISEE",
-        "description": "06/10/2023"
-      },
-      {
-        "name": "Anno protocollo",
-        "description": "2022"
-      },
-      {
-        "name": "Numero protocollo",
-        "description": "12345678"
-      },
-      {
-        "name": "Codice filiale protocollo",
-        "description": "12345678"
-      },
-      {
-        "name": "Certificato ISEE",
-        "description": "documento_ISEE-2019.pdf",
-        "warning": false,
-        "success": true,
-        "warning-message": "Documento scaduto",
-        "success-message": "Documento inserito con successo"
-      }
-    ]
-  },
   "anagrafica-altro-genitore": {
     "info": [
       {
@@ -384,32 +352,6 @@
         "success": false,
         "warning-message": "Documento mancante",
         "success-message": "Documento inserito con successo"
-      }
-    ]
-  },
-  "scheda-servizio-lista-1": {
-    "lista-1": [
-      {
-        "text": "Bambini di età compresa tra i 3 e i 5 anni compiuti o da compiere entro il 31 dicembre di ogni anno."
-      },
-      {
-        "text": "Bambini che compiranno i 3 anni dopo il 31 dicembre e, comunque, entro e non oltre il 30 aprile dell’anno successivo (ammissione anticipata)."
-      }
-    ]
-  },
-  "scheda-servizio-lista-2": {
-    "lista-2": [
-      {
-        "text": "SPID (Sistema Pubblico per la gestione dell'Identità Digitale), Carta identità elettronica (CIE) o Carta Nazionale dei Servizi (CNS);"
-      },
-      {
-        "text": "la documentazione attestante eventuali disabilità"
-      },
-      {
-        "text": "il permesso di soggiorno del genitore che presenta la richiesta"
-      },
-      {
-        "text": "l’ISEE in corso di validità"
       }
     ]
   },

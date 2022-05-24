@@ -1,10 +1,10 @@
 .cmp-heading {
-  .categoryicon-top {
+ /*  .categoryicon-top {
     .icon {
       width: um(34px);
       height: um(34px);
     }
-  }
+  } */
 
   .btn {
     width: 100%;
@@ -32,7 +32,6 @@
 
     @include media-breakpoint-up(md) {
       margin-bottom: 0;
-      max-width: 60%;
     }
   }
 

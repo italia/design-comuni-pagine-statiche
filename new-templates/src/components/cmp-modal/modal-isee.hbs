@@ -1,4 +1,4 @@
-{{#>cmp-modal/cmp-modal-structure id="modal-isee" modalTitle="ISEE" buttons=true modalInfo="I campi contraddistinti dal
+{{#>cmp-modal/cmp-modal-structure-scrollable id="modal-isee" modalTitle="ISEE" buttons=true modalInfo="I campi contraddistinti dal
 simbolo asterisco (*) sono obbligatori"}}
 <div>
   <form action="" id="contacts-form">
@@ -11,7 +11,7 @@ simbolo asterisco (*) sono obbligatori"}}
     protocollo" required=true }}
     {{>partials/input/input id="codice-filiale" type="text" label="Codice filiale protocollo" text="Inserisci numero codice
     filiale protocollo" placeholder="12345678" required=true }}
-    {{>partials/cmp-upload/cmp-upload  inputId="cond-lav-isee" label="Modulo condizione lavorativa" required="true" error="true"}}
+    {{>partials/cmp-upload/cmp-upload  inputId="cond-lav-isee" label="Modulo condizione lavorativa" required="true" error="true" document="documento_ISEE-2019.pdf"}}
   </form>
 </div>
-{{/cmp-modal/cmp-modal-structure}}
+{{/cmp-modal/cmp-modal-structure-scrollable}}

@@ -20,14 +20,14 @@
     <div class="row justify-content-center">
       <div class="col-12 col-lg-8">
 
-        {{>cmp-icon-card/cmp-icon-card
-        icon-color="icon-notice"
-        title-class="text-notice text-uppercase title-medium-bold mb-4"
-        notice-card=true
-        no-h-title=true
+
+        {{>cmp-callout/callout 
+        calloutType="warning"
         icon="it-horn"
-        card-title="Attenzione"
-        description="Le informazioni che hai fornito hanno valore di dichiarazione. <br> Verifica che siano corrette."}}
+        calloutTitle="Attenzione"
+        calloutText="Le informazioni che hai fornito hanno valore di dichiarazione.<br>Verifica che siano corrette."
+        textClass="titillium text-paragraph"
+        }}
 
         <h2 class="title-xxlarge mb-4 mt-40">Dati Generali</h2>
 

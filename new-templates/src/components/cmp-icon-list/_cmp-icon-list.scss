@@ -2,7 +2,8 @@
   .shadow {
     background-color: #fff;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-    padding: 0.71rem um(26px);
+    padding: um(16px) um(26px);
+    text-decoration: underline;
 
     &:not(:first-child) {
       margin: um(10px) 0 um(50px) 0;
@@ -17,6 +18,6 @@
     }
   }
   .icon-color{
-    fill:get-color(light,grey);
+    fill:get-color(black, main);
   }
 }

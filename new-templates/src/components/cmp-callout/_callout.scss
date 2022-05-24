@@ -1,0 +1,11 @@
+.callout{
+  .callout-title{
+    font-size: um(18px);
+    font-weight: 700;
+    line-height: um(20px);
+  }
+
+  p{
+    color: get-color(light,grey);
+  }
+}

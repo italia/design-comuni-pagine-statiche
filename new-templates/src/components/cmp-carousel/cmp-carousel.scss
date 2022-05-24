@@ -1,11 +1,11 @@
 .cmp-carousel {
   &__title {
     color: get-color(light, grey);
-    font-size: um(24px);
+    font-size: um(28px);
     font-weight: 600;
     line-height: um(30px);
     @include media-breakpoint-up(md) {
-      font-size: um(32px);
+      font-size: um(32px) !important;
       line-height: um(40px);
     }
   }

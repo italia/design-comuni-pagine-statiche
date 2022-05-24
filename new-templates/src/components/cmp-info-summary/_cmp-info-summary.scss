@@ -24,6 +24,7 @@
       font-size: um(16px);
       line-height: um(18px);
       font-weight: 600;
+      word-break:break-all;
 
       @include media-breakpoint-up(md) {
         font-size: um(18px);

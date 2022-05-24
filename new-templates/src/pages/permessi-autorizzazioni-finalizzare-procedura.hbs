@@ -11,13 +11,13 @@
         <div class="col-12 col-lg-10">
           {{>cmp-heading/cmp-heading
           title="Richiesta inviata"
-          pClass="d-lg-flex flex-column"
           btnClass="mt-3"
           subTitle="Grazie abbiamo ricevuto la tua richiesta per la pratica <strong>AN4059281 permesso pass
             ZTL</strong>"
           description="Abbiamo inviato il riepilogo all’email: <br> <strong>mario.rossi@gmail.com</strong>"
           desClass="mt-4"
           iconTitle="it-check-circle"
+          iconClass="mr-10 icons-sm mb-1"
           button=true
           label="Scarica la ricevuta (PDF 100KB)"
           outline-primary=true
@@ -43,9 +43,10 @@
           timeline=permessi-autorizzazioni.finalizzare-procedura.timeline
           label="<a class='t-primary underline' href='#''>Consulta la richiesta</a> nella tua area riservata."
           }}
-          
+
           {{>cmp-icon-list/cmp-icon-list
            title="Servizi correlati"
+           titleClass="mb-lg-4"
            id-title="related-service"
            titleClass="mb-24"
            icon-list=permessi-autorizzazioni.finalizzare-procedura.servizi-correlati

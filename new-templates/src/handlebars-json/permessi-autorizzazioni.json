@@ -89,7 +89,7 @@
           "event": "Pagamento"
         },
         {
-          "day": "2",
+          "day": "02",
           "month": "giorni",
           "event": "Rilascio permesso ZTL"
         }

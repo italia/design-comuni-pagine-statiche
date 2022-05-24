@@ -6,54 +6,55 @@
         {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi" link3="Servizi sociali"}}
         {{> cmp-heading/cmp-heading
           title="Assegno di maternità"
-          pClass="mt-3"
+          descriptionAfterTag="L’assegno di maternità è a disposizione di famiglie con risorse limitate in caso di nascita, adozione o affido preadottivo"
+          dat-class="pt-3"
+          pClass="mt-3 mb-4"
           button=true
           label="Richiedi online"
           primary=true
-          btnClass="mt-4"
+          btnClass="mt-30"
           class="text-button"
           label-tag="Servizio attivo"
-          description="L’assegno di maternità è a disposizione di famiglie con risorse limitate in caso di nascita, adozione o affido preadottivo"
           title-class="w-75"
           }}
       </div>
       <hr class="d-none d-lg-block mb-0 mt-2">
     </div>
 
-    <div class="row mt-lg-40">
+    <div class="row mt-lg-40 mt-lg-3">
       <div class="col-12 col-lg-3 mb-4">
         {{>cmp-navscroll/cmp-navscroll accordion-title="INDICE DELLA PAGINA"
           link-list=vantaggi-economici.trovare-informazioni-servizio.navscroll}}
       </div>
       <div class="col-12 col-lg-8 offset-lg-1">
-        {{#>cmp-card/cmp-card-content-box card-title="A chi è rivolto" h2-class="mb-3" id-title="who-needs"}}
+        {{#>cmp-card/cmp-card-content-box card-title="A chi è rivolto" h2-class="mb-0" id-title="who-needs"}}
 
         {{>cmp-ul-list/cmp-ul-list info-list=vantaggi-economici.trovare-informazioni-servizio.list-1 font-list="lora"}}
         {{/cmp-card/cmp-card-content-box}}
 
 
-        {{#>cmp-card/cmp-card-content-box card-title="Descrizione" id-title="description"}}
+        {{#>cmp-card/cmp-card-content-box card-title="Descrizione"  h2-class="mb-0" id-title="description"}}
         <p class="text-paragraph lora">
           L'assegno è riconosciuto alle persone che non beneficiano di nessuna indennità di maternità o che percepiscono un’indennità inferiore all’importo del contributo stesso e che dispongono di patrimoni e redditi limitati (Assegno di maternità di base - Art. 74 del D.Lgs 151/2011).
         </p>
         {{/cmp-card/cmp-card-content-box}}
 
 
-        {{#>cmp-card/cmp-card-content-box card-title="Come fare" id-title="how-to"}}
-        <br class="text-paragraph lora">
-          Per ottenere l’assegno occorre inviare la richiesta entro sei mesi dalla data di nascita del minore o dall’ingresso in famiglia del bambino adottato o in affido preadottivo. </br></br>
-          Le cittadine extracomunitarie devono allegare il permesso di soggiorno.</br></br>
+        {{#>cmp-card/cmp-card-content-box card-title="Come fare"  h2-class="mb-0" id-title="how-to"}}
+        <p class="text-paragraph lora">
+          Per ottenere l’assegno occorre inviare la richiesta entro sei mesi dalla data di nascita del minore o dall’ingresso in famiglia del bambino adottato o in affido preadottivo. <br><br>
+          Le cittadine extracomunitarie devono allegare il permesso di soggiorno. <br><br>
           Dopo la verifica dei requisiti da parte del Comune, è disposta la richiesta di pagamento all’Inps.
         </p>
         {{/cmp-card/cmp-card-content-box}}
 
 
 
-        {{#>cmp-card/cmp-card-content-box card-title="Cosa serve" id-title="needed" bg-grey="true" bg-grey-primary=true }}
+        {{#>cmp-card/cmp-card-content-box card-title="Cosa serve" h2-class="mb-0" id-title="needed" bg-grey="true" bg-grey-primary=true }}
         {{>cmp-ul-list/cmp-ul-list description="Per accedere al servizio, assicurati di avere:" font-title="lora" font-list="lora" info-list=vantaggi-economici.trovare-informazioni-servizio.list-2 }}
         {{/cmp-card/cmp-card-content-box}}
 
-        {{#>cmp-card/cmp-card-content-box card-title="Cosa si ottiene" id-title="obtain" subtitle="L’erogazione avviene entro 45 giorni dalla data di ricezione dei dati.
+        {{#>cmp-card/cmp-card-content-box card-title="Cosa si ottiene" h2-class="mb-3" id-title="obtain" subtitle="L’erogazione avviene entro 45 giorni dalla data di ricezione dei dati.
         L'assegno viene erogato in un unica soluzione. Nel caso di parti gemellari, l'importo dell'assegno viene moltiplicato per il numero di figli nati." }}
         {{/cmp-card/cmp-card-content-box}}
 
@@ -65,41 +66,41 @@
 
 
 
-        {{#>cmp-card/cmp-card-content-box card-title="Accedi al servizio" id-title="service-access" subtitle="Puoi richiedere l’assegno di maternità direttamente online tramite identità digitale." bg-grey="true" margin-class="mt-30" }}
-        {{>partials/button/button label="Richiedi online" primary="true" class="mobile-full"  }}
+        {{#>cmp-card/cmp-card-content-box card-title="Accedi al servizio" id-title="service-access" subtitle="Puoi richiedere l’assegno di maternità direttamente online tramite identità digitale." bg-grey="true" margin-class="mt-30" h2-class="mb-3"}}
+        {{>partials/button/button label="Richiedi online" primary="true" class="mobile-full"}}
         <p class="text-paragraph mt-25 mb-25">Oppure, puoi prenotare un appuntamento e presentarti presso gli uffici.
         </p>
-        {{>partials/button/button label="Prenota appuntamento" primary="true" class="mobile-full btn-outline-primary t-primary" }}
+        {{>partials/button/button label="Prenota appuntamento" primary="true" class="mobile-full btn-outline-primary t-primary bg-white" }}
         {{/cmp-card/cmp-card-content-box}}
 
 
 
 
-        {{#>cmp-card/cmp-card-content-box card-title="Condizioni di servizio" id-title="conditions" subtitle="Per conoscere i dettagli di
+        {{#>cmp-card/cmp-card-content-box card-title="Condizioni di servizio" h2-class="mb-3" id-title="conditions" subtitle="Per conoscere i dettagli di
         scadenze, requisiti e altre informazioni importanti, leggi i termini e le condizioni di servizio." lora=true }}
         {{>cmp-icon-link/cmp-icon-link link="Termini e condizioni di servizio (PDF 1MB)"}}
         {{/cmp-card/cmp-card-content-box}}
 
 
-        {{#>cmp-card/cmp-card-content-box card-title="Contatti" id-title="contacts"}}
+        {{#>cmp-card/cmp-card-content-box card-title="Contatti" h2-class="mb-0" id-title="contacts"}}
 
-        <div class="mt-15">
-          {{>cmp-card-img/cmp-card-img card-title="Ufficio scuola" card-description="Via Dei Transiti 21, 50302<br> 05
-          0505 <br> ufficioscuola@email.it" img=true}}
+        <div>
+          {{>cmp-card-img/cmp-card-img card-title="Ufficio sussidi" card-description="Via Dei Transiti 21, 50302<br> 05
+          0505 <br> ufficiosussidi@email.it" img=true}}
         </div>
         {{/cmp-card/cmp-card-content-box}}
 
-
-        {{#>cmp-card/cmp-card-content-box }}
-        <span class="text-paragraph-small" >Argomenti:</span>
-        <div class="d-flex flex-wrap gap-2 mt-10 mb-30 ">
-          {{>partials/cmp-tag/cmp-tag label-tag="Sussidi" class="bg-tag"}}
+        <div class="wrapper-tag mb-4 mb-lg-80">
+         <span class="text-paragraph-small" >Argomenti:</span>
+            <div class="d-flex flex-wrap gap-2 mt-10 mb-30 ">
+              {{>partials/cmp-tag/cmp-tag label-tag="Sussidi" class="bg-tag"}}
           {{>partials/cmp-tag/cmp-tag label-tag="Famiglia" class="bg-tag"}}
           {{>partials/cmp-tag/cmp-tag label-tag="Madri" class="bg-tag"}}
           {{>partials/cmp-tag/cmp-tag label-tag="Servizi sociali" class="bg-tag"}}
-        </div>
-        <p class="text-paragraph-small">Pagina aggiornata il 14/04/2022</p>
-        {{/cmp-card/cmp-card-content-box}}
+            </div>
+            <p class="text-paragraph-small">Pagina aggiornata il 14/04/2022</p>
+       </div>
+
       </div>
     </div>
     </div>
@@ -118,10 +119,10 @@
   <div class="bg-grey-card">
     <div class="container">
       <div class="row">
-        <div class="col-12 py-4">
-          {{>cmp-carousel/cmp-carousel carousel-title="Contenuti correlati" class="carousel-4-card"}}
+        <div class="col-12 pt-5 pb-40">
+          {{>cmp-carousel/cmp-carousel carousel-title="Contenuti correlati" class="carousel-4-card" carTitle-class="pb-0"}}
         </div>
-        <div class="col-12 col-lg-6 offset-lg-3 py-5">
+        <div class="col-12 col-lg-6 offset-lg-3 pt-lg-4 pb-40">
           {{>cmp-contacts/cmp-contacts appuntamento=true disservizio=true}}
         </div>
       </div>

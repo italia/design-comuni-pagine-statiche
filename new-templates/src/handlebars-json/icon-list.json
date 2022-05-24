@@ -10,18 +10,6 @@
         "link": "Ufficio largo Michelangelo Buonarroti [prenota]"
       }
      ],
-    "finalizzazione-domanda": [
-      {
-        "icon": "it-settings",
-        "link": "Iscrizione servizio mensa",
-        "class": "shadow"
-      },
-      {
-        "icon": "it-settings",
-        "link": "Iscrizione trasporto scolastico",
-        "class": "shadow"
-      }
-    ],
     "allegati-area-personale": [
       {
         "icon": "it-clip",

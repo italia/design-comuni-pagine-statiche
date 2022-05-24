@@ -5,21 +5,21 @@
       <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#{{iconTitle}}"></use>
     </svg>
     {{#if h2}}
-    <h2 class="title-xxxlarge mb-0 ml-10">{{title}}</h2>
+    <h2 class="title-xxxlarge mb-0 ml-10 {{title-class}}">{{title}}</h2>
     {{else}}
     <h1 class="title-xxxlarge {{title-class}}">{{title}}</h1>
     {{/if}}
   </div>
   {{else}}
   {{#if h2}}
-  <h2 class="title-xxxlarge">{{title}}</h2>
+  <h2 class="title-xxxlarge {{title-class}}">{{title}}</h2>
   {{else}}
-  <h1 class="title-xxxlarge">{{title}}</h1>
+  <h1 class="title-xxxlarge {{title-class}}">{{title}}</h1>
   {{/if}}
   {{/if}}
 
   {{#if subTitle}}
-  <p class="subtitle-small mb-2 {{pClass}}">{{{subTitle}}}</p>
+  <p class="subtitle-small {{pClass}}">{{{subTitle}}}</p>
   {{/if}}
 
   {{#if label-tag}}
@@ -29,7 +29,7 @@
   {{/if}}
 
   {{#if descriptionAfterTag}}
-  <p class="text-paragraph mb-30">
+  <p class="text-paragraph mb-30 {{dat-class}}">
     {{descriptionAfterTag}}
   </p>
   {{/if}}
