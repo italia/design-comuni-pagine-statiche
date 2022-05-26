@@ -1,14 +1,14 @@
 <div class="cmp-info-summary bg-white {{class}}">
   <div class="card">
     {{#if info-title}}
-    <div class="card-header border-bottom border-light p-0">
+    <div class="card-header border-bottom border-light p-0 mb-0">
       <h4 class="title-large-semi-bold mb-3 mb-md-4">{{info-title}}</h4>
     </div>
     {{/if}}
     <div class="card-body mt-8 p-0">
       {{#if info}}
       {{#each info-list as |info|}}
-      <div class="py-1 py-md-2 single-line-info border-light">
+      <div class="single-line-info border-light">
         {{#if info.name}}
         <div class="text-paragraph-small">{{info.name}}</div>
         {{/if}}
@@ -24,7 +24,7 @@
         {{else}}
         <div class="border-light {{#if summary-item-class}} border-0 {{/if}} {{#if info.summary}}summary-inline{{/if}}">
           {{#if info.description}}
-          <p class="data-text {{#if info.summary}}summary-inline{{/if}}">
+          <p class="data-text mt-2{{#if info.summary}}summary-inline{{/if}}">
             {{info.description}}
             {{#if info.summary}}
             <strong>{{info.summary}}</strong>

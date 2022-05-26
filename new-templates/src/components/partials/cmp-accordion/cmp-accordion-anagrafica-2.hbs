@@ -4,7 +4,7 @@
       aria-expanded="false" aria-controls="{{collapse-id}}">
       <span class="d-flex align-items-center">
       Mostra tutto
-        <svg class="icon icon-primary icon-md">
+        <svg class="icon icon-primary icon-sm">
           <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-expand"></use>
         </svg>
       </span>
@@ -13,13 +13,13 @@
   <div id="{{collapse-id}}" class="accordion-collapse collapse" role="region">
     <div class="accordion-body p-0">
       {{#if onlyContact}}
-          {{>cmp-info-summary/cmp-info-summary info-title="Contatti" info=true info-list=contatti class="border border-light p-3 p-lg-4 mb-30" disservizio-page=true}}
+          {{>cmp-info-summary/cmp-info-summary info-title="Contatti" info=true info-list=contatti class="has-border" disservizio-page=true}}
 
       {{else}}
-      {{>cmp-info-summary/cmp-info-summary info-title="Anagrafica" info=true info-list=anagrafica btn=btnAnagrafica class="border border-light p-3 p-lg-4 mb-30"}}
-      {{>cmp-info-summary/cmp-info-summary info-title="Indirizzi" info=true info-list=indirizzo btn=btnIndirizzo class="border border-light p-3 p-lg-4 mb-30"}}
-      {{>cmp-info-summary/cmp-info-summary info-title="Contatti" info=true info-list=contatti btn=btnContatti class="border border-light p-3 p-lg-4 mb-30"}}
-      {{>cmp-info-summary/cmp-info-summary info-title="Documenti" info=true info-list=documenti btn=btnDocumenti class="border border-light p-3 p-lg-4"}}
+      {{>cmp-info-summary/cmp-info-summary info-title="Anagrafica" info=true info-list=anagrafica btn=btnAnagrafica class="has-border"}}
+      {{>cmp-info-summary/cmp-info-summary info-title="Indirizzi" info=true info-list=indirizzo btn=btnIndirizzo class="has-border"}}
+      {{>cmp-info-summary/cmp-info-summary info-title="Contatti" info=true info-list=contatti btn=btnContatti class="has-border"}}
+      {{>cmp-info-summary/cmp-info-summary info-title="Documenti" info=true info-list=documenti btn=btnDocumenti class="has-border"}}
       {{/if}}
     </div>
   </div>

@@ -26,8 +26,8 @@
           h3-title=true
           card-title="H501 - Roma"
         }}
-        <div class="text-area-wrapper p-4 bg-white">
-          {{>partials/input/input type="text" id="amount" label="Importo versato" required=true name="amount" text="Inserisci la somma già versata" formClass="mb-0"}}
+        <div class="input-wrapper bg-white">
+          {{>partials/input/input type="text" id="amount" label="Importo versato" name="amount" text="Inserisci la somma già versata" formClass="mb-0 border-bold"}}
         </div>
           {{>cmp-info-checkbox/cmp-info-checkbox
             title="Acconto"
@@ -65,7 +65,7 @@
           card-title="L736 - Venezia"
         }}
         <div class="text-area-wrapper p-4 bg-white">
-          {{>partials/input/input type="text" id="amount-1" label="Importo versato" required=true name="amount-1" text="Inserisci la somma già versata" formClass="mb-0"}}
+          {{>partials/input/input type="text" id="amount-1" label="Importo versato" required=true name="amount-1" text="Inserisci la somma già versata" formClass="mb-0 border-bold"}}
         </div>
           {{>cmp-info-checkbox/cmp-info-checkbox
             title="Acconto"
@@ -96,7 +96,7 @@
           card-title="L065 - Tavagnacco"
         }}
          <div class="text-area-wrapper p-4 bg-white">
-          {{>partials/input/input type="text" id="amount-2" label="Importo versato" required=true name="amount-2" text="Inserisci la somma già versata" formClass="mb-0"}}
+          {{>partials/input/input type="text" id="amount-2" label="Importo versato" required=true name="amount-2" text="Inserisci la somma già versata" formClass="mb-0 border-bold"}}
         </div>
           {{>cmp-info-checkbox/cmp-info-checkbox
             title="Acconto"
@@ -135,11 +135,11 @@
   </div>
   </div>
 
-  <div class="bg-grey-card">
+  <div class="bg-grey-card shadow-contacts">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-lg-6 offset-lg-3 py-5">
-          {{>cmp-contacts/cmp-contacts appuntamento=true}}
+        <div class="col-12 col-lg-6 offset-lg-3 p-contacts">
+          {{>cmp-contacts/cmp-contacts}}
         </div>
       </div>
     </div>

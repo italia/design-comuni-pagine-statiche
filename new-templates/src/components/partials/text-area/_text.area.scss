@@ -9,6 +9,10 @@
     font-size: um(14px);
     font-weight: 400;
     line-height: um(18px);
+    color: get-color(dark, grey);
+    padding-left: um(8px);
+    mix-blend-mode: normal;
+    opacity: 0.9;
   }
 
   .form-group {
@@ -27,10 +31,4 @@
       }
     }
   }
-
-  label {
-    color: get-color(dark, grey);
-  }
-
-
 }

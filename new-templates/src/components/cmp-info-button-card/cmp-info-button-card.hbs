@@ -3,7 +3,7 @@
   <input class="radio-input" name="{{group}}" type="radio" id="{{idRadio}}">
   <label for="{{idRadio}}"></label>
   {{/if}}
-  <div class="card card-teaser shadow p-3 p-lg-4">
+  <div class="card card-teaser {{#if shadow}}shadow{{/if}} p-3 p-lg-4">
     <div class="card-body">
       {{#if big-title}}
       <h3 class="big-title mb-0">{{{big-title}}}</h3>
@@ -28,7 +28,7 @@
       {{/if}}
 
       {{#if warning}}
-        {{> cmp-alert-box/cmp-alert-box warning="true" message=warningMessage message2=data-add}}
+        {{> cmp-alert-box/cmp-alert-box warning="true" message=warningMessage message2=data-add class=classWarning}}
         {{#if btnLabel}}
         <button type="button" class="btn btn-outline-primary mt-3 w-100" data-bs-toggle="modal"
           data-bs-target="#{{modalId}}">{{btnLabel}}</button>
@@ -58,7 +58,7 @@
       {{#if show-more-disservizio}}
       {{>partials/cmp-accordion/cmp-accordion-disservizio }}
       {{/if}}
-      
+
       {{#if show-accordion-bank}}
       {{>partials/cmp-accordion/cmp-accordion-bank }}
       {{/if}}

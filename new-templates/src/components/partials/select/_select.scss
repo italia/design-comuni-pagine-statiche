@@ -18,7 +18,7 @@
   }
 
   @include media-breakpoint-up(md) {
-    padding: um(40px);
+    padding: um(24px);
   }
 }
 
@@ -31,7 +31,7 @@
   }
 
   option {
-    font-size: um(14px);
+    font-size: um(18px);
     color: get-color(medium,grey);
   }
 }

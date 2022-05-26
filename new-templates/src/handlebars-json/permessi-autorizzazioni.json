@@ -289,12 +289,12 @@
       ],
       "navscroll": [
         {
-          "item": "Richiedente",
-          "anchor": "applicant-info"
+          "item": "Tipo di permesso",
+          "anchor": "permission-type"
         },
         {
-          "item": "Veicolo",
-          "anchor": "vehicles-info"
+          "item": "Periodo di validità",
+          "anchor": "validity-period"
         }
       ]
     },
@@ -423,29 +423,32 @@
       ],
       "timeline": [
         {
-          "year": "2022",
-          "day": "02",
-          "month": "mar",
-          "event": "Esito richiesta"
+          "year":"2022",
+          "day":"02",
+          "month":"MAR",
+          "event": "Esito richiesta",
+          "info": "Tra 10 giorni ti comunicheremo"
         },
         {
-          "year": "2022",
-          "day": "10",
-          "month": "mar",
-          "event": "Pagamento"
+          "year":"2022",
+          "day":"10",
+          "month":"MAR",
+          "event": "Pagamento",
+          "info": "Potrai effettuare"
         },
         {
-          "year": "2022",
-          "day": "12",
-          "month": "mar",
-          "event": "Rilascio permesso ZTL"
+          "year":"2022",
+          "day":"12",
+          "month":"MAR",
+          "event": "Rilascio permesso ZTL",
+          "info": "Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur."
         }
       ],
       "servizi-correlati": [
         {
           "icon": "it-settings",
           "link": "Richiedi pass residenti",
-          "class": "shadow"
+          "class": "shadow mb-50 mb-lg-80"
         }
       ]
     },

@@ -60,13 +60,13 @@
 
 
 
-        {{#>cmp-card/cmp-card-content-box card-title="Cosa serve" id-title="needed" bg-grey="true" }}
+        {{#>cmp-card/cmp-card-content-box card-title="Cosa serve" id-title="needed" bg-grey="true" bg-grey-primary=true}}
         {{>cmp-ul-list/cmp-ul-list heading-title="Per accedere al servizio, assicurati di avere:" font-title="lora fw-normal"
-        font-list="titillium" info-list=scheda-servizio-lista-disservizio.lista-2 }}
+        font-list="lora" info-list=scheda-servizio-lista-disservizio.lista-2 }}
         {{/cmp-card/cmp-card-content-box}}
 
 
-        {{#>cmp-card/cmp-card-content-box card-title="Cosa si ottiene" id-title="obtain" subtitle="Chi segnala un disservizio online identificandosi con identità digitale riceverà, tramite posta elettronica, gli aggiornamenti sullo stato di avanzamento della segnalazione." }}
+        {{#>cmp-card/cmp-card-content-box card-title="Cosa si ottiene" id-title="obtain" subtitle="Chi segnala un disservizio online identificandosi con identità digitale riceverà, tramite posta elettronica, gli aggiornamenti sullo stato di avanzamento della segnalazione." header-m0=true}}
         {{/cmp-card/cmp-card-content-box}}
 
         {{#>cmp-card/cmp-card-content-box card-title="Costi" id-title="costs" subtitle="Il servizio è gratuito" class="mb-2 mt-40" }}
@@ -130,8 +130,8 @@
         <div class="col-12 py-4">
           {{>cmp-carousel/cmp-carousel carousel-title="Contenuti correlati" class="carousel-4-card"}}
         </div>
-        <div class="col-12 col-lg-6 offset-lg-3 py-5">
-          {{>cmp-contacts/cmp-contacts disservizio=true appuntamento=true}}
+        <div class="col-12 col-lg-6 offset-lg-3 p-contacts">
+          {{>cmp-contacts/cmp-contacts}}
         </div>
       </div>
     </div>

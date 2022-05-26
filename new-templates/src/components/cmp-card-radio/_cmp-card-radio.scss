@@ -5,15 +5,20 @@
   }
 
   & [type=radio]+label {
-    margin: um(16px) 0;
+    margin: um(13px) 0;
+    padding-left: um(42px);
     font-weight: 600;
+
+    @include media-breakpoint-up(md) {
+      font-size: um(18px);
+    }
   }
 
   .card-teaser {
     padding: um(16px);
 
     @include media-breakpoint-up(md) {
-      padding: um(40px);
+      padding: um(24px);
     }
   }
 }

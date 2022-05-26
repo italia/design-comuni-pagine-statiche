@@ -8,6 +8,8 @@
         title="Iscrizione alla scuola dell'infanzia"
         subTitle="Inserisci le informazioni necessarie per richiedere l’iscrizione alla Scuola dell’infanzia. <br>
         Potrai ricontrollare tutti i dati nel riepilogo, prima di inviare la richiesta."
+        description="Hai bisogno di assistenza? <a class='title-small-semi-bold t-primary' href='#'>Contattaci</a>"
+        desClass="mt-lg-2"
         }}
       </div>
       <div class="col-12">
@@ -20,20 +22,21 @@
       </div>
     </div>
     <div class="steppers-content" aria-live="polite">
-      <div class="row mt-lg-50">
+      <div class="row mt-lg-3">
         <div class="col-12 col-lg-3 mb-4 d-none d-lg-block">
           {{>cmp-navscroll/cmp-navscroll accordion-title="INFORMAZIONI RICHIESTE"
             link-list=iscrizione-graduatoria.controllare-dati-personali.navscroll
             br-none="true"}}
         </div>
-        <div class="col-12 col-lg-8 offset-lg-1">
+        <div class="col-12 col-lg-8 offset-lg-1 mt-2 mt-lg-0">
           <div>
             {{#>cmp-card/cmp-card-content-box
             h2-class="mb-1"
             bg-grey=true
             card-title="Richiedente"
             id-title="applicant-info"
-            subtitle="Informazione su di te"}}
+            subtitle="Informazione su di te"
+            margin-class="mb-40"}}
 
             {{> cmp-info-button-card/cmp-info-button-card big-title="Giulia Bianchi"
             label-2="Codice Fiscale <br> <span>GLABNC72H25H501Y</span>"
@@ -46,15 +49,18 @@
             btnDocumenti=true
             collapse-id="collapse-parents"
             modalId="modal-documents"
-            btn-label-text="Aggiungi documento"}}
+            btn-label-text="Aggiungi"}}
             {{/cmp-card/cmp-card-content-box}}
           </div>
 
           <div class="mt-4">
             {{#>cmp-card/cmp-card-content-box bg-grey=true
-            card-title="Beneficiario"
-            id-title="beneficiary-info"
-            subtitle="Informazioni sulla persona che utilizzerà il servizio"}}
+              card-title="Beneficiario"
+              h2-class="mb-1"
+              id-title="beneficiary-info"
+              subtitle="Seleziona o aggiungi il minore per cui vuoi richiedere l’iscrizione"
+              margin-class="mb-40"
+            }}
             {{> cmp-info-button-card/cmp-info-button-card radio=true group="beneficiaries" idRadio="son"
             big-title="Francesco Rossi"
             label-2="Codice Fiscale <br> <span>FRARSS72H25H501Y</span>"
@@ -67,7 +73,7 @@
             btnDocumenti=true
             collapse-id="collapse-benef-1"
             modalId="modal-documents"
-            btn-label-text="Aggiungi documento"}}
+            btn-label-text="Aggiungi"}}
 
             {{> cmp-info-button-card/cmp-info-button-card radio=true group="beneficiaries" idRadio="daughter"
             big-title="Lucia Rossi" label-2="Codice Fiscale <br> <span>LCARSS72H25H501Y</span>"
@@ -80,26 +86,31 @@
             btnDocumenti=true
             collapse-id="collapse-benef-2"
             modalId="modal-documents"
-            btn-label-text="Aggiungi documento"}}
+            btn-label-text="Aggiungi"}}
 
             {{>partials/button/button label="Aggiungi beneficiario" link="true"
-            icon-url="./assets/bootstrap-italia/dist/svg/sprite.svg#it-close-circle"
-            icon-class="plus-icon icon-primary"
-            class="plus-text mt-30"}}
+              icon-url="./assets/bootstrap-italia/dist/svg/sprite.svg#it-close-circle"
+              icon-class="plus-icon icon-primary icon-sm"
+              class="plus-text mt-20"
+            }}
             {{/cmp-card/cmp-card-content-box}}
           </div>
 
           <div class="mt-4">
             {{#>cmp-card/cmp-card-content-box bg-grey=true
             card-title="Altro genitore"
+            h2-class="mb-1"
             id-title="other-parent-info"
-            subtitle="Informazioni sull’altro genitore"}}
+            subtitle="Informazioni sull’altro genitore"
+            margin-class="mb-40"
+            }}
             {{> cmp-info-button-card/cmp-info-button-card
             big-title="Mario Rossi"
             label-2="Codice Fiscale <br>
             <span>MRARSS72H25H501Y</span>"
             warning=true
             warningMessage="Informazioni mancanti:"
+            classWarning="mb-2"
             data-add="Aggiungi dati"
             show-more-anagrafica-2=true
             anagrafica=iscrizione-graduatoria.controllare-dati-personali.anagrafica.list-2
@@ -109,7 +120,7 @@
             btnDocumenti=true
             collapse-id="collapse1"
             modalId="modal-documents"
-            btn-label-text="Aggiungi documento"
+            btn-label-text="Aggiungi"
             }}
             {{/cmp-card/cmp-card-content-box}}
           </div>
@@ -117,6 +128,7 @@
             {{#>cmp-card/cmp-card-content-box bg-grey=true
             card-title="ISEE"
             id-title="isee-info"
+            h2-class="mb-1"
             subtitle="Informazioni sul valore dell’ISEE del tuo nucleo familiare basato sulla tua
             ultima
             dichiarazione"}}
@@ -125,6 +137,10 @@
             show-more-isee=true
             collapse-id="collapse2"
             modalId="modal-isee"
+            warning=true
+            warningMessage="Informazioni mancanti:"
+            classWarning="mb-2"
+            data-add="Aggiungi dati"
             }}
             {{/cmp-card/cmp-card-content-box}}
           </div>
@@ -137,11 +153,11 @@
     </div>
   </div>
 
-  <div class="bg-grey-card">
+  <div class="bg-grey-card shadow-contacts">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-lg-6 offset-lg-3 py-5">
-          {{>cmp-contacts/cmp-contacts appuntamento=true}}
+        <div class="col-12 col-lg-6 offset-lg-3 p-contacts">
+          {{>cmp-contacts/cmp-contacts}}
         </div>
       </div>
     </div>

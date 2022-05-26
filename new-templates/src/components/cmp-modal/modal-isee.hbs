@@ -2,15 +2,15 @@
 simbolo asterisco (*) sono obbligatori"}}
 <div>
   <form action="" id="contacts-form">
-    {{>partials/input/input id="isee" type="text" label="Valore ISEE" text="Inserisci valore ISEE" required=true placeholder="18.000,00€"}}
+    {{>partials/input/input id="isee" type="text" label="Valore ISEE" text="Inserisci valore ISEE" required=true}}
     {{>partials/input/input id="scadenza" type="text" label="Scadenza ISEE" text="Inserisci data scadenza ISEE
-    gg/mm/aaaa" required=true placeholder="06/10/2019"}}
+    gg/mm/aaaa" required=true}}
     {{>partials/input/input id="anno-protocollo" type="text" label="Anno protocollo" text="Inserisci numero anno
-    protocollo" required=true placeholder="2019"}}
+    protocollo" required=true }}
     {{>partials/input/input id="numero-protocollo" type="text" label="Numero protocollo" text="Inserisci numero
     protocollo" required=true }}
     {{>partials/input/input id="codice-filiale" type="text" label="Codice filiale protocollo" text="Inserisci numero codice
-    filiale protocollo" placeholder="12345678" required=true }}
+    filiale protocollo"  required=true }}
     {{>partials/cmp-upload/cmp-upload  inputId="cond-lav-isee" label="Modulo condizione lavorativa" required="true" error="true" document="documento_ISEE-2019.pdf"}}
   </form>
 </div>

@@ -1,17 +1,27 @@
 .cmp-info-button-card {
+  margin-top: 0;
+
+  &.form-check [type=radio]:not(:checked)+label::before {
+    border-color: get-color(primary, main);
+  }
+
   &.radio-card {
     position: relative;
 
     &+.radio-card {
-      margin-top: um(24px);
+      margin-top: um(16px);
+
+      @include media-breakpoint-up(lg) {
+        margin-top: um(32px);
+      }
     }
   }
 
   .radio-input {
     &+label {
       position: absolute !important;
-      right: 30px;
-      top: 20px;
+      right: um(8px);
+      top: um(18px);
       z-index: 1;
       width: um(24px);
       height: um(24px);
@@ -19,7 +29,7 @@
 
     &:checked {
       &+label+.card {
-        outline: 1px solid get-color(primary, main);
+        outline: 2px solid get-color(primary, main);
       }
     }
   }
@@ -48,7 +58,7 @@
   .card-info {
     font-size: um(14px);
     line-height: 1.5;
-    margin: um(4px) 0;
+    padding: um(4px) 0;
 
     &:not(:last-child) {
       border-bottom: um(1px) solid #E5E5E5;
@@ -85,3 +95,5 @@
     }
   }
 }
+
+

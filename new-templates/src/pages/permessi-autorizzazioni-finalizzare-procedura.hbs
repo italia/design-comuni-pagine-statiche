@@ -6,9 +6,9 @@
         {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi" link3="Permessi mobilità"}}
       </div>
     </div>
-    <div class="section-request">
+  {{!--   <div class="section-request"> --}}
       <div class="row">
-        <div class="col-12 col-lg-10">
+        <div class="col-12 col-lg-10 offset-lg-1">
           {{>cmp-heading/cmp-heading
           title="Richiesta inviata"
           btnClass="mt-3"
@@ -17,18 +17,18 @@
           description="Abbiamo inviato il riepilogo all’email: <br> <strong>mario.rossi@gmail.com</strong>"
           desClass="mt-4"
           iconTitle="it-check-circle"
-          iconClass="mr-10 icons-sm mb-1"
+          iconClass="mr-10 icon-sm mb-1"
           button=true
           label="Scarica la ricevuta (PDF 100KB)"
           outline-primary=true
           iconBtn="it-download"
-          iconClass="icon-lg"
+          iconClass="mr-10 icon-sm mb-1"
           sm=true
           }}
         </div>
       </div>
       <hr class="d-none d-lg-block mt-3 mb-40">
-      <div class="row mb-3 mb-md-5">
+      <div class="row">
         <div class="d-none d-sm-none d-lg-block col-lg-3">
           {{>cmp-navscroll/cmp-navscroll
           accordion-title="INDICE DELLA PAGINA"
@@ -46,14 +46,12 @@
 
           {{>cmp-icon-list/cmp-icon-list
            title="Servizi correlati"
-           titleClass="mb-lg-4"
            id-title="related-service"
-           titleClass="mb-24"
            icon-list=permessi-autorizzazioni.finalizzare-procedura.servizi-correlati
           }}
         </div>
       </div>
-    </div>
+    {{!-- </div> --}}
   </div>
 
   <div class="bg-primary">
@@ -66,10 +64,10 @@
     </div>
   </div>
 
-   <div class="bg-grey-card">
+   <div class="bg-grey-card shadow-contacts">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-lg-6 offset-lg-3 py-5">
+        <div class="col-12 col-lg-6 offset-lg-3 p-contacts">
           {{>cmp-contacts/cmp-contacts appuntamento=true}}
         </div>
       </div>

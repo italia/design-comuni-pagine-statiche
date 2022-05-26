@@ -52,13 +52,13 @@
         </p>
         {{/cmp-card/cmp-card-content-box}}
 
-        {{#>cmp-card/cmp-card-content-box card-title="Cosa serve" h2-class="mb-0" id-title="needed" bg-grey="true"  bg-grey-primary=true}}
+        {{#>cmp-card/cmp-card-content-box card-title="Cosa serve" h2-class="mb-0" id-title="needed" bg-grey="true" bg-grey-primary=true}}
         {{>cmp-ul-list/cmp-ul-list heading-title="Per accedere al servizio, assicurati di avere:" font-title="lora"
-        font-list="titillium" info-list=permessi-autorizzazioni.trovare-informazioni-servizio.list-2 }}
+        font-list="lora" info-list=permessi-autorizzazioni.trovare-informazioni-servizio.list-2 }}
         {{/cmp-card/cmp-card-content-box}}
 
         {{#>cmp-card/cmp-card-content-box 
-        card-title="Cosa si ottiene" h2-class="mb-3" id-title="obtain" subtitle="Si ottiene un permesso da esporre sul parabrezza del veicolo durante tutto il tempo di durata del transito e della sosta in ZTL o da esibire, a richiesta degli agenti addetti al controllo, quando è associato a veicoli che non consentono la chiusura a chiave dell’abitacolo." }}
+        card-title="Cosa si ottiene" h2-class="mb-3" id-title="obtain" subtitle="Si ottiene un permesso da esporre sul parabrezza del veicolo durante tutto il tempo di durata del transito e della sosta in ZTL o da esibire, a richiesta degli agenti addetti al controllo, quando è associato a veicoli che non consentono la chiusura a chiave dell’abitacolo." header-m0=true}}
         {{/cmp-card/cmp-card-content-box}}
 
         {{>cmp-timeline/cmp-timeline
@@ -113,14 +113,14 @@
     </div>
   </div>
 
-  <div class="bg-grey-card">
+  <div class="bg-grey-card shadow-contacts">
     <div class="container">
       <div class="row">
         <div class="col-12 pt-5 pb-40">
           {{>cmp-carousel/cmp-carousel carousel-title="Contenuti correlati" class="carousel-4-card"  carTitle-class="pb-0"}}
         </div>
-        <div class="col-12 col-lg-6 offset-lg-3 pt-lg-4 pb-40">
-          {{>cmp-contacts/cmp-contacts appuntamento=true}}
+        <div class="col-12 col-lg-6 offset-lg-3 p-contacts">
+          {{>cmp-contacts/cmp-contacts}}
         </div>
       </div>
     </div>

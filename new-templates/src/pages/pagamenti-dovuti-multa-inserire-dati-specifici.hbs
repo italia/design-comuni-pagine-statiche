@@ -38,7 +38,7 @@
             }}
             <p class="subtitle-small">Inserisci il codice di 18 cifre presente nell’avviso della multa.</p>
             <a href="#" class="t-primary underline pb-3">Dove trovare il codice</a>
-            {{>partials/input-autocomplete/input-autocomplete placeholder="Codice avviso*" class="px-0 py-0 mt-3"}}
+            {{>partials/input/input type="text" id="code" name="code" label="Codice avviso" required=true formClass="mt-4 margin-high"}}
             {{/cmp-card/cmp-card-content-box}}
           </div>
           </div>
@@ -50,11 +50,11 @@
     </div>
   </div>
 
-  <div class="bg-grey-card">
+  <div class="bg-grey-card shadow-contacts">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-lg-6 offset-lg-3 py-5">
-          {{>cmp-contacts/cmp-contacts appuntamento=true}}
+        <div class="col-12 col-lg-6 offset-lg-3 p-contacts">
+          {{>cmp-contacts/cmp-contacts}}
         </div>
       </div>
     </div>

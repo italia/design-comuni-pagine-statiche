@@ -10,18 +10,18 @@
       <div class="row">
         <div class="col-12 col-lg-10 offset-lg-1">
          {{>cmp-heading/cmp-heading
-          title="Pagamento inviato"
+          title="Documento creato"
           btnClass="mt-3"
-          subTitle="Grazie abbiamo ricevuto il <strong>pagamento PA3028</strong>  per la <strong>richiesta AN4059281 pagamento IMU.</strong></p><p class='mt-3'>Importo: <strong>1800,00 €</strong></p><p>Inviato il: <strong>21/07/2022</strong></p><p class='pt-3 pt-lg-4 d-lg-flex flex-column'>Abbiamo inviato il riepilogo all’email: <strong>giulia.rossi@gmail.com</strong>"
+          subTitle="Il documento F24 per la <strong>richiesta AN4059281 calcolo IMU </strong> è stato generato.</p><p class='pt-3 pt-lg-4 d-lg-flex flex-column'>Abbiamo inviato il riepilogo all’email: <strong>giulia.rossi@gmail.com</strong>"
           iconTitle="it-check-circle"
-          iconClass="mr-10 icons-sm mb-1"
+          iconClass="mr-10 icon-sm mb-1"
           button=true
-          label="Scarica la ricevuta (PDF 100KB)"
+          label="Scarica F24 (PDF 100KB)"
           outline-primary=true
           iconBtn="it-download"
           sm=true
           }}
-           <p class="mt-4 mb-40 mb-lg-80"><a class='t-primary underline' href='#'>Consulta la richiesta</a> nella tua area riservata.</p>
+           <p class="mt-4 mt-lg-3 mb-40 mb-lg-100"><a class='t-primary underline' href='#'>Consulta la richiesta</a> nella tua area riservata.</p>
         </div>
       </div>
     </div>
@@ -29,7 +29,7 @@
 
   <div class="bg-primary">
     <div class="container">
-      <div class="row d-flex justify-content-center bg-primary">
+      <div class="row d-flex justify-content-center bg-primary mt-lg-40">
           <div class="col-12 col-lg-6 p-lg-0 px-3">
           {{>cmp-rating/cmp-rating}}
           </div>
@@ -37,11 +37,11 @@
     </div>
   </div>
 
-   <div class="bg-grey-card">
+   <div class="bg-grey-card shadow-contacts">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-lg-6 offset-lg-3 py-5">
-          {{>cmp-contacts/cmp-contacts appuntamento=true}}
+        <div class="col-12 col-lg-6 offset-lg-3 p-contacts">
+          {{>cmp-contacts/cmp-contacts}}
         </div>
       </div>
     </div>

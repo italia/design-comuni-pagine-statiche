@@ -29,11 +29,12 @@
   .warning-box-icon {
     display: flex;
     align-items: center;
-    font-weight: bold;
+    font-weight: 600;
     text-transform: uppercase;
 
     svg {
       max-width: um(20px);
+      max-height: um(24px);
       fill: get-color(warning, main);
       margin-right: um(10px);
 
@@ -52,11 +53,16 @@
       font-size: um(18px);
     }
 
+    &.description-warning{
+      margin-top: .2rem;
+      margin-right: um(4px);
+      font-weight: 400;
+    }
+
     .data-add{
       font-size: um(14px);
       font-weight: 600;
-      line-height: 18px;
-      color: get-color(primary,main);
+      line-height: um(18px);
 
       @include media-breakpoint-up(lg) {
         font-size: um(18px);

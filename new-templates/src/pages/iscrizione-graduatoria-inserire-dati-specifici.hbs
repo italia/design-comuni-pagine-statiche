@@ -4,7 +4,10 @@
     <div class="row justify-content-center">
       <div class="col-12 col-lg-10">
         {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi" link3="Iscrizioni"}}
-        {{> cmp-heading/cmp-heading title="Iscrizione alla scuola dell'infanzia"}}
+        {{> cmp-heading/cmp-heading 
+        title="Iscrizione alla scuola dell'infanzia"
+        description="Hai bisogno di assistenza? <a href='' class='title-small-semi-bold t-primary'>Contattaci</a>"
+        }}
       </div>
       <div class="col-12">
         {{> cmp-info-progress/cmp-info-progress
@@ -16,13 +19,13 @@
       </div>
     </div>
 
-    <div class="row mt-lg-50">
+    <div class="row mt-lg-3">
       <div class="col-12 col-lg-3 d-lg-block mb-4 d-none ">
           {{>cmp-navscroll/cmp-navscroll
           accordion-title="INFORMAZIONI RICHIESTE"
           link-list=link-list.links-preferenze-servizio-page}}
       </div>
-      <div class="col-12 col-lg-8 offset-lg-1">
+      <div class="col-12 col-lg-8 offset-lg-1 mt-2 mt-lg-0">
         <div class="steppers-content" aria-live="polite">
           <div>
 
@@ -30,33 +33,36 @@
             class="p-big"
             id-title="school-choice"
             bg-grey=true
-            h2-class="mb-4"
+            h2-class="mb-2"
+            margin-class="mb-40"
             required-icon=true
             card-title="Seleziona Istituto"}}
             {{> partials/select/select placeholder="Seleziona opzione" label-text="Seleziona Istituto" id="school-option" label-hidden=true select-option-list=inserire-dati-specifici}}
             {{/cmp-card/cmp-card-content-box}}
           </div>
 
-          <div class="mt-4">
+          <div>
             {{#>cmp-card/cmp-card-content-box
             class="p-big"
             id-title="religion-choice"
             bg-grey=true
             h2-class="mb-1"
+            margin-class="mb-40"
             required-icon=true
             card-title="Religione Cattolica"
             subtitle="Vuoi avvalerti dell'insegnamento della
             religione cattolica?"}}
-            {{> cmp-card-radio/cmp-card-radio id='religione'}}
+            {{> cmp-card-radio/cmp-card-radio id='religione' cmp-class="mt-2"}}
             {{/cmp-card/cmp-card-content-box}}
           </div>
 
-          <div class="mt-4">
+          <div>
             {{#>cmp-card/cmp-card-content-box
             class="p-big"
             id-title="outings-choice"
             bg-grey=true
             h2-class="mb-1"
+            margin-class="mb-40"
             required-icon=true
             card-title="Uscite didattiche"
             subtitle="Autorizzi le uscite didattiche?"}}
@@ -64,15 +70,16 @@
             {{/cmp-card/cmp-card-content-box}}
           </div>
 
-          <div class="mt-4">
+          <div>
             {{#>cmp-card/cmp-card-content-box
             class="p-big"
             id-title="media-choice"
             bg-grey=true
             h2-class="mb-1"
+            margin-class="mb-40"
             required-icon=true
             card-title="Riprese multimediali"
-            subtitle="Autorizzi la scuola a produrre e utilizzare foto e video in cui compare tua figlia o tuo figlio?"}}
+            subtitle="Autorizzi la scuola a produrre e utilizzare foto e video in cui compare il minore?"}}
             {{> cmp-card-radio/cmp-card-radio id='multimedia'}}
             {{/cmp-card/cmp-card-content-box}}
           </div>
@@ -85,9 +92,9 @@
 
   <div class="bg-grey-card shadow-contacts">
     <div class="container">
-      <div class="row d-flex justify-content-center pt-50 pb-50">
+      <div class="row d-flex justify-content-center p-contacts">
         <div class="col-12 col-lg-5">
-          {{>cmp-contacts/cmp-contacts appuntamento=true}}
+          {{>cmp-contacts/cmp-contacts}}
         </div>
       </div>
     </div>

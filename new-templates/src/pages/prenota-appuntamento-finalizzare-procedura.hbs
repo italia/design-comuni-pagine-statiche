@@ -21,7 +21,7 @@
         </div>
       </div>
       <hr class="d-none d-lg-block mt-40 mb-40">
-      <div class="row mb-3 mb-md-5">
+      <div class="row mb-4 mb-lg-80">
         <div class="d-none d-sm-none d-lg-block col-lg-3">
           {{>cmp-navscroll/cmp-navscroll
           accordion-title="INDICE DELLA PAGINA"
@@ -29,23 +29,24 @@
           }}
         </div>
 
-        <div class="col-12 col-lg-8 offset-lg-1">
-          {{#>cmp-card/cmp-card-content-box card-title="Cosa serve" id-title="needed" bg-grey="true" id-title="needed" }}
+        <div class="col-12 col-lg-8 offset-lg-1 mt-4 mt-lg-0">
+          {{#>cmp-card/cmp-card-content-box card-title="Cosa serve" id-title="needed" bg-grey="true" id-title="needed" class="p-3" cmpClass="mb-50" h2-class="mb-0"}}
           {{>cmp-ul-list/cmp-ul-list font-list="titillium" info-list=info-prenotazione.lista-1 }}
           {{/cmp-card/cmp-card-content-box}}
 
-          {{#>cmp-card/cmp-card-content-box card-title="Indirizzo" id-title="address"}}
-
-          <div class="mt-15">
+          {{!-- {{#>cmp-card/cmp-card-content-box card-title="Indirizzo" id-title="address" h2-class="mb-0"}} --}}
+          <div class="address-wrapper mb-50">
+            <h2 class="ttitle-xxlarge mb-15" id="address">Indirizzo</h2>
             {{>cmp-card-img/cmp-card-img card-title="Ufficio anagrafe 03" card-description="Via Grazia Deledda 9/a - 20127<br> Milano <br> anagrafe@comune.it"}}
           </div>
-          {{/cmp-card/cmp-card-content-box}}
+
+        {{!--   {{/cmp-card/cmp-card-content-box}} --}}
 
           {{>cmp-icon-list/cmp-icon-list
            title="Aggiungi al tuo calendario"
            titleClass="mb-lg-4"
            icon-list=icon-list.calendario-reservation-pagamento
-           classMenu="mt-4"
+           classMenu="mt-3"
            id-title="calendar"
            }}
         </div>
@@ -64,11 +65,11 @@
     </div>
   </div>
 
-  <div class="bg-grey-card">
+   <div class="bg-grey-card shadow-contacts">
     <div class="container">
       <div class="row">
-        <div class="col-12 col-lg-6 offset-lg-3 py-5">
-          {{>cmp-contacts/cmp-contacts disservizio=true}}
+        <div class="col-12 col-lg-6 offset-lg-3 p-contacts">
+          {{>cmp-contacts/cmp-contacts}}
         </div>
       </div>
     </div>

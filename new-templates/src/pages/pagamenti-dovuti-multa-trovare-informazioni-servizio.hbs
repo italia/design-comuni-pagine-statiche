@@ -37,7 +37,7 @@
         {{/cmp-card/cmp-card-content-box}}
 
         {{#>cmp-card/cmp-card-content-box card-title="Cosa serve" id-title="needed" bg-grey="true" bg-grey-primary=true}}
-          {{>cmp-ul-list/cmp-ul-list description="Per il pagamento delle multe, assicurati di avere:" font-title="lora" font-list="titillium" info-list=pagamenti-dovuti-multa.trovare-informazioni-servizio.cosa-serve }}
+          {{>cmp-ul-list/cmp-ul-list description="Per il pagamento delle multe, assicurati di avere:" font-title="lora" font-list="lora" info-list=pagamenti-dovuti-multa.trovare-informazioni-servizio.cosa-serve }}
         {{/cmp-card/cmp-card-content-box}}
 
 
@@ -93,14 +93,14 @@
     </div>
   </div>
 
-  <div class="bg-grey-card">
+  <div class="bg-grey-card shadow-contacts">
     <div class="container">
       <div class="row">
         <div class="col-12 py-4">
           {{>cmp-carousel/cmp-carousel carousel-title="Contenuti correlati" class="carousel-4-card"}}
         </div>
-        <div class="col-12 col-lg-6 offset-lg-3 py-5">
-          {{>cmp-contacts/cmp-contacts appuntamento=true}}
+        <div class="col-12 col-lg-6 offset-lg-3 p-contacts">
+          {{>cmp-contacts/cmp-contacts}}
         </div>
       </div>
     </div>

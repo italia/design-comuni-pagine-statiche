@@ -325,7 +325,7 @@
         {
           "icon": "it-settings",
           "link": "Iscrizione servizio mensa",
-          "class": "shadow"
+          "class": "shadow mb-10"
         },
         {
           "icon": "it-settings",
@@ -337,7 +337,7 @@
         {
           "icon": "it-settings",
           "link": "Richiesta appuntamento",
-          "class": "shadow"
+          "class": "shadow mb-4"
         }
       ]
     },
@@ -386,7 +386,7 @@
           "anchor": "payments"
         }
       ],
-      
+
       "accordion": [
         {
           "num": "1",

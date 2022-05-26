@@ -1,12 +1,64 @@
 .cmp-input{
   margin-bottom: 2rem;
+
   &:not(:first-child){
     margin-top: 2rem;
   }
+
+  &__label {
+    color: get-color(dark, grey);
+  }
+/*
+&.border-bold {
+    input {
+      &:focus {
+        margin-top: um(20px);
+      }
+
+    &[type=text]{
+      border-bottom: 2px solid get-color(medium, grey);
+      font-size: um(18px);
+      height: um(52px);
+    }
+  }
+} */
+
+input[type=text]{
+  border-bottom: 2px solid get-color(medium, grey);
+  font-size: um(18px);
+  height: um(52px);
+}
+
+/* &.margin-high {
+  input {
+    &:focus {
+      margin-top: um(45px);
+    }
+
+    &[type=text]{
+      font-size: um(18px);
+    }
+  }
+} */
+
+/* input {
+  &:focus {
+    margin-top: um(15px);
+  }
+
+  &[type=text]{
+    font-size: um(18px);
+  }
+} */
+
   &__text{
   font-size: um(14px);
   font-weight: 400;
-  line-height: um(21px);
+  line-height: um(18px);
+  color: get-color(dark, grey);
+  margin-left: um(8px);
+  opacity: .9;
+  mix-blend-mode: normal;
   }
 
   // .form-group label.active{
@@ -16,9 +68,6 @@
   // line-height: um(20px);
   // }
 
-
-
-
   &__icon-input{
     position: absolute;
     right: 0;
@@ -26,7 +75,25 @@
     z-index: 8;
     padding: 0 8px;
     background-color: #fff;
-
   }
-
 }
+
+.input-wrapper{
+  padding: um(24px) um(30px) um(30px);
+}
+
+.form-group label {
+  top: um(-2px);
+  color: get-color(dark, grey);
+  font-size: um(14px);
+  font-weight: 700;
+
+  &.active {
+    font-size: um(14px);
+  }
+}
+
+
+
+
+

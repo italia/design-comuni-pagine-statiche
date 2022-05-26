@@ -5,7 +5,7 @@
       <div class="col-12 col-lg-10">
         {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi" link3="Pagamenti"}}
         {{> cmp-heading/cmp-heading
-          title="Pagamento IMU"
+          title="Calcolo IMU"
           pClass="mt-3"
           label-tag="Servizio attivo"
           description="L'IMU è l'Imposta municipale unica istituita in via sperimentale nel 2012 e ridisciplinata dalla legge di bilancio 2020."
@@ -52,7 +52,7 @@
 
 
         {{#>cmp-card/cmp-card-content-box card-title="Cosa serve" id-title="needed" bg-grey="true" bg-grey-primary=true}}
-          {{>cmp-ul-list/cmp-ul-list description="Per accedere al servizio, assicurati di avere:" font-title="lora" font-list="titillium" info-list=pagamenti-dovuti.trovare-informazioni-servizio.cosa-serve }}
+          {{>cmp-ul-list/cmp-ul-list description="Per accedere al servizio, assicurati di avere:" font-title="lora" font-list="lora" info-list=pagamenti-dovuti.trovare-informazioni-servizio.cosa-serve }}
         {{/cmp-card/cmp-card-content-box}}
 
 
@@ -109,14 +109,14 @@
     </div>
   </div>
 
-  <div class="bg-grey-card">
+  <div class="bg-grey-card shadow-contacts">
     <div class="container">
       <div class="row">
         <div class="col-12 py-4">
           {{>cmp-carousel/cmp-carousel carousel-title="Contenuti correlati" class="carousel-4-card"}}
         </div>
-        <div class="col-12 col-lg-6 offset-lg-3 py-5">
-          {{>cmp-contacts/cmp-contacts appuntamento=true}}
+        <div class="col-12 col-lg-6 offset-lg-3 p-contacts">
+          {{>cmp-contacts/cmp-contacts}}
         </div>
       </div>
     </div>

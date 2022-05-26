@@ -698,7 +698,7 @@
       {
         "icon": "it-settings",
         "link": "Richiesta assegno nucleo familiare",
-        "class": "shadow"
+        "class": "shadow mb-50 mb-lg-80"
       }
     ],
         "timeline": [

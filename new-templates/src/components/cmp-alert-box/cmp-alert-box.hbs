@@ -8,11 +8,15 @@
   </div>
 {{/if}}
 {{#if warning}}
-  <div class="cmp-warning-box border-start border-warning border-2">
+  <div class="cmp-warning-box border-start border-warning border-2 {{class}}">
     <div class="warning-box-icon">
       <svg class="icon icon-warning"><use href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-info-circle" xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-warning"></use></svg>
       <span class="t-alert">ATTENZIONE</span>
     </div>
-    <p class="description">{{message}} <span class="data-add">{{data-add}}</span></p>
+    <div class="d-flex">
+      <p class="description description-warning">{{message}}</p>
+      <button class="collapsed data-add t-primary" type="button" data-bs-toggle="collapse" data-bs-target="#{{collapse-id}}"
+      aria-expanded="false" aria-controls="{{collapse-id}}"><b>{{data-add}}</b></button>
+    </div>
   </div>
 {{/if}}

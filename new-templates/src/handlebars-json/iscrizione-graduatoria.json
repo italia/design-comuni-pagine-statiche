@@ -212,6 +212,14 @@
       "anagrafica":{
         "list-1":[
           {
+            "name": "Nome",
+            "description": "Giulia"
+          },
+          {
+            "name": "Cognome",
+            "description": "Bianchi"
+          },
+          {
             "name": "Codice Fiscale",
             "description": "GLABNC72H25H501Y"
           },
@@ -225,7 +233,7 @@
           },
           {
             "name": "Sesso",
-            "description": "Maschio"
+            "description": "Femmina"
           },
           {
             "name": "Nazionalità",
@@ -241,6 +249,14 @@
           }
         ],
         "list-2":[
+          {
+            "name": "Nome",
+            "description": "Mario"
+          },
+          {
+            "name": "Cognome",
+            "description": "Rossi"
+          },
           {
             "name": "Codice Fiscale",
             "description": "MRARSS72H25H501Y"
@@ -275,10 +291,6 @@
         {
           "name": "Residenza",
           "description": "Via Roma 16, 00100 Roma, IT"
-        },
-        {
-          "name": "Domicilio",
-          "description": "Piazza Risorgimento 16, 00100 Roma, It"
         }
       ],
       "contatti":[
@@ -289,10 +301,6 @@
         {
           "name": "Email",
           "description": "mario.rossi@gmail.com"
-        },
-        {
-          "name": "Recapito postale",
-          "description": "P.zza Risorgimento 16, 00100 Roma"
         }
       ],
       "documenti":[
@@ -305,8 +313,8 @@
         {
           "name": "Modulo condizione lavorativa",
           "description": "",
-          "warning": true,
-          "success": false,
+          "warning": false,
+          "success": true,
           "warning-message": "Documento mancante",
           "success-message": "Documento inserito con successo"
         }

@@ -52,11 +52,11 @@
 
 
         {{#>cmp-card/cmp-card-content-box card-title="Cosa serve" h2-class="mb-0" id-title="needed" bg-grey="true" }}
-        {{>cmp-ul-list/cmp-ul-list heading-title="Per accedere al servizio, assicurati di avere:" font-title="lora" font-list="titillium" info-list=iscrizione-graduatoria.trovare-informazione-servizio.cosa-serve.lista-1 }}
+        {{>cmp-ul-list/cmp-ul-list heading-title="Per accedere al servizio, assicurati di avere:" font-title="lora" font-list="lora" info-list=iscrizione-graduatoria.trovare-informazione-servizio.cosa-serve.lista-1 }}
         {{/cmp-card/cmp-card-content-box}}
 
         {{#>cmp-card/cmp-card-content-box card-title="Cosa si ottiene" h2-class="mb-3" id-title="obtain" subtitle="Se - in base ai requisiti e alla
-        graduatoria - la richiesta verrà accettata, sarà possibile perfezionare l’iscrizione all’asilo." }}
+        graduatoria - la richiesta verrà accettata, sarà possibile perfezionare l’iscrizione all’asilo." header-m0=true}}
         {{/cmp-card/cmp-card-content-box}}
 
         {{>cmp-timeline/cmp-timeline
@@ -132,14 +132,14 @@
     </div>
   </div>
 
-  <div class="bg-grey-card">
+  <div class="bg-grey-card shadow-contacts">
     <div class="container">
       <div class="row">
         <div class="col-12 pt-5 pb-40">
           {{>cmp-carousel/cmp-carousel carousel-title="Contenuti correlati" class="carousel-4-card" carTitle-class="pb-0"}}
         </div>
-        <div class="col-12 col-lg-6 offset-lg-3 pt-lg-4 pb-40">
-          {{>cmp-contacts/cmp-contacts appuntamento=true}}
+        <div class="col-12 col-lg-6 offset-lg-3 p-contacts">
+          {{>cmp-contacts/cmp-contacts}}
         </div>
       </div>
     </div>

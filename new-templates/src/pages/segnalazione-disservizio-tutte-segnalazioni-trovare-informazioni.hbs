@@ -58,12 +58,12 @@
 
 
 
-        {{#>cmp-card/cmp-card-content-box card-title="Cosa serve" id-title="needed" bg-grey="true" }}
-        {{>cmp-ul-list/cmp-ul-list heading-title="Per accedere al servizio, assicurati di avere:" font-title="lora" font-list="titillium" info-list=segnalazione-disservizio.list }}
+        {{#>cmp-card/cmp-card-content-box card-title="Cosa serve" id-title="needed" bg-grey="true" bg-grey-primary=true}}
+        {{>cmp-ul-list/cmp-ul-list heading-title="Per accedere al servizio, assicurati di avere:" font-title="lora" font-list="lora" info-list=segnalazione-disservizio.list }}
         {{/cmp-card/cmp-card-content-box}}
 
         {{#>cmp-card/cmp-card-content-box card-title="Cosa si ottiene" id-title="obtain" subtitle="Chi effettua la segnalazione, identificandosi con le proprie credenziali Spid, riceverà sulla sua casella di
-        posta elettronica le comunicazioni sullo stato di avanzamento della sua richiesta, dall'assegnazione all'ufficio competente fino alla chiusura dell'intervento." }}
+        posta elettronica le comunicazioni sullo stato di avanzamento della sua richiesta, dall'assegnazione all'ufficio competente fino alla chiusura dell'intervento." header-m0=true}}
         {{/cmp-card/cmp-card-content-box}}
 
         {{#>cmp-card/cmp-card-content-box card-title="Costi" id-title="costs" subtitle="Il servizio è gratuito." class="mb-2 mt-40" }}
@@ -121,8 +121,8 @@
         <div class="col-12 py-4">
           {{>cmp-carousel/cmp-carousel carousel-title="Contenuti correlati" class="carousel-4-card"}}
         </div>
-        <div class="col-12 col-lg-6 offset-lg-3 py-5">
-          {{>cmp-contacts/cmp-contacts appuntamento=true}}
+        <div class="col-12 col-lg-6 offset-lg-3 p-contacts">
+          {{>cmp-contacts/cmp-contacts}}
         </div>
       </div>
     </div>
