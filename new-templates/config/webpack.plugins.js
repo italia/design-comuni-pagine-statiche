@@ -82,6 +82,7 @@ for (let i = 0; i < pages.length; i++) {
   let page = Object.assign({}, pages[i]);
   renderedPages.push(
     new HTMLWebpackPlugin({
+      minify: false,
       template: page.template,
       filename: page.output,
       // title: page.content.title,
