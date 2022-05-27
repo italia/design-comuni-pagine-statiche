@@ -25,6 +25,10 @@
       z-index: 1;
       width: um(24px);
       height: um(24px);
+
+      @include media-breakpoint-up(lg) {
+        top: um(24px);
+      }
     }
 
     &:checked {
