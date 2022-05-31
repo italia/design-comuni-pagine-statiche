@@ -140,7 +140,7 @@
       {
         "title": "Luogo",
         "active": false,
-        "completed": false
+        "completed": true
       },
       {
         "title": "Data e orario",
@@ -167,12 +167,12 @@
       {
         "title": "Luogo",
         "active": false,
-        "completed": false
+        "completed": true
       },
       {
         "title": "Data e orario",
         "active": false,
-        "completed": false
+        "completed": true
       },
       {
         "title": "Dettagli appuntamento",
@@ -194,17 +194,17 @@
       {
         "title": "Luogo",
         "active": false,
-        "completed": false
+        "completed": true
       },
       {
         "title": "Data e orario",
         "active": false,
-        "completed": false
+        "completed": true
       },
       {
         "title": "Dettagli appuntamento",
         "active": false,
-        "completed": false
+        "completed": true
       },
       {
         "title": "Richiedente",
@@ -221,22 +221,22 @@
       {
         "title": "Luogo",
         "active": false,
-        "completed": false
+        "completed": true
       },
       {
         "title": "Data e orario",
         "active": false,
-        "completed": false
+        "completed": true
       },
       {
         "title": "Dettagli appuntamento",
         "active": false,
-        "completed": false
+        "completed": true
       },
       {
         "title": "Richiedente",
         "active": false,
-        "completed": false
+        "completed": true
       },
       {
         "title": "Riepilogo",

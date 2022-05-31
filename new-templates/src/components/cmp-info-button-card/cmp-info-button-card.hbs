@@ -1,12 +1,16 @@
-<div class="form-check cmp-info-button-card{{#if radio}} radio-card{{/if}}">
+<div class="cmp-info-button-card {{#if radio}} radio-card{{/if}}">
+  <div class="card {{#if shadow}}shadow{{/if}} p-3 p-lg-4">
   {{#if radio}}
-  <input class="radio-input" name="{{group}}" type="radio" id="{{idRadio}}">
-  <label for="{{idRadio}}"></label>
+    <div class="card-header mb-0 p-0">
+      <div class="form-check m-0">
+        <input class="radio-input" name="{{group}}" type="radio" id="{{idRadio}}">
+        <label for="{{idRadio}}"><h3 class="big-title mb-0">{{{radio-title}}}</h3></label>
+      </div>
+    </div>
   {{/if}}
-  <div class="card card-teaser {{#if shadow}}shadow{{/if}} p-3 p-lg-4">
-    <div class="card-body">
+    <div class="card-body p-0">
       {{#if big-title}}
-      <h3 class="big-title mb-0">{{{big-title}}}</h3>
+        <h3 class="big-title mb-0">{{{big-title}}}</h3>
       {{/if}}
 
       {{#if name}}

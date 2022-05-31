@@ -20,23 +20,23 @@
       <hr class="d-none d-lg-block mb-0 mt-2">
     </div>
 
-    <div class="row mt-lg-40">
+    <div class="row mt-lg-80 mt-4">
       <div class="col-12 col-lg-3 mb-4 ">
         {{>cmp-navscroll/cmp-navscroll accordion-title="INDICE DELLA PAGINA"
           link-list=pagamenti-dovuti-multa.trovare-informazioni-servizio.navscroll}}
       </div>
       <div class="col-12 col-lg-8 offset-lg-1">
-        {{#>cmp-card/cmp-card-content-box card-title="A chi è rivolto"  h2-class="mb-3" id-title="who-needs"}}
-          <p class="text-paragraph lora">Il servizio è destinato a tutti i cittadini che devono pagare multe della polizia municipale, prese a seguito di infrazioni del codice della strada nel territorio comunale.</p>
+        {{#>cmp-card/cmp-card-content-box card-title="A chi è rivolto"  h2-class="mb-0" id-title="who-needs"}}
+          <p class="text-paragraph lora mb-0">Il servizio è destinato a tutti i cittadini che devono pagare multe della polizia municipale, prese a seguito di infrazioni del codice della strada nel territorio comunale.</p>
         {{/cmp-card/cmp-card-content-box}}
 
-        {{#>cmp-card/cmp-card-content-box card-title="Come fare" id-title="how-to"}}
-        <p class="text-paragraph lora">
+        {{#>cmp-card/cmp-card-content-box card-title="Come fare" h2-class="mb-0" id-title="how-to"}}
+        <p class="text-paragraph lora mb-0">
          Per pagare online, accedi con le tue credenziali di identità digitale e fornisci le informazioni su chi effettua il pagamento e gli estremi della multa. Puoi pagare con conto o carta tramite il servizio pagoPA e scaricare subito la ricevuta. Alternativamente, puoi prenotare un appuntamento e recarti presso gli uffici.
         </p>
         {{/cmp-card/cmp-card-content-box}}
 
-        {{#>cmp-card/cmp-card-content-box card-title="Cosa serve" id-title="needed" bg-grey="true" bg-grey-primary=true}}
+        {{#>cmp-card/cmp-card-content-box card-title="Cosa serve" h2-class="mb-0" id-title="needed" class="p-3" bg-grey="true" bg-grey-primary=true}}
           {{>cmp-ul-list/cmp-ul-list description="Per il pagamento delle multe, assicurati di avere:" font-title="lora" font-list="lora" info-list=pagamenti-dovuti-multa.trovare-informazioni-servizio.cosa-serve }}
         {{/cmp-card/cmp-card-content-box}}
 
@@ -47,18 +47,18 @@
         {{/cmp-card/cmp-card-content-box}}
 
 
-        {{#>cmp-card/cmp-card-content-box card-title="Costi" id-title="costs" subtitle="Il servizio di pagamento online prevede 0,50€ di costi di commissione." class="mb-2 mt-40" }}
+        {{#>cmp-card/cmp-card-content-box card-title="Costi" h2-class="mb-3" id-title="costs" subtitle="Il servizio di pagamento online prevede 0,50€ di costi di commissione." class="mt-30"}}
         {{/cmp-card/cmp-card-content-box}}
 
 
-        {{#>cmp-card/cmp-card-content-box card-title="Accedi al servizio" id-title="service-access" subtitle="Puoi pagare la multa direttamente online tramite identità digitale." bg-grey="true" bg-grey-primary=true}}
+        {{#>cmp-card/cmp-card-content-box card-title="Accedi al servizio" h2-class="mb-0" class="p-3" id-title="service-access" subtitle="Puoi pagare la multa direttamente online tramite identità digitale." bg-grey="true" bg-grey-primary=true}}
           {{>partials/button/button label="Paga online" primary="true" class="mobile-full"  }}
-          <p class="text-paragraph mt-25 mb-25">Oppure, puoi pagare presso gli uffici di Polizia municipale.
+          <p class="text-paragraph mt-4 mb-3">Oppure, puoi pagare presso gli uffici di Polizia municipale.
           </p>
           {{>partials/button/button label="Prenota appuntamento" primary="true" class="mobile-full btn-outline-primary t-primary" }}
         {{/cmp-card/cmp-card-content-box}}
 
-        {{#>cmp-card/cmp-card-content-box card-title="Condizioni di servizio" lora=true id-title="conditions" subtitle="Per conoscere i dettagli di scadenze, requisiti e altre informazioni importanti, leggi i termini e le condizioni di servizio." }}
+        {{#>cmp-card/cmp-card-content-box card-title="Condizioni di servizio" h2-class="mb-0" lora=true id-title="conditions" subtitle="Per conoscere i dettagli di scadenze, requisiti e altre informazioni importanti, leggi i termini e le condizioni di servizio." }}
           {{>cmp-icon-link/cmp-icon-link link="Termini e condizioni di servizio (PDF 1MB)"}}
         {{/cmp-card/cmp-card-content-box}}
 
@@ -76,7 +76,7 @@
         <div class="d-flex flex-wrap gap-2 mt-10 mb-30 ">
           {{>partials/cmp-tag/cmp-tag label-tag="Pagamenti" class="bg-tag"}}
         </div>
-        <p class="text-paragraph-small">Pagina aggiornata il 14/04/2022</p>
+        <p class="text-paragraph-small mb-0">Pagina aggiornata il 14/04/2022</p>
         {{/cmp-card/cmp-card-content-box}}
       </div>
     </div>
@@ -96,7 +96,7 @@
   <div class="bg-grey-card shadow-contacts">
     <div class="container">
       <div class="row">
-        <div class="col-12 py-4">
+        <div class="col-12 pt-5">
           {{>cmp-carousel/cmp-carousel carousel-title="Contenuti correlati" class="carousel-4-card"}}
         </div>
         <div class="col-12 col-lg-6 offset-lg-3 p-contacts">

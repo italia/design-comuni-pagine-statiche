@@ -10,9 +10,9 @@
     font-weight: 400;
     line-height: um(18px);
     color: get-color(dark, grey);
-    padding-left: um(8px);
+    margin-left: um(8px);
+    opacity: .9;
     mix-blend-mode: normal;
-    opacity: 0.9;
   }
 
   .form-group {
@@ -24,6 +24,7 @@
       border-bottom: 1px solid get-color(dark, grey);
       resize: none;
       overflow: hidden;
+      word-break: break-all;
 
 
       &:focus{

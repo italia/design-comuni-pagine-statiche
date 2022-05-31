@@ -1,0 +1,77 @@
+{
+  "richiedi-assistenza": {
+    "controllare-dati-personali": {
+      "select-categoria": [
+        {
+          "value": "Agricoltura e pesca"
+        },
+        {
+          "value": "Ambiente"
+        },
+        {
+          "value": "Anagrafe e stato civile"
+        },
+        {
+          "value": "Appalti pubblici"
+        },
+        {
+          "value": "Autorizzazioni e concessioni"
+        },
+        {
+          "value": "Catasto e urbanistica"
+        },
+        {
+          "value": "Cultura e tempo libero"
+        },
+        {
+          "value": "Educazione e formazione"
+        },
+        {
+          "value": "Giustizia e sicurezza pubblica"
+        },
+        {
+          "value": "Imprese e commercio"
+        },
+        {
+          "value": "Mobilità e trasporti"
+        },
+        {
+          "value": "Relazioni con il pubblico"
+        },
+        {
+          "value": "Salute, benessere e assistenza"
+        },
+        {
+          "value": "Tributi, finanze e contravvenzioni"
+        },
+        {
+          "value": "Turismo"
+        },
+        {
+          "value": "Vita lavorativa"
+        }
+      ],
+      "select-servizio": [
+        {
+          "value": "Iscrizione alla Scuola dell’infanzia"
+        },
+        {
+          "value": "Permessi ZTL"
+        },
+        {
+          "value": "Assegno di maternità"
+        }
+      ],
+      "navscroll": [
+        {
+          "item": "Richiedente",
+          "anchor": "applicant"
+        },
+        {
+          "item": "Richiesta",
+          "anchor": "request"
+        }
+      ]
+    }
+  }
+}

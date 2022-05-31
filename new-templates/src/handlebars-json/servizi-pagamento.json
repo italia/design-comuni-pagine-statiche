@@ -83,19 +83,17 @@
       ]
     },
     "acconsentire-trattamento-dati-inseriti": {
-      "step-1":[
+      "step-1": [
         {
           "title": "Informativa sulla privacy",
           "active": true,
           "completed": false
         },
-
         {
           "title": "Dati Generali",
           "active": false,
           "completed": false
         },
-
         {
           "title": "Preferenze di servizio",
           "active": false,
@@ -113,13 +111,11 @@
           "active": false,
           "completed": true
         },
-
         {
           "title": "Dati Generali",
           "active": true,
           "completed": false
         },
-
         {
           "title": "Preferenze di servizio",
           "active": false,
@@ -131,19 +127,17 @@
           "completed": false
         }
       ],
-      "step-3":[
+      "step-3": [
         {
           "title": "Informativa sulla privacy",
           "active": false,
           "completed": true
         },
-
         {
           "title": "Dati Generali",
           "active": false,
           "completed": true
         },
-
         {
           "title": "Preferenze di servizio",
           "active": true,
@@ -161,13 +155,11 @@
           "active": false,
           "completed": true
         },
-
         {
           "title": "Dati Generali",
           "active": false,
           "completed": true
         },
-
         {
           "title": "Preferenze di servizio",
           "active": false,
@@ -181,7 +173,7 @@
       ]
     },
     "controllare-dati-personali": {
-      "navscroll":[
+      "navscroll": [
         {
           "item": "Richiedente",
           "anchor": "applicant-info"
@@ -199,7 +191,7 @@
           "anchor": "isee-info"
         }
       ],
-      "anagrafica":[
+      "anagrafica": [
         {
           "name": "Nome",
           "description": "Francesco"
@@ -229,7 +221,7 @@
           "description": "Italiana"
         }
       ],
-      "indirizzo":[
+      "indirizzo": [
         {
           "name": "Residenza",
           "description": "Via Roma 16, 00100 Roma, It"
@@ -239,7 +231,7 @@
           "description": "Via Roma 16, 00100 Roma, It"
         }
       ],
-      "documenti":[
+      "documenti": [
         {
           "name": "Certificato disabilità",
           "description": "",
@@ -257,23 +249,159 @@
       ]
     },
     "inserire-dati-specifici": {
-      "navscroll":[
+      "navscroll": [
         {
-          "item": "Richiedente",
-          "anchor": "applicant-info"
+          "item": "Scegli la scuola",
+          "anchor": "school-choice"
         },
         {
-          "item": "Beneficiario",
-          "anchor": "beneficiary-info"
+          "item": "Tariffa esonero",
+          "anchor": "rate-choice"
         },
         {
-          "item": "ISEE",
-          "anchor": "isee-info"
+          "item": "Tariffa riduzione",
+          "anchor": "outings-choice"
+        },
+        {
+          "item": "Frequenza",
+          "anchor": "attendance"
+        },
+        {
+          "item": "Dieta diversificata",
+          "anchor": "different-diet"
         }
       ]
     },
     "conferma-riepilogo": {
-      "list": [
+      "indirizzo-genitore": [
+        {
+          "name": "Residenza",
+          "description": "Via Roma 16, 00100 Roma, It"
+        },
+        {
+          "name": "Domicilio",
+          "description": "Via Roma 16, 00100 Roma, It"
+        }
+      ],
+      "info-genitore": [
+        {
+          "name": "Codice Fiscale",
+          "description": "GLABNC72H25H501Y"
+        },
+        {
+          "name": "Data di nascita",
+          "description": "02/03/1975"
+        },
+        {
+          "name": "Luogo di nascita",
+          "description": "Roma"
+        },
+        {
+          "name": "Sesso",
+          "description": "Femmina"
+        },
+        {
+          "name": "Nazionalità",
+          "description": "Italiana"
+        },
+        {
+          "name": "Professione",
+          "description": "Insegnante"
+        },
+        {
+          "name": "Scolarità",
+          "description": "Laurea Magistrale"
+        }
+      ],
+      "contatti-genitore": [
+        {
+          "name": "Telefono",
+          "description": "+39 331 1234567"
+        },
+        {
+          "name": "Email",
+          "description": "giulia.bianchi@gmail.com"
+        },
+        {
+          "name": "Recapito postale",
+          "description": "Via Roma 16, 00100 Roma, It"
+        }
+      ],
+      "documenti-genitore": [
+        {
+          "name": "Carta d'identità",
+          "description": "giulia_bianchi_carta_di_identità_fronte_retro.pdf"
+        },
+        {
+          "name": "Modulo condizione lavorativa",
+          "description": "giulia_bianchi_modulo.pdf"
+        }
+      ],
+      "info-figli": [
+          {
+            "name": "Codice Fiscale",
+            "description": "FRARSS72H25H501Y"
+          },
+          {
+            "name": "Data di nascita",
+            "description": "26/03/2018"
+          },
+          {
+            "name": "Luogo di nascita",
+            "description": "Roma"
+          },
+          {
+            "name": "Sesso",
+            "description": "Maschio"
+          },
+          {
+            "name": "Nazionalità",
+            "description": "Italiana"
+          }
+        ],
+      "indirizzo-figli": [
+          {
+            "name": "Residenza",
+            "description": "Via Roma 16, 00100 Roma, IT"
+          },
+          {
+            "name": "Domicilio",
+            "description": "Via Roma 16, 00100 Roma, IT"
+          }
+        ],
+      "documenti-figli": [
+          {
+            "name": "Carta disabilità",
+            "description": "francesco_rossi_certificato_disabilità.pdf"
+          },
+          {
+            "name": "Certificato dieta patologica",
+            "description": "francesco_rossi_dieta.pdf"
+          }
+        ],
+        "isee-familiare": [
+            {
+              "name": "Scadenza ISEE",
+              "description": "06/10/2023"
+            },
+            {
+              "name": "Anno protocollo",
+              "description": "2022"
+            },
+            {
+              "name": "Numero protocollo",
+              "description": "12345678"
+            },
+            {
+              "name": "Codice filiale protocollo",
+              "description": "12345678"
+            },
+            {
+              "name": "Certificato ISEE",
+              "description": "documento_ISEE-2022.pdf"
+            }
+          ],
+      "preferenze-servizio": [
         {
           "name": "Scuola",
           "description": "Istituto Narcisi"
@@ -297,7 +425,7 @@
       ]
     },
     "finalizzare-procedura": {
-      "navscroll":[
+      "navscroll": [
         {
           "item": "Prossimi passi",
           "anchor": "next-steps"
@@ -386,7 +514,6 @@
           "anchor": "payments"
         }
       ],
-
       "accordion": [
         {
           "num": "1",
@@ -590,7 +717,7 @@
           "date": "15/02/2022",
           "icon": "it-folder",
           "icon-label": "Da completare",
-          "color":"u-main-alert",
+          "color": "u-main-alert",
           "collapse": [
             {
               "icon": "it-clip",
@@ -610,7 +737,7 @@
           "date": "24/06/2021",
           "icon": "it-folder",
           "icon-label": "In sospeso",
-          "color":"u-main-error",
+          "color": "u-main-error",
           "collapse": [
             {
               "icon": "it-clip",
@@ -683,22 +810,22 @@
         }
       ]
     },
-    "effettuare-pagamento":{
-      "info-list":[
+    "effettuare-pagamento": {
+      "info-list": [
         {
-          "description":"Pratica:",
+          "description": "Pratica:",
           "summary": "AN4059281"
         },
         {
-          "description":"Data di pagamento:",
+          "description": "Data di pagamento:",
           "summary": "07/04/2022"
         },
         {
-          "description":"Importo totale dovuto:",
+          "description": "Importo totale dovuto:",
           "summary": "23,00 €"
         },
         {
-          "description":"Descrizione pagamento:",
+          "description": "Descrizione pagamento:",
           "summary": "Pagamento del servizio per la mensa scolastica"
         }
       ]

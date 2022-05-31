@@ -1,13 +1,36 @@
 .cmp-info-checkbox {
+
+  p{
+    margin-bottom: 0;
+  }
+
+  &:not(:first-child){
+    margin-top: um(16px);
+
+    @include media-breakpoint-up(lg) {
+      margin-top: um(32px);
+    }
+  }
+
+  &.has-border-green {
+    outline: 2px solid get-color(primary, main);
+  }
+
+  .card {
+    padding: um(16px);
+
+    @include media-breakpoint-up(lg) {
+      padding: um(24px);
+    }
+  }
   .card-header {
    padding: 0;
-  /*  margin: um(12px) um(16px) 0 um(16px); */
-  border-bottom: none;
+   margin-bottom: 0;
+   border: none;
   }
 
   .card-body {
     padding: 0;
-   /*  margin: 0 um(16px) um(16px) um(16px); */
   }
 
   .form-check.form-check-group {
@@ -20,11 +43,11 @@
   }
 
   .form-check [type=checkbox] + label:after {
-    margin: um(12px) 0 0 0;
+    margin-top: um(8px) ;
   }
 
   .form-check [type=checkbox]:checked+label::before {
-    top: um(11px);
+    top: um(8px);
   }
 
   .form-check.form-check-group [type=checkbox]+label::after {
@@ -37,7 +60,7 @@
   }
 
   .info-wrapper {
-    padding: um(6px) 0;
+    padding: um(4px) 0;
   }
 
   .info-wrapper-payment {

@@ -1,9 +1,9 @@
 <div class="cmp-text-area {{class}}">
   <div class="form-group">
-    <label for="exampleFormControlTextarea{{num}}">{{placeholder}}</label>
-    <textarea class="text-area" id="exampleFormControlTextarea{{num}}" rows="3"></textarea>
+    <label for="exampleFormControlTextarea{{num}}">{{placeholder}}{{#if required}}*{{/if}}</label>
+    <textarea class="text-area" id="exampleFormControlTextarea{{num}}" rows="3" {{#if required}}required{{/if}} maxlength="{{maxlength}}"></textarea>
   </div>
   {{#if label}}
-    <span class="label">{{label}}</span>
+    <span class="label {{labelClass}}">{{label}}</span>
   {{/if}}
 </div>

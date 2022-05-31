@@ -63,4 +63,14 @@
   .link-list li a svg {
     margin-left: um(15px);
   }
+
+  &.carousel-4-card {
+    .splide__pagination {
+      li {
+        &:not([role="presentation"]) {
+          display: none;
+        }
+      }
+    }
+  }
 }

@@ -4,6 +4,10 @@
 
     &:first-child {
       margin-top: um(16px);
+
+      @include media-breakpoint-up(md) {
+        margin-top: 0;
+      }
     }
 
     &.has-border {
@@ -36,22 +40,18 @@
     font-size: um(14px);
     line-height: um(21px);
     padding: 0;
-    padding-top: um(8px);
-
-  border-top: 0;
+    padding-top: um(16px);
+    border-top: 0;
 
 
     @include media-breakpoint-up(md) {
       font-size: um(18px);
       line-height: um(28px);
-      padding-top: um(16px);
+      padding-top: um(24px);
     }
 
     &:not(.collapsed){
       color: get-color(primary, main);
-      // &::after{
-      //   // transform: scaleY(-1);
-      // }
 
       .icon {
         transform: rotate(180deg);

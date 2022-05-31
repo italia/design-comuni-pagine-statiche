@@ -321,6 +321,16 @@
           "completed": false
         }
       ],
+      "navscroll": [
+        {
+          "item": "Richiedente",
+          "anchor": "applicant-info"
+        },
+        {
+          "item": "Veicolo",
+          "anchor": "vehicle"
+        }
+      ],
       "anagrafica": [
         {
           "name": "Codice fiscale",

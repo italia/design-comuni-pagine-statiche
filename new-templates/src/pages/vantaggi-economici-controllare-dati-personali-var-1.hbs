@@ -8,7 +8,8 @@
         title="Assegno di maternità"
         subTitle="Inserisci le informazioni necessarie per richiedere l’assegno di maternità.<br>Potrai ricontrollare tutti i dati nel riepilogo, prima di inviare la richiesta."
         title-class="w-75"
-
+        description="Hai bisogno di assistenza? <a class='title-small-semi-bold t-primary' href='#'>Contattaci</a>"
+        desClass="mt-lg-2"
         }}
       </div>
       <div class="col-12">
@@ -21,20 +22,21 @@
       </div>
     </div>
     <div class="steppers-content" aria-live="polite">
-      <div class="row mt-lg-50">
+      <div class="row mt-lg-3">
         <div class="col-12 col-lg-3 mb-4 d-none d-lg-block">
           {{>cmp-navscroll/cmp-navscroll accordion-title="INFORMAZIONI RICHIESTE"
             link-list=vantaggi-economici.controllare-dati-personali.navscroll
             br-none="true"}}
         </div>
-        <div class="col-12 col-lg-8 offset-lg-1">
-          <div>
+        <div class="col-12 col-lg-8 offset-lg-1 mt-2 mt-lg-0">
             {{#>cmp-card/cmp-card-content-box
             h2-class="mb-1"
             bg-grey=true
             card-title="Richiedente"
             id-title="applicant-info"
-            subtitle="Informazione su di te"}}
+            subtitle="Informazione su di te"
+            margin-class="mb-40"
+            }}
 
             {{> cmp-info-button-card/cmp-info-button-card big-title="Julie Crampton Smith"
             label-2="Codice Fiscale <br> <span>CRMJLU92H52Z826N</span>"
@@ -48,39 +50,38 @@
             modalId="modal-address"
             btn-label-text="Modifica"}}
             {{/cmp-card/cmp-card-content-box}}
-          </div>
 
-          <div class="mt-4">
             {{#>cmp-card/cmp-card-content-box bg-grey=true
             card-title="Minore"
+            h2-class="mb-1"
+            header-m0=true
             id-title="minor"
             subtitle="Informazioni sul minore per cui chiedi l’assegno di maternità"
             show-more-anagrafica-3=true
             anagrafica=vantaggi-economici.controllare-dati-personali.anagrafica-2.info
             documenti=vantaggi-economici.controllare-dati-personali.documenti-2.info
             collapse-id="collapse-anagrafica-2"
+            margin-class="mb-40"
             }}
-
 
             {{> cmp-info-button-card/cmp-info-button-card data-add="Aggiungi dati"
             warning=true
             warningMessage="Informazioni mancanti:" }}
 
-
-
-            {{>partials/button/button label="Aggiungi beneficiario" iconBtn="it-plus-circle"
-            class="plus-text mt-30"
+            {{>partials/button/button label="Aggiungi minore" link=true icon-url="./assets/bootstrap-italia/dist/svg/sprite.svg#it-close-circle"
+            icon-class="plus-icon icon-primary icon-sm"
+            class="plus-text mt-20"
             modalId="modal-registry-office"}}
             {{/cmp-card/cmp-card-content-box}}
-          </div>
 
-          <div class="mt-4">
             {{#>cmp-card/cmp-card-content-box bg-grey=true
             card-title="ISEE"
+            h2-class="mb-1"
             id-title="isee-info"
-            subtitle="Informazioni sul valore dell’ISEE del tuo nucleo familiare basato sulla tua
-            ultima
-            dichiarazione"}}
+            subtitle="Informazioni sul valore dell’ISEE del tuo nucleo familiare basato sulla tua ultima dichiarazione"
+            margin-class="mb-40"
+            }}
+
             {{> cmp-info-button-card/cmp-info-button-card big-title="ISEE: 18.000,00€" label-2="Scadenza ISEE <br>
             <span>01/03/2022</span>"
             data-add="Aggiungi dati"
@@ -88,16 +89,18 @@
             collapse-id="collapse2"
             modalId="modal-isee"
             }}
+
             {{/cmp-card/cmp-card-content-box}}
-          </div>
-          <div class="mt-4">
+
+
             {{#>cmp-card/cmp-card-content-box bg-grey=true
             card-title="Conto bancario per l’accredito"
+            h2-class="mb-1"
             id-title="bank-account"
             subtitle="Seleziona o aggiungi il conto su cui vuoi ricevere l'assegno"}}
 
             {{> cmp-info-button-card/cmp-info-button-card radio=true group="bank-accounts" idRadio="accounts"
-            big-title="Intesa Sanpaolo"
+            radio-title="Intesa Sanpaolo"
             label-2="Iban <br> <span>IT12 3456 7890 123456</span>"
             show-accordion-bank="true"
             conto-bancario=vantaggi-economici.controllare-dati-personali-var-1.conto-bancario-1.info
@@ -110,7 +113,7 @@
             }}
 
             {{> cmp-info-button-card/cmp-info-button-card radio=true group="bank-accounts" idRadio="accounts-2"
-            big-title="Banca Popolare di Roma"
+            radio-title="Banca Popolare di Roma"
             label-2="Iban <br> <span>IT12 3456 7890 123456</span>"
 
             show-accordion-bank="true"
@@ -121,19 +124,15 @@
            }}
 
 
-            {{>partials/button/button label="Aggiungi conto bancario"
-            iconBtn="it-plus-circle"
-            icon-class="plus-icon icon-primary"
-            class="plus-text mt-30"
+            {{>partials/button/button label="Aggiungi conto bancario" link=true icon-url="./assets/bootstrap-italia/dist/svg/sprite.svg#it-close-circle"
+            icon-class="plus-icon icon-primary icon-sm"
+            class="plus-text mt-20"
             modalId="modal-bank-account"
             }}
+
             {{/cmp-card/cmp-card-content-box}}
 
-
-          </div>
-
-
-          {{>cmp-nav-steps/cmp-nav-steps save="true"
+          {{>cmp-nav-steps/cmp-nav-steps save="true" saveBtn=true
           modalId="modal-save-1"
 
           }}

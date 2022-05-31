@@ -11,4 +11,8 @@
     line-height: um(24px);
     color: get-color(black, main);
   }
+
+  .toggles label input[type=checkbox]+.lever:after {
+    border: 2px solid get-color(card, grey);
+  }
 }

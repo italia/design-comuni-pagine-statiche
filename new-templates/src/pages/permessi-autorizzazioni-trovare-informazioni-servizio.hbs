@@ -34,7 +34,7 @@
         {{/cmp-card/cmp-card-content-box}}
 
         {{#>cmp-card/cmp-card-content-box card-title="Descrizione" h2-class="mb-0" id-title="description"}}
-        <p class="text-paragraph lora">
+        <p class="text-paragraph lora mb-0">
           L'autorizzazione consente il transito e la sosta h 24 dei veicoli nelle zone a traffico limitato.
           <br><br>
           Il permesso ZTL è valido per 5 anni dalla data del rilascio e si può rinnovare da due mesi prima della data di
@@ -43,7 +43,7 @@
         {{/cmp-card/cmp-card-content-box}}
 
         {{#>cmp-card/cmp-card-content-box card-title="Come fare" h2-class="mb-0" id-title="how-to"}}
-        <p class="text-paragraph lora">
+        <p class="text-paragraph lora mb-0">
           La richiesta può essere inviata online o consegnata di persona all’Ufficio Protocollo Generale, in via dei
           Transiti 21.
           <br><br>
@@ -52,12 +52,12 @@
         </p>
         {{/cmp-card/cmp-card-content-box}}
 
-        {{#>cmp-card/cmp-card-content-box card-title="Cosa serve" h2-class="mb-0" id-title="needed" bg-grey="true" bg-grey-primary=true}}
+        {{#>cmp-card/cmp-card-content-box card-title="Cosa serve" h2-class="mb-0" class="p-3" id-title="needed" bg-grey="true" bg-grey-primary=true}}
         {{>cmp-ul-list/cmp-ul-list heading-title="Per accedere al servizio, assicurati di avere:" font-title="lora"
         font-list="lora" info-list=permessi-autorizzazioni.trovare-informazioni-servizio.list-2 }}
         {{/cmp-card/cmp-card-content-box}}
 
-        {{#>cmp-card/cmp-card-content-box 
+        {{#>cmp-card/cmp-card-content-box
         card-title="Cosa si ottiene" h2-class="mb-3" id-title="obtain" subtitle="Si ottiene un permesso da esporre sul parabrezza del veicolo durante tutto il tempo di durata del transito e della sosta in ZTL o da esibire, a richiesta degli agenti addetti al controllo, quando è associato a veicoli che non consentono la chiusura a chiave dell’abitacolo." header-m0=true}}
         {{/cmp-card/cmp-card-content-box}}
 
@@ -67,13 +67,13 @@
         timeline=permessi-autorizzazioni.trovare-informazioni-servizio.timeline
         }}
 
-        {{#>cmp-card/cmp-card-content-box card-title="Costi" id-title="costs" subtitle="L’importo del permesso ZTL per il centro storico è di € 5,00. La tariffa non è dovuta alla scadenza del permesso in caso di rinnovo, quando sia effettuato in continuità di validità del precedente pass in scadenza. Non è considerato rinnovo quello del permesso scaduto da oltre un anno." class="mb-2 mt-40" h2-class="mb-3"}}
+        {{#>cmp-card/cmp-card-content-box card-title="Costi" id-title="costs" subtitle="L’importo del permesso ZTL per il centro storico è di € 5,00. La tariffa non è dovuta alla scadenza del permesso in caso di rinnovo, quando sia effettuato in continuità di validità del precedente pass in scadenza. Non è considerato rinnovo quello del permesso scaduto da oltre un anno." class="mt-30" h2-class="mb-3"}}
         {{>cmp-icon-link/cmp-icon-link link="Allegato se necessario"}}
         {{/cmp-card/cmp-card-content-box}}
 
-        {{#>cmp-card/cmp-card-content-box card-title="Accedi al servizio" h2-class="mb-3" id-title="service-access" subtitle="Puoi richiedere il permesso ZTL direttamente online tramite identità digitale." bg-grey="true"  bg-grey-primary=true }}
+        {{#>cmp-card/cmp-card-content-box card-title="Accedi al servizio" h2-class="mb-3" class="p-3" id-title="service-access" subtitle="Puoi richiedere il permesso ZTL direttamente online tramite identità digitale." bg-grey="true"  bg-grey-primary=true }}
         {{>partials/button/button label="Richiedi online" primary="true" class="mobile-full" }}
-        <p class="text-paragraph mt-25 mb-25">Oppure, puoi prenotare un appuntamento e presentarti presso gli uffici.
+        <p class="text-paragraph mt-4 mb-3">Oppure, puoi prenotare un appuntamento e presentarti presso gli uffici.
         </p>
         {{>partials/button/button label="Prenota appuntamento" primary="true" class="mobile-full btn-outline-primary bg-white
         t-primary" }}
@@ -97,7 +97,7 @@
             {{>partials/cmp-tag/cmp-tag label-tag="Autovettura" class="bg-tag"}}
             {{>partials/cmp-tag/cmp-tag label-tag="Permesso" class="bg-tag"}}
           </div>
-          <p class="text-paragraph-small">Pagina aggiornata il 14/04/2022</p>
+          <p class="text-paragraph-small mb-0">Pagina aggiornata il 14/04/2022</p>
        </div>
       </div>
     </div>
@@ -116,7 +116,7 @@
   <div class="bg-grey-card shadow-contacts">
     <div class="container">
       <div class="row">
-        <div class="col-12 pt-5 pb-40">
+        <div class="col-12 pt-5">
           {{>cmp-carousel/cmp-carousel carousel-title="Contenuti correlati" class="carousel-4-card"  carTitle-class="pb-0"}}
         </div>
         <div class="col-12 col-lg-6 offset-lg-3 p-contacts">

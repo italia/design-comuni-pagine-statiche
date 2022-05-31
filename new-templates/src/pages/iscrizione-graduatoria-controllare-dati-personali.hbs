@@ -62,7 +62,7 @@
               margin-class="mb-40"
             }}
             {{> cmp-info-button-card/cmp-info-button-card radio=true group="beneficiaries" idRadio="son"
-            big-title="Francesco Rossi"
+            radio-title="Francesco Rossi"
             label-2="Codice Fiscale <br> <span>FRARSS72H25H501Y</span>"
             data-add="Aggiungi dati"
             show-more-anagrafica-2=true
@@ -76,7 +76,7 @@
             btn-label-text="Aggiungi"}}
 
             {{> cmp-info-button-card/cmp-info-button-card radio=true group="beneficiaries" idRadio="daughter"
-            big-title="Lucia Rossi" label-2="Codice Fiscale <br> <span>LCARSS72H25H501Y</span>"
+            radio-title="Lucia Rossi" label-2="Codice Fiscale <br> <span>LCARSS72H25H501Y</span>"
             data-add="Aggiungi dati"
             show-more-anagrafica-2=true
             anagrafica=iscrizione-graduatoria.controllare-dati-personali.anagrafica.list-1
@@ -144,7 +144,7 @@
             }}
             {{/cmp-card/cmp-card-content-box}}
           </div>
-          {{>cmp-nav-steps/cmp-nav-steps save="true"
+          {{>cmp-nav-steps/cmp-nav-steps save="true" saveBtn=true
           modalId="modal-save-1"
 
           }}

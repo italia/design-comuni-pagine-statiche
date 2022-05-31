@@ -1,0 +1,60 @@
+{
+  "prenotazione-appuntamento":{
+    "controllare-dati-personali":{
+      "appuntamenti-disponibili":{
+        "select":[
+          {
+            "value": "Gennaio"
+          },
+          {
+            "value": "Febbraio"
+          },
+          {
+            "value": "Marzo"
+          },
+          {
+            "value": "Aprile"
+          },
+          {
+            "value": "Maggio"
+          },
+          {
+            "value": "Giugno"
+          },
+          {
+            "value": "Luglio"
+          },
+          {
+            "value": "Agosto"
+          },
+          {
+            "value": "Settembre"
+          },
+          {
+            "value": "Ottobre"
+          },
+          {
+            "value": "Novembre"
+          },
+          {
+            "value": "Dicembre"
+          }
+        ],
+        "radio-list":[
+          {
+            "label":"Giovedì 11 Marzo 2022 ore 10:00",
+            "id":"1"
+          },
+          {
+            "label":"Venerdì 12 Marzo 2022 ore 11:15",
+            "id":"2"
+          },
+          {
+            "label":"Lunedì 15 Marzo 2022 ore 09:00",
+            "id":"3"
+          }
+        ]
+      }
+    }
+  }
+}

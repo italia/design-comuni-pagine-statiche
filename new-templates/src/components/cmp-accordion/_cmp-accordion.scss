@@ -132,6 +132,16 @@
       }
     }
   }
+
+  &.faq {
+    .accordion-button {
+      padding: um(16px) um(24px);
+    }
+
+    .accordion-body {
+      padding: um(16px) um(24px);
+    }
+  }
 }
 
 

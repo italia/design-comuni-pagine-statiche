@@ -82,7 +82,6 @@ for (let i = 0; i < pages.length; i++) {
   let page = Object.assign({}, pages[i]);
   renderedPages.push(
     new HTMLWebpackPlugin({
-      minify: false,
       template: page.template,
       filename: page.output,
       // title: page.content.title,
@@ -106,7 +105,10 @@ for (let i = 0; i < pages.length; i++) {
         ...require('../src/handlebars-json/pagamenti-dovuti-multa'),
         ...require('../src/handlebars-json/servizi-pagamento'),
         ...require('../src/handlebars-json/permessi-autorizzazioni'),
-        ...require('../src/handlebars-json/vantaggi-economici.json')
+        ...require('../src/handlebars-json/vantaggi-economici.json'),
+        ...require('../src/handlebars-json/richiedi-assistenza.json'),
+        ...require('../src/handlebars-json/prenotazione-appuntamento'),
+        ...require('../src/handlebars-json/domande-frequenti.json')
       }
     }),
   );

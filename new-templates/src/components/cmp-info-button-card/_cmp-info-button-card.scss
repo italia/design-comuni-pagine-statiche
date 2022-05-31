@@ -1,49 +1,58 @@
 .cmp-info-button-card {
   margin-top: 0;
 
-  &.form-check [type=radio]:not(:checked)+label::before {
+  p{
+    margin-bottom: 0;
+  }
+
+  &.has-border-green {
+    outline: 2px solid get-color(primary, main);
+  }
+
+  &.radio-card:not(:first-child) {
+    margin-top: um(16px);
+
+    @include media-breakpoint-up(lg) {
+      margin-top: um(32px);
+    }
+  }
+
+  .form-check [type=radio]:not(:checked)+label::before {
     border-color: get-color(primary, main);
   }
 
-  &.radio-card {
+  .radio-card {
     position: relative;
-
-    &+.radio-card {
-      margin-top: um(16px);
-
-      @include media-breakpoint-up(lg) {
-        margin-top: um(32px);
-      }
-    }
   }
 
-  .radio-input {
-    &+label {
-      position: absolute !important;
-      right: um(8px);
-      top: um(18px);
-      z-index: 1;
-      width: um(24px);
-      height: um(24px);
+  .form-check [type=radio]+label {
+    position: relative;
+    padding-left: 0;
+    cursor: pointer;
+    display: inline-block;
+    height: auto;
+    line-height: 32px;
+    font-size: 1rem;
+    user-select: none;
+    margin-bottom: .5rem;
+    display: block;
+  }
 
-      @include media-breakpoint-up(lg) {
-        top: um(24px);
-      }
-    }
-
-    &:checked {
-      &+label+.card {
-        outline: 2px solid get-color(primary, main);
-      }
-    }
+  .form-check [type=radio]+label::after,
+  .form-check [type=radio]+label::before {
+    content: "";
+    right: 0;
+    top: 0;
+    left: unset;
   }
 
   .big-title {
     font-size: um(28px);
     font-weight: 700;
     line-height: um(32px);
-    border-bottom: 1px solid #E5E5E5;
+    max-width: 85%;
     padding-bottom: um(8px);
+    color: get-color(black, main);
 
     @include media-breakpoint-up(md) {
       font-size: um(32px);
@@ -62,7 +71,7 @@
   .card-info {
     font-size: um(14px);
     line-height: 1.5;
-    padding: um(4px) 0;
+    padding: um(8px) 0;
 
     &:not(:last-child) {
       border-bottom: um(1px) solid #E5E5E5;
@@ -99,5 +108,3 @@
     }
   }
 }
-
-

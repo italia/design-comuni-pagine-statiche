@@ -16,9 +16,9 @@
   .card-header {
     margin-bottom: um(16px);
 
-    @include media-breakpoint-up(lg) {
-      margin-bottom: um(32px);
-    }
+   /*  @include media-breakpoint-up(lg) {
+      margin-bottom: um(24px);
+    } */
   }
 
   .card {

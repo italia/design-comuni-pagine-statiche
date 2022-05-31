@@ -17,7 +17,7 @@
     }
 
     &::after {
-      display: none;
+     content: unset;
     }
   }
 

@@ -195,14 +195,16 @@
           {
             "name": "Codice Fiscale",
             "description": "GLABNC72H25H501Y",
-            "summary-item-class":true
+            "summary-item-class":true,
+            "border-unset":true
           }
         ],
         "indirizzo":[
           {
             "name": "Residenza",
             "description": "Via Roma 16, 00100 Roma, It",
-            "summary-item-class":true
+            "summary-item-class":true,
+            "border-unset":true
           }
         ]
       },
@@ -234,7 +236,8 @@
           },
           {
             "name": "Data ricevuta avviso",
-            "description": "16/08/2022"
+            "description": "16/08/2022",
+            "border-unset":true
           }
         ]
       }

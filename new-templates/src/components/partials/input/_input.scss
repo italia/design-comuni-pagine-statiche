@@ -24,9 +24,9 @@
 } */
 
 input[type=text]{
-  border-bottom: 2px solid get-color(medium, grey);
+  border-bottom: 1px solid get-color(medium, grey);
   font-size: um(18px);
-  height: um(52px);
+  // height: um(52px);
 }
 
 /* &.margin-high {

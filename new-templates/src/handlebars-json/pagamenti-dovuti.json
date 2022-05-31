@@ -18,12 +18,12 @@
           "completed": false
         },
         {
-          "title": "Preferenze pagamento",
+          "title": "Preferenze",
           "active": false,
           "completed": false
         },
         {
-          "title": "Pagamento",
+          "title": "Anteprima",
           "active": false,
           "completed": false
         }
@@ -45,12 +45,12 @@
           "completed": false
         },
         {
-          "title": "Preferenze pagamento",
+          "title": "Preferenze",
           "active": false,
           "completed": false
         },
         {
-          "title": "Pagamento",
+          "title": "Anteprima",
           "active": false,
           "completed": false
         }
@@ -72,12 +72,12 @@
           "completed": false
         },
         {
-          "title": "Preferenze pagamento",
+          "title": "Preferenze",
           "active": false,
           "completed": false
         },
         {
-          "title": "Pagamento",
+          "title": "Anteprima",
           "active": false,
           "completed": false
         }
@@ -99,12 +99,12 @@
           "completed": true
         },
         {
-          "title": "Preferenze pagamento",
+          "title": "Preferenze",
           "active": true,
           "completed": false
         },
         {
-          "title": "Pagamento",
+          "title": "Anteprima",
           "active": false,
           "completed": false
         }
@@ -126,12 +126,12 @@
           "completed": true
         },
         {
-          "title": "Preferenze pagamento",
+          "title": "Preferenze",
           "active": false,
           "completed": true
         },
         {
-          "title": "Pagamento",
+          "title": "Anteprima",
           "active": true,
           "completed": false
         }
@@ -228,7 +228,7 @@
     "controllare-dati-personali":{
       "navscroll":[
         {
-          "item": "Contribuente",
+          "item": "Richiedente",
           "anchor": "taxpayer"
         },
         {
@@ -320,7 +320,87 @@
         "list":[
           {
             "name": "Tipologia Immobile",
-            "description": "Abitazione principale"
+            "description": "Abitazione Principale"
+          },
+          {
+            "name": "Rendita catastale",
+            "description": "471,00€"
+          },
+          {
+            "name": "Aliquota IMU",
+            "description": "2%"
+          },
+          {
+            "name": "Aliquota acconto / base IMU",
+            "description": "2%"
+          },
+          {
+            "name": "Quota di possesso",
+            "description": "100%"
+          },
+          {
+            "name": "Mesi di possesso",
+            "description": "12"
+          },
+          {
+            "name": "Immobile storico / inagibile",
+            "description": "No"
+          },
+          {
+            "name": "Ulteriori contitolari",
+            "description": "0"
+          },
+          {
+            "name": "Pertinenze",
+            "description": "No"
+          }
+        ]
+      },
+      "immobili-info-2": {
+        "list":[
+          {
+            "name": "Tipologia Immobile",
+            "description": "Altro immobile"
+          },
+          {
+            "name": "Rendita catastale",
+            "description": "471,00€"
+          },
+          {
+            "name": "Aliquota IMU",
+            "description": "2%"
+          },
+          {
+            "name": "Aliquota acconto / base IMU",
+            "description": "2%"
+          },
+          {
+            "name": "Quota di possesso",
+            "description": "100%"
+          },
+          {
+            "name": "Mesi di possesso",
+            "description": "12"
+          },
+          {
+            "name": "Immobile storico / inagibile",
+            "description": "No"
+          },
+          {
+            "name": "Ulteriori contitolari",
+            "description": "0"
+          },
+          {
+            "name": "Pertinenze",
+            "description": "No"
+          }
+        ]
+      },
+      "immobili-info-3": {
+        "list":[
+          {
+            "name": "Tipologia Immobile",
+            "description": "Altra abitazione"
           },
           {
             "name": "Rendita catastale",

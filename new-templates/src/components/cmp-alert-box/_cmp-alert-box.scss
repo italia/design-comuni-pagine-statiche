@@ -20,11 +20,19 @@
     font-size: um(16px);
     line-height: 1.5;
   }
+
+  p{
+    margin: 0;
+  }
 }
 
 .cmp-warning-box{
   padding-left: um(16px);
   margin-top: um(15px);
+  
+  p{
+    margin: 0;
+  }
 
   .warning-box-icon {
     display: flex;
@@ -54,7 +62,7 @@
     }
 
     &.description-warning{
-      margin-top: .2rem;
+      margin-top: um(4px);
       margin-right: um(4px);
       font-weight: 400;
     }

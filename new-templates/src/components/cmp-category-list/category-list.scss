@@ -13,3 +13,8 @@
     line-height: um(24px);
   }
 }
+
+.scroll-filter-wrapper {
+  max-height: um(2000px);
+  overflow-y: auto;
+}

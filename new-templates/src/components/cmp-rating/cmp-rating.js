@@ -11,7 +11,9 @@ function initRatings() {
   radios.forEach(radio => {
     radio.addEventListener('change', () => {
       if(radio.checked) {
-        openNextStep();
+        if (activeStep == 0) {
+          openNextStep();
+        }
       }
     });
   });

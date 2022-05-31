@@ -1,0 +1,15 @@
+.card-teaser-wrapper {
+  .card-image {
+    img {
+      max-width: um(150px);
+      max-height: um(200px);
+      object-fit: cover;
+    }
+  }
+}
+
+.chip {
+  &.chip-simple {
+    margin-bottom: um(5px);
+  }
+}

@@ -68,6 +68,12 @@
     line-height: um(24px);
   }
 
+  &-sm-bold {
+    font-size: um(16px);
+    line-height: um(24px);
+    font-weight: 700;
+  }
+
   &-xs-bold {
     font-size: um(12px);
     line-height: um(18px);

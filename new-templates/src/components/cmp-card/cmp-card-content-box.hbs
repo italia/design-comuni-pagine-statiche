@@ -1,10 +1,10 @@
 <div class="cmp-card w-100 {{cmpClass}} {{margin-class}}">
   <div class="card {{#if bg-grey}}has-bkg-grey{{/if}} {{#if bg-grey-primary}}has-bkg-primary-grey{{/if}}  {{#if contacts}}contacts has-bkg-grey {{/if}} {{class}}" >
-    <div class="card-header border-0 p-0 {{#if header-m0}}m-0{{/if}}">
+    <div class="card-header border-0 p-0 {{#if header-m0}}m-0{{/if}} {{header-class}}">
       <div class="d-flex">
         {{#if card-title}}
           {{#if h3-title}}
-            <h3 class="subtitle-large {{#if required-icon}}icon-required{{/if}}" id="{{id-title}}">{{{card-title}}}</h3>
+            <h3 class="subtitle-large {{h3-class}} {{#if required-icon}}icon-required{{/if}}" id="{{id-title}}">{{{card-title}}}</h3>
           {{else}}
             <h2 class="title-xxlarge {{h2-class}} {{#if required-icon}}icon-required{{/if}}" id="{{id-title}}">{{card-title}}</h2>
           {{/if}}
@@ -22,7 +22,7 @@
       {{/if}}
 
       {{#if select}}
-        {{>partials/select/select no-bg=true class="mt-40 mb-3" label-text=labelSelect}}
+        {{>partials/select/select no-bg=true class=classSelect label-text=labelSelect}}
       {{/if}}
 
 

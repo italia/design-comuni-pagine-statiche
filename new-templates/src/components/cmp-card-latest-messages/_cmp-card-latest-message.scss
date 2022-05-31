@@ -1,4 +1,7 @@
 .cmp-card-latest-messages{
+  p{
+    margin: 0;
+  }
 
   .drop-shadow {
     box-shadow: 0 0.2rem 0.3rem  rgba(0, 0, 0, 0.1);
@@ -14,7 +17,9 @@
     line-height: um(28px);
   }
 
-  .card:after{
-    content: unset;
+  .card {
+    &:after {
+      content: unset;
+    }
   }
 }

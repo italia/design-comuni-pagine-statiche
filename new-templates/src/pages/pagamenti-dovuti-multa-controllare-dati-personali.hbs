@@ -7,6 +7,8 @@
         {{> cmp-heading/cmp-heading
         title="Pagamento multa"
         subTitle="Inserisci le informazioni necessarie per il pagamento della multa. Potrai ricontrollare tutti i dati nel riepilogo, prima di effettuare il pagamento."
+        description="Hai bisogno di assistenza? <a class='title-small-semi-bold t-primary' href='#'>Contattaci</a>"
+        desClass="mt-lg-2"
         }}
       </div>
       <div class="col-12">
@@ -16,11 +18,12 @@
         step-tot="4"
         step-title="Dati generali"
         subtitle="I campi contraddistinti dal simbolo asterisco (*) sono obbligatori"
+        classSubtitle="mt-40 mb-3"
         }}
       </div>
     </div>
     <div class="steppers-content" aria-live="polite">
-      <div class="row justify-content-center mt-lg-50">
+      <div class="row justify-content-center mt-lg-3">
         {{!-- <div class="col-12 col-lg-3 mb-4 d-none d-lg-block">
           {{>cmp-navscroll/cmp-navscroll accordion-title="INFORMAZIONI RICHIESTE"
             link-list=pagamenti-dovuti-multa.controllare-dati-personali.navscroll
@@ -32,9 +35,11 @@
             {{#>cmp-card/cmp-card-content-box
               class="p-big"
               bg-grey=true
-              h2-class="mb-0"
+              h2-class="mb-1"
+              header-mo=true
               card-title="Effettuato da"
               subtitle="Informazioni sulla persona che effettua il pagamento, che può essere diversa da chi ha ricevuto la multa."
+              margin-class="mb-0"
             }}
                {{> cmp-info-button-card/cmp-info-button-card group="beneficiaries"
                   big-title="Giulia Rossi"
@@ -51,7 +56,7 @@
             {{/cmp-card/cmp-card-content-box}}
           </div>
           </div>
-          {{>cmp-nav-steps/cmp-nav-steps save="true"
+          {{>cmp-nav-steps/cmp-nav-steps save="true" saveBtn=true
           modalId="modal-save-1"
 
           }}

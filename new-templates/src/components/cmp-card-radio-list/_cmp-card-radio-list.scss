@@ -1,0 +1,21 @@
+.cmp-card-radio-list {
+  .radio-body {
+    font-size: um(16px);
+    font-weight: 600;
+    line-height: um(24px);
+    color: get-color(black, main);
+    padding-bottom: um(12px);
+
+    &:not(:first-child) {
+      padding-top: um(12px);
+    }
+  }
+
+  .form-check [type=radio]:not(:checked)+label::after, .form-check [type=radio]:not(:checked)+label::before {
+    border-color: get-color(primary, main);
+  }
+
+  .form-check [type=checkbox]+label, .form-check [type=radio]+label {
+    padding-left: 45px;
+  }
+}

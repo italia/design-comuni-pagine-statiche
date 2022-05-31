@@ -1,3 +1,16 @@
 .calendar-partials{
+  label{
+    position: relative;
+    top: unset;
+    padding: 0;
+    transform: unset !important;
+    line-height: unset;
+    font-size: um(14px);
+  }
+  input{
+    font-weight: 600;
+    color: get-color(dark,grey);
+    font-size: um(18px);
+  }
 
 }

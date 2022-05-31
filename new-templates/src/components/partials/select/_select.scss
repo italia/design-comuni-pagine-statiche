@@ -1,11 +1,14 @@
-.card:after{
-  content: unset;
-}
-
 .select-partials {
   padding: um(16px);
 
-  label.hidden{ //visually-hidden
+  .card {
+    &::after {
+      content: unset;
+    }
+  }
+
+  label.hidden {
+    //visually-hidden
     position: absolute !important;
     width: 1px !important;
     height: 1px !important;
@@ -22,21 +25,43 @@
   }
 }
 
-.select-wrapper select{
-  color: get-color(black, main);
-  font-weight: 600;
+.select-wrapper {
 
-  option[selected] {
-    color: get-color(medium,grey)!important;
+  .card {
+    &::after {
+      content: unset;
+    }
   }
 
-  option {
-    font-size: um(18px);
-    color: get-color(medium,grey);
+  label {
+    font-size: um(14px);
+    font-weight: 700;
+    line-height: um(18px);
+    color: get-color(dark, grey);
+    margin-left: um(4px);
+    opacity: .9;
+    mix-blend-mode: normal;
+  }
+
+  select {
+    color: get-color(dark, grey);
+    font-weight: 600;
+
+    option[selected] {
+      color: get-color(dark, grey) !important;
+      font-size: um(18px);
+    }
+  }
+
+  .card:after {
+    content: unset;
   }
 }
 
 
-.bg-grey{
+
+
+
+.bg-grey {
   background-color: get-color(card, grey);
 }

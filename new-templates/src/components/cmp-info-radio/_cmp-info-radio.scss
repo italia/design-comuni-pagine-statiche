@@ -2,9 +2,15 @@
   position: relative;
   margin-top: um(16px);
 
+
+
+  &.has-border-green {
+    outline: 2px solid get-color(primary, main);
+  }
+
   .info-wrapper {
     padding: um(4px) 0;
-    border-top: 1px solid get-color(light-grey, grey);
+    border-bottom: 1px solid get-color(light-grey, grey);
 
     &__label {
       font-size: um(14px);
@@ -16,26 +22,29 @@
       font-size: um(16px);
       line-height: um(24px);
       font-weight: 600;
+      margin-bottom: 0;
     }
   }
 
+  .form-check [type=radio]+label {
+    position: relative;
+    padding-left: 0;
+    cursor: pointer;
+    display: inline-block;
+    height: auto;
+    line-height: 32px;
+    font-size: 1rem;
+    user-select: none;
+    margin-bottom: .5rem;
+    display: block;
+}
 
-  .radio-input {
-    &+label {
-      position: absolute !important;
-      right: um(10px);
-      top: um(20px);
-      z-index: 1;
-      width: um(24px);
-      height: um(24px);
-    }
-
-    &:checked {
-      &+label+.card {
-        outline: 1px solid get-color(primary, main);
-      }
-    }
-  }
+.form-check [type=radio]+label::after, .form-check [type=radio]+label::before {
+  content: "";
+  right: 0;
+  top: 0;
+  left: unset;
+}
 
   .big-title {
     font-size: um(24px);
@@ -43,6 +52,7 @@
     line-height: um(28px);
     padding-bottom: um(8px);
     max-width: 85%;
+    color: get-color(black, main);
 
     @include media-breakpoint-up(md) {
       font-size: um(32px);
@@ -78,21 +88,6 @@
       @include media-breakpoint-up(md) {
         font-size: um(18px);
       }
-    }
-
-
-  }
-
-  .cmp-alert-box {
-    margin-top: um(16px);
-  }
-
-  .accordion-button {
-    padding-left: 0;
-    font-weight: normal;
-
-    &::after {
-      margin-left: 0;
     }
   }
 }

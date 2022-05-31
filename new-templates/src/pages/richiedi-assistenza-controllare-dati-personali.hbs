@@ -1,0 +1,121 @@
+{{#>base/base title="Richiesta assistenza"}}
+<main>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi" link3="Assistenza"}}
+        {{> cmp-heading/cmp-heading
+        title="Richiesta assistenza"
+        description="I campi contraddistinti dal simbolo asterisco (*) sono obbligatori"
+        desClass="mb-0"}}
+        <p class="subtitle-small pb-40 mb-0">Hai un’identità digitale SPID o CIE? <a
+            class="title-small-semi-bold t-primary underline" href="./iscrizione-graduatoria-accedere-servizio.html">Accedi</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row mt-lg-50">
+      <div class="col-12 col-lg-3 d-lg-block mb-4 d-none ">
+        {{>cmp-navscroll/cmp-navscroll
+        accordion-title="INFORMAZIONI RICHIESTE"
+        link-list=richiedi-assistenza.controllare-dati-personali.navscroll}}
+      </div>
+      <div class="col-12 col-lg-8 offset-lg-1">
+        <div class="steppers-content" aria-live="polite">
+          <div>
+            {{#>cmp-card/cmp-card-content-box
+            class="p-big"
+            id-title="applicant"
+            bg-grey=true
+            h2-class="mb-0"
+            card-title="Richiedente"
+            }}
+
+            <div class="form-wrapper bg-white p-4">
+              {{>partials/input/input type="text" id="name" label="Nome" required=true name="name" text="Inserisci il
+              tuo nome" formClass="mb-0" inputClass="mt-4"}}
+
+              {{>partials/input/input type="text" id="surname" label="Cognome" required=true name="surname"
+              text="Inserisci il tuo nognome" formClass="mb-0"}}
+
+              {{>partials/input/input type="email" id="email" label="Email" required=true name="email" text="Inserisci
+              la tua email" formClass="mb-0"}}
+            </div>
+
+            {{/cmp-card/cmp-card-content-box}}
+          </div>
+
+          <div class="mt-40">
+            {{#>cmp-card/cmp-card-content-box
+            class="p-big"
+            id-title="request"
+            bg-grey=true
+            h2-class="mb-0"
+            card-title="Richiesta"
+            }}
+
+            <div class="form-wrapper bg-white p-4">
+              {{>partials/select/select
+              class="mb-40 mt-4"
+              id="category"
+              label-text="Categoria di servizio"
+              placeholder="Seleziona categoria"
+              required=true
+              no-bg=true
+              text="Seleziona la categoria del servizio per cui vuoi richiedere assistenza"
+              select-option-list=richiedi-assistenza.controllare-dati-personali.select-categoria}}
+
+              {{>partials/select/select
+              id="service"
+              label-text="Servizio"
+              placeholder="Scegli il servizio"
+              required=true
+              no-bg=true
+              text="Seleziona il servizio per cui vuoi richiedere assistenza"
+              select-option-list=richiedi-assistenza.controllare-dati-personali.select-servizio}}
+
+              {{>partials/text-area/text-area
+              class="p-0 mt-40"
+              id="details"
+              required=true
+              placeholder="Dettagli"
+              value="Trasferimento di mio figlio dall’Istituto Narcisi all’Istituto Anemoni durante l’anno scolastico
+              2021-2022"
+              label="Inserire massimo 600 caratteri"
+              maxlength="600"
+              }}
+            </div>
+            {{/cmp-card/cmp-card-content-box}}
+          </div>
+
+          <div class="mt-40">
+            <p class="text-paragraph mb-3">Per i dettagli sul trattamento dei dati personali consulta l’
+              <a href="#" class="t-primary underline">informativa sulla privacy.</a>
+            </p>
+
+            <div class="form-check mb-2">
+              <div class="checkbox-body d-flex align-items-center">
+                <input type="checkbox" id="privacy" name="privacy-field" value="privacy-field" required>
+                <label class="title-small-semi-bold pt-1" for="privacy">Ho letto e compreso l’informativa sulla
+                  privacy</label>
+              </div>
+            </div>
+          </div>
+          {{> cmp-nav-steps/cmp-nav-steps next=true modalId="modal-terms"}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-grey-card shadow-contacts">
+    <div class="container">
+      <div class="row d-flex justify-content-center p-contacts">
+        <div class="col-12 col-lg-5">
+          {{>cmp-contacts/cmp-contacts}}
+        </div>
+      </div>
+    </div>
+  </div>
+  {{>cmp-modal/modal-terms-and-conditions}}
+</main>
+{{/base/base }}

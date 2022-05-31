@@ -414,7 +414,7 @@
     "list": [
       {
         "name": "Indirizzo",
-        "description": "Via Solferino - 50100(FI)"
+        "description": "Via Solferino - 50100 Firenze (FI)"
       },
       {
         "name": "Tipo di disservizio",
@@ -436,7 +436,8 @@
     "info-author": [
       {
         "name": "Codice Fiscale",
-        "description": "GLABNC72H25H501Y"
+        "description": "GLABNC72H25H501Y",
+        "border-unset":true
       }
     ],
     "info-contacts": [
@@ -446,7 +447,8 @@
       },
       {
         "name": "Email",
-        "description": "giulia.bianchi@gmail.com"
+        "description": "giulia.bianchi@gmail.com",
+        "border-unset":true
       }
     ]
   },

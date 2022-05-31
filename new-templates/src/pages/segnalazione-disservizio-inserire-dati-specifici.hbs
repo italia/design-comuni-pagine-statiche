@@ -10,9 +10,10 @@
         {{> cmp-info-progress/cmp-info-progress
         step-list=step-list.disservizio-step-2
         step-num="2"
+        step-tot="3"
         step-title="Dati di segnalazione"
         subtitle="I campi contraddistinti dal simbolo asterisco (*) sono obbligatori"
-        step-tot="3"
+        classSubtitle="mt-40 mb-3"
         }}
       </div>
     </div>
@@ -25,7 +26,6 @@
       </div>
       <div class="col-12 col-lg-8 offset-lg-1">
         <div class="steppers-content" aria-live="polite">
-          <div>
 
             {{#>cmp-card/cmp-card-content-box
             class="p-big p-lg-4"
@@ -34,12 +34,11 @@
             h2-class="mb-0"
             card-title="Luogo"
             subtitle="Indica il luogo del disservizio"
+            margin-class="mb-40"
             }}
-            {{> partials/input-autocomplete/input-autocomplete placeholder="Cerca un luogo*" link=true}}
+            {{> partials/input-autocomplete/input-autocomplete placeholder="Cerca un luogo*" link=true }}
             {{/cmp-card/cmp-card-content-box}}
-          </div>
 
-          <div class="mt-4">
             {{#>cmp-card/cmp-card-content-box
             class="p-big"
             id-title="religion-choice"
@@ -47,6 +46,7 @@
             h2-class="mb-2 mb-lg-3"
             required-icon=true
             card-title="Disservizio"
+            margin-class="mb-40"
             }}
             {{>partials/select/select placeholder="Tipo di disservizio*" class="p-md-3 p-lg-4 pb-lg-0"
             select-option-list=serv-1-disservizio.list}}
@@ -72,20 +72,22 @@
               {{> partials/button/button label="Carica file" primary=true iconBtn="it-upload" iconWhite=true sm=true
               class="w-100 fw-bold"}}
               <p class="title-xsmall u-grey-dark pt-10 mb-0">Seleziona una o più immagini da allegare alla
-                segnalzione</p>
+                segnalazione</p>
             </div>
             {{/cmp-card/cmp-card-content-box}}
-          </div>
 
-          <div class="mt-4">
+
             {{#>cmp-card/cmp-card-content-box
             h2-class="mb-1"
+            header-class="mb-3"
+            header-m0=true
             bg-grey=true
             card-title="Autore della segnalazione"
             id-title="applicant-info"
             subtitle="Informazione su di te"}}
 
-            {{> cmp-info-button-card/cmp-info-button-card big-title="Giulia Bianchi"
+            {{> cmp-info-button-card/cmp-info-button-card 
+            big-title="Giulia Bianchi"
             label-2="Codice Fiscale <br> <span>GLABNC72H25H501Y</span>"
             data-add="Aggiungi dati"
             show-more-anagrafica="true"
@@ -93,9 +95,9 @@
             modalId="modal-documents"
             bnt-label-text="Modifica"}}
             {{/cmp-card/cmp-card-content-box}}
-          </div>
 
-          {{> cmp-nav-steps/cmp-nav-steps save="true"}}
+
+          {{> cmp-nav-steps/cmp-nav-steps save="true" saveBtn=true}}
         </div>
       </div>
     </div>

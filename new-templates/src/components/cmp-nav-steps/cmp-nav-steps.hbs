@@ -7,31 +7,30 @@
       <span class="text-button-sm t-primary">Indietro</span>
     </button>
 
-    <button  type="button" class="btn btn-outline-primary btn-sm steppers-btn-save d-none d-lg-block saveBtn">
+    {{#if saveBtn}}
+    <button type="button" class="btn btn-outline-primary btn-sm steppers-btn-save d-none d-lg-block saveBtn">
       <span class="text-button-sm t-primary">Salva Richiesta</span>
     </button>
 
-    <button  type="button" class="btn btn-outline-primary btn-sm steppers-btn-save d-block d-lg-none saveBtn center">
+    <button type="button" class="btn btn-outline-primary btn-sm steppers-btn-save d-block d-lg-none saveBtn center">
       <span class="text-button-sm t-primary">Salva</span>
     </button>
+    {{/if}}
 
 {{#if next}}
-    <button type="button" class="btn btn-primary btn-sm steppers-btn-confirm" data-bs-toggle="modal" data-bs-target="#{{modalId}}">
-      <span class="text-button-sm">Conferma</span>
-      <svg class="icon icon-white icon-sm">
-        <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-chevron-right"></use>
-      </svg>
-
+    <button type="button" class="btn btn-primary btn-sm steppers-btn-confirm send" data-bs-toggle="modal" data-bs-target="#{{modalId}}">
+      <span class="text-button-sm">Invia</span>
     </button>
-{{else}}
-    <button type="button" class="btn btn-primary btn-sm steppers-btn-confirm" data-bs-toggle="modal" data-bs-target="#{{modalId}}">
+    {{else}}
+    <button type="button" class="btn btn-primary btn-sm steppers-btn-confirm" data-bs-toggle="modal"
+      data-bs-target="#{{modalId}}">
       <span class="text-button-sm">Avanti</span>
       <svg class="icon icon-white icon-sm">
         <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-chevron-right"></use>
       </svg>
 
     </button>
-{{/if}}
+    {{/if}}
   </nav>
   {{>cmp-disclaimer/cmp-disclaimer}}
 

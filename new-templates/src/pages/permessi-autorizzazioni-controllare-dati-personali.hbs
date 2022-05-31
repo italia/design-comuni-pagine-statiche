@@ -8,6 +8,8 @@
         title="Permesso ZTL"
         subTitle="Inserisci le informazioni necessarie per richiedere il permesso ZTL. Potrai ricontrollare tutti i dati
         nel riepilogo, prima di inviare la richiesta."
+        description="Hai bisogno di assistenza? <a class='title-small-semi-bold t-primary' href='#'>Contattaci</a>"
+        desClass="mt-lg-2"
         }}
       </div>
       <div class="col-12">
@@ -20,20 +22,22 @@
       </div>
     </div>
     <div class="steppers-content" aria-live="polite">
-      <div class="row mt-lg-50">
+      <div class="row mt-lg-3">
         <div class="col-12 col-lg-3 mb-4 d-none d-lg-block">
           {{>cmp-navscroll/cmp-navscroll accordion-title="INFORMAZIONI RICHIESTE"
           link-list=permessi-autorizzazioni.controllare-dati-personali.navscroll
           br-none="true"}}
         </div>
-        <div class="col-12 col-lg-8 offset-lg-1">
+        <div class="col-12 col-lg-8 offset-lg-1 mt-2 mt-lg-0">
           <div>
             {{#>cmp-card/cmp-card-content-box
             h2-class="mb-1"
             bg-grey=true
             card-title="Richiedente"
             id-title="applicant-info"
-            subtitle="Informazione su di te"}}
+            subtitle="Informazione su di te"
+            margin-class="mb-40"
+            }}
 
             {{> cmp-info-button-card/cmp-info-button-card
             big-title="Mario Rossi"
@@ -57,6 +61,7 @@
           <div class="mt-4">
             {{#>cmp-card/cmp-card-content-box bg-grey=true
             card-title="Veicolo"
+            h2-class="mb-1"
             id-title="vehicles-info"
             subtitle="Seleziona o aggiungi il veicolo per il quale vuoi richiedere il permesso"}}
 
@@ -64,7 +69,7 @@
             radio=true
             group="vehicles"
             idRadio="vehicle1"
-            big-title="Mini Countryman <br class='d-lg-none'>F60"
+            radio-title="Mini Countryman F60"
             label-2="Targa <br> <span>CK 345 HB</span>"
             warningMessage="Informazioni mancanti:"
             warning=true
@@ -81,7 +86,7 @@
             radio=true
             group="vehicles"
             idRadio="vehicle2"
-            big-title="Opel Zafira Life"
+            radio-title="Opel Zafira Life"
             label-2="Targa <br> <span>EF 123 JR</span>"
             data-add="Mostra tutto"
             show-more-vehicle="true"
@@ -92,14 +97,14 @@
             vehicle-data=permessi-autorizzazioni.controllare-dati-personali.vehicle-2
             }}
 
-            {{>partials/button/button label="Aggiungi beneficiario" link="true"
+            {{>partials/button/button label="Aggiungi veicolo" link="true"
             icon-url="./assets/bootstrap-italia/dist/svg/sprite.svg#it-close-circle"
-            icon-class="plus-icon icon-primary"
-            class="plus-text mt-30"}}
+            icon-class="plus-icon icon-primary ion-sm"
+            class="plus-text mt-20"}}
             {{/cmp-card/cmp-card-content-box}}
           </div>
 
-          {{>cmp-nav-steps/cmp-nav-steps
+          {{>cmp-nav-steps/cmp-nav-steps saveBtn=true
           save="true"
           modalId="modal-save-1"
           }}

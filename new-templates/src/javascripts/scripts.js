@@ -4,6 +4,8 @@ import Splide from '@splidejs/splide';
 
 import '../components/cmp-rating/cmp-rating';
 import '../components/partials/toggle/toggle';
+import '../components/cmp-info-button-card/cmp-info-button-card';
+import '../components/cmp-info-checkbox/cmp-info-checkbox';
 
 const alertMessage = document.getElementById('alert-message');
 

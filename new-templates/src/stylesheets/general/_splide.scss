@@ -2,12 +2,4 @@
   &__sr {
     display: none;
   }
-
-  &__pagination {
-    li {
-      &:not([role="presentation"]) {
-        display: none;
-      }
-    }
-  }
 }

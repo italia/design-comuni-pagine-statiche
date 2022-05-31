@@ -7,6 +7,7 @@
 @import "base/global";
 
 @import "general/splide";
+@import "general/public-templates";
 
 
 //components
@@ -26,7 +27,6 @@
 @import "../components/cmp-card-radio/cmp-card-radio";
 @import "../components/cmp-nav-steps/cmp-nav-steps";
 @import "../components/cmp-info-progress/cmp-info-progress";
-@import "../components/cmp-save-request/cmp-save-request";
 @import "../components/cmp-icon-card/cmp-icon-card";
 @import "../components/cmp-info-summary/cmp-info-summary";
 @import "../components/cmp-ul-list/cmp-ul-list";
@@ -77,6 +77,4 @@
 @import "../components/cmp-info-checkbox/cmp-info-checkbox";
 @import "../components/cmp-callout/callout";
 @import "../components/cmp-modal/cmp-modal-scrollable";
-
-
-
+@import "../components/cmp-card-radio-list/cmp-card-radio-list";

@@ -316,7 +316,7 @@
           },
           {
             "name": "Documento Iban",
-            "description": "documento:iban.pdf"
+            "description": "documento_iban.pdf"
           }
         ]
       },
@@ -538,7 +538,7 @@
           }
         ]
       },
-            "indirizzo": {
+      "indirizzo": {
         "info": [
           {
             "name": "Residenza",
@@ -546,9 +546,7 @@
           },
           {
             "name": "Domicilio ",
-            "description": "Yellow Street 16, 00100 Liverpool, UK",
-            "warning": true,
-            "warning-message": "Domicilio non valido"
+            "description": "Via Roma 16, 00100 Roma, It"
           }
         ]
       },
@@ -560,7 +558,7 @@
           },
           {
             "name": "Email",
-            "description": "jsc@gmail.com"
+            "description": "jcs@gmail.com"
           },
           {
             "name": "Recapito postale",
@@ -584,14 +582,6 @@
       },
             "anagrafica-2": {
         "info": [
-          {
-            "name": "Nome",
-            "description": "Luigi"
-          },
-          {
-            "name": "Cognome",
-            "description": "Rossi "
-          },
           {
             "name": "Codice fiscale",
             "description": "LGIRSS72H25H501Y"
@@ -618,7 +608,7 @@
         "info": [
           {
             "name": "Carta d'identità",
-            "description": "luigi_rossi_carta_di_identità.pdf",
+            "description": "luigi_rossi_carta_di_identità_fronte_retro.pdf",
             "warning": false,
             "success": false
           }
@@ -669,7 +659,7 @@
           },
           {
             "name": "Documento Iban",
-            "description": "documento:iban.pdf"
+            "description": "documento_iban.pdf"
           }
         ]
       }
