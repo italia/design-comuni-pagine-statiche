@@ -1,11 +1,15 @@
 .cmp-input-search-button.form-group {
     display: flex;
     align-items: center;
-    gap: um(30px);
+    gap: 1.875rem;
+
+    @include media-breakpoint-up(sm) {
+      gap: 1.67rem;
+    }
 
     .btn{
       @include media-breakpoint-up(md){
-        padding: um(12px) um(70px);
+        padding: 0.67rem 3.89rem;
       }
     }
 
@@ -14,8 +18,8 @@
         fill: get-color(primary, main);
 
         @include media-breakpoint-down(sm) {
-          width: um(16px);
-          height: um(16px);
+          width: 1rem;
+          height: 1rem;
         }
       }
     }
@@ -27,21 +31,22 @@
 
 
     input {
-      font-size: um(16px);
+      @include font(16, 40);
 
       @include media-breakpoint-up(md) {
-        height: um(60px);
-        font-size: um(40px);
+        height: 3.33rem;
       }
 
       &::placeholder {
         font-weight: normal;
         color:get-color(black,main);
+        @include font(16, 40);
+
         @include media-breakpoint-up(md){
           font-weight: 700;
-          font-size: um(40px);
           color: get-color(light,grey);
         }
+
       }
     }
   }

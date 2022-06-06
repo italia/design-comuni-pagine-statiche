@@ -2,7 +2,11 @@
   <div class="card shadow card-wrapper">
     <div class="cmp-rating__card-first">
       <div class="card-header border-0">
+        {{#if public-template}}
+        <h2 class="title-medium-2-semi-bold mb-0">{{rating-title}}</h2>
+        {{else}}
         <h2 class="title-medium-2-semi-bold mb-0">Quanto sono utili le informazioni in questa pagina?</h2>
+        {{/if}}
       </div>
       <div class="card-body">
         <fieldset class="rating">
@@ -53,31 +57,31 @@
     <div class="form-rating d-none">
       <div class="d-none rating-shadow" data-step="1">
         {{#>cmp-steps-rating/cmp-steps-rating
-      step-list=step-list.rating-step-2
-      step-num="1"
-      step-tot="2"
-      step-title="Cosa ha funzionato meglio?"
-      }}
-          {{> cmp-radio-list/cmp-radio-list info-list=rating-list.list name="rating"}}
-          {{/cmp-steps-rating/cmp-steps-rating}}
+        step-list=step-list.rating-step-2
+        step-num="1"
+        step-tot="2"
+        step-title="Cosa ha funzionato meglio?"
+        }}
+        {{> cmp-radio-list/cmp-radio-list info-list=rating-list.list name="rating"}}
+        {{/cmp-steps-rating/cmp-steps-rating}}
       </div>
 
       <div class="d-none" data-step="2">
         {{#>cmp-steps-rating/cmp-steps-rating
-      step-list=step-list.rating-step-2
-      step-num="2"
-      step-tot="2"
-      step-title="Vuoi aggiungere altri dettagli?"
-      class="mb-4"
-      }}
-          <div class="form-group shadow-rating">
-            <label for="formGroupExampleInputWithHelp">Dettaglio</label>
-            <input type="text" class="form-control" id="formGroupExampleInputWithHelp"
-              aria-describedby="formGroupExampleInputWithHelpDescription" maxlength="200">
-            <small id="formGroupExampleInputWithHelpDescription" class="form-text">Inserire massimo 200
-              caratteri</small>
-          </div>
-          {{/cmp-steps-rating/cmp-steps-rating}}
+        step-list=step-list.rating-step-2
+        step-num="2"
+        step-tot="2"
+        step-title="Vuoi aggiungere altri dettagli?"
+        class="mb-4"
+        }}
+        <div class="form-group shadow-rating">
+          <label for="formGroupExampleInputWithHelp">Dettaglio</label>
+          <input type="text" class="form-control" id="formGroupExampleInputWithHelp"
+            aria-describedby="formGroupExampleInputWithHelpDescription" maxlength="200">
+          <small id="formGroupExampleInputWithHelpDescription" class="form-text">Inserire massimo 200
+            caratteri</small>
+        </div>
+        {{/cmp-steps-rating/cmp-steps-rating}}
       </div>
 
       <div class="d-flex flex-nowrap pt-4 w-100 justify-content-center">

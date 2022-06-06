@@ -1,24 +1,21 @@
 .cmp-breadcrumbs {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+
+  @include media-breakpoint-up(md) {
+    margin-top: 2.22rem;
+    margin-bottom: 1.333rem;
+  }
+
   .breadcrumb-container .breadcrumb .breadcrumb-item a,
   .separator {
     color: get-color(light, grey);
     font-weight: 400;
   }
 
-  margin-top: um(24px);
-  margin-bottom: um(16px);
-  @include media-breakpoint-up(md) {
-    margin-top: um(40px);
-    margin-bottom: um(24px);
-  }
   .breadcrumb > li {
-    font-size: um(14px);
+    @include font(14, 16);
     font-weight: 400;
-    line-height: um(21px);
-
-    @include media-breakpoint-up(md) {
-      font-size: um(16px);
-      line-height: um(28px);
-    }
+    line-height: 1.5;
   }
 }

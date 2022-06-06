@@ -3,7 +3,11 @@
     border: 1px solid get-color(card,grey);
 
     &:first-child {
-      margin-top: um(16px);
+      margin-top: 1rem;
+
+      @include media-breakpoint-up(sm) {
+        margin-top: 0.89rem;
+      }
 
       @include media-breakpoint-up(md) {
         margin-top: 0;
@@ -12,21 +16,28 @@
 
     &.has-border {
       border: 1px solid get-color(light-grey, grey);
-      padding: um(16px);
-      border-radius: um(4px);
+      padding: 1rem;
+      border-radius: 4px;
+
+      @include media-breakpoint-up(sm){
+        padding: 0.89rem;
+      }
 
       &:not(:last-child) {
-        margin-bottom: um(30px);
+        margin-bottom: 1.875rem;
+        @include media-breakpoint-up(sm){
+          margin-bottom: 1.67rem;
+        }
       }
 
       @include media-breakpoint-up(lg) {
-        padding: um(24px);
+        padding: 1.33rem;
       }
     }
   }
 
   @include media-breakpoint-up(md) {
-    padding: um(24px) 0;
+    padding: 1.33rem 0;
   }
 }
 
@@ -37,17 +48,21 @@
 .accordion-header {
 
   .accordion-button {
-    font-size: um(14px);
-    line-height: um(21px);
+    @include font(14, 14);
+    line-height: 1.5;
     padding: 0;
-    padding-top: um(16px);
+    padding-top: 1rem;
     border-top: 0;
+
+    @include media-breakpoint-up(sm) {
+      padding-top: 0.89rem;
+    }
 
 
     @include media-breakpoint-up(md) {
-      font-size: um(18px);
-      line-height: um(28px);
-      padding-top: um(24px);
+      @include font(18, 18);
+      line-height: 1.56;
+      padding-top: 1.33rem;
     }
 
     &:not(.collapsed){

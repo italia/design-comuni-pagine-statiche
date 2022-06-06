@@ -1,14 +1,22 @@
 .cmp-input-search{
   .form-group {
     position: relative;
-    margin-bottom: um(40px);
+    margin-bottom: 2.5;
+
+    @include media-breakpoint-up(sm) {
+      margin-bottom: 2.222rem;
+    }
 
     @include media-breakpoint-up(lg) {
-      margin-bottom: um(16px);
+      margin-bottom: 0.889rem;
     }
 
     input {
-      padding-left:  um(45px);
+      padding-left: 2.8rem;
+
+      @include media-breakpoint-up(sm) {
+        padding-left: 2.5rem;
+      }
     }
   }
 
@@ -16,7 +24,7 @@
     position: absolute;
     left: 0;
     right: auto;
-    top: um(6px);
+    top: 6px;
     background-color: #fff;
   }
 

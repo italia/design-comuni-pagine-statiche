@@ -1,8 +1,12 @@
 .cmp-steps-rating {
   .step-title {
-    font-size: um(18px);
+    @include font(18, 18);
     font-weight: 600;
     line-height: 36px;
-    padding: um(14px) um(14px);
+    padding: 0.875rem;
+
+    @include media-breakpoint-up(sm){
+      padding: 0.78rem;
+    }
   }
 }

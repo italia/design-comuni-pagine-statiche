@@ -1,11 +1,7 @@
 .dropdown {
   &__title {
-    font-size: um(14px);
+    @include font(14, 16);
     font-weight: 600;
-    line-height: um(24px);
-
-    @include media-breakpoint-up(lg){
-      font-size: um(16px);
-    }
+    line-height: 1.5;
   }
 }

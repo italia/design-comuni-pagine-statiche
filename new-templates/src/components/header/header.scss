@@ -5,11 +5,11 @@
 
   .navbar .navbar-collapsable .navbar-nav li a.nav-link {
     @include media-breakpoint-up(lg) {
-      padding: um(15px);
+      padding: 0.833rem;
     }
 
     @include media-breakpoint-up(xl) {
-      padding: um(15px) um(24px);
+      padding: 0.89rem 1.33rem;
     }
   }
 
@@ -23,8 +23,8 @@
 
 
   .search-link {
-    width: um(48px);
-    height: um(48px);
+    width: 3rem;
+    height: 3rem;
     border-radius: 24px;
     display: flex;
     justify-content: center;
@@ -32,14 +32,24 @@
     margin-left: 16px;
     transition: all .3s;
 
+    @include media-breakpoint-up(sm) {
+      width: 2.67rem;
+      height: 2.67rem;
+    }
+
     @include media-breakpoint-up(md) {
       background: #fff;
     }
 
     svg {
       fill: #fff;
-      width: um(24px);
-      height: um(24px);
+      width: 1.5rem;
+      height: 1.5rem;
+
+      @include media-breakpoint-up(sm) {
+        width: 1.33rem;
+        height: 1.33rem;
+      }
 
       @include media-breakpoint-up(md) {
         fill: get-color(primary, main);

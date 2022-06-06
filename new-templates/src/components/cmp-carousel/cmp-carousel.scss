@@ -1,12 +1,12 @@
 .cmp-carousel {
   &__title {
     color: get-color(light, grey);
-    font-size: um(28px);
+    @include font(28, 32);
     font-weight: 600;
-    line-height: um(30px);
+    line-height: 1.07;
+
     @include media-breakpoint-up(md) {
-      font-size: um(32px) !important;
-      line-height: um(40px);
+      line-height: 1.25;
     }
   }
 
@@ -25,43 +25,56 @@
     display: flex;
     align-items: center;
     border-bottom: 1px solid get-color(light-grey, grey);
-    margin: um(24px) um(24px) 0 um(24px);
-    padding-bottom: um(9px);
+    margin: 1.5rem 1.5rem 0 1.5rem;
+    padding-bottom: 0.56rem;
+
+    @include media-breakpoint-up(sm) {
+      margin: 1.33rem 1.33rem 0 1.33rem;
+      padding-bottom: 0.5rem;
+    }
+
     .icon {
       fill: get-color(light, grey);
     }
     &-title {
       color: get-color(light, grey);
-      font-size: um(20px);
+      @include font(20, 24);
       font-weight: 600;
-      line-height: um(30px);
+      line-height: 1.5;
       @include media-breakpoint-up(md) {
-        font-size: um(24px);
-        line-height: um(37px);
+        line-height: 1.54;
       }
     }
   }
 
   .card-body {
     .link-list-wrapper ul li a span {
-      font-size: um(16px);
+      @include font(16, 16);
       font-weight: 400;
-      line-height: um(24px);
+      line-height: 1.5;
     }
     .single-card {
       height: 300px;
     }
 
     .link-list-wrapper ul li a span.show-more {
-      margin-top: um(15px);
-      font-size: um(16px);
+      margin-top: 1rem;
+      @include font(16, 16);
       font-weight: 700;
-      line-height: um(24px);
+      line-height: 1.5;
+
+      @include media-breakpoint-up(sm) {
+        margin-top: 0.89rem;
+      }
     }
   }
 
   .link-list li a svg {
-    margin-left: um(15px);
+    margin-left: 1rem;
+
+    @include media-breakpoint-up(sm) {
+      margin-left: 0.89rem;
+    }
   }
 
   &.carousel-4-card {

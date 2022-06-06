@@ -6,22 +6,26 @@
       margin-bottom: unset;
 
       .text-tab {
+        @include font(14, 18);
         font-weight: 400;
-        font-size: um(14px);
 
         @include media-breakpoint-up(md) {
           font-weight: 700;
-          font-size: um(18px);
         }
       }
 
       .icon {
-        width: um(13px);
-        height: um(13px);
+        width: 0.81rem;
+        height: 0.81rem;
+
+        @include media-breakpoint-up(sm) {
+          width: 0.72rem;
+          height: 0.72rem;
+        }
 
         @include media-breakpoint-up(md) {
-          width: um(20px);
-          height: um(20px);
+          width: 1.11rem;
+          height: 1.11rem;
         }
       }
 

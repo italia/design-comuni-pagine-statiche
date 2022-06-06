@@ -5,10 +5,14 @@
   }
 
   &:not(:first-child){
-    margin-top: um(16px);
+    margin-top: 1rem;
+
+    @include media-breakpoint-up(sm) {
+      margin-top: 0.89rem;
+    }
 
     @include media-breakpoint-up(lg) {
-      margin-top: um(32px);
+      margin-top: 1.78rem;
     }
   }
 
@@ -17,10 +21,14 @@
   }
 
   .card {
-    padding: um(16px);
+    padding: 1rem;
+
+    @include media-breakpoint-up(sm) {
+      padding: 0.89rem;
+    }
 
     @include media-breakpoint-up(lg) {
-      padding: um(24px);
+      padding: 1.33rem;
     }
   }
   .card-header {
@@ -43,11 +51,11 @@
   }
 
   .form-check [type=checkbox] + label:after {
-    margin-top: um(8px) ;
+    margin-top: 8px;
   }
 
   .form-check [type=checkbox]:checked+label::before {
-    top: um(8px);
+    top: 8px;
   }
 
   .form-check.form-check-group [type=checkbox]+label::after {
@@ -56,15 +64,23 @@
 
 
   .form-check.form-check-group [type=checkbox]:checked+label::before {
-    right: um(11px);
+    right: 11px;
   }
 
   .info-wrapper {
-    padding: um(4px) 0;
+    padding: 0.25rem 0;
+
+    @include media-breakpoint-up(sm) {
+      padding: 0.22rem 0;
+    }
   }
 
   .info-wrapper-payment {
-    padding: um(9px) 0;
+    padding: 0.56rem 0;
+
+    @include media-breakpoint-up(sm) {
+      padding: 0.5rem 0;
+    }
   }
 
   .info-wrapper,
@@ -72,12 +88,12 @@
     border-bottom: 1px solid get-color(light-grey, grey);
 
     &__label {
-      font-size: um(16px);
+      @include font(16, 16);
       font-weight: 400;
     }
 
     &__value {
-      font-size: um(16px);
+      @include font(16, 16);
       font-weight: 600;
     }
   }

@@ -10,10 +10,14 @@
   }
 
   &.radio-card:not(:first-child) {
-    margin-top: um(16px);
+    margin-top: 1rem;
+
+    @include media-breakpoint-up(sm) {
+     margin-top: 0.89rem;
+    }
 
     @include media-breakpoint-up(lg) {
-      margin-top: um(32px);
+      margin-top: 1.78rem;
     }
   }
 
@@ -47,56 +51,67 @@
   }
 
   .big-title {
-    font-size: um(28px);
+    @include font(28, 32);
     font-weight: 700;
-    line-height: um(32px);
+    line-height: 1.14;
     max-width: 85%;
-    padding-bottom: um(8px);
+    padding-bottom: 0.5rem;
     color: get-color(black, main);
 
+    @include media-breakpoint-up(sm) {
+      padding-bottom: 0.44rem;
+    }
+
     @include media-breakpoint-up(md) {
-      font-size: um(32px);
-      line-height: um(32px);
-      padding-bottom: um(16px);
+      line-height: 1;
+      padding-bottom: 0.89rem;
     }
   }
 
   .name {
-    font-size: um(18px);
+    @include font(18, 18);
     line-height: 1.5;
     font-weight: 700;
-    margin-bottom: um(8px);
+    margin-bottom: 0.5rem;
+
+    @include media-breakpoint-up(sm) {
+      margin-bottom: 0.44rem;
+    }
   }
 
   .card-info {
-    font-size: um(14px);
+    @include font(14, 16);
     line-height: 1.5;
-    padding: um(8px) 0;
+    padding: 0.5rem 0;
 
-    &:not(:last-child) {
-      border-bottom: um(1px) solid #E5E5E5;
+    @include media-breakpoint-up(sm) {
+      padding: 0.44rem 0;
     }
 
-    @include media-breakpoint-up(md) {
-      font-size: um(16px);
+    &:not(:last-child) {
+      border-bottom: 1px solid #E5E5E5;
     }
 
     &+.card-info {
-      margin-top: um(4px);
+      margin-top: 0.25rem;
+
+      @include media-breakpoint-up(sm) {
+        margin-top: 0.22rem;
+      }
     }
 
     span {
-      font-size: um(16px);
+      @include font(16, 18);
       font-weight: 600;
-
-      @include media-breakpoint-up(md) {
-        font-size: um(18px);
-      }
     }
   }
 
   .cmp-alert-box {
-    margin-top: um(16px);
+    margin-top: 1rem;
+
+    @include media-breakpoint-up(sm) {
+      margin-top: 0.89rem;
+    }
   }
 
   .accordion-button {

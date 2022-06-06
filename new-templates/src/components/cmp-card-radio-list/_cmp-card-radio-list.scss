@@ -1,13 +1,21 @@
 .cmp-card-radio-list {
   .radio-body {
-    font-size: um(16px);
+    @include font(16, 16);
     font-weight: 600;
-    line-height: um(24px);
+    line-height: 1.5;
     color: get-color(black, main);
-    padding-bottom: um(12px);
+    padding-bottom: 0.75rem;
+
+    @include media-breakpoint-up(sm) {
+      padding-bottom: 0.67rem;
+    }
 
     &:not(:first-child) {
-      padding-top: um(12px);
+      padding-bottom: 0.75rem;
+
+      @include media-breakpoint-up(sm) {
+        padding-bottom: 0.67rem;
+      }
     }
   }
 

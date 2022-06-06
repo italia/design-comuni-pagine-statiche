@@ -12,9 +12,9 @@
   }
 
   .green-title-big {
-    font-size: um(24px);
+    @include font(24, 24);
     font-weight: 600;
-    line-height: um(28px);
+    line-height: 1.2;
   }
 
   .card {

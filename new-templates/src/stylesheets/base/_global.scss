@@ -1,10 +1,5 @@
-html, body {
-  font-size: 16px;
-}
-
 body {
   font-family: 'Titillium Web';
-  font-size: 1rem;
   color: get-color(black, main);
 }
 
@@ -33,10 +28,10 @@ body {
 }
 
 .p-contacts {
-  padding: um(40px) um(24px);
+  padding: 2.5rem 1.5rem;
 
   @include media-breakpoint-up(md) {
-    padding-top: um(48px);
-    padding-bottom: um(48px);
+    padding-top: 2.666rem;
+    padding-bottom: 2.666rem;
   }
 }

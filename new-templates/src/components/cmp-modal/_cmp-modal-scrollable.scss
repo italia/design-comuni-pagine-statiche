@@ -2,8 +2,7 @@
 
   .modal .modal-dialog {
     @include media-breakpoint-down(md){
-    margin: um(24px);
-
+     margin: 1.33rem;
     }
 }
   .btn-close {
@@ -13,24 +12,27 @@
   }
 
   &__header {
-    margin: um(24px) 0;
+    margin: 1.5rem 0;
+
+    @include media-breakpoint-up(sm) {
+      margin: 1.33rem 0;
+    }
     &-title {
-      font-size: um(24px);
+      @include font(24, 28);
       font-weight: 600;
-      line-height: um(28px);
+      line-height: 1.167;
+
       @include media-breakpoint-up(md) {
-        font-size: um(28px);
-        line-height: um(40px);
+        line-height: 1.42;
       }
     }
     &-info {
-      font-size: um(14px);
+      @include font(14, 16);
       font-weight: 400;
-      line-height: um(18px);
+      line-height: 1.28;
 
       @include media-breakpoint-up(md) {
-        font-size: um(16px);
-        line-height: um(20px);
+        line-height: 1.25;
       }
     }
   }

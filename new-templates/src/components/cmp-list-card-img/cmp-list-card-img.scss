@@ -1,43 +1,64 @@
 .cmp-list-card-img {
   .card-wrapper {
-    padding-bottom: um(10px);
+    padding-bottom: 0.625rem;
     background-color: #fff;
+
+    @include media-breakpoint-up(sm) {
+      padding-bottom: 0.56rem;
+    }
   }
 
   &__wrapper{
-    min-height: um(160px);
+    min-height: 10rem;
+
+    @include media-breakpoint-up(sm) {
+      min-height: 8.89rem;
+    }
   }
   .card.card-img .card-body {
-    padding: um(32px) um(24px);
+    padding: 2rem 1.5rem;
+
+    @include media-breakpoint-up(sm) {
+      padding: 1.78rem 1.33rem;
+    }
   }
   &__body {
     &-heading-title {
       font-family: Titillium Web;
-      font-size: um(14px);
+      @include font(14, 14);
       font-weight: 400;
-      line-height: um(21px);
+      line-height: 1.5;
     }
+
     &-title {
       font-family: Titillium Web;
-      font-size: um(24px);
+      @include font(24, 24);
       font-weight: 700;
-      line-height: um(28px);
-      margin-bottom: um(24px);
+      line-height: 1.67;
+      margin-bottom: 1.5rem;
+
+      @include media-breakpoint-up(sm) {
+        margin-bottom: 1.33rem;
+      }
     }
     &-description{
       font-family: Lora;
-      font-size: um(16px);
+      @include font(16, 16);
       font-weight: 400;
-      line-height: um(24px);
-      margin-bottom: um(90px);
+      line-height: 1.5;
+      margin-bottom: 5.63rem;
+
+      @include media-breakpoint-up(sm) {
+        margin-bottom: 5rem;
+      }
     }
     &-link{
       display: flex;
       align-items: center;
       font-family: Titillium Web;
-      font-size: um(12px);
+      @include font(12, 12);
       font-weight: 700;
-      line-height: um(18px);
+      line-height: 1.5;
 
     }
   }

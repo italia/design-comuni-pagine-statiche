@@ -5,33 +5,30 @@
   }
 
   .accordion-date {
-    font-size: um(14px);
-    padding-bottom: um(20px);
+    @include font(14, 16);
+    padding-bottom: 1.25rem;
     color: rgba(25, 25, 25, 0.7);
 
     @include media-breakpoint-up(lg) {
-      font-size: um(16px);
-      padding-left: um(16px);
-      padding-bottom: um(28px);
+      padding-left: 0.889rem;
+      padding-bottom: 1.555rem;
     }
   }
 
   .accordion-header {
     .accordion-button {
-      font-size: um(16px);
-      padding: um(14px) 0 0;
+      @include font(16, 18);
+      padding: 0.875rem 0 0;
       border-top: 1px solid get-color(light-grey, grey) !important;
 
       @include media-breakpoint-up(lg) {
-      font-size: um(18px);
-        padding: um(14px) 0 0 um(16px);
-
+        padding: 0.777rem 0 0 0.889rem;
       }
 
       &::after {
         content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23006e4a'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-        width: um(16px);
-        margin-top: um(3px);
+        width: 16px;
+        margin-top: 3px;
         transform: scaleY(1);
       }
 
@@ -46,7 +43,7 @@
           padding-bottom: 0;
 
           @include media-breakpoint-up(lg) {
-            padding-bottom: um(16px);
+            padding-bottom: 0.889rem;
           }
         }
       }
@@ -56,12 +53,12 @@
   .accordion-body {
     padding: 0;
     @include media-breakpoint-up(lg) {
-      padding-left: um(16px);
+      padding-left: 0.889rem;
     }
 
     .label {
-      font-size: um(16px);
-      line-height:  um(24px);
+      @include font(16, 16);
+      line-height: 1.5;
       font-weight: 600;
       color: rgba(25, 25, 25, 0.7);
     }
@@ -71,7 +68,12 @@
     }
 
     .cmp-tag {
-      margin: um(10px) 0 um(18px) 0;
+      margin: 0.625rem 0 1.125rem 0;
+
+      @include media-breakpoint-up(sm) {
+        margin: 0.555rem 0 1rem 0;
+      }
+
       &__tag {
         color: get-color(medium, grey);
         font-weight: 600;
@@ -83,10 +85,14 @@
       .shadow {
         box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2)!important;
         border-radius: 4px;
-        padding: um(4px) 0 um(4px) um(8px);
+        padding: 4px 0 4px 4px;
 
         &:not(:first-child) {
-          margin-bottom: um(24px);
+          margin-bottom: 1.5rem;
+
+          @include media-breakpoint-up(sm) {
+            margin-bottom: 1.333rem;
+          }
         }
 
         .icon {
@@ -108,7 +114,7 @@
     justify-content: space-between;
 
     @include media-breakpoint-up(lg) {
-      font-size: um(18px);
+      font-size: 1rem;
     }
   }
 
@@ -118,28 +124,24 @@
   }
 
   .icon-wrapper {
-    width: um(95px);
+    width: 95px;
     text-align: left;
 
     @include media-breakpoint-up(lg) {
-      width: um(110px);
+      width: 110px;
     }
     span {
-      font-size: um(11px);
-
-      @include media-breakpoint-up(lg) {
-        font-size: um(13px);
-      }
+      @include font(11, 13);
     }
   }
 
   &.faq {
-    .accordion-button {
-      padding: um(16px) um(24px);
-    }
+    .accordion-button, .accordion-body {
+      padding: 1rem 1.5rem;
 
-    .accordion-body {
-      padding: um(16px) um(24px);
+      @include media-breakpoint-up(sm) {
+        padding: 0.889rem 1.333rem;
+      }
     }
   }
 }

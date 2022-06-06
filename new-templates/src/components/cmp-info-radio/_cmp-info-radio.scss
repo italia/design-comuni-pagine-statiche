@@ -1,26 +1,32 @@
 .cmp-info-radio {
   position: relative;
-  margin-top: um(16px);
+  margin-top: 1rem;
 
-
+  @include media-breakpoint-up(sm) {
+    margin-top: 0.89rem;
+  }
 
   &.has-border-green {
     outline: 2px solid get-color(primary, main);
   }
 
   .info-wrapper {
-    padding: um(4px) 0;
+    padding: 0.25rem 0;
     border-bottom: 1px solid get-color(light-grey, grey);
 
+    @include media-breakpoint-up(sm) {
+      padding: 0.22rem 0;
+    }
+
     &__label {
-      font-size: um(14px);
-      line-height: um(18px);
+      @include font(14, 14);
+      line-height: 1.28;
       font-weight: 400;
     }
 
     &__value {
-      font-size: um(16px);
-      line-height: um(24px);
+      @include font(16, 16);
+      line-height: 1.5;
       font-weight: 600;
       margin-bottom: 0;
     }
@@ -47,47 +53,50 @@
 }
 
   .big-title {
-    font-size: um(24px);
+    @include font(24, 32);
     font-weight: 700;
-    line-height: um(28px);
-    padding-bottom: um(8px);
+    line-height: 1.67;
+    padding-bottom: 0.5rem;
     max-width: 85%;
     color: get-color(black, main);
 
     @include media-breakpoint-up(md) {
-      font-size: um(32px);
-      line-height: um(32px);
-      padding-bottom: um(16px);
+      line-height: 1;
+      padding-bottom: 0.89rem;
     }
   }
 
   .name {
-    font-size: um(18px);
+    @include font(18, 18);
     line-height: 1.5;
     font-weight: 700;
-    margin-bottom: um(8px);
+    margin-bottom: 0.5rem;
+
+    @include media-breakpoint-up(sm) {
+      margin-bottom: 0.44rem;
+    }
   }
 
   .card-info {
-    font-size: um(14px);
+    @include font(14, 16);
     line-height: 1.5;
-    margin: um(4px) 0;
+    margin: 0.25rem 0;
 
-    @include media-breakpoint-up(md) {
-      font-size: um(16px);
+    @include media-breakpoint-up(sm) {
+      margin: 0.22rem 0;
     }
 
     &+.card-info {
-      margin-top: um(4px);
+      margin-top: 0.25rem;
+
+      @include media-breakpoint-up(sm) {
+        margin: 0.22rem 0;
+      }
     }
 
     span {
-      font-size: um(16px);
+      @include font(16, 18);
       font-weight: 600;
-
-      @include media-breakpoint-up(md) {
-        font-size: um(18px);
-      }
     }
   }
 }

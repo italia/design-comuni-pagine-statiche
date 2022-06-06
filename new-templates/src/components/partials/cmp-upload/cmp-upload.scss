@@ -3,7 +3,11 @@
     max-width: 100%;
 
     p {
-      margin-left: um(10px);
+      margin-left: 0.625rem;
+
+      @include media-breakpoint-up(sm){
+        margin-left: 0.56rem;
+      }
     }
   }
 
@@ -16,51 +20,54 @@
   }
 
   .upload[type=file]+label {
-    font-size: um(16px);
-    padding: um(12px) um(24px);
+    @include font(16, 16);
+    padding: 0.75rem 1.5rem;
+
+    @include media-breakpoint-up(sm){
+      padding: 0.67rem 1.33rem;
+    }
 
     @include media-breakpoint-up(md) {
-      max-width: um(380px);
+      max-width: 21.11rem;
     }
 
     svg {
-      margin-right: um(12px);
+      margin-right: 0.75rem;
+
+      @include media-breakpoint-up(sm){
+        margin-right: 0.67rem;
+      }
     }
   }
 
   &__label {
     font-family: Titillium Web;
     color: get-color(dark, grey);
-    font-size: um(14px);
+    @include font(14, 16);
     font-weight: 700;
-    line-height: um(24px);
-    margin-left: um(8px);
+    line-height: 1.71;
+    margin-left: 0.5rem;
+
+    @include media-breakpoint-up(sm){
+      margin-left: 0.44rem;
+    }
 
     @include media-breakpoint-up(md) {
-      font-size: um(16px);
-      margin-bottom: um(12px);
+      margin-bottom: 0.67rem;
     }
 
     &__info {
       font-family: Titillium Web;
       color: get-color(dark, grey);
-      font-size: um(14px);
+      @include font(14, 16);
       font-weight: 400;
-      line-height: um(21px);
-      margin-left: um(8px);
-
-      @include media-breakpoint-up(sm) {
-        font-size: um(16px);
-      }
+      line-height: 1.5;
+      margin-left: 0.5rem;
     }
   }
 }
 
 .modal .modal-dialog .modal-content .modal-body p:not(.cmp-upload__info) {
-  font-size: um(16px);
+  @include font(16, 18);
   font-weight: 600;
-
-  @include media-breakpoint-up(md) {
-    font-size: um(18px);
-  }
 }

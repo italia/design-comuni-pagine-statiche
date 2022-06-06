@@ -1,15 +1,16 @@
 .cmp-tag {
   &__tag {
-    font-size: um(14px);
+    @include font(14, 14);
     font-weight: 600;
     color: get-color(primary, main);
-    padding: 0 um(12px);
+    padding: 0 0.75rem;
     border: 1px solid get-color(primary, main);
     text-decoration: none;
     border-radius: 50px;
 
     @include media-breakpoint-up(md) {
       font-weight: 700;
+      padding: 0 0.667rem;
     }
   }
 

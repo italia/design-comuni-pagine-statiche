@@ -1,14 +1,14 @@
 .cmp-toggle{
-  margin-top: um(4px);
+  margin-top: 4px;
 
   .toggles label input[type=checkbox]+.lever {
-    margin: um(5px) um(10px) 0 um(16px);
+    margin: 5px 10px 0 16px;
   }
 
   .label {
-    font-size: um(16px);
+    @include font(16, 16);
     font-weight: 400;
-    line-height: um(24px);
+    line-height: 1.5;
     color: get-color(black, main);
   }
 

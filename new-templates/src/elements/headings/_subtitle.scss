@@ -1,37 +1,31 @@
 .subtitle {
   &-large {
-    font-size: um(28px);
+    @include font(28, 32);
     font-weight: 700;
-    line-height: um(32px);
+    line-height: 1.1;
 
     @include media-breakpoint-up(md) {
-      font-size: um(32px);
-      line-height: um(40px);
+      line-height: 1.2;
     }
   }
 
   &-medium {
-    font-size: um(24px);
+    @include font(24, 28);
     font-weight: 600;
-    line-height: um(28px);
+    line-height: 1.2;
 
     @include media-breakpoint-up(md) {
-      font-size: um(28px);
-      line-height: um(40px);
+      line-height: 1.5;
     }
   }
 
   &-small {
-    font-size: um(16px);
+    @include font(16, 18);
     line-height: 1.5;
     font-weight: 400;
 
     &_semi-bold {
       font-weight: 600;
-    }
-
-    @include media-breakpoint-up(md) {
-      font-size: um(18px);
     }
   }
 }

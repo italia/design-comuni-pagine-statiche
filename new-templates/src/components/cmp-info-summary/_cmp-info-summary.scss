@@ -2,7 +2,7 @@
   p{
     margin-bottom: 0;
   }
-  
+
   .icon-primary {
     fill: get-color(primary, main);
   }
@@ -10,12 +10,15 @@
   .card-header {
     border-bottom: unset;
     .title-large-semi-bold {
-      margin-bottom: um(24px);
+      margin-bottom: 1.5rem;
+
+      @include media-breakpoint-up(sm) {
+        margin-bottom: 1.33rem;
+      }
 
       @include media-breakpoint-up(md) {
-        font-size: um(28px);
-        line-height: um(40px);
-        margin-bottom: um(16px);
+        line-height: 1.43;
+        margin-bottom: 0.89rem;
       }
     }
   }
@@ -23,36 +26,46 @@
   .card-body {
     .single-line-info {
       border-bottom: 1px solid;
-      padding: um(4px) 0 um(8px) 0;
+      padding: 0.25rem 0 0.5rem 0;
 
       @include media-breakpoint-up(md) {
-        padding: um(4px) 0 um(16px) 0;
+        padding: 0.22rem 0 0.89rem 0;
       }
 
       &.border-unset{
         border-bottom: unset !important;
-        padding: um(4px) 0 0 0;
+        padding: 0.25rem 0 0 0;
+
+        @include media-breakpoint-up(sm) {
+          padding: 0.22rem 0 0 0;
+        }
       }
     }
 
     .data-text {
-      font-size: um(16px);
-      line-height: um(18px);
+      @include font(16, 18);
       font-weight: 600;
       word-break:break-all;
 
       @include media-breakpoint-up(md) {
-        font-size: um(18px);
-        line-height: um(28px);
+        line-height: 1.56;
       }
 
       &.description-alert {
         color: get-color(alert, main);
-        margin-top: um(4px);
+        margin-top: 0.25rem;
         font-weight: 400;
 
+        @include media-breakpoint-up(sm) {
+          margin-top: 0.22rem;
+        }
+
         .icon-warning {
-          margin-right: um(10px);
+          margin-right: 0.625rem;
+
+          @include media-breakpoint-up(sm) {
+            margin-right: 0.56rem;
+          }
         }
       }
 
@@ -61,50 +74,79 @@
         font-weight: 400;
 
         .icon-success {
-          margin-right: um(10px);
+          margin-right: 0.625rem;
+
+          @include media-breakpoint-up(sm) {
+            margin-right: 0.56rem;
+          }
         }
       }
     }
 
     .summary-inline {
       font-weight: 400;
-      line-height: um(24px);
+      line-height: 1.5;
 
       &:not(:first-child) {
-        padding-top: um(10px);
+        padding-top: 0.625rem;
+
+        @include media-breakpoint-up(sm) {
+          padding-top: 0.56rem;
+        }
       }
     }
   }
 
   .card-footer {
-    padding: um(8px) 0 0;
+    padding: 0.5rem 0 0;
     background-color: unset;
     border-top: unset;
+
+    @include media-breakpoint-up(sm) {
+      padding: 0.44rem 0 0;
+    }
 
     button {
       font-weight: 700;
     }
 
     .icon {
-      width: um(16px);
-      height:  um(16px);
-      margin-right: um(3px);
+      width: 1rem;
+      height:  1rem;
+      margin-right: 0.19rem;
+
+      @include media-breakpoint-up(sm) {
+        width: 0.89rem;
+        height:  0.89rem;
+        margin-right: 0.16rem;
+      }
     }
   }
 }
 .card-summary-inline {
-  padding: um(24px);
-  margin-top: um(16px);
-  margin-bottom: um(24px);
+  padding: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+
+  @include media-breakpoint-up(sm) {
+    padding: 1.33rem;
+    margin-top: 0.89rem;
+    margin-bottom: 1.33rem;
+  }
+
   @include media-breakpoint-up(lg) {
-    padding: um(40px);
+    padding: 2.22rem;
   }
 }
 
 .card-white {
-  padding: um(16px) um(12px);
+  padding: 1rem 0.75rem;
+
+  @include media-breakpoint-up(sm) {
+    padding: 0.89rem 0.67rem;
+  }
 
   @include media-breakpoint-up(lg) {
-    padding: um(40px);
+    padding: 2.22rem;
   }
 }

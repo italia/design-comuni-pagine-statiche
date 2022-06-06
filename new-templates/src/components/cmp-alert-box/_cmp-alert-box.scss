@@ -1,6 +1,10 @@
 .cmp-alert-box {
   border-left: 2px solid get-color(error, main);
-  padding-left: um(16px);
+  padding-left: 1rem;
+
+  @include media-breakpoint-up(sm) {
+    padding-left: 0.889rem;
+  }
 
   .alert-box-icon {
     display: flex;
@@ -11,14 +15,22 @@
 
     svg {
       fill: get-color(error, main);
-      margin-right: um(10px);
+      margin-right: 0.625rem;
+
+      @include media-breakpoint-up(sm) {
+        margin-right: 0.555rem;
+      }
     }
   }
 
   .description {
-    margin-top: um(5px);
-    font-size: um(16px);
+    @include font(16, 16);
+    margin-top: 0.313rem;
     line-height: 1.5;
+
+    @include media-breakpoint-up(sm) {
+      margin-top: 0.277rem;
+    }
   }
 
   p{
@@ -27,8 +39,13 @@
 }
 
 .cmp-warning-box{
-  padding-left: um(16px);
-  margin-top: um(15px);
+  padding-left: 1rem;
+  margin-top: 1rem;
+
+  @include media-breakpoint-up(sm) {
+    padding-left: 0.889rem;
+    margin-top: 0.889rem;
+  }
   
   p{
     margin: 0;
@@ -41,40 +58,43 @@
     text-transform: uppercase;
 
     svg {
-      max-width: um(20px);
-      max-height: um(24px);
+      max-width: 1.25;
+      max-height: 1.5rem;
       fill: get-color(warning, main);
-      margin-right: um(10px);
+      margin-right: 0.625rem;
 
-      @include media-breakpoint-up(lg) {
-        max-width: um(24px);
+      @include media-breakpoint-up(sm) {
+        max-width: 1.333rem;
+        max-height: 1.333rem;
+        margin-right: 0.555rem;
       }
     }
   }
 
   .description {
-    margin-top: um(5px);
-    font-size: um(14px);
-    line-height: 18px;
+    @include font(14, 18);
+    margin-top: 0.313rem;
+    line-height: 1.2;
 
-    @include media-breakpoint-up(lg) {
-      font-size: um(18px);
+    @include media-breakpoint-up(sm) {
+      margin-top: 0.277rem;
     }
 
     &.description-warning{
-      margin-top: um(4px);
-      margin-right: um(4px);
+      margin-top: 0.313rem;
+      margin-right: 0.313rem;
       font-weight: 400;
+
+      @include media-breakpoint-up(sm) {
+        margin-top: 0.277rem;
+        margin-right: 0.277rem;
+      }
     }
 
     .data-add{
-      font-size: um(14px);
+      @include font(14, 18);
       font-weight: 600;
-      line-height: um(18px);
-
-      @include media-breakpoint-up(lg) {
-        font-size: um(18px);
-      }
+      line-height: 1.1;
     }
   }
 }

@@ -14,19 +14,34 @@
   }
 
   .toggles label input[type=checkbox]+.lever {
-    width: um(34.86px);
-    height: um(12px);
+    width: 2.18rem;
+    height: 0.75rem;
+
+    @include media-breakpoint-up(sm) {
+      width: 1.94rem;
+      height: 0.67rem;
+    }
   }
 
   .toggles label input[type=checkbox]+.lever:before,
   .toggles label input[type=checkbox]+.lever:after {
-    width: um(20px);
-    height: um(20px);
-    top: -4px;
+    width: 1.25rem;
+    height: 1.25rem;
+    top: -0.25rem;
+
+    @include media-breakpoint-up(sm) {
+      width: 1.11rem;
+      height: 1.11rem;
+      top: -0.22rem;
+    }
   }
 
   .toggles label input[type=checkbox]+.lever:after {
-    background-size: um(8px);
+    background-size: 0.5rem;
+
+    @include media-breakpoint-up(sm) {
+      background-size: 0.44rem;
+    }
   }
 
   .toggles label input[type=checkbox]+.lever {

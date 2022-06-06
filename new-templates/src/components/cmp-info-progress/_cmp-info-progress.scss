@@ -1,5 +1,9 @@
 .cmp-info-progress {
-  margin-bottom: um(24px);
+  margin-bottom: 1.5;
+
+  @include media-breakpoint-up(sm) {
+    margin-bottom: 1.333rem;
+  }
 
   .info-progress-body {
     border-bottom: 2px solid transparent;
@@ -39,22 +43,26 @@
     }
 
     .step-wrapper {
-      font-size: um(24px);
+      @include font(24, 24);
       font-weight: 700;
       line-height: 30px;
     }
 
     .step-title {
-      font-size: um(18px);
+      @include font(18, 18);
       font-weight: 600;
-      line-height: 36px;
-      padding: um(14px) 0;
+      line-height: 2;
+      padding: 0.875rem 0;
+
+      @include media-breakpoint-up(sm) {
+        padding: 0.777rem 0;
+      }
     }
 
     .step {
-      font-size: um(14px);
+      @include font(14, 14);
       font-weight: 600;
-      line-height: 21.29px;
+      line-height: 1.5;
     }
   }
 }

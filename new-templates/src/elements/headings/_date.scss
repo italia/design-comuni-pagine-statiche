@@ -1,26 +1,15 @@
 .date {
   &-regular {
-    font-size: um(16px);
+    @include font(16, 18);
     font-weight: 400;
-    line-height: um(24px);
-
-    @include media-breakpoint-up(sm) {
-      font-size: um(18px);
-      line-height: um(27px);
-    }
+    line-height: 1.5;
   }
 
   &-xsmall {
-    font-size: um(14px);
+    @include font(14, 16);
     font-weight: 400;
-    line-height: um(18px);
+    line-height: 1.3;
     letter-spacing: 0em;
     text-align: left;
-
-    @include media-breakpoint-up(sm) {
-      font-size: um(16px);
-      line-height: um(20px);
-    }
-
   }
 }

@@ -4,13 +4,11 @@
   animation: moveInBottom 0.35s ease-in 0.35s backwards;
   display: flex;
   align-items: center;
+
   &__message {
-    font-size: um(16px);
+    @include font(16, 18);
     line-height: 1.5;
     font-weight: 600;
-    @include media-breakpoint-up(lg) {
-      font-size: um(18px);
-    }
   }
 }
 

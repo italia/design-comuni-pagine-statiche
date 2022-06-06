@@ -2,14 +2,22 @@
   .shadow {
     background-color: #fff;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-    padding: um(16px) um(26px);
+    padding: 1rem 1.625rem;
     text-decoration: underline;
 
+    @include media-breakpoint-up(sm) {
+      padding: 0.89rem 1.44rem;
+    }
+
     &:not(:first-child) {
-      margin: um(10px) 0 um(50px) 0;
+      margin: 0.625rem 0 3.125rem 0;
+
+      @include media-breakpoint-up(sm) {
+        margin: 0.56rem 0 2.78rem 0;
+      }
 
       @include media-breakpoint-up(lg) {
-        margin: um(24px) 0 um(80px) 0;
+        margin: 1.33rem 0 4.44rem 0;
       }
     }
 

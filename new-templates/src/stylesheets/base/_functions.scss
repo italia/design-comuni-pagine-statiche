@@ -43,10 +43,10 @@ $global-theme: set-theme(colors);
 }
 
 // Convert PX to REM global function
-@function um(
-  $pixels,
-  $context: 16px,
-  $unit-measure: rem
-) {
-  @return #{$pixels/$context}#{$unit-measure};
-}
+// @function um(
+//   $pixels,
+//   $context: 16px,
+//   $unit-measure: rem
+// ) {
+//   @return #{$pixels/$context}#{$unit-measure};
+// }

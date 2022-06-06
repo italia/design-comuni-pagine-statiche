@@ -9,7 +9,7 @@
   align-items: center;
   color: get-color(primary, main);
   gap: 7px;
-  font-size: um(16px);
+  @include font(16, 16);
   font-weight: 600;
 
   &:hover {
@@ -47,13 +47,13 @@
     width: 100%;
 
     @include media-breakpoint-up(md) {
-      max-width: um(328px);
+      max-width: 18.22rem;
     }
   }
 }
 
 .btn-label {
-  font-size: um(14px);
+  @include font(14, 14);
   font-weight: 600;
   line-height: 20px;
 }

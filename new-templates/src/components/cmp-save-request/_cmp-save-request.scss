@@ -1,6 +1,6 @@
 .save-request {
-  box-shadow: 0 um(15px) um(10px) um(-18px) #ddd;
-    
+  box-shadow: 0 15px 10px -18px #ddd;
+
     .card {
       &:after {
         content: unset;
@@ -8,7 +8,12 @@
     }
 
     .btn{
-      margin-bottom: um(48px);
-      padding: um(16px) um(24px);
+      margin-bottom: 3rem;
+      padding: 1rem 1.5rem;
+
+      @include media-breakpoint-up(sm) {
+        margin-bottom: 2.67rem;
+        padding: 0.89rem 1.33rem;
+      }
     }
   }

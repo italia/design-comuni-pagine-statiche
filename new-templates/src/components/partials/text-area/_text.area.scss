@@ -1,17 +1,21 @@
 .cmp-text-area{
-  padding: um(16px);
+  padding: 1rem;
+
+  @include media-breakpoint-up(sm) {
+    padding: 0.889rem;
+  }
 
   .text-area .focus--mouse{
     padding-top: 50px;
   }
 
   .label {
-    font-size: um(14px);
+    @include font(14, 14);
     font-weight: 400;
-    line-height: um(18px);
+    line-height: 1.2;
     color: get-color(dark, grey);
-    margin-left: um(8px);
-    opacity: .9;
+    margin-left: 8px;
+    opacity: 0.9;
     mix-blend-mode: normal;
   }
 
@@ -19,7 +23,7 @@
     margin-bottom: 0;
 
     .text-area {
-      height: um(40px);
+      height: 40px;
       border: none;
       border-bottom: 1px solid get-color(dark, grey);
       resize: none;

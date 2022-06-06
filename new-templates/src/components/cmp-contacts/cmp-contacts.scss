@@ -9,13 +9,14 @@
   }
 
   .contact-list li{
-    margin: um(16px) 0;
+    @include font(16, 18);
+    margin: 1rem 0;
     text-decoration: underline;
     color: get-color(primary, main);
 
     @include media-breakpoint-up(md) {
-      font-size: um(18px);
-      line-height: um(28px);
+      line-height: 1.5;
+      margin: 0.889rem 0;
     }
 
     &:last-child{
