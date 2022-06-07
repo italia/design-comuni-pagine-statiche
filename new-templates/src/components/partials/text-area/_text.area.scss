@@ -1,11 +1,11 @@
-.cmp-text-area{
+.cmp-text-area {
   padding: 1rem;
 
   @include media-breakpoint-up(sm) {
     padding: 0.889rem;
   }
 
-  .text-area .focus--mouse{
+  .text-area .focus--mouse {
     padding-top: 50px;
   }
 
@@ -22,6 +22,10 @@
   .form-group {
     margin-bottom: 0;
 
+    & .is-invalid+.label {
+      display: none;
+    }
+
     .text-area {
       height: 40px;
       border: none;
@@ -30,8 +34,12 @@
       overflow: hidden;
       word-break: break-all;
 
+      &.form-control {
+        box-shadow: unset;
+        background-size: 70px 45% !important;
+      }
 
-      &:focus{
+      &:focus {
         max-height: auto;
       }
     }

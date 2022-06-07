@@ -30,7 +30,6 @@
 }
 
 .select-wrapper {
-
   .card {
     &::after {
       content: unset;
@@ -58,6 +57,15 @@
       @include media-breakpoint-up(sm) {
         padding: 1rem;
       }
+    }
+
+    &.form-control{
+      appearance: auto;
+      background-size: 70px 45% !important;
+    }
+
+    &.is-invalid + .d-flex .form-text{
+      display: none;
     }
   }
 

@@ -9,9 +9,20 @@
     color: get-color(dark, grey);
   }
 
+  input{
+    &.form-control{
+      background-size: 70px 45% !important;
+    }
+
+    &.is-invalid + .d-flex .form-text{
+      display: none;
+    }
+  }
+  
+
+
   input[type=text] {
     @include font(18, 18);
-    border-bottom: 1px solid get-color(medium, grey);
   }
 
   &__text {

@@ -1,6 +1,8 @@
 {{#>base/base title="homepage"}}
 <main>
+  <h1 class="visually-hidden">Nome del comune</h1>
   <section id="head-section">
+    <h2 class="visually-hidden">Ultime notizie</h2>
     <div class="container">
       <div class="row">
         <div class="col-lg-6 offset-lg-1 order-lg-2 px-0 px-lg-2">
@@ -17,14 +19,14 @@
                 <a class="category title-xsmall-semi-bold fw-semibold" href="#">Notizie</a>
                 <span class="data fw-normal">18 mag 2022</span>
               </div>
-              <h1 class="h4 card-title title-xlarge">Parte l'estate con oltre 300 eventi in centro e nei quartieri</h1>
+              <h3 class="h4 card-title title-xlarge">Parte l'estate con oltre 300 eventi in centro e nei quartieri</h3>
               <p class="mb-4 subtitle-small pt-3 lora"><strong> Inaugurazione lunedì 2 luglio</strong> con il concerto
                 gratuito in
                 piazza XX Settembre degli Sweet Soul Music Revue. Sul palco 20 musicisti dal tutto il mondo</p>
               <div class="chip chip-simple chip-primary bg-primary rounded-3">
-                <a href="#" class="chip-label text-white">Estate in città</a>
+                <a href="#" class="chip-label text-white" aria-label="vai all'argomento: Estate in città" title="vai alla sezione Estate in città">Estate in città</a>
               </div>
-              <a class="read-more pb-3" href="#">
+              <a class="read-more pb-3" href="#" aria-label="visualizza tutte le novità" title="vai a tutte le le novità">
                 <span class="text">Tutte le novità</span>
                 <svg class="icon">
                   <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-arrow-right"></use>
@@ -47,7 +49,7 @@
               <div class="card-image-wrapper with-read-more">
                 <div class="card-body p-3 u-grey-light">
                   <div class="category-top">
-                    <a class="category title-xsmall-semi-bold fw-semibold" href="#">Organi di governo</a>
+                    <a class="category title-xsmall-semi-bold fw-semibold" href="#" aria-label="Vai all'argomento: Organi di Governo" title="vai alla sezione Organi di Governo" >Organi di governo</a>
                   </div>
                   <p class="card-title text-paragraph-medium u-grey-light">Mario Rossi</p>
                   <p class="text-paragraph-card u-grey-light m-0">Il Sindaco della città</p>
@@ -57,7 +59,7 @@
                 </div>
               </div>
 
-              <a class="read-more ps-3 position-absolute bottom-0 mb-3" href="#">
+              <a class="read-more ps-3 position-absolute bottom-0 mb-3" href="#" aria-label="Vai alla pagina di Mario Rossi" title="Vai alla pagina di Mario Rossi">
                 <span class="text">Vai alla pagina</span>
                 <svg class="icon">
                   <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-arrow-right"></use>
@@ -75,7 +77,7 @@
                   le funzioni ad essa
                   attribuite dalla legge.</p>
               </div>
-              <a class="read-more" href="#">
+              <a class="read-more" href="#" aria-label="Vai alla pagina della giunta comunale" title="Vai alla pagina della giunta comunale">
                 <span class="text">Vai alla pagina</span>
                 <svg class="icon ms-0">
                   <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-arrow-right"></use>
@@ -93,7 +95,7 @@
                   rimane in carica per 5 anni.
                 </p>
               </div>
-              <a class="read-more" href="#">
+              <a class="read-more" href="#" aria-label="Vai alla pagina del consiglio comunale" title="Vai alla pagina del consiglio comunale">
                 <span class="text">Vai alla pagina</span>
                 <svg class="icon ms-0">
                   <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-arrow-right"></use>
@@ -123,15 +125,14 @@
                       <div class="card card-bg">
                         <div class="card-body">
                           <h4 class="card-title pb-4 mb-10">15<span>lun</span></h4>
-                          <p class="card-text px-2 pb-10 mb-10"><a href="#" class="text-success"><u>Saldo TASI</u></a>
+                          <p class="card-text px-2 pb-10 mb-10"><a href="#" class="text-success" aria-label="vai all'argomento saldo tasi" title="vai all'argomento saldo tasi"><u>Saldo TASI</u></a>
                           </p>
                           <p class="card-text px-2 pb-10 mb-10 d-flex">
                             <img src="https://picsum.photos/200" alt="random image" class="me-3 rounded">
-                            <a href="#">Concerto gratuito piazza XXIV maggio</a>
+                            <a href="#" aria-label="vai all'argomento Concerto gratuito piazza XXIV maggio" title="vai all'argomento Concerto gratuito piazza XXIV maggio">Concerto gratuito piazza XXIV maggio</a>
                           </p>
-                          <p class="card-text px-2 pb-10 mb-10"><a href="#">Convocazione Consiglio Comunale - Prima
-                              seduta</a></p>
-                          <p class="card-text px-2 "><a href="#">Seconda rata TARI</a></p>
+                          <p class="card-text px-2 pb-10 mb-10"><a href="#" aria-label="vai all'argomento Convocazione Consiglio Comunale - Prima seduta" title="vai all'argomento Convocazione Consiglio Comunale - Prima seduta">Convocazione Consiglio Comunale - Prima seduta</a></p>
+                          <p class="card-text px-2 "><a href="#" aria-label="vai all'argomento Seconda rata TARI" title="vai all'argomento Seconda rata TARI">Seconda rata TARI</a></p>
                         </div>
                       </div>
                     </div>
@@ -144,10 +145,10 @@
                         <div class="card-body">
                           <h4 class="card-title pb-4 mb-10">16<span>mar</span></h4>
 
-                          <p class="card-text px-2 pb-10 mb-10"><a href="#">Presentazione mostra “Mediterraneo”</a></p>
+                          <p class="card-text px-2 pb-10 mb-10"><a href="#" aria-label="vai all'argomento Presentazione mostra “Mediterraneo”" title="vai all'argomento Presentazione mostra “Mediterraneo”">Presentazione mostra “Mediterraneo”</a></p>
                           <p class="card-text px-2 pb-10 mb-10 d-flex">
                             <img src="https://picsum.photos/200" alt="random image" class="me-3 rounded">
-                            <a href="#">Convocazione Consiglio Comunale - Seconda seduta</a>
+                            <a href="#" aria-label="vai all'argomento Convocazione Consiglio Comunale - Seconda seduta" title="vai all'argomento Convocazione Consiglio Comunale - Seconda seduta">Convocazione Consiglio Comunale - Seconda seduta</a>
                           </p>
                         </div>
                       </div>
@@ -160,7 +161,7 @@
                       <div class="card card-bg">
                         <div class="card-body">
                           <h4 class="card-title pb-4 mb-10">17<span>mar</span></h4>
-                          <p class="card-text px-2 pb-10 mb-10"><a href="#">Presentazione piano lavori pubblici 2018</a>
+                          <p class="card-text px-2 pb-10 mb-10"><a href="#" aria-label="vai all'argomento Presentazione piano lavori pubblici 2018" title="vai all'argomento Presentazione piano lavori pubblici 2018">Presentazione piano lavori pubblici 2018</a>
                           </p>
                         </div>
                       </div>
@@ -173,10 +174,9 @@
                       <div class="card card-bg">
                         <div class="card-body">
                           <h4 class="card-title pb-4 mb-10">18<span>mar</span></h4>
-                          <p class="card-text px-2 pb-10 mb-10"><a href="#">Evento ” La notte bianca dei bambini”</a>
+                          <p class="card-text px-2 pb-10 mb-10"><a href="#" aria-label="vai all'argomento Evento ” La notte bianca dei bambini”" title="vai all'argomento Evento ” La notte bianca dei bambini”">Evento ” La notte bianca dei bambini”</a>
                           </p>
-                          <p class="card-text px-2 pb-10 mb-10"><a href="#">Concerto della Banda Civica in piazza San
-                              Vittore</a></p>
+                          <p class="card-text px-2 pb-10 mb-10"><a href="#" aria-label="vai all'argomento Concerto della Banda Civica in piazza San Vittore" title="vai all'argomento Concerto della Banda Civica in piazza San Vittore">Concerto della Banda Civica in piazza San Vittore</a></p>
                         </div>
                       </div>
                     </div>
@@ -188,15 +188,15 @@
                       <div class="card card-bg">
                         <div class="card-body">
                           <h4 class="card-title pb-4 mb-10">19<span>mar</span></h4>
-                          <p class="card-text px-2 pb-10 mb-10"><a href="#" class="text-success"><u>Saldo TASI</u></a>
+                          <p class="card-text px-2 pb-10 mb-10"><a href="#" class="text-success" aria-label="vai all'argomento Saldo TASI" title="vai all'argomento Saldo TASI"><u>Saldo TASI</u></a>
                           </p>
                           <p class="card-text px-2 pb-10 mb-10 d-flex">
                             <img src="https://picsum.photos/200" alt="random image" class="me-3 rounded">
-                            <a href="#">Concerto gratuito piazza XXIV maggio</a>
+                            <a href="#" aria-label="vai all'argomento Concerto gratuito piazza XXIV maggio" title="vai all'argomento Concerto gratuito piazza XXIV maggio">Concerto gratuito piazza XXIV maggio</a>
                           </p>
-                          <p class="card-text px-2 pb-10 mb-10"><a href="#">Convocazione Consiglio Comunale - Prima
-                              seduta</a></p>
-                          <p class="card-text px-2 "><a href="#">Seconda rata TARI</a></p>
+                          <p class="card-text px-2 pb-10 mb-10"><a href="#" aria-label="vai all'argomento Convocazione Consiglio Comunale - Prima" title="vai all'argomento Convocazione Consiglio Comunale - Prima
+                              seduta">Convocazione Consiglio Comunale - Prima seduta</a></p>
+                          <p class="card-text px-2 "><a href="#" aria-label="vai all'argomento Seconda rata TARI" title="vai all'argomento Seconda rata TARI">Seconda rata TARI</a></p>
                         </div>
                       </div>
                     </div>
@@ -208,15 +208,14 @@
                       <div class="card card-bg">
                         <div class="card-body">
                           <h4 class="card-title pb-4 mb-10">20<span>mar</span></h4>
-                          <p class="card-text px-2 pb-10 mb-10"><a href="#" class="text-success"><u>Saldo TASI</u></a>
+                          <p class="card-text px-2 pb-10 mb-10"><a href="#" class="text-success" aria-label="vai all'argomento Saldo TASI" title="vai all'argomento Saldo TASI"><u>Saldo TASI</u></a>
                           </p>
                           <p class="card-text px-2 pb-10 mb-10 d-flex">
                             <img src="https://picsum.photos/200" alt="random image" class="me-3 rounded">
-                            <a href="#">Concerto gratuito piazza XXIV maggio</a>
+                            <a href="#" aria-label="vai all'argomento Concerto gratuito piazza XXIV maggio" title="vai all'argomento Concerto gratuito piazza XXIV maggio">Concerto gratuito piazza XXIV maggio</a>
                           </p>
-                          <p class="card-text px-2 pb-10 mb-10"><a href="#">Convocazione Consiglio Comunale - Prima
-                              seduta</a></p>
-                          <p class="card-text px-2 "><a href="#">Seconda rata TARI</a></p>
+                          <p class="card-text px-2 pb-10 mb-10"><a href="#" aria-label="vai all'argomento Convocazione Consiglio Comunale - Prima seduta" title="vai all'argomento Convocazione Consiglio Comunale - Prima seduta">Convocazione Consiglio Comunale - Prima seduta</a></p>
+                          <p class="card-text px-2 "><a href="#" aria-label="vai all'argomento Seconda rata TARI" title="vai all'argomento Seconda rata TARI">Seconda rata TARI</a></p>
                         </div>
                       </div>
                     </div>
@@ -228,15 +227,14 @@
                       <div class="card card-bg">
                         <div class="card-body">
                           <h4 class="card-title pb-4 mb-10">21<span>mar</span></h4>
-                          <p class="card-text px-2 pb-10 mb-10"><a href="#" class="text-success"><u>Saldo TASI</u></a>
+                          <p class="card-text px-2 pb-10 mb-10"><a href="#" class="text-success" aria-label="vai all'argomento Saldo TASI" title="vai all'argomento Saldo TASI"><u>Saldo TASI</u></a>
                           </p>
                           <p class="card-text px-2 pb-10 mb-10 d-flex">
                             <img src="https://picsum.photos/200" alt="random image" class="me-3 rounded">
-                            <a href="#">Concerto gratuito piazza XXIV maggio</a>
+                            <a href="#" aria-label="vai all'argomento Concerto gratuito piazza XXIV maggio" title="vai all'argomento Concerto gratuito piazza XXIV maggio">Concerto gratuito piazza XXIV maggio</a>
                           </p>
-                          <p class="card-text px-2 pb-10 mb-10"><a href="#">Convocazione Consiglio Comunale - Prima
-                              seduta</a></p>
-                          <p class="card-text px-2"><a href="#">Seconda rata TARI</a></p>
+                          <p class="card-text px-2 pb-10 mb-10"><a href="#" aria-label="vai all'argomento Convocazione Consiglio Comunale - Prima seduta" title="vai all'argomento Convocazione Consiglio Comunale - Prima seduta">Convocazione Consiglio Comunale - Prima seduta</a></p>
+                          <p class="card-text px-2"><a href="#" aria-label="vai all'argomento Seconda rata TARI" title="vai all'argomento Seconda rata TARI">Seconda rata TARI</a></p>
                         </div>
                       </div>
                     </div>
@@ -262,7 +260,7 @@
                 <h3 class="card-title title-xlarge-card">Trasporto pubblico</h3>
                 <p class="card-text pb-3">Informazioni sui servizi di trasporto pubblico e servizi taxi</p>
                 <p class="mb-10 text-paragraph-small-semi">Visita il sito:</p>
-                <a href="#">
+                <a href="#" aria-label="Vai all'argomento Mobilità in Comune il sito del turismo del Comune e della Città Metropolitana" title="vai alla sezione della mobilità in comune">
                   <div class="card card-teaser card-bg-blue no-after rounded mt-0 p-3">
                     <div class="avatar size-lg me-3">
                       <img src="https://picsum.photos/200/200" alt="Immagine">
@@ -276,7 +274,7 @@
                   </div>
                 </a>
               </div>
-              <a class="read-more pt-0" href="#">
+              <a class="read-more pt-0" href="#" aria-label="Esplora argomento trasporto pubblico" title="vai alla sezione di trasporto pubblico">
                 <span class="text">Esplora argomento</span>
                 <svg class="icon ms-0">
                   <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-arrow-right"></use>
@@ -291,40 +289,38 @@
                 <div class="link-list-wrapper mt-4">
                   <ul class="link-list">
                     <li>
-                      <a class="list-item active icon-left mb-2" href="#">
+                      <a class="list-item active icon-left mb-2" href="#" aria-label="vai all'argomento Come adottare un cane al Canile Municipale" title="vai all'argomento Come adottare un cane al Canile Municipale">
                         <span class="list-item-title-icon-wrapper">
                           <span class="text-underline text-success">Come adottare un cane al Canile Municipale</span>
                         </span>
                       </a>
                     </li>
                     <li>
-                      <a class="list-item active icon-left mb-2" href="#">
+                      <a class="list-item active icon-left mb-2" href="#" aria-label="vai all'argomento Elenco delle aree per cani" title="vai all'argomento Elenco delle aree per cani">
                         <span class="list-item-title-icon-wrapper">
                           <span class="text-underline text-success">Elenco delle aree per cani</span>
                         </span>
                       </a>
                     </li>
                     <li>
-                      <a class="list-item active icon-left mb-2" href="#">
+                      <a class="list-item active icon-left mb-2" href="#" aria-label="vai all'argomento Come segnalare una colonia felina e ricevere il tesserino di riconoscimento come referente" title="vai all'argomento Come segnalare una colonia felina e ricevere il tesserino di riconoscimento come referente">
                         <span class="list-item-title-icon-wrapper">
                           <span class="text-underline text-success">Come segnalare una colonia felina e ricevere il
-                            tesserino di riconoscimento come
-                            referente</span>
+                            tesserino di riconoscimento come referente</span>
                         </span>
                       </a>
                     </li>
                     <li>
-                      <a class="list-item active icon-left" href="#">
+                      <a class="list-item active icon-left" href="#" aria-label="vai all'argomento Come segnalare lo smarrimento del proprio animale" title="vai all'argomento Come segnalare lo smarrimento del proprio animale">
                         <span class="list-item-title-icon-wrapper">
-                          <span class="text-underline text-success">Come segnalare lo smarrimento del proprio
-                            animale</span>
+                          <span class="text-underline text-success">Come segnalare lo smarrimento del proprio animale</span>
                         </span>
                       </a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <a class="read-more pt-0" href="#">
+              <a class="read-more pt-0" href="#" aria-label="Esplora argomento animale domestico" title="vai alla sezione di animale domestico">
                 <span class="list-item-title-icon-wrapper">
                   <span class="text">Esplora argomento</span>
                   <svg class="icon">
@@ -342,32 +338,30 @@
                 <div class="link-list-wrapper mt-4">
                   <ul class="link-list">
                     <li>
-                      <a class="list-item active icon-left mb-2" href="#">
+                      <a class="list-item active icon-left mb-2" href="#" aria-label="vai all'argomento Tutte le strutture sportive della città" title="vai all'argomento Tutte le strutture sportive della città">
                         <span class="list-item-title-icon-wrapper">
                           <span class="text-underline">Tutte le strutture sportive della città</span>
                         </span>
                       </a>
                     </li>
                     <li>
-                      <a class="list-item active icon-left mb-2" href="#">
+                      <a class="list-item active icon-left mb-2" href="#" aria-label="vai all'argomento Da lunedì 3 settembre chiudono le vasche della piscina comunale" title="vai all'argomento Da lunedì 3 settembre chiudono le vasche della piscina comunale">
                         <span class="list-item-title-icon-wrapper">
-                          <span class="text-underline">Da lunedì 3 settembre chiudono le vasche della
-                            piscina comunale</span>
+                          <span class="text-underline">Da lunedì 3 settembre chiudono le vasche della piscina comunale</span>
                         </span>
                       </a>
                     </li>
                     <li>
-                      <a class="list-item active icon-left" href="#">
+                      <a class="list-item active icon-left" href="#" aria-label="vai all'argomento Concessione di contributi ad enti, associazioni, società sportive" title="vai all'argomento Concessione di contributi ad enti, associazioni, società sportive">
                         <span class="list-item-title-icon-wrapper">
-                          <span class="text-underline">Concessione di contributi ad enti, associazioni,
-                            società sportive</span>
+                          <span class="text-underline">Concessione di contributi ad enti, associazioni, società sportive</span>
                         </span>
                       </a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <a class="read-more pt-0" href="#">
+              <a class="read-more pt-0" href="#" aria-label="Esplora argomento sport" title="vai alla sezione di sport">
                 <span class="text">Esplora argomento</span>
                 <svg class="icon">
                   <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-arrow-right"></use>
@@ -384,31 +378,31 @@
               </div>
               <div class="col-lg-9 argomenti">
                 <div class="chip chip-simple chip-primary bg-primary rounded-3 pb-0 mb-2">
-                  <a href="#" class="chip-label text-white">Associazioni</a>
+                  <a href="#" class="chip-label text-white" aria-label="vai all'argomento: Associazioni" title="vai alla sezione Associazioni">Associazioni</a>
                 </div>
                 <div class="chip chip-simple chip-primary bg-primary rounded-3 pb-0 mb-2">
-                  <a href="#" class="chip-label text-white">Concorsi</a>
+                  <a href="#" class="chip-label text-white" aria-label="vai all'argomento: Concorsi" title="vai alla sezione Concorsi">Concorsi</a>
                 </div>
                 <div class="chip chip-simple chip-primary bg-primary rounded-3 pb-0 mb-2">
-                  <a href="#" class="chip-label text-white">Energie rinnovabili</a>
+                  <a href="#" class="chip-label text-white" aria-label="vai all'argomento: Energie rinnovabili" title="vai alla sezione Energie rinnovabili">Energie rinnovabili</a>
                 </div>
                 <div class="chip chip-simple chip-primary bg-primary rounded-3 pb-0 mb-2">
-                  <a href="#" class="chip-label text-white">Gestione rifiuti</a>
+                  <a href="#" class="chip-label text-white" aria-label="vai all'argomento: Gestione rifiuti" title="vai alla sezione Gestione rifiuti">Gestione rifiuti</a>
                 </div>
                 <div class="chip chip-simple chip-primary bg-primary rounded-3 pb-0 mb-2">
-                  <a href="#" class="chip-label text-white">Imposte</a>
+                  <a href="#" class="chip-label text-white" aria-label="vai all'argomento: Imposte" title="vai alla sezione Imposte">Imposte</a>
                 </div>
                 <div class="chip chip-simple chip-primary bg-primary rounded-3 pb-0 mb-2">
-                  <a href="#" class="chip-label text-white">Istruzione</a>
+                  <a href="#" class="chip-label text-white" aria-label="vai all'argomento: Istruzione" title="vai alla sezione Istruzione">Istruzione</a>
                 </div>
                 <div class="chip chip-simple chip-primary bg-primary rounded-3 pb-0 mb-2">
-                  <a href="#" class="chip-label text-white">Pista ciclabile</a>
+                  <a href="#" class="chip-label text-white" aria-label="vai all'argomento: Pista ciclabile" title="vai alla sezione Pista ciclabile">Pista ciclabile</a>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2 text-center">
-            <a href="#" class="btn btn-primary mt-40">Vedi tutti</a>
+            <a href="#" class="btn btn-primary mt-40" aria-label="vedi tutti gli argomenti" title="visualizza tutti gli argomenti" >Vedi tutti</a>
           </div>
         </div>
         <div class="row pt-5">

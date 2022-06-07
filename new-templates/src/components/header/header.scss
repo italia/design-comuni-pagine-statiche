@@ -21,6 +21,36 @@
     }
   }
 
+  .nav-item.dropdown {
+    button {
+      display: flex;
+      align-items: center;
+      background-color: transparent;
+      color: #fff;
+      @include font(14, 14);
+
+      svg {
+        fill: #fff;
+        width: 18px;
+        height: 18px;
+        margin-left: 4px;
+        transition: all .3s;
+        transform-origin: center;
+      }
+
+      &:hover {
+        background-color: transparent;
+        text-decoration: underline;
+      }
+
+      &[aria-expanded="true"] {
+        svg {
+          transform: scaleY(-1)
+        }
+      }
+    }
+  }
+
 
   .search-link {
     width: 3rem;

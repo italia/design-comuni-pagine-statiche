@@ -9,7 +9,8 @@
         description="I campi contraddistinti dal simbolo asterisco (*) sono obbligatori"
         desClass="mb-0"}}
         <p class="subtitle-small pb-40 mb-0">Hai un’identità digitale SPID o CIE? <a
-            class="title-small-semi-bold t-primary underline" href="./iscrizione-graduatoria-accedere-servizio.html">Accedi</a>
+            class="title-small-semi-bold t-primary underline"
+            href="./iscrizione-graduatoria-accedere-servizio.html">Accedi</a>
         </p>
       </div>
     </div>
@@ -21,7 +22,7 @@
         link-list=richiedi-assistenza.controllare-dati-personali.navscroll}}
       </div>
       <div class="col-12 col-lg-8 offset-lg-1">
-        <div class="steppers-content" aria-live="polite">
+        <form class="steppers-content" aria-live="polite" id="justValidateForm">
           <div>
             {{#>cmp-card/cmp-card-content-box
             class="p-big"
@@ -41,7 +42,6 @@
               {{>partials/input/input type="email" id="email" label="Email" required=true name="email" text="Inserisci
               la tua email" formClass="mb-0"}}
             </div>
-
             {{/cmp-card/cmp-card-content-box}}
           </div>
 
@@ -58,6 +58,7 @@
               {{>partials/select/select
               class="mb-40 mt-4"
               id="category"
+              selectClass="form-control"
               label-text="Categoria di servizio"
               placeholder="Seleziona categoria"
               required=true
@@ -67,6 +68,7 @@
 
               {{>partials/select/select
               id="service"
+              selectClass="form-control"
               label-text="Servizio"
               placeholder="Scegli il servizio"
               required=true
@@ -76,13 +78,13 @@
 
               {{>partials/text-area/text-area
               class="p-0 mt-40"
-              id="details"
+              textareaClass="form-control"
+              num="-details"
               required=true
               placeholder="Dettagli"
               value="Trasferimento di mio figlio dall’Istituto Narcisi all’Istituto Anemoni durante l’anno scolastico
               2021-2022"
               label="Inserire massimo 600 caratteri"
-              maxlength="600"
               }}
             </div>
             {{/cmp-card/cmp-card-content-box}}
@@ -94,15 +96,21 @@
             </p>
 
             <div class="form-check mb-2">
-              <div class="checkbox-body d-flex align-items-center">
+              <div class="checkbox-body d-flex align-items-center flex-wrap">
                 <input type="checkbox" id="privacy" name="privacy-field" value="privacy-field" required>
-                <label class="title-small-semi-bold pt-1" for="privacy">Ho letto e compreso l’informativa sulla
+                <label class="title-small-semi-bold pt-1 mb-0" for="privacy">Ho letto e compreso l’informativa sulla
                   privacy</label>
               </div>
             </div>
           </div>
-          {{> cmp-nav-steps/cmp-nav-steps next=true modalId="modal-terms"}}
-        </div>
+          {{> cmp-nav-steps/cmp-nav-steps
+          next=true
+          prova=true
+          icon="<svg class='icon icon-white icon-sm'>
+            <use href='./assets/bootstrap-italia/dist/svg/sprite.svg#it-chevron-right'></use>
+          </svg>"
+          }}
+        </form>
       </div>
     </div>
   </div>
@@ -116,6 +124,7 @@
       </div>
     </div>
   </div>
-  {{>cmp-modal/modal-terms-and-conditions}}
 </main>
+
+<script src="../javascripts/just-validate.js"></script>
 {{/base/base }}

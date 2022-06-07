@@ -19,9 +19,20 @@
 		&:last-child {
 			border-bottom: unset;
 		}
+
+		.form-feedback{
+			display:block;
+			padding-left: 2.25rem;
+			margin: 0;
+
+			@include media-breakpoint-up(sm){
+				padding-left: 2rem;
+			}
+		}
 	}
 
 	[type=checkbox]+label {
+		height: auto;
 
 		&:before {
 			margin: 0.125rem 0;

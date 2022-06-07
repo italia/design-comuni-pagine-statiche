@@ -1,7 +1,7 @@
 <div class="card select-wrapper {{class}} {{#if no-bg}}bg-transparent p-0 {{else}}select-partials{{/if}}">
   <label for="{{id}}" class="{{#if label-hidden}}hidden{{/if}}" {{label-class}}>{{label-text}}{{#if required}}*{{/if}}</label>
-  <select id="{{id}}" class="{{#if no-bg}}bg-transparent{{/if}}" {{#if required}}required{{/if}}>
-    <option selected value="placeholder">{{placeholder}}</option>
+  <select id="{{id}}" class="{{#if no-bg}}bg-transparent{{/if}} {{selectClass}}" {{#if required}}required{{/if}}>
+    <option selected value="">{{placeholder}}</option>
     {{#each select-option-list as |item|}}
       <option value="{{item.value}}">{{item.value}}</option>
     {{/each}}
