@@ -19,7 +19,7 @@
 
 
     {{#if next}}
-    <button {{#if prova}}type="submit" {{else}}type="button"{{/if}} class="btn btn-primary btn-sm steppers-btn-confirm send" {{#if prova}} data-bs-prova="prova" {{else}}data-bs-toggle="modal"
+    <button {{#if validate}}type="submit" {{else}}type="button"{{/if}} class="btn btn-primary btn-sm steppers-btn-confirm send" {{#if validate}} data-bs-validate="validate" {{else}}data-bs-toggle="modal"
       data-bs-target="#{{modalId}} {{/if}}">
       <span class="text-button-sm">Invia</span>
        {{{icon}}}
