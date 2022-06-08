@@ -1,0 +1,38 @@
+<div class="row cmp-list-card-img cmp-list-card-img-hr g-4 align-items-stretch {{rowClass}}">
+  {{#each cards as |card|}}
+  <div class="col-12 col-lg-6 col-xl-4">
+    <div class="card-wrapper">
+
+      <div class="card shadow-sm rounded no-after">
+        <div class="row g-2 g-md-0 flex-md-column">
+          {{#if img-path}}
+          <div class="col-4 order-2 order-md-1">
+            <img class="rounded-top img-fluid img-responsive" src="{{card.img-path}}" title="titolo immagine"
+              alt="descrizione immagine">
+          </div>
+          {{/if}}
+          <div class="{{#if img-path}}col-8 {{else}} col-12 {{/if}} order-1 order-md-2">
+            <div class="{{#if img-path}}card-body {{else}} card-img-none {{/if}}">
+              <div class="category-top cmp-list-card-img__body">
+                <a class="category cmp-list-card-img__body-heading-title underline" href="#">{{card.category}}</a>
+                {{#if card.category-date}}
+                <span class="data">{{card.category-date}}</span>
+                {{/if}}
+              </div>
+              <h5 class="card-title u-grey-light">{{card.title}}</h5>
+              <p class="card-text d-none d-md-block">{{card.description}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+  <!--end card-->
+
+  {{#if buttonNext}}
+  <div class="d-flex justify-content-end">
+    {{>partials/button/button primary="true" class="px-5 py-3 full-mb" }}
+  </div>
+  {{/if}}
+</div>

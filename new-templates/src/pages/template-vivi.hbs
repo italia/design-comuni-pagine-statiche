@@ -1,4 +1,4 @@
-{{#>base/base title="Sito pubblico | Pagina vivi"}}
+{{#>base/base title="Sito pubblico | Pagina vivi" headerActive4=true}}
   <main>
     <div class="container">
       <div class="row justify-content-center">
@@ -18,13 +18,13 @@
     <div class="bg-grey-dsk">
       <div class="container p-3 p-md-5">
         <h2 class="title-xxlarge mb-40 ">Eventi in evidenza</h2>
-        {{>cmp-list-card-img/cmp-list-card-img cards=cards.card-events label="Tutti gli eventi"}}
+        {{>cmp-list-card-img/cmp-list-card-img cards=cards.card-events label="Tutti gli eventi" buttonNext=true}}
       </div>
     </div>
 
     <div class="container p-3 p-md-5">
       <h2 class="title-xxlarge mb-40 ">Luoghi in evidenza</h2>
-      {{>cmp-list-card-img/cmp-list-card-img cards=cards.card-places label="Tutti i luoghi"}}
+      {{>cmp-list-card-img/cmp-list-card-img cards=cards.card-places label="Tutti i luoghi" buttonNext=true}}
     </div>
 
     <div class="bg-primary">

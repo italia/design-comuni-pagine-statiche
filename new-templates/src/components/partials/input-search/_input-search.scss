@@ -18,6 +18,15 @@
         padding-left: 2.5rem;
       }
     }
+
+    label{
+      @include font(16,16);
+      font-weight: 700;
+      
+      &.label-visible{
+        transform: translatey(-77%);
+      }
+    }
   }
 
   .autocomplete-icon {

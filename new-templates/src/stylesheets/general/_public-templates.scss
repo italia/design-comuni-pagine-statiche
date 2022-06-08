@@ -17,6 +17,10 @@
   }
 }
 
+.row-shadow{
+  box-shadow: 0 0.9375rem 1.325rem -0.9rem rgba(0, 0, 0, 0.1);
+}
+
 .home-carousel-title {
   @include font(18, 20);
   line-height: 1.5;
@@ -167,6 +171,13 @@ a.read-more {
 
 #calendario .card-wrapper.card-overlapping {
   margin-top: -50px;
+}
+
+@media only screen and (min-width: 992px) {
+  #argomento .row{
+    --bs-gutter-x: 40px;
+    --bs-gutter-y: 40px
+  }
 }
 
 @media only screen and (max-width: 560px) {

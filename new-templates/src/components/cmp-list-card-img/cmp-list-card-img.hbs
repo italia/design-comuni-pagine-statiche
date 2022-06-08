@@ -1,15 +1,17 @@
-<div class="row cmp-list-card-img g-4 ">
+<div class="row cmp-list-card-img g-4 {{rowClass}}">
 {{#each cards as |card|}}
   <div class="col-12 col-lg-6 col-xl-4">
     <!--start card-->
-    <div class="card-wrapper shadow rounded">
+    <div class="card-wrapper shadow-sm rounded">
       <div class="card card-img no-after">
-        <div class="img-responsive-wrapper cmp-list-card-img__wrapper">
-          <div class="img-responsive img-responsive-panoramic h-100">
+        <div class="img-responsive-wrapper {{#if img-path}}cmp-list-card-img__wrapper{{/if}}">
+          <div class="img-responsive img-responsive-panoramic h-100 {{imgClass}}">
+            {{#if img-path}}
             <figure class="img-wrapper">
-              <img class="rounded-top img-fluid" src="../../images/{{card.img-path}}"
+              <img class="rounded-top img-fluid" src="{{card.img-path}}"
                 title="titolo immagine" alt="descrizione immagine">
             </figure>
+            {{/if}}
             {{#if card.tag}}
             <div class="card-calendar d-flex flex-column justify-content-center">
               <span class="card-date">{{card.date}}</span>
@@ -42,9 +44,11 @@
 {{/each}}
   <!--end card-->
 
+  {{#if buttonNext}} 
   <div class="d-flex justify-content-end">
     {{>partials/button/button  primary="true" class="px-5 py-3 full-mb" }}
   </div>
+  {{/if}}
 
 </div>
 
