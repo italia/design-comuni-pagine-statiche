@@ -1,6 +1,6 @@
 {{#>base/base title="Prenotazione pagamento | Finalizzare procedura"}}
 <main>
-  <div class="container">
+  <div class="container" id="main-container">
     <div class="row justify-content-center">
       <div class="col-12 col-lg-10">
         {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi" link3="Prenotazioni"}}
@@ -25,7 +25,7 @@
         }}
       </div>
 
-      <div class="col-12 col-lg-8 offset-lg-1 mt-4 mt-lg-0">
+      <div class="col-12 col-lg-8 offset-lg-1 mt-3 mt-lg-0">
         {{#>cmp-card/cmp-card-content-box card-title="Cosa serve" id-title="needed" bg-grey="true" id-title="needed"
         class="p-3" cmpClass="mb-50" h2-class="mb-0"}}
         {{>cmp-ul-list/cmp-ul-list font-list="titillium" info-list=info-prenotazione.lista-1 }}
@@ -33,7 +33,7 @@
 
         {{!-- {{#>cmp-card/cmp-card-content-box card-title="Indirizzo" id-title="address" h2-class="mb-0"}} --}}
         <div class="address-wrapper mb-50">
-          <h2 class="ttitle-xxlarge mb-15" id="address">Indirizzo</h2>
+          <h2 class="ttitle-xxlarge mb-10" id="address">Indirizzo</h2>
           {{>cmp-card-img/cmp-card-img card-title="Ufficio anagrafe 03" card-description="Via Grazia Deledda 9/a -
           20127<br> Milano <br> anagrafe@comune.it"}}
         </div>
@@ -42,7 +42,6 @@
 
         {{>cmp-icon-list/cmp-icon-list
         title="Aggiungi al tuo calendario"
-        titleClass="mb-lg-4"
         icon-list=icon-list.calendario-reservation-pagamento
         classMenu="mt-3"
         id-title="calendar"
@@ -55,8 +54,8 @@
   <div class="bg-primary">
     <div class="container">
       <div class="row d-flex justify-content-center bg-primary">
-        <div class="col-12 col-lg-6 p-lg-0 px-3">
-          {{>cmp-rating/cmp-rating}}
+        <div class="col-12 col-lg-6">
+          {{>cmp-rating/cmp-rating public-template=true rating-title="Quanto è stato facile compilare questa richiesta online?"}}
         </div>
       </div>
     </div>
@@ -64,9 +63,9 @@
 
   <div class="bg-grey-card shadow-contacts">
     <div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-6 offset-lg-3 p-contacts">
-          {{>cmp-contacts/cmp-contacts}}
+      <div class="row d-flex justify-content-center">
+        <div class="col-12 col-lg-6 p-contacts">
+          {{>cmp-contacts/cmp-contacts-trasversali faq=true assistance=true}}
         </div>
       </div>
     </div>

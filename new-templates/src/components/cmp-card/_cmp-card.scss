@@ -3,10 +3,14 @@
     &:after {
       content: unset;
     }
-  }
 
-  .shadow-sm{
-    box-shadow: 0 0.15rem 0.25rem rgba(0,0,0,0.15) !important;
+    .card-body {
+      padding-bottom: 2.5rem;
+
+      @include media-breakpoint-up(sm) {
+        padding-bottom: 2.222rem;
+      }
+    }
   }
 
   .description{
@@ -16,6 +20,15 @@
       margin-bottom: 7rem;
     }
   }
+}
+
+.card.card-big .card-body h4.card-title {
+  font-size: um(24px);
+  line-height: um(28px);
+}
+
+.card .card-body h4.card-title {
+  color: #5b6f82;
 }
 
 .cmp-card {
@@ -49,7 +62,7 @@
     &.has-bkg-grey{
       padding: 1.5rem;
       background-color: get-color(card, grey);
-      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+/*       box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); */
 
       @include media-breakpoint-up(sm) {
         padding: 1.33rem;

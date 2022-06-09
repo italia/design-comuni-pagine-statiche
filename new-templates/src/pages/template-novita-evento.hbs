@@ -1,6 +1,6 @@
 {{#>base/base title="Novità evento" headerActive2=true}}
 <main>
-  <div class="container px-4 my-4">
+  <div class="container px-4 my-4" id="main-container">
     <div class="row">
       <div class="col px-lg-4">
         <nav class="breadcrumb-container" aria-label="Percorso di navigazione">
@@ -24,116 +24,124 @@
     <div class="row">
       <div class="col-lg-8 px-lg-4 py-lg-2">
         <h1>363^ Festa di Sant'Efisio</h1>
-        <h4 class="py-2">dal 01 maggio 2019 al 04 maggio 2019</h4>
+        <h2 class="h4 py-2">dal 01 maggio 2019 al 04 maggio 2019</h2>
         <p>
-          Il 1° maggio 2019 Cagliari e tutta la Sardegna festeggiano la 363ª Festa di Sant'Efisio. Un intenso momento di devozione, fede, cultura e tradizioni centenarie che si fondono in una processione che non ha eguali.
+          Il 1° maggio 2019 Cagliari e tutta la Sardegna festeggiano la 363ª Festa di Sant'Efisio. Un intenso momento di
+          devozione, fede, cultura e tradizioni centenarie che si fondono in una processione che non ha eguali.
         </p>
       </div>
       <div class="col-lg-3 offset-lg-1">
         <div class="dropdown d-inline">
-  <button class="btn btn-dropdown dropdown-toggle" type="button" id="shareActions" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <svg class="icon">
-      <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-share"></use>
-    </svg>
-    <small>Condividi</small>
-  </button>
-  <div class="dropdown-menu shadow-lg" aria-labelledby="shareActions">
-    <div class="link-list-wrapper">
-      <ul class="link-list">
-        <li>
-          <a class="list-item" href="#">
+          <button aria-label="condividi sui social" class="btn btn-dropdown dropdown-toggle" type="button" id="shareActions" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
             <svg class="icon">
-              <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-facebook"></use>
+              <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-share"></use>
             </svg>
-            <span>Facebook</span>
-          </a>
-        </li>
-        <li>
-          <a class="list-item" href="#">
+            <small>Condividi</small>
+          </button>
+          <div class="dropdown-menu shadow-lg" aria-labelledby="shareActions">
+            <div class="link-list-wrapper">
+              <ul class="link-list">
+                <li>
+                  <a class="list-item" href="#">
+                    <svg class="icon">
+                      <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-facebook"></use>
+                    </svg>
+                    <span>Facebook</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="list-item" href="#">
+                    <svg class="icon">
+                      <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-twitter"></use>
+                    </svg>
+                    <span>Twitter</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="list-item" href="#">
+                    <svg class="icon">
+                      <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-linkedin"></use>
+                    </svg>
+                    <span>Linkedin</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="list-item" href="#">
+                    <svg class="icon">
+                      <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-whatsapp"></use>
+                    </svg>
+                    <span>Whatsapp</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown d-inline">
+          <button aria-label="vedi azioni da compiere sulla pagina" class="btn btn-dropdown dropdown-toggle" type="button" id="viewActions" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
             <svg class="icon">
-              <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-twitter"></use>
+              <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-more-items"></use>
             </svg>
-            <span>Twitter</span>
-          </a>
-        </li>
-        <li>
-          <a class="list-item" href="#">
-            <svg class="icon">
-              <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-linkedin"></use>
-            </svg>
-            <span>Linkedin</span>
-          </a>
-        </li>
-        <li>
-          <a class="list-item" href="#">
-            <svg class="icon">
-              <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-whatsapp"></use>
-            </svg>
-            <span>Whatsapp</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-<div class="dropdown d-inline">
-  <button class="btn btn-dropdown dropdown-toggle" type="button" id="viewActions" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <svg class="icon">
-      <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-more-items"></use>
-    </svg>
-    <small>Vedi azioni</small>
-  </button>
-  <div class="dropdown-menu shadow-lg" aria-labelledby="viewActions">
-    <div class="link-list-wrapper">
-      <ul class="link-list">
-        <li>
-          <a class="list-item" href="#">
-            <svg class="icon">
-              <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-download"></use>
-            </svg>
-            <span>Scarica</span>
-          </a>
-        </li>
-        <li>
-          <a class="list-item" href="#">
-            <svg class="icon">
-              <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-print"></use>
-            </svg>
-            <span>Stampa</span>
-          </a>
-        </li>
-        <li>
-          <a class="list-item" href="#">
-            <svg class="icon">
-              <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-hearing"></use>
-            </svg>
-            <span>Ascolta</span>
-          </a>
-        </li>
-        <li>
-          <a class="list-item" href="#">
-            <svg class="icon">
-              <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-mail"></use>
-            </svg>
-            <span>Invia</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
+            <small>Vedi azioni</small>
+          </button>
+          <div class="dropdown-menu shadow-lg" aria-labelledby="viewActions">
+            <div class="link-list-wrapper">
+              <ul class="link-list">
+                <li>
+                  <a class="list-item" href="#">
+                    <svg class="icon">
+                      <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-download"></use>
+                    </svg>
+                    <span>Scarica</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="list-item" href="#">
+                    <svg class="icon">
+                      <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-print"></use>
+                    </svg>
+                    <span>Stampa</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="list-item" href="#">
+                    <svg class="icon">
+                      <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-hearing"></use>
+                    </svg>
+                    <span>Ascolta</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="list-item" href="#">
+                    <svg class="icon">
+                      <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-mail"></use>
+                    </svg>
+                    <span>Invia</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
         <div class="mt-4 mb-4">
           <h6><small>Argomenti</small></h6>
-          <a href="#"><div class="chip chip-simple chip-primary">
+          <a href="#">
+            <div class="chip chip-simple chip-primary">
               <span class="chip-label">Cultura</span>
-            </div></a>
-          <a href="#"><div class="chip chip-simple chip-primary">
+            </div>
+          </a>
+          <a href="#">
+            <div class="chip chip-simple chip-primary">
               <span class="chip-label">Vivere la città</span>
-            </div></a>
+            </div>
+          </a>
         </div>
         <div class="mt-5">
-          <a href="#" class="btn btn-outline-primary btn-icon">
+          <a href="#" class="btn btn-outline-primary btn-icon" aria-label="vai al calendario eventi"
+            title="vai al calendario eventi">
             <svg class="icon icon-primary">
               <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-calendar"></use>
             </svg>
@@ -146,7 +154,8 @@
   <div class="container-fluid my-3">
     <div class="row">
       <figure class="figure px-0 img-full">
-        <img src="https://picsum.photos/800/400" class="figure-img img-fluid" alt="Un'immagine generica segnaposto con angoli arrotondati in una figura.">
+        <img src="https://picsum.photos/800/400" class="figure-img img-fluid"
+          alt="Un'immagine generica segnaposto con angoli arrotondati in una figura.">
         <figcaption class="figure-caption text-center pt-3">Una didascalia per l'immagine sopra.</figcaption>
       </figure>
     </div>
@@ -155,17 +164,9 @@
     <div class="row border-top row-column-border row-column-menu-left">
       <aside class="col-lg-4">
         <div class="sticky-wrapper navbar-wrapper">
-          <nav
-            class="navbar it-navscroll-wrapper it-top-navscroll navbar-expand-lg"
-          >
-            <button
-              class="custom-navbar-toggler"
-              type="button"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-              data-bs-target="#navbarNav"
-            >
+          <nav class="navbar it-navscroll-wrapper it-top-navscroll navbar-expand-lg">
+            <button class="custom-navbar-toggler" type="button" aria-controls="navbarNav" aria-expanded="false"
+              aria-label="Toggle navigation" data-bs-target="#navbarNav">
               <span class="it-list"></span>Indice della pagina
             </button>
             <div class="navbar-collapsable" id="navbarNav">
@@ -179,51 +180,34 @@
                 <svg class="icon icon-sm icon-primary align-top">
                   <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-chevron-left"></use>
                 </svg>
-                <span>Torna indietro</span></a
-              >
+                <span>Torna indietro</span></a>
               <div class="menu-wrapper">
                 <div class="link-list-wrapper menu-link-list">
                   <h3 class="no_toc">Indice della pagina</h3>
                   <ul class="link-list">
                     <li class="nav-item active">
-                      <a class="nav-link active" href="#cos-e"
-                        ><span>Cos'è</span></a
-                      >
+                      <a class="nav-link active" href="#cos-e"><span>Cos'è</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#luogo"
-                        ><span>Luogo</span></a
-                      >
+                      <a class="nav-link" href="#luogo"><span>Luogo</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#date-e-orari"
-                        ><span>Date e orari</span></a
-                      >
+                      <a class="nav-link" href="#date-e-orari"><span>Date e orari</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#costi"
-                        ><span>Costi</span></a
-                      >
+                      <a class="nav-link" href="#costi"><span>Costi</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#documenti"
-                        ><span>Documenti</span></a
-                      >
+                      <a class="nav-link" href="#documenti"><span>Documenti</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#contatti"
-                        ><span>Contatti</span></a
-                      >
+                      <a class="nav-link" href="#contatti"><span>Contatti</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#appuntamenti"
-                        ><span>Appuntamenti</span></a
-                      >
+                      <a class="nav-link" href="#appuntamenti"><span>Appuntamenti</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#ulteriori-informazioni"
-                        ><span>Ulteriori informazioni</span></a
-                      >
+                      <a class="nav-link" href="#ulteriori-informazioni"><span>Ulteriori informazioni</span></a>
                     </li>
                   </ul>
                 </div>
@@ -236,15 +220,25 @@
         <article id="cos-e" class="it-page-section anchor-offset">
           <h4>Cos'è?</h4>
           <p class="font-serif">
-            Sant'Efisio, nato in una città dell'Asia Minore, visse all'epoca dell'Imperatore Diocleziano nel III sec. d.C.
-            Giovanissimo intraprese la carriera militare e, inviato in Italia per contrastare la diffusione del cristianesimo, la tradizione vuole che si convertì in seguito alla visione straordinaria di una croce splendente nel cielo che successivamente si impresse nel palmo della mano e sentendo la voce di Cristo che lo rimproverava per la sua missione sanguinaria.
+            Sant'Efisio, nato in una città dell'Asia Minore, visse all'epoca dell'Imperatore Diocleziano nel III sec.
+            d.C.
+            Giovanissimo intraprese la carriera militare e, inviato in Italia per contrastare la diffusione del
+            cristianesimo, la tradizione vuole che si convertì in seguito alla visione straordinaria di una croce
+            splendente nel cielo che successivamente si impresse nel palmo della mano e sentendo la voce di Cristo che
+            lo rimproverava per la sua missione sanguinaria.
           </p>
           <p class="font-serif">
-            Giunto in Sardegna, mentre i suoi soldati combattevano i barbari, Sant'Efisio si convertì al cristianesimo e ne divenne difensore, disobbedendo agli ordini di Diocleziano il quale ne comandò il martirio che avvenne il 15 gennaio del 303 d.C. nella prigione di Nora.
-            Il rito ha origine da un Voto del 1652 della Municipalità di Cagliari, oggi custodito presso l’Archivio storico, nel quale s’invoca l’intercessione di Sant’Efisio per far terminare la peste e ci si impegna a celebrare ogni anno e perpetuamente una Festa solenne.
+            Giunto in Sardegna, mentre i suoi soldati combattevano i barbari, Sant'Efisio si convertì al cristianesimo e
+            ne divenne difensore, disobbedendo agli ordini di Diocleziano il quale ne comandò il martirio che avvenne il
+            15 gennaio del 303 d.C. nella prigione di Nora.
+            Il rito ha origine da un Voto del 1652 della Municipalità di Cagliari, oggi custodito presso l’Archivio
+            storico, nel quale s’invoca l’intercessione di Sant’Efisio per far terminare la peste e ci si impegna a
+            celebrare ogni anno e perpetuamente una Festa solenne.
           </p>
           <p class="font-serif">
-            Dal 1657 si ripete annualmente con una cerimonia solenne la Festa di Sant’Efisio, il Pellegrinaggio da Cagliari al luogo del martirio del Santo e i riti di scioglimento del Voto voluto dalla Municipalità di Cagliari.
+            Dal 1657 si ripete annualmente con una cerimonia solenne la Festa di Sant’Efisio, il Pellegrinaggio da
+            Cagliari al luogo del martirio del Santo e i riti di scioglimento del Voto voluto dalla Municipalità di
+            Cagliari.
           </p>
           <div class="it-carousel-wrapper it-carousel-landscape-abstract-three-cols splide" data-bs-carousel-splide>
             <div class="it-header-block">
@@ -257,62 +251,71 @@
                 <li class="splide__slide">
                   <div class="it-single-slide-wrapper">
                     <figure>
-                      <img src="https://via.placeholder.com/250x250/ebebeb/808080/?text=Thumb" alt="Festa di Sant'Efisio" class="img-fluid">
+                      <img src="https://via.placeholder.com/250x250/ebebeb/808080/?text=Thumb"
+                        alt="Festa di Sant'Efisio" class="img-fluid">
                       <figcaption class="figure-caption mt-2">Festa di Sant'Efisio</figcaption>
-                   </figure>
+                    </figure>
                   </div>
                 </li>
                 <li class="splide__slide">
                   <div class="it-single-slide-wrapper">
                     <figure>
-                      <img src="https://via.placeholder.com/250x250/ebebeb/808080/?text=Thumb" alt="Festa di Sant'Efisio" class="img-fluid">
+                      <img src="https://via.placeholder.com/250x250/ebebeb/808080/?text=Thumb"
+                        alt="Festa di Sant'Efisio" class="img-fluid">
                       <figcaption class="figure-caption mt-2">Festa di Sant'Efisio</figcaption>
-                   </figure>
+                    </figure>
                   </div>
                 </li>
                 <li class="splide__slide">
                   <div class="it-single-slide-wrapper">
                     <figure>
-                      <img src="https://via.placeholder.com/250x250/ebebeb/808080/?text=Thumb" alt="Festa di Sant'Efisio" class="img-fluid">
+                      <img src="https://via.placeholder.com/250x250/ebebeb/808080/?text=Thumb"
+                        alt="Festa di Sant'Efisio" class="img-fluid">
                       <figcaption class="figure-caption mt-2">Festa di Sant'Efisio</figcaption>
-                   </figure>
+                    </figure>
                   </div>
                 </li>
                 <li class="splide__slide">
                   <div class="it-single-slide-wrapper">
                     <figure>
-                      <img src="https://via.placeholder.com/250x250/ebebeb/808080/?text=Thumb" alt="Festa di Sant'Efisio" class="img-fluid">
+                      <img src="https://via.placeholder.com/250x250/ebebeb/808080/?text=Thumb"
+                        alt="Festa di Sant'Efisio" class="img-fluid">
                       <figcaption class="figure-caption mt-2">Festa di Sant'Efisio</figcaption>
-                   </figure>
+                    </figure>
                   </div>
                 </li>
                 <li class="splide__slide">
                   <div class="it-single-slide-wrapper">
                     <figure>
-                      <img src="https://via.placeholder.com/250x250/ebebeb/808080/?text=Thumb" alt="Festa di Sant'Efisio" class="img-fluid">
+                      <img src="https://via.placeholder.com/250x250/ebebeb/808080/?text=Thumb"
+                        alt="Festa di Sant'Efisio" class="img-fluid">
                       <figcaption class="figure-caption mt-2">Festa di Sant'Efisio</figcaption>
-                   </figure>
+                    </figure>
                   </div>
                 </li>
                 <li class="splide__slide">
                   <div class="it-single-slide-wrapper">
                     <figure>
-                      <img src="https://via.placeholder.com/250x250/ebebeb/808080/?text=Thumb" alt="Festa di Sant'Efisio" class="img-fluid">
+                      <img src="https://via.placeholder.com/250x250/ebebeb/808080/?text=Thumb"
+                        alt="Festa di Sant'Efisio" class="img-fluid">
                       <figcaption class="figure-caption mt-2">Festa di Sant'Efisio</figcaption>
-                   </figure>
+                    </figure>
                   </div>
                 </li>
               </ul>
             </div>
           </div>
           <div class="ratio ratio-16x9 my-4">
-            <iframe class="embed-responsive-item" title="Video YouTube" src="https://www.youtube.com/embed/0rIBULTnWuQ" allowfullscreen></iframe>
+            <iframe class="embed-responsive-item" title="Video YouTube" aria-label="Video YouTube" src="https://www.youtube.com/embed/0rIBULTnWuQ"
+              allowfullscreen></iframe>
           </div>
           <p class="font-serif">
-            Ogni 1° di maggio, quindi, i fedeli accompagnano il Santo in questa tradizionale processione, ripercorrendo il tragitto che giunge dal carcere in cui venne imprigionato al luogo del martirio a Nora, per poi tornare alla sua Chiesa di Stampace il 4 maggio entro la mezzanotte.
+            Ogni 1° di maggio, quindi, i fedeli accompagnano il Santo in questa tradizionale processione, ripercorrendo
+            il tragitto che giunge dal carcere in cui venne imprigionato al luogo del martirio a Nora, per poi tornare
+            alla sua Chiesa di Stampace il 4 maggio entro la mezzanotte.
           </p>
           <div class="pt-3 pb-5">
-            <h6 class="font-serif fw-bold">Parteciperanno:</h6>
+            <h5 class="h6 font-serif fw-bold">Parteciperanno:</h5>
             <a href="#">
               <div class="chip chip-simple chip-primary">
                 <span class="chip-label">Valerio Alfio Boi</span>
@@ -344,7 +347,8 @@
             </div>
           </div>
           <div class="map-wrapper map-column mt-4 mb-5">
-            <img src="https://via.placeholder.com/320x180/ebebeb/808080/?text=Map" alt="Festa di Sant'Efisio" class="img-fluid" style="object-fit:cover;width:100%;" />
+            <img src="https://via.placeholder.com/320x180/ebebeb/808080/?text=Map" alt="Festa di Sant'Efisio"
+              class="img-fluid" style="object-fit:cover;width:100%;" />
           </div>
         </article>
         <article id="date-e-orari" class="it-page-section anchor-offset">
@@ -359,7 +363,7 @@
                 <div class="card card-teaser shadow rounded">
                   <div class="card-body">
                     <h5 class="card-title">
-                      09:00  - Inizio evento
+                      09:00 - Inizio evento
                     </h5>
                   </div>
                 </div>
@@ -374,7 +378,7 @@
                 <div class="card card-teaser shadow rounded">
                   <div class="card-body">
                     <h5 class="card-title">
-                      18:00  - Fine evento
+                      18:00 - Fine evento
                     </h5>
                   </div>
                 </div>
@@ -382,10 +386,11 @@
             </div>
           </div>
           <p class="font-serif">
-            Per informazioni sul programma dettagliato degli appuntamenti religiosi e civili, consultare il programma nella sezione documenti.
+            Per informazioni sul programma dettagliato degli appuntamenti religiosi e civili, consultare il programma
+            nella sezione documenti.
           </p>
           <div class="mt-3">
-            <a href="#" class="btn btn-outline-primary btn-icon">
+            <a href="#" class="btn btn-outline-primary btn-icon" aria-abel="aggiungi al calendario l'evento" title="aggiungi al calendario l'evento">
               <svg class="icon icon-primary">
                 <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-plus-circle"></use>
               </svg>
@@ -401,7 +406,8 @@
                 Tribuna 1 e 4
               </div>
               <h5 class="card-title big-heading">&euro; 30</h5>
-              <p class="mt-4">Tribune coperte site nella via Roma lato Palazzo Vivanet (tribuna n. 1) e nella via Roma fronte palazzo Civico (tribuna n. 4), per circa 770 posti a sedere.</p>
+              <p class="mt-4">Tribune coperte site nella via Roma lato Palazzo Vivanet (tribuna n. 1) e nella via Roma
+                fronte palazzo Civico (tribuna n. 4), per circa 770 posti a sedere.</p>
             </div>
           </div>
           <div class="card no-after border-start mt-3">
@@ -410,16 +416,23 @@
                 Tribuna 3
               </div>
               <h5 class="card-title big-heading">&euro; 30</h5>
-              <p class="mt-4">Tribuna coperta con la pedana riservata alle persone con disabilità motorie sita nella via Roma fronte Palazzo Vivanet, per circa 190 posti a sedere, di cui circa 30 posti nella pedana anzi detta. L’accesso sarà consentito con unico biglietto alla persona con disabilità motoria e al proprio accompagnatore. Saranno pertanto venduti circa 30 titoli di ingresso per i soggetti con disabilità motorie, con i quali potranno accedere altrettanti accompagnatori e circa 130 biglietti ordinari.</p>
+              <p class="mt-4">Tribuna coperta con la pedana riservata alle persone con disabilità motorie sita nella via
+                Roma fronte Palazzo Vivanet, per circa 190 posti a sedere, di cui circa 30 posti nella pedana anzi
+                detta. L’accesso sarà consentito con unico biglietto alla persona con disabilità motoria e al proprio
+                accompagnatore. Saranno pertanto venduti circa 30 titoli di ingresso per i soggetti con disabilità
+                motorie, con i quali potranno accedere altrettanti accompagnatori e circa 130 biglietti ordinari.</p>
             </div>
           </div>
           <div class="card no-after border-start mt-3">
             <div class="card-body">
-              <div class="category-top">
-                Tribuna 5
-              </div>
-              <h5 class="card-title big-heading">&euro; 25</h5>
-              <p class="mt-4">Tribuna coperta fronte largo Carlo Felice, dislocata nell'incrocio, nello spazio compreso tra i due semafori della via Roma, per circa 400 posti a sedere.</p>
+              <h5>
+                <span class="category-top">
+                  Tribuna 5
+                </span>
+                <p class="h5 card-title big-heading">&euro; 25</p>
+              </h5>
+              <p class="mt-4">Tribuna coperta fronte largo Carlo Felice, dislocata nell'incrocio, nello spazio compreso
+                tra i due semafori della via Roma, per circa 400 posti a sedere.</p>
             </div>
           </div>
           <div class="card no-after border-start mt-3">
@@ -428,7 +441,8 @@
                 Tribuna 2
               </div>
               <h5 class="card-title big-heading">&euro; 15</h5>
-              <p class="mt-4">Tribuna coperta dislocata nella piazza Matteotti, antistante la Stazione Ferroviaria, per circa 370 posti a sedere.</p>
+              <p class="mt-4">Tribuna coperta dislocata nella piazza Matteotti, antistante la Stazione Ferroviaria, per
+                circa 370 posti a sedere.</p>
             </div>
           </div>
         </article>
@@ -458,8 +472,8 @@
               <div class="card-text">
                 <p>Via Sant'Efisio, 14 - 09124</p>
                 <p class="mt-3">T +39 070 668632</p>
-                <p><a href="#">www.festadisantelfisio.com</a></p>
-                <p><a href="#">arcisantefisio@tiscali.it</a></p>
+                <p><a aria-label="scopri di più su www.festadisantelfisio.com - link esterno - apertura nuova scheda" target="_blank" title="vai sul sito del festival di sant'elfisio" href="#">www.festadisantelfisio.com</a></p>
+                <p><a aria-label="invia un email a arcisantefisio@tiscali.it< - apertura casella portale" title="invia un email" href="#">arcisantefisio@tiscali.it</a></p>
               </div>
             </div>
           </div>
@@ -488,7 +502,8 @@
                 <div class="img-responsive-wrapper">
                   <div class="img-responsive">
                     <figure class="img-wrapper">
-                      <img src="https://via.placeholder.com/310x190/007a52/FFFFFF/?text=CAGLIARI" title="titolo immagine" alt="descrizione immagine">
+                      <img src="https://via.placeholder.com/310x190/007a52/FFFFFF/?text=CAGLIARI"
+                        title="titolo immagine" alt="descrizione immagine">
                     </figure>
                     <div class="card-calendar d-flex flex-column justify-content-center">
                       <span class="card-date">31</span>
@@ -499,7 +514,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Il ballo dell'isola in festa</h5>
                   <p class="card-text"></p>
-                    <a class="read-more" href="#">
+                  <a class="read-more" href="#">
                     <span class="text">Leggi di più</span>
                     <span class="visually-hidden">su Lorem ipsum dolor sit amet, consectetur adipiscing elit…</span>
                     <svg class="icon">
@@ -513,7 +528,8 @@
                 <div class="img-responsive-wrapper">
                   <div class="img-responsive">
                     <figure class="img-wrapper">
-                      <img src="https://via.placeholder.com/310x190/007a52/FFFFFF/?text=CAGLIARI" title="titolo immagine" alt="descrizione immagine">
+                      <img src="https://via.placeholder.com/310x190/007a52/FFFFFF/?text=CAGLIARI"
+                        title="titolo immagine" alt="descrizione immagine">
                     </figure>
                     <div class="card-calendar d-flex flex-column justify-content-center">
                       <span class="card-date">31</span>
@@ -524,7 +540,7 @@
                 <div class="card-body">
                   <h5 class="card-title">La coralità sarda per Sant'Efisio</h5>
                   <p class="card-text"></p>
-                    <a class="read-more" href="#">
+                  <a class="read-more" href="#">
                     <span class="text">Leggi di più</span>
                     <span class="visually-hidden">su Lorem ipsum dolor sit amet, consectetur adipiscing elit…</span>
                     <svg class="icon">
@@ -538,7 +554,8 @@
                 <div class="img-responsive-wrapper">
                   <div class="img-responsive">
                     <figure class="img-wrapper">
-                      <img src="https://via.placeholder.com/310x190/007a52/FFFFFF/?text=CAGLIARI" title="titolo immagine" alt="descrizione immagine">
+                      <img src="https://via.placeholder.com/310x190/007a52/FFFFFF/?text=CAGLIARI"
+                        title="titolo immagine" alt="descrizione immagine">
                     </figure>
                     <div class="card-calendar d-flex flex-column justify-content-center">
                       <span class="card-date">31</span>
@@ -549,7 +566,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Il ballo dell'isola in festa</h5>
                   <p class="card-text"></p>
-                    <a class="read-more" href="#">
+                  <a class="read-more" href="#">
                     <span class="text">Leggi di più</span>
                     <span class="visually-hidden">su Lorem ipsum dolor sit amet, consectetur adipiscing elit…</span>
                     <svg class="icon">
@@ -592,46 +609,81 @@
                   <div class="rating-list-row">
                     <div class="rating-list-stars">
                       <div class="rating rating-read-only">
-                        <svg class="icon icon-warning"><use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-star-full"></use></svg>
-                        <svg class="icon icon-warning"><use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-star-full"></use></svg>
-                        <svg class="icon icon-warning"><use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-star-full"></use></svg>
-                        <svg class="icon icon-warning"><use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-star-full"></use></svg>
-                        <svg class="icon icon-warning"><use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-star-full"></use></svg>
+                        <svg class="icon icon-warning">
+                          <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-star-full"></use>
+                        </svg>
+                        <svg class="icon icon-warning">
+                          <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-star-full"></use>
+                        </svg>
+                        <svg class="icon icon-warning">
+                          <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-star-full"></use>
+                        </svg>
+                        <svg class="icon icon-warning">
+                          <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-star-full"></use>
+                        </svg>
+                        <svg class="icon icon-warning">
+                          <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-star-full"></use>
+                        </svg>
                       </div>
                       <div class="rating rating-read-only">
-                        <svg class="icon icon-warning"><use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-star-full"></use></svg>
-                        <svg class="icon icon-warning"><use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-star-full"></use></svg>
-                        <svg class="icon icon-warning"><use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-star-full"></use></svg>
-                        <svg class="icon icon-warning"><use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-star-full"></use></svg>
+                        <svg class="icon icon-warning">
+                          <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-star-full"></use>
+                        </svg>
+                        <svg class="icon icon-warning">
+                          <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-star-full"></use>
+                        </svg>
+                        <svg class="icon icon-warning">
+                          <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-star-full"></use>
+                        </svg>
+                        <svg class="icon icon-warning">
+                          <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-star-full"></use>
+                        </svg>
                       </div>
                       <div class="rating rating-read-only">
-                        <svg class="icon icon-warning"><use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-star-full"></use></svg>
-                        <svg class="icon icon-warning"><use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-star-full"></use></svg>
-                        <svg class="icon icon-warning"><use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-star-full"></use></svg>
+                        <svg class="icon icon-warning">
+                          <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-star-full"></use>
+                        </svg>
+                        <svg class="icon icon-warning">
+                          <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-star-full"></use>
+                        </svg>
+                        <svg class="icon icon-warning">
+                          <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-star-full"></use>
+                        </svg>
                       </div>
                       <div class="rating rating-read-only">
-                        <svg class="icon icon-warning"><use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-star-full"></use></svg>
-                        <svg class="icon icon-warning"><use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-star-full"></use></svg>
+                        <svg class="icon icon-warning">
+                          <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-star-full"></use>
+                        </svg>
+                        <svg class="icon icon-warning">
+                          <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-star-full"></use>
+                        </svg>
                       </div>
                       <div class="rating rating-read-only">
-                        <svg class="icon icon-warning"><use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-star-full"></use></svg>
+                        <svg class="icon icon-warning">
+                          <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-star-full"></use>
+                        </svg>
                       </div>
                     </div>
                     <div class="rating-list-progress">
                       <div class="progress progress-color">
-                        <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60"
+                          aria-valuemin="0" aria-valuemax="100"></div>
                       </div>
                       <div class="progress progress-color">
-                        <div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50"
+                          aria-valuemin="0" aria-valuemax="100"></div>
                       </div>
                       <div class="progress progress-color">
-                        <div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="40"
+                          aria-valuemin="0" aria-valuemax="100"></div>
                       </div>
                       <div class="progress progress-color">
-                        <div class="progress-bar bg-warning" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 30%" aria-valuenow="30"
+                          aria-valuemin="0" aria-valuemax="100"></div>
                       </div>
                       <div class="progress progress-color">
-                        <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="20"
+                          aria-valuemin="0" aria-valuemax="100"></div>
                       </div>
                     </div>
                   </div>
@@ -641,33 +693,43 @@
             <div class="d-flex align-items-center mt-5">
               <fieldset class="rating">
                 <input type="radio" id="star5a" name="ratingA" value="5" />
-                <label class = "full" for="star5a">
-                  <svg class="icon icon-sm"><use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-star-full"></use></svg>
+                <label class="full" for="star5a">
+                  <svg class="icon icon-sm">
+                    <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-star-full"></use>
+                  </svg>
                   <span class="visually-hidden">Valuta 5 stelle su 5</span>
                 </label>
-                <input type="radio" id="star4a" name="ratingA" value="4"/>
-                <label class = "full" for="star4a">
-                  <svg class="icon icon-sm"><use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-star-full"></use></svg>
+                <input type="radio" id="star4a" name="ratingA" value="4" />
+                <label class="full" for="star4a">
+                  <svg class="icon icon-sm">
+                    <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-star-full"></use>
+                  </svg>
                   <span class="visually-hidden">Valuta 4 stelle su 5</span>
                 </label>
                 <input type="radio" id="star3a" name="ratingA" value="3" />
-                <label class = "full" for="star3a">
-                  <svg class="icon icon-sm"><use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-star-full"></use></svg>
+                <label class="full" for="star3a">
+                  <svg class="icon icon-sm">
+                    <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-star-full"></use>
+                  </svg>
                   <span class="visually-hidden">Valuta 3 stelle su 5</span>
                 </label>
                 <input type="radio" id="star2a" name="ratingA" value="2" />
-                <label class = "full" for="star2a">
-                  <svg class="icon icon-sm"><use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-star-full"></use></svg>
+                <label class="full" for="star2a">
+                  <svg class="icon icon-sm">
+                    <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-star-full"></use>
+                  </svg>
                   <span class="visually-hidden">Valuta 2 stelle su 5</span>
                 </label>
                 <input type="radio" id="star1a" name="ratingA" value="1" />
-                <label class = "full" for="star1a">
-                  <svg class="icon icon-sm"><use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-star-full"></use></svg>
+                <label class="full" for="star1a">
+                  <svg class="icon icon-sm">
+                    <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-star-full"></use>
+                  </svg>
                   <span class="visually-hidden">Valuta 1 stelle su 5</span>
                 </label>
               </fieldset>
               <div class="ms-3">
-                <a href="#" class="btn btn-outline-primary btn-sm">
+                <a href="#" class="btn btn-outline-primary btn-sm" aria-label="invia valutazione dell'evento">
                   <span>Invia valutazione</span>
                 </a>
               </div>
@@ -681,118 +743,119 @@
                 </svg>
               </div>
               <p>Per ulteriori informazioni contattare <a href="">santefisio@comune.cagliari.it</a></p>
-              <h6><a href="#">Ufficio Sant'Elfisio</a></h6>
+              <p><a href="#" aria-label="Ufficio Sant'Elfisio" title="Ufficio Sant'Elfisio">Ufficio Sant'Elfisio</a></p>
             </div>
           </div>
         </article>
         <article id="ultimo-aggiornamento" class="it-page-section anchor-offset mt-5">
-          <p class="font-serif">Ultimo aggiornamento</p>
-          <h6><strong>10/06/2019, 16:00</strong></h6>
+          <h5 class="font-serif">Ultimo aggiornamento</h5>
+          <p class="h6"><strong>10/06/2019, 16:00</strong></p>
           <small><a href="#">Consulta versioni precedenti</a></small>
         </article>
       </section>
     </div>
   </div>
   <section id="contenuti-correlati">
-  <div class="section section-muted section-inset-shadow">
-    <div class="section-content">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <h3 class="text-center">Contenuti correlati</h3>
+    <div class="section section-muted section-inset-shadow">
+      <div class="section-content">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h3 class="text-center">Contenuti correlati</h3>
+            </div>
           </div>
-        </div>
-        <div class="row mt-lg-4">
-          <div class="col">
-            <div class="card-wrapper card-teaser-wrapper card-teaser-wrapper-equal card-teaser-block-4">
-              <div class="card card-teaser card-column shadow my-3 rounded">
-                <div class="card-header">
-                  <svg class="icon">
-                    <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-pa"></use>
-                  </svg>
-                  <h5 class="card-title">
-                    Amministrazione
-                  </h5>
-                </div>
-                <div class="card-body">
-                  <div class="link-list-wrapper mt-3">
-                    <ul class="link-list">
-                      <li>
-                        <a class="list-item" href="#"><span>Area servizi civici</span></a>
-                      </li>
-                    </ul>
+          <div class="row mt-lg-4">
+            <div class="col">
+              <div class="card-wrapper card-teaser-wrapper card-teaser-wrapper-equal card-teaser-block-4">
+                <div class="card card-teaser card-column shadow my-3 rounded">
+                  <div class="card-header">
+                    <svg class="icon">
+                      <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-pa"></use>
+                    </svg>
+                    <h5 class="card-title">
+                      Amministrazione
+                    </h5>
+                  </div>
+                  <div class="card-body">
+                    <div class="link-list-wrapper mt-3">
+                      <ul class="link-list">
+                        <li>
+                          <a class="list-item" href="#"><span>Area servizi civici</span></a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="card card-teaser card-column shadow my-3 rounded">
-                <div class="card-header">
-                  <svg class="icon">
-                    <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-settings"></use>
-                  </svg>
-                  <h5 class="card-title">
-                    Servizi
-                  </h5>
-                </div>
-                <div class="card-body">
-                  <div class="link-list-wrapper mt-3">
-                    <ul class="link-list">
-                      <li>
-                        <a class="list-item" href="#"><span>Pagamento retta scolastica</span></a>
-                      </li>
-                      <li>
-                        <a class="list-item" href="#"><span>Servizio di trasporto scolastico</span></a>
-                      </li>
-                    </ul>
+                <div class="card card-teaser card-column shadow my-3 rounded">
+                  <div class="card-header">
+                    <svg class="icon">
+                      <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-settings"></use>
+                    </svg>
+                    <h5 class="card-title">
+                      Servizi
+                    </h5>
+                  </div>
+                  <div class="card-body">
+                    <div class="link-list-wrapper mt-3">
+                      <ul class="link-list">
+                        <li>
+                          <a class="list-item" href="#"><span>Pagamento retta scolastica</span></a>
+                        </li>
+                        <li>
+                          <a class="list-item" href="#"><span>Servizio di trasporto scolastico</span></a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="card card-teaser card-column shadow my-3 rounded">
-                <div class="card-header">
-                  <svg class="icon">
-                    <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-file"></use>
-                  </svg>
-                  <h5 class="card-title">
-                    Documenti
-                  </h5>
-                </div>
-                <div class="card-body">
-                  <div class="link-list-wrapper mt-3">
-                    <ul class="link-list">
-                      <li>
-                        <a class="list-item" href="#"><span>Attestazione ISEE</span></a>
-                      </li>
-                      <li>
-                        <a class="list-item" href="#"><span>Carta dei servizi educativi all'infanzia</span></a>
-                      </li>
-                    </ul>
+                <div class="card card-teaser card-column shadow my-3 rounded">
+                  <div class="card-header">
+                    <svg class="icon">
+                      <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-file"></use>
+                    </svg>
+                    <h5 class="card-title">
+                      Documenti
+                    </h5>
+                  </div>
+                  <div class="card-body">
+                    <div class="link-list-wrapper mt-3">
+                      <ul class="link-list">
+                        <li>
+                          <a class="list-item" href="#"><span>Attestazione ISEE</span></a>
+                        </li>
+                        <li>
+                          <a class="list-item" href="#"><span>Carta dei servizi educativi all'infanzia</span></a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="card card-teaser card-column shadow my-3 rounded">
-                <div class="card-header">
-                  <svg class="icon">
-                    <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-calendar"></use>
-                  </svg>
-                  <h5 class="card-title">
-                    Notizie
-                  </h5>
-                </div>
-                <div class="card-body">
-                  <div class="link-list-wrapper mt-3">
-                    <ul class="link-list">
-                      <li>
-                        <a class="list-item" href="#"><span>Lorem ipsum dolor sit amet</span></a>
-                      </li>
-                      <li>
-                        <a class="list-item" href="#"><span>Lorem ipsum dolor sit amet</span></a>
-                      </li>
-                      <li>
-                        <a class="list-item" href="#"><span>Lorem ipsum dolor sit amet</span></a>
-                      </li>
-                      <li>
-                        <a class="list-item" href="#"><span>Lorem ipsum dolor sit amet</span></a>
-                      </li>
-                    </ul>
+                <div class="card card-teaser card-column shadow my-3 rounded">
+                  <div class="card-header">
+                    <svg class="icon">
+                      <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-calendar"></use>
+                    </svg>
+                    <h5 class="card-title">
+                      Notizie
+                    </h5>
+                  </div>
+                  <div class="card-body">
+                    <div class="link-list-wrapper mt-3">
+                      <ul class="link-list">
+                        <li>
+                          <a class="list-item" href="#"><span>Lorem ipsum dolor sit amet</span></a>
+                        </li>
+                        <li>
+                          <a class="list-item" href="#"><span>Lorem ipsum dolor sit amet</span></a>
+                        </li>
+                        <li>
+                          <a class="list-item" href="#"><span>Lorem ipsum dolor sit amet</span></a>
+                        </li>
+                        <li>
+                          <a class="list-item" href="#"><span>Lorem ipsum dolor sit amet</span></a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -801,8 +864,7 @@
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 </main>
 
 {{/base/base }}

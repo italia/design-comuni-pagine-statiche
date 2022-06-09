@@ -1,6 +1,6 @@
 {{#>base/base title="Archetipo: Pagamenti dovuti"}}
 <main>
-  <div class="container">
+  <div class="container" id="main-container">
     <div class="row justify-content-center">
       <div class="col-12 col-lg-10">
         {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi" link3="Pagamenti"}}
@@ -24,7 +24,7 @@
       </div>
     </div>
     <div class="steppers-content" aria-live="polite">
-      <div class="row mt-lg-3">
+      <div class="row">
         <div class="col-12 col-lg-3 mb-4 d-none d-lg-block">
           {{>cmp-navscroll/cmp-navscroll accordion-title="INFORMAZIONI RICHIESTE"
           link-list=pagamenti-dovuti.controllare-dati-personali.navscroll

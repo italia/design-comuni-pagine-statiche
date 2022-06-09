@@ -1,26 +1,27 @@
 {{#>base/base title="Sito pubblico | Pagina amministrazione" headerActive1=true}}
-  <main>
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12 col-lg-10">
-          {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Amministrazione"}}
+<main>
+  <div class="container" id="main-container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Amministrazione"}}
 
-          {{>cmp-hero/cmp-hero
+        {{>cmp-hero/cmp-hero
         hero-title="Amministrazione"
         hero-text="Tutte le informazioni sulla struttura amministrativa del Comune. Scopri gli organi politici, gli
         uffici e il personale e consulta i documenti pubblici, le statistiche e i bandi di gara."
         wrapper-class="pt-0 ps-0 pb-4 pb-lg-60"}}
-        </div>
       </div>
     </div>
-    <div class="bg-grey-card">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="title-xxlarge mt-60 mb-4 mt-lg-80 mb-lg-40">In evidenza</h2>
-            <div class="row flex-wrap justify-content-between gy-3 gy-lg-5 gx-lg-5 pb-3 pb-lg-60 align-items-stretch">
-              <div class="col-12 col-lg-4">
-                {{>cmp-card/cmp-card-simple
+  </div>
+  <div class="bg-grey-card">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="title-xxlarge mt-60 mb-4 mt-lg-80 mb-lg-40">In evidenza</h2>
+          <div class="row flex-wrap justify-content-between gy-3 gy-lg-5 gx-lg-5 pb-3 pb-lg-60 align-items-stretch">
+            <div class="col-12 col-lg-4">
+              {{>cmp-card/cmp-card-simple
+              borderlight=true
               card-title="Sindaco"
               card-text="Il sindaco, o primo cittadino, è a capo del governo del Comune e dell’amministrazione
               comunale."
@@ -29,9 +30,10 @@
               classText="mb-4"
               classTitle="title-xlarge"
               }}
-              </div>
-              <div class="col-12 col-lg-4">
-                {{>cmp-card/cmp-card-simple
+            </div>
+            <div class="col-12 col-lg-4">
+              {{>cmp-card/cmp-card-simple
+              borderlight=true
               card-title="Turismo"
               card-text="Sportello unico per le attività produttive e l'edilizia (Suape), commercio e somministrazione,
               commercio su area pubblica, concessioni suolo, turismo, incentivi alle imprese, mercati"
@@ -40,9 +42,10 @@
               classText="mb-4"
               classTitle="title-xlarge"
               }}
-              </div>
-              <div class="col-12 col-lg-4">
-                {{>cmp-card/cmp-card-simple
+            </div>
+            <div class="col-12 col-lg-4">
+              {{>cmp-card/cmp-card-simple
+              borderlight=true
               card-title="Mercato civico"
               card-text="Luogo simbolo della città, il mercato offre una vasta scelta di prodotti ittici, ortofrutta,
               carni, alimentari, generi vari e servizi."
@@ -51,23 +54,24 @@
               classText="mb-4"
               classTitle="title-xlarge"
               }}
-              </div>
             </div>
           </div>
         </div>
       </div>
-
     </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="title-xxlarge mt-60 mb-4 mt-lg-80 mb-lg-40">Esplora l'amministrazione</h2>
+  </div>
 
-          <div class="row flex-wrap justify-content-between gy-3 gy-md-5 gx-lg-5 pb-3 pb-lg-60 align-items-stretch">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="title-xxlarge mt-60 mb-4 mt-lg-80 mb-lg-40">Esplora l'amministrazione</h2>
 
-            <div class="col-12 col-lg-4">
-              {{>cmp-card/cmp-card-simple
+        <div class="row flex-wrap justify-content-between gy-3 gy-md-5 gx-lg-5 pb-3 pb-lg-60 align-items-stretch">
+
+          <div class="col-12 col-lg-4">
+            {{>cmp-card/cmp-card-simple
+            borderlight=true
             card-title="Aree amministrative"
             card-text="La struttura organizzativa è suddivisa in aree di competenze che gestiscono i servizi erogati
             alla comunità."
@@ -76,10 +80,11 @@
             classText="mb-4"
             classTitle="title-xlarge"
             }}
-            </div>
+          </div>
 
-            <div class="col-12 col-lg-4">
-              {{>cmp-card/cmp-card-simple
+          <div class="col-12 col-lg-4">
+            {{>cmp-card/cmp-card-simple
+            borderlight=true
             card-title="Documenti e dati"
             card-text="Bandi di concorso, avvisi, graduatorie, statistiche e documenti pubblici."
             card-link="Vai alla pagina"
@@ -87,10 +92,11 @@
             classText="mb-4"
             classTitle="title-xlarge"
             }}
-            </div>
+          </div>
 
-            <div class="col-12 col-lg-4">
-              {{>cmp-card/cmp-card-simple
+          <div class="col-12 col-lg-4">
+            {{>cmp-card/cmp-card-simple
+            borderlight=true
             card-title="Enti e fondazioni"
             card-text="I consorzi, gli enti e le società partecipate di cui il Comune fa parte per rappresentare al
             meglio gli interessi della comunità."
@@ -99,10 +105,11 @@
             classText="mb-4"
             classTitle="title-xlarge"
             }}
-            </div>
+          </div>
 
-            <div class="col-12 col-lg-4">
-              {{>cmp-card/cmp-card-simple
+          <div class="col-12 col-lg-4">
+            {{>cmp-card/cmp-card-simple
+            borderlight=true
             card-title="Organi di governo"
             card-text="Le informazioni sulla Giunta e il Consiglio comunale, incluse le convocazioni, le registrazioni
             delle sedute e i verbali."
@@ -111,10 +118,11 @@
             classText="mb-4"
             classTitle="title-xlarge"
             }}
-            </div>
+          </div>
 
-            <div class="col-12 col-lg-4">
-              {{>cmp-card/cmp-card-simple
+          <div class="col-12 col-lg-4">
+            {{>cmp-card/cmp-card-simple
+            borderlight=true
             card-title="Personale amministrativo"
             card-text="Personale da contattare per informazioni e supporto ai servizi erogati dagli uffici."
             card-link="Vai alla pagina"
@@ -122,10 +130,11 @@
             classText="mb-4"
             classTitle="title-xlarge"
             }}
-            </div>
+          </div>
 
-            <div class="col-12 col-lg-4">
-              {{>cmp-card/cmp-card-simple
+          <div class="col-12 col-lg-4">
+            {{>cmp-card/cmp-card-simple
+            borderlight=true
             card-title="Politici"
             card-text="Tutti i rappresentanti dei cittadini che compongono gli organi di indirizzo politico del Comune."
             card-link="Vai alla pagina"
@@ -133,10 +142,11 @@
             classText="mb-4"
             classTitle="title-xlarge"
             }}
-            </div>
+          </div>
 
-            <div class="col-12 col-lg-4">
-              {{>cmp-card/cmp-card-simple
+          <div class="col-12 col-lg-4">
+            {{>cmp-card/cmp-card-simple
+            borderlight=true
             card-title="Uffici"
             card-text="Le informazioni e i contatti degli Uffici di Città, gli uffici aperti al pubblico e gli uffici
             assistenziali."
@@ -145,31 +155,33 @@
             classText="mb-4"
             classTitle="title-xlarge"
             }}
-            </div>
-
           </div>
+
         </div>
       </div>
     </div>
+  </div>
 
     <div class="bg-primary">
       <div class="container">
         <div class="row d-flex justify-content-center bg-primary">
-          <div class="col-12 col-lg-6 p-lg-0 px-3">
+          <div class="col-12 col-lg-6">
             {{>cmp-rating/cmp-rating public-template=true rating-title="Quanto è utile questa pagina?"}}
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="bg-grey-card">
+    <div class="bg-grey-card shadow-contacts">
       <div class="container">
-        <div class="row">
-          <div class="col-12 col-lg-6 offset-lg-3 p-contacts">
+        <div class="row d-flex justify-content-center p-contacts">
+          <div class="col-12 col-lg-6">
             {{>cmp-contacts/cmp-contacts}}
           </div>
         </div>
       </div>
     </div>
-  </main>
-  {{/base/base }}
+  </div>
+</main>
+{{/base/base }}

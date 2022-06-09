@@ -13,6 +13,7 @@
     margin: 1rem 0;
     text-decoration: underline;
     color: get-color(primary, main);
+    font-weight: 400;
 
     @include media-breakpoint-up(md) {
       line-height: 1.5;

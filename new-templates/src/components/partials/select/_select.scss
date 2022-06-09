@@ -1,15 +1,11 @@
 .select-partials {
+  background-color: #fff;
   padding: 1rem;
 
   @include media-breakpoint-up(sm) {
     padding: 0.889rem;
   }
 
-  .card {
-    &::after {
-      content: unset;
-    }
-  }
 
   label.hidden {
     //visually-hidden
@@ -24,9 +20,6 @@
     border: 0 !important;
   }
 
-  @include media-breakpoint-up(md) {
-    padding: 1.333rem;
-  }
 }
 
 .select-wrapper {
@@ -44,19 +37,28 @@
     margin-left: 4px;
     opacity: .9;
     mix-blend-mode: normal;
+    padding-bottom: 0.625rem;
+
+    @include media-breakpoint-up(sm) {
+      padding-bottom: 0.56rem;
+    }
   }
 
   select {
-    color: get-color(dark, grey);
+   color: get-color(dark, grey);
     font-weight: 600;
 
-    option[selected] {
-      color: get-color(dark, grey) !important;
+    option {
       font-size: 1.125rem;
 
       @include media-breakpoint-up(sm) {
         padding: 1rem;
       }
+    }
+
+    option:checked {
+      color: get-color(black, main);
+      font-weight: 600;
     }
 
     &.form-control{

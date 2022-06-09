@@ -1,6 +1,6 @@
 {{#>base/base title="Argomento"}}
 <main>
-  <div class="it-hero-wrapper it-wrapped-container">
+  <div class="it-hero-wrapper it-wrapped-container" id="main-container">
     <div class="img-responsive-wrapper">
       <div class="img-responsive">
         <div class="img-wrapper">
@@ -10,9 +10,8 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-12 px-lg-5">
-          <div class="it-hero-card it-hero-bottom-overlapping px-2 px-md-5 py-2 py-md-5 rounded">
-
+        <div class="col-12 px-0 px-lg-5 drop-shadow">
+          <div class="it-hero-card it-hero-bottom-overlapping rounded hero-p">
             <div class="row">
               <div class="col">
                 <nav class="breadcrumb-container" aria-label="Percorso di navigazione">
@@ -33,14 +32,14 @@
             <div class="row sport-wrapper">
               <div class="col-lg-6">
                 <h1 class="mb-3 mb-lg-4 title-xxlarge">Sport</h1>
-                <p class="u-main-black text-paragraph-regular-medium">
+                <p class="u-main-black text-paragraph-regular-medium mb-60">
                   Informazioni su eventi sportivi, impianti comunali, servizi dedicati allo sport
                 </p>
               </div>
               <div class="col-lg-4 offset-lg-2">
                 <div class="card-wrapper card-column">
                   <p class="description-small">Questo argomento è gestito da:</p>
-                  <div class="card card-teaser card-teaser-info rounded d-flex align-items-center">
+                  <div class="card card-teaser card-teaser-info rounded d-flex align-items-center p-3 p-lg-4">
                     <div class="card-body">
                       <h5 class="u-main-black mb-1 title-small-semi-bold-medium">
                         Sport, cultura, spettacolo
@@ -53,7 +52,7 @@
                       <img src="https://picsum.photos/200/200" alt="Immagine" />
                     </div>
                   </div>
-                  <div class="card card-teaser card-teaser-info rounded d-flex align-items-center">
+                  <div class="card card-teaser card-teaser-info rounded d-flex align-items-center mb-2 mb-lg-0">
                     <div class="card-body">
                       <h5 class="u-main-black mb-1 title-small-semi-bold-medium">
                         Gestione impianti sportivi
@@ -77,17 +76,17 @@
   </div>
 
   <section id="novita">
-    <div class="section bg-grey-card section-inset-shadow pt-40 pt-md-100 pb-50">
+    <div class="section bg-grey-card pt-40 pt-md-100 pb-50">
       <div class="container">
         <div class="row row-title border-bottom border-semi-dark">
-          <div class="col-12 d-lg-flex">
-            <h3 class="u-grey-light mb-3 mt-lg-3 title-large-semi-bold">Novità</h3>
+          <div class="col-12 d-lg-flex ps-0">
+            <h3 class="u-grey-light mb-2 mb-lg-3 mt-lg-3 title-large-semi-bold">Novità</h3>
           </div>
         </div>
         <div class="row pt-4 mt-lg-2 pb-lg-4">
           <div class="col-xs-12 col-md-4">
             <div class="card-wrapper">
-              <div class="card card-img no-after rounded">
+              <div class="card card-img no-after rounded sm-row">
                 <div class="img-responsive-wrapper">
                   <div class="img-responsive img-responsive-panoramic">
                     <figure class="img-wrapper">
@@ -113,7 +112,7 @@
           </div>
           <div class="col-xs-12 col-md-4">
             <div class="card-wrapper">
-              <div class="card card-img no-after rounded">
+              <div class="card card-img no-after sm-row">
                 <div class="img-responsive-wrapper">
                   <div class="img-responsive img-responsive-panoramic">
                     <figure class="img-wrapper">
@@ -148,7 +147,7 @@
                 <div class="card-body p-4">
                   <div class="category-top">
                     <a class=" u-grey-light fw-semibold" href="#">Avviso</a>
-                    <span class="data u-grey-light">13 MAG 2022</span>
+                    <span class="data u-grey-light">18 MAG 2022</span>
                   </div>
                   <h4 class="title-small-semi-bold-big mb-0 u-grey-light">
                     Chiusa per ristrutturazione la piscina Minghetti
@@ -160,7 +159,24 @@
               </div>
             </div>
           </div>
+
+          <div class="col-xs-12 col-md-4 d-md-none">
+            <div class="card-wrapper">
+              <div class="card card-img no-after rounded">
+                <div class="card-body p-4">
+                  <div class="category-top">
+                    <a class=" u-grey-light fw-semibold" href="#">Comunicati stampa</a>
+                    <span class="data u-grey-light">18 MAG 2022</span>
+                  </div>
+                  <h4 class="title-small-semi-bold-big mb-0 u-grey-light">
+                    Annunciato il calendario delle manifestazioni sportive 2022-2023
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
         <div class="row mt-lg-2">
           <div class="col-12 col-lg-3 offset-lg-9">
             <button type="button" class="btn btn-primary text-button w-100">Tutte le novità</button>
@@ -176,8 +192,8 @@
     <div class="section pb-40 pt-40 pt-lg-80">
       <div class="container">
         <div class="row row-title border-bottom border-semi-dark">
-          <div class="col-12 d-lg-flex justify-content-between">
-            <h3 class="u-grey-light mb-lg-3 title-large-semi-bold">Amministrazione</h3>
+          <div class="col-12 d-lg-flex justify-content-between ps-0">
+            <h3 class="u-grey-light mb-2 mb-lg-3 title-large-semi-bold">Amministrazione</h3>
           </div>
         </div>
         <div>
@@ -244,8 +260,8 @@
     <div class="section pb-40 pt-40">
       <div class="container">
         <div class="row row-title border-bottom border-semi-dark">
-          <div class="col-12 d-lg-flex justify-content-between">
-            <h3 class="u-grey-light mb-3 title-large-semi-bold">Servizi</h3>
+          <div class="col-12 d-lg-flex justify-content-between ps-0">
+            <h3 class="u-grey-light mb-2 mb-lg-3 title-large-semi-bold">Servizi</h3>
           </div>
         </div>
         <div>
@@ -307,8 +323,8 @@
     <div class="section pb-80 pt-40">
       <div class="container">
         <div class="row row-title border-bottom border-semi-dark">
-          <div class="col-12 d-lg-flex justify-content-between">
-            <h3 class="u-grey-light mb-3 title-large-semi-bold">Documenti</h3>
+          <div class="col-12 d-lg-flex justify-content-between ps-0">
+            <h3 class="u-grey-light mb-2 mb-lg-3 title-large-semi-bold">Documenti</h3>
           </div>
         </div>
         <div>
@@ -364,21 +380,21 @@
   <div class="bg-primary">
     <div class="container">
       <div class="row d-flex justify-content-center bg-primary">
-        <div class="col-12 col-lg-6 p-lg-0 px-3">
+        <div class="col-12 col-lg-6">
           {{>cmp-rating/cmp-rating public-template=true rating-title="Quanto è utile questa pagina?"}}
         </div>
       </div>
     </div>
   </div>
-</main>
 
-<div class="bg-grey-card">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-6 offset-lg-3 p-contacts">
-        {{>cmp-contacts/cmp-contacts city-problems=true}}
+  <div class="bg-grey-card shadow-contacts">
+    <div class="container">
+      <div class="row d-flex justify-content-center p-contacts">
+        <div class="col-12 col-lg-6">
+          {{>cmp-contacts/cmp-contacts city-problems=true}}
+        </div>
       </div>
     </div>
   </div>
-</div>
+</main>
 {{/base/base }}

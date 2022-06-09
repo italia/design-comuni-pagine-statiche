@@ -203,6 +203,20 @@
             "name": "Scolarità",
             "description": "Laurea Triennale"
           }
+        ],
+        "alert-list": [
+          {
+            "text": "Richiedente - Indirizzo",
+            "id": "applicant-info"
+          },
+          {
+            "text": "Minore",
+            "id": "minor"
+          },
+          {
+            "text": "Conto bancario per l’accredito",
+            "id": "bank-account"
+          }
         ]
       },
       "indirizzo": {

@@ -1,7 +1,7 @@
 .cmp-input-search{
   .form-group {
     position: relative;
-    margin-bottom: 2.5;
+    margin-bottom: 2.5rem;
 
     @include media-breakpoint-up(sm) {
       margin-bottom: 2.222rem;
@@ -24,7 +24,7 @@
       font-weight: 700;
       
       &.label-visible{
-        transform: translatey(-77%);
+        transform: translatey(-105%);
       }
     }
   }

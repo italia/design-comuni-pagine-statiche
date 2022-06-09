@@ -1,9 +1,18 @@
 {{#>base/base title="Novità" headerActive2=true}}
 <main>
-  <div class="container px-4">
+  <div class="container px-4" id="main-container">
     <div class="row justify-content-center w-100 row-shadow">
       <div class="col-12 col-lg-10">
-        {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Novità"}}
+        <nav role="navigation" aria-label="Percorso di navigazione" class="breadcrumb-container">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="#">Home</a><span class="separator">/</span>
+            </li>
+            <li aria-current="page" class="breadcrumb-item active">
+              Novità
+            </li>
+          </ol>
+        </nav>
 
         {{>cmp-hero/cmp-hero
         hero-title="Notizie"
@@ -28,7 +37,7 @@
             label-text="Cerca per parola chiave"
             search-subtitle=true
             text-subtitle="62 notizie trovate in ordine alfabetico"
-            text-subtitle-class="u-grey-light text-paragraph-card mt-2 mb-4 mt-lg-3 mb-lg-40"
+            text-subtitle-class="u-grey-light text-paragraph-card mt-2 mb-30 mt-lg-3 mb-lg-40"
             wrapper-class="mb-0"
             icon-class="icon-primary"
             }}
@@ -48,6 +57,8 @@
 
       <div class="col-12 col-lg-4">
         {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
         classTitle="title-xlarge"
         classText="description"
         card-title="Agricoltura"
@@ -59,6 +70,8 @@
 
       <div class="col-12 col-lg-4">
         {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
         classTitle="title-xlarge"
         classText="description"
         card-title="Animale domestico"
@@ -70,6 +83,8 @@
 
       <div class="col-12 col-lg-4">
         {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
         classTitle="title-xlarge"
         classText="description"
         card-title="Assistenza sociale"
@@ -81,6 +96,8 @@
 
       <div class="col-12 col-lg-4">
         {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
         classTitle="title-xlarge"
         classText="description"
         card-title="Associazioni"
@@ -92,6 +109,8 @@
 
       <div class="col-12 col-lg-4">
         {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
         classTitle="title-xlarge"
         classText="description"
         card-title="Concorsi"
@@ -103,6 +122,8 @@
 
       <div class="col-12 col-lg-4">
         {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
         classTitle="title-xlarge"
         classText="description"
         card-title="Formazione professionale"
@@ -114,6 +135,8 @@
 
       <div class="col-12 col-lg-4">
         {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
         classTitle="title-xlarge"
         classText="description"
         card-title="Imposte"
@@ -125,6 +148,8 @@
 
       <div class="col-12 col-lg-4">
         {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
         classTitle="title-xlarge"
         classText="description"
         card-title="Imprese"
@@ -136,6 +161,8 @@
 
       <div class="col-12 col-lg-4">
         {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
         classTitle="title-xlarge"
         classText="description"
         card-title="Inquinamento"
@@ -147,6 +174,8 @@
 
       <div class="col-12 col-lg-4">
         {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
         classTitle="title-xlarge"
         classText="description"
         card-title="Integrazione sociale"
@@ -158,6 +187,8 @@
 
       <div class="col-12 col-lg-4">
         {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
         classTitle="title-xlarge"
         classText="description"
         card-title="Istruzione"
@@ -169,6 +200,8 @@
 
       <div class="col-12 col-lg-4">
         {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
         classTitle="title-xlarge"
         classText="description"
         card-title="Lavoro"
@@ -180,6 +213,8 @@
 
       <div class="col-12 col-lg-4">
         {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
         classTitle="title-xlarge"
         classText="description"
         card-title="Parcheggi"
@@ -191,6 +226,8 @@
 
       <div class="col-12 col-lg-4">
         {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
         classTitle="title-xlarge"
         classText="description"
         card-title="Patrimonio culturale"
@@ -202,6 +239,8 @@
 
       <div class="col-12 col-lg-4">
         {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
         classTitle="title-xlarge"
         classText="description"
         card-title="Piano di sviluppo "
@@ -213,6 +252,8 @@
 
       <div class="col-12 col-lg-4">
         {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
         classTitle="title-xlarge"
         classText="description"
         card-title="Pista ciclabile"
@@ -224,6 +265,8 @@
 
       <div class="col-12 col-lg-4">
         {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
         classTitle="title-xlarge"
         classText="description"
         card-title="Patrimonio culturale"
@@ -235,6 +278,8 @@
 
       <div class="col-12 col-lg-4">
         {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
         classTitle="title-xlarge"
         classText="description"
         card-title="Piano di sviluppo"
@@ -246,6 +291,8 @@
 
       <div class="col-12 col-lg-4">
         {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
         classTitle="title-xlarge"
         classText="description"
         card-title="Trasporto pubblico "
@@ -257,6 +304,8 @@
 
       <div class="col-12 col-lg-4">
         {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
         classTitle="title-xlarge"
         classText="description"
         card-title="Zone pedonali"
@@ -271,17 +320,17 @@
   <div class="bg-primary">
     <div class="container">
       <div class="row d-flex justify-content-center bg-primary">
-        <div class="col-12 col-lg-6 p-lg-0 px-3">
+        <div class="col-12 col-lg-6">
           {{>cmp-rating/cmp-rating public-template=true rating-title="Quanto è utile questa pagina?"}}
         </div>
       </div>
     </div>
   </div>
 
-  <div class="bg-grey-card">
+  <div class="bg-grey-card shadow-contacts">
     <div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-6 offset-lg-3 p-contacts">
+      <div class="row d-flex justify-content-center p-contacts">
+        <div class="col-12 col-lg-6">
           {{>cmp-contacts/cmp-contacts city-problems=true}}
         </div>
       </div>

@@ -11,11 +11,11 @@
   }
 
   .info-wrapper {
-    padding: 0.25rem 0;
+    padding: 0.5rem 0;
     border-bottom: 1px solid get-color(light-grey, grey);
 
     @include media-breakpoint-up(sm) {
-      padding: 0.22rem 0;
+      padding: 0.44rem 0;
     }
 
     &__label {
@@ -41,8 +41,12 @@
     line-height: 32px;
     font-size: 1rem;
     user-select: none;
-    margin-bottom: .5rem;
+    margin-bottom: .25rem;
     display: block;
+
+    @include media-breakpoint-up(sm) {
+      margin-bottom: .22rem;
+    }
 }
 
 .form-check [type=radio]+label::after, .form-check [type=radio]+label::before {
@@ -55,7 +59,7 @@
   .big-title {
     @include font(24, 32);
     font-weight: 700;
-    line-height: 1.67;
+    line-height: 1.17;
     padding-bottom: 0.5rem;
     max-width: 85%;
     color: get-color(black, main);

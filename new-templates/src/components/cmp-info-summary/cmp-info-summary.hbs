@@ -1,10 +1,14 @@
 <div class="cmp-info-summary bg-white {{class}}">
   <div class="card">
     {{#if info-title}}
-    <div class="card-header {{!-- border-bottom border-light --}} p-0 mb-0">
-      <h4 class="title-large-semi-bold mb-4 mb-md-4">{{info-title}}</h4>
-    </div>
+      <div class="card-header p-0 mb-4 {{#if info-list}}d-flex justify-content-between align-items-center{{/if}}">
+        <h4 class="title-large-semi-bold m-0">{{info-title}}</h4>
+        {{#if info-list}}
+           <a href="#"><span class="text-button-sm-semi t-primary">Modifica</span></a>
+        {{/if}}
+      </div>
     {{/if}}
+    
     <div class="card-body p-0">
       {{#if info}}
       {{#each info-list as |info|}}
@@ -67,16 +71,6 @@
       {{#if btn}}
       {{>partials/button/button label=btn-label-text iconBtn="it-pencil" outline-primary=true class="w-100 mt-3"
       sm=true}}
-
-      {{else}}
-      <div class="pt-3">
-        <a href="#">
-        <svg class="icon icon-primary mb-1">
-          <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-pencil"></use>
-        </svg>
-        <span class="text-button-semi t-primary">Modifica</span>
-        </a>
-      </div>
       {{/if}}
     </div>
   </div>

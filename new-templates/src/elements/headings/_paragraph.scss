@@ -93,6 +93,17 @@
     line-height: 1.5;
   }
 
+  &-sm-semi{
+    font-size: um(16px);
+    font-weight: 600;
+    line-height: um(24px);
+
+    @include media-breakpoint-up(md) {
+      font-size: um(18px);
+      line-height: um(28px);
+    }
+  }
+
   &-sm-bold {
     @include font(16, 16);
     line-height: 1.5;

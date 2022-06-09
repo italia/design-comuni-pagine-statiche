@@ -348,6 +348,12 @@
           "warning-message": "Documento scaduto",
           "success-message": "Documento inserito con successo"
         }
+      ],
+      "alert-list": [
+        {
+          "text": "ISEE",
+          "id": "isee-info"
+        }
       ]
     },
     "finalizzare-procedura":{

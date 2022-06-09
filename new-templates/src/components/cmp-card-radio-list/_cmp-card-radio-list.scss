@@ -4,23 +4,19 @@
     font-weight: 600;
     line-height: 1.5;
     color: get-color(black, main);
-    padding-bottom: 0.75rem;
+    padding: 0.75rem 0;
 
     @include media-breakpoint-up(sm) {
       padding-bottom: 0.67rem;
     }
-
-    &:not(:first-child) {
-      padding-bottom: 0.75rem;
-
-      @include media-breakpoint-up(sm) {
-        padding-bottom: 0.67rem;
-      }
-    }
   }
 
+/*   .form-check label {
+    line-height: 1.5;
+  } */
+
   .form-check [type=radio]:not(:checked)+label::after, .form-check [type=radio]:not(:checked)+label::before {
-    border-color: get-color(primary, main);
+    border-color: get-color(black, main);
   }
 
   .form-check [type=checkbox]+label, .form-check [type=radio]+label {

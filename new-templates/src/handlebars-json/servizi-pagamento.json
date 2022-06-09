@@ -246,6 +246,12 @@
           "warning-message": "Documento mancante",
           "success-message": "Documento inserito con successo"
         }
+      ],
+      "alert-list": [
+        {
+          "text": "Beneficiario - Documenti",
+          "id": "beneficiary-info"
+        }
       ]
     },
     "inserire-dati-specifici": {

@@ -16,6 +16,7 @@
 </a>
 {{else}}
 <button type="button" data-bs-toggle="modal" data-bs-target="#{{modalId}}"
+{{#if aria-label}}aria-label="{{aria-label}}"{{/if}}
 class="btn
   {{#if primary}}btn-primary{{/if}}
   {{#if success}}btn-success{{/if}}

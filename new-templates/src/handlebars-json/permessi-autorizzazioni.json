@@ -262,6 +262,16 @@
           "name": "Libretto di circolazione",
           "description": "libretto_circolazione.pdf"
         }
+      ],
+      "alert-list": [
+        {
+          "text": "Richiedente - Documenti",
+          "id": "applicant-info"
+        },
+        {
+          "text": "Veicolo",
+          "id": "vehicles-info"
+        }
       ]
     },
     "inserire-dati-specifici": {

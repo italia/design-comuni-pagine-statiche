@@ -17,7 +17,32 @@
   }
 }
 
-.row-shadow{
+.btn-result {
+  &:active {
+    color: get-color(black, main);
+    box-shadow: unset;
+  }
+
+
+  &:disabled {
+    color: #BACCD9;
+  }
+}
+
+.numResult{
+  font-weight: 400;
+
+  @include media-breakpoint-up(md) {
+    font-weight: 600;
+  }
+  
+}
+
+.drop-shadow {
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.row-shadow {
   box-shadow: 0 0.9375rem 1.325rem -0.9rem rgba(0, 0, 0, 0.1);
 }
 
@@ -38,6 +63,17 @@ a.read-more {
   @include font(14, 14);
   line-height: 1.3;
   font-weight: 700;
+}
+
+.hero-p{
+  padding: 2rem 1.5rem;
+  @include media-breakpoint-up(md){
+    padding: 1.778rem;
+  }
+
+  .breadcrumb {
+    padding-top: 0;
+  }
 }
 
 .row-calendar {
@@ -84,6 +120,10 @@ a.read-more {
       }
     }
   }
+}
+
+.card.card-teaser {
+  padding: 16px 24px;
 }
 
 #evidenza {
@@ -141,6 +181,7 @@ a.read-more {
 }
 
 #novita {
+
   .input-group .input-group-text,
   input[type=text] {
     border-bottom: unset !important;
@@ -149,7 +190,11 @@ a.read-more {
   .form-group label {
     @include font(16, 16);
     font-weight: 400;
-    top: 0;
+    top: 25%;
+
+    &.active {
+      transform: translateY(-150%);
+    }
   }
 }
 
@@ -173,8 +218,45 @@ a.read-more {
   margin-top: -50px;
 }
 
+#novita {
+  .card-wrapper {
+    .sm-row {
+      @include media-breakpoint-down(sm) {
+        flex-direction: row-reverse;
+      }
+
+      .img-responsive-wrapper {
+        @include media-breakpoint-down(sm) {
+          width: 75%;
+          border-top-left-radius: 0;
+          border-bottom-right-radius: 4px;
+        }
+
+        .img-responsive {
+          @include media-breakpoint-down(sm) {
+            height: 100%;
+          }
+        }
+
+        .card-calendar {
+          @include media-breakpoint-down(sm) {
+            right: 20px;
+          }
+        }
+      }
+
+      .card-body {
+        @include media-breakpoint-down(sm) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+
 @media only screen and (min-width: 992px) {
-  #argomento .row{
+  #argomento .row {
     --bs-gutter-x: 40px;
     --bs-gutter-y: 40px
   }

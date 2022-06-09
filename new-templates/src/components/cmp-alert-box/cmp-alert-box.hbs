@@ -1,7 +1,10 @@
 {{#if error}}
   <div class="cmp-alert-box">
     <div class="alert-box-icon">
-      <svg class="icon"><use href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-error" xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-error"></use></svg>
+      <svg class="icon"><use
+          href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-error"
+          xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-error"
+        ></use></svg>
       <span>Errore</span>
     </div>
     <p class="description">{{message}}</p>
@@ -10,13 +13,34 @@
 {{#if warning}}
   <div class="cmp-warning-box border-start border-warning border-2 {{class}}">
     <div class="warning-box-icon">
-      <svg class="icon icon-warning"><use href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-info-circle" xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-warning"></use></svg>
-      <span class="t-alert">ATTENZIONE</span>
+      <svg class="icon icon-warning"><use
+          href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-info-circle"
+          xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-warning"
+        ></use></svg>
+      <span class="t-alert {{alertSpan-class}}">ATTENZIONE</span>
     </div>
     <div class="d-flex">
-      <p class="description description-warning">{{message}}</p>
-      <button class="collapsed data-add t-primary" type="button" data-bs-toggle="collapse" data-bs-target="#{{collapse-id}}"
-      aria-expanded="false" aria-controls="{{collapse-id}}"><b>{{data-add}}</b></button>
+      <p class="description description-warning {{description-class}}">{{message}}</p>
+      {{#if data-add}}
+        <button
+          class="collapsed data-add t-primary"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#{{collapse-id}}"
+          aria-expanded="false"
+          aria-controls="{{collapse-id}}"
+        ><b>{{data-add}}</b></button>
+      {{/if}}
     </div>
+
+    {{#if alert-link-list}}
+      <ul>
+        {{#each alert-link-list as |list|}}
+        <li>
+          <a href="#{{id}}" class="t-primary subtitle-small pb-1 pt-1 underline">{{text}}</a>
+        </li>
+        {{/each}}
+      </ul>
+    {{/if}}
   </div>
 {{/if}}

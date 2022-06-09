@@ -1,6 +1,6 @@
 {{#>base/base title="Vantaggi economici | Controllare dati personali"}}
 <main>
-  <div class="container">
+  <div class="container" id="main-container">
     <div class="row justify-content-center">
       <div class="col-12 col-lg-10">
         {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi" link3="Servizi sociali"}}
@@ -22,13 +22,19 @@
       </div>
     </div>
     <div class="steppers-content" aria-live="polite">
-      <div class="row mt-lg-3">
+      <div class="row">
         <div class="col-12 col-lg-3 mb-4 d-none d-lg-block">
           {{>cmp-navscroll/cmp-navscroll accordion-title="INFORMAZIONI RICHIESTE"
             link-list=vantaggi-economici.controllare-dati-personali.navscroll
             br-none="true"}}
         </div>
         <div class="col-12 col-lg-8 offset-lg-1 mt-2 mt-lgo-0">
+
+            {{> cmp-alert-box/cmp-alert-box warning=true message="Ci sono alcune informazioni mancanti o errate"  
+              alertSpan-class="title-small-semi-bold"
+              description-class="mb-1"
+              class="mb-50"
+              alert-link-list=vantaggi-economici.controllare-dati-personali.anagrafica.alert-list}}
 
             {{#>cmp-card/cmp-card-content-box
             h2-class="mb-1"

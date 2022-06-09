@@ -7,7 +7,7 @@
         <div class="row g-2 g-md-0 flex-md-column">
           {{#if img-path}}
           <div class="col-4 order-2 order-md-1">
-            <img class="rounded-top img-fluid img-responsive" src="https://picsum.photos/400/200" title="titolo immagine"
+            <img class="rounded-top img-fluid img-responsive" src="{{img-path}}" title="titolo immagine"
               alt="descrizione immagine">
           </div>
           {{/if}}
@@ -19,7 +19,7 @@
                 <span class="data">{{card.category-date}}</span>
                 {{/if}}
               </div>
-              <h5 class="card-title u-grey-light">{{card.title}}</h5>
+              <h3 class="h5 card-title u-grey-light">{{card.title}}</h3>
               <p class="card-text d-none d-md-block">{{card.description}}</p>
             </div>
           </div>

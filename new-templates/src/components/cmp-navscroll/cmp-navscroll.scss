@@ -5,9 +5,15 @@
     top: 2.78rem;
   }
 
-  .link-list-wrapper ul li a{
-    line-height: 1.56;
+  .link-list-wrapper ul li a {
+    line-height: 1.5;
   }
+
+  .link-list-wrapper ul li+li {
+    margin-top: 12px;
+  }
+
+
 
   .link-list-wrapper ul li a:hover:not(.disabled) span {
     color: get-color(black, main);
@@ -28,11 +34,13 @@
   &.br-none {
     border-right: none;
   }
+
   &__title {
     text-transform: uppercase;
-    color: #000!important;
+    color: #000 !important;
   }
 }
+
 .inline-menu .link-list-wrapper .link-list:after {
   display: none;
 }
@@ -45,6 +53,6 @@
   padding: 0.5rem 0;
 
   @include media-breakpoint-up(sm) {
-    padding: 0.44rem 0;
+    padding: 14px 0;
   }
 }

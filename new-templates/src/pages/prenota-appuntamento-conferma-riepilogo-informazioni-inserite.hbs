@@ -1,10 +1,10 @@
 {{#>base/base title="Prenota Appuntamento - Verifica dei dati"}}
 <main>
-  <div class="container">
+  <div class="container" id="main-container">
     <div class="row justify-content-center">
       <div class="col-12 col-lg-10">
         {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi" link3="Prenotazioni"}}
-        {{> cmp-heading/cmp-heading 
+        {{> cmp-heading/cmp-heading
         title="Iscrizione alla scuola dell'infanzia" }}
       </div>
 
@@ -22,31 +22,30 @@
       <div class="col-12 col-lg-8">
 
 
-<div class="mt-3">
+<div class="mt-30">
         {{#>cmp-card/cmp-card-content-box
         class="mb-0"
         bg-grey=true
-        h3-title=true
-        h3-class="mb-0"
+        h2-class="mb-0"
         margin-class="mb-4"
         card-title="Riepilogo" }}
 
         {{>cmp-info-summary/cmp-info-summary
-        class="mb-4 mb-lg-30 p-3 p-lg-4"
+        class="mb-3 mb-lg-4 p-3 p-lg-4"
         info-title="Ufficio"
         info=true
         info-list=prenota-appuntamento.office
         }}
 
         {{>cmp-info-summary/cmp-info-summary
-        class="mb-4 mb-lg-30 p-3 p-lg-4"
+        class="mb-3 mb-lg-4 p-3 p-lg-4"
         info-title="Data e orario"
         info=true
         info-list=prenota-appuntamento.date
         }}
 
         {{>cmp-info-summary/cmp-info-summary
-        class="mb-4 mb-lg-30 p-3 p-lg-4"
+        class="mb-3 mb-lg-4 p-3 p-lg-4"
         info-title="Dettagli appuntamento"
         info=true
         info-list=prenota-appuntamento.appointment-details
@@ -70,9 +69,9 @@
 
   <div class="bg-grey-card shadow-contacts">
     <div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-6 offset-lg-3 p-contacts">
-          {{>cmp-contacts/cmp-contacts}}
+      <div class="row d-flex justify-content-center">
+        <div class="col-12 col-lg-6 p-contacts">
+          {{>cmp-contacts/cmp-contacts-trasversali faq=true assistance=true}}
         </div>
       </div>
     </div>

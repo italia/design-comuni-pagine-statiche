@@ -1,28 +1,28 @@
 {{#>base/base title="Tutti i servizi" headerActive3=true}}
-<main>
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12 col-lg-10">
-        {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi"}}
+  <main>
+    <div class="container" id="main-container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-10">
+          {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi"}}
 
-        {{>cmp-hero/cmp-hero
+          {{>cmp-hero/cmp-hero
         hero-title="Servizi"
         hero-text="Tutti i servizi comunali per i cittadini, disponibili online o a sportello,
         per richiedere documenti e permessi, iscriversi a graduatorie ed effettuare pagamenti."
         wrapper-class="pt-0 ps-0 pb-4 pb-lg-60"}}
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="bg-grey-card">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="title-xxlarge mb-4 mt-5 mb-lg-10">Esplora tutti i servizi</h2>
-        </div>
+    <div class="bg-grey-card">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="title-xxlarge mb-4 mt-5 mb-lg-10">Esplora tutti i servizi</h2>
+          </div>
 
-        <div class="col-12 col-lg-8 pt-lg-50 pb-lg-50">
-          {{>partials/input-search/input-search
+          <div class="col-12 col-lg-8 pt-lg-50 pb-lg-50">
+            {{>partials/input-search/input-search
           label-text="Cerca una parola chiave"
           placeholder-text="Cerca una parola chiave"
           search-subtitle=true
@@ -32,7 +32,7 @@
           icon-class="icon-primary"
           }}
 
-          {{>cmp-card-latest-messages/cmp-card-latest-messages
+            {{>cmp-card-latest-messages/cmp-card-latest-messages
           text-small="AMBIENTE"
           text-small-class="underline text-success"
           green-title-big="Abbandono di rifiuti in aree private"
@@ -42,7 +42,7 @@
           cardRounded=true
           }}
 
-          {{>cmp-card-latest-messages/cmp-card-latest-messages
+            {{>cmp-card-latest-messages/cmp-card-latest-messages
           text-small="MOBILITÀ E TRASPORTI"
           text-small-class="underline text-success"
           green-title-big="Abbonamento bike sharing"
@@ -51,7 +51,7 @@
           cardRounded=true
           }}
 
-          {{>cmp-card-latest-messages/cmp-card-latest-messages
+            {{>cmp-card-latest-messages/cmp-card-latest-messages
           text-small="ANAGRAFE E STATO CIVILE"
           text-small-class="underline text-success"
           green-title-big="Albo dei giudici popolari"
@@ -61,7 +61,7 @@
           cardRounded=true
           }}
 
-          {{>cmp-card-latest-messages/cmp-card-latest-messages
+            {{>cmp-card-latest-messages/cmp-card-latest-messages
           text-small="ANAGRAFE E STATO CIVILE"
           text-small-class="underline text-success"
           green-title-big="Abbandono di rifiuti in aree private"
@@ -71,7 +71,7 @@
           cardRounded=true
           }}
 
-          {{>cmp-card-latest-messages/cmp-card-latest-messages
+            {{>cmp-card-latest-messages/cmp-card-latest-messages
           text-small="ANAGRAFE E STATO CIVILE"
           text-small-class="underline text-success"
           green-title-big="Albo scrutatori di seggio"
@@ -80,81 +80,84 @@
           cardRounded=true
           }}
 
-          {{>partials/button/button
+            {{>partials/button/button
           outline-primary="true"
           class="pt-15 pb-15 pl-90 pr-90 mb-30 mt-3 mb-lg-50 full-mb text-button"
           label="Carica altri risultati"
           }}
-        </div>
+          </div>
 
-        <div class="col-12 col-lg-4 pt-30 pt-lg-5 ps-lg-5 order-first order-md-last">
-          <div class="link-list-wrap">
-            <div class="title-xsmall-semi-bold"><span>SERVIZI IN EVIDENZA</span></div>
-            <ul class="link-list t-primary">
-              <li class="mb-3 mt-3">
-                <a class="list-item ps-0 title-medium underline" href="#">
-                  <span>Rilascio Carta Identità Elettronica
-                    (CIE)</span>
-                </a>
-              </li>
-              <li class="mb-3">
-                <a class="list-item ps-0 title-medium underline" href="#">
-                  <span>Cambio di residenza</span>
-                </a>
-              </li>
-              <li class="mb-3">
-                <a class="list-item ps-0 title-medium underline" href="#">
-                  <span>Tributi online</span>
-                </a>
-              </li>
-              <li class="mb-3">
-                <a class="list-item ps-0 title-medium underline" href="#">
-                  <span>Prenotazione appuntamenti</span>
-                </a>
-              </li>
-              <li class="mb-3">
-                <a class="list-item ps-0 title-medium underline" href="#">
-                  <span>Rilascio tessera elettorale</span>
-                </a>
-              </li>
-              <li>
-                <a class="list-item ps-0 title-medium underline" href="#">
-                  <span>Voucher connettività</span>
-                </a>
-              </li>
-            </ul>
+          <div class="col-12 col-lg-4 pt-30 pt-lg-5 ps-lg-5 order-first order-md-last">
+            <div class="link-list-wrap">
+              <div class="title-xsmall-semi-bold"><span>SERVIZI IN EVIDENZA</span></div>
+              <ul class="link-list t-primary">
+                <li class="mb-3 mt-3">
+                  <a class="list-item ps-0 title-medium underline" href="#">
+                    <span>Rilascio Carta Identità Elettronica
+                      (CIE)</span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a class="list-item ps-0 title-medium underline" href="#">
+                    <span>Cambio di residenza</span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a class="list-item ps-0 title-medium underline" href="#">
+                    <span>Tributi online</span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a class="list-item ps-0 title-medium underline" href="#">
+                    <span>Prenotazione appuntamenti</span>
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <a class="list-item ps-0 title-medium underline" href="#">
+                    <span>Rilascio tessera elettorale</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="list-item ps-0 title-medium underline" href="#">
+                    <span>Voucher connettività</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="container">
-    <h2 class="title-xxlarge mt-60 mt-lg-80 mb-4 mb-lg-40">Esplora per categoria</h2>
-    <div class="row flex-wrap justify-content-between gy-4 gy-lg-5 gx-lg-5 pb-3 pb-lg-60 align-items-stretch">
+    <div class="container">
+      <h2 class="title-xxlarge mt-60 mt-lg-80 mb-4 mb-lg-40">Esplora per categoria</h2>
+      <div class="row flex-wrap justify-content-between gy-4 gy-lg-5 gx-lg-5 pb-3 pb-lg-60 align-items-stretch">
 
       <div class="col-12 col-lg-4">
         {{>cmp-card/cmp-card-simple
+        borderlight=true
         classTitle="title-xlarge"
         classText="mb-5"
         card-title="Agricoltura e pesca"
         card-text="Autorizzazioni e politiche alimentari per agricoltura e pesca."
         card-link="Vedi servizi (32)"
         }}
-      </div>
+        </div>
 
       <div class="col-12 col-lg-4">
         {{>cmp-card/cmp-card-simple
+        borderlight=true
         classTitle="title-xlarge"
         classText="mb-5"
         card-title="Ambiente"
         card-text="Aree verdi e parchi, inquinamento, igiene urbana e rifiuti."
         card-link="Vedi servizi (32)"
         }}
-      </div>
+        </div>
 
       <div class="col-12 col-lg-4">
         {{>cmp-card/cmp-card-simple
+        borderlight=true
         classTitle="title-xlarge"
         classText="mb-5"
         card-title="Anagrafe e stato civile"
@@ -162,20 +165,22 @@
         nascita, matrimoni e unioni civili."
         card-link="Vedi servizi (32)"
         }}
-      </div>
+        </div>
 
       <div class="col-12 col-lg-4">
         {{>cmp-card/cmp-card-simple
+        borderlight=true
         classTitle="title-xlarge"
         classText="mb-5"
         card-title="Appalti pubblici"
         card-text="Gare d’appalto e avvisi per lavori, servizi e forniture al Comune."
         card-link="Vedi servizi (32)"
         }}
-      </div>
+        </div>
 
       <div class="col-12 col-lg-4">
         {{>cmp-card/cmp-card-simple
+        borderlight=true
         classTitle="title-xlarge"
         classText="mb-5"
         card-title="Autorizzazioni e concessioni"
@@ -183,10 +188,11 @@
         Comune."
         card-link="Vedi servizi (32)"
         }}
-      </div>
+        </div>
 
       <div class="col-12 col-lg-4">
         {{>cmp-card/cmp-card-simple
+        borderlight=true
         classTitle="title-xlarge"
         classText="mb-5"
         card-title="Catasto e urbanistica"
@@ -194,10 +200,11 @@
         edifici. "
         card-link="Vedi servizi (32)"
         }}
-      </div>
+        </div>
 
       <div class="col-12 col-lg-4">
         {{>cmp-card/cmp-card-simple
+        borderlight=true
         classTitle="title-xlarge"
         classText="mb-5"
         card-title="Cultura e tempo libero"
@@ -205,30 +212,33 @@
         spettacolo e lo sport."
         card-link="Vedi servizi (32)"
         }}
-      </div>
+        </div>
 
       <div class="col-12 col-lg-4">
         {{>cmp-card/cmp-card-simple
+        borderlight=true
         classTitle="title-xlarge"
         classText="mb-5"
         card-title="Educazione e formazione"
         card-text="Iscrizioni, agevolazioni e servizi per nidi, scuole e università."
         card-link="Vedi servizi (32)"
         }}
-      </div>
+        </div>
 
       <div class="col-12 col-lg-4">
         {{>cmp-card/cmp-card-simple
+        borderlight=true
         classTitle="title-xlarge"
         classText="mb-5"
         card-title="Giustizia e sicurezza pubblica"
         card-text="Polizia municipale, tribunale e Protezione civile."
         card-link="Vedi servizi (32)"
         }}
-      </div>
+        </div>
 
       <div class="col-12 col-lg-4">
         {{>cmp-card/cmp-card-simple
+        borderlight=true
         classTitle="title-xlarge"
         classText="mb-5"
         card-title="Imprese e commercio"
@@ -236,79 +246,84 @@
         incentivi e supporto alle imprese."
         card-link="Vedi servizi (32)"
         }}
-      </div>
+        </div>
 
       <div class="col-12 col-lg-4">
         {{>cmp-card/cmp-card-simple
+        borderlight=true
         classTitle="title-xlarge"
         classText="mb-5"
         card-title="Mobilità e trasporti"
         card-text="Parcheggi, viabilità, automobili e trasporto pubblico."
         card-link="Vedi servizi (32)"
         }}
-      </div>
+        </div>
 
       <div class="col-12 col-lg-4">
         {{>cmp-card/cmp-card-simple
+        borderlight=true
         classTitle="title-xlarge"
         classText="mb-5"
         card-title="Salute, benessere e assistenza"
         card-text="Servizi santirari e di sostegno per minori, famiglie, anziani e persone con disabilità."
         card-link="Vedi servizi (32)"
         }}
-      </div>
+        </div>
 
       <div class="col-12 col-lg-4">
         {{>cmp-card/cmp-card-simple
+        borderlight=true
         classTitle="title-xlarge"
         classText="mb-5"
         card-title="Tributi, finanze e contravvenzioni"
         card-text="Tasse e tributi su immobili, rifiuti, affissioni e pubblicità."
         card-link="Vedi servizi (32)"
         }}
-      </div>
+        </div>
 
       <div class="col-12 col-lg-4">
         {{>cmp-card/cmp-card-simple
+        borderlight=true
         classTitle="title-xlarge"
         classText="mb-5"
         card-title="Turismo"
         card-text="Sostegno e sviluppo del turismo, strutture ricettive e informazioni turistiche."
         card-link="Vedi servizi (32)"
         }}
-      </div>
+        </div>
 
       <div class="col-12 col-lg-4">
         {{>cmp-card/cmp-card-simple
+        borderlight=true
         classTitle="title-xlarge"
         classText="mb-5"
         card-title="Vita lavorativa"
         card-text="Lavoro, concorsi e selezioni, licenze, abilitazioni professionali e sicurezza sul lavoro."
         card-link="Vedi servizi (32)"
         }}
-      </div>
-    </div>
-  </div>
-
-
-  <div class="bg-primary">
-    <div class="container">
-      <div class="row d-flex justify-content-center bg-primary">
-        <div class="col-12 col-lg-6 p-lg-0 px-3">
-          {{>cmp-rating/cmp-rating}}
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="bg-grey-card">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-6 offset-lg-3 p-contacts">
-          {{>cmp-contacts/cmp-contacts}}
+
+    <div class="bg-primary">
+      <div class="container">
+        <div class="row d-flex justify-content-center bg-primary">
+          <div class="col-12 col-lg-6">
+            {{>cmp-rating/cmp-rating public-template=true rating-title="Quanto è utile questa pagina?"}}
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</main>
-{{/base/base }}
+
+    <div class="bg-grey-card shadow-contacts">
+      <div class="container">
+        <div class="row d-flex justify-content-center p-contacts">
+          <div class="col-12 col-lg-6">
+            {{>cmp-contacts/cmp-contacts city-problems=true}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  {{/base/base }}

@@ -1,9 +1,9 @@
 {{#>base/base title="Sito pubblico | Ricerca globale | risultati"}}
-<main>
-  <div class="container">
-    <div class="row  mb-md-5">
-      <div class="col-12">
-        {{> cmp-breadcrumbs/cmp-breadcrumbs
+  <main>
+    <div class="container" id="main-container">
+      <div class="row  mb-md-5">
+        <div class="col-12">
+          {{> cmp-breadcrumbs/cmp-breadcrumbs
         link1="Home"
         link2="Ricerca"
         }}
@@ -18,17 +18,31 @@
       </div>
       <div class="col-lg-8 offset-lg-1">
         <div class="d-flex justify-content-between border-bottom border-light pb-3">
-          <span class="search-results"><strong>645</strong> Risultati</span>
+          <span class="search-results u-grey-light"><span class="numResult">645</span> Risultati</span>
           {{>partials/button/button label="Filtra" label-class="t-primary title-xsmall-semi-bold ms-1"
           iconBtn="it-funnel" class="p-0 pe-2 d-lg-none" xs=true modalId="modal-categories"}}
-          {{>partials/button/button label="Rimuovi tutti filtri" label-class="title-xsmall-semi-bold ms-1"
-          class="p-0 pe-2 d-none d-lg-block" xs=true}}
+
+          <button type="button" class="btn d-none d-lg-block btn-result">Rimuovi tutti i filtri</button>
         </div>
+      </div>
 
-        <div class="container p-0">
-          <div class="row flex-column-reverse flex-lg-row">
-            <div class="col-12  pt-3">
-              {{>cmp-card-latest-messages/cmp-card-latest-messages
+      <div class="row justify-content-center">
+        <div class="col-lg-3 d-none d-lg-block scroll-filter-wrapper">
+          {{> cmp-category-list/category-list category=categories-results-filter}}
+        </div>
+        <div class="col-lg-8 offset-lg-1">
+          <div class="d-flex justify-content-between border-bottom border-light pb-3">
+            <span class="search-results u-grey-light"><strong>645</strong> Risultati</span>
+            {{>partials/button/button label="Filtra" label-class="t-primary title-xsmall-semi-bold ms-1"
+          iconBtn="it-funnel" class="p-0 pe-2 d-lg-none" xs=true modalId="modal-categories"}}
+            {{>partials/button/button label="Rimuovi tutti filtri" label-class="title-xsmall-semi-bold ms-1"
+          class="p-0 pe-2 d-none d-lg-block" xs=true}}
+          </div>
+
+          <div class="container p-0">
+            <div class="row flex-column-reverse flex-lg-row">
+              <div class="col-12  pt-3">
+                {{>cmp-card-latest-messages/cmp-card-latest-messages
               text-small="SERVIZI"
               green-title-big="Consegna contenitori rifiuti"
               description="Consegna dei contenitori per il corretto conferimento dei rifiuti nel sistema di raccolta
@@ -38,7 +52,7 @@
               cardRounded=true
               }}
 
-              {{>cmp-card-latest-messages/cmp-card-latest-messages
+                {{>cmp-card-latest-messages/cmp-card-latest-messages
               text-small="SERVIZI"
               green-title-big="Consegna contenitori rifiuti"
               description="Consegna dei contenitori per il corretto conferimento dei rifiuti nel sistema di raccolta
@@ -48,7 +62,7 @@
               cardRounded=true
               }}
 
-              {{>cmp-card-latest-messages/cmp-card-latest-messages
+                {{>cmp-card-latest-messages/cmp-card-latest-messages
               text-small="SERVIZI"
               green-title-big="Conferimento rifiuti presso isole ecologiche mobili"
               description="Le isole ecologiche mobili sono dei piccoli eco-centri nei quali è possibile conferire
@@ -58,7 +72,7 @@
               text-small-class="underline text-success"
               }}
 
-              {{>cmp-card-latest-messages/cmp-card-latest-messages
+                {{>cmp-card-latest-messages/cmp-card-latest-messages
               text-small="SERVIZI"
               green-title-big="Chiedere un rimborso Tari (Tassa sui rifiuti)"
               description="Come chiedere un rimborso per la Tassa sui rifiuti (Tari)."
@@ -67,7 +81,7 @@
               cardRounded=true
               }}
 
-              {{>cmp-card-latest-messages/cmp-card-latest-messages
+                {{>cmp-card-latest-messages/cmp-card-latest-messages
               text-small="NOTIZIE"
               green-title-big="Agevolazioni tariffarie a favore delle categorie svantaggiate"
               description="Da lunedì 16 dicembre sarà possibile richiedere o rinnovare gli abbonamenti"
@@ -75,7 +89,7 @@
               cmp-card-class="mb-30"
               cardRounded=true
               }}
-              {{>cmp-card-latest-messages/cmp-card-latest-messages
+                {{>cmp-card-latest-messages/cmp-card-latest-messages
               text-small="NOTIZIE"
               green-title-big="Accertamenti TaRi: il sindaco e l’assessore fanno il punto"
               description="Circa 17mila le utenze che hanno presentato spontaneamente autodenuncia al Comune e che ora
@@ -84,7 +98,7 @@
               cmp-card-class="mb-30"
               cardRounded=true
               }}
-              {{>cmp-card-latest-messages/cmp-card-latest-messages
+                {{>cmp-card-latest-messages/cmp-card-latest-messages
               text-small="NOTIZIE"
               green-title-big="Accordo tra Cin-Tirrenia e continuità territoriale"
               description="A partire dal 25 febbraio 2019 sarà possibile acquistare l’abbonamento mensile CTM di marzo
@@ -93,7 +107,7 @@
               cmp-card-class="mb-30"
               cardRounded=true
               }}
-              {{>cmp-card-latest-messages/cmp-card-latest-messages
+                {{>cmp-card-latest-messages/cmp-card-latest-messages
               text-small="NOTIZIE"
               green-title-big="Accertamento TARI"
               description="Risultati degli accertamenti TARI"
@@ -101,7 +115,7 @@
               cmp-card-class="mb-30"
               cardRounded=true
               }}
-              {{>cmp-card-latest-messages/cmp-card-latest-messages
+                {{>cmp-card-latest-messages/cmp-card-latest-messages
               text-small="NOTIZIE"
               green-title-big="Agevolazioni tariffarie a carattere sociale delle utenze del Servizio Idrico Integrato"
               description="Pubblicato bando, allegati e modulistica"
@@ -109,7 +123,7 @@
               cmp-card-class="mb-30"
               cardRounded=true
               }}
-              {{>cmp-card-latest-messages/cmp-card-latest-messages
+                {{>cmp-card-latest-messages/cmp-card-latest-messages
               text-small="NOTIZIE"
               green-title-big="La TARI scende del 17,7%"
               description="I dati diffusi dall’Osservatorio prezzi e tariffe di Cittadinanzattiva"
@@ -118,49 +132,42 @@
               cardRounded=true
               }}
 
-              <div class="d-flex justify-content-center">
+                <div class="d-flex justify-content-center">
 
-                {{>partials/button/button
+                  {{>partials/button/button
                 outline-primary="true"
                 class="pt-15 pb-15 pl-90 pr-90 mb-30 mb-lg-50 full-mb text-button"
                 label="Carica altri risultati"
                 }}
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-
-
-
       </div>
     </div>
-  </div>
 
-  <div class="bg-primary">
-    <div class="container">
-      <div class="row d-flex justify-content-center bg-primary">
-        <div class="col-12 col-lg-6 p-lg-0 px-3">
-          {{>cmp-rating/cmp-rating}}
+    <div class="bg-primary">
+      <div class="container">
+        <div class="row d-flex justify-content-center bg-primary">
+          <div class="col-12 col-lg-6">
+            {{>cmp-rating/cmp-rating public-template=true rating-title="Quanto sono utili le informazioni in questa pagina?"}}
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="bg-grey-card">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 py-4">
-          {{>cmp-carousel/cmp-carousel carousel-title="Contenuti correlati" class="carousel-4-card"}}
-        </div>
-        <div class="col-12 col-lg-6 offset-lg-3 py-5">
-          {{>cmp-contacts/cmp-contacts}}
+    <div class="bg-grey-card shadow-contacts">
+      <div class="container">
+        <div class="row d-flex justify-content-center p-contacts">
+          <div class="col-12 col-lg-6">
+            {{>cmp-contacts/cmp-contacts city-problems=true}}
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  {{> cmp-modal/modal-filter-categories categories=categories-results-filter}}
-  {{>cmp-modal/modal-clickMap}}
-</main>
-{{/base/base}}
+    {{> cmp-modal/modal-filter-categories categories=categories-results-filter}}
+    {{>cmp-modal/modal-clickMap}}
+  </main>
+  {{/base/base}}
