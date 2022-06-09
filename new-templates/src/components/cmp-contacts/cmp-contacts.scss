@@ -11,7 +11,6 @@
   .contact-list li{
     @include font(16, 18);
     margin: 1rem 0;
-    text-decoration: underline;
     color: get-color(primary, main);
     font-weight: 400;
 
@@ -25,6 +24,13 @@
     }
     span{
       margin-left: 10px;
+    }
+
+    a {
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 }

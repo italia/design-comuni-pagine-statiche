@@ -122,8 +122,18 @@ a.read-more {
   }
 }
 
+.chip .chip-label:hover {
+  text-decoration: underline;
+}
+
 .card.card-teaser {
   padding: 16px 24px;
+
+  &.card-bg-dark, &.card-bg-warning, &.card-bg-blue {
+    &:hover {
+      color: #fff;
+    }
+  }
 }
 
 #evidenza {

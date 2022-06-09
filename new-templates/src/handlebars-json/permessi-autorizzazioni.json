@@ -256,11 +256,15 @@
         },
         {
           "name": "Dichiarazione di concessione",
-          "description": "dichiarazione_concessione.pdf"
+          "description": "dichiarazione_concessione.pdf",
+          "success": true,
+          "success-message":"Documento caricato con successo"
         },
         {
           "name": "Libretto di circolazione",
-          "description": "libretto_circolazione.pdf"
+          "description": "libretto_circolazione.pdf",
+          "success": true,
+          "success-message":"Documento caricato con successo"
         }
       ],
       "alert-list": [

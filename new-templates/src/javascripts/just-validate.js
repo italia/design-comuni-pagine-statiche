@@ -1,5 +1,9 @@
+/* eslint-disable */
 document.addEventListener("DOMContentLoaded", function () {
   const errorWrapper = document.querySelector('#errorMsgContainer');
+  const formValidate = document.querySelector('#justValidateForm');
+
+  if (!formValidate) return;
   const validate = new bootstrap.FormValidate('#justValidateForm', {
     errorFieldCssClass: 'is-invalid',
     errorLabelCssClass: 'form-feedback',
@@ -59,7 +63,9 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     ])
     .onFail((fields) => {
-      errorWrapper.innerHTML = '';
-      errorWrapper.innerHTML = errorMessage
+      if (errorWrapper) {
+        errorWrapper.innerHTML = '';
+        errorWrapper.innerHTML = errorMessage;
+      }
     })
 })

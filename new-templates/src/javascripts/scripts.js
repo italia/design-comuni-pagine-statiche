@@ -6,9 +6,7 @@ import '../components/cmp-rating/cmp-rating';
 import '../components/partials/toggle/toggle';
 import '../components/cmp-info-button-card/cmp-info-button-card';
 import '../components/cmp-info-checkbox/cmp-info-checkbox';
-
-//Just Validate
-import JustValidate from 'just-validate';
+import './just-validate';
 
 
 const alertMessage = document.getElementById('alert-message');

@@ -109,7 +109,10 @@ for (let i = 0; i < pages.length; i++) {
         ...require('../src/handlebars-json/richiedi-assistenza.json'),
         ...require('../src/handlebars-json/prenotazione-appuntamento'),
         ...require('../src/handlebars-json/domande-frequenti.json')
-      }
+      },
+      minify: {
+        removeRedundantAttributes: false, // do not remove type="text"
+      },
     }),
   );
 }

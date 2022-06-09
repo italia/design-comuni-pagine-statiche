@@ -3,7 +3,6 @@
     background-color: #fff;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     padding: 1rem 1.625rem;
-    text-decoration: underline;
 
     @include media-breakpoint-up(sm) {
       padding: 0.89rem 1.44rem;
@@ -21,11 +20,59 @@
       }
     }
 
-    .list-item-title{
+    .list-item-title {
       color: get-color(primary, main);
     }
   }
-  .icon-color{
-    fill:get-color(black, main);
+
+  .icon-color {
+    fill: get-color(light, grey);
+  }
+
+
+  .link-list-wrapper {
+    ul li a p {
+      @include font(16, 18);
+      line-height: 1.5;
+      font-weight: 400;
+
+      @include media-breakpoint-up(md) {
+        line-height: 1.556;
+      }
+    }
+
+    ul li a.icon-left {
+      padding: 0.75rem 1.063rem;
+
+      @include media-breakpoint-up(sm) {
+        padding: 0.6675rem 0.944rem;
+      }
+
+      .icon {
+        margin-right: 1.688rem;
+
+        @include media-breakpoint-up(sm) {
+          margin-right: 1.5rem;
+        }
+      }
+    }
+
+    &.default {
+      ul li a.icon-left {
+        padding: 0 0.25em;
+
+        @include media-breakpoint-up(sm) {
+          padding: 0 0.25em;
+        }
+
+        .icon {
+          margin-right: 1rem;
+
+          @include media-breakpoint-up(sm) {
+            margin-right: 0.889rem;
+          }
+        }
+      }
+    }
   }
 }

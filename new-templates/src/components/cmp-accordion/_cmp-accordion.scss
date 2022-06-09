@@ -16,6 +16,7 @@
   }
 
   .accordion-header {
+    
     .accordion-button {
       @include font(16, 18);
       padding: 0.875rem 0 0;
@@ -34,6 +35,10 @@
 
       &:not(.collapsed) {
         color: get-color(primary, main);
+
+        .icon{
+          transform: rotate(0);
+        }
 
         &::after {
           transform: scaleY(-1);

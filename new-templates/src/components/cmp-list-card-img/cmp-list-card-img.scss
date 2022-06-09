@@ -70,6 +70,7 @@
         @include font(16, 24);
         line-height: 1.5;
         font-weight: 700;
+        color: #5b6f82;
 
         @include media-breakpoint-up(sm) {
           line-height: 1.556;
