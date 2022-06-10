@@ -25,6 +25,12 @@
     @include font(18, 18);
   }
 
+  .clean-input {
+    position: absolute;
+    right: 0;
+    top: 10px;
+  }
+
   &__text {
     @include font(12, 14);
     font-weight: 400;
@@ -62,5 +68,11 @@
 
   &.active {
     @include font(14, 14);
+  }
+}
+
+.bg-grey-card {
+  .form-group label {
+    color: #455A64;
   }
 }

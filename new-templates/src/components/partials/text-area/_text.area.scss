@@ -13,7 +13,7 @@
     @include font(12, 14);
     font-weight: 400;
     line-height: 1.5;
-    color: get-color(dark, grey);
+    color: #455A64;
     margin-left: 8px;
     opacity: 0.9;
     mix-blend-mode: normal;
@@ -27,12 +27,10 @@
     }
 
     .text-area {
-      height: 40px;
       border: none;
       border-bottom: 1px solid get-color(dark, grey);
       resize: none;
-      overflow: hidden;
-      word-break: break-all;
+      @include font(16, 18);
 
       &.form-control {
         box-shadow: unset;

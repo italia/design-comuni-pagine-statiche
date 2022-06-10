@@ -11,33 +11,22 @@
     <div class="container">
       <div class="row">
         <div class="col-12 px-0 px-lg-2 drop-shadow">
-          <div class="it-hero-card it-hero-bottom-overlapping rounded hero-p">
-            <div class="row">
-              <div class="col">
-                <nav class="breadcrumb-container" aria-label="Percorso di navigazione">
-                  <ol class="breadcrumb mb-10 mb-lg-25">
-                    <li class="breadcrumb-item">
-                      <a href="#" class="text-black text-paragraph-small" title="Vai alla pagina Home" aria-label="Vai alla pagina Home">Home</a><span class="px-2">/</span>
-                    </li>
-                    <li class="breadcrumb-item" aria-current="page">
-                      <a href="#" class="text-black text-paragraph-small" title="Vai alla pagina Argomenti" aria-label="Vai alla pagina Argomenti">Argomenti</a><span class="px-2">/</span>
-                    </li>
-                    <li class="breadcrumb-item active" aria-current="page">
-                      <a href="#" class="text-black text-paragraph-small" title="Vai alla pagina Sport" aria-label="Vai alla pagina Sport">Sport</a>
-                    </li>
-                  </ol>
-                </nav>
+          <div class="it-hero-card it-hero-bottom-overlapping rounded hero-p pb-lg-80">
+            <div class="row justify-content-center">
+              <div class="col-12 col-lg-10">
+                {{>cmp-breadcrumbs/cmp-breadcrumbs class="mt-0" link1="Home" link2="Argomenti" link3="Sport"}}
+
               </div>
             </div>
-            <div class="row sport-wrapper">
-              <div class="col-lg-6">
+            <div class="row sport-wrapper justify-content-between mt-lg-2">
+              <div class="col-12 col-lg-5 offset-lg-1">
                 <h1 class="mb-3 mb-lg-4 title-xxlarge">Sport</h1>
                 <h2 class="visually-hidden" id="news-details">Dettagli della notizia</h2>
                 <p class="u-main-black text-paragraph-regular-medium mb-60">
                   Informazioni su eventi sportivi, impianti comunali, servizi dedicati allo sport
                 </p>
               </div>
-              <div class="col-lg-4 offset-lg-2">
+              <div class="col-12 col-lg-5 me-lg-5">
                 <div class="card-wrapper card-column">
                   <h3 class="title-xsmall-semi-bold">Questo argomento è gestito da:</h3>
                   <div class="card card-teaser card-teaser-info rounded d-flex align-items-center p-3 p-lg-4">
@@ -206,7 +195,7 @@
 
                 <div class="col col-md-8 col-lg-4 py-4 ps-4">
                   <div class="category-top">
-                    <a class=" u-grey-light fw-semibold" href="#">Giunta e consiglio</a>
+                    <a class=" u-grey-light fw-semibold" href="#" title="vai alla sezione - Giunta e consiglio" aria-label="vai alla sezione - Giunta e consiglio">Giunta e consiglio</a>
                   </div>
                   <h4 class="text-paragraph-medium u-grey-light">
                     Gabriele Bianchi
@@ -225,7 +214,7 @@
             <div class="card card-teaser rounded border border-light">
               <div class="card-body">
                 <div class="category-top">
-                  <a class=" u-grey-light fw-semibold" href="#">Aree di competenza</a>
+                  <a class=" u-grey-light fw-semibold" href="#" title="vai alla sezione - Aree di competenza" aria-label="vai alla sezione - Aree di competenza">Aree di competenza</a>
                 </div>
                 <h4 class="text-paragraph-medium u-grey-light">
                   Area impiantistica sportiva e manifestazioni sportive
@@ -238,7 +227,7 @@
             <div class="card card-teaser rounded border border-light">
               <div class="card-body">
                 <div class="category-top">
-                  <a class=" u-grey-light fw-semibold" href="#">Aree di competenza</a>
+                  <a class=" u-grey-light fw-semibold" href="#" title="vai alla sezione - Aree di competenza" aria-label="vai alla sezione - Aree di competenza">Aree di competenza</a>
                 </div>
                 <h4 class="text-paragraph-medium u-grey-light">
                   Dirigente Arch. M. Alessandra Verdi
@@ -272,7 +261,7 @@
             <div class="card card-teaser rounded border border-light">
               <div class="card-body">
                 <div class="category-top">
-                  <a class=" u-grey-light fw-semibold" href="#">Autorizzazioni</a>
+                  <a class=" u-grey-light fw-semibold" href="#" title="vai al servizio - autorizzazioni" aria-label="vai al servizio - autorizzazioni">Autorizzazioni</a>
                 </div>
                 <h4 class="text-paragraph-medium u-grey-light">
                   Rimborsi alle società sportive
@@ -285,7 +274,7 @@
             <div class="card card-teaser rounded border border-light ms-0">
               <div class="card-body">
                 <div class="category-top">
-                  <a class=" u-grey-light fw-semibold" href="#">Appalti pubblici</a>
+                  <a class=" u-grey-light fw-semibold" href="#" title="vai al servizio - appalti pubblici" aria-label="vai al serivzio - appalti pubblici">Appalti pubblici</a>
                 </div>
                 <h4 class="text-paragraph-medium u-grey-light">
                   Concessione degli impianti sportivi
@@ -299,7 +288,7 @@
             <div class="card card-teaser rounded border border-light ms-0">
               <div class="card-body">
                 <div class="category-top">
-                  <a class=" u-grey-light fw-semibold" href="#">Giustizia e sicurezza pubblica</a>
+                  <a class=" u-grey-light fw-semibold" href="#" title="vai al servizio - giustizia e sicurezza pubblica" aria-label="vai al servizio - giustizia e sicurezza pubblica">Giustizia e sicurezza pubblica</a>
                 </div>
                 <h4 class="text-paragraph-medium u-grey-light">
                   Manifestazioni sportive
@@ -334,7 +323,7 @@
             <div class="card card-teaser rounded border border-light">
               <div class="card-body">
                 <div class="category-top">
-                  <a class=" u-grey-light fw-semibold" href="#">Documento albo pretorio</a>
+                  <a class=" u-grey-light fw-semibold" href="#" aria-label="vai al Documento albo pretorio" title="vai al Documento albo pretorio">Documento albo pretorio</a>
                 </div>
                 <h4 class="text-paragraph-medium u-grey-light">
                   Bandi per impianti e manifestazioni
@@ -347,7 +336,7 @@
             <div class="card card-teaser rounded border border-light">
               <div class="card-body">
                 <div class="category-top">
-                  <a class=" u-grey-light fw-semibold" href="#">Modulistica</a>
+                  <a class=" u-grey-light fw-semibold" href="#" title="vai alla modulistica" aria-label="vai alla modulistica">Modulistica</a>
                 </div>
                 <h4 class="text-paragraph-medium u-grey-light">
                   Concessione per la piscina Verdicchio
@@ -360,7 +349,7 @@
             <div class="card card-teaser rounded border border-light">
               <div class="card-body">
                 <div class="category-top">
-                  <a class=" u-grey-light fw-semibold" href="#">Documento albo pretorio</a>
+                  <a class=" u-grey-light fw-semibold" href="#" title="vai al Documento albo pretorio" aria-label="vai al Documento albo pretorio">Documento albo pretorio</a>
                 </div>
                 <h4 class="text-paragraph-medium u-grey-light">
                   Piano lavori 2023

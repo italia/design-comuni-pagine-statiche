@@ -148,6 +148,18 @@
       }
     }
 
+    .close-div {
+      @include media-breakpoint-down(md) {
+        right: auto;
+        left: 360px;
+      }
+
+      @include media-breakpoint-down(xs) {
+        right: auto;
+        left: 330px;
+      }
+    }
+
     .logo-hamburger {
       display: flex;
       align-items: center;
@@ -171,6 +183,7 @@
         font-weight: bold;
         font-size: 24px;
         line-height: 1.167;
+        max-width: 200px;
       }
     }
   }

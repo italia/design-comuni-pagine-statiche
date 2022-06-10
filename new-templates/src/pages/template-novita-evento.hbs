@@ -1,24 +1,9 @@
 {{#>base/base title="Novità evento" headerActive2=true}}
 <main>
-  <div class="container px-4 my-4" id="main-container">
+  <div class="container px-4" id="main-container">
     <div class="row">
       <div class="col px-lg-4">
-        <nav class="breadcrumb-container" aria-label="Percorso di navigazione">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-              <a href="#">Home</a><span class="separator">/</span>
-            </li>
-            <li class="breadcrumb-item">
-              <a href="#">Novità</a><span class="separator">/</span>
-            </li>
-            <li class="breadcrumb-item" aria-current="page">
-              <a href="#">Eventi</a><span class="separator">/</span>
-            </li>
-            <li class="breadcrumb-item active" aria-current="page">
-              <a href="#">363^ Festa di Sant'Efisio</a>
-            </li>
-          </ol>
-        </nav>
+        {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Novità" link3="363^ Festa di Sant'Efisio"}}
       </div>
     </div>
     <div class="row">
@@ -32,8 +17,8 @@
       </div>
       <div class="col-lg-3 offset-lg-1">
         <div class="dropdown d-inline">
-          <button aria-label="condividi sui social" class="btn btn-dropdown dropdown-toggle" type="button" id="shareActions" data-bs-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
+          <button aria-label="condividi sui social" class="btn btn-dropdown dropdown-toggle" type="button"
+            id="shareActions" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <svg class="icon">
               <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-share"></use>
             </svg>
@@ -79,8 +64,8 @@
           </div>
         </div>
         <div class="dropdown d-inline">
-          <button aria-label="vedi azioni da compiere sulla pagina" class="btn btn-dropdown dropdown-toggle" type="button" id="viewActions" data-bs-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
+          <button aria-label="vedi azioni da compiere sulla pagina" class="btn btn-dropdown dropdown-toggle"
+            type="button" id="viewActions" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <svg class="icon">
               <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-more-items"></use>
             </svg>
@@ -127,17 +112,19 @@
         </div>
 
         <div class="mt-4 mb-4">
-          <h6><small>Argomenti</small></h6>
-          <a href="#">
-            <div class="chip chip-simple chip-primary">
-              <span class="chip-label">Cultura</span>
-            </div>
-          </a>
-          <a href="#">
-            <div class="chip chip-simple chip-primary">
-              <span class="chip-label">Vivere la città</span>
-            </div>
-          </a>
+          <span class="subtitle-small">Argomenti</span>
+          <div class="chip-wrapper mt-2">
+            <a href="#" title="vai all'argomento cultura" aria-label="vai all'argomento cultura">
+              <div class="chip chip-simple chip-primary">
+                <span class="chip-label">Cultura</span>
+              </div>
+            </a>
+            <a href="#" title="vai all'argomento - vivere la città" aria-label="vai all'argomento - vivere la città">
+              <div class="chip chip-simple chip-primary">
+                <span class="chip-label">Vivere la città</span>
+              </div>
+            </a>
+          </div>
         </div>
         <div class="mt-5">
           <a href="#" class="btn btn-outline-primary btn-icon" aria-label="vai al calendario eventi"
@@ -306,8 +293,36 @@
             </div>
           </div>
           <div class="ratio ratio-16x9 my-4">
-            <iframe class="embed-responsive-item" title="Video YouTube" aria-label="Video YouTube" src="https://www.youtube.com/embed/0rIBULTnWuQ"
-              allowfullscreen></iframe>
+            <iframe class="embed-responsive-item" title="Video YouTube" aria-label="Video YouTube"
+              src="https://www.youtube.com/embed/0rIBULTnWuQ" allowfullscreen></iframe>
+          </div>
+          <div class="accordion border-0 mb-4" id="videoTranscription">
+            <div class="accordion-item">
+              <div class="accordion-header" id="heading1c">
+                <button class="accordion-button collapsed title-snall-semi-bold py-3" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapse1c" aria-expanded="true" aria-controls="collapse1c"
+                  aria-label="Trascrizione del video">
+                  <div class="button-wrapper d-flex">
+                    Trascrizione del video
+                    <div class="icon-wrapper">
+                      <svg class="icon icon-sm me-1 icon-primary">
+                        <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-expand"></use>
+                      </svg>
+                    </div>
+                </button>
+              </div>
+              <div id="collapse1c" class="accordion-collapse collapse p-0" data-bs-parent="#videoTranscription"
+                role="region" aria-labelledby="heading1c">
+                <div class="accordion-body ps-0 pb-4">
+                  <p class="font-serif mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa necessitatibus
+                    odit, quasi quaerat inventore molestiae repellendus, harum eius adipisci porro, voluptas itaque
+                    corporis tempore pariatur veniam cupiditate! Pariatur, sint amet. Quis, nam quod assumenda fugiat
+                    perspiciatis tenetur necessitatibus. Expedita aliquid ipsa at magni, quas tempora minima voluptas
+                    asperiores eaque nesciunt dicta laborum. Modi repudiandae unde impedit nisi doloremque est tempore
+                    dolor labore id veritatis. Ut dolores perspiciatis placeat totam sint quibusdam nostrum quia ea.</p>
+                </div>
+              </div>
+            </div>
           </div>
           <p class="font-serif">
             Ogni 1° di maggio, quindi, i fedeli accompagnano il Santo in questa tradizionale processione, ripercorrendo
@@ -316,12 +331,12 @@
           </p>
           <div class="pt-3 pb-5">
             <h5 class="h6 font-serif fw-bold">Parteciperanno:</h5>
-            <a href="#">
+            <a href="#" title="vai alla scheda di Valerio Alfio Boi" aria-label="vai alla scheda di Valerio Alfio Boi">
               <div class="chip chip-simple chip-primary">
                 <span class="chip-label">Valerio Alfio Boi</span>
               </div>
             </a>
-            <a href="#">
+            <a href="#" title="vai alla scheda di Marco Murgia" aria-label="vai alla scheda di Marco Murgia">
               <div class="chip chip-simple chip-primary">
                 <span class="chip-label">Marco Murgia</span>
               </div>
@@ -390,7 +405,8 @@
             nella sezione documenti.
           </p>
           <div class="mt-3">
-            <a href="#" class="btn btn-outline-primary btn-icon" aria-abel="aggiungi al calendario l'evento" title="aggiungi al calendario l'evento">
+            <a href="#" class="btn btn-outline-primary btn-icon" aria-abel="aggiungi al calendario l'evento"
+              title="aggiungi al calendario l'evento">
               <svg class="icon icon-primary">
                 <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-plus-circle"></use>
               </svg>
@@ -402,20 +418,24 @@
           <h4>Costi</h4>
           <div class="card no-after border-start mt-3">
             <div class="card-body">
-              <div class="category-top">
-                Tribuna 1 e 4
-              </div>
-              <h5 class="card-title big-heading">&euro; 30</h5>
+              <h5>
+                <span class="category-top">
+                  Tribuna 1 e 4
+                </span>
+              <p class="card-title big-heading">&euro; 30</p>
+              </h5>
               <p class="mt-4">Tribune coperte site nella via Roma lato Palazzo Vivanet (tribuna n. 1) e nella via Roma
                 fronte palazzo Civico (tribuna n. 4), per circa 770 posti a sedere.</p>
             </div>
           </div>
           <div class="card no-after border-start mt-3">
             <div class="card-body">
-              <div class="category-top">
-                Tribuna 3
-              </div>
-              <h5 class="card-title big-heading">&euro; 30</h5>
+              <h5>
+                <span class="category-top">
+                  Tribuna 3
+                </span>
+                <p class="card-title big-heading">&euro; 30</p>
+              </h5>
               <p class="mt-4">Tribuna coperta con la pedana riservata alle persone con disabilità motorie sita nella via
                 Roma fronte Palazzo Vivanet, per circa 190 posti a sedere, di cui circa 30 posti nella pedana anzi
                 detta. L’accesso sarà consentito con unico biglietto alla persona con disabilità motoria e al proprio
@@ -429,7 +449,7 @@
                 <span class="category-top">
                   Tribuna 5
                 </span>
-                <p class="h5 card-title big-heading">&euro; 25</p>
+                <p class="card-title big-heading">&euro; 25</p>
               </h5>
               <p class="mt-4">Tribuna coperta fronte largo Carlo Felice, dislocata nell'incrocio, nello spazio compreso
                 tra i due semafori della via Roma, per circa 400 posti a sedere.</p>
@@ -437,10 +457,12 @@
           </div>
           <div class="card no-after border-start mt-3">
             <div class="card-body">
-              <div class="category-top">
-                Tribuna 2
-              </div>
-              <h5 class="card-title big-heading">&euro; 15</h5>
+              <h5>
+                <span class="category-top">
+                  Tribuna 2
+                </span>
+                <p class="card-title big-heading">&euro; 15</p>
+              </h5>
               <p class="mt-4">Tribuna coperta dislocata nella piazza Matteotti, antistante la Stazione Ferroviaria, per
                 circa 370 posti a sedere.</p>
             </div>
@@ -454,7 +476,7 @@
             </svg>
             <div class="card-body">
               <h5 class="card-title">
-                <a href="#">Locandina Sant'Efisio 2019</a>
+                <a href="#" title="vai alla locandina sant'efisio 2019" aria-label="vai alla locandina sant'efisio 2019">Locandina Sant'Efisio 2019</a>
               </h5>
             </div>
           </div>
@@ -472,8 +494,11 @@
               <div class="card-text">
                 <p>Via Sant'Efisio, 14 - 09124</p>
                 <p class="mt-3">T +39 070 668632</p>
-                <p><a aria-label="scopri di più su www.festadisantelfisio.com - link esterno - apertura nuova scheda" target="_blank" title="vai sul sito del festival di sant'elfisio" href="#">www.festadisantelfisio.com</a></p>
-                <p><a aria-label="invia un email a arcisantefisio@tiscali.it< - apertura casella portale" title="invia un email" href="#">arcisantefisio@tiscali.it</a></p>
+                <p><a aria-label="scopri di più su www.festadisantelfisio.com - link esterno - apertura nuova scheda"
+                    target="_blank" title="vai sul sito del festival di sant'elfisio"
+                    href="#">www.festadisantelfisio.com</a></p>
+                <p><a aria-label="invia un'email a arcisantefisio@tiscali.it< - apertura casella postale"
+                    title="invia un'email a arcisantefisio@tiscali.it< - apertura casella postale" href="#">arcisantefisio@tiscali.it</a></p>
               </div>
             </div>
           </div>
@@ -489,7 +514,7 @@
               <div class="card-text">
                 <p>Piazza Alcide De Gasperi, 2</p>
                 <p class="mt-3">T +39 070 6776430</p>
-                <p><a href="#">produttive@comune.cagliari.it</a></p>
+                <p><a href="#" aria-label="invia un'email a produttive@comune.cagliari.it - apertura casella portale" title="invia un'email a produttive@comune.cagliari.it - apertura casella portale">produttive@comune.cagliari.it</a></p>
               </div>
             </div>
           </div>
@@ -514,7 +539,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Il ballo dell'isola in festa</h5>
                   <p class="card-text"></p>
-                  <a class="read-more" href="#">
+                  <a class="read-more" href="#" title="leggi di più - Il ballo dell'isola in festa" aria-label="leggi di più - Il ballo dell'isola in festa">
                     <span class="text">Leggi di più</span>
                     <span class="visually-hidden">su Lorem ipsum dolor sit amet, consectetur adipiscing elit…</span>
                     <svg class="icon">
@@ -540,7 +565,7 @@
                 <div class="card-body">
                   <h5 class="card-title">La coralità sarda per Sant'Efisio</h5>
                   <p class="card-text"></p>
-                  <a class="read-more" href="#">
+                  <a class="read-more" href="#" title="leggi di più - la coralità sarda per Sant'Efisio" aria-label="leggi di più - la coralità sarda per Sant'Efisio">
                     <span class="text">Leggi di più</span>
                     <span class="visually-hidden">su Lorem ipsum dolor sit amet, consectetur adipiscing elit…</span>
                     <svg class="icon">
@@ -566,7 +591,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Il ballo dell'isola in festa</h5>
                   <p class="card-text"></p>
-                  <a class="read-more" href="#">
+                  <a class="read-more" href="#" title="leggi di più - il ballo dell'isola in festa" aria-label="leggi di più - il ballo dell'isola in festa">
                     <span class="text">Leggi di più</span>
                     <span class="visually-hidden">su Lorem ipsum dolor sit amet, consectetur adipiscing elit…</span>
                     <svg class="icon">
@@ -582,19 +607,19 @@
           <strong>Patrocinato da:</strong>
           <div class="link-list-wrapper">
             <ul class="link-list">
-              <li><a class="list-item px-0" href="#"><span>Regione Autonome della Sardegna</span></a></li>
+              <li><a class="list-item px-0" href="#" title="vai alla pagina della Regione Autonome della Sardegna" aria-label="vai alla pagina della Regione Autonome della Sardegna"><span>Regione Autonome della Sardegna</span></a></li>
             </ul>
           </div>
           <strong>Sponsor:</strong>
           <div class="link-list-wrapper">
             <ul class="link-list">
-              <li><a class="list-item px-0" href="#"><span>Provincia di Cagliari</span></a></li>
-              <li><a class="list-item px-0" href="#"><span>Sogaer - Aeroporto di Cagliari</span></a></li>
-              <li><a class="list-item px-0" href="#"><span>Autorità Portuale di Cagliari</span></a></li>
-              <li><a class="list-item px-0" href="#"><span>ARST</span></a></li>
-              <li><a class="list-item px-0" href="#"><span>CTM Cagliari</span></a></li>
-              <li><a class="list-item px-0" href="#"><span>Trenitalia</span></a></li>
-              <li><a class="list-item px-0" href="#"><span>Camera di Commercio di Cagliari</span></a></li>
+              <li><a class="list-item px-0" href="#" title="vai alla pagina dello sponsor - Provincia di Cagliari" aria-label="vai alla pagina dello sponsor - Provincia di Cagliari"><span>Provincia di Cagliari</span></a></li>
+              <li><a class="list-item px-0" href="#" title="vai alla pagina dello sponsor - Sogaer - Aeroporto di Cagliari" aria-label="vai alla pagina dello sponsor - Sogaer - Aeroporto di Cagliari"><span>Sogaer - Aeroporto di Cagliari</span></a></li>
+              <li><a class="list-item px-0" href="#" title="vai alla pagina dello sponsor - Autorità Portuale di Cagliari" aria-label="vai alla pagina dello sponsor - Autorità Portuale di Cagliari"><span>Autorità Portuale di Cagliari</span></a></li>
+              <li><a class="list-item px-0" href="#" title="vai alla pagina dello sponsor - ARST" aria-label="vai alla pagina dello sponsor - ARST"><span>ARST</span></a></li>
+              <li><a class="list-item px-0" href="#" title="vai alla pagina dello sponsor - CTM Cagliari" aria-label="vai alla pagina dello sponsor - CTM Cagliari"><span>CTM Cagliari</span></a></li>
+              <li><a class="list-item px-0" href="#" title="vai alla pagina dello sponsor - Trenitalia" aria-label="vai alla pagina dello sponsor - Trenitalia"><span>Trenitalia</span></a></li>
+              <li><a class="list-item px-0" href="#" title="vai alla pagina dello sponsor - Camera di Commercio di Cagliari" aria-label="vai alla pagina dello sponsor - Camera di Commercio di Cagliari"><span>Camera di Commercio di Cagliari</span></a></li>
             </ul>
           </div>
           <div class="mt-5">
@@ -742,15 +767,15 @@
                   <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-info-circle"></use>
                 </svg>
               </div>
-              <p>Per ulteriori informazioni contattare <a href="">santefisio@comune.cagliari.it</a></p>
-              <p><a href="#" aria-label="Ufficio Sant'Elfisio" title="Ufficio Sant'Elfisio">Ufficio Sant'Elfisio</a></p>
+              <p>Per ulteriori informazioni contattare <a href="#" title="invia un'email a santefisio@comune.cagliari.it - apertura casella postale" aria-label="invia un'email a santefisio@comune.cagliari.it - apertura casella postale">santefisio@comune.cagliari.it</a></p>
+              <p><a href="#" aria-label="vai alla pagina - Ufficio Sant'Elfisio" title="vai alla pagina - Ufficio Sant'Elfisio">Ufficio Sant'Elfisio</a></p>
             </div>
           </div>
         </article>
         <article id="ultimo-aggiornamento" class="it-page-section anchor-offset mt-5">
           <h5 class="font-serif">Ultimo aggiornamento</h5>
           <p class="h6"><strong>10/06/2019, 16:00</strong></p>
-          <small><a href="#">Consulta versioni precedenti</a></small>
+          <small><a href="#" title="consulta versioni precedenti" aria-label="consulta versioni precedenti">Consulta versioni precedenti</a></small>
         </article>
       </section>
     </div>
@@ -780,7 +805,7 @@
                     <div class="link-list-wrapper mt-3">
                       <ul class="link-list">
                         <li>
-                          <a class="list-item" href="#"><span>Area servizi civici</span></a>
+                          <a class="list-item" href="#" title="vai alla sezione amministrazione - area servizi civici" aria-label="vai alla sezione amministrazione - area servizi civici"><span>Area servizi civici</span></a>
                         </li>
                       </ul>
                     </div>
@@ -799,10 +824,10 @@
                     <div class="link-list-wrapper mt-3">
                       <ul class="link-list">
                         <li>
-                          <a class="list-item" href="#"><span>Pagamento retta scolastica</span></a>
+                          <a class="list-item" href="#" title="vai alla sezione servizi - pagamento retta scolastica" aria-label="vai alla sezione servizi - pagamento retta scolastica"><span>Pagamento retta scolastica</span></a>
                         </li>
                         <li>
-                          <a class="list-item" href="#"><span>Servizio di trasporto scolastico</span></a>
+                          <a class="list-item" href="#" title="vai alla sezione servizi - Servizio di trasporto scolastico" aria-label="vai alla sezione servizi - Servizio di trasporto scolastico"><span>Servizio di trasporto scolastico</span></a>
                         </li>
                       </ul>
                     </div>
@@ -821,10 +846,10 @@
                     <div class="link-list-wrapper mt-3">
                       <ul class="link-list">
                         <li>
-                          <a class="list-item" href="#"><span>Attestazione ISEE</span></a>
+                          <a class="list-item" href="#" title="vai alla sezione documenti - attestazione ISEE" aria-label="vai alla sezione documenti - attestazione ISEE"><span>Attestazione ISEE</span></a>
                         </li>
                         <li>
-                          <a class="list-item" href="#"><span>Carta dei servizi educativi all'infanzia</span></a>
+                          <a class="list-item" href="#" title="vai alla sezione documenti - Carta dei servizi educativi all'infanzia" aria-label="vai alla sezione documenti - Carta dei servizi educativi all'infanzia"><span>Carta dei servizi educativi all'infanzia</span></a>
                         </li>
                       </ul>
                     </div>
@@ -843,16 +868,16 @@
                     <div class="link-list-wrapper mt-3">
                       <ul class="link-list">
                         <li>
-                          <a class="list-item" href="#"><span>Lorem ipsum dolor sit amet</span></a>
+                          <a class="list-item" href="#" title="vai alla sezione notizie - Lorem ipsum dolor sit amet" aria-label="vai alla sezione notizie - Lorem ipsum dolor sit amet"><span>Lorem ipsum dolor sit amet</span></a>
                         </li>
                         <li>
-                          <a class="list-item" href="#"><span>Lorem ipsum dolor sit amet</span></a>
+                          <a class="list-item" href="#" title="vai alla sezione notizie - Lorem ipsum dolor sit amet" aria-label="vai alla sezione notizie - Lorem ipsum dolor sit amet"><span>Lorem ipsum dolor sit amet</span></a>
                         </li>
                         <li>
-                          <a class="list-item" href="#"><span>Lorem ipsum dolor sit amet</span></a>
+                          <a class="list-item" href="#" title="vai alla sezione notizie - Lorem ipsum dolor sit amet" aria-label="vai alla sezione notizie - Lorem ipsum dolor sit amet"><span>Lorem ipsum dolor sit amet</span></a>
                         </li>
                         <li>
-                          <a class="list-item" href="#"><span>Lorem ipsum dolor sit amet</span></a>
+                          <a class="list-item" href="#" title="vai alla sezione notizie - Lorem ipsum dolor sit amet" aria-label="vai alla sezione notizie - Lorem ipsum dolor sit amet"><span>Lorem ipsum dolor sit amet</span></a>
                         </li>
                       </ul>
                     </div>

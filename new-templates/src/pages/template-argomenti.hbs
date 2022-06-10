@@ -1,18 +1,10 @@
 {{#>base/base title="Argomenti"}}
 <main>
-  <div class="container px-4 my-4" id="main-container">
+  <div class="container px-4" id="main-container">
     <div class="row">
       <div class="col px-lg-2">
-        <nav class="breadcrumb-container" aria-label="Percorso di navigazione">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-              <a href="#">Home</a><span class="separator">/</span>
-            </li>
-            <li class="breadcrumb-item active">
-              <span>Lista Argomenti</span>
-            </li>
-          </ol>
-        </nav>
+        {{> cmp-breadcrumbs/cmp-breadcrumbs link2="Home" link3="Lista Argomenti"}}
+
       </div>
     </div>
     <div class="row">
@@ -35,7 +27,7 @@
                 <input
                   class="form-control"
                   id="input-1"
-                  type="text"
+                  type="search"
                   placeholder="Cerca argomenti"
                   aria-label="Cerca argomenti"
                 />
@@ -60,12 +52,12 @@
           <div class="col pb-5">
             <span class="subtitle-small">Filtri</span>
             <div class="mt-2">
-            <button type="button" class="btn btn-primary btn-sm">Tutto</button>
-            <button type="button" class="btn btn-outline-primary btn-sm">
+            <button type="button" class="btn btn-primary btn-sm" aria-label="filtra - tutto">Tutto</button>
+            <button type="button" class="btn btn-outline-primary btn-sm" aria-label="filtra - ...">
               ...
             </button>
             </div>
-            
+
           </div>
         </div>
       </div>
@@ -73,16 +65,16 @@
         <div class="link-list-wrapper mt-3">
           <ul class="link-list">
             <li>
-              <h3 class="text-uppercase">Più consultati</h3>
+              <span class="text-uppercase h6 mx-4">Più consultati</span>
             </li>
             <li>
-              <a class="list-item" href="#"><span>Muoversi</span></a>
+              <a class="list-item" href="#" title="vai alla pagina - muoversi" aria-label="vai alla pagina - muoversi"><span>Muoversi</span></a>
             </li>
             <li>
-              <a class="list-item" href="#"><span>La città che cambia</span></a>
+              <a class="list-item" href="#" title="vai alla pagina - la città che cambia" aria-label="vai alla pagina - la città che cambia"><span>La città che cambia</span></a>
             </li>
             <li>
-              <a class="list-item" href="#"><span>Cultura</span></a>
+              <a class="list-item" href="#" title="vai alla pagina - cultura" aria-label="vai alla pagina - cultura"><span>Cultura</span></a>
             </li>
           </ul>
         </div>
@@ -101,7 +93,7 @@
         <div class="row it-masonry" data-bs-toggle="masonry"> <!--  data-masonry='{"percentPosition": true }' -->
           <div class="col-sm-6 col-lg-4 mb-4">
             <div class="it-grid-item-wrapper it-grid-item-overlay">
-              <a href="#">
+              <a href="#" title="vai all'argomento - cultura" aria-label="vai all'argomento - cultura">
                 <div class="img-responsive-wrapper">
                   <div class="img-responsive">
                     <div class="img-wrapper">
@@ -121,7 +113,7 @@
           </div>
           <div class="col-sm-6 col-lg-4 mb-4">
             <div class="it-grid-item-wrapper it-grid-item-overlay">
-              <a href="#">
+              <a href="#" title="vai all'argomento - lavorare" aria-label="vai all'argomento - lavorare">
                 <div class="img-responsive-wrapper">
                   <div class="img-responsive">
                     <div class="img-wrapper">
@@ -141,7 +133,7 @@
           </div>
           <div class="col-sm-6 col-lg-4 mb-4">
             <div class="it-grid-item-wrapper it-grid-item-overlay">
-              <a href="#">
+              <a href="#" title="vai all'arogmento spazi verdi" aria-label="vai all'arogmento spazi verdi">
                 <div class="img-responsive-wrapper">
                   <div class="img-responsive">
                     <div class="img-wrapper">
@@ -161,7 +153,7 @@
           </div>
           <div class="col-sm-6 col-lg-4 mb-4">
             <div class="it-grid-item-wrapper it-grid-item-overlay">
-              <a href="#">
+              <a href="#" title="vai all'argomento famiglia" aria-label="vai all'argomento famiglia">
                 <div class="img-responsive-wrapper">
                   <div class="img-responsive">
                     <div class="img-wrapper">
@@ -181,7 +173,7 @@
           </div>
           <div class="col-sm-6 col-lg-4 mb-4">
             <div class="it-grid-item-wrapper it-grid-item-overlay">
-              <a href="#">
+              <a href="#" title="vai all'arogmento partecipare" aria-label="vai all'argomento partecipare">
                 <div class="img-responsive-wrapper">
                   <div class="img-responsive">
                     <div class="img-wrapper">
@@ -201,7 +193,7 @@
           </div>
           <div class="col-sm-6 col-lg-4 mb-4">
             <div class="it-grid-item-wrapper it-grid-item-overlay">
-              <a href="#">
+              <a href="#" title="vai all'argomento muoversi" aria-label="vai all'argomento muoversi">
                 <div class="img-responsive-wrapper">
                   <div class="img-responsive">
                     <div class="img-wrapper">
@@ -221,7 +213,7 @@
           </div>
           <div class="col-sm-6 col-lg-4 mb-4">
             <div class="it-grid-item-wrapper it-grid-item-overlay">
-              <a href="#">
+              <a href="#" title="vai all'argomento sport" aria-label="vai all'argomento sport">
                 <div class="img-responsive-wrapper">
                   <div class="img-responsive">
                     <div class="img-wrapper">
@@ -244,7 +236,7 @@
           <div class="col">
             <nav
               class="pagination-wrapper justify-content-center"
-              aria-label="Esempio di navigazione della pagina" role="navigation">
+              aria-label="Navigazione della pagina" role="navigation">
               <ul class="pagination">
                 <li class="page-item">
                   <a class="page-link" href="#">
@@ -388,7 +380,7 @@
           <div class="col">
             <nav
               class="pagination-wrapper justify-content-center"
-              aria-label="Esempio di navigazione della pagina"
+              aria-label="Navigazione della pagina"
             >
               <ul class="pagination">
                 <li class="page-item">

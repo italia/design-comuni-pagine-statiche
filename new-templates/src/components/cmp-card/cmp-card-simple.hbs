@@ -1,10 +1,10 @@
 <div class="cmp-card-simple card-wrapper pb-0 {{#if borderlight}}border border-light{{/if}}">
   <div class="card shadow-sm rounded">
     <div class="card-body">
-      <a href="#" aria-label="vai all'argomento {{card-title}}" title="vai all'argomento {{card-title}}"><h3 class="card-title t-primary {{classTitle}}">{{card-title}}</h3></a>
+      <a href="#" aria-label="Vai all'argomento {{card-title}}" title="Vai all'argomento {{card-title}}"><h3 class="card-title t-primary {{classTitle}}">{{card-title}}</h3></a>
       <p class="titillium text-paragraph {{classText}}">{{card-text}}</p>
       {{#if card-link}}
-      <a class="read-more mt-4" href="#" title="vai alla pagina - {{card-title}}" aria-label="vai alla pagina - {{card-title}}">
+      <a class="read-more mt-4" href="#" title="{{card-link-accessibility}} {{card-title}}" aria-label="{{card-link-accessibility}} {{card-title}}">
         <span class="text text-button-semi">{{card-link}}</span>
         <span class="visually-hidden">su Lorem ipsum dolor sit amet, consectetur adipiscing elit…</span>
         {{#if icon}}

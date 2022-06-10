@@ -24,6 +24,16 @@
     }
   }
 
+  &-regular-medium-semi {
+    @include font(16, 18);
+    line-height: 1.5;
+    font-weight: 600;
+
+    @include media-breakpoint-up(md) {
+      line-height: 1.556;
+    }
+  }
+
   &-small {
     @include font(14, 16);
     font-weight: 400;

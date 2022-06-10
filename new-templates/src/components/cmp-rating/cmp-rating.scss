@@ -46,17 +46,17 @@
     padding: 0;
   }
 
-  // .rating {
-  //   input {
-  //     &:focus {
-  //       &+label {
-  //         border-color: #f90 !important;
-  //         box-shadow: 0 0 0 2px #f90 !important;
-  //         outline: none !important;
-  //       }
-  //     }
-  //   }
-  // }
+  .rating {
+    input {
+      &:focus {
+        &+label {
+          border-color: #f90 !important;
+          box-shadow: 0 0 0 2px #f90 !important;
+          outline: none !important;
+        }
+      }
+    }
+  }
 }
 
 .cmp-rating-section {

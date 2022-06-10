@@ -1,28 +1,29 @@
 {{#>base/base title="Tutti i servizi" headerActive3=true}}
-  <main>
-    <div class="container" id="main-container">
-      <div class="row justify-content-center">
-        <div class="col-12 col-lg-10">
-          {{> cmp-breadcrumbs/cmp-breadcrumbs link2="Home" link3="Servizi"}}
+<main>
+  <div class="container" id="main-container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        {{> cmp-breadcrumbs/cmp-breadcrumbs link2="Home" link3="Servizi"}}
 
-          {{>cmp-hero/cmp-hero
+        {{>cmp-hero/cmp-hero
         hero-title="Servizi"
         hero-text="Tutti i servizi comunali per i cittadini, disponibili online o a sportello,
         per richiedere documenti e permessi, iscriversi a graduatorie ed effettuare pagamenti."
         wrapper-class="pt-0 ps-0 pb-4 pb-lg-60"}}
-        </div>
       </div>
     </div>
+  </div>
 
-    <div class="bg-grey-card">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="title-xxlarge mb-4 mt-5 mb-lg-10">Esplora tutti i servizi</h2>
-          </div>
+  <div class="bg-grey-card">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="title-xxlarge mb-4 mt-5 mb-lg-10">Esplora tutti i servizi</h2>
+        </div>
 
-          <div class="col-12 col-lg-8 pt-lg-50 pb-lg-50">
-            {{>partials/input-search/input-search
+        <div class="col-12 col-lg-8 pt-lg-50 pb-lg-50">
+          {{>partials/input-search/input-search
+          id="autocomplete-three"
           label-text="Cerca una parola chiave"
           placeholder-text="Cerca una parola chiave"
           search-subtitle=true
@@ -32,8 +33,10 @@
           icon-class="icon-primary"
           }}
 
-            {{>cmp-card-latest-messages/cmp-card-latest-messages
-          category="AMBIENTE"
+          {{>cmp-card-latest-messages/cmp-card-latest-messages
+          category="Ambiente"
+          category-class="text-uppercase"
+          category-class="text-uppercase"
           text-small-class="underline text-success"
           green-title-big="Abbandono di rifiuti in aree private"
           description="Il servizio gestisce gli esposti e le segnalazioni riguardanti l'abbandono di rifiuti in aree
@@ -42,8 +45,9 @@
           cardRounded=true
           }}
 
-            {{>cmp-card-latest-messages/cmp-card-latest-messages
-          category="MOBILITÀ E TRASPORTI"
+          {{>cmp-card-latest-messages/cmp-card-latest-messages
+          category="Mobilità e trasporti"
+          category-class="text-uppercase"
           text-small-class="underline text-success"
           green-title-big="Abbonamento bike sharing"
           description="Sottoscrizione dell’abbonameno al servizio di bike sharing"
@@ -51,8 +55,9 @@
           cardRounded=true
           }}
 
-            {{>cmp-card-latest-messages/cmp-card-latest-messages
-          category="ANAGRAFE E STATO CIVILE"
+          {{>cmp-card-latest-messages/cmp-card-latest-messages
+          category="Anagrafe e stato civile"
+          category-class="text-uppercase"
           text-small-class="underline text-success"
           green-title-big="Albo dei giudici popolari"
           description="Tenuta e aggiornamento dell'Albo dei giudici popolari di Corte di assise e di Corte di assise di
@@ -61,8 +66,9 @@
           cardRounded=true
           }}
 
-            {{>cmp-card-latest-messages/cmp-card-latest-messages
-          category="ANAGRAFE E STATO CIVILE"
+          {{>cmp-card-latest-messages/cmp-card-latest-messages
+          category="Anagrafe e stato civile"
+          category-class="text-uppercase"
           text-small-class="underline text-success"
           green-title-big="Abbandono di rifiuti in aree private"
           description="Albo delle persone idonee a svolgere le funzioni di presidente di seggio in occasione delle
@@ -71,8 +77,9 @@
           cardRounded=true
           }}
 
-            {{>cmp-card-latest-messages/cmp-card-latest-messages
-          category="ANAGRAFE E STATO CIVILE"
+          {{>cmp-card-latest-messages/cmp-card-latest-messages
+          category="Anagrafe e stato civile"
+          category-class="text-uppercase"
           text-small-class="underline text-success"
           green-title-big="Albo scrutatori di seggio"
           description="Tenuta e aggiornamento dell'Albo degli scrutatori di seggio: l'elenco delle persone idonee a
@@ -80,19 +87,20 @@
           cardRounded=true
           }}
 
-            {{>partials/button/button
+          {{>partials/button/button
           outline-primary="true"
           class="pt-15 pb-15 pl-90 pr-90 mb-30 mt-3 mb-lg-50 full-mb text-button"
           label="Carica altri risultati"
+          aria-label="carica altri risultati"
           }}
-          </div>
+        </div>
 
           <div class="col-12 col-lg-4 pt-30 pt-lg-5 ps-lg-5 order-first order-md-last">
             <div class="link-list-wrap">
               <div class="title-xsmall-semi-bold"><span>SERVIZI IN EVIDENZA</span></div>
               <ul class="link-list t-primary">
                 <li class="mb-3 mt-3">
-                  <a class="list-item ps-0 title-medium underline" href="#" title="vai alla pagina rilascio cardta d'identità elettronica" aria-label="vai alla pagina rilascio carta d'identità elettronica">
+                  <a class="list-item ps-0 title-medium underline" href="#" title="vai alla pagina rilascio carta d'identità elettronica" aria-label="vai alla pagina rilascio carta d'identità elettronica">
                     <span>Rilascio Carta Identità Elettronica
                       (CIE)</span>
                   </a>
@@ -128,10 +136,11 @@
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="container">
-      <h2 class="title-xxlarge mt-60 mt-lg-80 mb-4 mb-lg-40">Esplora per categoria</h2>
-      <div class="row flex-wrap justify-content-between gy-4 gy-lg-5 gx-lg-5 pb-3 pb-lg-60 align-items-stretch">
+  <div class="container">
+    <h2 class="title-xxlarge mt-60 mt-lg-80 mb-4 mb-lg-40">Esplora per categoria</h2>
+    <div class="row flex-wrap justify-content-between gy-4 gy-lg-5 gx-lg-5 pb-3 pb-lg-60 align-items-stretch">
 
       <div class="col-12 col-md-6 col-lg-4">
         {{>cmp-card/cmp-card-simple
@@ -141,8 +150,9 @@
         card-title="Agricoltura e pesca"
         card-text="Autorizzazioni e politiche alimentari per agricoltura e pesca."
         card-link="Vedi servizi (32)"
+        card-link-accessibility="Vai alla pagina dei servizi"
         }}
-        </div>
+      </div>
 
       <div class="col-12 col-md-6 col-lg-4">
         {{>cmp-card/cmp-card-simple
@@ -152,8 +162,9 @@
         card-title="Ambiente"
         card-text="Aree verdi e parchi, inquinamento, igiene urbana e rifiuti."
         card-link="Vedi servizi (32)"
+        card-link-accessibility="Vai alla pagina dei servizi"
         }}
-        </div>
+      </div>
 
       <div class="col-12 col-md-6 col-lg-4">
         {{>cmp-card/cmp-card-simple
@@ -164,8 +175,9 @@
         card-text="Documenti d’identità, cambio di residenza, servizi elettorali, cimiteriali e certificati per
         nascita, matrimoni e unioni civili."
         card-link="Vedi servizi (32)"
+        card-link-accessibility="Vai alla pagina dei servizi"
         }}
-        </div>
+      </div>
 
       <div class="col-12 col-md-6 col-lg-4">
         {{>cmp-card/cmp-card-simple
@@ -175,8 +187,9 @@
         card-title="Appalti pubblici"
         card-text="Gare d’appalto e avvisi per lavori, servizi e forniture al Comune."
         card-link="Vedi servizi (32)"
+        card-link-accessibility="Vai alla pagina dei servizi"
         }}
-        </div>
+      </div>
 
       <div class="col-12 col-md-6 col-lg-4">
         {{>cmp-card/cmp-card-simple
@@ -187,8 +200,9 @@
         card-text="Autorizzazioni, permessi, licenze, concessioni di suolo, passi carrabili e prestito di beni del
         Comune."
         card-link="Vedi servizi (32)"
+        card-link-accessibility="Vai alla pagina dei servizi"
         }}
-        </div>
+      </div>
 
       <div class="col-12 col-md-6 col-lg-4">
         {{>cmp-card/cmp-card-simple
@@ -199,8 +213,9 @@
         card-text="Piani urbanistici, piani paesaggistici e tutti i certificati per immobili, case, terreni ed
         edifici. "
         card-link="Vedi servizi (32)"
+        card-link-accessibility="Vai alla pagina dei servizi"
         }}
-        </div>
+      </div>
 
       <div class="col-12 col-md-6 col-lg-4">
         {{>cmp-card/cmp-card-simple
@@ -211,8 +226,9 @@
         card-text="Luoghi della cultura e dell’arte, impianti sportivi e richieste di contributi per la cultura, lo
         spettacolo e lo sport."
         card-link="Vedi servizi (32)"
+        card-link-accessibility="Vai alla pagina dei servizi"
         }}
-        </div>
+      </div>
 
       <div class="col-12 col-md-6 col-lg-4">
         {{>cmp-card/cmp-card-simple
@@ -222,8 +238,9 @@
         card-title="Educazione e formazione"
         card-text="Iscrizioni, agevolazioni e servizi per nidi, scuole e università."
         card-link="Vedi servizi (32)"
+        card-link-accessibility="Vai alla pagina dei servizi"
         }}
-        </div>
+      </div>
 
       <div class="col-12 col-md-6 col-lg-4">
         {{>cmp-card/cmp-card-simple
@@ -233,8 +250,9 @@
         card-title="Giustizia e sicurezza pubblica"
         card-text="Polizia municipale, tribunale e Protezione civile."
         card-link="Vedi servizi (32)"
+        card-link-accessibility="Vai alla pagina dei servizi"
         }}
-        </div>
+      </div>
 
       <div class="col-12 col-md-6 col-lg-4">
         {{>cmp-card/cmp-card-simple
@@ -245,8 +263,9 @@
         card-text="Avvio di un’attività, commercio, autorizzazioni e concessioni per attività produttive, mercati,
         incentivi e supporto alle imprese."
         card-link="Vedi servizi (32)"
+        card-link-accessibility="Vai alla pagina dei servizi"
         }}
-        </div>
+      </div>
 
       <div class="col-12 col-md-6 col-lg-4">
         {{>cmp-card/cmp-card-simple
@@ -256,8 +275,9 @@
         card-title="Mobilità e trasporti"
         card-text="Parcheggi, viabilità, automobili e trasporto pubblico."
         card-link="Vedi servizi (32)"
+        card-link-accessibility="Vai alla pagina dei servizi"
         }}
-        </div>
+      </div>
 
       <div class="col-12 col-md-6 col-lg-4">
         {{>cmp-card/cmp-card-simple
@@ -267,8 +287,9 @@
         card-title="Salute, benessere e assistenza"
         card-text="Servizi santirari e di sostegno per minori, famiglie, anziani e persone con disabilità."
         card-link="Vedi servizi (32)"
+        card-link-accessibility="Vai alla pagina dei servizi"
         }}
-        </div>
+      </div>
 
       <div class="col-12 col-md-6 col-lg-4">
         {{>cmp-card/cmp-card-simple
@@ -278,8 +299,9 @@
         card-title="Tributi, finanze e contravvenzioni"
         card-text="Tasse e tributi su immobili, rifiuti, affissioni e pubblicità."
         card-link="Vedi servizi (32)"
+        card-link-accessibility="Vai alla pagina dei servizi"
         }}
-        </div>
+      </div>
 
       <div class="col-12 col-md-6 col-lg-4">
         {{>cmp-card/cmp-card-simple
@@ -289,8 +311,9 @@
         card-title="Turismo"
         card-text="Sostegno e sviluppo del turismo, strutture ricettive e informazioni turistiche."
         card-link="Vedi servizi (32)"
+        card-link-accessibility="Vai alla pagina dei servizi"
         }}
-        </div>
+      </div>
 
       <div class="col-12 col-md-6 col-lg-4">
         {{>cmp-card/cmp-card-simple
@@ -300,30 +323,31 @@
         card-title="Vita lavorativa"
         card-text="Lavoro, concorsi e selezioni, licenze, abilitazioni professionali e sicurezza sul lavoro."
         card-link="Vedi servizi (32)"
+        card-link-accessibility="Vai alla pagina dei servizi"
         }}
+      </div>
+    </div>
+  </div>
+
+
+  <div class="bg-primary">
+    <div class="container">
+      <div class="row d-flex justify-content-center bg-primary">
+        <div class="col-12 col-lg-6">
+          {{>cmp-rating/cmp-rating public-template=true rating-title="Quanto è utile questa pagina?"}}
         </div>
       </div>
     </div>
+  </div>
 
-
-    <div class="bg-primary">
-      <div class="container">
-        <div class="row d-flex justify-content-center bg-primary">
-          <div class="col-12 col-lg-6">
-            {{>cmp-rating/cmp-rating public-template=true rating-title="Quanto è utile questa pagina?"}}
-          </div>
+  <div class="bg-grey-card shadow-contacts">
+    <div class="container">
+      <div class="row d-flex justify-content-center p-contacts">
+        <div class="col-12 col-lg-6">
+          {{>cmp-contacts/cmp-contacts city-problems=true}}
         </div>
       </div>
     </div>
-
-    <div class="bg-grey-card shadow-contacts">
-      <div class="container">
-        <div class="row d-flex justify-content-center p-contacts">
-          <div class="col-12 col-lg-6">
-            {{>cmp-contacts/cmp-contacts city-problems=true}}
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-  {{/base/base }}
+  </div>
+</main>
+{{/base/base }}

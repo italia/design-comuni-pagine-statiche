@@ -3,16 +3,7 @@
   <div class="container px-4" id="main-container">
     <div class="row justify-content-center w-100 row-shadow">
       <div class="col-12 col-lg-10">
-        <nav class="cmp-breadcrumbs" role="navigation" aria-label="Percorso di navigazione" class="breadcrumb-container">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-              <a href="#">Home</a><span class="separator">/</span>
-            </li>
-            <li aria-current="page" class="breadcrumb-item active">
-              Novità
-            </li>
-          </ol>
-        </nav>
+        {{>cmp-breadcrumbs/cmp-breadcrumbs link2="Home" link3="Novità"}}
 
         {{>cmp-hero/cmp-hero
         hero-title="Notizie"
@@ -20,7 +11,9 @@
         wrapper-class="pt-0 ps-0 pb-4 pb-lg-60"}}
       </div>
     </div>
+  </div>
 
+  <div class="container px-4">
     <h2 class="title-xxlarge mt-70 mb-4 mt-lg-40 pt-lg-2 mb-lg-40 ">Notizie in evidenza</h2>
     {{>cmp-list-card-img/cmp-list-card-img-hr cards=cards.card-news rowClass="pb-60"}}
   </div>
@@ -33,6 +26,7 @@
 
           <div>
             {{>partials/input-search/input-search
+            id="autocomplete-three"
             label-visible=true
             label-text="Cerca per parola chiave"
             search-subtitle=true

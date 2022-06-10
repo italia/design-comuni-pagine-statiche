@@ -1,7 +1,7 @@
 <div class="cmp-text-area {{class}}">
   <div class="form-group">
     <label for="{{id}}" class="visually-hidden">{{placeholder}}{{#if required}}*{{/if}}</label>
-    <textarea class="text-area {{textareaClass}}" id="{{id}}" rows="3" {{#if required}}required{{/if}} maxlength="{{maxlength}}"></textarea>
+    <textarea class="text-area {{textareaClass}}" id="{{id}}" rows="2" {{#if required}}required{{/if}} {{#if maxlength}}="{{maxlength}}"{{/if}}></textarea>
       {{#if label}}
     <span class="label {{labelClass}}">{{label}}</span>
   {{/if}}

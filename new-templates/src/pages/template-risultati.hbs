@@ -1,12 +1,12 @@
 {{#>base/base title="Sito pubblico | Ricerca globale | risultati"}}
 <main>
-  <h1 class="visually-hidden" id="main-container">Ricerca</h1>
+  <h1 class="visually-hidden" id="search-container">Ricerca</h1>
   <div class="container" id="main-container">
     <div class="row  mb-md-5">
       <div class="col-12">
         {{> cmp-breadcrumbs/cmp-breadcrumbs
-        link1="Home"
-        link2="Ricerca"
+        link2="Home"
+        link3="Ricerca"
         }}
 
         {{>cmp-input-search-button/cmp-input-search-button placeholder="Pagamento TARI" marginClass="mt-2 mb-4
@@ -128,6 +128,7 @@
                 outline-primary="true"
                 class="pt-15 pb-15 pl-90 pr-90 mb-30 mb-lg-50 full-mb text-button"
                 label="Carica altri risultati"
+                aria-label="carica altri risultati"
                 }}
               </div>
             </div>

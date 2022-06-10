@@ -66,11 +66,11 @@
     }
 
     .modal-dialog {
-      margin: 3rem 1.5rem;
+      // margin: 3rem 1.5rem;
 
       @include media-breakpoint-up(sm) {
         margin: auto;
-        margin: 2.67rem 1.33rem;
+        // margin: 2.67rem 1.33rem;
         max-width: 38.89rem;
       }
     }

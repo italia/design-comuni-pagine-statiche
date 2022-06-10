@@ -295,6 +295,20 @@ a.read-more {
   }
 }
 
+#contenuti-correlati{
+  .card-wrapper{
+    .card-teaser{
+      .link-list-wrapper{
+        a{
+          span.underline{
+            color: #007A52;
+          }
+        }
+      }
+    }
+  }
+}
+
 
 @media only screen and (min-width: 992px) {
   #argomento .row {

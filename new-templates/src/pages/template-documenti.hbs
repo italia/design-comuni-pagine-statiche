@@ -1,23 +1,14 @@
 {{#>base/base title="Documenti" headerActive1=true}}
 
 <main>
-  <section  id="main-container" class="container px-4 my-4">
+  <section  id="main-container" class="container px-4">
     <div class="row">
       <div class="col px-lg-4">
-        <nav role="navigation" aria-label="Percorso di navigazione" class="breadcrumb-container">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-              <a href="#">Home</a><span class="separator">/</span>
-            </li>
-            <li aria-current="page" class="breadcrumb-item active">
-              Documenti e Dati
-            </li>
-          </ol>
-        </nav>
+        {{>cmp-breadcrumbs/cmp-breadcrumbs link2="Home" link3="Documenti e Dati"}}
       </div>
     </div>
   </section>
-  <section id="intro" class="container px-4 my-4">
+  <section id="intro" class="container px-4">
     <div class="row">
       <div class="col-lg-7 px-lg-4 py-lg-2">
         <h1>Documenti e Dati</h1>
@@ -41,7 +32,7 @@
             </button>
           </div>
           <div class="ms-2 d-inline">
-            <button type="button" class="btn btn-icon btn-outline-primary btn-sm align-top">
+            <button type="button" class="btn btn-icon btn-outline-primary btn-sm align-top" aria-label="aggiungi filtro">
               <svg class="icon icon-primary">
                 <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-plus"></use>
               </svg>
@@ -53,15 +44,15 @@
       <div class="col-lg-4 offset-lg-1 pt-5 pt-lg-2">
         <div class="link-list-wrapper">
           <ul class="link-list">
-            <li><h3 id="heading-senza-link">Tutti i documenti</h3></li>
-            <li><a class="list-item" href="#">Documenti albo pretorio</a></li>
-            <li><a class="list-item" href="#">Modulistica</a></li>
-            <li><a class="list-item" href="#">Documenti funzionamento interno</a></li>
-            <li><a class="list-item" href="#">Normative</a></li>
-            <li><a class="list-item" href="#">Accordi tra enti</a></li>
-            <li><a class="list-item" href="#">Documenti attività politica</a></li>
-            <li><a class="list-item" href="#">Rapporti (tecnici)</a></li>
-            <li><a class="list-item" href="#">Dataset</a></li>
+            <li><span class="h6 mx-4" id="heading-senza-link">Tutti i documenti</span></li>
+            <li><a class="list-item" href="#" title="vai all'argomento - Documenti albo pretorio" aria-label="vai all'argomento - Documenti albo pretorio">Documenti albo pretorio</a></li>
+            <li><a class="list-item" href="#" title="vai all'argomento - Modulistica" aria-label="vai all'argomento - Modulistica">Modulistica</a></li>
+            <li><a class="list-item" href="#" title="vai all'argomento - Documenti funzionamento interno" aria-label="vai all'argomento - Documenti funzionamento interno">Documenti funzionamento interno</a></li>
+            <li><a class="list-item" href="#" title="vai all'argomento - Normative" aria-label="vai all'argomento - Normative">Normative</a></li>
+            <li><a class="list-item" href="#" title="vai all'argomento - Accordi tra enti" aria-label="vai all'argomento - Accordi tra enti">Accordi tra enti</a></li>
+            <li><a class="list-item" href="#" title="vai all'argomento - Documenti attività politica" aria-label="vai all'argomento - Documenti attività politica">Documenti attività politica</a></li>
+            <li><a class="list-item" href="#" title="vai all'argomento - Rapporti (tecnici)" aria-label="vai all'argomento - Rapporti (tecnici)">Rapporti (tecnici)</a></li>
+            <li><a class="list-item" href="#" title="vai all'argomento - Dataset" aria-label="vai all'argomento - Dataset">Dataset</a></li>
           </ul>
         </div>
       </div>
@@ -246,7 +237,7 @@
                 <div class="card-body">
                   <h4 class="card-title big-heading">Documenti</h4>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <a class="read-more" href="#" aria-label="leggi di più Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…" title="vai all'argomento">
+                  <a class="read-more" href="#" aria-label="leggi di più - Documenti" title="leggi di più - Documenti">
                     <span class="text">Leggi di più</span>
                     <svg class="icon">
                       <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-arrow-right"></use>
@@ -264,7 +255,7 @@
                 <div class="card-body">
                   <h4 class="card-title big-heading">Dati</h4>
                   <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <a class="read-more" href="#" aria-label="leggi di più Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…" title="vai all'argomento">
+                  <a class="read-more" href="#" aria-label="leggi di più - Dati" title="leggi di più - Dati">
                     <span class="text">Leggi di più</span>
                     <svg class="icon">
                       <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-arrow-right"></use>
@@ -287,9 +278,9 @@
         </div>
         <div class="row">
           <div class="col text-center">
-            <a href="#"><span class="chip chip-simple chip-primary"><span class="chip-label">Cultura</span></span></a>
-            <a href="#"><span class="chip chip-simple chip-primary"><span class="chip-label">Muoversi</span></span></a>
-            <a href="#"><span class="chip chip-simple chip-primary"><span class="chip-label">Argomento di esempio</span></span></a>
+            <a href="#"><span class="chip chip-simple chip-primary" title="vai all'argomento - Cultura" aria-label="vai all'argomento - Cultura"><span class="chip-label">Cultura</span></span></a>
+            <a href="#"><span class="chip chip-simple chip-primary" title="vai all'argomento - Muoversi" aria-label="vai all'argomento - Muoversi"><span class="chip-label">Muoversi</span></span></a>
+            <a href="#"><span class="chip chip-simple chip-primary" title="vai all'argomento - Argomento di esempio" aria-label="vai all'argomento - Argomento di esempio"><span class="chip-label">Argomento di esempio</span></span></a>
           </div>
         </div>
       </div>

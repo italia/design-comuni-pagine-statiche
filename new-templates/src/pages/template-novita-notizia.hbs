@@ -1,24 +1,9 @@
 {{#>base/base title="Novità notizia"headerActive2=true}}
 <main>
-  <div class="container px-4 my-4" id="main-container">
+  <div class="container px-4" id="main-container">
     <div class="row">
       <div class="col px-lg-4">
-        <nav class="breadcrumb-container" aria-label="Percorso di navigazione">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-              <a href="#">Home</a><span class="separator">/</span>
-            </li>
-            <li class="breadcrumb-item">
-              <a href="#">Novità</a><span class="separator">/</span>
-            </li>
-            <li class="breadcrumb-item" aria-current="page">
-              <a href="#">Notizie</a><span class="separator">/</span>
-            </li>
-            <li class="breadcrumb-item active" aria-current="page">
-              <a href="#">Osservatorio sul turismo</a>
-            </li>
-          </ol>
-        </nav>
+        {{>cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Novità" link3="Osservatorio sul turismo"}}
       </div>
     </div>
     <div class="row">
@@ -45,7 +30,7 @@
       </div>
       <div class="col-lg-3 offset-lg-1">
         <div class="dropdown d-inline">
-  <button class="btn btn-dropdown dropdown-toggle" type="button" id="shareActions" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button aria-label="condividi sui social" class="btn btn-dropdown dropdown-toggle" type="button" id="shareActions" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <svg class="icon">
       <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-share"></use>
     </svg>
@@ -91,7 +76,7 @@
   </div>
 </div>
 <div class="dropdown d-inline">
-  <button class="btn btn-dropdown dropdown-toggle" type="button" id="viewActions" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button class="btn btn-dropdown dropdown-toggle"  aria-label="vedi azioni da compiere sulla pagina" type="button" id="viewActions" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <svg class="icon">
       <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-more-items"></use>
     </svg>
@@ -138,11 +123,13 @@
 </div>
 
         <div class="mt-4 mb-4">
-          <h6><small>Argomenti</small></h6>
-          <a href="#"><div class="chip chip-simple chip-primary">
+          <div class="row">
+            <span class="mb-2 small">Argomenti</span>
+          </div>
+          <a href="#"  title="vai all'argomento - Cultura" aria-label="vai all'argomento - Cultura"><div class="chip chip-simple chip-primary">
               <span class="chip-label">Cultura</span>
             </div></a>
-          <a href="#"><div class="chip chip-simple chip-primary">
+          <a href="#" title="vai all'argomento - Muoversi" aria-label="vai all'argomento - Muoversi"><div class="chip chip-simple chip-primary">
               <span class="chip-label">Muoversi</span>
             </div></a>
         </div>
@@ -240,7 +227,9 @@
               </svg>
               <div class="card-body">
                 <h5 class="card-title">
-                  <a href="#"
+                  <a href="#" title="vai alla pagina - Lo speciale di National Geographic sulle regate in
+                    Sardegna" aria-label="vai alla pagina - Lo speciale di National Geographic sulle regate in
+                    Sardegna"
                   >Lo speciale di National Geographic sulle regate in
                     Sardegna</a
                   >
@@ -253,7 +242,9 @@
               </svg>
               <div class="card-body">
                 <h5 class="card-title">
-                  <a href="#"
+                  <a href="#" title="vai alla pagina - Le rotte del mare: porti e approdi sulle coste
+                    dell'Isola" aria-label="vai alla pagina - Le rotte del mare: porti e approdi sulle coste
+                    dell'Isola"
                   >Le rotte del mare: porti e approdi sulle coste
                     dell'Isola</a
                   >
@@ -284,12 +275,12 @@
             </div>
             <div class="col-12 col-sm-4">
               <h6><small>Persone</small></h6>
-              <a href="#"
+              <a href="#" title="vai alla scehda di Mario Rossi" aria-label="vai alla scheda di Mario Rossi"
               ><div class="chip chip-simple chip-primary">
                 <span class="chip-label">Mario Rossi</span>
               </div></a
               >
-              <a href="#"
+              <a href="#" title="vai alla scheda di Alessandro Bianchi" aria-label="vai alla scheda di Alessandro Bianchi"
               ><div class="chip chip-simple chip-primary">
                 <span class="chip-label">Alessandro Bianchi</span>
               </div></a
@@ -304,7 +295,7 @@
         <article id="ultimo-aggiornamento" class="anchor-offset mt-5">
           <h5 class="font-serif">Ultimo aggiornamento</h5>
           <p class="h6"><strong>10/06/2019, 16:00</strong></p>
-          <small><a href="#">Consulta versioni precedenti</a></small>
+          <small><a href="#" title="consulta versioni precedenti" aria-label="consulta versioni precedenti">Consulta versioni precedenti</a></small>
         </article>
       </section>
     </div>
