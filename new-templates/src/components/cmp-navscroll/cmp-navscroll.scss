@@ -23,6 +23,15 @@
     color: get-color(black, main);
   }
 
+  .link-list-wrapper ul li:not(:last-child) {
+    margin-bottom: 0.75rem;
+
+    @include media-breakpoint-up(sm) {
+      margin-bottom: 0.67rem;
+    }
+  }
+
+
   .link-list-wrapper ul li a:hover:not(.disabled) .icon {
     fill: get-color(black, main);
   }

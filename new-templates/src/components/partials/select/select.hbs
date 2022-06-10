@@ -1,5 +1,5 @@
 <div class="select-wrapper {{class}} {{#if no-bg}}bg-transparent p-0 {{else}}select-partials{{/if}}">
-  <label for="{{id}}" class="{{#if label-hidden}}hidden{{/if}}" {{label-class}}>{{label-text}}{{#if
+  <label for="{{id}}" class="{{#if label-hidden}}visually-hidden{{/if}}" {{label-class}}>{{label-text}}{{#if
     required}}*{{/if}}</label>
   <select id="{{id}}" class="{{#if no-bg}}bg-transparent{{/if}} {{selectClass}}" {{#if required}}required{{/if}}>
     <option selected value="">{{placeholder}}</option>

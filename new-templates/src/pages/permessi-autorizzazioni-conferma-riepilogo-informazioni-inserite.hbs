@@ -90,15 +90,12 @@
         </div>
 
         <h2 class="title-xxlarge mb-4 mt-40">Preferenze di servizio</h2>
-        <div class="mt-4">
           {{#>cmp-card/cmp-card-content-box
-          class="mb-0"
-          bg-grey=true
-          header-m0=true
-          }}
+          bg-grey=true }}
 
           {{>cmp-info-summary/cmp-info-summary
           class="p-4"
+          header-class="pb-2"
           info=true
           info-list=permessi-autorizzazioni.conferma-riepilogo-informazioni.preferenze-servizio
           }}

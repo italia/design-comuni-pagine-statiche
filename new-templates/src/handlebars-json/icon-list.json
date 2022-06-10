@@ -39,19 +39,22 @@
         "icon": "it-calendar",
         "link": "Outlook",
         "classLink":"fw-normal",
-        "icon-class":"icon-primary"
+        "icon-class":"icon-primary",
+        "aria-label":"aggiungi al calendario"
       },
       {
         "icon": "it-calendar",
         "link": "Google Calendar",
         "classLink":"fw-normal",
-        "icon-class":"icon-primary"
+        "icon-class":"icon-primary",
+        "aria-label":"aggiungi al calendario"
       },
       {
         "icon": "it-calendar",
         "link": "iCloud Calendar",
         "classLink":"fw-normal",
-        "icon-class":"icon-primary"
+        "icon-class":"icon-primary",
+        "aria-label":"aggiungi al calendario"
       }
     ]
    }

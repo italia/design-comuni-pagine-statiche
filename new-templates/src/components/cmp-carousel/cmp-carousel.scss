@@ -87,3 +87,14 @@
     }
   }
 }
+.it-carousel-wrapper .splide__pagination button {
+  width: .75rem;
+  height: .75rem;
+  margin: 0 0.25rem;
+
+  @include media-breakpoint-up(sm) {
+    width: 0.67rem;
+    height: 0.67rem;
+    margin: 0 0.25rem;
+  }
+}

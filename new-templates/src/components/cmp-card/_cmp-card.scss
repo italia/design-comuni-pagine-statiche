@@ -15,10 +15,6 @@
 
   .description{
     margin-bottom: 3rem;
-
-    @include media-breakpoint-up(sm) {
-      margin-bottom: 7rem;
-    }
   }
 }
 

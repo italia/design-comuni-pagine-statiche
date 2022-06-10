@@ -3,7 +3,7 @@
     <div class="container" id="main-container">
       <div class="row">
         <div class="col-12 col-lg-10 offset-lg-1">
-          {{>cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Domande più frequenti"}}
+          {{>cmp-breadcrumbs/cmp-breadcrumbs link2="Home" link3="Domande più frequenti"}}
           {{>cmp-heading/cmp-heading
             title="Domande frequenti"
             subTitle="Elenco di risposte alle domande più frequenti raccolte dalle richieste di assistenza dei cittadini."
@@ -20,7 +20,7 @@
           {{>cmp-accordion/cmp-accordion-faq accordion=domande-frequenti.accordion}}
         </div>
         <div class="col-12 col-lg-8 offset-lg-2 px-4">
-          {{>partials/button/button outline-primary=true label="Carica altre domande" class="w-100 mt-40 mb-40 title-medium-bold"}}
+          {{>partials/button/button outline-primary=true label="Carica altre domande" class="w-100 mt-40 mb-40 title-medium-bold" aria-label="carica altre domande da consultare"}}
         </div>
       </div>
     </div>

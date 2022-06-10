@@ -11,6 +11,11 @@
     color: rgba(25,25,25,0.7);
   }
 
+  .category {
+    color: get-color(dark-primary, main);
+    text-decoration: underline;
+  }
+
   .green-title-big {
     @include font(24, 24);
     font-weight: 600;

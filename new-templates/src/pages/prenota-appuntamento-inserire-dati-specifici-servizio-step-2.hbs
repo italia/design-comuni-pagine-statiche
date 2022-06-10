@@ -12,7 +12,7 @@
         step-num="2"
         step-tot="5"
         step-title="Data e orario"
-        classSubtitle="mt-40 mb-40"
+        classSubtitle="mt-40 mb-3"
         subtitle="I campi contraddistinti dal simbolo asterisco (*) sono obbligatori"
         }}
       </div>
@@ -32,11 +32,11 @@
             class="p-big"
             id-title="appointment-available"
             bg-grey=true
-            h2-class="mb-4"
+            h2-class="mb-2"
             card-title="Appuntamenti disponibili*"
             margin-class="mb-40"
             }}
-            {{>partials/select/select class="p-0 mt-1" id="appointment" label-text="Seleziona un mese" placeholder="Seleziona un mese" select-option-list=prenotazione-appuntamento.controllare-dati-personali.appuntamenti-disponibili.select}}
+            {{>partials/select/select class="p-0 mt-1" id="appointment" label-text="Seleziona un mese" label-hidden=true placeholder="Seleziona un mese" select-option-list=prenotazione-appuntamento.controllare-dati-personali.appuntamenti-disponibili.select}}
             {{>cmp-card-radio-list/cmp-card-radio-list radio-list=prenotazione-appuntamento.controllare-dati-personali.appuntamenti-disponibili.radio-list }}
 
             {{/cmp-card/cmp-card-content-box}}

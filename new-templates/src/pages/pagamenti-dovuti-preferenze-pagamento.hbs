@@ -34,6 +34,7 @@
           name="amount"
           text="Inserisci la somma già versata"
           formClass="mb-0 border-bold p-4"}}
+
         </div>
           {{>cmp-info-checkbox/cmp-info-checkbox
             title="Acconto"
@@ -58,7 +59,16 @@
             classCard="p-4"
             classComponent="mt-4"
             }}
-            {{>cmp-tot/cmp-tot class="mt-4 p-4" id="tot-payed" label-title="Totale da versare" label="Inserisci importo" value="734,00 €" name="tot-payed" text="Inserisci l’importo che desideri versare adesso" rest="Rimanente da versare" rest-value="34,00 €"}}
+            {{>cmp-tot/cmp-tot 
+            class="mt-4 p-4" 
+            id="tot-payed" 
+            label-title="Totale da versare" 
+            label="Inserisci importo" 
+            value="734,00 €" 
+            name="tot-payed" 
+            text="Inserisci l’importo che desideri versare adesso" 
+            rest="Rimanente da versare" 
+            rest-value="34,00 €"}}
         {{/cmp-card/cmp-card-content-box}}
 
 

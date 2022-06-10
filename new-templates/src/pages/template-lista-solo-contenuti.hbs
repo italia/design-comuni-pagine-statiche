@@ -1,0 +1,73 @@
+{{#>base/base title="Novità" headerActive2=true}}
+<main>
+  <div class="container px-4" id="main-container">
+    <div class="row justify-content-center w-100 row-shadow">
+      <div class="col-12 col-lg-10">
+        <nav class="cmp-breadcrumbs" role="navigation" aria-label="Percorso di navigazione" class="breadcrumb-container">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="#">Home</a><span class="separator">/</span>
+            </li>
+            <li aria-current="page" class="breadcrumb-item active">
+              Novità
+            </li>
+          </ol>
+        </nav>
+
+        {{>cmp-hero/cmp-hero
+        hero-title="Notizie"
+        hero-text="Tutte le novità comunali per i cittadini per restare aggiornati."
+        wrapper-class="pt-0 ps-0 pb-4 pb-lg-60"}}
+      </div>
+    </div>
+
+    <h2 class="title-xxlarge mt-70 mb-4 mt-lg-40 pt-lg-2 mb-lg-40 ">Notizie in evidenza</h2>
+    {{>cmp-list-card-img/cmp-list-card-img-hr cards=cards.card-news rowClass="pb-60"}}
+  </div>
+
+  <div class="bg-grey-card pb-30 pb-lg-50">
+    <div class="container px-4">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="title-xxlarge mb-4 mt-30 mt-lg-40 mb-lg-60 pt-lg-2">Esplora tutte le novità</h2>
+
+          <div>
+            {{>partials/input-search/input-search
+            label-visible=true
+            label-text="Cerca per parola chiave"
+            search-subtitle=true
+            text-subtitle="62 notizie trovate in ordine alfabetico"
+            text-subtitle-class="u-grey-light text-paragraph-card mt-2 mb-30 mt-lg-3 mb-lg-40"
+            wrapper-class="mb-0"
+            icon-class="icon-primary"
+            }}
+          </div>
+        </div>
+      </div>
+
+      {{>cmp-list-card-img/cmp-list-card-img-hr cards=cards.card-all-news rowClass="pb-4"}}
+      <p class="text-center text-paragraph-regular-medium mb-0">Nessun altro risultato</p>
+    </div>
+  </div>
+
+  <div class="bg-primary">
+    <div class="container">
+      <div class="row d-flex justify-content-center bg-primary">
+        <div class="col-12 col-lg-6">
+          {{>cmp-rating/cmp-rating public-template=true rating-title="Quanto è utile questa pagina?"}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-grey-card shadow-contacts">
+    <div class="container">
+      <div class="row d-flex justify-content-center p-contacts">
+        <div class="col-12 col-lg-6">
+          {{>cmp-contacts/cmp-contacts city-problems=true}}
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{{/base/base }}

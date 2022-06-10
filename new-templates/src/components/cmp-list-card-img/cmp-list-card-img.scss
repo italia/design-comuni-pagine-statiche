@@ -94,6 +94,17 @@
       @include media-breakpoint-up(md) {
         padding: 1.333rem;
       }
+
+      .category-top .data:before {
+        content: "—";
+        display: inline-block;
+        margin: 0;
+        margin-right: 0.5rem;
+
+        @include media-breakpoint-up(sm) {
+          margin-right: 0.444rem;
+        }
+      }
     }
   }
 }
@@ -142,7 +153,7 @@
       font-family: Titillium Web;
       @include font(24, 24);
       font-weight: 700;
-      line-height: 1.67;
+      line-height: 1.167;
       margin-bottom: 1.5rem;
 
       @include media-breakpoint-up(sm) {

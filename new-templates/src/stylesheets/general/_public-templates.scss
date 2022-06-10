@@ -1,9 +1,16 @@
 .card-teaser-wrapper {
   .card-image {
     img {
-      max-width: 150px;
-      max-height: 200px;
       object-fit: cover;
+
+      @include media-breakpoint-up(md) {
+        max-width: 100%;
+      }
+
+      @include media-breakpoint-up(lg) {
+        max-width: 150px;
+        max-height: 200px;
+      }
     }
 
     &.card-bg-image {
@@ -122,6 +129,16 @@ a.read-more {
   }
 }
 
+#tutti-gli-argomenti{
+  .card.card-teaser .icon+.card-body{
+    margin-left: unset;
+  }
+}
+
+.link-list-wrapper ul li a.active span {
+  text-decoration: none;
+}
+
 .chip .chip-label:hover {
   text-decoration: underline;
 }
@@ -129,10 +146,24 @@ a.read-more {
 .card.card-teaser {
   padding: 16px 24px;
 
+  @include media-breakpoint-up(lg) {
+    flex-direction: row;
+  }
+
   &.card-bg-dark, &.card-bg-warning, &.card-bg-blue {
     &:hover {
       color: #fff;
     }
+  }
+}
+
+.card-wrapper.card-teaser-wrapper.card-teaser-block-3>.card-teaser {
+  @include media-breakpoint-up(md) {
+    flex: 0 0 49%;
+  }
+
+  @include media-breakpoint-up(lg) {
+    flex: 0 0 32%;
   }
 }
 

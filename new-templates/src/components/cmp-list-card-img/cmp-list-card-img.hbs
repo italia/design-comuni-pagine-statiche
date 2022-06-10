@@ -22,7 +22,7 @@
         </div>
         <div class="card-body ">
           <div class="category-top cmp-list-card-img__body">
-            <a class="category cmp-list-card-img__body-heading-title underline" href="#">{{card.category}}</a>
+            <a class="category cmp-list-card-img__body-heading-title underline" href="#" title="{{card.category}}" aria-label="{{card.category}}">{{card.category}}</a>
             {{#if card.category-date}}
             <span class="data">{{card.category-date}}</span>
             {{/if}}
@@ -30,7 +30,7 @@
           <h3 class="cmp-list-card-img__body-title ">{{card.title}}</h3>
           <p class="cmp-list-card-img__body-description">{{card.description}}</p>
 
-          <a class=" read-more t-primary text-uppercase cmp-list-card-img__body-link " href="#">
+          <a class=" read-more t-primary text-uppercase cmp-list-card-img__body-link " href="#" title="leggi di più - vai alla pagina {{card.title}}" aria-label="leggi di più - vai alla pagina {{card.title}}">
             <span class="text">{{card.link}}</span>
             <span class="visually-hidden">su Lorem ipsum dolor sit amet, consectetur adipiscing elit…</span>
             <svg class="icon icon-primary icon-xs ml-10">
@@ -44,7 +44,7 @@
 {{/each}}
   <!--end card-->
 
-  {{#if buttonNext}} 
+  {{#if buttonNext}}
   <div class="d-flex justify-content-end">
     {{>partials/button/button  primary="true" class="px-5 py-3 full-mb" }}
   </div>

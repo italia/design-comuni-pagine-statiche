@@ -1,6 +1,6 @@
 <div class="row cmp-list-card-img cmp-list-card-img-hr g-4 align-items-stretch {{rowClass}}">
   {{#each cards as |card|}}
-  <div class="col-12 col-lg-6 col-xl-4">
+  <div class="col-12 col-md-6 col-xl-4">
     <div class="card-wrapper">
 
       <div class="card shadow-sm rounded no-after">
@@ -14,7 +14,9 @@
           <div class="{{#if img-path}}col-8 {{else}} col-12 {{/if}} order-1 order-md-2">
             <div class="{{#if img-path}}card-body {{else}} card-img-none {{/if}}">
               <div class="category-top cmp-list-card-img__body">
+                {{#if card.category}}
                 <a class="category cmp-list-card-img__body-heading-title underline" href="#">{{card.category}}</a>
+                {{/if}}
                 {{#if card.category-date}}
                 <span class="data">{{card.category-date}}</span>
                 {{/if}}
