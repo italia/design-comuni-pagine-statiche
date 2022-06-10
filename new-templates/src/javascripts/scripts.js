@@ -6,7 +6,6 @@ import '../components/cmp-rating/cmp-rating';
 import '../components/partials/toggle/toggle';
 import '../components/cmp-info-button-card/cmp-info-button-card';
 import '../components/cmp-info-checkbox/cmp-info-checkbox';
-import './just-validate';
 
 
 const alertMessage = document.getElementById('alert-message');
@@ -49,3 +48,76 @@ function getSplide() {
   });
   carouselContenuti.mount();
 }
+
+const errorWrapper = document.querySelector('#errorMsgContainer');
+const formValidate = document.querySelector('#justValidateForm');
+
+function validateForm() {
+  if (!formValidate) return;
+  const validate = new bootstrap.FormValidate('#justValidateForm', {
+    errorFieldCssClass: 'is-invalid',
+    errorLabelCssClass: 'form-feedback',
+    errorLabelStyle: '',
+    focusInvalidField: false,
+  })
+  validate
+    .addField('#name', [
+      {
+        rule: 'required',
+        errorMessage: 'Questo campo è richiesto'
+      },
+    ])
+    .addField('#surname', [
+      {
+        rule: 'required',
+        errorMessage: 'Questo campo è richiesto'
+      },
+    ])
+    .addField('#email', [
+      {
+        rule: 'required',
+        errorMessage: 'Questo campo è richiesto'
+      },
+      {
+        rule: 'email',
+        errorMessage: 'Email non valida',
+      },
+    ])
+    .addField('#category', [
+      {
+        rule: 'required',
+        errorMessage: 'Questo campo è richiesto'
+      },
+    ])
+    .addField('#service', [
+      {
+        rule: 'required',
+        errorMessage: 'Questo campo è richiesto'
+      },
+    ])
+    .addField('#description', [
+      {
+        rule: 'required',
+        errorMessage: 'Questo campo è richiesto'
+      },
+      {
+        rule: 'maxLength',
+        value: 600,
+        errorMessage: 'Questo campo può contenere un massimo di 600 caratteri'
+      },
+    ])
+    .addField('#privacy', [
+      {
+        rule: 'required',
+        errorMessage: 'Questo campo è richiesto'
+      },
+    ])
+    .onFail((fields) => {
+      if (errorWrapper) {
+        errorWrapper.innerHTML = '';
+        errorWrapper.innerHTML = errorMessage;
+      }
+    })
+}
+
+validateForm();
