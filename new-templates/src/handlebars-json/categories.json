@@ -1,6 +1,7 @@
 {
   "categories-results-filter": [
     {
+      "h3Title":"true",
       "title":"Tipologie",
       "list":[
             {
@@ -49,6 +50,7 @@
       ]
     },
     {
+      "h3Title":"true",
       "title":"Argomenti",
       "list":[
                     {
@@ -62,12 +64,6 @@
       "id": "water",
       "value": "acqua",
       "label": "Acqua (15)"
-    },
-    {
-      "name": "category",
-      "id": "documents",
-      "value": "documenti",
-      "label": "Documenti (7)"
     },
     {
       "name": "category",

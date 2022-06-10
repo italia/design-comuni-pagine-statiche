@@ -70,6 +70,15 @@
       padding-right: 1.33rem;
     }
 
+    .autocomplete-icon{
+      left: 20px;
+      top: 14px;
+      right: auto;
+      .icon{
+        fill: get-color(primary, main)
+      }
+    }
+
     .input-group-prepend {
       svg {
         fill: get-color(primary, main);

@@ -17,13 +17,13 @@
                 <nav class="breadcrumb-container" aria-label="Percorso di navigazione">
                   <ol class="breadcrumb mb-10 mb-lg-25">
                     <li class="breadcrumb-item">
-                      <span class="text-black text-paragraph-small">Home</span><span class="px-2">/</span>
+                      <a href="#" class="text-black text-paragraph-small" title="Vai alla pagina Home" aria-label="Vai alla pagina Home">Home</a><span class="px-2">/</span>
                     </li>
                     <li class="breadcrumb-item" aria-current="page">
-                      <span class="text-black text-paragraph-small">Argomenti</span><span class="px-2">/</span>
+                      <a href="#" class="text-black text-paragraph-small" title="Vai alla pagina Argomenti" aria-label="Vai alla pagina Argomenti">Argomenti</a><span class="px-2">/</span>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">
-                      <span class="text-black text-paragraph-small">Sport</span>
+                      <a href="#" class="text-black text-paragraph-small" title="Vai alla pagina Sport" aria-label="Vai alla pagina Sport">Sport</a>
                     </li>
                   </ol>
                 </nav>
@@ -32,13 +32,14 @@
             <div class="row sport-wrapper">
               <div class="col-lg-6">
                 <h1 class="mb-3 mb-lg-4 title-xxlarge">Sport</h1>
+                <h2 class="visually-hidden" id="news-details">Dettagli della notizia</h2>
                 <p class="u-main-black text-paragraph-regular-medium mb-60">
                   Informazioni su eventi sportivi, impianti comunali, servizi dedicati allo sport
                 </p>
               </div>
               <div class="col-lg-4 offset-lg-2">
                 <div class="card-wrapper card-column">
-                  <p class="description-small">Questo argomento è gestito da:</p>
+                  <h3 class="title-xsmall-semi-bold">Questo argomento è gestito da:</h3>
                   <div class="card card-teaser card-teaser-info rounded d-flex align-items-center p-3 p-lg-4">
                     <div class="card-body">
                       <h5 class="u-main-black mb-1 title-small-semi-bold-medium">
@@ -100,7 +101,7 @@
                 </div>
                 <div class="card-body p-4">
                   <div class="category-top">
-                    <a class=" u-grey-light fw-semibold" href="#">Notizie</a>
+                    <a class=" u-grey-light fw-semibold" href="#" aria-label="vai all'argomento notizie" title="vai alla pagine di notizie">Notizie</a>
                     <span class="data u-grey-light">18 MAG 2022</span>
                   </div>
                   <h4 class="title-small-semi-bold-big mb-0 u-grey-light">
@@ -183,7 +184,7 @@
 
         <div class="row mt-lg-2">
           <div class="col-12 col-lg-3 offset-lg-9">
-            <button type="button" class="btn btn-primary text-button w-100">Tutte le novità</button>
+            <button type="button" class="btn btn-primary text-button w-100" aria-label="vai alla sezione di tutte le novità" title="vai alla pagina di novità">Tutte le novità</button>
           </div>
         </div>
       </div>
@@ -207,9 +208,9 @@
                   <div class="category-top">
                     <a class=" u-grey-light fw-semibold" href="#">Giunta e consiglio</a>
                   </div>
-                  <h5 class="text-paragraph-medium u-grey-light">
+                  <h4 class="text-paragraph-medium u-grey-light">
                     Gabriele Bianchi
-                  </h5>
+                  </h4>
                   <p class="m-0 u-grey-light text-paragraph-card">
                     Assessore allo sport
                   </p>
@@ -226,9 +227,9 @@
                 <div class="category-top">
                   <a class=" u-grey-light fw-semibold" href="#">Aree di competenza</a>
                 </div>
-                <h5 class="text-paragraph-medium u-grey-light">
+                <h4 class="text-paragraph-medium u-grey-light">
                   Area impiantistica sportiva e manifestazioni sportive
-                </h5>
+                </h4>
                 <p class="m-0 u-grey-light text-paragraph-card">
                   Dirigente Arch. M. Alessandra Verdi
                 </p>
@@ -239,9 +240,9 @@
                 <div class="category-top">
                   <a class=" u-grey-light fw-semibold" href="#">Aree di competenza</a>
                 </div>
-                <h5 class="text-paragraph-medium u-grey-light">
+                <h4 class="text-paragraph-medium u-grey-light">
                   Dirigente Arch. M. Alessandra Verdi
-                </h5>
+                </h4>
                 <p class="m-0 u-grey-light text-paragraph-card">
                   Dirigente Ing. Mauro Brambilla
                 </p>
@@ -249,7 +250,7 @@
             </div>
           </div>
           <div class="col-12 col-lg-3 offset-lg-9">
-            <button type="button" class="btn btn-primary text-button w-100">Tutta l’amministrazione</button>
+            <button type="button" class="btn btn-primary text-button w-100" aria-label="vai alla sezione amministrazione" title="vai alla pagina amministrazione">Tutta l’amministrazione</button>
           </div>
         </div>
 
@@ -273,9 +274,9 @@
                 <div class="category-top">
                   <a class=" u-grey-light fw-semibold" href="#">Autorizzazioni</a>
                 </div>
-                <h5 class="text-paragraph-medium u-grey-light">
+                <h4 class="text-paragraph-medium u-grey-light">
                   Rimborsi alle società sportive
-                </h5>
+                </h4>
                 <p class="text-paragraph-card u-grey-light">
                   Nuovo bando per l’Anno sportivo 2022-2023
                 </p>
@@ -286,9 +287,9 @@
                 <div class="category-top">
                   <a class=" u-grey-light fw-semibold" href="#">Appalti pubblici</a>
                 </div>
-                <h5 class="text-paragraph-medium u-grey-light">
+                <h4 class="text-paragraph-medium u-grey-light">
                   Concessione degli impianti sportivi
-                </h5>
+                </h4>
                 <p class="text-paragraph-card u-grey-light">
                   Domanda per la concessione degli impianti sportivi
                 </p>
@@ -300,9 +301,9 @@
                 <div class="category-top">
                   <a class=" u-grey-light fw-semibold" href="#">Giustizia e sicurezza pubblica</a>
                 </div>
-                <h5 class="text-paragraph-medium u-grey-light">
+                <h4 class="text-paragraph-medium u-grey-light">
                   Manifestazioni sportive
-                </h5>
+                </h4>
                 <p class="text-paragraph-card u-grey-light">
                   Richiesta autorizzativa per eventi sportivi.
                 </p>
@@ -311,7 +312,7 @@
           </div>
         </div>
         <div class="col-12 col-lg-3 offset-lg-9">
-          <button type="button" class="btn btn-primary text-button w-100">Tutti i servizi</button>
+          <button type="button" class="btn btn-primary text-button w-100" aria-label="vai alla sezione di tutti i servizi" title="vai alla pagina di servizi">Tutti i servizi</button>
         </div>
       </div>
     </div>
@@ -335,9 +336,9 @@
                 <div class="category-top">
                   <a class=" u-grey-light fw-semibold" href="#">Documento albo pretorio</a>
                 </div>
-                <h5 class="text-paragraph-medium u-grey-light">
+                <h4 class="text-paragraph-medium u-grey-light">
                   Bandi per impianti e manifestazioni
-                </h5>
+                </h4>
                 <p class="text-paragraph-card u-grey-light">
                   Elenco dei bandi attivi
                 </p>
@@ -348,9 +349,9 @@
                 <div class="category-top">
                   <a class=" u-grey-light fw-semibold" href="#">Modulistica</a>
                 </div>
-                <h5 class="text-paragraph-medium u-grey-light">
+                <h4 class="text-paragraph-medium u-grey-light">
                   Concessione per la piscina Verdicchio
-                </h5>
+                </h4>
                 <p class="text-paragraph-card u-grey-light">
                   Bando per la concessione dell’impianto
                 </p>
@@ -361,9 +362,9 @@
                 <div class="category-top">
                   <a class=" u-grey-light fw-semibold" href="#">Documento albo pretorio</a>
                 </div>
-                <h5 class="text-paragraph-medium u-grey-light">
+                <h4 class="text-paragraph-medium u-grey-light">
                   Piano lavori 2023
-                </h5>
+                </h4>
                 <p class="text-paragraph-card u-grey-light">
                   Deliberazione del Consiglio comunale per piano lavori previsto per il 2023
                 </p>
@@ -372,7 +373,7 @@
           </div>
         </div>
         <div class="col-12 col-lg-3 offset-lg-9">
-          <button type="button" class="btn btn-primary text-button w-100">Tutti i documenti</button>
+          <button type="button" class="btn btn-primary text-button w-100" aria-label="vai alla sezione di tutti i documenti" title="vai alla pagina di documenti">Tutti i documenti</button>
         </div>
       </div>
     </div>

@@ -1,7 +1,11 @@
 {{#if isMobile}}
 {{#each category as |filter|}}
     <div class="categoy-list pb-4">
-      <h2 class="h6 text-uppercase category-list__title">{{filter.title}}</h2>
+      {{#if filter.h3Title}}
+        <h3 class="h6 text-uppercase category-list__title">{{filter.title}}</h3>
+        {{else}}
+        <h2 class="h6 text-uppercase category-list__title">{{filter.title}}</h2>
+      {{/if}}
       <ul>
         {{#each filter.list as |checkbox|}}
           <li>
@@ -19,7 +23,11 @@
 {{else}}
 {{#each category as |filter|}}
     <div class="categoy-list pb-4">
-      <h2 class="h6 text-uppercase category-list__title">{{filter.title}}</h2>
+      {{#if filter.h3Title}}
+        <h3 class="h6 text-uppercase category-list__title">{{filter.title}}</h3>
+        {{else}}
+        <h2 class="h6 text-uppercase category-list__title">{{filter.title}}</h2>
+      {{/if}}
       <ul>
         {{#each filter.list as |checkbox|}}
           <li>

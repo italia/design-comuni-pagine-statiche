@@ -21,19 +21,15 @@
                     </svg>
                   </button>
                 </div>
-                <div class="form-group">
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text">
-                        <svg class="icon icon-md">
-                          <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-search"></use>
-                        </svg>
-                      </div>
-                    </div>
-                    <label for="input-group-1">Con Etichetta</label>
-                    <input type="text" class="form-control" id="input-group-1" name="input-group-1"
-                      placeholder="Cerca nel sito">
-                  </div>
+                <div class="form-group autocomplete-wrapper">
+                <label for="autocomplete-two" class="visually-hidden">Cerca nel sito</label>
+                <input type="search" class="autocomplete ps-5" placeholder="Cerca nel sito"
+                  id="autocomplete-two"
+                  name="autocomplete-two"
+                  data-bs-autocomplete="[]">
+                <span class="autocomplete-icon" aria-hidden="true">
+                  <svg class="icon" role="img" aria-labelledby="autocomplete-label"><use href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-search"></use></svg>
+                </span>
                   {{>partials/button/button label="Cerca" primary="true" aria-label="cerca in tutto il sito"}}
                 </div>
               </div>
