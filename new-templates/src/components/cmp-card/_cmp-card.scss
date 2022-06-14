@@ -48,6 +48,10 @@
    @include media-breakpoint-up(sm) {
       margin-bottom: 0.889rem;
     }
+
+    &.m-0{
+      margin: 0 !important;
+    }
   }
 
   .card {

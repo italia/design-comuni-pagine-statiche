@@ -1,3 +1,9 @@
 <div class="cmp-tag">
-  <a class="cmp-tag__tag title-xsmall text-decoration-none {{class}}" href="#">{{label-tag}}</a>
+  <a class="cmp-tag__tag title-xsmall text-decoration-none {{class}}"
+  {{#if servizio-attivo}} 
+    aria-label="{{label-tag}}" title="{{label-tag}}"
+    {{else}} 
+    aria-label="Visualizza tutti gli argomenti {{label-tag}}" title="Visualizza tutti gli argomenti {{label-tag}}"
+  {{/if}}
+  href="#">{{label-tag}}</a>
 </div>

@@ -472,7 +472,8 @@
         {
           "icon": "it-settings",
           "link": "Richiedi pass residenti",
-          "class": "shadow mb-50 mb-lg-80"
+          "class": "shadow mb-50 mb-lg-80",
+          "aria-label": "Vai alla pagina"
         }
       ]
     },
@@ -545,7 +546,8 @@
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
-              "class": "shadow"
+              "class": "shadow",
+              "aria-label": "Vai al documento"
             }
           ]
         },
@@ -559,12 +561,14 @@
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
-              "class": "shadow"
+              "class": "shadow",
+              "aria-label": "Vai al documento"
             },
             {
               "icon": "it-clip",
               "link": "Graduatoria",
-              "class": "shadow"
+              "class": "shadow",
+              "aria-label": "Vai al documento"
             }
           ]
         },
@@ -578,7 +582,8 @@
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
-              "class": "shadow"
+              "class": "shadow",
+              "aria-label": "Vai al documento"
             }
           ]
         },
@@ -592,7 +597,8 @@
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
-              "class": "shadow"
+              "class": "shadow",
+              "aria-label": "Vai al documento"
             }
           ]
         },
@@ -606,7 +612,8 @@
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
-              "class": "shadow"
+              "class": "shadow",
+              "aria-label": "Vai al documento"
             }
           ]
         }
@@ -623,7 +630,8 @@
             {
               "icon": "it-clip",
               "link": "Ricevuta pagamento",
-              "class": "shadow"
+              "class": "shadow",
+              "aria-label": "Vai al documento"
             }
           ]
         },
@@ -637,7 +645,8 @@
             {
               "icon": "it-clip",
               "link": "Ricevuta pagamento",
-              "class": "shadow"
+              "class": "shadow",
+              "aria-label": "Vai al documento"
             }
           ]
         },
@@ -651,7 +660,8 @@
             {
               "icon": "it-clip",
               "link": "Ricevuta pagamento",
-              "class": "shadow"
+              "class": "shadow",
+              "aria-label": "Vai al documento"
             }
           ]
         },
@@ -665,7 +675,8 @@
             {
               "icon": "it-clip",
               "link": "Ricevuta pagamento",
-              "class": "shadow"
+              "class": "shadow",
+              "aria-label": "Vai al documento"
             }
           ]
         },
@@ -679,7 +690,8 @@
             {
               "icon": "it-clip",
               "link": "Ricevuta pagamento",
-              "class": "shadow"
+              "class": "shadow",
+              "aria-label": "Vai al documento"
             }
           ]
         }

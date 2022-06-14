@@ -309,6 +309,12 @@ a.read-more {
   }
 }
 
+#a-cura-di{
+  .card.card-teaser-info {
+    border-left: 8px solid rgba(0, 122, 82, 0.1);
+  }
+}
+
 
 @media only screen and (min-width: 992px) {
   #argomento .row {

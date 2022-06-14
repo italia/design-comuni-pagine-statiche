@@ -1,6 +1,6 @@
 <div class="cmp-nav-steps">
   <nav class="steppers-nav">
-    <button type="button" class="btn btn-sm steppers-btn-prev p-0" aria-label="torna indietro">
+    <button type="button" class="btn btn-sm steppers-btn-prev p-0" aria-label="Torna indietro allo step precedente">
       <svg class="icon icon-primary icon-sm">
         <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-chevron-left"></use>
       </svg>
@@ -8,11 +8,11 @@
     </button>
 
     {{#if saveBtn}}
-    <button type="button" class="btn btn-outline-primary btn-sm steppers-btn-save d-none d-lg-block saveBtn" aria-label="salva richiesta">
+    <button type="button" class="btn btn-outline-primary btn-sm steppers-btn-save d-none d-lg-block saveBtn" aria-label="Salva la richiesta">
       <span class="text-button-sm t-primary">Salva Richiesta</span>
     </button>
 
-    <button type="button" class="btn btn-outline-primary btn-sm steppers-btn-save d-block d-lg-none saveBtn center" aria-label="salva richiesta">
+    <button type="button" class="btn btn-outline-primary btn-sm steppers-btn-save d-block d-lg-none saveBtn center" aria-label="Salva la richiesta">
       <span class="text-button-sm t-primary">Salva</span>
     </button>
     {{/if}}
@@ -20,14 +20,14 @@
 
     {{#if next}}
     <button {{#if validate}}type="submit" {{else}}type="button"{{/if}} class="btn btn-primary btn-sm steppers-btn-confirm send" {{#if validate}} data-bs-validate="validate" {{else}}data-bs-toggle="modal"
-      data-bs-target="#{{modalId}}" {{/if}} aria-label="invia la richiesta">
+      data-bs-target="#{{modalId}}" {{/if}} aria-label="Invia la richiesta">
       <span class="text-button-sm">Invia</span>
        {{{icon}}}
     </button>
 
     {{else}}
     <button type="button" class="btn btn-primary btn-sm steppers-btn-confirm" data-bs-toggle="modal"
-      data-bs-target="#{{modalId}}" aria-label="avanti allo stp successivo">
+      data-bs-target="#{{modalId}}" aria-label="Vai avanti allo step successivo">
       <span class="text-button-sm">Avanti</span>
       <svg class="icon icon-white icon-sm">
         <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-chevron-right"></use>

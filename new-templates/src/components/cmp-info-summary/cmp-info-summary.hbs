@@ -1,16 +1,17 @@
 <div class="cmp-info-summary bg-white {{class}}">
   <div class="card">
 
-      <div class="card-header border-bottom border-light p-0 mb-0 {{header-class}}{{#if info-title}}d-flex justify-content-between{{/if}} {{#if info-list}}d-flex justify-content-end{{/if}}">
-            {{#if info-title}}
-        <h4 class="title-large-semi-bold mb-3">{{info-title}}</h4>
-        {{/if}}
-        {{#if info-list}}
-           <a href="#" title="modifica {{info-title}}" aria-label="modifica {{info-title}}"><span class="text-button-sm-semi t-primary">Modifica</span></a>
-        {{/if}}    
-      </div>
+    <div
+      class="card-header border-bottom border-light p-0 mb-0 {{header-class}}{{#if info-title}}d-flex justify-content-between{{/if}} {{#if info-list}}d-flex justify-content-end{{/if}}">
+      {{#if info-title}}
+      <h3 class="title-large-semi-bold mb-3">{{info-title}}</h3>
+      {{/if}}
+      {{#if info-list}}
+      <a href="#" title="Modifica {{info-title}}" aria-label="Modifica {{info-title}}"><span
+          class="text-button-sm-semi t-primary">Modifica</span></a>
+      {{/if}}
+    </div>
 
-    
     <div class="card-body p-0">
       {{#if info}}
       {{#each info-list as |info|}}
@@ -71,7 +72,7 @@
     </div>
     <div class="card-footer p-0 {{#if disservizio-page}} d-none {{/if}} ">
       {{#if btn}}
-      {{>partials/button/button label=btn-label-text iconBtn="it-pencil" outline-primary=true class="w-100 mt-3"
+      {{>partials/button/button label=btn-label-text aria-label=btn-label-text iconBtn="it-pencil" outline-primary=true class="w-100 mt-3"
       sm=true}}
       {{/if}}
     </div>

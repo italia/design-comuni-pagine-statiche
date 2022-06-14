@@ -67,7 +67,7 @@
               {{>cmp-icon-card/cmp-icon-card
               icon-color="icon-primary"
               card-class="pt-20 pb-4 pl-30 pr-30"
-              title-class="t-primary mb-2 underline title-small-semi-bold"
+              title-class="t-primary mb-2 title-small-semi-bold"
               shadow-card=true
               card-title="Richiesta pass ZTL"
               date="28/02/2022"
@@ -76,7 +76,7 @@
               {{>cmp-icon-card/cmp-icon-card
               icon-color="icon-primary"
               card-class="pt-20 pb-4 pl-30 pr-30"
-              title-class="t-primary mb-2 underline title-small-semi-bold"
+              title-class="t-primary mb-2 title-small-semi-bold"
               shadow-card=true
               card-title="Richiesta assegno maternità"
               date="12/01/2022"
@@ -85,7 +85,7 @@
               {{>cmp-icon-card/cmp-icon-card
               icon-color="icon-primary"
               card-class="pt-20 pb-4 pl-30 pr-30"
-              title-class="t-primary mb-2 underline title-small-semi-bold"
+              title-class="t-primary mb-2 title-small-semi-bold"
               shadow-card=true
               card-title="Pagamento contravvenzione"
               date="02/10/2022"
@@ -95,7 +95,7 @@
               link=true
               label="Vedi altre attività"
               class="btn-xs btn-me btn-label t-primary"
-              icon="it-files"}}
+              }}
               {{/cmp-card/cmp-card-content-box}}
             </div>
           </div>
@@ -119,7 +119,7 @@
             {{>cmp-accordion/cmp-accordion
             accordion=permessi-autorizzazioni.area-personale.pratiche
             }}
-            {{>partials/button/button label="Vedi altre pratiche" class="p-0 mb-2 pt-3 t-primary title-xsmall-semi-bold
+            {{>partials/button/button link=true label="Vedi altre pratiche" class="d-block p-0 mb-2 pt-3 t-primary title-xsmall-semi-bold
             ps-lg-3"}}
             {{>cmp-filter/cmp-filter
             title="Pagamenti"
@@ -128,7 +128,7 @@
             {{>cmp-accordion/cmp-accordion
             accordion=permessi-autorizzazioni.area-personale.pagamenti
             }}
-            {{>partials/button/button label="Vedi altri pagamenti" class="p-0 mt-3 mb-40 t-primary title-xsmall-semi-bold
+            {{>partials/button/button link=true label="Vedi altri pagamenti" class="d-block p-0 mt-3 mb-40 t-primary title-xsmall-semi-bold
             ps-lg-3"}}
           </div>
         </div>

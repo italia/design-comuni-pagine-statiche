@@ -10,11 +10,13 @@
         double-button=true
         label="Richiedi iscrizione online"
         second-label="Tutte le segnalazioni"
-        btnClass="mb-4 mb-lg-0  full-mobile"
+        btnClass="mb-4 mb-lg-0 full-mobile"
         second-btnClass="mt-4 mb-4 mb-lg-0 full-mobile"
         class="text-button"
         label-tag="Servizio attivo"
-        descriptionAfterTag="Un servizio aperto a tutti i cittadini per segnalare disservizi, guasti e criticità rilevati sul
+        servizio-attivo=true
+        descriptionAfterTag="Un servizio aperto a tutti i cittadini per segnalare disservizi, guasti e criticità
+        rilevati sul
         territorio comunale."
         }}
 
@@ -60,16 +62,21 @@
 
 
 
-        {{#>cmp-card/cmp-card-content-box card-title="Cosa serve" id-title="needed" class="p-3" bg-grey="true" bg-grey-primary=true}}
-        {{>cmp-ul-list/cmp-ul-list heading-title="Per accedere al servizio, assicurati di avere:" font-title="lora fw-normal"
+        {{#>cmp-card/cmp-card-content-box card-title="Cosa serve" id-title="needed" class="p-3" bg-grey="true"
+        bg-grey-primary=true}}
+        {{>cmp-ul-list/cmp-ul-list heading-title="Per accedere al servizio, assicurati di avere:" font-title="lora
+        fw-normal"
         font-list="lora " info-list=scheda-servizio-lista-disservizio.lista-2 }}
         {{/cmp-card/cmp-card-content-box}}
 
 
-        {{#>cmp-card/cmp-card-content-box card-title="Cosa si ottiene" h2-class="mb-3" id-title="obtain" subtitle="Chi segnala un disservizio online identificandosi con identità digitale riceverà, tramite posta elettronica, gli aggiornamenti sullo stato di avanzamento della segnalazione." header-m0=true}}
+        {{#>cmp-card/cmp-card-content-box card-title="Cosa si ottiene" h2-class="mb-3" id-title="obtain" subtitle="Chi
+        segnala un disservizio online identificandosi con identità digitale riceverà, tramite posta elettronica, gli
+        aggiornamenti sullo stato di avanzamento della segnalazione." header-m0=true}}
         {{/cmp-card/cmp-card-content-box}}
 
-        {{#>cmp-card/cmp-card-content-box card-title="Costi" h2-class="mb-3" id-title="costs" subtitle="Il servizio è gratuito" class="mt-30" }}
+        {{#>cmp-card/cmp-card-content-box card-title="Costi" h2-class="mb-3" id-title="costs" subtitle="Il servizio è
+        gratuito" class="mt-30" }}
         {{>cmp-icon-link/cmp-icon-link link="Allegato se necessario"}}
         {{/cmp-card/cmp-card-content-box}}
 
@@ -78,7 +85,8 @@
 
 
 
-        {{#>cmp-card/cmp-card-content-box card-title="Fai una segnalazione" class="p-3" id-title="service-access" subtitle="Invia una segnalazione online dal tuo smartphone o computer" bg-grey="true" }}
+        {{#>cmp-card/cmp-card-content-box card-title="Fai una segnalazione" class="p-3" id-title="service-access"
+        subtitle="Invia una segnalazione online dal tuo smartphone o computer" bg-grey="true" }}
         {{>partials/button/button label="Segnala disservizio" primary="true" class="mobile-full" }}
         <p class="text-paragraph mt-4 mb-3">Oppure, prenota un appuntamento all’Ufficio Relazioni con il Pubblico (URP)
         </p>
@@ -87,11 +95,13 @@
         {{/cmp-card/cmp-card-content-box}}
 
 
-        {{#>cmp-card/cmp-card-content-box card-title="Condizioni di servizio" id-title="conditions" subtitle="Per conoscere i dettagli di scadenze, requisiti e altre informazioni importanti, leggi i termini e le condizioni di servizio." }}
+        {{#>cmp-card/cmp-card-content-box card-title="Condizioni di servizio" id-title="conditions" subtitle="Per
+        conoscere i dettagli di scadenze, requisiti e altre informazioni importanti, leggi i termini e le condizioni di
+        servizio." }}
         {{>cmp-icon-link/cmp-icon-link link="Termini e condizioni di servizio (PDF 1MB)"}}
         {{/cmp-card/cmp-card-content-box}}
 
-                {{#>cmp-card/cmp-card-content-box card-title="Contatti" id-title="contacts"}}
+        {{#>cmp-card/cmp-card-content-box card-title="Contatti" id-title="contacts"}}
 
         <div class="mt-15">
           {{>cmp-card-img/cmp-card-img card-title="Ufficio scuola" card-description="Via Dei Transiti 21, 50302<br> 05

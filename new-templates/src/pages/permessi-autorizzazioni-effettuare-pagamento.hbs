@@ -11,10 +11,11 @@
       <hr class="d-none d-lg-block mb-0 mt-2">
     </div>
     <div class="row">
-      <div class="col-12 col-lg-10 offset-lg-1 pt-2 pt-lg-100">
+      <div class="col-12 col-lg-10 offset-lg-1 pt-2 pt-lg-40">
         {{#>cmp-card/cmp-card-content-box
         cmpClass="mb-30 mb-lg-40"
         class="mb-0 card-summary-grey"
+        header-m0=true
         bg-grey=true
         card-title="Permesso ZTL"
         }}
@@ -22,6 +23,7 @@
         {{>cmp-info-summary/cmp-info-summary
         class="card-summary-inline"
         info=true
+        header-class="d-none"
         effettuare-pagamento=permessi-autorizzazioni.effettuare-pagamento.pagamento-ztl
         }}
 
@@ -36,7 +38,7 @@
         sBtn=true
         classLink="u-grey-dark"
         }}
-          {{>partials/button/button label="paga con pagoPA" primary=true class="btn-icon btn-re square mb-2"   iconBtnUrl="./assets/images/pagopa.svg"}}
+          {{>partials/button/button label="paga con pagoPA" aria-label="Vai a Pagamento con pagoPA" primary=true class="btn-icon btn-re square mb-2"   iconBtnUrl="./assets/images/pagopa.svg"}}
         {{/cmp-text-button/cmp-text-button}}
       </div>
     </div>

@@ -4,10 +4,16 @@
   @include media-breakpoint-up(sm) {
     padding: 1.33rem 0;
   }
+
   /* .shadow-rating {
     box-shadow: inset 0 -1.3rem 0.125rem -0.9rem rgb(0 0 0 / 5%);
   }
  */
+
+  .rating>label svg {
+    fill: #7D97B0;
+  }
+
   .form-group {
     margin-bottom: 0;
     min-height: 5rem;
