@@ -6,7 +6,7 @@
     class="form-control {{inputClass}}"
     id="{{id}}"
     name={{id}}
-    placeholder="{{placeholder}}"
+    {{#if placeholder}} placeholder="{{placeholder}}"{{/if}}
     {{#if required}} required {{/if}}
     {{#if disabled}} disabled {{/if}}
   >

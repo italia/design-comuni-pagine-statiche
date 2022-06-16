@@ -9,6 +9,7 @@
         pClass="mt-3"
         button=true
         label="Richiedi iscrizione online"
+        aria-label="Vai a richiedi online il servizio di mensa scolastica"
         description="Il servizio di mensa scolastica per le scuole dell’infanzia e primarie statali."
         primary=true
         class="text-button"
@@ -75,23 +76,23 @@
         servizio mensa è tenuto a versare, per ciascun pasto, la quota stabilita in base alle fasce Isee approvate con
         delibera di Giunta comunale n. 3/2019. <br><br>
         È riconosciuta l’esenzione per ISEE compreso tra € 0,00 ed € 10.000,00." class="mt-30" }}
-        {{>cmp-icon-link/cmp-icon-link link="Tariffe per la mensa scolastica (PDF 1MB)"}}
+        {{>cmp-icon-link/cmp-icon-link link="Tariffe per la mensa scolastica" dimensione-file="(PDF 1MB)"}}
         {{/cmp-card/cmp-card-content-box}}
 
 
         {{#>cmp-card/cmp-card-content-box card-title="Accedi al servizio" class="p-3" id-title="service-access"
         subtitle="Puoi richiedere il servizio mensa direttamente online tramite identità digitale." bg-grey="true" }}
-        {{>partials/button/button label="Richiedi online" primary="true" class="mobile-full" }}
+        {{>partials/button/button label="Richiedi online" aria-label="Accedi al servizio e richiedi online il servizio di mensa scolastica" primary="true" class="mobile-full" }}
         <p class="text-paragraph mt-4 mb-3">Oppure, puoi prenotare un appuntamento e presentarti presso gli uffici.
         </p>
-        {{>partials/button/button label="Prenota appuntamento" primary="true" class="mobile-full btn-outline-primary
+        {{>partials/button/button label="Prenota appuntamento" aria-label="Vai alla pagina Prenota Appuntamento" primary="true" class="mobile-full btn-outline-primary
         t-primary" }}
         {{/cmp-card/cmp-card-content-box}}
 
         {{#>cmp-card/cmp-card-content-box card-title="Condizioni di servizio" id-title="conditions" subtitle="Per
         conoscere i dettagli di
         scadenze, requisiti e altre informazioni importanti, leggi i termini e le condizioni di servizio." }}
-        {{>cmp-icon-link/cmp-icon-link link="Termini e condizioni di servizio (PDF 1MB)"}}
+        {{>cmp-icon-link/cmp-icon-link link="Termini e condizioni di servizio" dimensione-file="(PDF 1MB)"}}
         {{/cmp-card/cmp-card-content-box}}
 
 

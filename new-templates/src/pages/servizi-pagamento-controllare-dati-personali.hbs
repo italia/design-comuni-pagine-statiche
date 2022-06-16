@@ -8,7 +8,7 @@
         title="Richiesta servizio mensa scolastica"
         subTitle="Inserisci le informazioni necessarie per richiedere il servizio di mensa scolastica.
         Potrai ricontrollare tutti i dati nel riepilogo, prima di inviare la richiesta."
-        description="Hai bisogno di assistenza? <a class='title-small-semi-bold t-primary' href='#'>Contattaci</a>"
+        description="Hai bisogno di assistenza? <a class='title-small-semi-bold t-primary' aria-label='Vai a contattaci per ricevere assistenza' title='Vai a contattaci per ricevere assistenza' href='#'>Contattaci</a>"
         desClass="mt-lg-2"
         }}
       </div>
@@ -47,8 +47,7 @@
 
             {{> cmp-info-button-card/cmp-info-button-card big-title="Giulia Bianchi"
             label-2="Codice Fiscale <br> <span>GLABNC72H25H501Y</span>"
-            data-add="Aggiungi dati"
-            show-more-anagrafica=true
+            show-more-anagrafica-4=true
             btn-label-text="Aggiungi"
             collapse-id="collapse-parents"
             modalId="modal-documents"}}
@@ -65,7 +64,6 @@
             {{> cmp-info-button-card/cmp-info-button-card radio=true group="beneficiaries" idRadio="son"
             radio-title="Francesco Rossi"
             label-2="Codice Fiscale <br> <span>FRARSS72H25H501Y</span>"
-            data-add="Aggiungi dati"
             show-more-anagrafica-3=true
             anagrafica=servizi-pagamento.controllare-dati-personali.anagrafica
             indirizzo=servizi-pagamento.controllare-dati-personali.indirizzo
@@ -77,11 +75,11 @@
 
             {{> cmp-info-button-card/cmp-info-button-card radio=true group="beneficiaries" idRadio="daughter"
             radio-title="Lucia Rossi" label-2="Codice Fiscale <br> <span>LCARSS72H25H501Y</span>"
-            data-add="Aggiungi dati"
             show-more-anagrafica="true"
             collapse-id="collapse-benef-2"
-                        btnDocumenti=true
+            btnDocumenti=true
             btn-label-text="Aggiungi"
+            warning=true
             modalId="modal-documents"}}
 
             {{>partials/button/button label="Aggiungi beneficiario" link="true"
@@ -101,6 +99,8 @@
             {{> cmp-info-button-card/cmp-info-button-card big-title="ISEE: 18.000,00€" label-2="Scadenza ISEE <br>
             <span>01/10/2019</span>"
             show-more-isee="true"
+            warning=true
+            btn-label-text="Correggi"
             collapse-id="collapse2"
             modalId="modal-isee"
             }}

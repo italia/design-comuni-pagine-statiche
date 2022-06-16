@@ -1,20 +1,9 @@
 .cmp-card-simple {
   .card {
+    background-color: transparent;
     &:after {
       content: unset;
     }
-
-    .card-body {
-      padding-bottom: 2.5rem;
-
-      @include media-breakpoint-up(sm) {
-        padding-bottom: 2.222rem;
-      }
-    }
-  }
-
-  .description{
-    margin-bottom: 3rem;
   }
 }
 

@@ -18,7 +18,7 @@
         step-num="2"
         step-tot="5"
         step-title="Dati generali"
-        subtitle="I campi contraddistinti dal simbolo asterisco (*) sono obbligatori"
+        subtitle="I campi contraddistinti dal simbolo asterisco sono obbligatori"
         classSubtitle="mt-40 mb-3"
         }}
       </div>
@@ -46,33 +46,32 @@
             labelSelect="Tipologia"
             classSelect="mt-40 mb-3 mb-lg-30"
             required=true
+            select-id="taxpayer-type"
             select-option-list=pagamenti-dovuti.controllare-dati-personali.select
             margin-class="mb-40"
             }}
             {{> cmp-info-button-card/cmp-info-button-card radio=true group="beneficiaries" idRadio="first"
             radio-title="Giulia Rossi"
             label-2="Codice Fiscale <br> <span>GLABNC72H25H501Y</span>"
-            data-add="Aggiungi dati"
-            show-more-anagrafica="true"
+            show-more-anagrafica-4="true"
             collapse-id="collapse-benef-1"
             modalId="modal-documents"
-            btn-label-text="Aggiungi"
             }}
 
             {{> cmp-info-button-card/cmp-info-button-card radio=true group="beneficiaries" idRadio="second"
             radio-title="Sara Bianchi"
             label-2="Codice Fiscale <br> <span>SRABNC72H25H501Y</span>"
-            data-add="Aggiungi dati"
-            show-more-anagrafica="true"
+            show-more-anagrafica-4="true"
             collapse-id="collapse-benef-2"
             modalId="modal-documents"
-            btn-label-text="Aggiungi"
             }}
 
-            {{>partials/button/button label="Aggiungi contribuente" link="true"
-            icon-url="./assets/bootstrap-italia/dist/svg/sprite.svg#it-close-circle"
-            icon-class="plus-icon icon-primary icon-sm"
-            class="plus-text mt-20"
+            {{>partials/button/button 
+            label="Aggiungi contribuente" 
+            iconBtn="it-plus-circle"
+            sm=true
+            class="plus-text mt-20 p-0"
+            aria-label="Vai ad aggiungi contribuente"
             }}
             {{/cmp-card/cmp-card-content-box}}
           </div>
@@ -108,10 +107,12 @@
             info-appointment=pagamenti-dovuti.controllare-dati-personali.immobili.info-2 accordion=true id="2"
             collapse-id="collapse-benef-5"}}
 
-             {{>partials/button/button label="Aggiungi immobile" link="true"
-            icon-url="./assets/bootstrap-italia/dist/svg/sprite.svg#it-close-circle"
-            icon-class="plus-icon icon-primary icon-sm"
-            class="plus-text mt-20"
+             {{>partials/button/button label="Aggiungi immobile"
+            iconBtn="it-plus-circle"
+            sm=true
+            class="plus-text mt-20 p-0"
+            modalId="modal-tributes"
+            aria-label="Vai ad aggiungi immobile"
             }}
 
             {{/cmp-card/cmp-card-content-box}}

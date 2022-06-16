@@ -1,421 +1,335 @@
 {{#>base/base title="Argomenti"}}
 <main>
   <div class="container px-4" id="main-container">
-    <div class="row">
-      <div class="col px-lg-2">
-        {{> cmp-breadcrumbs/cmp-breadcrumbs link2="Home" link3="Lista Argomenti"}}
+    <div class="row justify-content-center w-100 row-shadow">
+      <div class="col-12 col-lg-10">
 
+        {{>cmp-breadcrumbs/cmp-breadcrumbs link2="Home" link3="Lista Argomenti"}}
+
+        {{>cmp-hero/cmp-hero
+        hero-title="Argomenti"
+        hero-text="Gli argomenti rispondono a un'esigenza di organizzazione dei contenuti del sito istituzionale per
+        temi e rappresentano le principali categorie di contenuti, informazioni e documenti specifici."
+        wrapper-class="pt-0 ps-0 pb-4 pb-lg-60"}}
       </div>
     </div>
+    <h2 class="title-xxlarge mt-70 mb-4 mt-lg-40 pt-lg-2 mb-lg-40 ">In evidenza</h2>
     <div class="row">
-      <div class="col-lg-7 px-lg-2 py-lg-2">
-        <div class="row">
-          <div class="col">
-            <h1>Argomenti</h1>
-            <p>
-              Gli argomenti rispondono a un'esigenza di organizzazione dei
-              contenuti del sito istituzionale per temi e rappresentano le
-              principali categorie di contenuti, informazioni e documenti
-              specifici.
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col py-5">
-            <div class="input-search-wrapper">
-              <div class="input-group">
-                <input
-                  class="form-control"
-                  id="input-1"
-                  type="search"
-                  placeholder="Cerca argomenti"
-                  aria-label="Cerca argomenti"
-                />
-                <div class="input-group-append">
-                  <button
-                    class="btn btn-primary btn-icon"
-                    type="button"
-                    id="button-search"
-                    role="button"
-                    aria-label="button-search"
-                  >
-                    <svg class="icon icon-white">
-                      <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-search"></use>
-                    </svg>
-                  </button>
+      <div class="col-sm-6 col-lg-4 mb-4">
+        <div class="it-grid-item-wrapper it-grid-item-overlay">
+          <a href="#" title="vai all'argomento - cultura" aria-label="vai all'argomento - cultura">
+            <div class="img-responsive-wrapper">
+              <div class="img-responsive">
+                <div class="img-wrapper">
+                  <img src="https://picsum.photos/376/488" alt="descrizione immagine" title="Image Title" />
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col pb-5">
-            <span class="subtitle-small">Filtri</span>
-            <div class="mt-2">
-            <button type="button" class="btn btn-primary btn-sm" aria-label="filtra - tutto">Tutto</button>
-            <button type="button" class="btn btn-outline-primary btn-sm" aria-label="filtra - ...">
-              ...
-            </button>
-            </div>
-
-          </div>
+            <span class="it-griditem-text-wrapper">
+              <h3>Cultura</h3>
+            </span>
+          </a>
         </div>
       </div>
-      <div class="col-lg-3 offset-lg-2">
-        <div class="link-list-wrapper mt-3">
-          <ul class="link-list">
-            <li>
-              <span class="text-uppercase h6 mx-4">Più consultati</span>
-            </li>
-            <li>
-              <a class="list-item" href="#" title="vai alla pagina - muoversi" aria-label="vai alla pagina - muoversi"><span>Muoversi</span></a>
-            </li>
-            <li>
-              <a class="list-item" href="#" title="vai alla pagina - la città che cambia" aria-label="vai alla pagina - la città che cambia"><span>La città che cambia</span></a>
-            </li>
-            <li>
-              <a class="list-item" href="#" title="vai alla pagina - cultura" aria-label="vai alla pagina - cultura"><span>Cultura</span></a>
-            </li>
-          </ul>
+      <div class="col-sm-6 col-lg-4 mb-4">
+        <div class="it-grid-item-wrapper it-grid-item-overlay">
+          <a href="#" title="vai all'argomento - sport" aria-label="vai all'argomento - sport">
+            <div class="img-responsive-wrapper">
+              <div class="img-responsive">
+                <div class="img-wrapper">
+                  <img src="https://picsum.photos/376/488" alt="descrizione immagine" title="Image Title" />
+                </div>
+              </div>
+            </div>
+            <span class="it-griditem-text-wrapper">
+              <h3>Sport</h3>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-4 mb-4">
+        <div class="it-grid-item-wrapper it-grid-item-overlay">
+          <a href="#" title="vai all'argomento - famiglia" aria-label="vai all'argomento - famiglia">
+            <div class="img-responsive-wrapper">
+              <div class="img-responsive rounded">
+                <div class="img-wrapper">
+                  <img src="https://picsum.photos/376/488" alt="descrizione immagine" title="Image Title" />
+                </div>
+              </div>
+            </div>
+            <span class="it-griditem-text-wrapper">
+              <h3>Famiglia</h3>
+            </span>
+          </a>
         </div>
       </div>
     </div>
   </div>
 
-  <section id="in-evidenza">
-    <div class="section section-muted section-inset-shadow">
-      <div class="section-content">
-        <div class="row mb-lg-4">
-          <div class="col">
-            <h2 class="title-xlarge">In evidenza</h2>
-          </div>
-        </div>
-        <div class="row it-masonry" data-bs-toggle="masonry"> <!--  data-masonry='{"percentPosition": true }' -->
-          <div class="col-sm-6 col-lg-4 mb-4">
-            <div class="it-grid-item-wrapper it-grid-item-overlay">
-              <a href="#" title="vai all'argomento - cultura" aria-label="vai all'argomento - cultura">
-                <div class="img-responsive-wrapper">
-                  <div class="img-responsive">
-                    <div class="img-wrapper">
-                      <img
-                        src="https://picsum.photos/376/488"
-                        alt="descrizione immagine"
-                        title="Image Title"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <span class="it-griditem-text-wrapper">
-                  <h3>Cultura</h3>
-                </span>
-              </a>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 mb-4">
-            <div class="it-grid-item-wrapper it-grid-item-overlay">
-              <a href="#" title="vai all'argomento - lavorare" aria-label="vai all'argomento - lavorare">
-                <div class="img-responsive-wrapper">
-                  <div class="img-responsive">
-                    <div class="img-wrapper">
-                      <img
-                        src="https://picsum.photos/376/184"
-                        alt="descrizione immagine"
-                        title="Image Title"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <span class="it-griditem-text-wrapper">
-                  <h3>Lavorare</h3>
-                </span>
-              </a>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 mb-4">
-            <div class="it-grid-item-wrapper it-grid-item-overlay">
-              <a href="#" title="vai all'arogmento spazi verdi" aria-label="vai all'arogmento spazi verdi">
-                <div class="img-responsive-wrapper">
-                  <div class="img-responsive">
-                    <div class="img-wrapper">
-                      <img
-                        src="https://picsum.photos/376/264"
-                        alt="descrizione immagine"
-                        title="Image Title"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <span class="it-griditem-text-wrapper">
-                  <h3>Spazi verdi</h3>
-                </span>
-              </a>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 mb-4">
-            <div class="it-grid-item-wrapper it-grid-item-overlay">
-              <a href="#" title="vai all'argomento famiglia" aria-label="vai all'argomento famiglia">
-                <div class="img-responsive-wrapper">
-                  <div class="img-responsive">
-                    <div class="img-wrapper">
-                      <img
-                        src="https://picsum.photos/376/489"
-                        alt="descrizione immagine"
-                        title="Image Title"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <span class="it-griditem-text-wrapper">
-                  <h3 class="shadow">Famiglia</h3>
-                </span>
-              </a>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 mb-4">
-            <div class="it-grid-item-wrapper it-grid-item-overlay">
-              <a href="#" title="vai all'arogmento partecipare" aria-label="vai all'argomento partecipare">
-                <div class="img-responsive-wrapper">
-                  <div class="img-responsive">
-                    <div class="img-wrapper">
-                      <img
-                        src="https://picsum.photos/376/144"
-                        alt="descrizione immagine"
-                        title="Image Title"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <span class="it-griditem-text-wrapper">
-                  <h3>Partecipare</h3>
-                </span>
-              </a>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 mb-4">
-            <div class="it-grid-item-wrapper it-grid-item-overlay">
-              <a href="#" title="vai all'argomento muoversi" aria-label="vai all'argomento muoversi">
-                <div class="img-responsive-wrapper">
-                  <div class="img-responsive">
-                    <div class="img-wrapper">
-                      <img
-                        src="https://picsum.photos/376/274"
-                        alt="descrizione immagine"
-                        title="Image Title"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <span class="it-griditem-text-wrapper">
-                  <h3>Muoversi</h3>
-                </span>
-              </a>
-            </div>
-          </div>
-          <div class="col-sm-6 col-lg-4 mb-4">
-            <div class="it-grid-item-wrapper it-grid-item-overlay">
-              <a href="#" title="vai all'argomento sport" aria-label="vai all'argomento sport">
-                <div class="img-responsive-wrapper">
-                  <div class="img-responsive">
-                    <div class="img-wrapper">
-                      <img
-                        src="https://picsum.photos/376/185"
-                        alt="descrizione immagine"
-                        title="Image Title"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <span class="it-griditem-text-wrapper">
-                  <h3>Sport</h3>
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-lg-2">
-          <div class="col">
-            <nav
-              class="pagination-wrapper justify-content-center"
-              aria-label="Navigazione della pagina" role="navigation">
-              <ul class="pagination">
-                <li class="page-item">
-                  <a class="page-link" href="#">
-                    <svg class="icon icon-primary">
-                      <use
-                        xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-chevron-left"
-                      ></use>
-                    </svg>
-                    <span class="visually-hidden">Pagina precedente</span>
-                  </a>
-                </li>
-                <li class="page-item">
-                  <a aria-label="Vai alla pagina 1" title="Vai alla pagina 1" class="page-link" href="#" aria-current="page">1</a>
-                </li>
-                <li class="page-item">
-                  <a aria-label="Vai alla pagina 2" title="Vai alla pagina 2" class="page-link" href="#" aria-current="page">2</a>
-                  </li>
-                <li class="page-item">
-                  <a aria-label="Vai alla pagina 3" title="Vai alla pagina 3" class="page-link" href="#" aria-current="page">3</a>
-                  </li>
-                <li class="page-item">
-                  <a aria-label="Vai alla pagina successiva" title="Vai alla pagina successiva" class="page-link" href="#" aria-current="page">
-                    <span class="visually-hidden">Pagina successiva</span>
-                    <svg class="icon icon-primary">
-                      <use
-                        xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-chevron-right"
-                      ></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+  <div class="container px-4" id="argomento">
+    <h2 class="title-xxlarge mt-40 mt-lg-60 mb-4 mb-lg-40">Esplora per argomento</h2>
+    <div class="row flex-wrap justify-content-start gy-4 pb-40 pb-lg-60 mb-lg-1 align-items-stretch">
+
+      <div class="col-12 col-lg-4">
+        {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
+        classTitle="title-xlarge"
+        classText="description"
+        card-title="Agricoltura"
+        card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
+        Donec."
+        }}
+      </div>
+
+      <div class="col-12 col-lg-4">
+        {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
+        classTitle="title-xlarge"
+        classText="description"
+        card-title="Animale domestico"
+        card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
+        Donec."
+        }}
+      </div>
+
+      <div class="col-12 col-lg-4">
+        {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
+        classTitle="title-xlarge"
+        classText="description"
+        card-title="Assistenza sociale"
+        card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
+        Donec."
+        }}
+      </div>
+
+      <div class="col-12 col-lg-4">
+        {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
+        classTitle="title-xlarge"
+        classText="description"
+        card-title="Associazioni"
+        card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
+        Donec."
+        }}
+      </div>
+
+      <div class="col-12 col-lg-4">
+        {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
+        classTitle="title-xlarge"
+        classText="description"
+        card-title="Concorsi"
+        card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
+        Donec."
+        }}
+      </div>
+
+      <div class="col-12 col-lg-4">
+        {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
+        classTitle="title-xlarge"
+        classText="description"
+        card-title="Formazione professionale"
+        card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
+        Donec."
+        }}
+      </div>
+
+      <div class="col-12 col-lg-4">
+        {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
+        classTitle="title-xlarge"
+        classText="description"
+        card-title="Imposte"
+        card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
+        Donec."
+        }}
+      </div>
+
+      <div class="col-12 col-lg-4">
+        {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
+        classTitle="title-xlarge"
+        classText="description"
+        card-title="Imprese"
+        card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
+        Donec."
+        }}
+      </div>
+
+      <div class="col-12 col-lg-4">
+        {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
+        classTitle="title-xlarge"
+        classText="description"
+        card-title="Inquinamento"
+        card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
+        Donec."
+        }}
+      </div>
+
+      <div class="col-12 col-lg-4">
+        {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
+        classTitle="title-xlarge"
+        classText="description"
+        card-title="Integrazione sociale"
+        card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
+        Donec."
+        }}
+      </div>
+
+      <div class="col-12 col-lg-4">
+        {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
+        classTitle="title-xlarge"
+        classText="description"
+        card-title="Istruzione"
+        card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
+        Donec."
+        }}
+      </div>
+
+      <div class="col-12 col-lg-4">
+        {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
+        classTitle="title-xlarge"
+        classText="description"
+        card-title="Lavoro"
+        card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
+        Donec."
+        }}
+      </div>
+
+      <div class="col-12 col-lg-4">
+        {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
+        classTitle="title-xlarge"
+        classText="description"
+        card-title="Parcheggi"
+        card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
+        Donec."
+        }}
+      </div>
+
+      <div class="col-12 col-lg-4">
+        {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
+        classTitle="title-xlarge"
+        classText="description"
+        card-title="Patrimonio culturale"
+        card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
+        Donec."
+        }}
+      </div>
+
+      <div class="col-12 col-lg-4">
+        {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
+        classTitle="title-xlarge"
+        classText="description"
+        card-title="Piano di sviluppo "
+        card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
+        Donec."
+        }}
+      </div>
+
+      <div class="col-12 col-lg-4">
+        {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
+        classTitle="title-xlarge"
+        classText="description"
+        card-title="Pista ciclabile"
+        card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
+        Donec."
+        }}
+      </div>
+
+      <div class="col-12 col-lg-4">
+        {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
+        classTitle="title-xlarge"
+        classText="description"
+        card-title="Patrimonio culturale"
+        card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
+        Donec."
+        }}
+      </div>
+
+      <div class="col-12 col-lg-4">
+        {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
+        classTitle="title-xlarge"
+        classText="description"
+        card-title="Piano di sviluppo"
+        card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
+        Donec."
+        }}
+      </div>
+
+      <div class="col-12 col-lg-4">
+        {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
+        classTitle="title-xlarge"
+        classText="description"
+        card-title="Trasporto pubblico "
+        card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
+        Donec."
+        }}
+      </div>
+
+      <div class="col-12 col-lg-4">
+        {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
+        classTitle="title-xlarge"
+        classText="description"
+        card-title="Zone pedonali"
+        card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
+        Donec."
+        }}
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-primary">
+    <div class="container">
+      <div class="row d-flex justify-content-center bg-primary">
+        <div class="col-12 col-lg-6">
+          {{>cmp-rating/cmp-rating public-template=true rating-title="Quanto è utile questa pagina?"}}
         </div>
       </div>
     </div>
-  </section>
-  <section id="tutti-gli-argomenti">
-    <div class="section">
-      <div class="section-content">
-        <div class="row">
-          <div class="col">
-            <h2 class="title-xlarge">Tutti gli argomenti</h2>
-          </div>
-        </div>
-        <div class="row mt-lg-4">
-          <div class="col">
-            <div
-              class="card-wrapper card-teaser-wrapper card-teaser-wrapper-equal card-teaser-block-3"
-            >
-              <div class="card card-teaser rounded shadow align-items-center">
-                <svg class="icon">
-                  <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-help-circle"></use>
-                </svg>
-                <div class="card-body">
-                  <h3 class="card-title mb-0 text-center">
-                    <a href="#" title="vai alla pagina agevolazioni per la casa" aria-label="vai alla pagina agevolazioni per la casa">Agevolazioni per la casa</a>
-                  </h3>
-                </div>
-              </div>
-              <div class="card card-teaser rounded shadow align-items-center">
-                <svg class="icon">
-                  <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-help-circle"></use>
-                </svg>
-                <div class="card-body">
-                  <h3 class="card-title mb-0 text-center">
-                    <a href="#" title="vai alla pagina animali" aria-label="vai alla pagina animali">Animali</a>
-                  </h3>
-                </div>
-              </div>
-              <div class="card card-teaser rounded shadow align-items-center">
-                <svg class="icon">
-                  <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-help-circle"></use>
-                </svg>
-                <div class="card-body">
-                  <h3 class="card-title mb-0 text-center">
-                    <a href="#" title="vai alla pagina anziani" aria-label="vai alla pagina anziani">Anziani</a>
-                  </h3>
-                </div>
-              </div>
-              <div class="card card-teaser rounded shadow align-items-center">
-                <svg class="icon">
-                  <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-help-circle"></use>
-                </svg>
-                <div class="card-body">
-                  <h3 class="card-title mb-0 text-center">
-                    <a href="#" title="vai alla pagina assistenza e inclusione" aria-label="vai alla pagina assistenza e inclusione">Assistenza e inclusione</a>
-                  </h3>
-                </div>
-              </div>
-              <div class="card card-teaser rounded shadow align-items-center">
-                <svg class="icon">
-                  <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-help-circle"></use>
-                </svg>
-                <div class="card-body">
-                  <h3 class="card-title mb-0 text-center">
-                    <a href="#" title="vai alla pagina associazioni" aria-label="vai alla pagina associazioni">Associazioni</a>
-                  </h3>
-                </div>
-              </div>
-              <div class="card card-teaser rounded shadow align-items-center">
-                <svg class="icon">
-                  <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-help-circle"></use>
-                </svg>
-                <div class="card-body">
-                  <h3 class="card-title mb-0 text-center">
-                    <a href="#" title="vai alla pagina bambini e ragazzi" aria-label="vai alla pagina bambini e ragazzi">Bambini e ragazzi</a>
-                  </h3>
-                </div>
-              </div>
-              <div class="card card-teaser rounded shadow align-items-center">
-                <svg class="icon">
-                  <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-help-circle"></use>
-                </svg>
-                <div class="card-body">
-                  <h3 class="card-title mb-0 text-center">
-                    <a href="#" title="vai alla pagina cantieri e progetti" aria-label="vai alla pagina cantieri e progetti">Cantieri e progetti</a>
-                  </h3>
-                </div>
-              </div>
-              <div class="card card-teaser rounded shadow align-items-center">
-                <svg class="icon">
-                  <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-help-circle"></use>
-                </svg>
-                <div class="card-body">
-                  <h3 class="card-title mb-0 text-center">
-                    <a href="#" title="vai alla pagina comune" aria-label="vai alla pagina comune">Comune</a>
-                  </h3>
-                </div>
-              </div>
-              <div class="card card-teaser rounded shadow align-items-center">
-                <svg class="icon">
-                  <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-help-circle"></use>
-                </svg>
-                <div class="card-body">
-                  <h3 class="card-title mb-0 text-center">
-                    <a href="#" title="vai alla pagina comunicare con il comune" aria-label="vai alla pagina comunicare con il comune">Comunicare con il Comune</a>
-                  </h3>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-lg-4">
-          <div class="col">
-            <nav
-              class="pagination-wrapper justify-content-center"
-              aria-label="Navigazione della pagina"
-            >
-              <ul class="pagination">
-                <li class="page-item">
-                  <a class="page-link" href="#" aria-label="Vai alla pagina precedente">
-                    <svg class="icon icon-primary">
-                      <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-chevron-left"></use>
-                    </svg>
-                    <span class="visually-hidden">Pagina precedente</span>
-                  </a>
-                </li>
-                <li class="page-item">
-                  <a class="page-link" href="#" aria-current="page">1</a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item"><a class="page-link" href="#">4</a></li>
-                <li class="page-item"><a class="page-link" href="#">5</a></li>
-                <li class="page-item">
-                  <a class="page-link" href="#" aria-label="Vai alla pagina precedente">
-                    <span class="visually-hidden">Pagina successiva</span>
-                    <svg class="icon icon-primary">
-                      <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-chevron-right"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+  </div>
+
+  <div class="bg-grey-card shadow-contacts">
+    <div class="container">
+      <div class="row d-flex justify-content-center p-contacts">
+        <div class="col-12 col-lg-6">
+          {{>cmp-contacts/cmp-contacts city-problems=true}}
         </div>
       </div>
     </div>
-  </section>
+  </div>
 </main>
 {{/base/base }}

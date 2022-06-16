@@ -100,6 +100,20 @@
         "anchor": "contacts"
       }
     ],
+    "disservizio-dati-specifici": [
+      {
+        "item": "Luogo",
+        "anchor": "report-place"
+      },
+      {
+        "item": "Disservizio",
+        "anchor": "report-info"
+      },
+      {
+        "item": "Autore della segnalazione",
+        "anchor": "report-author"
+      }
+    ],
     "links-ztl-dati-servizio": [
       {
         "item": "Tipo di permesso",

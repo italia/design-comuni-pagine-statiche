@@ -15,6 +15,7 @@
         label="Avvia richiesta online"
         primary=true
         class="text-button"
+        aria-label="Vai ad Avvia la richiesta calcolo imu online"
 
         }}
       </div>
@@ -79,24 +80,24 @@
         è eseguita, a conguaglio, sulla base delle aliquote risultanti dal prospetto delle aliquote pubblicato nel sito
         Internet del Dipartimento delle finanze del Ministero dell'Economia e delle Finanze (Mef), alla data del 28
         ottobre di ciascun anno. " class="mt-30"}}
-        {{>cmp-icon-link/cmp-icon-link link="Aliquote e detrazioni IMU 2022 (PDF 80KB)"}}
+        {{>cmp-icon-link/cmp-icon-link link="Aliquote e detrazioni IMU 2022" dimensione-file="(PDF 80KB)"}}
         {{/cmp-card/cmp-card-content-box}}
 
 
         {{#>cmp-card/cmp-card-content-box card-title="Accedi al servizio" h2-class="mb-3" class="p-3"
         id-title="service-access" subtitle="Puoi pagare l’IMU direttamente online tramite identità digitale."
         bg-grey="true" bg-grey-primary=true}}
-        {{>partials/button/button label="Paga online" primary="true" class="mobile-full" }}
+        {{>partials/button/button label="Paga online" aria-label="Paga online accedendo tramite identità digitale" primary="true" class="mobile-full" }}
         <p class="text-paragraph mt-4 mb-3">Oppure puoi prenotare un appuntamento e presentarti presso gli uffici.
         </p>
-        {{>partials/button/button label="Prenota appuntamento" primary="true" class="mobile-full btn-outline-primary
+        {{>partials/button/button label="Prenota appuntamento" aria-label="Vai alla pagina Prenota Appuntamento" primary="true" class="mobile-full btn-outline-primary
         t-primary" }}
         {{/cmp-card/cmp-card-content-box}}
 
         {{#>cmp-card/cmp-card-content-box card-title="Condizioni di servizio" h2-class="mb-3" lora=true
         id-title="conditions" subtitle="Per conoscere i dettagli di scadenze, requisiti e altre informazioni importanti,
         leggi i termini e le condizioni di servizio." }}
-        {{>cmp-icon-link/cmp-icon-link link="Termini e condizioni di servizio (PDF 1MB)"}}
+        {{>cmp-icon-link/cmp-icon-link link="Termini e condizioni di servizio" dimensione-file="(PDF 1MB)"}}
         {{/cmp-card/cmp-card-content-box}}
 
 

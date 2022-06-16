@@ -14,6 +14,7 @@
           primary=true
           class="text-button"
           label-tag="Servizio attivo"
+          aria-label="Richiedi iscrizione online alla Scuola dell'infanzia"
           servizio-attivo=true
           }}
       </div>
@@ -76,10 +77,10 @@
 
         {{#>cmp-card/cmp-card-content-box card-title="Accedi al servizio" id-title="service-access" class="p-3" subtitle="Puoi richiedere l’iscrizione alla
         Scuola dell’infanzia direttamente online tramite identità digitale." bg-grey="true" h2-class="mb-3"}}
-        {{>partials/button/button label="Richiedi iscrizione online" primary="true" class="mobile-full"  }}
+        {{>partials/button/button label="Richiedi iscrizione online" primary="true" class="mobile-full" aria-label="Richiedi iscrizione online alla Scuola dell'infanzia"}}
         <p class="text-paragraph mt-4 mb-3">Oppure, puoi prenotare un appuntamento e presentarti presso gli uffici.
         </p>
-        {{>partials/button/button label="Prenota appuntamento" primary="true" class="mobile-full btn-outline-primary t-primary bg-white" }}
+        {{>partials/button/button label="Prenota appuntamento" primary="true" class="mobile-full btn-outline-primary t-primary bg-white" aria-label="Vai alla pagina Prenota un'appuntamento"}}
         {{/cmp-card/cmp-card-content-box}}
 
 
@@ -94,7 +95,7 @@
 
         {{#>cmp-card/cmp-card-content-box card-title="Condizioni di servizio" h2-class="mb-3" id-title="conditions" subtitle="Per conoscere i dettagli di
         scadenze, requisiti e altre informazioni importanti, leggi i termini e le condizioni di servizio." }}
-        {{>cmp-icon-link/cmp-icon-link link="Termini e condizioni di servizio (PDF 1MB)"}}
+        {{>cmp-icon-link/cmp-icon-link link="Termini e condizioni di servizio" dimensione-file="(PDF 1MB)"}}
         {{/cmp-card/cmp-card-content-box}}
 
 

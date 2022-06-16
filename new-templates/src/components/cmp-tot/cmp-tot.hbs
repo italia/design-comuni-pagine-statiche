@@ -1,9 +1,9 @@
 <div class="cmp-tot bg-white {{class}}">
   <div class="tot-wrapper border-bottom border-light d-flex justify-content-between">
-    <p class="title-large-semi-bold pb-1">{{label-title}}</p>
+    <p class="title-large-semi-bold mb-0">{{label-title}}</p>
     <span class="title-large-semi-bold">{{value}}</span>
   </div>
-  {{>partials/input/input type="text" id=id label=label name=name text=text formClass="mb-3"}}
+  {{>partials/input/input type="text" id=id label=label name=name text=text formClass="mb-3" required=required}}
   <div class="wrapper d-flex justify-content-between border-bottom border-light subtitle-small">
     <p>{{rest}} </p>
     <span>{{rest-value}}</span>

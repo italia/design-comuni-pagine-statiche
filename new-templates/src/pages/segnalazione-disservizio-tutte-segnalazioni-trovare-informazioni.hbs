@@ -10,8 +10,10 @@
         territorio comunale."
         pClass="mt-3"
         double-button=true
-        label="Richiedi iscrizione online"
+        label="Segnala disservizio"
         second-label="Tutte le segnalazioni"
+        aria-label="Vai alla pagina Segnala disservizio"
+        second-ariaLabel="Vai alla pagina Tutte le segnalazioni"
         btnClass="mt-4 mb-4 mb-lg-0 full-mobile"
         second-btnClass="mt-4 mb- mb-lg-0 full-mobile"
         class="text-button"
@@ -28,7 +30,7 @@
         link-list=link-list.segnalazioni-disservizio-1}}
       </div>
       <div class="col-12 col-lg-8 offset-lg-1">
-        {{#>cmp-card/cmp-card-content-box card-title="A chi è rivolto" h2-class="mb-3" id-title="who-needs"}}
+        {{#>cmp-card/cmp-card-content-box card-title="A chi è rivolto" h2-class="mb-3" header-m0=true id-title="who-needs"}}
         <p class="text-paragraph lora mb-4">
           Il servizio è accessibile a persone residenti e non residenti.
         </p>
@@ -42,7 +44,7 @@
         {{/cmp-card/cmp-card-content-box}}
 
 
-        {{#>cmp-card/cmp-card-content-box card-title="Descrizione" id-title="description"}}
+        {{#>cmp-card/cmp-card-content-box card-title="Descrizione" h2-class="mb-3" header-m0=true id-title="description"}}
         <p class="text-paragraph lora mb-0">
           Tramite il servizio online è possibile segnalare in modo dettagliato il problema, fissare con il cursore la
           posizione sulla mappa,
@@ -52,7 +54,7 @@
         {{/cmp-card/cmp-card-content-box}}
 
 
-        {{#>cmp-card/cmp-card-content-box card-title="Come fare" id-title="how-to"}}
+        {{#>cmp-card/cmp-card-content-box card-title="Come fare" h2-class="mb-3" header-m0=true id-title="how-to"}}
         <p class="text-paragraph lora mb-4">
           Si può inviare la segnalazione di disservizio dal proprio smartphone o computer, seguendo la procedura online.
         </p>
@@ -64,46 +66,43 @@
 
 
 
-        {{#>cmp-card/cmp-card-content-box card-title="Cosa serve" id-title="needed" bg-grey="true"
+        {{#>cmp-card/cmp-card-content-box card-title="Cosa serve" h2-class="mb-3" header-m0=true id-title="needed" bg-grey="true"
         bg-grey-primary=true}}
         {{>cmp-ul-list/cmp-ul-list heading-title="Per accedere al servizio, assicurati di avere:" font-title="lora"
         font-list="lora" info-list=segnalazione-disservizio.list }}
         {{/cmp-card/cmp-card-content-box}}
 
-        {{#>cmp-card/cmp-card-content-box card-title="Cosa si ottiene" id-title="obtain" subtitle="Chi effettua la
+        {{#>cmp-card/cmp-card-content-box card-title="Cosa si ottiene" h2-class="mb-3" id-title="obtain" subtitle="Chi effettua la
         segnalazione, identificandosi con le proprie credenziali Spid, riceverà sulla sua casella di
         posta elettronica le comunicazioni sullo stato di avanzamento della sua richiesta, dall'assegnazione all'ufficio
         competente fino alla chiusura dell'intervento." header-m0=true}}
         {{/cmp-card/cmp-card-content-box}}
 
-        {{#>cmp-card/cmp-card-content-box card-title="Costi" id-title="costs" subtitle="Il servizio è gratuito."
+        {{#>cmp-card/cmp-card-content-box card-title="Costi" h2-class="mb-3" header-m0=true id-title="costs" subtitle="Il servizio è gratuito."
         class="mb-2 mt-40" }}
-        {{>cmp-icon-link/cmp-icon-link link="Allegato se necessario"}}
+        {{>cmp-icon-link/cmp-icon-link link="Allegato" link-class="mt-3"}}
         {{/cmp-card/cmp-card-content-box}}
 
 
-        {{#>cmp-card/cmp-card-content-box card-title="Accedi al servizio" id-title="service-access" subtitle="Puoi
+        {{#>cmp-card/cmp-card-content-box card-title="Accedi al servizio" h2-class="mb-3" header-m0=true id-title="service-access" subtitle="Puoi
         accedere al servizio direttamente online tramite identità digitale." bg-grey="true" }}
-        {{>partials/button/button label="Segnala disservizio" primary="true" class="mobile-full" }}
-        <p class="text-paragraph mt-25 mb-25">Uffici dove presentare la richiesta su appuntamento.
+        {{>partials/button/button label="Segnala disservizio" aria-label="Vai alla pagina Segnala disservizio" class="mt-3 mobile-full" primary="true" class="mobile-full" }}
+        <p class="text-paragraph mt-4 mb-3">Uffici dove presentare la richiesta su appuntamento.
         </p>
-        {{>partials/button/button label="Prenota appuntamento" primary="true" class="mobile-full btn-outline-primary
+        {{>partials/button/button label="Prenota appuntamento" aria-label="Vai alla pagina Prenota appuntamento" primary="true" class="mobile-full btn-outline-primary
         t-primary" }}
         {{/cmp-card/cmp-card-content-box}}
 
-        {{#>cmp-card/cmp-card-content-box card-title="Condizioni di servizio" id-title="conditions" subtitle="Per
+        {{#>cmp-card/cmp-card-content-box card-title="Condizioni di servizio" h2-class="mb-3" header-m0=true id-title="conditions" subtitle="Per
         conoscere i dettagli di
         scadenze, requisiti e altre informazioni importanti, leggi i termini e le condizioni di servizio." }}
-        {{>cmp-icon-link/cmp-icon-link link="Termini e condizioni di servizio"}}
+        {{>cmp-icon-link/cmp-icon-link link="Termini e condizioni di servizio" link-class="mt-3"}}
         {{/cmp-card/cmp-card-content-box}}
 
 
-        {{#>cmp-card/cmp-card-content-box card-title="Contatti" id-title="contacts"}}
-
-        <div class="mt-15">
+        {{#>cmp-card/cmp-card-content-box card-title="Contatti" h2-class="mb-3" header-m0=true id-title="contacts"}}
           {{>cmp-card-img/cmp-card-img card-title="Ufficio scuola" card-description="Via Dei Transiti 21, 50302<br> 05
           0505 <br> ufficioscuola@email.it" img=true}}
-        </div>
         {{/cmp-card/cmp-card-content-box}}
 
 

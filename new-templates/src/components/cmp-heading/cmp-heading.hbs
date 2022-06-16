@@ -1,4 +1,4 @@
-<div class="cmp-heading pb-3 pb-lg-4">
+<div class="cmp-heading {{#if heading-p0}}p-0{{else}}pb-3 pb-lg-4{{/if}}">
   {{#if iconTitle}}
   <div class="categoryicon-top d-flex">
     <svg class="icon icon-success {{iconClass}}">
@@ -51,7 +51,7 @@
     </div>
 
     <div class="{{second-btnClass}}">
-      {{>partials/button/button class="fw-bold btn-outline-primary t-primary" label=second-label }}
+      {{>partials/button/button class="fw-bold btn-outline-primary t-primary" label=second-label aria-label=second-ariaLabel}}
     </div>
   </div>
   {{/if}}

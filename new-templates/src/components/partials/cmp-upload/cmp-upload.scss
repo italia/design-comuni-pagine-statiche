@@ -53,17 +53,17 @@
     }
 
     @include media-breakpoint-up(md) {
-      margin-bottom: 0.67rem;
+      margin-bottom: 0.22rem;
     }
+  }
 
-    &__info {
-      font-family: Titillium Web;
-      color: get-color(dark, grey);
-      @include font(14, 16);
-      font-weight: 400;
-      line-height: 1.5;
-      margin-left: 0.5rem;
-    }
+  &__info {
+    font-family: Titillium Web;
+    color: get-color(dark, grey);
+    @include font(14, 16);
+    font-weight: 400;
+    line-height: 1.5;
+    margin-left: 0.5rem;
   }
 }
 

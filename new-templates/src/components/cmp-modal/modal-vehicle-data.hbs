@@ -1,22 +1,42 @@
 {{#>cmp-modal/cmp-modal-structure id="modal-vehicle-data" modalTitle="Veicolo" buttons=true modalInfo="I campi
 contraddistinti dal
-simbolo asterisco (*) sono obbligatori"}}
+simbolo asterisco sono obbligatori"}}
 <div>
-  <form action="" id="contacts-form" class="text-black">
-    {{>partials/input/input id="accountholder" type="text" label="Intestatario" text="Campo non modificabile"
-    required=true disabled=true}}
-    {{>partials/input/input id="vehicle-type" type="text" label="Tipo" text="Campo non modificabile" required=true
-    disabled=true }}
-    {{>partials/input/input id="vehicle-model" type="text" label="Modello" text="Campo non modificabile" required=true
-    disabled=true }}
-    {{>partials/input/input id="vehicle-plate" type="text" label="Targa" text="Campo non modificabile" required=true
-    disabled=true }}
-    {{>partials/input/input id="vehicle-use" type="text" label="Relazione" text="Campo non modificabile" required=true
-    disabled=true }}
-    {{>partials/input/input id="concession" type="text" label="dichiarazione_concessione.pdf" text="Campo non
-    modificabile" required=true disabled=true }}
-    {{>partials/input/input id="vehicle-registration" type="text" label="libretto_di_circolazione.pdf" text="Campo non
-    modificabile" required=true disabled=true }}
+  <form action="" id="documents-form" class="text-black" enctype="multipart/form-data">
+    <div class="mb-4">
+      {{>partials/input/input id="accountholder" type="text" label="Intestatario" placeholder="Mario Rossi" text="Campo
+      non modificabile" required=true disabled=true}}
+    </div>
+
+    <div class="mb-4">
+      {{>partials/input/input id="vehicle-type" type="text" label="Tipo" placeholder="Auto" text="Campo non
+      modificabile" required=true disabled=true }}
+    </div>
+
+    <div class="mb-4">
+      {{>partials/input/input id="vehicle-model" type="text" label="Modello" placeholder="Mini Countryman F60"
+      text="Campo non modificabile" required=true disabled=true }}
+    </div>
+
+    <div class="mb-4">
+      {{>partials/input/input id="vehicle-plate" type="text" label="Targa" placeholder="CK 345 HB" text="Campo non
+      modificabile" required=true disabled=true }}
+    </div>
+
+    <div class="mb-4">
+      {{>partials/select/select id="relation-type" label-text="Relazione" required=true placeholder="Uso esclusivo"
+      text="Seleziona la tipologia di relazione" select-option-list=permessi-autorizzazioni.controllare-dati-personali.modal-vehicle
+      }}
+    </div>
+
+    <div class="mb-4">
+      {{>partials/cmp-upload/cmp-upload inputId="concession" label="Dichiarazione di concessione" required=true}}
+    </div>
+
+    <div class="mb-4">
+      {{>partials/cmp-upload/cmp-upload inputId="vehicle-document" label="Libretto di circolazione" required=true}}
+    </div>
+
   </form>
 </div>
 {{/cmp-modal/cmp-modal-structure}}

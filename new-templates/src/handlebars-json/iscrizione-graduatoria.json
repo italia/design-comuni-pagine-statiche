@@ -303,6 +303,22 @@
           "description": "mario.rossi@gmail.com"
         }
       ],
+      "documenti-warning":[
+        {
+          "name": "Carta d'identità",
+          "description": "mario_rossi_carta_di_identità_fronte_retro.pdf",
+          "warning": false,
+          "success": false
+        },
+        {
+          "name": "Modulo condizione lavorativa",
+          "description": "",
+          "warning": true,
+          "success": false,
+          "warning-message": "Documento mancante",
+          "success-message": "Documento inserito con successo"
+        }
+      ],
       "documenti":[
         {
           "name": "Carta d'identità",
@@ -351,6 +367,10 @@
       ],
       "alert-list": [
         {
+          "text": "Altro genitore",
+          "id": "other-parent-info"
+        },
+        {
           "text": "ISEE",
           "id": "isee-info"
         }
@@ -384,11 +404,13 @@
       "servizi-correlati": [
         {
           "icon": "it-settings",
+          "aria-label": "Vai alla pagina",
           "link": "Iscrizione servizio mensa",
           "class": "shadow mb-10"
         },
         {
           "icon": "it-settings",
+          "aria-label": "Vai alla pagina",
           "link": "Iscrizione trasporto scolastico",
           "class": "shadow mb-50 mb-lg-80"
         }

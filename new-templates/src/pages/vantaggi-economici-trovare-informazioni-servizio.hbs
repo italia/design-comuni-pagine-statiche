@@ -11,6 +11,7 @@
         dat-class="pt-3"
         pClass="mt-3 mb-4"
         button=true
+        aria-label="Vai a Richiedi assegno di maternità online"
         label="Richiedi online"
         primary=true
         class="text-button"
@@ -77,11 +78,11 @@
         {{#>cmp-card/cmp-card-content-box card-title="Accedi al servizio" class="p-3" id-title="service-access"
         subtitle="Puoi richiedere l’assegno di maternità direttamente online tramite identità digitale." bg-grey="true"
         margin-class="mt-30" h2-class="mb-3"}}
-        {{>partials/button/button label="Richiedi online" primary="true" class="mobile-full"}}
+        {{>partials/button/button label="Richiedi online" primary="true" class="mobile-full" aria-label="Richiedi online l'assegno di maternità"}}
         <p class="text-paragraph mt-4 mb-3">Oppure, puoi prenotare un appuntamento e presentarti presso gli uffici.
         </p>
         {{>partials/button/button label="Prenota appuntamento" primary="true" class="mobile-full btn-outline-primary
-        t-primary bg-white" }}
+        t-primary bg-white" aria-label="Vai alla pagina Prenota un'appuntamento"}}
         {{/cmp-card/cmp-card-content-box}}
 
 
@@ -90,7 +91,7 @@
         {{#>cmp-card/cmp-card-content-box card-title="Condizioni di servizio" h2-class="mb-3" id-title="conditions"
         subtitle="Per conoscere i dettagli di
         scadenze, requisiti e altre informazioni importanti, leggi i termini e le condizioni di servizio." lora=true }}
-        {{>cmp-icon-link/cmp-icon-link link="Termini e condizioni di servizio (PDF 1MB)"}}
+        {{>cmp-icon-link/cmp-icon-link link="Termini e condizioni di servizio " dimensione-file="(PDF 1MB)"}}
         {{/cmp-card/cmp-card-content-box}}
 
 

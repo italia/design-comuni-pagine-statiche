@@ -12,6 +12,7 @@
         description="Il servizio permette di pagare online le multe ricevute dalla polizia municipale o di prenotare un
         appuntamento per pagare presso gli uffici."
         button=true
+        aria-label="Vai a Pagina pagamento online multa"
         label="Paga online"
         primary=true
         class="text-button"
@@ -62,17 +63,17 @@
         {{#>cmp-card/cmp-card-content-box card-title="Accedi al servizio" h2-class="mb-0" class="p-3"
         id-title="service-access" subtitle="Puoi pagare la multa direttamente online tramite identità digitale."
         bg-grey="true" bg-grey-primary=true}}
-        {{>partials/button/button label="Paga online" primary="true" class="mobile-full" }}
+        {{>partials/button/button label="Paga online" primary="true" class="mobile-full" aria-label="Vai a Pagina pagamento online multa"}}
         <p class="text-paragraph mt-4 mb-3">Oppure, puoi pagare presso gli uffici di Polizia municipale.
         </p>
         {{>partials/button/button label="Prenota appuntamento" primary="true" class="mobile-full btn-outline-primary
-        t-primary" }}
+        t-primary" aria-label="Vai alla pagina Prenota un'appuntamento"}}
         {{/cmp-card/cmp-card-content-box}}
 
         {{#>cmp-card/cmp-card-content-box card-title="Condizioni di servizio" h2-class="mb-0" lora=true
         id-title="conditions" subtitle="Per conoscere i dettagli di scadenze, requisiti e altre informazioni importanti,
         leggi i termini e le condizioni di servizio." }}
-        {{>cmp-icon-link/cmp-icon-link link="Termini e condizioni di servizio (PDF 1MB)"}}
+        {{>cmp-icon-link/cmp-icon-link link="Termini e condizioni di servizio " dimensione-file="(PDF 1MB)"}}
         {{/cmp-card/cmp-card-content-box}}
 
 

@@ -1,290 +1,246 @@
 {{#>base/base title="Documenti" headerActive1=true}}
-
 <main>
-  <section  id="main-container" class="container px-4">
-    <div class="row">
-      <div class="col px-lg-4">
-        {{>cmp-breadcrumbs/cmp-breadcrumbs link2="Home" link3="Documenti e Dati"}}
+  <div class="container px-4" id="main-container">
+    <div class="row justify-content-center w-100 row-shadow">
+      <div class="col-12 col-lg-10">
+        {{>cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Amministrazione" link3="Documenti e Dati"}}
+
+        {{>cmp-hero/cmp-hero
+        hero-title="Documenti e Dati"
+        hero-text="Donec in consequat nunc. Duis semper fermentum lacus, ac condimentum justo auctor a. Nam erat erat,
+        porta vel pharetra in, ullamcorper vel turpis."
+        wrapper-class="pt-0 ps-0 pb-4 pb-lg-60"}}
       </div>
     </div>
-  </section>
-  <section id="intro" class="container px-4">
-    <div class="row">
-      <div class="col-lg-7 px-lg-4 py-lg-2">
-        <h1>Documenti e Dati</h1>
-        <p>Donec in consequat nunc. Duis semper fermentum lacus, ac condimentum justo auctor a. Nam erat erat, porta vel pharetra in, ullamcorper vel turpis.</p>
-        <div class="form-group mt-5">
-          <form>
-            <input id="ricerca-amministrazione" type="search">
-            <label for="ricerca-amministrazione">Cerca contenuti tra le novità</label>
-            <span aria-hidden="true" class="autocomplete-icon">
-              <svg class="icon icon-sm"><use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-search"></use></svg>
-            </span>
-          </form>
-        </div>
-        <div id="filtri-ricerca-amministrazione">
-          <h2 class="small">Filtri</h2>
-          <div class="chip chip-lg">
-            <span class="chip-label">Tutto</span>
-            <button type="button""">
-              <svg class="icon"><use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-close"></use></svg>
-              <span class="visually-hidden">Elimina tutti i filtri</span>
-            </button>
-          </div>
-          <div class="ms-2 d-inline">
-            <button type="button" class="btn btn-icon btn-outline-primary btn-sm align-top" aria-label="aggiungi filtro">
-              <svg class="icon icon-primary">
-                <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-plus"></use>
-              </svg>
-              <span>Aggiungi filtro</span>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 offset-lg-1 pt-5 pt-lg-2">
-        <div class="link-list-wrapper">
-          <ul class="link-list">
-            <li><span class="h6 mx-4" id="heading-senza-link">Tutti i documenti</span></li>
-            <li><a class="list-item" href="#" title="vai all'argomento - Documenti albo pretorio" aria-label="vai all'argomento - Documenti albo pretorio">Documenti albo pretorio</a></li>
-            <li><a class="list-item" href="#" title="vai all'argomento - Modulistica" aria-label="vai all'argomento - Modulistica">Modulistica</a></li>
-            <li><a class="list-item" href="#" title="vai all'argomento - Documenti funzionamento interno" aria-label="vai all'argomento - Documenti funzionamento interno">Documenti funzionamento interno</a></li>
-            <li><a class="list-item" href="#" title="vai all'argomento - Normative" aria-label="vai all'argomento - Normative">Normative</a></li>
-            <li><a class="list-item" href="#" title="vai all'argomento - Accordi tra enti" aria-label="vai all'argomento - Accordi tra enti">Accordi tra enti</a></li>
-            <li><a class="list-item" href="#" title="vai all'argomento - Documenti attività politica" aria-label="vai all'argomento - Documenti attività politica">Documenti attività politica</a></li>
-            <li><a class="list-item" href="#" title="vai all'argomento - Rapporti (tecnici)" aria-label="vai all'argomento - Rapporti (tecnici)">Rapporti (tecnici)</a></li>
-            <li><a class="list-item" href="#" title="vai all'argomento - Dataset" aria-label="vai all'argomento - Dataset">Dataset</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="in-evidenza">
-    <div class="bg-100 py-5">
-      <div class="container px-4">
-        <div class="row">
-          <div class="col">
-            <h3 class="mb-4 text-primary">In evidenza</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 col-md-6 col-lg-4">
-            <!--start card-->
-            <article class="card-wrapper card-space">
-              <div class="card card-bg card-big rounded shadow">
-                <div class="flag-icon"></div>
-                <div class="etichetta">
-                  <svg class="icon">
-                    <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-files"></use>
-                  </svg>
-                  <span>Atti</span>
-                </div>
-                <div class="card-body">
-                  <h4 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</h4>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.</p>
-                  <a class="read-more" href="#" aria-label="leggi di più Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…" title="vai all'argomento">
-                    <span class="text">Leggi di più</span>
-                    <svg class="icon">
-                      <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-arrow-right"></use>
-                    </svg>
-                  </a>
-                </div>
+  </div>
+
+  <div class="container px-4">
+    <h2 class="title-xxlarge mt-70 mb-4 mt-lg-40 pt-lg-2 mb-lg-40">In evidenza</h2>
+    <div class="row pb-60">
+      <div class="col-12 col-md-4">
+        <div class="card-wrapper rounded shadow-sm border border-light">
+          <div class="card bg-none">
+            <div class="card-body">
+              <div class="categoryicon-top">
+                <svg class="icon icon-sm">
+                  <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-file"></use>
+                </svg>
+                <span class="text fw-semibold">
+                  <a href="#" aria-label="Vai a categoria Bandi e avvisi" title="Vai a categoria Bandi e avvisi">Bandi e avvisi</a></span>
               </div>
-            </article>
-            <!--end card-->
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <!--start card-->
-            <article class="card-wrapper card-space">
-              <div class="card card-bg card-big rounded shadow">
-                <div class="flag-icon invisible"></div>
-                <div class="etichetta">
-                  <svg class="icon">
-                    <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-files"></use>
-                  </svg>
-                  <span>Atti</span>
-                </div>
-                <div class="card-body">
-                  <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <a class="read-more" href="#" aria-label="leggi di più Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…" title="vai all'argomento">
-                    <span class="text">Leggi di più</span>
-                    <svg class="icon">
-                      <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-arrow-right"></use>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </article>
-            <!--end card-->
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <!--start card-->
-            <article class="card-wrapper card-space">
-              <div class="card card-bg card-big rounded shadow">
-                <div class="flag-icon invisible"></div>
-                <div class="etichetta">
-                  <svg class="icon">
-                    <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-files"></use>
-                  </svg>
-                  <span>Atti</span>
-                </div>
-                <div class="card-body">
-                  <h4 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</h4>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <a class="read-more" href="#" aria-label="leggi di più Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…" title="vai all'argomento">
-                    <span class="text">Leggi di più</span>
-                    <svg class="icon">
-                      <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-arrow-right"></use>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </article>
-            <!--end card-->
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <!--start card-->
-            <article class="card-wrapper card-space">
-              <div class="card card-bg card-big rounded shadow">
-                <div class="flag-icon invisible"></div>
-                <div class="etichetta">
-                  <svg class="icon">
-                    <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-file"></use>
-                  </svg>
-                  <span>Comunicazione</span>
-                </div>
-                <div class="card-body">
-                  <h4 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</h4>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed.</p>
-                  <a class="read-more" href="#" aria-label="leggi di più Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…" title="vai all'argomento">
-                    <span class="text">Leggi di più</span>
-                    <svg class="icon">
-                      <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-arrow-right"></use>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </article>
-            <!--end card-->
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <!--start card-->
-            <article class="card-wrapper card-space">
-              <div class="card card-bg card-big rounded shadow">
-                <div class="flag-icon invisible"></div>
-                <div class="etichetta">
-                  <svg class="icon">
-                    <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-presentation"></use>
-                  </svg>
-                  <span>Dati</span>
-                </div>
-                <div class="card-body">
-                  <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <a class="read-more" href="#" aria-label="leggi di più Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…" title="vai all'argomento">
-                    <span class="text">Leggi di più</span>
-                    <svg class="icon">
-                      <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-arrow-right"></use>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </article>
-            <!--end card-->
-          </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <!--start card-->
-            <article class="card-wrapper card-space">
-              <div class="card card-bg card-big rounded shadow">
-                <div class="flag-icon invisible"></div>
-                <div class="etichetta">
-                  <svg class="icon">
-                    <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-files"></use>
-                  </svg>
-                  <span>Atti</span>
-                </div>
-                <div class="card-body">
-                  <h4 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</h4>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <a class="read-more" href="#" aria-label="leggi di più Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…" title="vai all'argomento">
-                    <span class="text">Leggi di più</span>
-                    <svg class="icon">
-                      <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-arrow-right"></use>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </article>
-            <!--end card-->
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section>
-    <div class="py-5">
-      <div class="container px-4">
-        <div class="row">
-          <div class="col">
-            <h3 class="mb-4 text-primary">Tutti i servizi</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 col-md-6 col-lg-4">
-            <!--start card-->
-            <div class="card-wrapper">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title big-heading">Documenti</h4>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <a class="read-more" href="#" aria-label="leggi di più - Documenti" title="leggi di più - Documenti">
-                    <span class="text">Leggi di più</span>
-                    <svg class="icon">
-                      <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-arrow-right"></use>
-                    </svg>
-                  </a>
-                </div>
-              </div>
+              <a href="#" aria-label="Vai a Avviso per richiedere il bonus idrico integrativo 2022" title="Vai a Avviso per richiedere il bonus idrico integrativo 2022">
+                <h3 class="card-title h5 ">Avviso per richiedere il bonus idrico integrativo 2022</h3>
+              </a>
+              <p class="card-text">Avviata la procedura per richiedere il contributo finalizzato alla riduzione dei costi della bolletta dell'acqua o delle situazioni di morosità pregresse.</p>
             </div>
-            <!--end card-->
           </div>
-          <div class="col-12 col-md-6 col-lg-4">
-            <!--start card-->
-            <div class="card-wrapper">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title big-heading">Dati</h4>
-                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <a class="read-more" href="#" aria-label="leggi di più - Dati" title="leggi di più - Dati">
-                    <span class="text">Leggi di più</span>
-                    <svg class="icon">
-                      <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-arrow-right"></use>
-                    </svg>
-                  </a>
-                </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="card-wrapper rounded shadow-sm border border-light">
+          <div class="card bg-none">
+            <div class="card-body">
+              <div class="categoryicon-top">
+                <svg class="icon icon-sm">
+                  <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-file"></use>
+                </svg>
+                <span class="text fw-semibold">
+                  <a href="#" aria-label="Vai a categoria Bandi e avvisi" title="Vai a categoria Bandi e avvisi">Bandi e avvisi</a></span>
               </div>
+              <a href="#" aria-label="Vai a Borsa di studio nazionale, anno scolastico 2021/2022" title="Vai a Borsa di studio nazionale, anno scolastico 2021/2022">
+                <h3 class="card-title h5 ">Borsa di studio nazionale, anno scolastico 2021/2022</h3>
+              </a>
+              <p class="card-text">Il contributo è rivolto agli studenti iscritti nelle scuole secondarie di secondo grado, statali e paritarie, resdienti nel comune.</p>
             </div>
-            <!--end card-->
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="card-wrapper rounded shadow-sm border border-light">
+          <div class="card bg-none">
+            <div class="card-body">
+              <div class="categoryicon-top">
+                <svg class="icon icon-sm">
+                  <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-file"></use>
+                </svg>
+                <span class="text fw-semibold">
+                  <a href="#" aria-label="Vai a categoria Bandi e avvisi" title="Vai a categoria Bandi e avvisi">Bandi e avvisi</a>
+                  </span>
+              </div>
+              <a href="#" aria-label="Vai a Avviso iscrizioni al servizio di mensa scolastica per l'anno 2022/2023" title="Vai a Avviso iscrizioni al servizio di mensa scolastica per l'anno 2022/2023">
+                <h3 class="card-title h5 ">Avviso iscrizioni al servizio di mensa scolastica per l'anno 2022/2023</h3>
+              </a>
+              <p class="card-text">Le iscrizioni al servizio sono aperte per nuovi iscritti e riconferme.</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="py-5">
-      <div class="container px-4">
-        <div class="row">
-          <div class="col">
-            <h3 class="mb-4 text-primary">Argomenti</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col text-center">
-            <a href="#"><span class="chip chip-simple chip-primary" title="vai all'argomento - Cultura" aria-label="vai all'argomento - Cultura"><span class="chip-label">Cultura</span></span></a>
-            <a href="#"><span class="chip chip-simple chip-primary" title="vai all'argomento - Muoversi" aria-label="vai all'argomento - Muoversi"><span class="chip-label">Muoversi</span></span></a>
-            <a href="#"><span class="chip chip-simple chip-primary" title="vai all'argomento - Argomento di esempio" aria-label="vai all'argomento - Argomento di esempio"><span class="chip-label">Argomento di esempio</span></span></a>
+  </div>
+
+  <div class="bg-grey-card pb-30 pb-lg-50">
+    <div class="container px-4">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="title-xxlarge mb-4 mt-30 mt-lg-40 mb-lg-30 pt-lg-2">Esplora tutte le novità</h2>
+
+          <div>
+            {{>partials/input-search/input-search
+            id="autocomplete-three"
+            placeholder-text="Cerca per parola chiave"
+            search-subtitle=true
+            text-subtitle="62 notizie trovate in ordine alfabetico"
+            text-subtitle-class="u-grey-light text-paragraph-card mt-2 mb-30 mt-lg-3 mb-lg-40"
+            wrapper-class="mb-0"
+            icon-class="icon-primary"
+            }}
           </div>
         </div>
       </div>
+
+      {{>cmp-list-card-img/cmp-list-card-img-hr cards=cards.card-all-news rowClass="pb-4"}}
+      <p class="text-center text-paragraph-regular-medium mb-0">Nessun altro risultato</p>
     </div>
-  </section>
+  </div>
+
+
+  <div class="container px-4" id="argomento">
+    <h2 class="title-xxlarge mt-40 mt-lg-60 mb-4 mb-lg-40">Esplora per categoria</h2>
+    <div class="row flex-wrap justify-content-start gy-4 pb-40 pb-lg-60 mb-lg-1 align-items-stretch">
+
+      <div class="col-12 col-md-6 col-xl-4">
+        {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
+        classTitle="title-xlarge"
+        classText="description"
+        card-title="Documento albo pretorio"
+        card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
+        Donec."
+        }}
+      </div>
+
+      <div class="col-12 col-md-6 col-xl-4">
+        {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
+        classTitle="title-xlarge"
+        classText="description"
+        card-title="Modulistica"
+        card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
+        Donec."
+        }}
+      </div>
+
+      <div class="col-12 col-md-6 col-xl-4">
+        {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
+        classTitle="title-xlarge"
+        classText="description"
+        card-title="Documento funzionamento interno"
+        card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
+        Donec."
+        }}
+      </div>
+
+      <div class="col-12 col-md-6 col-xl-4">
+        {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
+        classTitle="title-xlarge"
+        classText="description"
+        card-title="Atto normativo"
+        card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
+        Donec."
+        card-link="Vedi servizi (32)"
+        card-link-accessibility="Visualizza tutte le notizie riguardanti l'argomento"
+        }}
+      </div>
+
+      <div class="col-12 col-md-6 col-xl-4">
+        {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
+        classTitle="title-xlarge"
+        classText="description"
+        card-title="Accordo tra enti"
+        card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
+        Donec."
+        card-link="Vedi servizi (32)"
+        }}
+      </div>
+
+      <div class="col-12 col-md-6 col-xl-4">
+        {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
+        classTitle="title-xlarge"
+        classText="description"
+        card-title="Documento attività politica"
+        card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
+        Donec."
+        }}
+      </div>
+
+      <div class="col-12 col-md-6 col-xl-4">
+        {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
+        classTitle="title-xlarge"
+        classText="description"
+        card-title="Documento (tecnico) di supporto, Istanza"
+        card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
+        Donec."
+        }}
+      </div>
+
+      <div class="col-12 col-md-6 col-xl-4">
+        {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
+        classTitle="title-xlarge"
+        classText="description"
+        card-title="Documento di programmazione e rendicontazione"
+        card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
+        Donec."
+        }}
+      </div>
+
+      <div class="col-12 col-md-6 col-xl-4">
+        {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
+        classTitle="title-xlarge"
+        classText="description"
+        card-title="Dataset"
+        card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
+        Donec."
+        }}
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-primary">
+    <div class="container">
+      <div class="row d-flex justify-content-center bg-primary">
+        <div class="col-12 col-lg-6">
+          {{>cmp-rating/cmp-rating public-template=true rating-title="Quanto è utile questa pagina?"}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-grey-card shadow-contacts">
+    <div class="container">
+      <div class="row d-flex justify-content-center p-contacts">
+        <div class="col-12 col-lg-6">
+          {{>cmp-contacts/cmp-contacts city-problems=true}}
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
 {{/base/base }}

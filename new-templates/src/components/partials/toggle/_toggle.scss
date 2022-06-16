@@ -6,7 +6,7 @@
   }
 
   .label {
-    @include font(16, 16);
+    @include font(16, 18);
     font-weight: 400;
     line-height: 1.5;
     color: get-color(black, main);

@@ -3,7 +3,7 @@
   <div class="col-12 col-md-6 col-xl-4">
     <div class="card-wrapper">
 
-      <div class="card shadow-sm rounded no-after">
+      <div class="card border border-light rounded shadow-sm no-after">
         <div class="row g-2 g-md-0 flex-md-column">
           {{#if img-path}}
           <div class="col-4 order-2 order-md-1">
@@ -12,7 +12,7 @@
           </div>
           {{/if}}
           <div class="{{#if img-path}}col-8 {{else}} col-12 {{/if}} order-1 order-md-2">
-            <div class="{{#if img-path}}card-body {{else}} card-img-none {{/if}}">
+            <div class="{{#if img-path}}card-body {{else}} card-img-none rounded-top{{/if}}">
               <div class="category-top cmp-list-card-img__body">
                 {{#if card.category}}
                 <a class="category cmp-list-card-img__body-heading-title underline" href="#">{{card.category}}</a>

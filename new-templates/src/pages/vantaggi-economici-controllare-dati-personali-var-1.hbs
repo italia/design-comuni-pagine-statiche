@@ -47,15 +47,13 @@
 
             {{> cmp-info-button-card/cmp-info-button-card big-title="Julie Crampton Smith"
             label-2="Codice Fiscale <br> <span>CRMJLU92H52Z826N</span>"
-            data-add="Aggiungi dati"
             show-more-anagrafica-2=true
             anagrafica=vantaggi-economici.controllare-dati-personali-var-1.anagrafica.info
             indirizzo=vantaggi-economici.controllare-dati-personali-var-1.indirizzo.info
             contatti=vantaggi-economici.controllare-dati-personali-var-1.contatti.info
             documenti=vantaggi-economici.controllare-dati-personali-var-1.documenti.info
             collapse-id="collapse-1"
-            modalId="modal-address"
-            btn-label-text="Aggiungi"}}
+            modalId="modal-address"}}
             {{/cmp-card/cmp-card-content-box}}
 
             {{#>cmp-card/cmp-card-content-box bg-grey=true
@@ -70,11 +68,7 @@
             collapse-id="collapse-anagrafica-2"
             margin-class="mb-40"
             }}
-
-            {{> cmp-info-button-card/cmp-info-button-card data-add="Aggiungi dati"
-            warning=true
-            warningMessage="Informazioni mancanti:" }}
-
+            
             {{>partials/button/button label="Aggiungi minore" link=true icon-url="./assets/bootstrap-italia/dist/svg/sprite.svg#it-close-circle"
             icon-class="plus-icon icon-primary icon-sm"
             class="plus-text mt-20"
@@ -91,7 +85,6 @@
 
             {{> cmp-info-button-card/cmp-info-button-card big-title="ISEE: 18.000,00€" label-2="Scadenza ISEE <br>
             <span>01/03/2022</span>"
-            data-add="Aggiungi dati"
             show-more-isee="true"
             collapse-id="collapse2"
             modalId="modal-isee"
@@ -113,9 +106,7 @@
             conto-bancario=vantaggi-economici.controllare-dati-personali-var-1.conto-bancario-1.info
             info-title="Intesa Sanpaolo"
             collapse-id="collapse-bank-1"
-            data-add="Aggiungi dati"
             warning=true
-            warningMessage="Informazioni mancanti:"
             modalId="modal-bank-account"
             }}
 

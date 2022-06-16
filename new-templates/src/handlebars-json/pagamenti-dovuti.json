@@ -254,6 +254,86 @@
           "value":"Persona fisica"
         }
       ],
+      "info-contribuente": {
+        "info": [
+          {
+            "name": "Codice Fiscale",
+            "description": "GLABNC72H25H501Y"
+          },
+          {
+            "name": "Data di nascita",
+            "description": "02/03/1975"
+          },
+          {
+            "name": "Luogo di nascita",
+            "description": "Roma"
+          },
+          {
+            "name": "Sesso",
+            "description": "Femmina"
+          },
+          {
+            "name": "Nazionalità",
+            "description": "Italiana"
+          },
+          {
+            "name": "Professione",
+            "description": "Impiegata"
+          },
+          {
+            "name": "Scolarità",
+            "description": "Laurea Magistrale"
+          }
+        ]
+      },
+      "indirizzo-contribuente": {
+        "info": [
+          {
+            "name": "Residenza",
+            "description": "Via Roma 16, 00100 Roma, IT"
+          },
+          {
+            "name": "Domicilio",
+            "description": "Piazza Risorgimento 16, 00100 Roma, It"
+          }
+        ]
+      },
+      "contatti-contribuente": {
+        "info": [
+          {
+            "name": "Telefono",
+            "description": "+39 331 1234567"
+          },
+          {
+            "name": "Email",
+            "description": "giulia.bianchi@gmail.com"
+          },
+          {
+            "name": "Recapito postale",
+            "description": "P.zza Risorgimento 16, 00100 Roma"
+          }
+        ]
+      },
+      "documenti-contribuente": {
+        "info": [
+          {
+            "name": "Carta d'identità",
+            "description": "giulia_bianchi_carta_di_identità_fronte_retro.pdf",
+            "warning": false,
+            "success": true,
+            "warning-message": "Documento scaduto",
+            "success-message": "Documento inserito con successo"
+          },
+          {
+            "name": "Modulo condizione lavorativa",
+            "description": "giulia_bianchi_modulo.pdf",
+            "warning": false,
+            "success": true,
+            "warning-message": "Documento scaduto",
+            "success-message": "Documento inserito con successo"
+          }
+        ]
+      },
       "immobili": {
         "info-1":[
           {

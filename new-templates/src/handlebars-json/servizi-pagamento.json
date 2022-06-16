@@ -251,6 +251,10 @@
         {
           "text": "Beneficiario - Documenti",
           "id": "beneficiary-info"
+        },
+        {
+          "text": "ISEE",
+          "id": "isee-info"
         }
       ]
     },
@@ -459,12 +463,14 @@
         {
           "icon": "it-settings",
           "link": "Iscrizione servizio mensa",
-          "class": "shadow mb-10"
+          "class": "shadow mb-10",
+          "aria-label": "Vai al servizio"
         },
         {
           "icon": "it-settings",
           "link": "Iscrizione trasporto scolastico",
-          "class": "shadow"
+          "class": "shadow",
+          "aria-label": "Vai al servizio"
         }
       ],
       "servizi-correlati-disservizio": [

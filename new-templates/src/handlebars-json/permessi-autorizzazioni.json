@@ -237,6 +237,23 @@
           "warning-message": "Documento mancante"
         }
       ],
+       "modal-vehicle":[
+        {
+          "value":"Uso esclusivo"
+        },
+        {
+          "value":"Uso esclusivo"
+        },
+        {
+          "value":"Uso esclusivo"
+        },
+        {
+          "value":"Uso esclusivo"
+        },
+        {
+          "value":"Uso esclusivo"
+        }
+       ],
       "vehicle-2": [
         {
           "name": "Intestatario",

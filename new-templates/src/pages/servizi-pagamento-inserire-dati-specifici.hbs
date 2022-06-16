@@ -26,7 +26,7 @@
       <div class="col-12 col-lg-8 offset-lg-1">
         <div class="steppers-content" aria-live="polite">
           <div>
-            <p class="text-paragraph-small mb-40">I campi contraddistinti dal simbolo asterisco (*) sono obbligatori</p>
+            <p class="text-paragraph-small mb-40">I campi contraddistinti dal simbolo asterisco sono obbligatori</p>
             {{#>cmp-card/cmp-card-content-box
             class="p-big"
             id-title="school-choice"
@@ -34,7 +34,8 @@
             h2-class="mb-0"
             margin-class="mb-40"
             required-icon=true
-            card-title="Seleziona Istituto"}}
+            card-title="Seleziona Istituto"
+            subtitle="Scegli l’istituto a cui vuoi iscrivere il minore"}}
             {{> partials/select/select placeholder="Seleziona opzione" select-option-list=inserire-dati-specifici}}
             {{/cmp-card/cmp-card-content-box}}
           </div>

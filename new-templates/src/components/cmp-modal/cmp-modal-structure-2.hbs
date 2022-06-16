@@ -17,7 +17,7 @@
           {{/if}}
           <p class="cmp-modal__header-info header-font">{{modalInfo}}</p>
           {{#if link}}
-          <a href="#" class="cmp-modal__header-link text-success underline {{link-class}}">{{link}}</a>
+          <a href="#" class="cmp-modal__header-link text-success underline {{link-class}}" aria-label="Vai a {{link}}" title="Vai a {{link}}">{{link}}</a>
           {{/if}}
         </div>
         <div class="modal-body">
@@ -25,8 +25,8 @@
         </div>
         {{#if buttons}}
         <div class="modal-footer pb-70 {{#if no-body}}pt-0{{/if}}">
-          <button class="btn btn-primary  w-100 mx-0 fw-bold mb-4" type="submit" data-bs-toggle="modal" data-bs-target="#{{modalId}}" form="{{id-form}}">{{labelBtnSave}}</button>
-          <button class="btn btn-outline-primary w-100 mx-0" data-bs-dismiss="modal fw-bold"
+          <button class="btn btn-primary  w-100 mx-0 fw-bold mb-4" type="submit" aria-label="{{labelBtnSave}}" data-bs-toggle="modal" data-bs-target="#{{modalId}}" form="{{id-form}}">{{labelBtnSave}}</button>
+          <button class="btn btn-outline-primary w-100 mx-0" aria-label="{{labelBtnCancel}}" data-bs-dismiss="modal fw-bold"
             type="button">{{labelBtnCancel}}</button>
         </div>
         {{/if}}

@@ -6,7 +6,7 @@
         {{>cmp-breadcrumbs/cmp-breadcrumbs link2="Home" link3="Novità"}}
 
         {{>cmp-hero/cmp-hero
-        hero-title="Notizie"
+        hero-title="Novità"
         hero-text="Tutte le novità comunali per i cittadini per restare aggiornati."
         wrapper-class="pt-0 ps-0 pb-4 pb-lg-60"}}
       </div>
@@ -14,7 +14,7 @@
   </div>
 
   <div class="container px-4">
-    <h2 class="title-xxlarge mt-70 mb-4 mt-lg-40 pt-lg-2 mb-lg-40 ">Notizie in evidenza</h2>
+    <h2 class="title-xxlarge mt-70 mb-4 mt-lg-40 pt-lg-2 mb-lg-40 ">In evidenza</h2>
     {{>cmp-list-card-img/cmp-list-card-img-hr cards=cards.card-news rowClass="pb-60"}}
   </div>
 
@@ -40,6 +40,46 @@
 
       {{>cmp-list-card-img/cmp-list-card-img-hr cards=cards.card-all-news rowClass="pb-4"}}
       <p class="text-center text-paragraph-regular-medium mb-0">Nessun altro risultato</p>
+    </div>
+  </div>
+
+
+  <div class="container px-4" id="argomento">
+    <h2 class="title-xxlarge mt-40 mt-lg-60 mb-4 mb-lg-40">Esplora per categoria</h2>
+    <div class="row flex-wrap justify-content-start gy-4 pb-40 pb-lg-60 mb-lg-1 align-items-stretch">
+
+      <div class="col-12 col-md-6 col-xl-4">
+        {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
+        classTitle="title-xlarge"
+        card-title="News"
+        card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
+        Donec."
+        }}
+      </div>
+
+      <div class="col-12 col-md-6 col-xl-4">
+        {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
+        classTitle="title-xlarge"
+        card-title="Comunicato stampa"
+        card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
+        Donec."
+        }}
+      </div>
+
+      <div class="col-12 col-md-6 col-xl-4">
+        {{>cmp-card/cmp-card-simple
+        borderlight=true
+        icon="it-arrow-right"
+        classTitle="title-xlarge"
+        card-title="Avviso"
+        card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
+        Donec."
+        }}
+      </div>
     </div>
   </div>
 

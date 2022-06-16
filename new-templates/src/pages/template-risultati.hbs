@@ -22,19 +22,19 @@
       </div>
       <div class="col-lg-8 offset-lg-1">
         <div class="d-flex justify-content-between align-items-center border-bottom border-light pb-3 mb-2">
-          <h2 class="visually-hidden" id="search-result">risultati di ricerca</h2>
+          <h2 class="visually-hidden" id="search-result">Risultati di ricerca</h2>
           <span class="search-results u-grey-light"><span class="numResult">645</span> Risultati</span>
-          {{>partials/button/button label="Filtra" label-class="t-primary title-xsmall-semi-bold ms-1"
+          {{>partials/button/button label="Filtra" aria-label="Filtra i risultati" label-class="t-primary title-xsmall-semi-bold ms-1"
           iconBtn="it-funnel" class="p-0 pe-2 d-lg-none" xs=true modalId="modal-categories"}}
 
-          <button type="button" class="btn d-none d-lg-block btn-result" disabled>Rimuovi tutti i filtri</button>
+          <button type="button" class="btn d-none d-lg-block btn-result" aria-label="Rimuovi tutti i filtri" disabled>Rimuovi tutti i filtri</button>
         </div>
 
         <div class="container p-0">
           <div class="row flex-column-reverse flex-lg-row">
             <div class="col-12  pt-3">
               {{>cmp-card-latest-messages/cmp-card-latest-messages
-              category="servizi"
+              category="Servizi"
               green-title-big="Consegna contenitori rifiuti"
               description="Consegna dei contenitori per il corretto conferimento dei rifiuti nel sistema di raccolta
               porta a porta."
@@ -44,7 +44,7 @@
               }}
 
               {{>cmp-card-latest-messages/cmp-card-latest-messages
-              category="servizi"
+              category="Servizi"
               green-title-big="Consegna contenitori rifiuti"
               description="Consegna dei contenitori per il corretto conferimento dei rifiuti nel sistema di raccolta
               porta a porta."
@@ -54,7 +54,7 @@
               }}
 
               {{>cmp-card-latest-messages/cmp-card-latest-messages
-              category="servizi"
+              category="Servizi"
               green-title-big="Conferimento rifiuti presso isole ecologiche mobili"
               description="Le isole ecologiche mobili sono dei piccoli eco-centri nei quali è possibile conferire
               rifiuti di piccole dimensioni"
@@ -64,7 +64,7 @@
               }}
 
               {{>cmp-card-latest-messages/cmp-card-latest-messages
-              category="servizi"
+              category="Servizi"
               green-title-big="Chiedere un rimborso Tari (Tassa sui rifiuti)"
               description="Come chiedere un rimborso per la Tassa sui rifiuti (Tari)."
               cmp-card-class="mb-30"
@@ -128,7 +128,7 @@
                 outline-primary="true"
                 class="pt-15 pb-15 pl-90 pr-90 mb-30 mb-lg-50 full-mb text-button"
                 label="Carica altri risultati"
-                aria-label="carica altri risultati"
+                aria-label="Carica altri risultati"
                 }}
               </div>
             </div>
