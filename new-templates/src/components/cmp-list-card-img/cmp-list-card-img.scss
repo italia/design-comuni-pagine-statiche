@@ -32,6 +32,7 @@
   .card {
     max-width: 540px;
     height: auto;
+    background-color: transparent;
 
     @include media-breakpoint-down(md) {
       max-width: 100%;
