@@ -28,15 +28,15 @@
           <div>
             <p class="text-paragraph-small mb-40">I campi contraddistinti dal simbolo asterisco sono obbligatori</p>
             {{#>cmp-card/cmp-card-content-box
-            class="p-big"
+            class="p-big p-4"
             id-title="school-choice"
             bg-grey=true
             h2-class="mb-0"
             margin-class="mb-40"
             required-icon=true
-            card-title="Seleziona Istituto"
+            card-title="Scegli la scuola"
             subtitle="Scegli l’istituto a cui vuoi iscrivere il minore"}}
-            {{> partials/select/select placeholder="Seleziona opzione" select-option-list=inserire-dati-specifici}}
+            {{> partials/select/select placeholder="Seleziona un'opzione" select-option-list=inserire-dati-specifici id="select-school" label-hidden=true label-text="Scegli la scuola"}}
             {{/cmp-card/cmp-card-content-box}}
           </div>
 
@@ -45,11 +45,13 @@
             class="p-big"
             id-title="rate-choice"
             bg-grey=true
+            header-m0=true
             h2-class="mb-1"
             margin-class="mb-40"
             required-icon=true
             card-title="Tariffa esonero"
-            subtitle="Indica la tariffa di esonero a cui ha diritto il beneficiario"}}
+            subtitle="Indica la tariffa di esonero a cui ha diritto il beneficiario"
+            subtitleClass="mb-4"}}
             {{> cmp-card-radio/cmp-card-radio percentage=true id='rate'
             label-1="Nessuna"
             label-2="25%"
@@ -102,7 +104,7 @@
             required-icon=true
             card-title="Dieta diversificata"
             subtitle="Indica la dieta per il beneficiario"}}
-            {{> cmp-card-radio/cmp-card-radio percentage=true frequency=true diet=true id='frequency'}}
+            {{> cmp-card-radio/cmp-card-radio percentage=true frequency=true diet=true id='diet'}}
             {{/cmp-card/cmp-card-content-box}}
           </div>
           {{> cmp-nav-steps/cmp-nav-steps save="true" saveBtn=true}}

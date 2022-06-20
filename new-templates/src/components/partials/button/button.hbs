@@ -27,12 +27,13 @@ class="btn
   {{#if outline-secondary}}btn-outline-secondary{{/if}}
   {{#if disabled}}disabled{{/if}}
   {{#if fullMobile}}full-mobile{{/if}}
+  {{#if bg-white}}bg-white{{/if}}
   {{class}}
 ">
 
 {{#if iconBtn}}
   <span class="rounded-icon">
-    <svg class="icon {{#if iconWhite}}icon-white{{else}}icon-primary{{/if}} {{#if sm}}icon-sm{{/if}} {{#if xs}}icon-xs{{/if}} mb-1">
+    <svg class="icon {{#if iconWhite}}icon-white{{else}}icon-primary{{/if}} {{#if sm}}icon-sm{{/if}} {{#if xs}}icon-xs{{/if}} mb-1 {{class-icon}}">
       <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#{{iconBtn}}"></use>
     </svg>
   </span>

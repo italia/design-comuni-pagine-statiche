@@ -28,7 +28,7 @@
           link-list=servizi-pagamento.controllare-dati-personali.navscroll
           br-none="true"}}
         </div>
-        <div class="col-12 col-lg-8 offset-lg-1 mt-2 mt-lg-0">
+        <div class="col-12 col-lg-8 offset-lg-1">
 
             {{> cmp-alert-box/cmp-alert-box warning=true message="Ci sono alcune informazioni mancanti o errate"  
               alertSpan-class="title-small-semi-bold"
@@ -99,8 +99,7 @@
             {{> cmp-info-button-card/cmp-info-button-card big-title="ISEE: 18.000,00€" label-2="Scadenza ISEE <br>
             <span>01/10/2019</span>"
             show-more-isee="true"
-            warning=true
-            btn-label-text="Correggi"
+            isee-success=true
             collapse-id="collapse2"
             modalId="modal-isee"
             }}

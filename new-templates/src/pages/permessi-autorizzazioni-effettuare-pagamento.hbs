@@ -16,19 +16,21 @@
         cmpClass="mb-30 mb-lg-40"
         class="mb-0 card-summary-grey"
         header-m0=true
+        h2-class="mb-4"
         bg-grey=true
         card-title="Permesso ZTL"
         }}
 
         {{>cmp-info-summary/cmp-info-summary
-        class="card-summary-inline"
         info=true
-        header-class="d-none"
+        no-header=true
+        info-title="Dati"
+        class="p-4 mb-4"
         effettuare-pagamento=permessi-autorizzazioni.effettuare-pagamento.pagamento-ztl
         }}
 
         <div class="bg-white">
-          <p class="title-large-semi-bold card-white">Importo pagamento: 16,00 €</p>
+          <p class="title-large-semi-bold card-white">Importo pagamento: <span class="d-block d-lg-inline">16,00 €</span></p>
         </div>
 
         {{/cmp-card/cmp-card-content-box}}

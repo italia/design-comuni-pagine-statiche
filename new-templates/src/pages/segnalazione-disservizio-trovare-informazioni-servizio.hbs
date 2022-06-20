@@ -10,8 +10,8 @@
         double-button=true
         label="Segnala disservizio"
         second-label="Tutte le segnalazioni"
-        btnClass="mb-4 mb-lg-0 full-mobile"
-        second-btnClass="mt-4 mb-4 mb-lg-0 mt-lg-0 full-mobile"
+        btnClass="mb-4 pb-2 mb-lg-0 full-mobile"
+        second-btnClass="mb-2 mb-lg-0 mt-lg-0 full-mobile"
         aria-label="Vai alla pagina Segnala disservizio"
         second-ariaLabel="Vai alla pagina Tutte le segnalazioni"
         class="text-button"
@@ -89,11 +89,11 @@
 
         {{#>cmp-card/cmp-card-content-box card-title="Fai una segnalazione" h2-class="mb-3" header-m0=true class="p-3" id-title="service-access"
         subtitle="Invia una segnalazione online dal tuo smartphone o computer" bg-grey="true" }}
-        {{>partials/button/button label="Segnala disservizio" primary="true" class="mobile-full mt-3" }}
+        {{>partials/button/button label="Segnala disservizio" primary="true" class="mobile-full mt-3" aria-label="Vai alla pagina Segnalazione disservizio"}}
         <p class="text-paragraph mt-4 mb-3">Oppure, prenota un appuntamento all’Ufficio Relazioni con il Pubblico (URP)
         </p>
-        {{>partials/button/button label="Prenota appuntamento" primary="true" class="mobile-full btn-outline-primary
-        t-primary" }}
+        {{>partials/button/button label="Prenota appuntamento" class="mobile-full btn-outline-primary
+        t-primary bg-white" aria-label="Vai alla pagina Prenota appuntamento"}}
         {{/cmp-card/cmp-card-content-box}}
 
 
@@ -104,11 +104,8 @@
         {{/cmp-card/cmp-card-content-box}}
 
         {{#>cmp-card/cmp-card-content-box card-title="Contatti" h2-class="mb-3" header-m0=true id-title="contacts"}}
-
-        <div class="mt-15">
           {{>cmp-card-img/cmp-card-img card-title="Ufficio scuola" card-description="Via Dei Transiti 21, 50302<br> 05
           0505 <br> ufficioscuola@email.it" img=true}}
-        </div>
         {{/cmp-card/cmp-card-content-box}}
 
         {{#>cmp-card/cmp-card-content-box }}

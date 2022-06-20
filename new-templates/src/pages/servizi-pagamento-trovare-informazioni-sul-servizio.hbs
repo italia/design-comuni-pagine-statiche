@@ -8,9 +8,10 @@
         title="Richiesta servizio mensa scolastica"
         pClass="mt-3"
         button=true
-        label="Richiedi iscrizione online"
-        aria-label="Vai a richiedi online il servizio di mensa scolastica"
+        label="Richiedi online"
+        aria-label="Vai alla pagina richiedi online del servizio di mensa scolastica"
         description="Il servizio di mensa scolastica per le scuole dell’infanzia e primarie statali."
+        desClass="mb-30"
         primary=true
         class="text-button"
         label-tag="Servizio attivo"
@@ -20,13 +21,13 @@
       <hr class="d-none d-lg-block mb-0 mt-2">
     </div>
 
-    <div class="row mt-lg-80 mt-3 mb-3 mb-md-5">
+    <div class="row mt-lg-80 mt-4">
       <div class="col-12 col-lg-3 mb-4 ">
         {{>cmp-navscroll/cmp-navscroll accordion-title="INDICE DELLA PAGINA"
         link-list=servizi-pagamento.trovare-informazioni-servizio.navscroll}}
       </div>
       <div class="col-12 col-lg-8 offset-lg-1">
-        {{#>cmp-card/cmp-card-content-box card-title="A chi è rivolto" h2-class="mb-3" id-title="who-needs"}}
+        {{#>cmp-card/cmp-card-content-box card-title="A chi è rivolto" header-m0=true h2-class="mb-3" id-title="who-needs"}}
 
         {{>cmp-ul-list/cmp-ul-list
         info-list=servizi-pagamento.trovare-informazioni-servizio.list-1 font-list="lora"}}
@@ -34,7 +35,7 @@
 
 
 
-        {{#>cmp-card/cmp-card-content-box card-title="Descrizione" id-title="description"}}
+        {{#>cmp-card/cmp-card-content-box card-title="Descrizione" header-m0=true h2-class="mb-3" id-title="description"}}
         <p class="text-paragraph lora mb-4">
           Per la <strong>Scuola dell’infanzia</strong> il servizio è attivo tutti i giorni. La richiesta dovrà essere
           ripresentata ogni anno contestualmente alla riconferma alla scuola.
@@ -51,7 +52,7 @@
         {{/cmp-card/cmp-card-content-box}}
 
 
-        {{#>cmp-card/cmp-card-content-box card-title="Come fare" id-title="how-to"}}
+        {{#>cmp-card/cmp-card-content-box card-title="Come fare" header-m0=true h2-class="mb-3" id-title="how-to"}}
         <p class="text-paragraph lora mb-0">
           L’iscrizione e l’eventuale richiesta di dieta speciale devono essere effettuate obbligatoriamente ogni anno
           per tutti gli iscritti che consumeranno il pasto a scuola.
@@ -60,7 +61,7 @@
 
 
 
-        {{#>cmp-card/cmp-card-content-box card-title="Cosa serve" class="p-3" id-title="needed" bg-grey="true"
+        {{#>cmp-card/cmp-card-content-box card-title="Cosa serve" header-m0=true h2-class="mb-3" class="p-3" id-title="needed" bg-grey="true"
         bg-grey-primary=true}}
         {{>cmp-ul-list/cmp-ul-list heading-title="Per accedere al servizio, assicurati di avere:" font-title="lora"
         font-list="lora" info-list=servizi-pagamento.trovare-informazioni-servizio.list-2 }}
@@ -72,49 +73,46 @@
         timeline=servizi-pagamento.trovare-informazioni-servizio.timeline
         }}
 
-        {{#>cmp-card/cmp-card-content-box card-title="Costi" h2-class="mb-3" id-title="costs" subtitle="L'utente del
+        {{#>cmp-card/cmp-card-content-box card-title="Costi" lora=true header-m0=true h2-class="mb-3" id-title="costs" subtitle="L'utente del
         servizio mensa è tenuto a versare, per ciascun pasto, la quota stabilita in base alle fasce Isee approvate con
         delibera di Giunta comunale n. 3/2019. <br><br>
         È riconosciuta l’esenzione per ISEE compreso tra € 0,00 ed € 10.000,00." class="mt-30" }}
-        {{>cmp-icon-link/cmp-icon-link link="Tariffe per la mensa scolastica" dimensione-file="(PDF 1MB)"}}
+        {{>cmp-icon-link/cmp-icon-link link="Tariffe per la mensa scolastica" link-class="mt-3" dimensione-file="(PDF 1MB)"}}
         {{/cmp-card/cmp-card-content-box}}
 
 
-        {{#>cmp-card/cmp-card-content-box card-title="Accedi al servizio" class="p-3" id-title="service-access"
+        {{#>cmp-card/cmp-card-content-box card-title="Accedi al servizio" lora=true header-m0=true h2-class="mb-3" class="p-3" id-title="service-access"
         subtitle="Puoi richiedere il servizio mensa direttamente online tramite identità digitale." bg-grey="true" }}
-        {{>partials/button/button label="Richiedi online" aria-label="Accedi al servizio e richiedi online il servizio di mensa scolastica" primary="true" class="mobile-full" }}
-        <p class="text-paragraph mt-4 mb-3">Oppure, puoi prenotare un appuntamento e presentarti presso gli uffici.
+        {{>partials/button/button label="Richiedi online" aria-label="Accedi al servizio e richiedi online il servizio di mensa scolastica" primary="true" class="mobile-full mt-3" }}
+        <p class="text-paragraph mt-4 mb-3 lora">Oppure, puoi prenotare un appuntamento e presentarti presso gli uffici.
         </p>
-        {{>partials/button/button label="Prenota appuntamento" aria-label="Vai alla pagina Prenota Appuntamento" primary="true" class="mobile-full btn-outline-primary
+        {{>partials/button/button label="Prenota appuntamento" aria-label="Vai alla pagina Prenota Appuntamento" primary="true" class="mobile-full btn-outline-primary bg-white 
         t-primary" }}
         {{/cmp-card/cmp-card-content-box}}
 
-        {{#>cmp-card/cmp-card-content-box card-title="Condizioni di servizio" id-title="conditions" subtitle="Per
+        {{#>cmp-card/cmp-card-content-box card-title="Condizioni di servizio" header-m0=true h2-class="mb-3" id-title="conditions" subtitle="Per
         conoscere i dettagli di
         scadenze, requisiti e altre informazioni importanti, leggi i termini e le condizioni di servizio." }}
-        {{>cmp-icon-link/cmp-icon-link link="Termini e condizioni di servizio" dimensione-file="(PDF 1MB)"}}
+        {{>cmp-icon-link/cmp-icon-link link="Termini e condizioni di servizio" dimensione-file="(PDF 1MB)" link-class="mt-3"}}
         {{/cmp-card/cmp-card-content-box}}
 
 
-        {{#>cmp-card/cmp-card-content-box card-title="Contatti" id-title="contacts"}}
+        {{#>cmp-card/cmp-card-content-box card-title="Contatti" header-m0=true h2-class="mb-3" id-title="contacts"}}
+          {{>cmp-card-img/cmp-card-img card-title="Ufficio scuola"  card-description="Via Dei Transiti 21, 50302<br> 05 0505 <br> <a href='mailto:ufficioscuola@email.it' aria-label='Invia una email a ufficioscuola@email.it' title='Invia una email a ufficioscuola@email.it'>ufficioscuola@email.it</a>"
+          img=true}}
+        {{/cmp-card/cmp-card-content-box}}
 
-        <div class="mt-15">
-          {{>cmp-card-img/cmp-card-img card-title="Ufficio scuola" card-description="Via Dei Transiti 21, 50302<br> 05
-          0505 <br> ufficioscuola@email.it" img=true}}
+
+        <div class="wrapper-tag mb-4 mb-lg-80">
+          <span class="text-paragraph-small">Argomenti:</span>
+          <div class="d-flex flex-wrap gap-2 mt-10 mb-4">
+            {{>partials/cmp-tag/cmp-tag label-tag="Educazione" class="t-primary bg-tag"}}
+            {{>partials/cmp-tag/cmp-tag label-tag="Famiglia" class="t-primary bg-tag"}}
+            {{>partials/cmp-tag/cmp-tag label-tag="Scuola" class="t-primary bg-tag"}}
+          </div>
+          <p class="text-paragraph-small mb-0">Pagina aggiornata il 14/04/2022</p>
         </div>
-        {{/cmp-card/cmp-card-content-box}}
-
-
-        {{#>cmp-card/cmp-card-content-box }}
-        <span class="text-paragraph-small">Argomenti:</span>
-        <div class="d-flex flex-wrap gap-2 mt-10 mb-30 ">
-          {{>partials/cmp-tag/cmp-tag label-tag="Educazione" class="t-primary"}}
-          {{>partials/cmp-tag/cmp-tag label-tag="Famiglia" class="t-primary"}}
-          {{>partials/cmp-tag/cmp-tag label-tag="Scuola d’infanzia" class="t-primary"}}
-          {{>partials/cmp-tag/cmp-tag label-tag="Bambini 3 - 5 anni" class="t-primary"}}
-        </div>
-        <p class="text-paragraph-small mb-0">Pagina aggiornata il 14/04/2022</p>
-        {{/cmp-card/cmp-card-content-box}}
+      
       </div>
     </div>
   </div>
@@ -123,7 +121,7 @@
   <div class="bg-primary">
     <div class="container">
       <div class="row d-flex justify-content-center bg-primary">
-        <div class="col-12 col-lg-6 p-lg-0 px-3">
+        <div class="col-12 col-lg-6 p-lg-0 px-4">
           {{>cmp-rating/cmp-rating}}
         </div>
       </div>

@@ -12,10 +12,10 @@
         {{/if}}
       </div>
       {{#if second-title}}
-      <h3 class="subtitle-medium cmp-card__second-title" >{{second-title}}</h3>
+      <h3 class="subtitle-medium cmp-card__second-title {{secondTitle-class}}" >{{second-title}}</h3>
       {{/if}}
       {{#if subtitle}}
-      <p class="subtitle-small mb-0 {{#if lora}}lora{{/if}}">{{{subtitle}}}</p>
+      <p class="subtitle-small mb-0 {{subtitleClass}} {{#if lora}}lora{{/if}}">{{{subtitle}}}</p>
       {{/if}}
 
       {{#if toggle}}

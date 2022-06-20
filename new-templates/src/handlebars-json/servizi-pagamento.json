@@ -241,9 +241,35 @@
         {
           "name": "Certificato dieta patologica",
           "description": "",
-          "warning": false,
+          "warning": true,
+          "warning-message": "Documento mancante"
+        }
+      ],
+      "isee-success":[
+        {
+          "name": "Valore ISEE",
+          "description": "18.000,00€"
+        },
+        {
+          "name": "Scadenza ISEE",
+          "description": "06/10/2023"
+        },
+        {
+          "name": "Anno protocollo",
+          "description": "2022"
+        },
+        {
+          "name": "Numero protocollo",
+          "description": "12345678"
+        },
+        {
+          "name": "Codice filiale protocollo",
+          "description": "12345678"
+        },
+        {
+          "name": "Certificato ISEE",
+          "description": "documento_ISEE-2019.pdf",
           "success": true,
-          "warning-message": "Documento mancante",
           "success-message": "Documento inserito con successo"
         }
       ],
@@ -251,10 +277,6 @@
         {
           "text": "Beneficiario - Documenti",
           "id": "beneficiary-info"
-        },
-        {
-          "text": "ISEE",
-          "id": "isee-info"
         }
       ]
     },
@@ -390,6 +412,10 @@
           }
         ],
         "isee-familiare": [
+          {
+            "name": "Valore ISEE",
+            "description": "18.000,00€"
+          },
             {
               "name": "Scadenza ISEE",
               "description": "06/10/2023"
@@ -469,7 +495,7 @@
         {
           "icon": "it-settings",
           "link": "Iscrizione trasporto scolastico",
-          "class": "shadow",
+          "class": "shadow mb-50 mb-lg-80",
           "aria-label": "Vai al servizio"
         }
       ],
@@ -531,19 +557,21 @@
           "num": "1",
           "title": "Iscrizione scuola d’infanzia",
           "date": "15/02/2022",
-          "icon": "it-folder",
+          "icon": "folder-incomplete.svg",
           "icon-label": "Da completare",
           "color": "u-main-alert",
+          "practice":"Pagamento:",
+           "practice-number":"PA3028/17",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
-              "class": "shadow"
+              "class": "shadow p-0"
             },
             {
               "icon": "it-clip",
               "link": "Graduatoria",
-              "class": "shadow"
+              "class": "shadow p-0"
             }
           ]
         },
@@ -554,16 +582,18 @@
           "icon": "it-folder",
           "icon-label": "In sospeso",
           "color": "u-main-error",
+          "practice":"Pagamento:",
+           "practice-number":"PA3028/17",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
-              "class": "shadow"
+              "class": "shadow p-0"
             },
             {
               "icon": "it-clip",
               "link": "Graduatoria",
-              "class": "shadow"
+              "class": "shadow p-0"
             }
           ]
         },
@@ -573,16 +603,18 @@
           "date": "24/06/2021",
           "icon": "it-folder",
           "icon-label": "Conclusa",
+          "practice":"Pagamento:",
+           "practice-number":"PA3028/17",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
-              "class": "shadow"
+              "class": "shadow p-0"
             },
             {
               "icon": "it-clip",
               "link": "Graduatoria",
-              "class": "shadow"
+              "class": "shadow p-0"
             }
           ]
         },
@@ -592,16 +624,18 @@
           "date": "10/05/2021",
           "icon": "it-folder",
           "icon-label": "Conclusa",
+          "practice":"Pagamento:",
+           "practice-number":"PA3028/17",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
-              "class": "shadow"
+              "class": "shadow p-0"
             },
             {
               "icon": "it-clip",
               "link": "Graduatoria",
-              "class": "shadow"
+              "class": "shadow p-0"
             }
           ]
         },
@@ -615,12 +649,12 @@
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
-              "class": "shadow"
+              "class": "shadow p-0"
             },
             {
               "icon": "it-clip",
               "link": "Graduatoria",
-              "class": "shadow"
+              "class": "shadow p-0"
             }
           ]
         }
@@ -630,94 +664,91 @@
           "num": "6",
           "title": "Pagamento servizio mensa",
           "date": "07/01/2022",
-          "icon": "it-check",
-          "icon-label": "Pagato",
+          "icon": "folder-to-pay.svg",
+          "icon-label": "Da pagare",
+          "color": "u-main-error",
+          "error-icon":true,
+          "label-tag":"Iscrizione servizio mensa",
+          "import":"23,00 €",
+          "practice":"Pagamento:",
+           "practice-number":"PA3028/17",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
-              "class": "shadow"
-            },
-            {
-              "icon": "it-clip",
-              "link": "Graduatoria",
-              "class": "shadow"
+              "class": "shadow p-0"
             }
           ]
         },
         {
           "num": "7",
-          "title": "Pagamento contravvenzioni",
+          "title": "Pagamento contravvenzione",
           "date": "01/10/2021",
-          "icon": "it-check",
+          "icon": "folder-pay.svg",
           "icon-label": "Pagato",
+          "label-tag":"Iscrizione servizio mensa",
+          "import":"23,00 €",
+          "practice":"Pagamento:",
+           "practice-number":"PA3028/17",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
-              "class": "shadow"
-            },
-            {
-              "icon": "it-clip",
-              "link": "Graduatoria",
-              "class": "shadow"
+              "class": "shadow p-0"
             }
           ]
         },
         {
           "num": "8",
-          "title": "Pagamento contravvenzioni",
+          "title": "Pagamento contravvenzione",
           "date": "24/06/2021",
-          "icon": "it-check",
+          "icon": "folder-pay.svg",
           "icon-label": "Pagato",
+          "label-tag":"Iscrizione servizio mensa",
+          "import":"23,00 €",
+          "practice":"Pagamento:",
+           "practice-number":"PA3028/17",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
-              "class": "shadow"
-            },
-            {
-              "icon": "it-clip",
-              "link": "Graduatoria",
-              "class": "shadow"
+              "class": "shadow p-0"
             }
           ]
         },
         {
           "num": "9",
-          "title": "Pagamento contravvenzioni",
+          "title": "Pagamento contravvenzione",
           "date": "10/05/2021",
-          "icon": "it-check",
+          "icon": "folder-pay.svg",
           "icon-label": "Pagato",
+          "label-tag":"Iscrizione servizio mensa",
+          "import":"23,00 €",
+          "practice":"Pagamento:",
+           "practice-number":"PA3028/17",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
-              "class": "shadow"
-            },
-            {
-              "icon": "it-clip",
-              "link": "Graduatoria",
-              "class": "shadow"
+              "class": "shadow p-0"
             }
           ]
         },
         {
           "num": "10",
-          "title": "Pagamento contravvenzioni",
+          "title": "Pagamento contravvenzione",
           "date": "06/03/2021",
-          "icon": "it-check",
+          "icon": "folder-pay.svg",
           "icon-label": "Pagato",
+          "label-tag":"Iscrizione servizio mensa",
+          "import":"23,00 €",
+          "practice":"Pagamento:",
+           "practice-number":"PA3028/17",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
-              "class": "shadow"
-            },
-            {
-              "icon": "it-clip",
-              "link": "Graduatoria",
-              "class": "shadow"
+              "class": "shadow p-0"
             }
           ]
         }
@@ -725,41 +756,38 @@
       "pratiche": [
         {
           "num": "1",
-          "title": "Iscrizione scuola d’infanzia",
-          "date": "15/02/2022",
-          "icon": "it-folder",
+          "title": "Richiesta servizio mensa",
+          "date": "20/03/2022",
+          "icon": "folder-incomplete.svg",
           "icon-label": "Da completare",
           "color": "u-main-alert",
+          "label-tag":"Iscrizione servizio mensa",
+          "import":"23,00 €",
+          "practice":"Pagamento:",
+           "practice-number":"PA3028/17",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
-              "class": "shadow"
-            },
-            {
-              "icon": "it-clip",
-              "link": "Graduatoria",
-              "class": "shadow"
+              "class": "shadow p-0 p-0"
             }
           ]
         },
         {
           "num": "2",
-          "title": "Richiesta assegno maternità",
-          "date": "24/06/2021",
-          "icon": "it-folder",
-          "icon-label": "In sospeso",
-          "color": "u-main-error",
+          "title": "Iscrizione alla scuola dell’infanzia",
+          "date": "01/10/2022",
+          "icon": "folder-concluded.svg",
+          "icon-label": "Conclusa",
+          "label-tag":"Iscrizione servizio mensa",
+          "import":"23,00 €",
+          "practice":"Pagamento:",
+           "practice-number":"PA3028/17",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
-              "class": "shadow"
-            },
-            {
-              "icon": "it-clip",
-              "link": "Graduatoria",
-              "class": "shadow"
+              "class": "shadow p-0 p-0"
             }
           ]
         },
@@ -767,18 +795,17 @@
           "num": "3",
           "title": "Iscrizione corso di formazione",
           "date": "24/06/2021",
-          "icon": "it-folder",
+          "icon": "folder-concluded.svg",
           "icon-label": "Conclusa",
+          "label-tag":"Iscrizione servizio mensa",
+          "import":"23,00 €",
+          "practice":"Pagamento:",
+           "practice-number":"PA3028/17",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
-              "class": "shadow"
-            },
-            {
-              "icon": "it-clip",
-              "link": "Graduatoria",
-              "class": "shadow"
+              "class": "shadow p-0 p-0"
             }
           ]
         },
@@ -786,18 +813,17 @@
           "num": "4",
           "title": "Richiesta permesso ZTL",
           "date": "10/05/2021",
-          "icon": "it-folder",
+          "icon": "folder-concluded.svg",
           "icon-label": "Conclusa",
+          "label-tag":"Iscrizione servizio mensa",
+          "import":"23,00 €",
+          "practice":"Pagamento:",
+           "practice-number":"PA3028/17",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
-              "class": "shadow"
-            },
-            {
-              "icon": "it-clip",
-              "link": "Graduatoria",
-              "class": "shadow"
+              "class": "shadow p-0 p-0"
             }
           ]
         },
@@ -805,18 +831,17 @@
           "num": "5",
           "title": "Richiesta parcheggio residenti",
           "date": "06/03/2021",
-          "icon": "it-folder",
+          "icon": "folder-concluded.svg",
           "icon-label": "Conclusa",
+          "label-tag":"Iscrizione servizio mensa",
+          "import":"23,00 €",
+          "practice":"Pagamento:",
+           "practice-number":"PA3028/17",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
-              "class": "shadow"
-            },
-            {
-              "icon": "it-clip",
-              "link": "Graduatoria",
-              "class": "shadow"
+              "class": "shadow p-0"
             }
           ]
         }

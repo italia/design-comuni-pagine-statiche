@@ -68,6 +68,25 @@
     }
   }
 
+  .meium-title {
+    @include font(20, 32);
+    font-weight: 700;
+    line-height: 1.14;
+    padding-bottom: 0.5rem;
+    color: get-color(black, main);
+
+    @include media-breakpoint-up(sm) {
+      padding-bottom: 0.44rem;
+    }
+
+    @include media-breakpoint-up(md) {
+      line-height: 1;
+      padding-bottom: 0.89rem;
+    }
+  }
+
+
+
   .name {
     @include font(18, 18);
     line-height: 1.5;

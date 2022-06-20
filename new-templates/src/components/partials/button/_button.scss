@@ -27,6 +27,17 @@
     }
   }
 
+  &.bg-white:hover {
+   /*  background-color: #006342!important;
+    color: #fff;
+    border-color: #005c3e;
+
+    .icon-primary {
+      fill: #fff!important;
+    } */
+    text-decoration: underline;
+}
+
   &.full-mb {
     @include media-breakpoint-down(md) {
       width: 100%;
@@ -45,6 +56,10 @@
 
   &.btn-re {
     width: 100%;
+
+    &:hover {
+      text-decoration: underline;
+    }
 
     @include media-breakpoint-up(md) {
       max-width: 18.22rem;

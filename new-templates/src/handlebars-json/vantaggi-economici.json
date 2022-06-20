@@ -217,6 +217,16 @@
             "text": "Conto bancario per l’accredito",
             "id": "bank-account"
           }
+        ],
+        "alert-list-2": [
+          {
+            "text": "Richiedente - Indirizzo",
+            "id": "applicant-info"
+          },
+          {
+            "text": "Conto bancario per l’accredito",
+            "id": "bank-account"
+          }
         ]
       },
       "indirizzo": {
@@ -317,8 +327,34 @@
           },
           {
             "name": "Filiale",
-            "description": "Roma"
-
+            "description": "",
+            "warning":true,
+            "sucess":false,
+            "warning-message":"Dato mancante"
+          },
+          {
+            "name": "Indirizzo istituto",
+            "description": "Via Roma 16, 00100 Roma, IT"
+          },
+          {
+            "name": "Iban",
+            "description": "IT12 3456 7890 123456"
+          },
+          {
+            "name": "Documento Iban",
+            "description": "documento_iban.pdf"
+          }
+        ],
+        "info-2": [
+          {
+            "name": "Intestatario",
+            "description": "Julie Crampton Smith"
+          },
+          {
+            "name": "Filiale",
+            "description": "Roma",
+            "warning":false,
+            "sucess":true
           },
           {
             "name": "Indirizzo istituto",
@@ -778,14 +814,16 @@
           "num": "1",
           "title": "Richiesta assegno maternità",
           "date": "20/02/2022",
-          "icon": "it-folder",
+          "icon": "folder-concluded.svg",
           "icon-label": "Conclusa",
           "label-tag":"Vantaggio economico",
+          "practice":"Pratica:",
+          "practice-number":"AN4059281",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
-              "class": "shadow"
+              "class": "shadow p-0"
             }
           ]
         },
@@ -793,20 +831,17 @@
           "num": "2",
           "title": "Iscrizione alla scuola dell’infanzia",
           "date": "01/10/2021",
-          "icon": "it-folder",
+          "icon": "folder-concluded.svg",
           "icon-label": "Conclusa",
           "label-tag":"Vantaggio economico",
 
+          "practice":"Pratica:",
+          "practice-number":"AN4059281",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
-              "class": "shadow"
-            },
-            {
-              "icon": "it-clip",
-              "link": "Graduatoria",
-              "class": "shadow"
+              "class": "shadow p-0"
             }
           ]
         },
@@ -814,20 +849,17 @@
           "num": "3",
           "title": "Iscrizione corso di formazione",
           "date": "02/09/2021",
-          "icon": "it-folder",
+          "icon": "folder-concluded.svg",
           "icon-label": "Conclusa",
           "label-tag":"Vantaggio economico",
 
+          "practice":"Pratica:",
+          "practice-number":"AN4059281",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
-              "class": "shadow"
-            },
-            {
-              "icon": "it-clip",
-              "link": "Graduatoria",
-              "class": "shadow"
+              "class": "shadow p-0"
             }
           ]
         },
@@ -835,20 +867,17 @@
           "num": "4",
           "title": "Richiesta permesso ZTL",
           "date": "06/08/2021",
-          "icon": "it-folder",
+          "icon": "folder-concluded.svg",
           "icon-label": "Conclusa",
           "label-tag":"Vantaggio economico",
 
+          "practice":"Pratica:",
+          "practice-number":"AN4059281",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
-              "class": "shadow"
-            },
-            {
-              "icon": "it-clip",
-              "link": "Graduatoria",
-              "class": "shadow"
+              "class": "shadow p-0"
             }
           ]
         },
@@ -856,20 +885,17 @@
           "num": "5",
           "title": "Richiesta parcheggio residenti",
           "date": "06/03/2021",
-          "icon": "it-folder",
+          "icon": "folder-concluded.svg",
           "icon-label": "Conclusa",
           "label-tag":"Vantaggio economico",
 
+          "practice":"Pratica:",
+          "practice-number":"AN4059281",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
-              "class": "shadow"
-            },
-            {
-              "icon": "it-clip",
-              "link": "Graduatoria",
-              "class": "shadow"
+              "class": "shadow p-0"
             }
           ]
         }
@@ -879,18 +905,16 @@
           "num": "6",
           "title": "Pagamento servizio mensa",
           "date": "07/01/2022",
-          "icon": "it-check",
+          "icon": "folder-pay.svg",
           "icon-label": "Pagato",
+          "label-tag":"Vantaggio economico",
+          "practice":"Pratica:",
+          "practice-number":"AN4059281",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
-              "class": "shadow"
-            },
-            {
-              "icon": "it-clip",
-              "link": "Graduatoria",
-              "class": "shadow"
+              "class": "shadow p-0"
             }
           ]
         },
@@ -898,18 +922,16 @@
           "num": "7",
           "title": "Pagamento permesso ZTL",
           "date": "04/03/2021",
-          "icon": "it-check",
+          "icon": "folder-pay.svg",
           "icon-label": "Pagato",
+          "label-tag":"Vantaggio economico",
+          "practice":"Pratica:",
+          "practice-number":"AN4059281",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
-              "class": "shadow"
-            },
-            {
-              "icon": "it-clip",
-              "link": "Graduatoria",
-              "class": "shadow"
+              "class": "shadow p-0"
             }
           ]
         },
@@ -917,18 +939,16 @@
           "num": "8",
           "title": "Pagamento contravvenzione",
           "date": "24/06/2021",
-          "icon": "it-check",
+          "icon": "folder-pay.svg",
           "icon-label": "Pagato",
+          "label-tag":"Vantaggio economico",
+          "practice":"Pratica:",
+          "practice-number":"AN4059281",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
-              "class": "shadow"
-            },
-            {
-              "icon": "it-clip",
-              "link": "Graduatoria",
-              "class": "shadow"
+              "class": "shadow p-0"
             }
           ]
         },
@@ -936,18 +956,16 @@
           "num": "9",
           "title": "Pagamento contravvenzione",
           "date": "10/05/2021",
-          "icon": "it-check",
+          "icon": "folder-pay.svg",
           "icon-label": "Pagato",
+          "label-tag":"Vantaggio economico",
+          "practice":"Pratica:",
+          "practice-number":"AN4059281",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
-              "class": "shadow"
-            },
-            {
-              "icon": "it-clip",
-              "link": "Graduatoria",
-              "class": "shadow"
+              "class": "shadow p-0"
             }
           ]
         },
@@ -955,18 +973,16 @@
           "num": "10",
           "title": "Pagamento contravvenzione",
           "date": "01/10/2021",
-          "icon": "it-check",
+          "icon": "folder-pay.svg",
           "icon-label": "Pagato",
+          "label-tag":"Vantaggio economico",
+          "practice":"Pratica:",
+          "practice-number":"AN4059281",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
-              "class": "shadow"
-            },
-            {
-              "icon": "it-clip",
-              "link": "Graduatoria",
-              "class": "shadow"
+              "class": "shadow p-0"
             }
           ]
         }

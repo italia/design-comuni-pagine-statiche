@@ -88,6 +88,33 @@
           "active": true,
           "completed": false
         }
+      ],
+      "step-5": [
+        {
+          "title": "Informativa sulla privacy",
+          "active": false,
+          "completed": true
+        },
+        {
+          "title": "Dati generali",
+          "active": false,
+          "completed": true
+        },
+        {
+          "title": "Riepilogo",
+          "active": false,
+          "completed": true
+        },
+        {
+          "title": "Preferenze",
+          "active": false,
+          "completed": true
+        },
+        {
+          "title": "Anteprima",
+          "active": true,
+          "completed": false
+        }
       ]
     },
     "trovare-informazioni-servizio": {
@@ -219,10 +246,6 @@
             "description": "Comune di Reggio Emilia"
           },
           {
-            "name": "Aliquota IMU",
-            "description": "2%"
-          },
-          {
             "name": "Codice fiscale ente creditore",
             "description": "00154902351"
           },
@@ -231,13 +254,24 @@
             "description": "CK 345 HB"
           },
           {
-            "name": "Importo dovuto",
-            "description": "44,00 €"
+            "name": "Data rilevazione",
+            "description": "16/08/2022"
           },
           {
-            "name": "Data ricevuta avviso",
-            "description": "16/08/2022",
-            "border-unset":true
+            "name": "Data notifica",
+            "description": "15/09/2022"
+          },
+          {
+            "name": "Data pagamento",
+            "description": "17/09/2022"
+          },
+          {
+            "name": "Pagamento",
+            "description": "Pagamento in misura ridotta, perché il pagamento avviene dopo il 5° giorno dalla notifica."
+          },
+          {
+            "name": "Importo dovuto",
+            "description": "38,42 €"
           }
         ]
       }
@@ -305,14 +339,16 @@
             "num": "1",
             "title": "Iscrizione scuola dell’infanzia",
             "date": "15/02/2022",
-            "icon": "it-folder",
+            "icon": "folder-concluded.svg",
             "icon-label": "Conclusa",
-            "import":true,
+            "practice":"Pagamento:",
+            "practice-number":"PA3028/17",
+            "import":"38,92 €",
             "collapse": [
               {
                 "icon": "it-clip",
                 "link": "Ricevuta pagamento (PDF 80KB)",
-                "class": "shadow mt-3"
+                "class": "shadow mt-3 p-0"
               }
             ]
           },
@@ -320,14 +356,16 @@
             "num": "2",
             "title": "Richiesta assegno maternità",
             "date": "01/10/2022",
-            "icon": "it-folder",
+            "icon": "folder-concluded.svg",
             "icon-label": "Conclusa",
-            "import":true,
+            "practice":"Pagamento:",
+             "practice-number":"PA3028/17",
+             "import":"38,92 €",
             "collapse": [
               {
                 "icon": "it-clip",
                 "link": "Ricevuta pagamento (PDF 80KB)",
-                "class": "shadow mt-3"
+                "class": "shadow mt-3 p-0"
               }
             ]
           },
@@ -335,14 +373,16 @@
             "num": "3",
             "title": "Iscrizione corso di formazione",
             "date": "02/09/2021",
-            "icon": "it-folder",
+            "icon": "folder-concluded.svg",
             "icon-label": "Conclusa",
-            "import":true,
+            "practice":"Pagamento:",
+             "practice-number":"PA3028/17",
+             "import":"38,92 €",
             "collapse": [
               {
                 "icon": "it-clip",
                 "link": "Ricevuta pagamento (PDF 80KB)",
-                "class": "shadow mt-3"
+                "class": "shadow mt-3 p-0"
               }
             ]
           },
@@ -350,14 +390,16 @@
             "num": "4",
             "title": "Richiesta permesso ZTL",
             "date": "06/08/2021",
-            "icon": "it-folder",
+            "icon": "folder-concluded.svg",
             "icon-label": "Conclusa",
-            "import":true,
+            "practice":"Pagamento:",
+             "practice-number":"PA3028/17",
+             "import":"38,92 €",
             "collapse": [
               {
                 "icon": "it-clip",
                 "link": "Ricevuta pagamento (PDF 80KB)",
-                "class": "shadow mt-3"
+                "class": "shadow mt-3 p-0"
               }
             ]
           },
@@ -365,14 +407,16 @@
             "num": "5",
             "title": "Richiesta parcheggio residenti",
             "date": "01/06/2021",
-            "icon": "it-folder",
+            "icon": "folder-concluded.svg",
             "icon-label": "Conclusa",
-            "import":true,
+            "practice":"Pagamento:",
+             "practice-number":"PA3028/17",
+             "import":"38,92 €",
             "collapse": [
               {
                 "icon": "it-clip",
                 "link": "Ricevuta pagamento (PDF 80KB)",
-                "class": "shadow mt-3"
+                "class": "shadow mt-3 p-0"
               }
             ]
           }
@@ -382,14 +426,16 @@
             "num": "6",
             "title": "Pagamento multa",
             "date": "21/07/2022",
-            "icon": "it-check",
+            "icon": "folder-pay.svg",
             "icon-label": "Pagato",
-            "import":true,
+            "practice":"Pagamento:",
+             "practice-number":"PA3028/17",
+             "import":"38,92 €",
             "collapse": [
               {
                 "icon": "it-clip",
                 "link": "Ricevuta pagamento (PDF 80KB)",
-                "class": "shadow mt-3"
+                "class": "shadow mt-3 p-0"
               }
             ]
           },
@@ -397,14 +443,16 @@
             "num": "7",
             "title": "Pagamento servizio mensa",
             "date": "04/03/2022",
-            "icon": "it-check",
+            "icon": "folder-pay.svg",
             "icon-label": "Pagato",
-            "import":true,
+            "practice":"Pagamento:",
+             "practice-number":"PA3028/17",
+             "import":"38,92 €",
             "collapse": [
               {
                 "icon": "it-clip",
                 "link": "Ricevuta pagamento (PDF 80KB)",
-                "class": "shadow mt-3"
+                "class": "shadow mt-3 p-0"
               }
             ]
           },
@@ -412,14 +460,16 @@
             "num": "8",
             "title": "Pagamento contravvenzione",
             "date": "24/06/2021",
-            "icon": "it-check",
+            "icon": "folder-pay.svg",
             "icon-label": "Pagato",
-            "import":true,
+            "practice":"Pagamento:",
+             "practice-number":"PA3028/17",
+             "import":"38,92 €",
             "collapse": [
               {
                 "icon": "it-clip",
                 "link": "Ricevuta pagamento (PDF 80KB)",
-                "class": "shadow mt-3"
+                "class": "shadow mt-3 p-0"
               }
             ]
           },
@@ -427,14 +477,16 @@
             "num": "9",
             "title": "Pagamento contravvenzione",
             "date": "10/05/2021",
-            "icon": "it-check",
+            "icon": "folder-pay.svg",
             "icon-label": "Pagato",
-            "import":true,
+            "practice":"Pagamento:",
+             "practice-number":"PA3028/17",
+             "import":"38,92 €",
             "collapse": [
               {
                 "icon": "it-clip",
                 "link": "Ricevuta pagamento (PDF 80KB)",
-                "class": "shadow mt-3"
+                "class": "shadow mt-3 p-0"
               }
             ]
           },
@@ -442,14 +494,16 @@
             "num": "10",
             "title": "Pagamento contravvenzione",
             "date": "01/10/2022",
-            "icon": "it-check",
+            "icon": "folder-pay.svg",
             "icon-label": "Pagato",
-            "import":true,
+            "practice":"Pagamento:",
+             "practice-number":"PA3028/17",
+             "import":"38,92 €",
             "collapse": [
               {
                 "icon": "it-clip",
                 "link": "Ricevuta pagamento (PDF 80KB)",
-                "class": "shadow mt-3"
+                "class": "shadow mt-3 p-0"
               }
             ]
           }

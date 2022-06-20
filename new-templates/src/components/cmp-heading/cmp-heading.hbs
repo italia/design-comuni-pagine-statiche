@@ -18,6 +18,12 @@
   {{/if}}
   {{/if}}
 
+    {{#if label-tag-up}}
+  <div class="d-flex flex-wrap {{label-tag-class}}">
+    {{>partials/cmp-tag/cmp-tag}}
+  </div>
+  {{/if}}
+
   {{#if subTitle}}
   <p class="subtitle-small {{pClass}}">{{{subTitle}}}</p>
   {{/if}}
@@ -39,7 +45,7 @@
   {{/if}}
 
   {{#if button}}
-  <div class="{{btnClass}} mt-30">
+  <div class="{{btnClass}} {{!-- mt-30 --}}">
     {{>partials/button/button class="fw-bold"}}
   </div>
   {{/if}}

@@ -4,14 +4,18 @@
 
     .nav-link {
       margin-bottom: unset;
+      font-weight: 400;
 
+      &.active {
+        font-weight: 600;
+      }
+
+      @include media-breakpoint-up(md) {
+        font-weight: 700;
+      }
+      
       .text-tab {
-        @include font(14, 18);
-        font-weight: 400;
-
-        @include media-breakpoint-up(md) {
-          font-weight: 700;
-        }
+        @include font(14, 18); 
       }
 
       .icon {

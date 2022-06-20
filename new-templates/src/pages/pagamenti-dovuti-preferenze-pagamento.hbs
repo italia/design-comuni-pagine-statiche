@@ -14,6 +14,7 @@
         step-title="Preferenze pagamento"
         step-tot="5"
         subtitle="I campi contraddistinti dal simbolo asterisco sono obbligatori"
+        classSubtitle="mt-20"
         }}
       </div>
     </div>
@@ -36,8 +37,9 @@
 
         {{>cmp-info-checkbox/cmp-info-checkbox
         title="Acconto"
-        subtitleCard="Data di scadenza"
+        subtitleCard="Data di scadenza: "
         subtitleValue="16/06/2021"
+        subtitleClass='mb-0'        
         id="1"
         toggle=true
         labelToggle="Ravvedimento"
@@ -50,7 +52,7 @@
 
         {{>cmp-info-checkbox/cmp-info-checkbox
         title="Saldo"
-        subtitleCard="Data di scadenza <span class='fw-semibold'>16/06/2021</span>"
+        subtitleCard="Data di scadenza: <span class='fw-semibold'>16/06/2021</span>"
         subtitleClass='mb-3'
         id="2"
         toggle=true
@@ -88,8 +90,8 @@
           </div>
           {{>cmp-info-checkbox/cmp-info-checkbox
           title="Acconto"
-          subtitleCard="Data di scadenza"
-          subtitleValue="16/06/2021"
+          subtitleCard="Data di scadenza <span class='fw-semibold'>16/06/2021</span>"
+          subtitleClass='mb-3'
           id="3"
           accordion=false
           classCard="pt-25 pb-25 pl-25 pr-25 pt-lg-40 pb-lg-40 pl-lg-40 pr-lg-40"
@@ -97,8 +99,8 @@
           }}
           {{>cmp-info-checkbox/cmp-info-checkbox
           title="Saldo"
-          subtitleCard="Data di scadenza:"
-          subtitleValue="16/06/2021"
+          subtitleCard="Data di scadenza: <span class='fw-semibold'>16/06/2021</span>"
+          subtitleClass='mb-3'
           id="4"
           accordion=false
           classCard="pt-25 pb-25 pl-25 pr-25 pt-lg-40 pb-lg-40 pl-lg-40 pr-lg-40"
@@ -132,8 +134,9 @@
           </div>
           {{>cmp-info-checkbox/cmp-info-checkbox
           title="Acconto"
-          subtitleCard="Data di scadenza"
-          subtitleValue="16/06/2021"
+        subtitleCard="Data di scadenza: "
+        subtitleValue="16/06/2021"
+        subtitleClass='mb-0'   
           id="5"
           toggle=true
           labelToggle="Ravvedimento"
@@ -146,8 +149,8 @@
 
           {{>cmp-info-checkbox/cmp-info-checkbox
           title="Saldo"
-          subtitleCard="Data di scadenza"
-          subtitleValue="16/06/2021"
+          subtitleCard="Data di scadenza: <span class='fw-semibold'>16/06/2021</span>"
+          subtitleClass='mb-3'
           id="6"
           toggle=true
           labelToggle="Ravvedimento"

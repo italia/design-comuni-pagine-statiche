@@ -10,10 +10,20 @@
   }
 
   .link-list-wrapper ul li+li {
-    margin-top: 12px;
+    margin-top: .75rem;
+
+    @include media-breakpoint-up(sm) {
+      margin-top: .67rem;
+    }
   }
 
+  .link-sublist li:first-child{
+    margin-top: .375rem;
 
+    @include media-breakpoint-up(sm) {
+      margin-top: .33rem;
+    }
+  }
 
   .link-list-wrapper ul li a:hover:not(.disabled) span {
     color: get-color(black, main);

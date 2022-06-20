@@ -160,6 +160,10 @@ a.read-more {
   }
 }
 
+.rating>label svg {
+  fill: #7D97B0;
+}
+
 .card-wrapper.card-teaser-wrapper.card-teaser-block-3>.card-teaser {
   @include media-breakpoint-up(md) {
     flex: 0 0 49%;

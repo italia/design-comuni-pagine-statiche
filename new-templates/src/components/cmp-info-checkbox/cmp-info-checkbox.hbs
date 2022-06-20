@@ -11,10 +11,11 @@
     <div class="card-body">
 
       {{#if subtitleCard}}
-      <p class="subtitle-small {{#if toggle}}mb-3{{/if}} {{subtitleClass}}">{{{subtitleCard}}}</p>
-          {{#if subtitleValue}}
-          <span class="subtitle-small fw-semibold d-block {{#if toggle}}mb-3{{/if}}">{{{subtitleValue}}}</span>
-          {{/if}}
+      <p class="subtitle-small{{subtitleClass}}">{{{subtitleCard}}}</p>
+      {{#if subtitleValue}}
+      <span
+        class="subtitle-small fw-semibold d-block {{spanClass}} {{#if toggle}}mb-3{{/if}}">{{{subtitleValue}}}</span>
+      {{/if}}
       {{/if}}
 
 

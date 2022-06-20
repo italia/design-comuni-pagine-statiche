@@ -6,12 +6,12 @@
 
   & [type=radio]+label {
     @include font(16, 18);
-    margin: 1.25rem 0;
+    margin: 1rem 0;
     padding-left: 2.625rem;
     font-weight: 600;
 
     @include media-breakpoint-up(sm) {
-      margin: 1.11rem 0;
+      margin: 0.889rem 0;
       padding-left: 2.32rem;
     }
   }

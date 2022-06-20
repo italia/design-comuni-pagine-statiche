@@ -3,7 +3,9 @@
     <div class="card card-teaser card-teaser-info rounded shadow-sm">
       <div class="card-body align-items-center card-body d-flex justify-content-between">
         <div class="left">
-          <h3 class="title-small">{{{card-title}}}</h3>
+          <h3 class="title-small">
+            <a href="#" aria-label="Vai a {{card-title}}" title="Vai a {{card-title}}">{{{card-title}}}</a>
+          </h3>
           <p class="subtitle-small mb-0">{{{card-description}}}</p>
         </div>
         {{#if img}}

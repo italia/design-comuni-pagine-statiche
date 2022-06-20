@@ -7,6 +7,14 @@
   }
 }
 
+.bg-grey-card {
+  .cmp-card-simple {
+    .card {
+      background-color: #fff;
+    }
+  }  
+}
+
 .card.card-big .card-body h4.card-title {
   font-size: um(24px);
   line-height: um(28px);

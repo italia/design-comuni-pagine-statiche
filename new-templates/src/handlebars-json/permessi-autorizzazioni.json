@@ -35,10 +35,6 @@
           "anchor": "service-access"
         },
         {
-          "item": "Ulteriori informazioni",
-          "anchor": "more-info"
-        },
-        {
           "item": "Condizioni di servizio",
           "anchor": "conditions"
         },
@@ -144,12 +140,12 @@
       ],
       "navscroll": [
         {
-          "item": "Tipo di permesso",
-          "anchor": "permission"
+          "item": "Richiedente",
+          "anchor": "applicant-info"
         },
         {
-          "item": "Periodo di validità",
-          "anchor": "validity-period"
+          "item": "Veicolo",
+          "anchor": "vehicles-info"
         }
       ],
       "anagrafica": [
@@ -210,6 +206,14 @@
         }
       ],
       "vehicle-1": [
+        {
+          "name": "Marca",
+          "description": "Mini"
+        },
+        {
+          "name": "Modello",
+          "description": "Countryman F60 SD"
+        },
         {
           "name": "Intestatario",
           "description": "Mario Rossi"
@@ -420,6 +424,10 @@
           "description": "Auto"
         },
         {
+          "name": "Numero protocollo",
+          "description": "12345678"
+        },
+        {
           "name": "Targa",
           "description": "CK 345 HB"
         },
@@ -554,16 +562,19 @@
           "num": "1",
           "title": "Richiesta permesso ZTL",
           "date": "28/02/2022",
-          "icon": "it-folder",
-          "icon-label": "In sospeso",
-          "label-tag":"Atto autorizzativo",
+          "icon": "folder-incomplete.svg",
+          "icon-label": "Da completare",
+          "label-tag":"Richiesta permesso ZTL",
           "color": "u-main-alert",
           "warning-icon":true,
+          "practice":"Pagamento:",
+          "practice-number":"PA3028/17",
+          "import": "16,00 €",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
-              "class": "shadow",
+              "class": "shadow p-0",
               "aria-label": "Vai al documento"
             }
           ]
@@ -572,19 +583,17 @@
           "num": "2",
           "title": "Iscrizione alla scuola d'infanzia",
           "date": "01/10/2021",
-          "icon": "it-folder",
-          "icon-label": "Conclusa ",
+          "icon": "folder-concluded.svg",
+          "icon-label": "Conclusa",
+          "label-tag":"Richiesta permesso ZTL",
+          "practice":"Pagamento:",
+          "practice-number":"PA3028/17",
+          "import": "16,00 €",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
-              "class": "shadow",
-              "aria-label": "Vai al documento"
-            },
-            {
-              "icon": "it-clip",
-              "link": "Graduatoria",
-              "class": "shadow",
+              "class": "shadow p-0",
               "aria-label": "Vai al documento"
             }
           ]
@@ -593,13 +602,17 @@
           "num": "3",
           "title": "Iscrizione corso di formazione",
           "date": "02/09/2021",
-          "icon": "it-folder",
+          "icon": "folder-concluded.svg",
           "icon-label": "Conclusa",
+          "label-tag":"Richiesta permesso ZTL",
+          "practice":"Pagamento:",
+          "practice-number":"PA3028/17",
+          "import": "16,00 €",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
-              "class": "shadow",
+              "class": "shadow p-0",
               "aria-label": "Vai al documento"
             }
           ]
@@ -608,13 +621,17 @@
           "num": "4",
           "title": "Richiesta sussidio maternità",
           "date": "06/08/2021",
-          "icon": "it-folder",
+          "icon": "folder-concluded.svg",
           "icon-label": "Conclusa",
+          "label-tag":"Richiesta permesso ZTL",
+          "practice":"Pagamento:",
+          "practice-number":"PA3028/17",
+          "import": "16,00 €",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
-              "class": "shadow",
+              "class": "shadow p-0",
               "aria-label": "Vai al documento"
             }
           ]
@@ -623,13 +640,17 @@
           "num": "5",
           "title": "Richiesta parcheggio residenti",
           "date": "01/06/2021",
-          "icon": "it-folder",
+          "icon": "folder-concluded.svg",
           "icon-label": "Conclusa",
+          "label-tag":"Richiesta permesso ZTL",
+          "practice":"Pagamento:",
+          "practice-number":"PA3028/17",
+          "import": "16,00 €",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
-              "class": "shadow",
+              "class": "shadow p-0",
               "aria-label": "Vai al documento"
             }
           ]
@@ -640,14 +661,17 @@
           "num": "6",
           "title": "Pagamento permesso ZTL",
           "date": "04/03/2022",
-          "icon": "it-check",
+          "icon": "folder-pay.svg",
           "icon-label": "Pagato",
           "label-tag":"Richiesta permesso ZTL",
+          "practice":"Pagamento:",
+          "practice-number":"PA3028/17",
+          "import": "16,00 €",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta pagamento",
-              "class": "shadow",
+              "class": "shadow p-0",
               "aria-label": "Vai al documento"
             }
           ]
@@ -656,13 +680,17 @@
           "num": "7",
           "title": "Pagamento contravvenzioni",
           "date": "04/03/2022",
-          "icon": "it-check",
+          "icon": "folder-pay.svg",
           "icon-label": "Pagato",
+          "label-tag":"Richiesta permesso ZTL",
+          "practice":"Pagamento:",
+          "practice-number":"PA3028/17",
+          "import": "16,00 €",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta pagamento",
-              "class": "shadow",
+              "class": "shadow p-0",
               "aria-label": "Vai al documento"
             }
           ]
@@ -671,13 +699,17 @@
           "num": "8",
           "title": "Pagamento contravvenzione",
           "date": "24/06/2021",
-          "icon": "it-check",
+          "icon": "folder-pay.svg",
           "icon-label": "Pagato",
+          "label-tag":"Richiesta permesso ZTL",
+          "practice":"Pagamento:",
+          "practice-number":"PA3028/17",
+          "import": "16,00 €",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta pagamento",
-              "class": "shadow",
+              "class": "shadow p-0",
               "aria-label": "Vai al documento"
             }
           ]
@@ -686,13 +718,17 @@
           "num": "9",
           "title": "Pagamento contravvenzione",
           "date": "10/05/2021",
-          "icon": "it-check",
+          "icon": "folder-pay.svg",
           "icon-label": "Pagato",
+          "label-tag":"Richiesta permesso ZTL",
+          "practice":"Pagamento:",
+          "practice-number":"PA3028/17",
+          "import": "16,00 €",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta pagamento",
-              "class": "shadow",
+              "class": "shadow p-0",
               "aria-label": "Vai al documento"
             }
           ]
@@ -701,13 +737,17 @@
           "num": "10",
           "title": "Pagamento contravvenzione",
           "date": "01/10/2022",
-          "icon": "it-check",
+          "icon": "folder-pay.svg",
           "icon-label": "Pagato",
+          "label-tag":"Richiesta permesso ZTL",
+          "practice":"Pagamento:",
+          "practice-number":"PA3028/17",
+          "import": "16,00 €",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta pagamento",
-              "class": "shadow",
+              "class": "shadow p-0",
               "aria-label": "Vai al documento"
             }
           ]

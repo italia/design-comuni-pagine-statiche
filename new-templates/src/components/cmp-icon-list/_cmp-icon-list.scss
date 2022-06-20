@@ -1,11 +1,11 @@
 .cmp-icon-list {
   .shadow {
     background-color: #fff;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-    padding: 1rem 1.625rem;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2)!important;
+    padding: .44rem .56rem;
 
     @include media-breakpoint-up(sm) {
-      padding: 0.89rem 1.44rem;
+      padding: 0.39rem .5rem;
     }
 
     &:not(:first-child) {
@@ -42,17 +42,17 @@
     }
 
     ul li a.icon-left {
-      padding: 0.75rem 1.063rem;
+      padding: 0.75rem .625rem;
 
       @include media-breakpoint-up(sm) {
-        padding: 0.6675rem 0.944rem;
+        padding: 0.6675rem 0.56rem;
       }
 
       .icon {
-        margin-right: 1.688rem;
+        margin-right: 1.25rem;
 
         @include media-breakpoint-up(sm) {
-          margin-right: 1.5rem;
+          margin-right: 1.11rem;
         }
       }
     }

@@ -1,7 +1,7 @@
 {{#>base/base title="Iscrizione scheda servizio"}}
 <main>
   <div class="container" id="main-container">
-    <div class="row justify-content-center pb-4">
+    <div class="row justify-content-center pb-4 pb-lg-80">
       <div class="col-12 col-lg-10">
         {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi" link3="Iscrizioni"}}
         {{> cmp-heading/cmp-heading
@@ -11,6 +11,7 @@
           button=true
           label="Richiedi iscrizione online"
           description="Termine presentazione: <span><strong>entro 10 giorni</strong></span>"
+          desClass="mb-4"
           primary=true
           class="text-button"
           label-tag="Servizio attivo"
@@ -27,14 +28,14 @@
           link-list=iscrizione-graduatoria.trovare-informazione-servizio.navscroll}}
       </div>
       <div class="col-12 col-lg-8 offset-lg-1">
-        {{#>cmp-card/cmp-card-content-box card-title="A chi è rivolto" h2-class="mb-0" id-title="who-needs"}}
+        {{#>cmp-card/cmp-card-content-box card-title="A chi è rivolto" h2-class="mb-3" header-m0=true id-title="who-needs"}}
 
         {{>cmp-ul-list/cmp-ul-list
         info-list=iscrizione-graduatoria.trovare-informazione-servizio.chi-rivolto.lista-1 font-list="lora"}}
         {{/cmp-card/cmp-card-content-box}}
 
 
-        {{#>cmp-card/cmp-card-content-box card-title="Descrizione" h2-class="mb-0" id-title="description"}}
+        {{#>cmp-card/cmp-card-content-box card-title="Descrizione" h2-class="mb-3" header-m0=true id-title="description"}}
         <p class="text-paragraph lora m-0">
           La scuola dell’infanzia fa parte del Sistema integrato di educazione e di istruzione dalla nascita ai 6 anni.
           È il primo gradino del percorso di istruzione e ha durata triennale. Fanno parte del sistema nazionale di
@@ -43,7 +44,7 @@
         {{/cmp-card/cmp-card-content-box}}
 
 
-        {{#>cmp-card/cmp-card-content-box card-title="Come fare" h2-class="mb-0" id-title="how-to"}}
+        {{#>cmp-card/cmp-card-content-box card-title="Come fare" h2-class="mb-3" header-m0=true id-title="how-to"}}
         <p class="text-paragraph lora m-0">
           Puoi presentare la richiesta di iscrizione esclusivamente online dalle ore 10:00 del 4 gennaio 2022 alle 20:00
           del 4 febbraio 2022. I posti assegnati vanno accettati entro 15 giorni dalla pubblicazione della graduatoria.
@@ -52,12 +53,12 @@
 
 
 
-        {{#>cmp-card/cmp-card-content-box card-title="Cosa serve" h2-class="mb-0" id-title="needed" class="p-3" bg-grey="true" }}
+        {{#>cmp-card/cmp-card-content-box card-title="Cosa serve" h2-class="mb-3" header-m0=true id-title="needed" class="p-3" bg-grey="true" }}
         {{>cmp-ul-list/cmp-ul-list heading-title="Per accedere al servizio, assicurati di avere:" font-title="lora" font-list="lora" info-list=iscrizione-graduatoria.trovare-informazione-servizio.cosa-serve.lista-1 }}
         {{/cmp-card/cmp-card-content-box}}
 
         {{#>cmp-card/cmp-card-content-box card-title="Cosa si ottiene" h2-class="mb-3" id-title="obtain" subtitle="Se - in base ai requisiti e alla
-        graduatoria - la richiesta verrà accettata, sarà possibile perfezionare l’iscrizione all’asilo." header-m0=true}}
+        graduatoria - la richiesta verrà accettata, sarà possibile perfezionare l’iscrizione all’asilo." lora=true header-m0=true}}
         {{/cmp-card/cmp-card-content-box}}
 
         {{>cmp-timeline/cmp-timeline
@@ -70,40 +71,40 @@
 
         {{#>cmp-card/cmp-card-content-box card-title="Costi" id-title="costs" subtitle="L’importo della retta si basa sul reddito del
         nucleo famigliare in base al certificato ISEE. Per maggiori informazioni, consulta la tabella allegata al
-        bando." class="mt-30" h2-class="mb-3"}}
-        {{>cmp-icon-link/cmp-icon-link link="Tabella rette in base al reddito" dimensione-file="(PDF 80KB)"}}
+        bando." class="mt-30" h2-class="mb-3" header-m0=true}}
+        {{>cmp-icon-link/cmp-icon-link link="Tabella rette in base al reddito" dimensione-file="(PDF 80KB)" link-class="mt-3"}}
         {{/cmp-card/cmp-card-content-box}}
 
 
         {{#>cmp-card/cmp-card-content-box card-title="Accedi al servizio" id-title="service-access" class="p-3" subtitle="Puoi richiedere l’iscrizione alla
-        Scuola dell’infanzia direttamente online tramite identità digitale." bg-grey="true" h2-class="mb-3"}}
-        {{>partials/button/button label="Richiedi iscrizione online" primary="true" class="mobile-full" aria-label="Richiedi iscrizione online alla Scuola dell'infanzia"}}
-        <p class="text-paragraph mt-4 mb-3">Oppure, puoi prenotare un appuntamento e presentarti presso gli uffici.
+        Scuola dell’infanzia direttamente online tramite identità digitale." bg-grey="true" h2-class="mb-3" header-m0=true}}
+        {{>partials/button/button label="Richiedi iscrizione online" primary="true" class="mobile-full mt-3" aria-label="Richiedi iscrizione online alla Scuola dell'infanzia"}}
+        <p class="text-paragraph mt-3 mb-3">Oppure, puoi prenotare un appuntamento e presentarti presso gli uffici.
         </p>
-        {{>partials/button/button label="Prenota appuntamento" primary="true" class="mobile-full btn-outline-primary t-primary bg-white" aria-label="Vai alla pagina Prenota un'appuntamento"}}
+        {{>partials/button/button label="Prenota appuntamento" class="mobile-full btn-outline-primary t-primary bg-white" aria-label="Vai alla pagina Prenota un'appuntamento"}}
         {{/cmp-card/cmp-card-content-box}}
 
 
-        {{#>cmp-card/cmp-card-content-box card-title="Ulteriori informazioni" h2-class="mb-0" id-title="more-info" second-title="Graduatorie di accesso"
-        subtitle="<p>I bambini già ammessi alla frequenza nell’anno scolastico in corso sono riammessi di diritto nell’anno
+        {{#>cmp-card/cmp-card-content-box card-title="Ulteriori informazioni" h2-class="mb-3" header-m0=true id-title="more-info" second-title="Graduatorie di accesso" secondTitle-class="mt-0 mb-3"
+        subtitle="I bambini già ammessi alla frequenza nell’anno scolastico in corso sono riammessi di diritto nell’anno
         scolastico successivo previa richiesta, su appositi moduli trasmessi alle strutture di riferimento.<br>
         Alle domande viene attribuito un punteggio secondo i criteri stabiliti dall'Amministrazione Comunale. La
         famiglia può in qualsiasi momento rinunciare al posto, presentando al responsabile del servizio specifica
         dichiarazione scritta di rinuncia.</p><p class='mt-3 mb-0'>Se hai già inviato la richiesta di iscrizione puoi vedere le
-        graduatorie d’accesso nella sezione documenti.</p>" }}
+        graduatorie d’accesso nella sezione documenti." }}
         {{/cmp-card/cmp-card-content-box}}
 
-        {{#>cmp-card/cmp-card-content-box card-title="Condizioni di servizio" h2-class="mb-3" id-title="conditions" subtitle="Per conoscere i dettagli di
+        {{#>cmp-card/cmp-card-content-box card-title="Condizioni di servizio" h2-class="mb-3" header-m0=true id-title="conditions" subtitle="Per conoscere i dettagli di
         scadenze, requisiti e altre informazioni importanti, leggi i termini e le condizioni di servizio." }}
-        {{>cmp-icon-link/cmp-icon-link link="Termini e condizioni di servizio" dimensione-file="(PDF 1MB)"}}
+        {{>cmp-icon-link/cmp-icon-link link="Termini e condizioni di servizio" dimensione-file="(PDF 1MB)" link-class="mt-3"}}
         {{/cmp-card/cmp-card-content-box}}
 
 
-        {{#>cmp-card/cmp-card-content-box card-title="Contatti" id-title="contacts" h2-class="mb-0"}}
+        {{#>cmp-card/cmp-card-content-box card-title="Contatti" id-title="contacts" h2-class="mb-3" header-m0=true}}
 
         <div>
           {{>cmp-card-img/cmp-card-img card-title="Ufficio scuola" card-description="Via Dei Transiti 21, 50302<br> 05
-          0505 <br> ufficioscuola@email.it" img=true}}
+          0505 <br> <a href='mailto:ufficioscuola@email.it' aria-label='Invia una email a ufficioscuola@email.it' title='Invia una email a ufficioscuola@email.it'></a>ufficioscuola@email.it" img=true}}
         </div>
         {{/cmp-card/cmp-card-content-box}}
 

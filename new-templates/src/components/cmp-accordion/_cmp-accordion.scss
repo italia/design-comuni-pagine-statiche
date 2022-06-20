@@ -4,7 +4,18 @@
     color: rgba(25, 25, 25, 0.7) !important;
   }
 
+  .icon-folder {
+    width: 12px;
+    height: 12px;
+  }
+
+  .error-icon {
+    width: 9px;
+    height: 9px;
+  }
+
   .accordion-date {
+    padding-left: .75rem;
     @include font(14, 16);
     padding-bottom: 1.25rem;
     color: rgba(25, 25, 25, 0.7);
@@ -19,8 +30,12 @@
     
     .accordion-button {
       @include font(16, 18);
-      padding: 0.875rem 0 0;
+      padding: 0.875rem .75rem 0 .75rem;
       border-top: 1px solid get-color(light-grey, grey) !important;
+
+      @include media-breakpoint-up(sm) {
+        padding-left: 0.875rem 0 0;
+      }
 
       @include media-breakpoint-up(lg) {
         padding: 0.777rem 0 0 0.889rem;
@@ -56,7 +71,12 @@
   }
 
   .accordion-body {
-    padding: 0;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    padding-top: 0;
+    padding-bottom: .75rem;
+    margin-top: .25rem;
+
     @include media-breakpoint-up(lg) {
       padding-left: 0.889rem;
     }
@@ -93,16 +113,16 @@
         padding: 4px 0 4px 4px;
 
         &:not(:first-child) {
-          margin-bottom: 1.5rem;
+          margin: .5rem 0;
 
           @include media-breakpoint-up(sm) {
-            margin-bottom: 1.333rem;
+            margin: .43rem 0 1.33rem 0;
           }
         }
 
         .icon {
-          width: 32px;
-          height: 32px;
+          fill: get-color(light, grey);
+          opacity: .5;
         }
       }
     }
@@ -132,7 +152,7 @@
     width: 95px;
     text-align: left;
 
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(md) {
       width: 110px;
     }
     span {
@@ -150,5 +170,7 @@
     }
   }
 }
-
+.accordion-view-more {
+  padding-left: .75rem;
+}
 

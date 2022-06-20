@@ -1,4 +1,10 @@
 .cmp-filter {
+  padding: 0 .75rem;
+
+  @include media-breakpoint-up(sm) {
+    padding: 0;
+  }
+
   &:not(:last-child) {
     @include media-breakpoint-up(lg) {
       margin-top: 0;

@@ -1,0 +1,213 @@
+{
+    "segnalazione-disservizio":{
+        "area-personale":{
+            "tab-area-personale-1": [
+              {
+                "title": "Scrivania",
+                "icon": true,
+                "icon-name": "it-pa",
+                "active": "active",
+                "id-link": "data-ex-tab1",
+                "controls": "tab1"
+              },
+              {
+                "title": "Messaggi",
+                "icon": true,
+                "icon-name": "it-mail",
+                "active": "",
+                "id-link": "data-ex-tab2",
+                "controls": "tab2"
+              },
+              {
+                "title": "Attività",
+                "icon": true,
+                "icon-name": "it-files",
+                "active": "",
+                "id-link": "data-ex-tab3",
+                "controls": "tab3"
+              },
+              {
+                "title": "Servizi",
+                "icon": true,
+                "icon-name": "it-settings",
+                "active": "",
+                "id-link": "data-ex-tab4",
+                "controls": "tab4"
+              }
+            ],
+            "navscroll":{
+              "page-1": [
+                {
+                  "item": "Ultimi messaggi",
+                  "anchor": "latest-posts"
+                },
+                {
+                  "item": "Ultime attività",
+                  "anchor": "latest-activities"
+                }
+              ],
+              "page-3": [
+                {
+                  "item": "Pratiche",
+                  "anchor": "practices"
+                },
+                {
+                  "item": "Pagamenti",
+                  "anchor": "payments"
+                }
+              ]
+            },
+            "accordion":{
+              "pratiche": [
+                {
+                  "num": "1",
+                  "title": "Segnalazione disservizio",
+                  "date": "20/03/2022",
+                  "icon": "folder-wating.svg",
+                  "icon-label": "In attesa",
+                  "color": "u-main-black",
+                  "label-tag":"Servizio non digitale",
+                  "btn-label":"Perfeziona la richiesta",
+                  "practice":"Pratica:",
+                  "practice-number":"AN4059281",
+                  "collapse": [
+                    {
+                      "icon": "it-clip",
+                      "link": "Ricevuta pagamento (PDF 80KB)",
+                      "class": "shadow mt-3"
+                    }
+                  ]
+                },
+                {
+                  "num": "2",
+                  "title": "Iscrizione corso di formazione",
+                  "date": "24/06/2021",
+                  "icon": "folder-concluded.svg",
+                  "icon-label": "Conclusa",
+                  "label-tag":"Servizio non digitale",
+                  "btn-label":"Perfeziona la richiesta",
+                  "practice":"Pratica:",
+                  "practice-number":"AN4059281",
+                  "collapse": [
+                    {
+                      "icon": "it-clip",
+                      "link": "Ricevuta pagamento (PDF 80KB)",
+                      "class": "shadow mt-3"
+                    }
+                  ]
+                },
+                {
+                  "num": "3",
+                  "title": "Richiesta permesso ZTL",
+                  "date": "10/05/2021",
+                  "icon": "folder-concluded.svg",
+                  "icon-label": "Conclusa",
+                  "label-tag":"Servizio non digitale",
+                  "btn-label":"Perfeziona la richiesta",
+                  "practice":"Pratica:",
+                  "practice-number":"AN4059281",
+                  "collapse": [
+                    {
+                      "icon": "it-clip",
+                      "link": "Ricevuta pagamento (PDF 80KB)",
+                      "class": "shadow mt-3"
+                    }
+                  ]
+                },
+                {
+                  "num": "4",
+                  "title": "Richiesta parcheggio residenti",
+                  "date": "06/03/2021",
+                  "icon": "folder-concluded.svg",
+                  "icon-label": "Conclusa",
+                  "label-tag":"Servizio non digitale",
+                  "btn-label":"Perfeziona la richiesta",
+                  "practice":"Pratica:",
+                  "practice-number":"AN4059281",
+                  "collapse": [
+                    {
+                      "icon": "it-clip",
+                      "link": "Ricevuta pagamento (PDF 80KB)",
+                      "class": "shadow mt-3"
+                    }
+                  ]
+                }
+              ],
+              "pagamenti": [
+                {
+                  "num": "5",
+                  "title": "Pagamento contravvenzione",
+                  "date": "01/10/2021",
+                  "icon": "folder-pay.svg",
+                  "icon-label": "Pagato",
+                  "label-tag":"Servizio non digitale",
+                  "btn-label":"Perfeziona la richiesta",
+                  "practice":"Pratica:",
+                  "practice-number":"AN4059281",
+                  "collapse": [
+                    {
+                      "icon": "it-clip",
+                      "link": "Ricevuta pagamento (PDF 80KB)",
+                      "class": "shadow mt-3"
+                    }
+                  ]
+                },
+                {
+                  "num": "6",
+                  "title": "Pagamento contravvenzione",
+                  "date": "24/06/2021",
+                  "icon": "folder-pay.svg",
+                  "icon-label": "Pagato",
+                  "label-tag":"Servizio non digitale",
+                  "btn-label":"Perfeziona la richiesta",
+                  "practice":"Pratica:",
+                  "practice-number":"AN4059281",
+                  "collapse": [
+                    {
+                      "icon": "it-clip",
+                      "link": "Ricevuta pagamento (PDF 80KB)",
+                      "class": "shadow mt-3"
+                    }
+                  ]
+                },
+                {
+                  "num": "7",
+                  "title": "Pagamento contravvenzione",
+                  "date": "10/05/2021",
+                  "icon": "folder-pay.svg",
+                  "icon-label": "Pagato",
+                  "label-tag":"Servizio non digitale",
+                  "btn-label":"Perfeziona la richiesta",
+                  "practice":"Pratica:",
+                  "practice-number":"AN4059281",
+                  "collapse": [
+                    {
+                      "icon": "it-clip",
+                      "link": "Ricevuta pagamento (PDF 80KB)",
+                      "class": "shadow mt-3"
+                    }
+                  ]
+                },
+                {
+                  "num": "8",
+                  "title": "Pagamento contravvenzione",
+                  "date": "06/03/2021",
+                  "icon": "folder-pay.svg",
+                  "icon-label": "Pagato",
+                  "label-tag":"Servizio non digitale",
+                  "btn-label":"Perfeziona la richiesta",
+                  "practice":"Pratica:",
+                  "practice-number":"AN4059281",
+                  "collapse": [
+                    {
+                      "icon": "it-clip",
+                      "link": "Ricevuta pagamento (PDF 80KB)",
+                      "class": "shadow mt-3"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+    }
+}

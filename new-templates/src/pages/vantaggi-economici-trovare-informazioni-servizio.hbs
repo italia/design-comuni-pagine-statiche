@@ -6,9 +6,9 @@
         {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi" link3="Servizi sociali"}}
         {{> cmp-heading/cmp-heading
         title="Assegno di maternità"
-        descriptionAfterTag="L’assegno di maternità è a disposizione di famiglie con risorse limitate in caso di
+        description="L’assegno di maternità è a disposizione di famiglie con risorse limitate in caso di
         nascita, adozione o affido preadottivo"
-        dat-class="pt-3"
+        desClass="mb-4"
         pClass="mt-3 mb-4"
         button=true
         aria-label="Vai a Richiedi assegno di maternità online"
@@ -29,13 +29,13 @@
         link-list=vantaggi-economici.trovare-informazioni-servizio.navscroll}}
       </div>
       <div class="col-12 col-lg-8 offset-lg-1">
-        {{#>cmp-card/cmp-card-content-box card-title="A chi è rivolto" h2-class="mb-0" id-title="who-needs"}}
+        {{#>cmp-card/cmp-card-content-box card-title="A chi è rivolto" h2-class="mb-3" header-m0=true id-title="who-needs"}}
 
         {{>cmp-ul-list/cmp-ul-list info-list=vantaggi-economici.trovare-informazioni-servizio.list-1 font-list="lora"}}
         {{/cmp-card/cmp-card-content-box}}
 
 
-        {{#>cmp-card/cmp-card-content-box card-title="Descrizione" h2-class="mb-0" id-title="description"}}
+        {{#>cmp-card/cmp-card-content-box card-title="Descrizione" h2-class="mb-3" header-m0=true id-title="description"}}
         <p class="text-paragraph lora mb-0">
           L'assegno è riconosciuto alle persone che non beneficiano di nessuna indennità di maternità o che percepiscono
           un’indennità inferiore all’importo del contributo stesso e che dispongono di patrimoni e redditi limitati
@@ -44,7 +44,7 @@
         {{/cmp-card/cmp-card-content-box}}
 
 
-        {{#>cmp-card/cmp-card-content-box card-title="Come fare" h2-class="mb-0" id-title="how-to"}}
+        {{#>cmp-card/cmp-card-content-box card-title="Come fare" h2-class="mb-3" header-m0=true id-title="how-to"}}
         <p class="text-paragraph lora mb-0">
           Per ottenere l’assegno occorre inviare la richiesta entro sei mesi dalla data di nascita del minore o
           dall’ingresso in famiglia del bambino adottato o in affido preadottivo. <br><br>
@@ -55,7 +55,7 @@
 
 
 
-        {{#>cmp-card/cmp-card-content-box card-title="Cosa serve" h2-class="mb-0" class="p-3" id-title="needed"
+        {{#>cmp-card/cmp-card-content-box card-title="Cosa serve" h2-class="mb-3" header-m0=true class="p-3" id-title="needed"
         bg-grey="true" bg-grey-primary=true }}
         {{>cmp-ul-list/cmp-ul-list description="Per accedere al servizio, assicurati di avere:" font-title="lora"
         font-list="lora" info-list=vantaggi-economici.trovare-informazioni-servizio.list-2 }}
@@ -64,7 +64,7 @@
         {{#>cmp-card/cmp-card-content-box card-title="Cosa si ottiene" h2-class="mb-3" id-title="obtain"
         subtitle="L’erogazione avviene entro 45 giorni dalla data di ricezione dei dati.
         L'assegno viene erogato in un unica soluzione. Nel caso di parti gemellari, l'importo dell'assegno viene
-        moltiplicato per il numero di figli nati." header-m0=true}}
+        moltiplicato per il numero di figli nati." lora=true header-m0=true}}
         {{/cmp-card/cmp-card-content-box}}
 
         {{>cmp-timeline/cmp-timeline
@@ -77,25 +77,25 @@
 
         {{#>cmp-card/cmp-card-content-box card-title="Accedi al servizio" class="p-3" id-title="service-access"
         subtitle="Puoi richiedere l’assegno di maternità direttamente online tramite identità digitale." bg-grey="true"
-        margin-class="mt-30" h2-class="mb-3"}}
-        {{>partials/button/button label="Richiedi online" primary="true" class="mobile-full" aria-label="Richiedi online l'assegno di maternità"}}
-        <p class="text-paragraph mt-4 mb-3">Oppure, puoi prenotare un appuntamento e presentarti presso gli uffici.
+        margin-class="mt-30" lora=true h2-class="mb-3" header-m0=true}}
+        {{>partials/button/button label="Richiedi online" primary="true" class="mobile-full mt-3" aria-label="Richiedi online l'assegno di maternità"}}
+        <p class="text-paragraph mt-3 mb-3 lora">Oppure, puoi prenotare un appuntamento e presentarti presso gli uffici.
         </p>
-        {{>partials/button/button label="Prenota appuntamento" primary="true" class="mobile-full btn-outline-primary
+        {{>partials/button/button label="Prenota appuntamento" class="mobile-full btn-outline-primary
         t-primary bg-white" aria-label="Vai alla pagina Prenota un'appuntamento"}}
         {{/cmp-card/cmp-card-content-box}}
 
 
 
 
-        {{#>cmp-card/cmp-card-content-box card-title="Condizioni di servizio" h2-class="mb-3" id-title="conditions"
+        {{#>cmp-card/cmp-card-content-box card-title="Condizioni di servizio" h2-class="mb-3" header-m0=true id-title="conditions"
         subtitle="Per conoscere i dettagli di
         scadenze, requisiti e altre informazioni importanti, leggi i termini e le condizioni di servizio." lora=true }}
-        {{>cmp-icon-link/cmp-icon-link link="Termini e condizioni di servizio " dimensione-file="(PDF 1MB)"}}
+        {{>cmp-icon-link/cmp-icon-link link="Termini e condizioni di servizio " dimensione-file="(PDF 1MB)" link-class="mt-3"}}
         {{/cmp-card/cmp-card-content-box}}
 
 
-        {{#>cmp-card/cmp-card-content-box card-title="Contatti" h2-class="mb-0" id-title="contacts"}}
+        {{#>cmp-card/cmp-card-content-box card-title="Contatti" h2-class="mb-3" header-m0=true id-title="contacts"}}
 
         <div>
           {{>cmp-card-img/cmp-card-img card-title="Ufficio sussidi" card-description="Via Dei Transiti 21, 50302<br> 05

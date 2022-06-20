@@ -436,8 +436,7 @@
     "info-author": [
       {
         "name": "Codice Fiscale",
-        "description": "GLABNC72H25H501Y",
-        "border-unset":true
+        "description": "GLABNC72H25H501Y"
       }
     ],
     "info-contacts": [
@@ -447,8 +446,7 @@
       },
       {
         "name": "Email",
-        "description": "giulia.bianchi@gmail.com",
-        "border-unset":true
+        "description": "giulia.bianchi@gmail.com"
       }
     ]
   },

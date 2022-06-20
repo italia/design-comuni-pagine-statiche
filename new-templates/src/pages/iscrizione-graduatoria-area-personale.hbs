@@ -3,7 +3,7 @@
     <div class="container" id="main-container">
       <div class="row justify-content-center">
         <div class="col-12 col-lg-10">
-          {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Area personale"}}
+          {{> cmp-breadcrumbs/cmp-breadcrumbs link2="Home" link3="Area personale"}}
           {{> cmp-heading/cmp-heading title="Giulia Bianchi" subTitle="CF: GLABNC72H25H501Y" class="pb-2"}}
         </div>
         <div class="col-12 p-0">
@@ -27,12 +27,14 @@
                 {{#>cmp-card/cmp-card-content-box
               card-title="Ultimi messaggi"
               id-title="data-ex-tab1-tab"
+              header-m0=true
               h2-class="mb-3"}}
 
                   {{>cmp-card-latest-messages/cmp-card-latest-messages
               date="07/03/2022"
               card-title="Iscrizione alla Scuola
               dell’infanzia"
+              header-m0=true
               description="La richiesta AN4059281 è stata perfezio..."
               modalId="modal-message"
               id="1"
@@ -41,6 +43,7 @@
                   {{>cmp-card-latest-messages/cmp-card-latest-messages
               date="02/03/2022"
               card-title="Iscrizione alla Scuola dell’infanzia"
+              header-m0=true
               description="La graduatoria per l’iscrizione alla scuola..."
               modalId="modal-message"
               id="2"
@@ -49,6 +52,7 @@
                   {{>cmp-card-latest-messages/cmp-card-latest-messages
               date="28/02/2022"
               card-title="Iscrizione alla Scuola dell'Infanzia"
+              header-m0=true
               description="La richiesta AN4059281 è stata ricevut..."
               modalId="modal-message"
               id="3"
@@ -62,33 +66,34 @@
               <div class="mb-50 mb-lg-90">
                 {{#>cmp-card/cmp-card-content-box
               card-title="Ultime attività"
+              header-m0=true
               id-title="latest-activities"
               h2-class="mb-3" }}
 
                   {{>cmp-icon-card/cmp-icon-card
-              icon-color="icon-primary"
-              card-class="pt-20 pb-4 pl-30 pr-30"
+              card-class="pt-20 pb-4 ps-4 pr-30"
               title-class="t-primary mb-2 title-small-semi-bold"
               shadow-card=true
               card-title="Iscrizione alla Scuola d’Infanzia"
+              header-m0=true
               date="15/02/2022"
               icon="it-files"}}
 
                   {{>cmp-icon-card/cmp-icon-card
-              icon-color="icon-primary"
-              card-class="pt-20 pb-4 pl-30 pr-30"
+              card-class="pt-20 pb-4 ps-4 pr-30"
               title-class="t-primary mb-2 title-small-semi-bold"
               shadow-card=true
               card-title="Pagamento contravvenzione"
+              header-m0=true
               date="23/01/2022"
               icon="it-files"}}
 
                   {{>cmp-icon-card/cmp-icon-card
-              icon-color="icon-primary"
-              card-class="pt-20 pb-4 pl-30 pr-30"
+              card-class="pt-20 pb-4 ps-4 pr-30"
               title-class="t-primary mb-2 title-small-semi-bold"
               shadow-card=true
               card-title="Richiesta assegno maternità"
+              header-m0=true
               date="01/10/2022"
               icon="it-files"}}
 
@@ -112,7 +117,7 @@
             }}
             </div>
 
-            <div class="col-12 col-lg-8 offset-lg-1">
+            <div class="col-12 col-lg-8 offset-lg-1 px-0 px-sm-3">
               {{>cmp-filter/cmp-filter
             title="Pratiche"
             id-title="data-ex-tab3-tab"
@@ -121,7 +126,7 @@
             accordion=accordion.area-personale-page-3.pratiche
             id="accordion-1"
             }}
-              {{>partials/button/button link=true label="Vedi altre pratiche" class="p-0 mb-2 pt-3 t-primary d-block title-xsmall-semi-bold
+              {{>partials/button/button label="Vedi altre pratiche" class="accordion-view-more mb-2 pt-3 t-primary title-xsmall-semi-bold
             ps-lg-3"}}
               {{>cmp-filter/cmp-filter
             title="Pagamenti"
@@ -131,7 +136,7 @@
             accordion=accordion.area-personale-page-3.pagamenti
             id="accordion-2"
             }}
-              {{>partials/button/button link=true label="Vedi altri pagamenti" class="p-0 mt-3 mb-40 t-primary d-block title-xsmall-semi-bold
+              {{>partials/button/button label="Vedi altri pagamenti" class="accordion-view-more mb-40 t-primary d-block title-xsmall-semi-bold
             ps-lg-3"}}
             </div>
           </div>

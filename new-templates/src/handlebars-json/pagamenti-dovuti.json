@@ -131,7 +131,7 @@
           "completed": true
         },
         {
-          "title": "Anteprima",
+          "title": "Anteprima F24",
           "active": true,
           "completed": false
         }
@@ -738,14 +738,16 @@
             "num": "1",
             "title": "Calcolo IMU",
             "date": "21/07/2022",
-            "icon": "it-folder",
+            "icon": "folder-concluded.svg",
             "icon-label": "Conclusa",
             "label-tag": "Pagamento",
+            "practice":"Pratica:",
+            "practice-number":"AN4059281",
             "collapse": [
               {
                 "icon": "it-clip",
                 "link": "Documento F24",
-                "class": "shadow"
+                "class": "shadow p-0"
               }
             ]
           },
@@ -753,14 +755,16 @@
             "num": "2",
             "title": "Richiesta assegno maternità",
             "date": "01/10/2022",
-            "icon": "it-folder",
+            "icon": "folder-concluded.svg",
             "icon-label": "Conclusa",
             "label-tag": "Pagamento",
+            "practice":"Pratica:",
+            "practice-number":"AN4059281",
             "collapse": [
               {
                 "icon": "it-clip",
                 "link": "Documento F24",
-                "class": "shadow"
+                "class": "shadow p-0"
               }
             ]
           },
@@ -768,14 +772,16 @@
             "num": "3",
             "title": "Iscrizione corso di formazione",
             "date": "24/06/2021",
-            "icon": "it-folder",
+            "icon": "folder-concluded.svg",
             "icon-label": "Conclusa",
             "label-tag": "Pagamento",
+            "practice":"Pratica:",
+            "practice-number":"AN4059281",
             "collapse": [
               {
                 "icon": "it-clip",
                 "link": "Documento F24",
-                "class": "shadow"
+                "class": "shadow p-0"
               }
             ]
           },
@@ -783,14 +789,16 @@
             "num": "4",
             "title": "Richiesta permesso ZTL",
             "date": "10/05/2021",
-            "icon": "it-folder",
+            "icon": "folder-concluded.svg",
             "icon-label": "Conclusa",
             "label-tag": "Pagamento",
+            "practice":"Pratica:",
+            "practice-number":"AN4059281",
             "collapse": [
               {
                 "icon": "it-clip",
                 "link": "Documento F24",
-                "class": "shadow"
+                "class": "shadow p-0"
               }
             ]
           },
@@ -798,14 +806,16 @@
             "num": "5",
             "title": "Richiesta parcheggio residenti",
             "date": "06/03/2021",
-            "icon": "it-folder",
+            "icon": "folder-concluded.svg",
             "icon-label": "Conclusa",
             "label-tag": "Pagamento",
+            "practice":"Pratica:",
+            "practice-number":"AN4059281",
             "collapse": [
               {
                 "icon": "it-clip",
                 "link": "Documento F24",
-                "class": "shadow"
+                "class": "shadow p-0"
               }
             ]
           }
@@ -815,14 +825,16 @@
             "num": "6",
             "title": "Pagamento servizio mensa",
             "date": "21/07/2022",
-            "icon": "it-check",
+            "icon": "folder-pay.svg",
             "icon-label": "Pagato",
             "label-tag": "Pagamento",
+            "practice":"Pratica:",
+            "practice-number":"AN4059281",
             "collapse": [
               {
                 "icon": "it-clip",
                 "link": "Documento F24",
-                "class": "shadow"
+                "class": "shadow p-0"
               }
             ]
           },
@@ -830,14 +842,16 @@
             "num": "7",
             "title": "Pagamento servizio mensa",
             "date": "01/10/2021",
-            "icon": "it-check",
+            "icon": "folder-pay.svg",
             "icon-label": "Pagato",
             "label-tag": "Pagamento",
+            "practice":"Pratica:",
+            "practice-number":"AN4059281",
             "collapse": [
               {
                 "icon": "it-clip",
                 "link": "Documento F24",
-                "class": "shadow"
+                "class": "shadow p-0"
               }
             ]
           },
@@ -845,14 +859,16 @@
             "num": "8",
             "title": "Pagamento contravvenzione",
             "date": "24/06/2021",
-            "icon": "it-check",
+            "icon": "folder-pay.svg",
             "icon-label": "Pagato",
             "label-tag": "Pagamento",
+            "practice":"Pratica:",
+            "practice-number":"AN4059281",
             "collapse": [
               {
                 "icon": "it-clip",
                 "link": "Documento F24",
-                "class": "shadow"
+                "class": "shadow p-0"
               }
             ]
           },
@@ -860,14 +876,16 @@
             "num": "9",
             "title": "Pagamento contravvenzione",
             "date": "10/05/2021",
-            "icon": "it-check",
+            "icon": "folder-pay.svg",
             "icon-label": "Pagato",
             "label-tag": "Pagamento",
+            "practice":"Pratica:",
+            "practice-number":"AN4059281",
             "collapse": [
               {
                 "icon": "it-clip",
                 "link": "Documento F24",
-                "class": "shadow"
+                "class": "shadow p-0"
               }
             ]
           },
@@ -875,14 +893,16 @@
             "num": "10",
             "title": "Pagamento contravvenzione",
             "date": "06/03/2021",
-            "icon": "it-check",
+            "icon": "folder-pay.svg",
             "icon-label": "Pagato",
             "label-tag": "Pagamento",
+            "practice":"Pratica:",
+            "practice-number":"AN4059281",
             "collapse": [
               {
                 "icon": "it-clip",
                 "link": "Documento F24",
-                "class": "shadow"
+                "class": "shadow p-0"
               }
             ]
           }

@@ -11,6 +11,7 @@
         servizio-attivo=true
         description="L'IMU è l'Imposta municipale unica istituita in via sperimentale nel 2012 e ridisciplinata dalla
         legge di bilancio 2020."
+        desClass="mb-30"
         button=true
         label="Avvia richiesta online"
         primary=true
@@ -30,7 +31,7 @@
       <div class="col-12 col-lg-8 offset-lg-1">
         {{#>cmp-card/cmp-card-content-box card-title="A chi è rivolto" h2-class="mb-0" id-title="who-needs"}}
         {{>cmp-ul-list/cmp-ul-list
-        info-list=pagamenti-dovuti.trovare-informazioni-servizio.a-chi-rivolto.list-1 description="Propreitario di
+        info-list=pagamenti-dovuti.trovare-informazioni-servizio.a-chi-rivolto.list-1 description="Proprietario di
         immobili, ovvero:" font-list="lora"}}
 
         {{>cmp-ul-list/cmp-ul-list
@@ -68,8 +69,8 @@
         {{/cmp-card/cmp-card-content-box}}
 
 
-        {{#>cmp-card/cmp-card-content-box card-title="Tempi e scadenze" id-title="deadlines" h2-class="mb-0"}}
-        {{>cmp-ul-list/cmp-ul-list description="Le scadenze fondamentali sono:" font-list="titillium"
+        {{#>cmp-card/cmp-card-content-box card-title="Tempi e scadenze" id-title="deadlines" h2-class="mb-0" lora=true}}
+        {{>cmp-ul-list/cmp-ul-list description="Le scadenze fondamentali sono:" desClass="mb-3" font-list="lora"
         info-list=pagamenti-dovuti.trovare-informazioni-servizio.timeline }}
         {{/cmp-card/cmp-card-content-box}}
 
@@ -79,16 +80,16 @@
         dodici mesi dell'anno precedente.<br><br>Il versamento della rata a saldo dell'imposta dovuta per l'intero anno
         è eseguita, a conguaglio, sulla base delle aliquote risultanti dal prospetto delle aliquote pubblicato nel sito
         Internet del Dipartimento delle finanze del Ministero dell'Economia e delle Finanze (Mef), alla data del 28
-        ottobre di ciascun anno. " class="mt-30"}}
+        ottobre di ciascun anno." class="mt-30" lora=true}}
         {{>cmp-icon-link/cmp-icon-link link="Aliquote e detrazioni IMU 2022" dimensione-file="(PDF 80KB)"}}
         {{/cmp-card/cmp-card-content-box}}
 
 
         {{#>cmp-card/cmp-card-content-box card-title="Accedi al servizio" h2-class="mb-3" class="p-3"
         id-title="service-access" subtitle="Puoi pagare l’IMU direttamente online tramite identità digitale."
-        bg-grey="true" bg-grey-primary=true}}
+        bg-grey="true" bg-grey-primary=true lora=true}}
         {{>partials/button/button label="Paga online" aria-label="Paga online accedendo tramite identità digitale" primary="true" class="mobile-full" }}
-        <p class="text-paragraph mt-4 mb-3">Oppure puoi prenotare un appuntamento e presentarti presso gli uffici.
+        <p class="text-paragraph mt-4 mb-3 lora">Oppure puoi prenotare un appuntamento e presentarti presso gli uffici.
         </p>
         {{>partials/button/button label="Prenota appuntamento" aria-label="Vai alla pagina Prenota Appuntamento" primary="true" class="mobile-full btn-outline-primary
         t-primary" }}
@@ -103,7 +104,7 @@
 
         {{#>cmp-card/cmp-card-content-box card-title="Contatti" h2-class="mb-0" id-title="contacts"}}
         {{>cmp-card-img/cmp-card-img card-title="Ufficio tributi"
-        card-description="Via Dei Transiti 21, 50302<br> 05 0505 <br> ufficiotributi@email.it" img=true}}
+        card-description="Via Dei Transiti 21, 50302<br> 05 0505 <br> <a href='mailto:ufficiotributia@email.it' aria-label='Invia una email a ufficiotributi@email.it' title='Invia una email a ufficiotributi@email.it'>ufficiotributi@email.it</a>" img=true}}
         {{/cmp-card/cmp-card-content-box}}
 
 

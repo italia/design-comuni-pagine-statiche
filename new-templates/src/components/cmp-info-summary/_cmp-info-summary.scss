@@ -26,10 +26,10 @@
   .card-body {
     .single-line-info {
       border-bottom: 1px solid;
-      padding: 0.25rem 0 0.5rem 0;
+      padding: 0.5rem 0;
 
       @include media-breakpoint-up(md) {
-        padding: 0.22rem 0 0.89rem 0;
+        padding: 0.89rem 0;
       }
 
       &.border-unset{

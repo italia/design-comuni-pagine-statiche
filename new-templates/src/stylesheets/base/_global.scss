@@ -3,6 +3,13 @@ body {
   color: get-color(black, main);
 }
 
+.form-check [type=checkbox]:focus+label, .form-check [type=radio]:focus+label, .toggles label input[type=checkbox]:focus+.lever, :focus:not(.focus--mouse) {
+  border-color: #000 !important;
+  box-shadow: 0 0 0 2px #000!important;
+  outline: 3px solid #fff !important;
+  outline-offset: 3px;
+}
+
 .shadow-contacts {
   @include media-breakpoint-up(md) {
     box-shadow: inset 0 10px 14px -12px rgba(0,0,0,0.34);
@@ -28,7 +35,7 @@ body {
 }
 
 .p-contacts {
-  padding: 2.5rem 0;
+  padding: 2.5rem 1.5rem;
 
   @include media-breakpoint-up(md) {
     padding-top: 2.666rem;
