@@ -111,7 +111,6 @@ for (let i = 0; i < pages.length; i++) {
         ...require('../src/handlebars-json/domande-frequenti.json')
       },
       minify: {
-				collapseWhitespace: false,
         removeRedundantAttributes: false, // do not remove type="text"
       },
     }),
