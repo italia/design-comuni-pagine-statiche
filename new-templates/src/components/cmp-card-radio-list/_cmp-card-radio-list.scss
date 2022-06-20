@@ -11,15 +11,18 @@
     }
   }
 
-/*   .form-check label {
+  .form-check label {
     line-height: 1.5;
-  } */
+  }
 
-  .form-check [type=radio]:not(:checked)+label::after, .form-check [type=radio]:not(:checked)+label::before {
+  .form-check [type=radio]:not(:checked)+label::after,
+  .form-check [type=radio]:not(:checked)+label::before {
     border-color: get-color(black, main);
   }
 
-  .form-check [type=checkbox]+label, .form-check [type=radio]+label {
+  .form-check [type=checkbox]+label,
+  .form-check [type=radio]+label {
     padding-left: 45px;
   }
+
 }

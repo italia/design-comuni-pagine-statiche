@@ -183,10 +183,6 @@
           "anchor": "beneficiary-info"
         },
         {
-          "item": "Altro Genitore",
-          "anchor": "other-parent-info"
-        },
-        {
           "item": "ISEE",
           "anchor": "isee-info"
         }
@@ -232,6 +228,60 @@
         }
       ],
       "documenti": [
+        {
+          "name": "Certificato disabilità",
+          "description": "",
+          "warning": true,
+          "warning-message": "Documento mancante"
+        },
+        {
+          "name": "Certificato dieta patologica",
+          "description": "",
+          "warning": true,
+          "warning-message": "Documento mancante"
+        }
+      ],
+      "anagrafica-2": [
+        {
+          "name": "Nome",
+          "description": "Lucia"
+        },
+        {
+          "name": "Cognome",
+          "description": "Rossi"
+        },
+        {
+          "name": "Codice fiscale",
+          "description": "RSSLCU19C66H501Z"
+        },
+        {
+          "name": "Data di Nascita",
+          "description": "26/03/2019"
+        },
+        {
+          "name": "Luogo di Nascita",
+          "description": "Roma"
+        },
+        {
+          "name": "Sesso",
+          "description": "Femmina"
+        },
+        {
+          "name": "Nazionalità",
+          "description": "Italiana"
+        }
+      ],
+      "indirizzo-2": [
+        {
+          "name": "Residenza",
+          "description": "Via Roma 16, 00100 Roma, It"
+        },
+        {
+          "name": "Domicilio ",
+          "description": "Via Roma 16, 00100 Roma, It"
+        }
+      ],
+      "documenti-2": [
         {
           "name": "Certificato disabilità",
           "description": "",
@@ -488,7 +538,7 @@
       "servizi-correlati": [
         {
           "icon": "it-settings",
-          "link": "Iscrizione servizio mensa",
+          "link": "Iscrizione alla scuola dell'infanzia",
           "class": "shadow mb-10",
           "aria-label": "Vai al servizio"
         },
@@ -668,10 +718,10 @@
           "icon-label": "Da pagare",
           "color": "u-main-error",
           "error-icon":true,
-          "label-tag":"Iscrizione servizio mensa",
-          "import":"23,00 €",
-          "practice":"Pagamento:",
-           "practice-number":"PA3028/17",
+          "label-tag":"Servizio non digitale",
+          "practice":"Pratica:",
+           "practice-number":"AN4059281",
+           "btn-label":"Paga ora",
           "collapse": [
             {
               "icon": "it-clip",
@@ -761,10 +811,10 @@
           "icon": "folder-incomplete.svg",
           "icon-label": "Da completare",
           "color": "u-main-alert",
-          "label-tag":"Iscrizione servizio mensa",
-          "import":"23,00 €",
-          "practice":"Pagamento:",
-           "practice-number":"PA3028/17",
+          "label-tag":"Servizio non digitale",
+          "practice":"Pratica:",
+           "practice-number":"AN4059281",
+           "btn-label":"Paga ora",
           "collapse": [
             {
               "icon": "it-clip",
@@ -779,7 +829,7 @@
           "date": "01/10/2022",
           "icon": "folder-concluded.svg",
           "icon-label": "Conclusa",
-          "label-tag":"Iscrizione servizio mensa",
+          "label-tag":"Iscrizione scuola dell’infanzia",
           "import":"23,00 €",
           "practice":"Pagamento:",
            "practice-number":"PA3028/17",
@@ -797,7 +847,7 @@
           "date": "24/06/2021",
           "icon": "folder-concluded.svg",
           "icon-label": "Conclusa",
-          "label-tag":"Iscrizione servizio mensa",
+          "label-tag":"Iscrizione corso formazione",
           "import":"23,00 €",
           "practice":"Pagamento:",
            "practice-number":"PA3028/17",
@@ -815,7 +865,7 @@
           "date": "10/05/2021",
           "icon": "folder-concluded.svg",
           "icon-label": "Conclusa",
-          "label-tag":"Iscrizione servizio mensa",
+          "label-tag":"Permesso ZTL",
           "import":"23,00 €",
           "practice":"Pagamento:",
            "practice-number":"PA3028/17",
@@ -833,7 +883,7 @@
           "date": "06/03/2021",
           "icon": "folder-concluded.svg",
           "icon-label": "Conclusa",
-          "label-tag":"Iscrizione servizio mensa",
+          "label-tag":"Richiesta parcheggio residenti",
           "import":"23,00 €",
           "practice":"Pagamento:",
            "practice-number":"PA3028/17",

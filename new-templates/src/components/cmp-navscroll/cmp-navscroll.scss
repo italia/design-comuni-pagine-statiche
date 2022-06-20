@@ -25,14 +25,6 @@
     }
   }
 
-  .link-list-wrapper ul li a:hover:not(.disabled) span {
-    color: get-color(black, main);
-  }
-
-  .link-list-wrapper ul li a span {
-    color: get-color(black, main);
-  }
-
   .link-list-wrapper ul li:not(:last-child) {
     margin-bottom: 0.75rem;
 

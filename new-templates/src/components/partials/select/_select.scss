@@ -30,8 +30,8 @@
   }
 
   label {
-    @include font(14, 14);
-    font-weight: 700;
+    @include font(16, 16);
+    font-weight: 600;
     line-height: 1.2;
     color: get-color(dark, grey);
     margin-left: 4px;

@@ -20,6 +20,7 @@
       background-image: url('https://picsum.photos/200/300');
       background-position: center;
       background-size: cover;
+      flex-shrink: 0;
     }
   }
 }
@@ -130,12 +131,6 @@ a.read-more {
   }
 }
 
-#tutti-gli-argomenti {
-  .card.card-teaser .icon+.card-body {
-    margin-left: unset;
-  }
-}
-
 .link-list-wrapper ul li a.active span {
   text-decoration: none;
 }
@@ -174,7 +169,7 @@ a.read-more {
   }
 }
 
-#evidenza {
+.evidence-section {
   .section {
     background-repeat: no-repeat;
     background-position: top center;
@@ -217,8 +212,8 @@ a.read-more {
   background-color: get-color(light, blue);
 }
 
-#evidenza,
-#novita {
+.evidence-section,
+.useful-links-section {
   .list-item.active {
     line-height: normal;
 
@@ -228,8 +223,7 @@ a.read-more {
   }
 }
 
-#novita {
-
+.useful-links-section {
   .input-group .input-group-text,
   input[type=text] {
     border-bottom: unset !important;
@@ -253,8 +247,8 @@ a.read-more {
 }
 
 .sport-wrapper,
-#accesso-uffici,
-#contatti {
+.office-section,
+.contact-section {
   .card.card-teaser-info {
     border-left: 8px solid rgba(0, 122, 82, 0.1);
   }
@@ -264,11 +258,11 @@ a.read-more {
   border-color: #455B71;
 }
 
-#calendario .card-wrapper.card-overlapping {
+.card-wrapper.card-overlapping {
   margin-top: -50px;
 }
 
-#novita {
+.novita-section {
   .card-wrapper {
     .sm-row {
       @include media-breakpoint-down(sm) {
@@ -276,10 +270,18 @@ a.read-more {
       }
 
       .img-responsive-wrapper {
+        img {
+          border-top-right-radius: 4px;
+          border-bottom-right-radius: 4px;
+
+          @include media-breakpoint-up(md) {
+            border-bottom-right-radius: 0;
+            border-top-left-radius: 4px;
+          }
+        }
+
         @include media-breakpoint-down(sm) {
           width: 75%;
-          border-top-left-radius: 0;
-          border-bottom-right-radius: 4px;
         }
 
         .img-responsive {
@@ -304,20 +306,6 @@ a.read-more {
   }
 }
 
-#contenuti-correlati {
-  .card-wrapper {
-    .card-teaser {
-      .link-list-wrapper {
-        a {
-          span.underline {
-            color: #007A52;
-          }
-        }
-      }
-    }
-  }
-}
-
 .card .categoryicon-top span.text{
   color: #007a52;
 }
@@ -325,7 +313,6 @@ a.read-more {
 .bg-none{
   background-color: unset;
 }
-
 
 .it-grid-item-wrapper.it-grid-item-overlay {
   a:hover .it-griditem-text-wrapper {
@@ -337,8 +324,7 @@ a.read-more {
   }
 }
 
-
-#a-cura-di {
+.it-page-section {
   .card.card-teaser-info {
     border-left: 8px solid rgba(0, 122, 82, 0.1);
   }
@@ -346,14 +332,14 @@ a.read-more {
 
 
 @media only screen and (min-width: 992px) {
-  #argomento .row {
+  .gap-40 {
     --bs-gutter-x: 40px;
     --bs-gutter-y: 40px
   }
 }
 
 @media only screen and (max-width: 560px) {
-  #calendario .splide__track {
+  .row-calendar .splide__track {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }

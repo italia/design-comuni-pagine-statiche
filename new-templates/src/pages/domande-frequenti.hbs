@@ -1,8 +1,8 @@
 {{#>base/base title="Domande freqeunti"}}
   <main>
     <div class="container" id="main-container">
-      <div class="row">
-        <div class="col-12 col-lg-10 offset-lg-1">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-10">
           {{>cmp-breadcrumbs/cmp-breadcrumbs link2="Home" link3="Domande più frequenti"}}
           {{>cmp-heading/cmp-heading
             title="Domande frequenti"
@@ -10,11 +10,17 @@
           }}
         </div>
       </div>
+    </div>
+
+    <div class="container">
       <div class="row">
         <div class="col-12 col-lg-8 offset-lg-2 px-sm-3 mt-2">
           {{>partials/input-search/input-search id="autocomplete-three" label-text="Cerca nel sito" placeholder-text="Cerca"}}
         </div>
       </div>
+    </div>
+
+    <div class="container">
       <div class="row">
         <div class="col-12 col-lg-8 offset-lg-2 px-0 px-sm-3">
           {{>cmp-accordion/cmp-accordion-faq accordion=domande-frequenti.accordion}}

@@ -36,7 +36,8 @@
             required-icon=true
             card-title="Scegli la scuola"
             subtitle="Scegli l’istituto a cui vuoi iscrivere il minore"}}
-            {{> partials/select/select placeholder="Seleziona un'opzione" select-option-list=inserire-dati-specifici id="select-school" label-hidden=true label-text="Scegli la scuola"}}
+            {{> partials/select/select placeholder="Seleziona un'opzione" select-option-list=inserire-dati-specifici
+            id="select-school" label-hidden=true label-text="Scegli la scuola"}}
             {{/cmp-card/cmp-card-content-box}}
           </div>
 
@@ -46,12 +47,12 @@
             id-title="rate-choice"
             bg-grey=true
             header-m0=true
+            subtitleClass="mb-4"
             h2-class="mb-1"
             margin-class="mb-40"
             required-icon=true
             card-title="Tariffa esonero"
-            subtitle="Indica la tariffa di esonero a cui ha diritto il beneficiario"
-            subtitleClass="mb-4"}}
+            subtitle="Indica la tariffa di esonero a cui ha diritto il beneficiario"}}
             {{> cmp-card-radio/cmp-card-radio percentage=true id='rate'
             label-1="Nessuna"
             label-2="25%"
@@ -69,6 +70,8 @@
             bg-grey=true
             h2-class="mb-1"
             margin-class="mb-40"
+            header-m0=true
+            subtitleClass="mb-4"
             required-icon=true
             card-title="Tariffa riduzione"
             subtitle="Indica la tariffa di riduzione a cui ha diritto il beneficiario"}}
@@ -87,6 +90,8 @@
             id-title="attendance"
             bg-grey=true
             h2-class="mb-1"
+            header-m0=true
+            subtitleClass="mb-4"
             margin-class="mb-40"
             required-icon=true
             card-title="Frequenza"
@@ -101,6 +106,8 @@
             id-title="different-diet"
             bg-grey=true
             h2-class="mb-1"
+            header-m0=true
+            subtitleClass="mb-4"
             required-icon=true
             card-title="Dieta diversificata"
             subtitle="Indica la dieta per il beneficiario"}}
