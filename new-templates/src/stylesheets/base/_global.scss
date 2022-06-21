@@ -35,11 +35,10 @@ body {
 }
 
 .p-contacts {
-  padding: 2.5rem 0;
+  padding: 2.5rem 1.5rem;
 
-  @include media-breakpoint-up(md) {
-    padding-top: 2.666rem;
-    padding-bottom: 2.666rem;
+  @include media-breakpoint-up(lg) {
+    padding: 2.66rem 0;
   }
 }
 
