@@ -6,8 +6,10 @@
           "num": "1",
           "title": "Iscrizione scuola d’infanzia",
           "date": "15/02/2022",
-          "icon": "folder-concluded.svg",
-          "icon-label": "Conclusa",
+          "icon": "folder-incomplete.svg",
+          "icon-label": "Da completare",
+          "color": "u-main-alert",
+          "warning-icon":true,
           "label-tag":"Servizio non digitale",
           "practice": "Pratica:",
           "practice-number":"AN4059281",
@@ -34,7 +36,6 @@
           "label-tag":"Servizio non digitale",
           "practice": "Pratica:",
           "practice-number":"AN4059281",
-          "btn-label":"Perfeziona la richiesta",
           "collapse": [
             {
               "icon": "it-clip",
@@ -44,6 +45,11 @@
             {
               "icon": "it-clip",
               "link": "Graduatoria",
+              "class": "shadow p-0"
+            },
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
               "class": "shadow p-0"
             }
           ]
@@ -57,7 +63,6 @@
           "label-tag":"Servizio non digitale",
           "practice": "Pratica:",
           "practice-number":"AN4059281",
-          "btn-label":"Perfeziona la richiesta",
           "collapse": [
             {
               "icon": "it-clip",
@@ -67,6 +72,11 @@
             {
               "icon": "it-clip",
               "link": "Graduatoria",
+              "class": "shadow p-0"
+            },
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
               "class": "shadow p-0"
             }
           ]
@@ -80,7 +90,6 @@
           "label-tag":"Servizio non digitale",
           "practice": "Pratica:",
           "practice-number":"AN4059281",
-          "btn-label":"Perfeziona la richiesta",
           "collapse": [
             {
               "icon": "it-clip",
@@ -90,6 +99,11 @@
             {
               "icon": "it-clip",
               "link": "Graduatoria",
+              "class": "shadow p-0"
+            },
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
               "class": "shadow p-0"
             }
           ]
@@ -103,7 +117,6 @@
           "label-tag":"Servizio non digitale",
           "practice": "Pratica:",
           "practice-number":"AN4059281",
-          "btn-label":"Perfeziona la richiesta",
           "collapse": [
             {
               "icon": "it-clip",
@@ -113,6 +126,11 @@
             {
               "icon": "it-clip",
               "link": "Graduatoria",
+              "class": "shadow p-0"
+            },
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
               "class": "shadow p-0"
             }
           ]
@@ -128,7 +146,6 @@
           "label-tag":"Servizio non digitale",
           "practice": "Pratica:",
           "practice-number":"AN4059281",
-          "btn-label":"Perfeziona la richiesta",
           "collapse": [
             {
               "icon": "it-clip",
@@ -138,6 +155,11 @@
             {
               "icon": "it-clip",
               "link": "Graduatoria",
+              "class": "shadow p-0"
+            },
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
               "class": "shadow p-0"
             }
           ]
@@ -151,7 +173,6 @@
           "label-tag":"Servizio non digitale",
           "practice": "Pratica:",
           "practice-number":"AN4059281",
-          "btn-label":"Perfeziona la richiesta",
           "collapse": [
             {
               "icon": "it-clip",
@@ -161,6 +182,11 @@
             {
               "icon": "it-clip",
               "link": "Graduatoria",
+              "class": "shadow p-0"
+            },
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
               "class": "shadow p-0"
             }
           ]
@@ -174,7 +200,6 @@
           "label-tag":"Servizio non digitale",
           "practice": "Pratica:",
           "practice-number":"AN4059281",
-          "btn-label":"Perfeziona la richiesta",
           "collapse": [
             {
               "icon": "it-clip",
@@ -184,6 +209,11 @@
             {
               "icon": "it-clip",
               "link": "Graduatoria",
+              "class": "shadow p-0"
+            },
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
               "class": "shadow p-0"
             }
           ]
@@ -197,7 +227,6 @@
           "label-tag":"Servizio non digitale",
           "practice": "Pratica:",
           "practice-number":"AN4059281",
-          "btn-label":"Perfeziona la richiesta",
           "collapse": [
             {
               "icon": "it-clip",
@@ -207,6 +236,11 @@
             {
               "icon": "it-clip",
               "link": "Graduatoria",
+              "class": "shadow p-0"
+            },
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
               "class": "shadow p-0"
             }
           ]
@@ -220,7 +254,6 @@
           "label-tag":"Servizio non digitale",
           "practice": "Pratica:",
           "practice-number":"AN4059281",
-          "btn-label":"Perfeziona la richiesta",
           "collapse": [
             {
               "icon": "it-clip",
@@ -230,6 +263,11 @@
             {
               "icon": "it-clip",
               "link": "Graduatoria",
+              "class": "shadow p-0"
+            },
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
               "class": "shadow p-0"
             }
           ]

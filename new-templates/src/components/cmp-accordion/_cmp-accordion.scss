@@ -4,16 +4,6 @@
     color: rgba(25, 25, 25, 0.7) !important;
   }
 
-  .icon-folder {
-    width: 12px;
-    height: 12px;
-  }
-
-  .error-icon {
-    width: 9px;
-    height: 9px;
-  }
-
   .accordion-date {
     padding-left: .75rem;
     @include font(14, 16);
@@ -81,6 +71,12 @@
       padding-left: 0.889rem;
     }
 
+    .btn {
+      @include media-breakpoint-up(md) {
+        max-width: 18.2rem;
+      }
+    }
+
     .label {
       @include font(16, 16);
       line-height: 1.5;
@@ -106,17 +102,33 @@
       }
     }
 
+    .link-list-wrapper ul li a span {
+      @include media-breakpoint-up(md) {
+        margin-right: 0;
+      }
+    }
+
     .link-list {
       .shadow {
         box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2)!important;
         border-radius: 4px;
         padding: 4px 0 4px 4px;
 
+        @include media-breakpoint-up(md) {
+          max-width: 18.2rem;
+        }
+
         &:not(:first-child) {
           margin: .5rem 0;
 
           @include media-breakpoint-up(sm) {
             margin: .43rem 0 1.33rem 0;
+          }
+        }
+
+        .list-item-title{
+          @include media-breakpoint-up(md) {
+            font-size: .89rem !important;
           }
         }
 

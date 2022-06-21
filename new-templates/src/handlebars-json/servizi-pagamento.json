@@ -717,7 +717,6 @@
           "icon": "folder-to-pay.svg",
           "icon-label": "Da pagare",
           "color": "u-main-error",
-          "error-icon":true,
           "label-tag":"Servizio non digitale",
           "practice":"Pratica:",
            "practice-number":"AN4059281",

@@ -61,12 +61,12 @@
       max-width: 1.25;
       max-height: 1.5rem;
       fill: get-color(warning, main);
-      margin-right: 0.625rem;
+      margin-right: 0.25rem;
 
       @include media-breakpoint-up(sm) {
         max-width: 1.333rem;
         max-height: 1.333rem;
-        margin-right: 0.555rem;
+        margin-right: 0.22rem;
       }
     }
   }

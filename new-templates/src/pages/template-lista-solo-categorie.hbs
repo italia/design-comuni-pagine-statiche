@@ -1,28 +1,35 @@
 {{#>base/base title="Novità" headerActive2=true}}
-<main>
-  <div class="container" id="main-container">
-    <div class="row justify-content-center row-shadow">
-      <div class="col-12 col-lg-10">
-
-        {{>cmp-breadcrumbs/cmp-breadcrumbs link2="Home" link3="Novità"}}
-
-        {{>cmp-hero/cmp-hero
-        hero-title="Notizie"
-        hero-text="Tutte le novità comunali per i cittadini per restare aggiornati."
-        wrapper-class="pt-0 ps-0 pb-4 pb-lg-60"}}
+  <main>
+    <div class="container" id="main-container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-10">
+          {{>cmp-breadcrumbs/cmp-breadcrumbs link2="Home" link3="Novità"}}
+        </div>
       </div>
     </div>
 
-    <h2 class="title-xxlarge mt-70 mb-4 mt-lg-40 pt-lg-2 mb-lg-40 ">Notizie in evidenza</h2>
-    {{>cmp-list-card-img/cmp-list-card-img-hr cards=cards.card-news rowClass="pb-60"}}
-  </div>
+    <div class="container">
+      <div class="row justify-content-center row-shadow">
+        <div class="col-12 col-lg-10">
+          {{>cmp-hero/cmp-hero
+        hero-title="Notizie"
+        hero-text="Tutte le novità comunali per i cittadini per restare aggiornati."
+        wrapper-class="pt-0 ps-0 pb-4 pb-lg-60"}}
+        </div>
+      </div>
+    </div>
 
-  <div class="container" id="argomento">
-    <h2 class="title-xxlarge mt-40 mt-lg-60 mb-4 mb-lg-40">Esplora per argomento</h2>
-    <div class="row flex-wrap justify-content-start gy-4 pb-40 pb-lg-60 mb-lg-1 align-items-stretch gap-40">
+    <div class="container">
+      <h2 class="title-xxlarge mt-70 mb-4 mt-lg-40 pt-lg-2 mb-lg-40 ">Notizie in evidenza</h2>
+      {{>cmp-list-card-img/cmp-list-card-img-hr cards=cards.card-news rowClass="pb-60"}}
+    </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        {{>cmp-card/cmp-card-simple
+    <div class="container" id="argomento">
+      <h2 class="title-xxlarge mt-40 mt-lg-60 mb-4 mb-lg-40">Esplora per argomento</h2>
+      <div class="row flex-wrap justify-content-start gy-4 pb-40 pb-lg-60 mb-lg-1 align-items-stretch gap-40">
+
+        <div class="col-12 col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
         classTitle="title-xlarge"
@@ -33,10 +40,10 @@
         card-link="Vedi Notizie (32)"
         card-link-accessibility="Visualizza tutte le notizie riguardanti l'argomento"
         }}
-      </div>
+        </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        {{>cmp-card/cmp-card-simple
+        <div class="col-12 col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
         classTitle="title-xlarge"
@@ -47,10 +54,10 @@
         card-link="Vedi Notizie (32)"
         card-link-accessibility="Visualizza tutte le notizie riguardanti l'argomento"
         }}
-      </div>
+        </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        {{>cmp-card/cmp-card-simple
+        <div class="col-12 col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
         classTitle="title-xlarge"
@@ -61,10 +68,10 @@
         card-link="Vedi Notizie (32)"
         card-link-accessibility="Visualizza tutte le notizie riguardanti l'argomento"
         }}
-      </div>
+        </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        {{>cmp-card/cmp-card-simple
+        <div class="col-12 col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
         classTitle="title-xlarge"
@@ -75,10 +82,10 @@
         card-link="Vedi Notizie (32)"
         card-link-accessibility="Visualizza tutte le notizie riguardanti l'argomento"
         }}
-      </div>
+        </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        {{>cmp-card/cmp-card-simple
+        <div class="col-12 col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
         classTitle="title-xlarge"
@@ -89,10 +96,10 @@
         card-link="Vedi Notizie (32)"
         card-link-accessibility="Visualizza tutte le notizie riguardanti l'argomento"
         }}
-      </div>
+        </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        {{>cmp-card/cmp-card-simple
+        <div class="col-12 col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
         classTitle="title-xlarge"
@@ -103,10 +110,10 @@
         card-link="Vedi notizie (32)"
         card-link-accessibility="Visualizza tutte le notizie riguardanti l'argomento"
         }}
-      </div>
+        </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        {{>cmp-card/cmp-card-simple
+        <div class="col-12 col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
         classTitle="title-xlarge"
@@ -117,10 +124,10 @@
         card-link="Vedi Notizie (32)"
         card-link-accessibility="Visualizza tutte le notizie riguardanti l'argomento"
         }}
-      </div>
+        </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        {{>cmp-card/cmp-card-simple
+        <div class="col-12 col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
         classTitle="title-xlarge"
@@ -131,10 +138,10 @@
         card-link="Vedi Notizie (32)"
         card-link-accessibility="Visualizza tutte le notizie riguardanti l'argomento"
         }}
-      </div>
+        </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        {{>cmp-card/cmp-card-simple
+        <div class="col-12 col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
         classTitle="title-xlarge"
@@ -145,10 +152,10 @@
         card-link="Vedi Notizie (32)"
         card-link-accessibility="Visualizza tutte le notizie riguardanti l'argomento"
         }}
-      </div>
+        </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        {{>cmp-card/cmp-card-simple
+        <div class="col-12 col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
         classTitle="title-xlarge"
@@ -159,10 +166,10 @@
         card-link="Vedi Notizie (32)"
         card-link-accessibility="Visualizza tutte le notizie riguardanti l'argomento"
         }}
-      </div>
+        </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        {{>cmp-card/cmp-card-simple
+        <div class="col-12 col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
         classTitle="title-xlarge"
@@ -173,10 +180,10 @@
         card-link="Vedi Notizie (32)"
         card-link-accessibility="Visualizza tutte le notizie riguardanti l'argomento"
         }}
-      </div>
+        </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        {{>cmp-card/cmp-card-simple
+        <div class="col-12 col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
         classTitle="title-xlarge"
@@ -187,10 +194,10 @@
         card-link="Vedi Notizie (32)"
         card-link-accessibility="Visualizza tutte le notizie riguardanti l'argomento"
         }}
-      </div>
+        </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        {{>cmp-card/cmp-card-simple
+        <div class="col-12 col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
         classTitle="title-xlarge"
@@ -201,10 +208,10 @@
         card-link="Vedi Notizie (32)"
         card-link-accessibility="Visualizza tutte le notizie riguardanti l'argomento"
         }}
-      </div>
+        </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        {{>cmp-card/cmp-card-simple
+        <div class="col-12 col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
         classTitle="title-xlarge"
@@ -215,10 +222,10 @@
         card-link="Vedi Notizie (32)"
         card-link-accessibility="Visualizza tutte le notizie riguardanti l'argomento"
         }}
-      </div>
+        </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        {{>cmp-card/cmp-card-simple
+        <div class="col-12 col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
         classTitle="title-xlarge"
@@ -229,10 +236,10 @@
         card-link="Vedi Notizie (32)"
         card-link-accessibility="Visualizza tutte le notizie riguardanti l'argomento"
         }}
-      </div>
+        </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        {{>cmp-card/cmp-card-simple
+        <div class="col-12 col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
         classTitle="title-xlarge"
@@ -243,10 +250,10 @@
         card-link="Vedi Notizie (32)"
         card-link-accessibility="Visualizza tutte le notizie riguardanti l'argomento"
         }}
-      </div>
+        </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        {{>cmp-card/cmp-card-simple
+        <div class="col-12 col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
         classTitle="title-xlarge"
@@ -257,10 +264,10 @@
         card-link="Vedi Notizie (32)"
         card-link-accessibility="Visualizza tutte le notizie riguardanti l'argomento"
         }}
-      </div>
+        </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        {{>cmp-card/cmp-card-simple
+        <div class="col-12 col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
         classTitle="title-xlarge"
@@ -271,10 +278,10 @@
         card-link="Vedi Notizie (32)"
         card-link-accessibility="Visualizza tutte le notizie riguardanti l'argomento"
         }}
-      </div>
+        </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        {{>cmp-card/cmp-card-simple
+        <div class="col-12 col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
         classTitle="title-xlarge"
@@ -285,10 +292,10 @@
         card-link="Vedi Notizie (32)"
         card-link-accessibility="Visualizza tutte le notizie riguardanti l'argomento"
         }}
-      </div>
+        </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        {{>cmp-card/cmp-card-simple
+        <div class="col-12 col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
         classTitle="title-xlarge"
@@ -299,28 +306,28 @@
         card-link="Vedi Notizie (32)"
         card-link-accessibility="Visualizza tutte le notizie riguardanti l'argomento"
         }}
-      </div>
-    </div>
-  </div>
-
-  <div class="bg-primary">
-    <div class="container">
-      <div class="row d-flex justify-content-center bg-primary">
-        <div class="col-12 col-lg-6">
-          {{>cmp-rating/cmp-rating public-template=true rating-title="Quanto è utile questa pagina?"}}
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="bg-grey-card shadow-contacts">
-    <div class="container">
-      <div class="row d-flex justify-content-center p-contacts">
-        <div class="col-12 col-lg-6">
-          {{>cmp-contacts/cmp-contacts city-problems=true}}
+    <div class="bg-primary">
+      <div class="container">
+        <div class="row d-flex justify-content-center bg-primary">
+          <div class="col-12 col-lg-6">
+            {{>cmp-rating/cmp-rating public-template=true rating-title="Quanto è utile questa pagina?"}}
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</main>
-{{/base/base }}
+
+    <div class="bg-grey-card shadow-contacts">
+      <div class="container">
+        <div class="row d-flex justify-content-center p-contacts">
+          <div class="col-12 col-lg-6">
+            {{>cmp-contacts/cmp-contacts city-problems=true}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  {{/base/base }}

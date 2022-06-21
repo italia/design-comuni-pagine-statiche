@@ -564,12 +564,12 @@
           "date": "28/02/2022",
           "icon": "folder-incomplete.svg",
           "icon-label": "Da completare",
-          "label-tag":"Richiesta permesso ZTL",
+          "label-tag":"Atto autorizzativo",
           "color": "u-main-alert",
           "warning-icon":true,
-          "practice":"Pagamento:",
-          "practice-number":"PA3028/17",
-          "import": "16,00 €",
+          "practice":"Pratica:",
+          "practice-number":"AN4059281",
+          "btn-label":"Paga ora",
           "collapse": [
             {
               "icon": "it-clip",
@@ -592,7 +592,7 @@
           "collapse": [
             {
               "icon": "it-clip",
-              "link": "Ricevuta richiesta",
+              "link": "Ricevuta pagamento",
               "class": "shadow p-0",
               "aria-label": "Vai al documento"
             }
@@ -611,7 +611,7 @@
           "collapse": [
             {
               "icon": "it-clip",
-              "link": "Ricevuta richiesta",
+              "link": "Ricevuta pagamento",
               "class": "shadow p-0",
               "aria-label": "Vai al documento"
             }
@@ -630,7 +630,7 @@
           "collapse": [
             {
               "icon": "it-clip",
-              "link": "Ricevuta richiesta",
+              "link": "Ricevuta pagamento",
               "class": "shadow p-0",
               "aria-label": "Vai al documento"
             }
@@ -649,7 +649,7 @@
           "collapse": [
             {
               "icon": "it-clip",
-              "link": "Ricevuta richiesta",
+              "link": "Ricevuta pagamento",
               "class": "shadow p-0",
               "aria-label": "Vai al documento"
             }

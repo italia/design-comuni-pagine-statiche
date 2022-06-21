@@ -1,77 +1,85 @@
 {{#>base/base title="Argomenti"}}
-<main>
-  <div class="container" id="main-container">
-    <div class="row justify-content-center row-shadow">
-      <div class="col-12 col-lg-10">
+  <main>
+    <div class="container" id="main-container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-10">
+          {{>cmp-breadcrumbs/cmp-breadcrumbs link2="Home" link3="Lista Argomenti"}}
+        </div>
+      </div>
+    </div>
 
-        {{>cmp-breadcrumbs/cmp-breadcrumbs link2="Home" link3="Lista Argomenti"}}
-
-        {{>cmp-hero/cmp-hero
+    <div class="container">
+      <div class="row justify-content-center row-shadow">
+        <div class="col-12 col-lg-10">
+          {{>cmp-hero/cmp-hero
         hero-title="Argomenti"
         hero-text="Gli argomenti rispondono a un'esigenza di organizzazione dei contenuti del sito istituzionale per
         temi e rappresentano le principali categorie di contenuti, informazioni e documenti specifici."
         wrapper-class="pt-0 ps-0 pb-4 pb-lg-60"}}
-      </div>
-    </div>
-    <h2 class="title-xxlarge mt-70 mb-4 mt-lg-40 pt-lg-2 mb-lg-40 ">In evidenza</h2>
-    <div class="row">
-      <div class="col-sm-6 col-lg-4 mb-4">
-        <div class="it-grid-item-wrapper it-grid-item-overlay">
-          <a href="#" title="vai all'argomento - cultura" aria-label="vai all'argomento - cultura">
-            <div class="img-responsive-wrapper">
-              <div class="img-responsive">
-                <div class="img-wrapper">
-                  <img src="https://picsum.photos/376/488" alt="descrizione immagine" title="Image Title" />
-                </div>
-              </div>
-            </div>
-            <span class="it-griditem-text-wrapper">
-              <h3>Cultura</h3>
-            </span>
-          </a>
-        </div>
-      </div>
-      <div class="col-sm-6 col-lg-4 mb-4">
-        <div class="it-grid-item-wrapper it-grid-item-overlay">
-          <a href="#" title="vai all'argomento - sport" aria-label="vai all'argomento - sport">
-            <div class="img-responsive-wrapper">
-              <div class="img-responsive">
-                <div class="img-wrapper">
-                  <img src="https://picsum.photos/376/488" alt="descrizione immagine" title="Image Title" />
-                </div>
-              </div>
-            </div>
-            <span class="it-griditem-text-wrapper">
-              <h3>Sport</h3>
-            </span>
-          </a>
-        </div>
-      </div>
-      <div class="col-sm-6 col-lg-4 mb-4">
-        <div class="it-grid-item-wrapper it-grid-item-overlay">
-          <a href="#" title="vai all'argomento - famiglia" aria-label="vai all'argomento - famiglia">
-            <div class="img-responsive-wrapper">
-              <div class="img-responsive rounded">
-                <div class="img-wrapper">
-                  <img src="https://picsum.photos/376/488" alt="descrizione immagine" title="Image Title" />
-                </div>
-              </div>
-            </div>
-            <span class="it-griditem-text-wrapper">
-              <h3>Famiglia</h3>
-            </span>
-          </a>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="container" id="argomento">
-    <h2 class="title-xxlarge mt-40 mt-lg-60 mb-4 mb-lg-40">Esplora per argomento</h2>
-    <div class="row flex-wrap justify-content-start gy-4 pb-40 pb-lg-60 mb-lg-1 align-items-stretch gap-40">
+    <div class="container">
+      <h2 class="title-xxlarge mt-70 mb-4 mt-lg-40 pt-lg-2 mb-lg-40 ">In evidenza</h2>
+      <div class="row">
+        <div class="col-sm-6 col-lg-4 mb-4">
+          <div class="it-grid-item-wrapper it-grid-item-overlay">
+            <a href="#" title="vai all'argomento - cultura" aria-label="vai all'argomento - cultura">
+              <div class="img-responsive-wrapper">
+                <div class="img-responsive">
+                  <div class="img-wrapper">
+                    <img src="https://picsum.photos/376/488" alt="descrizione immagine" title="Image Title" />
+                  </div>
+                </div>
+              </div>
+              <span class="it-griditem-text-wrapper">
+                <h3>Cultura</h3>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4">
+          <div class="it-grid-item-wrapper it-grid-item-overlay">
+            <a href="#" title="vai all'argomento - sport" aria-label="vai all'argomento - sport">
+              <div class="img-responsive-wrapper">
+                <div class="img-responsive">
+                  <div class="img-wrapper">
+                    <img src="https://picsum.photos/376/488" alt="descrizione immagine" title="Image Title" />
+                  </div>
+                </div>
+              </div>
+              <span class="it-griditem-text-wrapper">
+                <h3>Sport</h3>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4">
+          <div class="it-grid-item-wrapper it-grid-item-overlay">
+            <a href="#" title="vai all'argomento - famiglia" aria-label="vai all'argomento - famiglia">
+              <div class="img-responsive-wrapper">
+                <div class="img-responsive rounded">
+                  <div class="img-wrapper">
+                    <img src="https://picsum.photos/376/488" alt="descrizione immagine" title="Image Title" />
+                  </div>
+                </div>
+              </div>
+              <span class="it-griditem-text-wrapper">
+                <h3>Famiglia</h3>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        {{>cmp-card/cmp-card-simple
+    <div class="container" id="argomento">
+      <h2 class="title-xxlarge mt-40 mt-lg-60 mb-4 mb-lg-40">Esplora per argomento</h2>
+      <div class="row flex-wrap justify-content-start gy-4 pb-40 pb-lg-60 mb-lg-1 align-items-stretch gap-40">
+
+        <div class="col-12 col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
         classTitle="title-xlarge"
@@ -80,10 +88,10 @@
         card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
         Donec."
         }}
-      </div>
+        </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        {{>cmp-card/cmp-card-simple
+        <div class="col-12 col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
         classTitle="title-xlarge"
@@ -92,10 +100,10 @@
         card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
         Donec."
         }}
-      </div>
+        </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        {{>cmp-card/cmp-card-simple
+        <div class="col-12 col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
         classTitle="title-xlarge"
@@ -104,10 +112,10 @@
         card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
         Donec."
         }}
-      </div>
+        </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        {{>cmp-card/cmp-card-simple
+        <div class="col-12 col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
         classTitle="title-xlarge"
@@ -116,10 +124,10 @@
         card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
         Donec."
         }}
-      </div>
+        </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        {{>cmp-card/cmp-card-simple
+        <div class="col-12 col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
         classTitle="title-xlarge"
@@ -128,10 +136,10 @@
         card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
         Donec."
         }}
-      </div>
+        </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        {{>cmp-card/cmp-card-simple
+        <div class="col-12 col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
         classTitle="title-xlarge"
@@ -140,10 +148,10 @@
         card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
         Donec."
         }}
-      </div>
+        </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        {{>cmp-card/cmp-card-simple
+        <div class="col-12 col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
         classTitle="title-xlarge"
@@ -152,10 +160,10 @@
         card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
         Donec."
         }}
-      </div>
+        </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        {{>cmp-card/cmp-card-simple
+        <div class="col-12 col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
         classTitle="title-xlarge"
@@ -164,10 +172,10 @@
         card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
         Donec."
         }}
-      </div>
+        </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        {{>cmp-card/cmp-card-simple
+        <div class="col-12 col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
         classTitle="title-xlarge"
@@ -176,10 +184,10 @@
         card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
         Donec."
         }}
-      </div>
+        </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        {{>cmp-card/cmp-card-simple
+        <div class="col-12 col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
         classTitle="title-xlarge"
@@ -188,10 +196,10 @@
         card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
         Donec."
         }}
-      </div>
+        </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        {{>cmp-card/cmp-card-simple
+        <div class="col-12 col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
         classTitle="title-xlarge"
@@ -200,10 +208,10 @@
         card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
         Donec."
         }}
-      </div>
+        </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        {{>cmp-card/cmp-card-simple
+        <div class="col-12 col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
         classTitle="title-xlarge"
@@ -212,10 +220,10 @@
         card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
         Donec."
         }}
-      </div>
+        </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        {{>cmp-card/cmp-card-simple
+        <div class="col-12 col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
         classTitle="title-xlarge"
@@ -224,10 +232,10 @@
         card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
         Donec."
         }}
-      </div>
+        </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        {{>cmp-card/cmp-card-simple
+        <div class="col-12 col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
         classTitle="title-xlarge"
@@ -236,10 +244,10 @@
         card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
         Donec."
         }}
-      </div>
+        </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        {{>cmp-card/cmp-card-simple
+        <div class="col-12 col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
         classTitle="title-xlarge"
@@ -248,10 +256,10 @@
         card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
         Donec."
         }}
-      </div>
+        </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        {{>cmp-card/cmp-card-simple
+        <div class="col-12 col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
         classTitle="title-xlarge"
@@ -260,10 +268,10 @@
         card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
         Donec."
         }}
-      </div>
+        </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        {{>cmp-card/cmp-card-simple
+        <div class="col-12 col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
         classTitle="title-xlarge"
@@ -272,10 +280,10 @@
         card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
         Donec."
         }}
-      </div>
+        </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        {{>cmp-card/cmp-card-simple
+        <div class="col-12 col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
         classTitle="title-xlarge"
@@ -284,10 +292,10 @@
         card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
         Donec."
         }}
-      </div>
+        </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        {{>cmp-card/cmp-card-simple
+        <div class="col-12 col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
         classTitle="title-xlarge"
@@ -296,10 +304,10 @@
         card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
         Donec."
         }}
-      </div>
+        </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
-        {{>cmp-card/cmp-card-simple
+        <div class="col-12 col-md-6 col-xl-4">
+          {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
         classTitle="title-xlarge"
@@ -308,28 +316,28 @@
         card-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula fermentum eros a elementum.
         Donec."
         }}
-      </div>
-    </div>
-  </div>
-
-  <div class="bg-primary">
-    <div class="container">
-      <div class="row d-flex justify-content-center bg-primary">
-        <div class="col-12 col-lg-6">
-          {{>cmp-rating/cmp-rating public-template=true rating-title="Quanto è utile questa pagina?"}}
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="bg-grey-card shadow-contacts">
-    <div class="container">
-      <div class="row d-flex justify-content-center p-contacts">
-        <div class="col-12 col-lg-6">
-          {{>cmp-contacts/cmp-contacts city-problems=true}}
+    <div class="bg-primary">
+      <div class="container">
+        <div class="row d-flex justify-content-center bg-primary">
+          <div class="col-12 col-lg-6">
+            {{>cmp-rating/cmp-rating public-template=true rating-title="Quanto è utile questa pagina?"}}
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</main>
-{{/base/base }}
+
+    <div class="bg-grey-card shadow-contacts">
+      <div class="container">
+        <div class="row d-flex justify-content-center p-contacts">
+          <div class="col-12 col-lg-6">
+            {{>cmp-contacts/cmp-contacts city-problems=true}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  {{/base/base }}

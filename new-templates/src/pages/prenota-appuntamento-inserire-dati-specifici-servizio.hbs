@@ -4,9 +4,19 @@
     <div class="row justify-content-center">
       <div class="col-12 col-lg-10">
         {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi" link3="Prenotazioni"}}
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
         {{> cmp-heading/cmp-heading title="Prenotazione appuntamento"}}
       </div>
-      <div class="col-12">
+    </div>
+  </div>
+
+  <div class="container">
         {{> cmp-info-progress/cmp-info-progress
         step-list=step-list.prenota-appuntamento-step-1
         step-num="1"
@@ -15,9 +25,9 @@
         classSubtitle="mt-40 mb-3"
         subtitle="I campi contraddistinti dal simbolo asterisco sono obbligatori"
         }}
-      </div>
-    </div>
+  </div>
 
+  <div class="container">
     <div class="row">
       <div class="col-12 col-lg-3 d-lg-block mb-4 d-none ">
           {{>cmp-navscroll/cmp-navscroll

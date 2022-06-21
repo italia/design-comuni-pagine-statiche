@@ -1,17 +1,13 @@
 .cmp-nav-tab {
   .nav-tabs {
-    border-bottom: unset;
+    overflow-x: hidden;
 
     .nav-link {
-      margin-bottom: unset;
+      margin-bottom: 2px;
       font-weight: 400;
 
       &.active {
         font-weight: 600;
-      }
-
-      @include media-breakpoint-up(md) {
-        font-weight: 700;
       }
       
       .text-tab {
