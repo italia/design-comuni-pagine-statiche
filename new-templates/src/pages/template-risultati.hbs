@@ -1,27 +1,21 @@
 {{#>base/base title="Sito pubblico | Ricerca globale | risultati"}}
-<main>
-  <h1 class="visually-hidden" id="search-container">Ricerca</h1>
-  <div class="container" id="main-container">
-    <div class="mb-md-5">
+  <main>
+    <h1 class="visually-hidden" id="search-container">Ricerca</h1>
+    <div class="container" id="main-container">
+      <div class="mb-md-5">
         {{> cmp-breadcrumbs/cmp-breadcrumbs
         link2="Home"
         link3="Ricerca"
         }}
-    </div>
-  </div>
-
-  <div class="container">
-    {{>cmp-input-search-button/cmp-input-search-button placeholder="Pagamento TARI" marginClass="mt-2 mb-4 mb-lg-50"
-    id="search-bar"}}
-  </div>
-
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-3 d-none d-lg-block scroll-filter-wrapper">
-        <h2 class="visually-hidden" id="filter">filtri da applicare</h2>
-        {{> cmp-category-list/category-list category=categories-results-filter h3-title=true}}
       </div>
+    </div>
 
+    <div class="container">
+      {{>cmp-input-search-button/cmp-input-search-button placeholder="Pagamento TARI" marginClass="mt-2 mb-4 mb-lg-50"
+    id="search-bar"}}
+    </div>
+
+    <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-3 d-none d-lg-block scroll-filter-wrapper">
           <h2 class="visually-hidden" id="filter">filtri da applicare</h2>
@@ -130,20 +124,20 @@
               cardRounded=true
               category-class="text-uppercase"
               }}
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="container p-0">
-          <div class="d-flex justify-content-center">
-                {{>partials/button/button
+          <div class="container p-0">
+            <div class="d-flex justify-content-center">
+              {{>partials/button/button
                 outline-primary="true"
                 class="pt-15 pb-15 pl-90 pr-90 mb-30 mb-lg-50 full-mb text-button"
                 label="Carica altri risultati"
                 aria-label="Carica altri risultati"
                 }}
-                </div>
-              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
