@@ -11,6 +11,7 @@
 
     @include media-breakpoint-up(md) {
       height: auto;
+      max-height: 160px;
     }
 
     &.rounded-top{

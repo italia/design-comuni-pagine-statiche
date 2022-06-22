@@ -13,23 +13,22 @@
   }
 
   .btn {
-    width: 100%;
-
-    @include media-breakpoint-up(md) {
-      width: 18.889rem;
+    &:not(.btn-dropdown) {
+      width: 100%;
+      margin-top: 1.5rem;
+  
+      @include media-breakpoint-up(md) {
+        width: 18.889rem;
+        margin-top: 1.4rem;
+      }
     }
   }
 
-
-  .text-button {
-    font-weight: 700;
-  }
-
   &__tag {
-    margin: 1.125rem 0 1.625rem 0;
+    margin: 1.625rem 0;
 
     @include media-breakpoint-up(sm) {
-      margin: 1rem 0 1.44rem 0;
+      margin: 1.44rem 0;
     }
   }
 
@@ -38,6 +37,33 @@
 
     @include media-breakpoint-up(md) {
       margin-bottom: 0;
+    }
+  }
+
+  .chip.chip-simple {
+    height: auto;
+    padding: 3px 10px;
+
+    .chip-label {
+      height: auto;
+      line-height: 1.2;
+      transform: unset;
+    }
+  }
+
+  .dropdown {
+    display: inline-block;
+    padding: 10px 0;
+
+    .dropdown-menu {
+      z-index: 9999;
+
+      .link-list-wrapper ul li a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 5px 16px;
+      }
     }
   }
 

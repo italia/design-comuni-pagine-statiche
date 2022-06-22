@@ -155,6 +155,44 @@
         "item": "Richiedente",
         "anchor": "applicant"
       }
+    ],
+    "template-dettaglio-servizio":[
+        {
+          "item": "A chi è rivolto",
+          "anchor": "who-needs"
+        },
+        {
+          "item": "Descrizione",
+          "anchor": "description"
+        },
+        {
+          "item": "Come fare",
+          "anchor": "how-to"
+        },
+        {
+          "item": "Cosa serve",
+          "anchor": "needed"
+        },
+        {
+          "item": "Cosa si ottiene",
+          "anchor": "obtain"
+        },
+        {
+          "item": "Tempi e scadenze",
+          "anchor": "deadlines"
+        },
+        {
+          "item": "Quanto costa",
+          "anchor": "costs"
+        },
+        {
+          "item": "Presenta la domanda",
+          "anchor": "submit-request"
+        },
+        {
+          "item": "Ulteriori informazioni",
+          "anchor": "more-info"
+        }
     ]
   }
 }

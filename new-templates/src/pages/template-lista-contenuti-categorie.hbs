@@ -19,42 +19,33 @@
     </div>
   </div>
 
-  <div class="container">
-    <h2 class="title-xxlarge mt-70 mb-4 mt-lg-40 pt-lg-2 mb-lg-40 ">Notizie in evidenza</h2>
-    {{>cmp-list-card-img/cmp-list-card-img-hr cards=cards.card-news rowClass="pb-60"}}
+  <div class="container py-5">
+    <h2 class="title-xxlarge mb-4">Notizie in evidenza</h2>
+    {{>cmp-list-card-img/cmp-list-card-img-hr cards=cards.card-news}}
   </div>
 
-  <div class="bg-grey-card pb-30 pb-lg-50">
+  <div class="bg-grey-card py-5">
     <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h2 class="title-xxlarge mb-4 mt-30 mt-lg-40 mb-lg-30 pt-lg-2">Esplora tutte le novità</h2>
-
-          <div>
-            {{>partials/input-search/input-search
-            id="autocomplete-three"
-            placeholder-text="Cerca per parola chiave"
-            search-subtitle=true
-            text-subtitle="62 notizie trovate in ordine alfabetico"
-            text-subtitle-class="u-grey-light text-paragraph-card mt-2 mb-30 mt-lg-3 mb-lg-40"
-            wrapper-class="mb-0"
-            icon-class="icon-primary"
-            }}
-          </div>
-        </div>
-      </div>
-
-      {{>cmp-list-card-img/cmp-list-card-img-hr cards=cards.card-all-news rowClass="pb-4"}}
-      <p class="text-center text-paragraph-regular-medium mb-0">Nessun altro risultato</p>
+      <h2 class="title-xxlarge mb-4">Esplora tutte le novità</h2>
+      {{>partials/input-search/input-search
+        id="autocomplete-three"
+        placeholder-text="Cerca per parola chiave"
+        search-subtitle=true
+        text-subtitle="62 notizie trovate in ordine alfabetico"
+        text-subtitle-class="u-grey-light text-paragraph-card mt-2 mb-30 mt-lg-3 mb-lg-40"
+        wrapper-class="mb-0"
+        icon-class="icon-primary"
+      }}
+      {{>cmp-list-card-img/cmp-list-card-img-hr cards=cards.card-all-news}}
+      <p class="text-center text-paragraph-regular-medium mt-4 mb-0">Nessun altro risultato</p>
     </div>
   </div>
 
 
-  <div class="container" id="argomento">
-    <h2 class="title-xxlarge mt-40 mt-lg-60 mb-4 mb-lg-40">Esplora per argomento</h2>
-    <div class="row flex-wrap justify-content-start gy-4 pb-40 pb-lg-60 mb-lg-1 align-items-stretch gap-40">
-
-      <div class="col-12 col-md-6 col-xl-4">
+  <div class="container py-5" id="argomento">
+    <h2 class="title-xxlarge mb-4">Esplora per argomento</h2>
+    <div class="row g-4">
+      <div class="col-md-6 col-xl-4">
         {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
@@ -66,7 +57,7 @@
         }}
       </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
+      <div class="col-md-6 col-xl-4">
         {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
@@ -78,7 +69,7 @@
         }}
       </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
+      <div class="col-md-6 col-xl-4">
         {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
@@ -90,7 +81,7 @@
         }}
       </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
+      <div class="col-md-6 col-xl-4">
         {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
@@ -104,7 +95,7 @@
         }}
       </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
+      <div class="col-md-6 col-xl-4">
         {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
@@ -117,7 +108,7 @@
         }}
       </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
+      <div class="col-md-6 col-xl-4">
         {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
@@ -129,7 +120,7 @@
         }}
       </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
+      <div class="col-md-6 col-xl-4">
         {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
@@ -141,7 +132,7 @@
         }}
       </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
+      <div class="col-md-6 col-xl-4">
         {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
@@ -153,7 +144,7 @@
         }}
       </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
+      <div class="col-md-6 col-xl-4">
         {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
@@ -165,7 +156,7 @@
         }}
       </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
+      <div class="col-md-6 col-xl-4">
         {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
@@ -177,7 +168,7 @@
         }}
       </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
+      <div class="col-md-6 col-xl-4">
         {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
@@ -189,7 +180,7 @@
         }}
       </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
+      <div class="col-md-6 col-xl-4">
         {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
@@ -201,7 +192,7 @@
         }}
       </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
+      <div class="col-md-6 col-xl-4">
         {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
@@ -213,7 +204,7 @@
         }}
       </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
+      <div class="col-md-6 col-xl-4">
         {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
@@ -225,7 +216,7 @@
         }}
       </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
+      <div class="col-md-6 col-xl-4">
         {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
@@ -237,7 +228,7 @@
         }}
       </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
+      <div class="col-md-6 col-xl-4">
         {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
@@ -249,7 +240,7 @@
         }}
       </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
+      <div class="col-md-6 col-xl-4">
         {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
@@ -261,7 +252,7 @@
         }}
       </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
+      <div class="col-md-6 col-xl-4">
         {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
@@ -273,7 +264,7 @@
         }}
       </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
+      <div class="col-md-6 col-xl-4">
         {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"
@@ -285,7 +276,7 @@
         }}
       </div>
 
-      <div class="col-12 col-md-6 col-xl-4">
+      <div class="col-md-6 col-xl-4">
         {{>cmp-card/cmp-card-simple
         borderlight=true
         icon="it-arrow-right"

@@ -19,7 +19,7 @@
   {{/if}}
 
     {{#if label-tag-up}}
-  <div class="d-flex flex-wrap {{label-tag-class}}">
+  <div class="d-flex flex-wrap cmp-heading__tag">
     {{>partials/cmp-tag/cmp-tag}}
   </div>
   {{/if}}
@@ -35,7 +35,7 @@
   {{/if}}
 
   {{#if descriptionAfterTag}}
-  <p class="text-paragraph mb-30 {{dat-class}}">
+  <p class="text-paragraph mb-3">
     {{descriptionAfterTag}}
   </p>
   {{/if}}
@@ -45,20 +45,13 @@
   {{/if}}
 
   {{#if button}}
-  <div class="{{btnClass}} {{!-- mt-30 --}}">
     {{>partials/button/button class="fw-bold"}}
-  </div>
   {{/if}}
 
   {{#if double-button}}
   <div class="d-lg-flex gap-30 mb-2">
-    <div class="{{btnClass}}">
       {{>partials/button/button class="fw-bold btn-primary mr-lg-30"}}
-    </div>
-
-    <div class="{{second-btnClass}}">
       {{>partials/button/button class="fw-bold btn-outline-primary t-primary" label=second-label aria-label=second-ariaLabel}}
-    </div>
   </div>
   {{/if}}
 </div>
