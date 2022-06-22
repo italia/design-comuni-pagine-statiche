@@ -99,6 +99,7 @@
 
 
     input {
+      background-color: #fff;
       @include font(16, 40);
 
       @include media-breakpoint-up(md) {

@@ -43,6 +43,10 @@ input::-moz-focus-inner {
   margin: 0;
 }
 
+input {
+  -webkit-appearance: none;
+}
+
 ul,
 ol,
 dd {
