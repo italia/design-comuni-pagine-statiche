@@ -44,7 +44,7 @@ input::-moz-focus-inner {
 }
 
 input {
-  -webkit-appearance: none;
+  -webkit-appearance: none !important;
 }
 
 ul,
