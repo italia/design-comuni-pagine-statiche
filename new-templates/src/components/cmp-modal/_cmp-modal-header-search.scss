@@ -104,7 +104,7 @@
       @include font(16, 40);
 
       @include media-breakpoint-up(md) {
-        height: 3.33rem;
+        height: auto;
       }
 
       &::placeholder {
