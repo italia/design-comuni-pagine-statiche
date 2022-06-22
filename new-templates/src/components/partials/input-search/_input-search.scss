@@ -13,6 +13,10 @@
 
     input {
       padding-left: 2.8rem;
+      border-bottom-left-radius: 0 !important;
+      border-bottom-right-radius: 0 !important;
+      border-top-left-radius: 0 !important;
+      border-top-right-radius: 0 !important;
 
       @include media-breakpoint-up(sm) {
         padding-left: 2.5rem;

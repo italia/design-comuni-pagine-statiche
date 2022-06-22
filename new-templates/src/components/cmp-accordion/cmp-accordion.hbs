@@ -9,13 +9,9 @@
           <div class="button-wrapper">
             {{item.title}}
             <div class="icon-wrapper">
-              <img class="icon-folder {{#if warning-icon}}icon-warning{{/if}}" src="./assets/images/{{item.icon}}" alt="folder {{item.icon-label}}" role="img""">
+              <img class="icon-folder {{#if warning-icon}}icon-warning{{/if}}" src="./assets/images/{{item.icon}}"
+                alt="folder {{item.icon-label}}" role="img""">
               <span class="{{item.color}}">{{item.icon-label}}</span>
-              {{!-- <svg class="icon icon-xs me-1 icon-primary {{#if warning-icon}}icon-warning{{/if}}">
-                <use href="./assets/images/folder-incomplete.svg"
-                  xlink:href="./assets/images/folder-incomplete.svg"></use>
-                <span class="{{color}}">{{item.icon-label}}</span>
-              </svg> --}}
             </div>
         </button>
         {{#if item.date}}
@@ -26,17 +22,14 @@
       <div id="collapse{{item.num}}" class="accordion-collapse collapse p-0"
         data-bs-parent="#accordionExample{{item.num}}" role="region" aria-labelledby="heading{{item.num}}">
         <div class="accordion-body">
-
           {{#if item.text}}
           <p class="mb-3">{{{item.text}}}</p>
-          
           {{else}}
-
           <p class="mb-2 fw-normal">{{item.practice}} <span class="label">{{item.practice-number}}</span></p>
 
           {{#if item.import}}
-            <p class="mb-2 fw-normal">Metodo: <span class="label">PagoPA</span></p>
-            <p class="mb-2 fw-normal">Importo: <span class="label">{{item.import}}</span></p>
+          <p class="mb-2 fw-normal">Metodo: <span class="label">PagoPA</span></p>
+          <p class="mb-2 fw-normal">Importo: <span class="label">{{item.import}}</span></p>
           {{/if}}
 
           <a href="#" class="mb-2" aria-label="Vai a scheda servizio" title="Vai a scheda servizio">
@@ -44,7 +37,7 @@
           </a>
 
           {{#if item.label-tag}}
-            {{>partials/cmp-tag/cmp-tag label-tag=item.label-tag }}
+          {{>partials/cmp-tag/cmp-tag label-tag=item.label-tag }}
           {{/if}}
 
           {{>cmp-icon-list/cmp-icon-list
@@ -54,16 +47,11 @@
           }}
 
           {{#if item.btn-label}}
-            {{>partials/button/button label=item.btn-label primary="true" class="justify-content-center
-            my-3"}}
+          {{>partials/button/button label=item.btn-label primary="true" class="justify-content-center
+          my-3"}}
           {{/if}}
-
           {{/if}}
         </div>
-        </button>
-        {{!-- {{#if item.date}}
-        <p class="accordion-date title-xsmall-regular mb-0">{{item.date}}</p>
-        {{/if}} --}}
       </div>
     </div>
     {{/each}}

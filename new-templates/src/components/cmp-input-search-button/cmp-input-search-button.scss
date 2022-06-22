@@ -1,6 +1,6 @@
 .cmp-input-search-button.form-group {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     gap: 1.875rem;
 
     @include media-breakpoint-up(sm) {
@@ -34,7 +34,7 @@
       @include font(16, 40);
 
       @include media-breakpoint-up(md) {
-        height: 3.33rem;
+        height: auto;
       }
 
       &::placeholder {

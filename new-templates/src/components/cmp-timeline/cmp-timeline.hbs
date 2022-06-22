@@ -10,20 +10,20 @@
             <small>{{date.year}}</small>
             <span class="title-xxlarge-regular">{{date.day}}</span>
             <small>{{date.month}}</small>
-          </div><!-- /calendar-date-day -->
+          </div>
           <div class="calendar-date-description rounded">
             <div class="calendar-date-description-content">
-              <h3 class="text-purplelight title-medium-2 mb-0">{{date.event}}</h3>
+              <h3 class="title-medium-2 mb-0">{{date.event}}</h3>
                 {{#if date.info}}
                   <p class="info-text mt-1 mb-0">{{date.info}}</p>
                 {{/if}}
-            </div><!-- /calendar-date-description-content -->
-          </div><!-- /calendar-date-description -->
-        </div><!-- /calendar-date -->
+            </div>
+          </div>
+        </div>
     {{/each}}
 
   </div>
   {{#if label}}
-    <p class="section-reques__status mt-4 mt-lg-30 mb-10">{{{label}}}</p>
+    <p class="mt-4 mt-lg-30 mb-10">{{{label}}}</p>
   {{/if}}
 </div>

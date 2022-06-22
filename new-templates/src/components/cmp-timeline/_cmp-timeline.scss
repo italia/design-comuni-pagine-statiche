@@ -4,6 +4,11 @@
   @include media-breakpoint-up(sm) {
     margin-top: 1.33rem;
   }
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 0;
+  }
+  
   .info-text {
     @include font(16, 18);
     color: get-color(light, grey);
@@ -11,22 +16,6 @@
     line-height: 1.5;
 
     @include media-breakpoint-up(md){
-      line-height: 1.56;
-    }
-  }
-
-  @include media-breakpoint-up(lg) {
-    margin-top: 0;
-  }
-
-  .info-text{
-    @include font(16, 18);
-    color: get-color(light,grey);
-    font-weight: 600;
-    line-height: 1.5;
-
-    @include media-breakpoint-up(md) {
-      font-weight: 600;
       line-height: 1.56;
     }
   }
@@ -44,19 +33,112 @@
 
 .calendar-vertical .calendar-date {
   display: flex;
-}
 
-.calendar-vertical .calendar-date .calendar-date-day {
-  width: 4.06rem;
-  flex-shrink: 0;
-  position: relative;
-  z-index: 0;
-  padding: 0;
+  & .calendar-date-description {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.17);
+    width: 100%;
+    margin: 0 0 1.5rem 0.813rem;
+    overflow: hidden;
+  
+    @include media-breakpoint-up(sm) {
+      margin: 0 0 1.33rem 0.72rem;
+    }
 
-  @include media-breakpoint-up(sm) {
-    width: 3.61rem;
+    & .calendar-date-description-content {
+      padding: 1.25rem 1rem 1.25rem 1.5rem;
+      position: relative;
+      z-index: 0;
+    
+      @include media-breakpoint-up(sm) {
+        padding: 1.11rem 0.89rem 1.11rem 1.33rem;
+      }
+
+      &:before {
+        content: "";
+        width: 0.5rem;
+        height: 120%;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #f0f8f5;
+      
+        @include media-breakpoint-up(sm) {
+          width: 0.44rem;
+        }
+      }
+
+      & span {
+        margin: 0;
+      }
+    }
+  }
+
+  & .calendar-date-day {
+    width: 4.06rem;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 0;
+    padding: 0;
+  
+    @include media-breakpoint-up(sm) {
+      width: 3.61rem;
+    }
+
+    & p {
+      font-family: "Roboto Mono", monospace!important;
+      font-size: 2.5rem;
+      line-height: 1;
+      margin: 0 0 5px 0;
+      padding-right: 34px;
+      display: block;
+    }
+
+    & small {
+      @include font(14, 14);
+      line-height: 1;
+      font-weight: 400;
+      padding-right: 2.125rem;
+      display: block;
+      margin-left: 0.187rem;
+    
+      @include media-breakpoint-up(sm) {
+        padding-right: 1.89rem;
+        margin-left: 0.167rem;
+      }
+    }
+
+    &:before {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 5px;
+      width: 1px;
+      height: 100%;
+      background-color: hsl(160deg, 100%, 24%);
+      content: "";
+    }
+
+    &:after {
+      content: "";
+      width: 0.625rem;
+      height: 0.625rem;
+      position: absolute;
+      z-index: 1;
+      top: 1.875rem;
+      right: 0.5px;
+      background-color: hsl(160deg, 100%, 24%);
+      border-radius: 5px;
+    
+      @include media-breakpoint-down(md) {
+        width: 0.56rem;
+        height: 0.56rem;
+        top: 1.56rem;
+      }
+    }
   }
 }
+
 
 @include media-breakpoint-down(md) {
   .calendar-vertical .calendar-date .calendar-date-day {
@@ -68,35 +150,11 @@
   }
 }
 
-.calendar-vertical .calendar-date .calendar-date-day p {
-  font-family: "Roboto Mono", monospace!important;
-  font-size: 2.5rem;
-  line-height: 1;
-  margin: 0 0 5px 0;
-  /* text-align: center; */
-  padding-right: 34px;
-  display: block;
-}
-
 @include media-breakpoint-down(md) {
   .calendar-vertical .calendar-date .calendar-date-day span {
     font-size: 2rem;
     padding-right: 24px;
     font-weight: 100 !important;
-  }
-}
-
-.calendar-vertical .calendar-date .calendar-date-day small {
-  @include font(14, 14);
-  line-height: 1;
-  font-weight: 400;
-  padding-right: 2.125rem;
-  display: block;
-  margin-left: 0.187rem;
-
-  @include media-breakpoint-up(sm) {
-    padding-right: 1.89rem;
-    margin-left: 0.167rem;
   }
 }
 
@@ -111,83 +169,6 @@
   }
 }
 
-.calendar-vertical .calendar-date .calendar-date-day:before {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  right: 5px;
-  width: 1px;
-  height: 100%;
-  background-color: hsl(160deg, 100%, 24%);
-  content: "";
-}
-
-.calendar-vertical .calendar-date .calendar-date-day:after {
-  content: "";
-  width: 0.625rem;
-  height: 0.625rem;
-  position: absolute;
-  z-index: 1;
-  top: 1.875rem;
-  right: 0.5px;
-  background-color: hsl(160deg, 100%, 24%);
-  border-radius: 5px;
-
-  @include media-breakpoint-down(md) {
-    width: 0.56rem;
-    height: 0.56rem;
-    top: 1.56rem;
-  }
-}
-
-.calendar-vertical .calendar-date .calendar-date-description {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.17);
-  width: 100%;
-  margin: 0 0 1.5rem 0.813rem;
-  overflow: hidden;
-
-  @include media-breakpoint-up(sm) {
-    margin: 0 0 1.33rem 0.72rem;
-  }
-}
-.calendar-vertical
-  .calendar-date
-  .calendar-date-description
-  .calendar-date-description-content {
-  padding: 1.25rem 1rem 1.25rem 1.5rem;
-  position: relative;
-  z-index: 0;
-
-  @include media-breakpoint-up(sm) {
-    padding: 1.11rem 0.89rem 1.11rem 1.33rem;
-  }
-}
-
-.calendar-vertical
-  .calendar-date
-  .calendar-date-description
-  .calendar-date-description-content
-  span {
-  margin: 0;
-}
-
-.calendar-vertical
-  .calendar-date
-  .calendar-date-description
-  .calendar-date-description-content:before {
-  content: "";
-  width: 0.5rem;
-  height: 120%;
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #f0f8f5;
-
-  @include media-breakpoint-up(sm) {
-    width: 0.44rem;
-  }
-}
 
 .calendar-date:last-child {
   .calendar-date-description {
