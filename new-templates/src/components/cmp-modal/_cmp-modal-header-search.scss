@@ -61,7 +61,7 @@
 
   .form-group {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     gap: 1.875rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -74,8 +74,9 @@
 
     .autocomplete-icon{
       left: 20px;
-      top: 14px;
+      top: 50%;
       right: auto;
+      transform: translateY(-50%);
       .icon{
         fill: get-color(primary, main)
       }
