@@ -12,107 +12,135 @@
     <div class="row justify-content-center">
       <div class="col-12 col-lg-10">
         {{> cmp-heading/cmp-heading-detail
-          title="Iscrizione alla Scuola dell’infanzia"
-          subTitle="Come iscrivere i propri figli alle Scuole dell'infanzia comunali o nelle strutture accreditate."
-          pClass="mb-3"
-          button=true
-          label="Richiesta di iscrizione online"
-          desClass="mb-4"
-          primary=true
-          class="text-button"
-          label-tag-up="Servizio attivo"
-          aria-label="Richiesta di iscrizione online alla Scuola dell'infanzia"
-          servizio-attivo=true
-          }}
+        title="Iscrizione alla Scuola dell’infanzia"
+        subTitle="Come iscrivere i propri figli alle Scuole dell'infanzia comunali o nelle strutture accreditate."
+        pClass="mb-3"
+        button=true
+        label="Richiesta di iscrizione online"
+        primary=true
+        class="text-button"
+        label-tag-up="Servizio attivo"
+        aria-label="Richiesta di iscrizione online alla Scuola dell'infanzia"
+        servizio-attivo=true
+        }}
       </div>
       <hr class="d-none d-lg-block mt-2">
     </div>
   </div>
 
   <div class="container">
-    <div class="row mt-4 mt-lg-80">
-      <div class="col-12 col-lg-3 mb-4 ">
-        {{>cmp-navscroll/cmp-navscroll accordion-title="INDICE DELLA PAGINA"
-          link-list=link-list.template-dettaglio-servizio}}
+    <div class="row mt-4 mt-lg-80 pb-lg-80 pb-40">
+      <div class="col-12 col-lg-3 mb-4 border-col">
+        {{>cmp-navscroll/cmp-navscroll accordion-title="INDICE DELLA PAGINA" border=true
+        link-list=link-list.template-dettaglio-servizio}}
       </div>
       <div class="col-12 col-lg-8 offset-lg-1">
-        {{#>cmp-card/cmp-card-content-box card-title="A chi è rivolto" h2-class="mb-3" header-m0=true id-title="who-needs"}}
 
-        {{>cmp-ul-list/cmp-ul-list
-        info-list=iscrizione-graduatoria.trovare-informazione-servizio.chi-rivolto.lista-1 font-list="lora"}}
-        {{/cmp-card/cmp-card-content-box}}
+        <section class="mb-30">
+          <h2 class="mb-3" id="who-needs">A chi è rivolto</h2>
+          <ul class="list-wrapper lora">
+            <li class="list-item"><span>Bambini di età compresa tra i 3 e i 5 anni compiuti o da compiere entro il 31 dicembre di ogni anno.</span></li>
+            <li class="list-item"><span>Bambini che compiranno i 3 anni dopo il 31 dicembre e, comunque, entro e non oltre il 30 aprile dell’anno successivo (ammissione anticipata).</span></li>
+          </ul>
+        </section>
 
+        <section class="mb-30">
+          <h2 class="mb-3" id="description">Descrizione</h2>
+          <p class="text-paragraph lora">Le domande di iscrizione devono essere presentate alle scuole nei mesi di
+            gennaio/febbraio.
+            L'Amministrazione pubblica un avviso con le modalità di accesso e i termini di presentazione della domanda.
+            <br>
+            <br>
+            Le graduatorie ai fini dell'inserimento dei bambini sono curate dal Servizio Istruzione del Comune che le
+            approva con determinazione dirigenziale.
+          </p>
+        </section>
 
-        {{#>cmp-card/cmp-card-content-box card-title="Descrizione" h2-class="mb-3" header-m0=true id-title="description"}}
-        <p class="text-paragraph lora m-0">
-          Le domande di iscrizione devono essere presentate alle scuole nei mesi di gennaio/febbraio. L'Amministrazione pubblica un avviso con le modalità di accesso e i termini di presentazione della domanda.
-        </p>
-        <p class="text-paragraph lora mt-3 mb-0">
-          Le graduatorie ai fini dell'inserimento dei bambini sono curate dal Servizio Istruzione del Comune che le approva con determinazione dirigenziale.
-        </p>
-        {{/cmp-card/cmp-card-content-box}}
+        <section class="mb-30">
+          <h2 class="mb-3" id="how-to">Come fare</h2>
+          <p class="text-paragraph lora"> Puoi presentare la richiesta di iscrizione esclusivamente online dalle ore
+            10:00 del 4 gennaio 2022 alle 20:00
+            del 4 febbraio 2022. I posti assegnati vanno accettati entro 15 giorni dalla pubblicazione della
+            graduatoria.
+          </p>
+        </section>
 
+        <section class="mb-30 has-bg-grey p-3">
+          <h2 class="mb-3" id="needed">Cosa serve</h2>
+          <p class="text-paragraph lora fw-semibold mb-0">Per accedere al servizio, assicurati di avere:</p>
+          <ul class="list-wrapper lora">
+            <li class="list-item"><span>SPID (Sistema Pubblico per la gestione dell'Identità Digitale), Carta identità
+                elettronica (CIE) o Carta Nazionale dei Servizi (CNS);</span></li>
+            <li class="list-item"><span>la documentazione attestante eventuali disabilità</span></li>
+            <li class="list-item"><span>il permesso di soggiorno del genitore che presenta la richiesta</span></li>
+            <li class="list-item"><span>l’ISEE in corso di validità</span></li>
+          </ul>
+        </section>
 
-        {{#>cmp-card/cmp-card-content-box card-title="Come fare" h2-class="mb-3" header-m0=true id-title="how-to"}}
-        <p class="text-paragraph lora m-0">
-          Puoi presentare la richiesta di iscrizione esclusivamente online dalle ore 10:00 del 4 gennaio 2022 alle 20:00
-          del 4 febbraio 2022. I posti assegnati vanno accettati entro 15 giorni dalla pubblicazione della graduatoria.
-        </p>
-        {{/cmp-card/cmp-card-content-box}}
+        <section class="mb-30">
+          <h2 class="mb-3" id="obtain">Cosa si ottiene</h2>
+          <p class="text-paragraph lora">Se - in base ai requisiti e alla graduatoria - la richiesta verrà accettata,
+            sarà possibile perfezionare l’iscrizione all’asilo.</p>
+        </section>
 
-        {{#>cmp-card/cmp-card-content-box card-title="Cosa serve" h2-class="mb-3" header-m0=true id-title="needed" class="p-3" bg-grey-primary=true }}
-        {{>cmp-ul-list/cmp-ul-list heading-title="Per accedere al servizio, assicurati di avere:" font-title="lora" font-list="lora" info-list=iscrizione-graduatoria.trovare-informazione-servizio.cosa-serve.lista-1 }}
-        {{/cmp-card/cmp-card-content-box}}
+        <section class="mb-30">
+          {{>cmp-timeline/cmp-timeline
+          title="Tempi e scadenze"
+          id-title="deadlines"
+          timeline=timeline.template-dettaglio-servizio
+          description="Le graduatorie verranno aggiornate ogni mese con nuove assegnazioni e trasferimenti in base ai
+          posti disponibili."
+          lora=true
+          }}
+        </section>
 
-        {{#>cmp-card/cmp-card-content-box card-title="Cosa si ottiene" h2-class="mb-3" id-title="obtain" subtitle="Se - in base ai requisiti e alla
-        graduatoria - la richiesta verrà accettata, sarà possibile perfezionare l’iscrizione all’asilo." lora=true header-m0=true}}
-        {{/cmp-card/cmp-card-content-box}}
+        <section class="mb-30">
+          <h2 class="mb-3" id="costs">Quanto costa</h2>
+          <p class="text-paragraph lora mb-0">L’importo della retta si
+            basa sul reddito del nucleo famigliare in base al certificato ISEE. Per maggiori informazioni, consulta la
+            tabella allegata al bando.</p>
+          {{>cmp-icon-link/cmp-icon-link link="Tabella rette in base al reddito" link-class="mt-3"}}
+        </section>
 
-        {{>cmp-timeline/cmp-timeline
-        title="Tempi e scadenze"
-        id-title="deadlines"
-        timeline=iscrizione-graduatoria.trovare-informazione-servizio.timeline
-        description="Le graduatorie verranno aggiornate ogni mese con nuove assegnazioni e trasferimenti in base ai
-        posti disponibili."
-        lora=true
-        }}
+        <section class="mb-30 has-bg-grey p-4">
+          <h2 class="mb-3" id="submit-request">Dove presentare la domanda</h2>
+          <p class="text-paragraph lora mb-4">Puoi presentare la domanda di iscrizione online, attraverso il servizio
+            digitale Invio domanda di iscrizione, oppure, su appuntamento, presso gli uffici Asili nido.</p>
 
-        {{#>cmp-card/cmp-card-content-box card-title="Quanto costa" id-title="costs" subtitle="L’importo della retta si basa sul reddito del
-        nucleo famigliare in base al certificato ISEE. Per maggiori informazioni, consulta la tabella allegata al
-        bando." lora=true class="mt-30" h2-class="mb-3" header-m0=true}}
-        {{>cmp-icon-link/cmp-icon-link link="Tabella rette in base al reddito" link-class="mt-3"}}
-        {{/cmp-card/cmp-card-content-box}}
-
-        {{#>cmp-card/cmp-card-content-box card-title="Dove presentare la domanda" id-title="submit-request" class="p-4" subtitle="Puoi presentare la domanda di iscrizione online, attraverso il servizio digitale Invio domanda di iscrizione, oppure, su appuntamento, presso gli uffici Asili nido." lora=true bg-grey-primary=true h2-class="mb-3" header-m0=true}}
-        {{>partials/button/button label="Richiesta di iscrizione online" primary="true" class="mobile-full mt-4" aria-label="Vai alla pagina Richiedi iscrizione online alla Scuola dell'infanzia"}}
-        <p class="text-paragraph mt-4 mb-4 lora">Uffici dove presentare la domanda su appuntamento</p>
-        <div class="d-flex flex-column">
-        <a class="mb-4 u-main-primary" href="#" aria-label="Prenota appuntamento presso Ufficio via C. Benso Conte di Cavour" title="Prenota appuntamento presso Ufficio via C. Benso Conte di Cavour">Ufficio via C. Benso Conte di Cavour</a>
-        <a class="u-main-primary" href="#" aria-label="Prenota appuntamento presso Ufficio largo Michelangelo Buonarroti " title="Prenota appuntamento presso Ufficio largo Michelangelo Buonarroti ">Ufficio largo Michelangelo Buonarroti </a>
-        </div>
-        {{/cmp-card/cmp-card-content-box}}
-
-        {{#>cmp-card/cmp-card-content-box card-title="Ulteriori informazioni" h2-class="mb-3" header-m0=true id-title="more-info" second-title="Graduatorie di accesso" secondTitle-class="mt-0 mb-3"
-        subtitle="I bambini già ammessi alla frequenza nell’anno scolastico in corso sono riammessi di diritto nell’anno
+          <button type="button" aria-label="Vai alla pagina richiedi iscrizione online alla Scuola dell'infanzia "
+            class="btn btn-primary mobile-full mb-4">
+            <span>Richiesta di iscrizione online</span>
+          </button>
+          <p class="text-paragraph lora mb-4">Uffici dove presentare la domanda su appuntamento</p>
+          <p class="text-paragraph t-primary mb-4">
+            <a href="#" aria-label="Vai a Pranota appuntamento presso Ufficio via C.Benso Conte di Cavour" title="Vai a Pranota appuntamento presso Ufficio via C.Benso Conte di Cavour">Ufficio via C. Benso Conte di Cavour [prenota]</a>
+          </p>
+          <p class="text-paragraph t-primary mb-0">
+            <a href="#" aria-label="Vai a Pranota appuntamento presso Ufficio largo Michelangelo Buonarroti" title="Vai a Pranota appuntamento presso Ufficio largo Michelangelo Buonarroti">Ufficio largo Michelangelo Buonarroti [prenota]</a>
+          </p>
+        </section>
+        
+        <section class="mb-30">
+          <h2 class="mb-3" id="more-info">Ulteriori informazioni</h2>
+          <h3 class="mb-3 subtitle-medium" id="more-info">Graduatorie di accesso</h3>
+          <p class="text-paragraph lora mb-0">I bambini già ammessi alla frequenza nell’anno scolastico in corso sono riammessi di diritto nell’anno
         scolastico successivo previa richiesta, su appositi moduli trasmessi alle strutture di riferimento.<br>
         Alle domande viene attribuito un punteggio secondo i criteri stabiliti dall'Amministrazione Comunale. La
         famiglia può in qualsiasi momento rinunciare al posto, presentando al responsabile del servizio specifica
-        dichiarazione scritta di rinuncia.</p><p class='mt-3 mb-0'>Se hai già inviato la richiesta di iscrizione puoi vedere le
-        graduatorie d’accesso nella sezione documenti." lora=true }}
-        {{/cmp-card/cmp-card-content-box}}
+        dichiarazione scritta di rinuncia.</p>
+        <p class='mt-3 mb-0'>Se hai già inviato la richiesta di iscrizione puoi vedere le
+          graduatorie d’accesso nella sezione documenti."</p>
+        </section>
 
-        <article class="it-page-section mt-5 mb-5">
+        <section class="it-page-section">
           <div class="row">
             <div class="col-12 col-md-6">
-              <p class="h6 fw-semibold">Questa pagina è gestita da</p>
-              <div class="card-wrapper rounded h-auto">
-                <div class="card card-teaser card-teaser-info rounded shadow-sm p-4">
+              <h6><small class="fw-semibold">Questa pagina è gestita da</small></h6>
+              <div class="card-wrapper rounded h-auto mt-10">
+                <div class="card card-teaser card-teaser-info rounded shadow-sm p-3">
                   <div class="card-body pe-3">
                     <h5 class="card-title">
-                      <a class="u-main-black" href="#" aria-label="Vai alla pagina di Area Lavori pubblici"
-                        title="Vai alla pagina di Area Lavori pubblici">
-                        Area Lavori pubblici
-                      </a>
+                      <a class="u-main-black" href="#" aria-label="Vai alla pagina di Area Lavori pubblici" title="Vai alla pagina di Area Lavori pubblici">Area Lavori pubblici</a>
                     </h5>
                     <div class="card-text">
                       <p class="u-main-black">Via Dei Transiti 21, 50302</p>
@@ -131,8 +159,7 @@
                   <span class="chip-label text-white">Educazione</span>
                 </div>
               </a>
-              <a href="#" class="text-white" title="Vai all'argomento Famiglia"
-                aria-label="Vai all'argomento Famiglia">
+              <a href="#" class="text-white" title="Vai all'argomento Famiglia" aria-label="Vai all'argomento Famiglia">
                 <div class="chip chip-simple bg-success">
                   <span class="chip-label text-white">Famiglia</span>
                 </div>
@@ -151,12 +178,10 @@
               </a>
             </div>
           </div>
-        </article>
-
+        </section>
       </div>
     </div>
   </div>
-
 
   <div class="bg-primary">
     <div class="container">
@@ -172,7 +197,8 @@
     <div class="container">
       <div class="row">
         <div class="col-12 pt-5">
-          {{>cmp-carousel/cmp-carousel carousel-title="Contenuti correlati" class="carousel-4-card" carTitle-class="pb-0"}}
+          {{>cmp-carousel/cmp-carousel carousel-title="Contenuti correlati" class="carousel-4-card"
+          carTitle-class="pb-0"}}
         </div>
         <div class="col-12 col-lg-6 offset-lg-3 p-contacts">
           {{>cmp-contacts/cmp-contacts city-problems=true}}

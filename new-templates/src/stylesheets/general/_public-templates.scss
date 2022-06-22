@@ -43,7 +43,27 @@
   @include media-breakpoint-up(md) {
     font-weight: 600;
   }
+}
 
+.has-bg-grey {
+  background-color: rgba(0, 122, 82, 0.05);
+}
+
+.border-col{
+  @include media-breakpoint-up(lg) {
+    border-right: 1px solid #E5E5E5;
+  }
+}
+
+.list-wrapper{
+  .list-item{
+    margin-left: 1.75rem;
+    list-style-type: disc !important;
+  
+    @include media-breakpoint-up(sm) {
+      margin-left: 1.55rem
+    }
+  }
 }
 
 .drop-shadow {
@@ -343,4 +363,9 @@ a.read-more {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
+}
+
+.sticky-wrapper.navbar-wrapper {
+  position: sticky;
+  top: 20px;
 }
