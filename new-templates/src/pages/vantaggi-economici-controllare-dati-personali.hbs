@@ -69,6 +69,10 @@
             margin-class="mb-40"
             }}
 
+            <div class="bg-white mt-3">
+              <p class="title-xsmall py-4 px-3">Nessun dato disponibile. Aggiungi un minore per proseguire con la richiesta.</p>
+            </div>
+
             {{>partials/button/button label="Aggiungi minore" link=true icon-url="./assets/bootstrap-italia/dist/svg/sprite.svg#it-close-circle"
             icon-class="plus-icon icon-primary icon-sm"
             class="plus-text mt-20"
@@ -110,13 +114,13 @@
             modalId="modal-bank-account"
             btn=true
             btn-label-text="Aggiungi"
+            no-header=true
             }}
 
             {{> cmp-info-button-card/cmp-info-button-card radio=true group="bank-accounts" idRadio="accounts-2"
             radio-title="Banca Popolare di Roma"
             label-2="Iban <br> <span>IT12 3456 7890 123456</span>"
             info-title="Banca Popolare di Roma"
-
             show-accordion-bank="true"
             collapse-id="collapse-bank-2"
             conto-bancario=vantaggi-economici.controllare-dati-personali.conto-bancario.info-2

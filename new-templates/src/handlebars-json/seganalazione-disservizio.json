@@ -1,6 +1,16 @@
 {
     "segnalazione-disservizio":{
-        "area-personale":{
+      "trovare-informazione-servizio":{
+        "cosa-serve":[
+          {
+            "text": "informazioni sul tipo di disservizio e sul luogo all'interno del territorio comunale;"
+          },
+          {
+            "text": "foto, se disponibili."
+          } 
+        ]
+      },
+      "area-personale":{
             "tab-area-personale-1": [
               {
                 "title": "Scrivania",
@@ -208,6 +218,18 @@
                 }
               ]
             }
-          }
+      },
+      "tutte-le-segnalazioni":{
+        "trovare-informazioni-servizio":{
+          "cosa-serve":[
+            {
+              "text": " Informazioni sul luogo del disservizio all’interno del territorio comunale"
+            },
+            {
+              "text": "Foto, se disponibili"
+            }
+          ]
+        }
+      }
     }
 }

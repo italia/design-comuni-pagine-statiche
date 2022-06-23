@@ -37,7 +37,7 @@ function getSplide() {
   const carouselContenuti = new Splide(carouselFour, {
     pagination: false,
     arrows: false,
-    gap: '2rem',
+    gap: '1rem',
     perPage: 4,
     perMove: 1,
     speed: 800,

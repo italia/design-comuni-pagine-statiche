@@ -80,32 +80,20 @@
     position: relative;
     z-index: 0;
     padding: 0;
-  
-    @include media-breakpoint-up(sm) {
-      width: 3.61rem;
-    }
+    padding-right: 1rem;
 
     & p {
       font-family: "Roboto Mono", monospace!important;
       font-size: 2.5rem;
       line-height: 1;
       margin: 0 0 5px 0;
-      padding-right: 34px;
       display: block;
     }
 
     & small {
       @include font(14, 14);
       line-height: 1;
-      font-weight: 400;
-      padding-right: 2.125rem;
       display: block;
-      margin-left: 0.187rem;
-    
-      @include media-breakpoint-up(sm) {
-        padding-right: 1.89rem;
-        margin-left: 0.167rem;
-      }
     }
 
     &:before {
@@ -113,7 +101,7 @@
       z-index: 1;
       top: 0;
       right: 5px;
-      width: 1px;
+      width: 2px;
       height: 100%;
       background-color: hsl(160deg, 100%, 24%);
       content: "";
@@ -126,7 +114,7 @@
       position: absolute;
       z-index: 1;
       top: 1.875rem;
-      right: 0.5px;
+      right: 0.2px;
       background-color: hsl(160deg, 100%, 24%);
       border-radius: 5px;
     
@@ -136,24 +124,24 @@
         top: 1.56rem;
       }
     }
-  }
-}
 
+    &__month{
+      font-weight: 600;
+      display: flex;
+      justify-content: center;
+    }
 
-@include media-breakpoint-down(md) {
-  .calendar-vertical .calendar-date .calendar-date-day {
-    width: 3.75rem;
-
-    @include media-breakpoint-up(sm) {
-      width: 3.33rem;
+    &__year {
+      display: flex;
+      justify-content: center;
+      font-weight: 400;
     }
   }
-}
+
 
 @include media-breakpoint-down(md) {
   .calendar-vertical .calendar-date .calendar-date-day span {
     font-size: 2rem;
-    padding-right: 24px;
     font-weight: 100 !important;
   }
 }
@@ -161,14 +149,9 @@
 @include media-breakpoint-up(lg) {
   .calendar-vertical .calendar-date .calendar-date-day small {
     @include font(16, 16);
-    padding-right: 1.5rem;
-
-    @include media-breakpoint-up(sm) {
-      padding-right: 1.33rem;
-    }
   }
 }
-
+}
 
 .calendar-date:last-child {
   .calendar-date-description {

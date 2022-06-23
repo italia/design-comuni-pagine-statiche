@@ -1,9 +1,5 @@
 .cmp-list-card-img-hr {
 
-  &.cmp-list-card-img .card-wrapper {
-    padding: 0;
-  }
-
   .img-fluid.img-responsive {
     width: 100%;
     height: 100%;
@@ -45,11 +41,6 @@
 
     &.no-after:after {
       content: unset;
-
-      @include media-breakpoint-up(md) {
-        content: "";
-        display: block;
-      }
     }
 
     .card-body {
@@ -114,14 +105,10 @@
 
 
 .cmp-list-card-img {
-  .card-wrapper {
-    padding-bottom: 0.625rem;
+  &.card-wrapper {
+    padding-bottom: 0;
     background-color: #fff;
-
-    @include media-breakpoint-up(sm) {
-      padding-bottom: 0.56rem;
-    }
-
+    
     &.shadow-sm {
       box-shadow: 0 0.15rem 0.25rem rgba(0, 0, 0, 0.15) !important;
     }
@@ -168,10 +155,10 @@
       @include font(16, 16);
       font-weight: 400;
       line-height: 1.5;
-      margin-bottom: 5.63rem;
+      margin-bottom: 4.63rem;
 
       @include media-breakpoint-up(sm) {
-        margin-bottom: 5rem;
+        margin-bottom: 4rem;
       }
     }
 

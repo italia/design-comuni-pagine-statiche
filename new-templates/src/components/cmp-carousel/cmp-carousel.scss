@@ -18,6 +18,21 @@
     .card-body {
       padding: 1.111rem 1rem 1rem 1rem;
     }
+
+    &.card-bg {
+      margin-left: .75rem;
+      margin-right: .75rem;
+
+      @include media-breakpoint-up(sm) {
+        margin-left: .67rem;
+        margin-right: .67rem;
+      }
+
+      @include media-breakpoint-up(lg) {
+        margin-left: .44rem;
+        margin-right: .44rem;
+      }
+    }
   }
 
   &__header {

@@ -1,12 +1,11 @@
 <div class="cmp-info-summary bg-white {{class}}">
   <div class="card">
 
-    <div
-      class="card-header border-bottom border-light p-0 mb-0 {{header-class}}{{#if info-title}}d-flex justify-content-between{{/if}} {{#if info-list}}d-flex justify-content-end{{/if}}">
-      {{#if info-title}}
+ {{#if info-title}}
+    <div class="card-header border-bottom border-light p-0 mb-0 {{header-class}}{{#if info-title}}d-flex justify-content-between{{/if}} {{#if info-list}}d-flex justify-content-end{{/if}}">
       <h3 class="title-large-semi-bold mb-3">{{info-title}}</h3>
-      {{/if}}
     </div>
+  {{/if}}
 
     <div class="card-body p-0">
       {{#if info}}

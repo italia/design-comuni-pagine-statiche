@@ -4,12 +4,14 @@
       {{#if h2}}
         <h2 class="title-xxxlarge {{title-class}}">{{title}}</h2>
       {{else}}
-        <h1 class="title-xxxlarge {{title-class}}">{{title}}</h1>
+        <h1 class="title-xxxlarge {{title-class}}" data-element="service-title">{{title}}</h1>
       {{/if}}
 
       {{#if label-tag-up}}
         <div class="d-flex flex-wrap cmp-heading__tag">
-          {{>partials/cmp-tag/cmp-tag}}
+          <div class="cmp-tag">
+            <span class="cmp-tag__tag title-xsmall text-decoration-none text-button">Servizio attivo</span>
+          </div>
         </div>
       {{/if}}
 
@@ -18,7 +20,7 @@
       {{/if}}
 
       {{#if description}}
-        <p class="subtitle-small {{desClass}}">{{{description}}}</p>
+        <p class="subtitle-small {{desClass}}" data-element="service-description">{{{description}}}</p>
       {{/if}}
 
       {{#if button}}
@@ -123,18 +125,20 @@
       <div class="mt-4 mb-4">
         <span class="subtitle-small">Argomenti</span>
         <div class="chip-wrapper mt-2">
-          <a href="#" aria-label="Vai all'argomento Famiglia" title="Vai all'argomento Famiglia">
+          <a href="#" aria-label="Vai all'argomento Famiglia" title="Vai all'argomento Famiglia"
+            data-element="service-topic">
             <div class="chip chip-simple chip-primary">
               <span class="chip-label">Famiglia</span>
             </div>
           </a>
           <a href="#" aria-label="Vai all'argomento Servizi e supporto all'educazione"
-            title="Vai all'argomento Servizi e supporto all'educazione">
+            title="Vai all'argomento Servizi e supporto all'educazione" data-element="service-topic">
             <div class="chip chip-simple chip-primary">
               <span class="chip-label">Servizi e supporto all'educazione</span>
             </div>
           </a>
-          <a href="#" aria-label="Vai all'argomento Bambini e ragazzi" title="Vai all'argomento Bambini e ragazzi">
+          <a href="#" aria-label="Vai all'argomento Bambini e ragazzi" title="Vai all'argomento Bambini e ragazzi"
+            data-element="service-topic">
             <div class="chip chip-simple chip-primary">
               <span class="chip-label">Bambini e ragazzi</span>
             </div>

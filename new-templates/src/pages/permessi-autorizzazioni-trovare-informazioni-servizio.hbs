@@ -4,105 +4,153 @@
     <div class="row justify-content-center">
       <div class="col-12 col-lg-10">
         {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi" link3="Permessi mobilità"}}
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center mb-40 mb-lg-80">
+      <div class="col-12 col-lg-10 pb-2">
         {{> cmp-heading/cmp-heading
         title="Permesso ZTL"
+        title-class="mb-0"
         description="Rilascio del permesso zone a traffico limitato (ZTL) del centro storico."
-        desClass="mb-25 mb-lg-30"
-        pClass="mt-3 mb-4"
         button=true
-        label="Richiedi online"
         primary=true
         class="text-button"
-        label-tag="Servizio attivo"
-        servizio-attivo=true
+        label="Richiedi online"
         aria-label="Vai a rilascio del permesso ZTL online"
+        servizio-attivo=true
+        label-tag="Servizio attivo"
         }}
       </div>
-      <hr class="d-none d-lg-block mb-0 mt-2">
+      <hr class="d-none d-lg-block mb-0">
     </div>
+  </div>
 
-    <div class="row mt-4 mt-lg-80">
-      <div class="col-12 col-lg-3 mb-30 ">
+  <div class="container">
+    <div class="row pb-4 pb-lg-80">
+      <div class="col-12 col-lg-3 mb-4 border-col">
         {{>cmp-navscroll/cmp-navscroll accordion-title="INDICE DELLA PAGINA"
         link-list=permessi-autorizzazioni.trovare-informazioni-servizio.navscroll}}
       </div>
+
       <div class="col-12 col-lg-8 offset-lg-1">
-        {{#>cmp-card/cmp-card-content-box card-title="A chi è rivolto" header-m0=true h2-class="mb-3" id-title="who-needs"}}
+        <section class="mb-30">
+          <h2 class="title-xxlarge mb-3" id="who-needs">A chi è rivolto</h2>
+          <p class="text-paragraph lora mb-0">Persone fisiche con residenza anagrafica in zone a traffico limitato:</p>
+          <ul class="list-wrapper lora">
+            {{#each permessi-autorizzazioni.trovare-informazioni-servizio.list-1 as |info-list|}}
+            <li class="list-item"><span>{{info-list.text}}</span></li>
+            {{/each}}
+          </ul>
+        </section>
 
-        {{>cmp-ul-list/cmp-ul-list
-        info-list=permessi-autorizzazioni.trovare-informazioni-servizio.list-1 font-list="lora" description="Persone fisiche con residenza
-        anagrafica in zone a traffico limitato:"}}
-        {{/cmp-card/cmp-card-content-box}}
+        <section class="mb-30">
+          <h2 class="title-xxlarge mb-3" id="description">Descrizione</h2>
+          <p class="text-paragraph lora">L'autorizzazione consente il transito e la sosta h 24 dei veicoli nelle zone a traffico limitato.
+            <br><br>
+            Il permesso ZTL è valido per 5 anni dalla data del rilascio e si può rinnovare da due mesi prima della data di scadenza.
+          </p>
+        </section>
 
-        {{#>cmp-card/cmp-card-content-box card-title="Descrizione" header-m0=true h2-class="mb-3" id-title="description"}}
-        <p class="text-paragraph lora mb-0">
-          L'autorizzazione consente il transito e la sosta h 24 dei veicoli nelle zone a traffico limitato.
-          <br><br>
-          Il permesso ZTL è valido per 5 anni dalla data del rilascio e si può rinnovare da due mesi prima della data di
-          scadenza.
-        </p>
-        {{/cmp-card/cmp-card-content-box}}
+        <section class="mb-30">
+          <h2 class="title-xxlarge mb-3" id="how-to">Come fare</h2>
+          <p class="text-paragraph lora">La richiesta può essere inviata online o consegnata di persona all’Ufficio Protocollo Generale, in via dei Transiti 21.
+            <br><br>
+            In caso di esito positivo dell'istruttoria il permesso viene inviato nella casella di posta elettronica indicata nella richiesta.
+          </p>
+        </section>
 
-        {{#>cmp-card/cmp-card-content-box card-title="Come fare" header-m0=true h2-class="mb-3" id-title="how-to"}}
-        <p class="text-paragraph lora mb-0">
-          La richiesta può essere inviata online o consegnata di persona all’Ufficio Protocollo Generale, in via dei
-          Transiti 21.
-          <br><br>
-          In caso di esito positivo dell'istruttoria il permesso viene inviato nella casella di posta elettronica
-          indicata nella richiesta.
-        </p>
-        {{/cmp-card/cmp-card-content-box}}
+        <section class="mb-30 has-bg-grey p-3">
+          <h2 class="title-xxlarge mb-3" id="needed">Cosa serve</h2>
+          <p class="text-paragraph lora mb-0">Per accedere al servizio, assicurati di avere:</p>
+          <ul class="list-wrapper lora">
+            {{#each permessi-autorizzazioni.trovare-informazioni-servizio.list-2 as |info-list|}}
+            <li class="list-item"><span>{{info-list.text}}</span></li>
+            {{/each}}
+          </ul>
+        </section>
 
-        {{#>cmp-card/cmp-card-content-box card-title="Cosa serve" h2-class="mb-3" class="p-3" id-title="needed" bg-grey-primary=true header-m0=true}}
-        {{>cmp-ul-list/cmp-ul-list heading-title="Per accedere al servizio, assicurati di avere:" font-title="lora"
-        font-list="lora" info-list=permessi-autorizzazioni.trovare-informazioni-servizio.list-2 }}
-        {{/cmp-card/cmp-card-content-box}}
+        <section class="mb-30">
+          <h2 class="title-xxlarge mb-3" id="obtain">Cosa si ottiene</h2>
+          <p class="text-paragraph lora">Si ottiene un permesso da esporre sul parabrezza del veicolo durante tutto il tempo di durata del transito e della sosta in ZTL o da esibire, a richiesta degli agenti addetti al controllo, quando è associato a veicoli che non consentono la chiusura a chiave dell’abitacolo.</p>
+        </section>
 
-        {{#>cmp-card/cmp-card-content-box
-        card-title="Cosa si ottiene" h2-class="mb-3" id-title="obtain" subtitle="Si ottiene un permesso da esporre sul parabrezza del veicolo durante tutto il tempo di durata del transito e della sosta in ZTL o da esibire, a richiesta degli agenti addetti al controllo, quando è associato a veicoli che non consentono la chiusura a chiave dell’abitacolo." header-m0=true lora=true}}
-        {{/cmp-card/cmp-card-content-box}}
+        <section class="mb-30">
+          {{>cmp-timeline/cmp-timeline title="Tempi e scadenze" id-title="deadlines"  timeline=permessi-autorizzazioni.trovare-informazioni-servizio.timeline }}
+        </section>
 
-        {{>cmp-timeline/cmp-timeline
-        title="Tempi e scadenze"
-        id-title="deadlines"
-        timeline=permessi-autorizzazioni.trovare-informazioni-servizio.timeline
-        }}
+        <section class="mb-30">
+          <h2 class="title-xxlarge mb-3" id="costs">Costi</h2>
+          <p class="text-paragraph lora">L’importo del permesso ZTL per il centro storico è di € 5,00. La tariffa non è dovuta alla scadenza del permesso in caso di rinnovo, quando sia effettuato in continuità di validità del precedente pass in scadenza. Non è considerato rinnovo quello del permesso scaduto da oltre un anno.</p>
+          {{>cmp-icon-link/cmp-icon-link link="Allegato se necessario" dimensione-file="(PDF 1MB)"}}
+        </section>
 
-        {{#>cmp-card/cmp-card-content-box card-title="Costi" id-title="costs" subtitle="L’importo del permesso ZTL per il centro storico è di € 5,00. La tariffa non è dovuta alla scadenza del permesso in caso di rinnovo, quando sia effettuato in continuità di validità del precedente pass in scadenza. Non è considerato rinnovo quello del permesso scaduto da oltre un anno." class="mt-30" header-m0=true h2-class="mb-3" lora=true subtitleClass="mb-3"}}
-        {{>cmp-icon-link/cmp-icon-link link="Allegato se necessario" dimensione-file="(PDF 1MB)"}}
+        <section class="mb-30 has-bg-grey p-3 p-lg-4">
+          <h2 class="mb-3" id="service-access">Accedi al servizio</h2>
+          <p class="text-paragraph lora mb-4">Puoi richiedere il permesso ZTL direttamente online tramite identità
+            digitale.</p>
+          <button type="button" aria-label="Accedi al servizio e richiedi online il permesso ZTL"
+            class="btn btn-primary mobile-full">
+            <span>Richiedi online</span>
+          </button>
+          <p class="text-paragraph lora mt-4">Oppure, puoi prenotare un appuntamento e presentarti presso gli uffici.</p>
+          <button type="button" aria-label="Vai alla pagina prenota appuntamento"
+            class="btn btn-outline-primary t-primary bg-white mobile-full">
+            <span>Prenota appuntamento</span>
+          </button>
+        </section>
 
-        {{/cmp-card/cmp-card-content-box}}
+        <section class="mb-30">
+          <h2 class="title-xxlarge mb-3" id="conditions">Condizioni di servizio</h2>
+          <p class="text-paragraph lora">Per conoscere i dettagli di
+            scadenze, requisiti e altre informazioni importanti, leggi i termini e le condizioni di servizio.</p>
+          {{>cmp-icon-link/cmp-icon-link link="Termini e condizioni di servizio" dimensione-file="(PDF 1MB)"}}
+        </section>
 
-        {{#>cmp-card/cmp-card-content-box card-title="Accedi al servizio" h2-class="mb-3" class="p-3" id-title="service-access" subtitle="Puoi richiedere il permesso ZTL direttamente online tramite identità digitale." bg-grey-primary=true header-m0=true subtitleClass="mb-3"}}
-        {{>partials/button/button label="Richiedi online" aria-label="Accedi al servizio e richiedi online il permesso ZTL" primary="true" class="mobile-full" }}
-        <p class="text-paragraph mt-4 mb-3">Oppure, puoi prenotare un appuntamento e presentarti presso gli uffici.
-        </p>
-        {{>partials/button/button label="Prenota appuntamento" aria-label="Vai alla pagina Prenota Appuntamento" class="mobile-full btn-outline-primary bg-white
-        t-primary" }}
-        {{/cmp-card/cmp-card-content-box}}
+        <section class="it-page-section">
+          <h2 class="mb-3" id="contacts">Contatti</h2>
+          <div class="row">
+            <div class="col-12 col-md-8 col-lg-6 mb-30">
+              <div class="card-wrapper rounded h-auto pb-0">
+                <div class="card card-teaser card-teaser-info align-items-center rounded shadow-sm p-3">
+                  <div class="card-body pe-3">
+                    <h5 class="card-title mb-2">
+                      <a class="u-main-black" href="#" aria-label="Vai alla pagina di Ufficio mobilità"
+                        title="Vai alla pagina di Ufficio mobilità">Ufficio mobilità</a>
+                    </h5>
+                    <p class="subtitle-small mb-0">Via Dei Transiti 21, 50302
+                      <br>
+                      05 0505
+                      <br>
+                      <a href='mailto:ufficiomobilita@email.it' aria-label='Invia una email a ufficiomobilita@email.it'
+                        title='Invia una email a ufficiomobilita@email.it'>ufficiomobilita@email.it</a>
+                    </p>
+                  </div>
+                  <div class="avatar size-xl">
+                    <img src="https://picsum.photos/200/200" alt="Immagine" />
+                  </div>
+                </div>
+              </div>
+            </div>
 
-        {{#>cmp-card/cmp-card-content-box card-title="Condizioni di servizio" h2-class="mb-3" id-title="conditions" subtitle="Per
-        conoscere i dettagli di scadenze, requisiti e altre informazioni importanti, leggi i termini e le condizioni di servizio." lora=true header-m0=true h2-class="mb-3" subtitleClass="mb-3"}}
-        {{>cmp-icon-link/cmp-icon-link link="Termini e condizioni di servizio" dimensione-file="(PDF 1MB)"}}
-        {{/cmp-card/cmp-card-content-box}}
-
-        {{#>cmp-card/cmp-card-content-box card-title="Contatti" id-title="contacts" header-m0=true h2-class="mb-3"}}
-        <div>
-          {{>cmp-card-img/cmp-card-img
-          card-title="Ufficio mobilità"
-          card-description="Via Dei Transiti 21, 50302<br> 05 0505 <br> <a href='mailto:ufficiomobilita@email.it' aria-label='Invia una email a ufficiomobilita@email.it' title='Invia una email a ufficiomobilita@email.it'>ufficiomobilita@email.it</a>"
-          img=true}}
-        </div>
-        {{/cmp-card/cmp-card-content-box}}
-
-        <div class="wrapper-tag mb-4 mb-lg-80">
-         <span class="text-paragraph-small" >Argomenti:</span>
-            <div class="d-flex flex-wrap gap-2 mt-10 mb-30 ">
-            {{>partials/cmp-tag/cmp-tag label-tag="Autovettura" class="bg-tag"}}
-            {{>partials/cmp-tag/cmp-tag label-tag="Permesso" class="bg-tag"}}
+            <div class="col-12 mb-30">
+              <h6 class="mb-1"><small>Argomenti:</small></h6>
+              <a href="#" title="Vai all'argomento Autovettura" aria-label="Vai all'argomento Autovettura">
+                <div class="chip chip-simple bg-success">
+                  <span class="chip-label fw-bold text-white">Autovettura</span>
+                </div>
+              </a>
+              <a href="#" title="Vai all'argomento Permesso" aria-label="Vai all'argomento Permesso">
+                <div class="chip chip-simple bg-success">
+                  <span class="chip-label fw-bold text-white">Permesso</span>
+                </div>
+              </a>
+            </div>
+            <p class="text-paragraph-small m-0">Pagina aggiornata il 14/04/2022</p>
           </div>
-          <p class="text-paragraph-small mb-0">Pagina aggiornata il 14/04/2022</p>
-       </div>
+        </section>
       </div>
     </div>
   </div>
@@ -121,7 +169,8 @@
     <div class="container">
       <div class="row">
         <div class="col-12 pt-5">
-          {{>cmp-carousel/cmp-carousel carousel-title="Contenuti correlati" class="carousel-4-card"  carTitle-class="pb-0"}}
+          {{>cmp-carousel/cmp-carousel carousel-title="Contenuti correlati" class="carousel-4-card"
+          carTitle-class="pb-0"}}
         </div>
         <div class="col-12 col-lg-6 offset-lg-3 p-contacts">
           {{>cmp-contacts/cmp-contacts}}

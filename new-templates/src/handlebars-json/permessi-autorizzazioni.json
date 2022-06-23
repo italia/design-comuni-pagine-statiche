@@ -474,21 +474,21 @@
         {
           "year":"2022",
           "day":"02",
-          "month":"MAR",
+          "month":"mar",
           "event": "Esito richiesta",
           "info": "Tra 10 giorni ti comunicheremo"
         },
         {
           "year":"2022",
           "day":"10",
-          "month":"MAR",
+          "month":"mar",
           "event": "Pagamento",
           "info": "Potrai effettuare"
         },
         {
           "year":"2022",
           "day":"12",
-          "month":"MAR",
+          "month":"mar",
           "event": "Rilascio permesso ZTL",
           "info": "Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur."
         }

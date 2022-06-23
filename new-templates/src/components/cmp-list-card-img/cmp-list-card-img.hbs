@@ -1,9 +1,9 @@
-<div class="row cmp-list-card-img g-4 {{rowClass}}">
+<div class="row g-4">
 {{#each cards as |card|}}
-  <div class="col-12 col-lg-6 col-xl-4">
+  <div class="col-lg-6 col-xl-4">
     <!--start card-->
-    <div class="card-wrapper shadow-sm rounded">
-      <div class="card card-img no-after">
+    <div class="card-wrapper shadow-sm rounded cmp-list-card-img">
+      <div class="card card-img no-after rounded">
         <div class="img-responsive-wrapper {{#if img-path}}cmp-list-card-img__wrapper{{/if}}">
           <div class="img-responsive img-responsive-panoramic h-100 {{imgClass}}">
             {{#if img-path}}

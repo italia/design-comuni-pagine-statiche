@@ -4,6 +4,13 @@
     <div class="row justify-content-center">
       <div class="col-12 col-lg-10">
         {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi" link3="Pagamenti"}}
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
         {{> cmp-heading/cmp-heading
         title="Pagamento multa"
         pClass="mt-3"
@@ -19,73 +26,112 @@
       </div>
       <hr class="d-none d-lg-block mb-0 mt-2">
     </div>
+  </div>
 
+  <div class="container">
     <div class="row mt-lg-80 mt-4">
       <div class="col-12 col-lg-3 mb-4 ">
         {{>cmp-navscroll/cmp-navscroll accordion-title="INDICE DELLA PAGINA"
         link-list=pagamenti-dovuti-multa.trovare-informazioni-servizio.navscroll}}
       </div>
+
       <div class="col-12 col-lg-8 offset-lg-1">
-        {{#>cmp-card/cmp-card-content-box card-title="A chi è rivolto" h2-class="mb-3" header-m0=true id-title="who-needs"}}
-        <p class="text-paragraph lora mb-0">Il servizio è destinato a tutti i cittadini che devono pagare multe della
-          polizia municipale, prese a seguito di infrazioni del codice della strada nel territorio comunale.</p>
-        {{/cmp-card/cmp-card-content-box}}
+        <section class="mb-30">
+          <h2 class="mb-3" id="who-needs">A chi è rivolto</h2>
+          <p class="text-paragraph lora mb-0">Il servizio è destinato a tutti i cittadini che devono pagare multe della
+            polizia municipale, prese a seguito di infrazioni del codice della strada nel territorio comunale.</p>
+        </section>
 
-        {{#>cmp-card/cmp-card-content-box card-title="Come fare" h2-class="mb-3" header-m0=true id-title="how-to"}}
-        <p class="text-paragraph lora mb-0">
-          Per pagare online, accedi con le tue credenziali di identità digitale e fornisci le informazioni su chi
-          effettua il pagamento e gli estremi della multa. Puoi pagare con conto o carta tramite il servizio pagoPA e
-          scaricare subito la ricevuta. Alternativamente, puoi prenotare un appuntamento e recarti presso gli uffici.
-        </p>
-        {{/cmp-card/cmp-card-content-box}}
+        <section class="mb-30">
+          <h2 class="mb-3" id="how-to">Come fare</h2>
+          <p class="text-paragraph lora mb-0">
+            Per pagare online, accedi con le tue credenziali di identità digitale e fornisci le informazioni su chi
+            effettua il pagamento e gli estremi della multa. Puoi pagare con conto o carta tramite il servizio pagoPA e
+            scaricare subito la ricevuta. Alternativamente, puoi prenotare un appuntamento e recarti presso gli uffici.
+          </p>
+        </section>
 
-        {{#>cmp-card/cmp-card-content-box card-title="Cosa serve" h2-class="mb-3" header-m0=true id-title="needed" class="p-3" bg-grey-primary=true}}
-        {{>cmp-ul-list/cmp-ul-list description="Per il pagamento delle multe, assicurati di avere:" font-title="lora"
-        font-list="lora" info-list=pagamenti-dovuti-multa.trovare-informazioni-servizio.cosa-serve }}
-        {{/cmp-card/cmp-card-content-box}}
+        <section class="mb-30 has-bg-grey p-3 p-lg-4">
+          <h2 class="mb-3" id="needed">Cosa serve</h2>
+          <p class="text-paragraph lora fw-semibold mb-0">Per il pagamento delle multe, assicurati di avere:</p>
+          <ul class="list-wrapper lora">
+            <li class="list-item"><span>la notifica della multa;</span></li>
+            <li class="list-item"><span>il Codice Avviso PagoPA, che puoi trovare sull’avviso di pagamento;</span></li>
+            <li class="list-item"><span>la targa del veicolo;</span></li>
+            <li class="list-item"><span>i dettagli del conto o della carta con cui vuoi effettuare il pagamento.</span></li>
+          </ul>
+        </section>
 
+        <section class="mb-30">
+          <h2 class="mb-3" id="deadlines">Tempi e scadenze</h2>
+          <ul class="list-wrapper lora">
+            <li class="list-item"><span>Per i pagamenti entro 5 giorni dalla notifica o dalla contestazione immediata, si applica uno sconto del 30% sull’importo;</span></li>
+            <li class="list-item"><span>Per i pagamenti entro 60 giorni, si paga una sanzione in misura ridotta;</span></li>
+            <li class="list-item"><span>Per i pagamenti oltre 60 giorni, si paga la sanzione raddoppiata più gli interessi.</span></li>
+          </ul>
+          {{>cmp-icon-link/cmp-icon-link link="Regolamento polizia municipale" dimensione-file="(PDF 80KB)" link-class="mt-3"}}
+        </section>
 
-        {{#>cmp-card/cmp-card-content-box card-title="Tempi e scadenze" h2-class="mb-3" header-m0=true id-title="deadlines"}}
-        {{>cmp-ul-list/cmp-ul-list font-list="titillium"
-        info-list=pagamenti-dovuti-multa.trovare-informazioni-servizio.timeline }}
-        {{>cmp-icon-link/cmp-icon-link link="Regolamento polizia municipale" dimensione-file="(PDF 80KB)" link-class="mt-3"}}
-        {{/cmp-card/cmp-card-content-box}}
+        <section class="mb-30">
+          <h2 class="mb-3" id="costs">Costi</h2>
+          <p class="subtitle-small mb-0 lora">Il servizio di
+            pagamento online prevede 0,50€ di costi di commissione.</p>
+        </section>
 
+        <section class="mb-30 has-bg-grey p-4">
+          <h2 class="mb-3" id="service-access">Accedi al servizio</h2>
+          <p class="text-paragraph lora mb-4">Puoi pagare la multa direttamente online tramite identità digitale.</p>
 
-        {{#>cmp-card/cmp-card-content-box card-title="Costi" h2-class="mb-3" header-m0=true id-title="costs" subtitle="Il servizio di
-        pagamento online prevede 0,50€ di costi di commissione." class="mt-30"}}
-        {{/cmp-card/cmp-card-content-box}}
+          <button type="button" aria-label="Paga online accedendo tramite identità digitale"
+            class="btn btn-primary mobile-full mb-4">
+            <span>Paga online</span>
+          </button>
+          <p class="text-paragraph lora mb-4">Oppure, puoi pagare presso gli uffici di Polizia municipale.</p>
+          <button type="button" aria-label="Vai alla pagina Prenota Appuntamento"
+            class="btn mobile-full btn-outline-primary t-primary bg-white">
+            <span>Prenota appuntamento</span>
+          </button>
+        </section>
 
+        <section class="mb-30">
+          <h2 class="mb-3" id="conditions">Condizioni di servizio</h2>
+          <p class="text-paragraph lora">Per conoscere i dettagli di scadenze, requisiti e altre informazioni importanti,
+            leggi i termini e le condizioni di servizio.</p>
+          {{>cmp-icon-link/cmp-icon-link link="Termini e condizioni di servizio" dimensione-file="(PDF 1MB)"}}
+        </section>
 
-        {{#>cmp-card/cmp-card-content-box card-title="Accedi al servizio" h2-class="mb-3" header-m0=true class="p-3"
-        id-title="service-access" subtitle="Puoi pagare la multa direttamente online tramite identità digitale." bg-grey-primary=true}}
-        {{>partials/button/button label="Paga online" primary="true" class="mobile-full mt-3" aria-label="Vai a Pagina pagamento online multa"}}
-        <p class="text-paragraph mt-3 mb-3">Oppure, puoi pagare presso gli uffici di Polizia municipale.
-        </p>
-        {{>partials/button/button label="Prenota appuntamento" primary="true" class="mobile-full btn-outline-primary
-        t-primary" aria-label="Vai alla pagina Prenota un'appuntamento"}}
-        {{/cmp-card/cmp-card-content-box}}
+        <section class="mb-30 it-page-section">
+          <h2 class="mb-3" id="contacts">Contatti</h2>
+            <div class="card-wrapper rounded h-auto mt-10">
+              <div class="card card-teaser card-teaser-info rounded shadow-sm p-3 w-50">
+                <div class="card-body pe-3">
+                  <h5 class="title-small">
+                    <a class="u-main-black" href="#" aria-label="Vai alla pagina di Ufficio polizia municipale" title="Vai alla pagina di Ufficio polizia municipale">Ufficio polizia municipale</a>
+                  </h5>
+                  <div class="card-text">
+                    <p class="subtitle-small mb-0">Via Dei Transiti 21, 50302
+                      <br>
+                       05 0505
+                      <br>
+                      <a href='mailto:ufficiotributia@email.it' aria-label='Invia una email a ufficiotributi@email.it' title='Invia una email a ufficiotributi@email.it'>ufficiotributi@email.it</a>
+                    </p>
+                  </div>
+                </div>
+                <div class="avatar size-xl">
+                  <img src="https://picsum.photos/200/200" alt="Immagine" />
+                </div>
+              </div>
+            </div>
+        </section>
 
-        {{#>cmp-card/cmp-card-content-box card-title="Condizioni di servizio" h2-class="mb-3" header-m0=true lora=true
-        id-title="conditions" subtitle="Per conoscere i dettagli di scadenze, requisiti e altre informazioni importanti,
-        leggi i termini e le condizioni di servizio." }}
-        {{>cmp-icon-link/cmp-icon-link link="Termini e condizioni di servizio " dimensione-file="(PDF 1MB)" link-class="mt-3"}}
-        {{/cmp-card/cmp-card-content-box}}
+        <section class="mb-30">
+          <span class="text-paragraph-small">Argomenti:</span>
+          <div class="d-flex flex-wrap gap-2 mt-2 mb-30 ">
+            {{>partials/cmp-tag/cmp-tag label-tag="Pagamenti" class="bg-tag"}}
+          </div>
+          <p class="text-paragraph-small mb-0">Pagina aggiornata il 14/04/2022</p>
+        </section>
 
-
-        {{#>cmp-card/cmp-card-content-box card-title="Contatti" h2-class="mb-3" header-m0=true id-title="contacts"}}
-          {{>cmp-card-img/cmp-card-img card-title="Ufficio polizia municipale"
-          card-description="Via Dei Transiti 21, 50302<br> 05 0505 <br> ufficiotributi@email.it" img=true}}
-        {{/cmp-card/cmp-card-content-box}}
-
-
-        {{#>cmp-card/cmp-card-content-box }}
-        <span class="text-paragraph-small">Argomenti:</span>
-        <div class="d-flex flex-wrap gap-2 mt-10 mb-30 ">
-          {{>partials/cmp-tag/cmp-tag label-tag="Pagamenti" class="bg-tag"}}
-        </div>
-        <p class="text-paragraph-small mb-0">Pagina aggiornata il 14/04/2022</p>
-        {{/cmp-card/cmp-card-content-box}}
       </div>
     </div>
   </div>

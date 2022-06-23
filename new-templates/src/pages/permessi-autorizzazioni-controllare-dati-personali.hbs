@@ -29,7 +29,7 @@
           br-none="true"}}
         </div>
         <div class="col-12 col-lg-8 offset-lg-1 mt-2 mt-lg-0">
-          <div>
+
             {{> cmp-alert-box/cmp-alert-box warning=true message="Ci sono alcune informazioni mancanti o errate"  
               alertSpan-class="title-small-semi-bold"
               description-class="mb-1"
@@ -60,9 +60,7 @@
             documenti=permessi-autorizzazioni.controllare-dati-personali.documenti
             }}
             {{/cmp-card/cmp-card-content-box}}
-          </div>
 
-          <div class="mt-4">
             {{#>cmp-card/cmp-card-content-box bg-grey=true
             card-title="Veicolo"
             h2-class="mb-1"
@@ -103,7 +101,6 @@
             icon-class="plus-icon icon-primary ion-sm"
             class="plus-text mt-20"}}
             {{/cmp-card/cmp-card-content-box}}
-          </div>
 
           {{>cmp-nav-steps/cmp-nav-steps saveBtn=true
           save="true"

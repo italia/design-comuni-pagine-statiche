@@ -65,19 +65,19 @@
         {
           "year": "2022",
           "day": "01",
-          "month": "FEB",
+          "month": "feb",
           "event": "Apertura domande"
         },
         {
           "year": "2022",
           "day": "02",
-          "month": "MAR",
+          "month": "mar",
           "event": "Termine presentazione domande"
         },
         {
           "year": "2022",
           "day": "28",
-          "month": "APR",
+          "month": "apr",
           "event": "Pagamento servizio mensa"
         }
       ]
@@ -525,13 +525,13 @@
         {
           "year": "2022",
           "day": "23",
-          "month": "MAR",
+          "month": "mar",
           "event": "Termine presentazione domande"
         },
         {
           "year": "2022",
           "day": "10",
-          "month": "APR",
+          "month": "apr",
           "event": "Pagamento servizio mensa"
         }
       ],
