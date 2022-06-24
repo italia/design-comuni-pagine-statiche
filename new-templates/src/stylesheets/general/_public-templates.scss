@@ -55,14 +55,22 @@
   }
 }
 
-.list-wrapper{
-  .list-item{
-    margin-left: 1.75rem;
-    list-style-type: disc !important;
-  
-    @include media-breakpoint-up(sm) {
-      margin-left: 1.55rem
+.richtext-wrapper {
+  ul {
+    li {
+      margin-left: 1.75rem;
+      list-style-type: disc !important;
+    
+      @include media-breakpoint-up(sm) {
+        margin-left: 1.55rem
+      }
     }
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
   }
 }
 
