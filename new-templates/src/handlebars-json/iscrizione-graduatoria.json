@@ -315,6 +315,7 @@
           "description": "",
           "warning": true,
           "success": false,
+          "warningId": "documenti-warning",
           "warning-message": "Documento mancante",
           "success-message": "Documento inserito con successo"
         }
@@ -361,6 +362,7 @@
           "description": "documento_ISEE-2019.pdf",
           "warning": true,
           "success": false,
+          "warningId": "isee-info",
           "warning-message": "Documento scaduto",
           "success-message": "Documento inserito con successo"
         }
@@ -368,7 +370,7 @@
       "alert-list": [
         {
           "text": "Altro genitore",
-          "id": "other-parent-info"
+          "id": "documenti-warning"
         },
         {
           "text": "ISEE",

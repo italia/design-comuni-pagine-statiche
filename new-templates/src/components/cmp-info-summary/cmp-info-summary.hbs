@@ -15,7 +15,7 @@
     <div class="card-body p-0">
       {{#if info}}
       {{#each info-list as |info|}}
-      <div class="single-line-info border-light {{#if info.border-unset}}border-unset{{/if}}">
+      <div class="single-line-info border-light {{#if info.border-unset}}border-unset{{/if}}" {{#if info.warning}}id="{{info.warningId}}"{{/if}}>
         {{#if info.name}}
         <div class="text-paragraph-small">{{info.name}}</div>
         {{/if}}

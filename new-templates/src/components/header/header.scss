@@ -13,12 +13,6 @@
     }
   }
 
-  .navbar .navbar-collapsable .navbar-nav:not(.navbar-secondary) li:first-child a {
-    @include media-breakpoint-up(lg) {
-      padding-left: 0;
-    }
-  }
-
   .navbar .navbar-collapsable .navbar-nav.navbar-secondary li:not(:last-child) {
     @include media-breakpoint-between(lg, lg) {
       display: none;
