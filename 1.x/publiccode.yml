@@ -1,0 +1,67 @@
+# This repository adheres to the publiccode.yml standard by including this 
+# metadata file that makes public software easily discoverable.
+# More info at https://github.com/publiccodeyml/publiccode.yml
+
+publiccodeYmlVersion: '0.2'
+categories:
+  - it-development
+description:
+  it:
+    documentation: 'https://designers.italia.it/kit/comuni'
+    features:
+      - Template Sito Web
+      - PNRR
+      - PNRR/Misura/1.4.1
+      - PNRR/Beneficiari/Comuni
+    genericName: Template siti web Comuni Italiani
+    longDescription: |
+      In questo repository è possibile trovare alcune pagine statiche
+      esemplificative del modello di sito web per i Comuni Italiani. È possibile
+      visualizzare e scaricare il codice HTML/CSS e Javascript dei template, già
+      pronto all’uso e validato in termini di accessibilità e conformità alle
+      Linee guida di design per i servizi web della PA, e costruiti sulle
+      fondamenta fornite dallo UI Kit e dalla libreria Bootstrap Italia.
+
+
+      All'interno del minisito dedicato al modello di sito web per i Comuni
+      Italiani è possibile inoltre trovare alcuni contributi dei comuni che
+      stanno facendo uso del modello di riferimento, tra cui i prototipi del
+      comune di Cagliari. Il repository stesso è un sito in Jekyll e GitHub
+      pages per la condivisione di tali contributi.
+    shortDescription: Il template HTML del modello per i siti web dei Comuni Italiani
+developmentStatus: stable
+intendedAudience:
+  countries:
+    - it
+it:
+  conforme:
+    gdpr: true
+    lineeGuidaDesign: true
+    misureMinimeSicurezza: true
+    modelloInteroperabilita: false
+  countryExtensionVersion: '0.2'
+  piattaforme:
+    anpr: false
+    cie: true
+    pagopa: true
+    spid: true
+  riuso:
+    codiceIPA: pcm
+legal:
+  license: BSD-3-Clause
+localisation:
+  availableLanguages:
+    - it
+  localisationReady: true
+logo: |-
+  https://raw.githubusercontent.com/italia/design-comuni-pagine-statiche/main/assets/images/icons/logo-comune.svg
+maintenance:
+  contacts:
+    - name: Francesco Zaia
+  type: community
+name: Sito web dei Comuni Italiani
+platforms:
+  - web
+releaseDate: '2021-06-17'
+softwareType: standalone/web
+url: 'https://github.com/italia/design-comuni-pagine-statiche'
