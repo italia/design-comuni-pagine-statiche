@@ -1,0 +1,27 @@
+name: Update documentation
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          ref: main
+      - name: Use Node.js 14.x 🪢
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      - name: git config
+        run: |
+          git config user.name "${GITHUB_ACTOR}"
+          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+      - run: sudo apt-get update && sudo apt-get install -y zip
+      - run: npm ci
+      - name: Publish on gh-pages
+        run: |
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          npm run documentation-deploy-to-gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
