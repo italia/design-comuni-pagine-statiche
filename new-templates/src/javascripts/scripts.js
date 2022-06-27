@@ -42,18 +42,28 @@ function getSplide() {
     perMove: 1,
     speed: 800,
     breakpoints: {
-      1200: { perPage: 3, pagination: true },
-      992: { perPage: 2, gap: '1rem' },
-      768: { perPage: 1, gap: 0 },
+      1200: {
+        perPage: 3,
+        pagination: true
+      },
+      992: {
+        perPage: 2,
+        gap: '1rem'
+      },
+      768: {
+        perPage: 1,
+        gap: 0
+      },
     },
   });
   carouselContenuti.mount();
 }
 
-const errorWrapper = document.querySelector('#errorMsgContainer');
-const formValidate = document.querySelector('#justValidateForm');
 
-function validateForm() {
+
+function validateFormAssistenza() {
+  const errorWrapper = document.querySelector('#errorMsgContainer');
+  const formValidate = document.querySelector('#justValidateForm');
   if (!formValidate) return;
   const validate = new bootstrap.FormValidate('#justValidateForm', {
     errorFieldCssClass: 'is-invalid',
@@ -62,57 +72,45 @@ function validateForm() {
     focusInvalidField: false,
   })
   validate
-    .addField('#name', [
-      {
-        rule: 'required',
-        errorMessage: 'Questo campo è richiesto'
-      },
+    .addField('.form-control', [{
+      rule: 'required',
+      errorMessage: 'Questo campo è richiesto'
+    },])
+    .addField('#surname', [{
+      rule: 'required',
+      errorMessage: 'Questo campo è richiesto'
+    },])
+    .addField('#email', [{
+      rule: 'required',
+      errorMessage: 'Questo campo è richiesto'
+    },
+    {
+      rule: 'email',
+      errorMessage: 'Email non valida',
+    },
     ])
-    .addField('#surname', [
-      {
-        rule: 'required',
-        errorMessage: 'Questo campo è richiesto'
-      },
+    .addField('#category', [{
+      rule: 'required',
+      errorMessage: 'Questo campo è richiesto'
+    },])
+    .addField('#service', [{
+      rule: 'required',
+      errorMessage: 'Questo campo è richiesto'
+    },])
+    .addField('#description', [{
+      rule: 'required',
+      errorMessage: 'Questo campo è richiesto'
+    },
+    {
+      rule: 'maxLength',
+      value: 600,
+      errorMessage: 'Questo campo può contenere un massimo di 600 caratteri'
+    },
     ])
-    .addField('#email', [
-      {
-        rule: 'required',
-        errorMessage: 'Questo campo è richiesto'
-      },
-      {
-        rule: 'email',
-        errorMessage: 'Email non valida',
-      },
-    ])
-    .addField('#category', [
-      {
-        rule: 'required',
-        errorMessage: 'Questo campo è richiesto'
-      },
-    ])
-    .addField('#service', [
-      {
-        rule: 'required',
-        errorMessage: 'Questo campo è richiesto'
-      },
-    ])
-    .addField('#description', [
-      {
-        rule: 'required',
-        errorMessage: 'Questo campo è richiesto'
-      },
-      {
-        rule: 'maxLength',
-        value: 600,
-        errorMessage: 'Questo campo può contenere un massimo di 600 caratteri'
-      },
-    ])
-    .addField('#privacy', [
-      {
-        rule: 'required',
-        errorMessage: 'Questo campo è richiesto'
-      },
-    ])
+    .addField('#privacy', [{
+      rule: 'required',
+      errorMessage: 'Questo campo è richiesto'
+    },])
     .onFail((fields) => {
       if (errorWrapper) {
         errorWrapper.innerHTML = '';
@@ -121,4 +119,36 @@ function validateForm() {
     })
 }
 
-validateForm();
+validateFormAssistenza();
+
+
+function validateFormMulta() {
+  const errorWrapper = document.querySelector('#errorMsgContainer');
+  const formValidate = document.querySelector('#justValidateMulta');
+
+  if (!formValidate) return;
+  const validate = new bootstrap.FormValidate('#justValidateMulta', {
+    errorFieldCssClass: 'is-invalid',
+    errorLabelCssClass: 'form-feedback',
+    errorLabelStyle: '',
+    focusInvalidField: false,
+  })
+  validate
+    .addField('#code', [{
+      rule: 'required',
+      errorMessage: 'Questo campo è richiesto'
+    },])
+    .addField('#dateStandard', [{
+      rule: 'required',
+      errorMessage: 'Questo campo è richiesto'
+    },])
+    .onFail((fields) => {
+      if (errorWrapper) {
+        errorWrapper.innerHTML = '';
+        errorWrapper.innerHTML = errorMessage;
+      }
+    })
+}
+
+validateFormMulta();
+

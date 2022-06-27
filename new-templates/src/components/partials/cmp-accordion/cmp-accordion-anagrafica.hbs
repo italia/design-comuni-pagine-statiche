@@ -12,7 +12,7 @@
 
 
   </div>
-  <div id="{{collapse-id}}" class="accordion-collapse collapse" role="region">
+  <div id="{{collapse-id}}" class="accordion-collapse collapse{{#if acc-open}} show{{/if}}" role="region">
     <div class="accordion-body p-0">
       {{#if onlyContact}}
       {{>cmp-info-summary/cmp-info-summary info-title="Contatti" info=true info-list=controllare-dati-appuntamento.contatti-altro-genitore.info class="has-border" disservizio-page=true}}

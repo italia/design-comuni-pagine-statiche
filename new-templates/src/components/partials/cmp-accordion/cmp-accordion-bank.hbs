@@ -10,9 +10,9 @@
       </span>
     </button>
   </div>
-  <div id="{{collapse-id}}" class="accordion-collapse collapse" role="region">
+  <div id="{{collapse-id}}" class="accordion-collapse collapse{{#if acc-open}} show{{/if}}" role="region">
     <div class="accordion-body p-0">
-      {{>cmp-info-summary/cmp-info-summary info-title=info-title info=true info-list=conto-bancario class="border border-light p-3 p-lg-4 mb-30"}}
+      {{>cmp-info-summary/cmp-info-summary info-title=info-title info=true info-list=conto-bancario class="border border-light p-3 p-lg-4"}}
     </div>
   </div>
 </div>

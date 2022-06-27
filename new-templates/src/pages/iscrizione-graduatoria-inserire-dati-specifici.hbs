@@ -27,8 +27,7 @@
       </div>
       <div class="col-12 col-lg-8 offset-lg-1 mt-2 mt-lg-0">
         <div class="steppers-content" aria-live="polite">
-          <div>
-
+  
             {{#>cmp-card/cmp-card-content-box
             class="p-big"
             id-title="school-choice"
@@ -39,9 +38,7 @@
             card-title="Seleziona Istituto"}}
             {{> partials/select/select placeholder="Scegli un'opzione" label-text="Seleziona Istituto" id="school-option" label-hidden=true select-option-list=inserire-dati-specifici}}
             {{/cmp-card/cmp-card-content-box}}
-          </div>
 
-          <div>
             {{#>cmp-card/cmp-card-content-box
             class="p-big"
             id-title="religion-choice"
@@ -54,9 +51,7 @@
             religione cattolica?"}}
             {{> cmp-card-radio/cmp-card-radio id='religione'}}
             {{/cmp-card/cmp-card-content-box}}
-          </div>
-
-          <div>
+  
             {{#>cmp-card/cmp-card-content-box
             class="p-big"
             id-title="outings-choice"
@@ -68,9 +63,7 @@
             subtitle="Autorizzi le uscite didattiche?"}}
             {{> cmp-card-radio/cmp-card-radio id='uscite'}}
             {{/cmp-card/cmp-card-content-box}}
-          </div>
 
-          <div>
             {{#>cmp-card/cmp-card-content-box
             class="p-big"
             id-title="media-choice"
@@ -82,7 +75,7 @@
             subtitle="Autorizzi la scuola a produrre e utilizzare foto e video in cui compare tua figlia o tuo figlio?"}}
             {{> cmp-card-radio/cmp-card-radio id='multimedia'}}
             {{/cmp-card/cmp-card-content-box}}
-          </div>
+            
           {{> cmp-nav-steps/cmp-nav-steps save="true" saveBtn=true}}
         </div>
       </div>

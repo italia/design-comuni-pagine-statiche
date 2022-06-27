@@ -1,7 +1,9 @@
 <div class="cmp-timeline">
   <h2 class="title-xxlarge mb-3" id="{{id-title}}">{{title}}</h2>
   {{#if description}}
-    <p class="text-paragraph mb-3 {{#if lora}}lora{{/if}}">{{description}}</p>
+    <div class="richtext-wrapper {{#if lora}}lora{{/if}}">
+      <p>{{description}}</p>
+    </div>
   {{/if}}
   <div class="calendar-vertical mb-3">
     {{#each timeline as |date|}}

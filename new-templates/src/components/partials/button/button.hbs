@@ -18,7 +18,7 @@
 </a>
 {{else}}
 <button type="button" data-bs-toggle="modal" data-bs-target="#{{modalId}}"
-{{#if aria-label}}aria-label="{{aria-label}} {{#if btn-label-text}}documento{{/if}}"{{/if}}
+{{#if aria-label}}aria-label="{{aria-label}}{{#if btn-label-text}} documento{{/if}}"{{/if}}
 class="btn
   {{#if primary}}btn-primary{{/if}}
   {{#if success}}btn-success{{/if}}
@@ -33,7 +33,7 @@ class="btn
 
 {{#if iconBtn}}
   <span class="rounded-icon">
-    <svg class="icon {{#if iconWhite}}icon-white{{else}}icon-primary{{/if}} {{#if sm}}icon-sm{{/if}} {{#if xs}}icon-xs{{/if}} mb-1 {{class-icon}}">
+    <svg class="icon {{#if iconWhite}}icon-white{{else}}icon-primary{{/if}} {{#if sm}}icon-sm{{/if}} {{#if xs}}icon-xs{{/if}} {{class-icon}}">
       <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#{{iconBtn}}"></use>
     </svg>
   </span>

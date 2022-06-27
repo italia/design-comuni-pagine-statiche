@@ -93,7 +93,6 @@
     & small {
       @include font(14, 14);
       line-height: 1;
-      display: block;
     }
 
     &:before {

@@ -18,7 +18,7 @@
           "completed": false
         },
         {
-          "title": "Riepilogo",
+          "title": "Pagamento",
           "active": false,
           "completed": false
         }
@@ -40,7 +40,7 @@
           "completed": false
         },
         {
-          "title": "Riepilogo",
+          "title": "Pagamento",
           "active": false,
           "completed": false
         }
@@ -62,7 +62,7 @@
           "completed": false
         },
         {
-          "title": "Riepilogo",
+          "title": "Pagamento",
           "active": false,
           "completed": false
         }
@@ -84,34 +84,7 @@
           "completed": true
         },
         {
-          "title": "Riepilogo",
-          "active": true,
-          "completed": false
-        }
-      ],
-      "step-5": [
-        {
-          "title": "Informativa sulla privacy",
-          "active": false,
-          "completed": true
-        },
-        {
-          "title": "Dati generali",
-          "active": false,
-          "completed": true
-        },
-        {
-          "title": "Riepilogo",
-          "active": false,
-          "completed": true
-        },
-        {
-          "title": "Preferenze",
-          "active": false,
-          "completed": true
-        },
-        {
-          "title": "Anteprima",
+          "title": "Pagamento",
           "active": true,
           "completed": false
         }
@@ -216,22 +189,66 @@
         }
       ]
     },
+    "inserire-dati-specifici":{
+      "riepilogo-multa":[
+        {
+          "name":"Codice avviso",
+          "description":"1234 5678 9012 3456 78"
+        },
+        {
+          "name":"Ente creditore",
+          "description":"Comune di Reggio Emilia"
+        },
+        {
+          "name":"Codice fiscale ente creditore",
+          "description":"00154902351"
+        },
+        {
+          "name":"Targa veicolo",
+          "description":"CK 345 HB"
+        },
+        {
+          "name":"Data rilevazione",
+          "description":"16/08/2022"
+        },
+        {
+          "name":"Importo entro 60 gg",
+          "description":"41,00 €"
+        },
+        {
+          "name":"Spese notfica",
+          "description":"13,88 €"
+        },
+        {
+          "name":"Spese procedura",
+          "description":"0,00 €"
+        },
+        {
+          "name":"Importo totale entro 60 gg",
+          "description":"54,88 €"
+        }
+      ],
+      "error-list":[
+        {
+          "text": "Codice Avviso",
+          "id": "warning-code"
+        }
+      ]
+    },
     "confermare-riepilogo-informazioni-inserite":{
       "info-1":{
         "list":[
           {
             "name": "Codice Fiscale",
             "description": "GLABNC72H25H501Y",
-            "summary-item-class":true,
-            "border-unset":true
+            "summary-item-class":true
           }
         ],
         "indirizzo":[
           {
             "name": "Residenza",
             "description": "Via Roma 16, 00100 Roma, It",
-            "summary-item-class":true,
-            "border-unset":true
+            "summary-item-class":true
           }
         ]
       },
@@ -458,7 +475,7 @@
           },
           {
             "num": "8",
-            "title": "Pagamento contravvenzione",
+            "title": "Pagamento multa",
             "date": "24/06/2021",
             "icon": "folder-pay.svg",
             "icon-label": "Pagato",
@@ -475,7 +492,7 @@
           },
           {
             "num": "9",
-            "title": "Pagamento contravvenzione",
+            "title": "Pagamento multa",
             "date": "10/05/2021",
             "icon": "folder-pay.svg",
             "icon-label": "Pagato",
@@ -492,7 +509,7 @@
           },
           {
             "num": "10",
-            "title": "Pagamento contravvenzione",
+            "title": "Pagamento multa",
             "date": "01/10/2022",
             "icon": "folder-pay.svg",
             "icon-label": "Pagato",

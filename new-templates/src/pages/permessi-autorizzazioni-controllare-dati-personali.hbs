@@ -6,9 +6,12 @@
         {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi" link3="Permessi mobilità"}}
         {{> cmp-heading/cmp-heading
         title="Permesso ZTL"
-        subTitle="Inserisci le informazioni necessarie per richiedere il permesso ZTL. <span class='d-block d-lg-inline'>Potrai ricontrollare tutti i dati
-        nel riepilogo, prima di inviare la richiesta.</span>"
-        description="Hai bisogno di assistenza? <a class='title-small-semi-bold t-primary' aria-label='Vai a contattaci per ricevere assistenza' title='Vai a contattaci per ricevere assistenza' href='#'>Contattaci</a>"
+        subTitle="Inserisci le informazioni necessarie per richiedere il permesso ZTL. <span
+          class='d-block d-lg-inline'>Potrai ricontrollare tutti i dati
+          nel riepilogo, prima di inviare la richiesta.</span>"
+        description="Hai bisogno di assistenza? <a class='title-small-semi-bold t-primary'
+          aria-label='Vai a contattaci per ricevere assistenza' title='Vai a contattaci per ricevere assistenza'
+          href='#'>Contattaci</a>"
         desClass="mt-lg-2"
         }}
       </div>
@@ -30,20 +33,20 @@
         </div>
         <div class="col-12 col-lg-8 offset-lg-1 mt-2 mt-lg-0">
 
-            {{> cmp-alert-box/cmp-alert-box warning=true message="Ci sono alcune informazioni mancanti o errate"  
-              alertSpan-class="title-small-semi-bold"
-              description-class="mb-1"
-              class="mb-50"
-              alert-link-list=permessi-autorizzazioni.controllare-dati-personali.alert-list}}
+          {{> cmp-alert-box/cmp-alert-box warning=true message="Ci sono alcune informazioni mancanti o errate"
+          alertSpan-class="title-small-semi-bold"
+          description-class="mb-1"
+          class="mb-50"
+          alert-link-list=permessi-autorizzazioni.controllare-dati-personali.alert-list}}
 
-            {{#>cmp-card/cmp-card-content-box
-            h2-class="mb-1"
-            bg-grey=true
-            card-title="Richiedente"
-            id-title="applicant-info"
-            subtitle="Informazione su di te"
-            margin-class="mb-40"
-            }}
+          {{#>cmp-card/cmp-card-content-box
+          h2-class="mb-1"
+          bg-grey=true
+          card-title="Richiedente"
+          id-title="applicant-info"
+          subtitle="Informazione su di te"
+          margin-class="mb-40"
+          }}
 
             {{> cmp-info-button-card/cmp-info-button-card
             big-title="Mario Rossi"
@@ -54,6 +57,7 @@
             warning=true
             btn-label-text="Aggiungi"
             btnDocumenti=true
+            acc-open=true
             anagrafica=permessi-autorizzazioni.controllare-dati-personali.anagrafica
             indirizzo=permessi-autorizzazioni.controllare-dati-personali.indirizzo
             contatti=permessi-autorizzazioni.controllare-dati-personali.contatti
@@ -61,11 +65,11 @@
             }}
             {{/cmp-card/cmp-card-content-box}}
 
-            {{#>cmp-card/cmp-card-content-box bg-grey=true
-            card-title="Veicolo"
-            h2-class="mb-1"
-            id-title="vehicles-info"
-            subtitle="Seleziona o aggiungi il veicolo per il quale vuoi richiedere il permesso"}}
+          {{#>cmp-card/cmp-card-content-box bg-grey=true
+          card-title="Veicolo"
+          h2-class="mb-1"
+          id-title="vehicles-info"
+          subtitle="Seleziona o aggiungi il veicolo per il quale vuoi richiedere il permesso"}}
 
             {{> cmp-info-button-card/cmp-info-button-card
             radio=true
@@ -80,27 +84,30 @@
             modalId="modal-vehicle-data"
             btn-label-text="Aggiungi"
             vehicle-name="Dati veicolo"
+            acc-open=true
             vehicle-data=permessi-autorizzazioni.controllare-dati-personali.vehicle-1
             }}
 
-            {{> cmp-info-button-card/cmp-info-button-card
-            radio=true
-            group="vehicles"
-            idRadio="vehicle2"
-            radio-title="Opel Zafira Life"
-            label-2="Targa <br> <span>EF 123 JR</span>"
-            show-more-vehicle="true"
-            collapse-id="collapse-benef-2"
-            modalId="modal-vehicle-data"
-            vehicle-name="Opel Zafira Life"
-            vehicle-data=permessi-autorizzazioni.controllare-dati-personali.vehicle-2
-            }}
+          {{> cmp-info-button-card/cmp-info-button-card
+          radio=true
+          group="vehicles"
+          idRadio="vehicle2"
+          radio-title="Opel Zafira Life"
+          label-2="Targa <br> <span>EF 123 JR</span>"
+          show-more-vehicle="true"
+          collapse-id="collapse-benef-2"
+          modalId="modal-vehicle-data"
+          vehicle-name="Opel Zafira Life"
+          vehicle-data=permessi-autorizzazioni.controllare-dati-personali.vehicle-2
+          }}
 
-            {{>partials/button/button label="Aggiungi veicolo" link="true"
-            icon-url="./assets/bootstrap-italia/dist/svg/sprite.svg#it-close-circle"
-            icon-class="plus-icon icon-primary ion-sm"
-            class="plus-text mt-20"}}
-            {{/cmp-card/cmp-card-content-box}}
+          {{>partials/button/button label="Aggiungi veicolo"
+          iconBtn="it-plus-circle"
+          sm=true
+          class="plus-text mt-20 p-0"
+           aria-label="Vai alla modale aggiungi veicolo"}}
+
+          {{/cmp-card/cmp-card-content-box}}
 
           {{>cmp-nav-steps/cmp-nav-steps saveBtn=true
           save="true"

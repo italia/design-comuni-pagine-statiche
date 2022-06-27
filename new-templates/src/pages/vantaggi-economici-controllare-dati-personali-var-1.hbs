@@ -30,12 +30,6 @@
         </div>
         <div class="col-12 col-lg-8 offset-lg-1 mt-2 mt-lg-0">
 
-            {{> cmp-alert-box/cmp-alert-box warning=true message="Ci sono alcune informazioni mancanti o errate"  
-              alertSpan-class="title-small-semi-bold"
-              description-class="mb-1"
-              class="mb-50"
-              alert-link-list=vantaggi-economici.controllare-dati-personali.anagrafica.alert-list-2}}
-
             {{#>cmp-card/cmp-card-content-box
             h2-class="mb-1"
             bg-grey=true
@@ -52,8 +46,7 @@
             indirizzo=vantaggi-economici.controllare-dati-personali-var-1.indirizzo.info
             contatti=vantaggi-economici.controllare-dati-personali-var-1.contatti.info
             documenti=vantaggi-economici.controllare-dati-personali-var-1.documenti.info
-            collapse-id="collapse-1"
-            modalId="modal-address"}}
+            collapse-id="collapse-1"}}
             {{/cmp-card/cmp-card-content-box}}
 
             {{#>cmp-card/cmp-card-content-box bg-grey=true
@@ -72,10 +65,12 @@
             collapse-id="collapse2"
             }}
             
-            {{>partials/button/button label="Aggiungi minore" link=true icon-url="./assets/bootstrap-italia/dist/svg/sprite.svg#it-close-circle"
-            icon-class="plus-icon icon-primary icon-sm"
-            class="plus-text mt-20"
-            modalId="modal-registry-office"}}
+          {{>partials/button/button label="Aggiungi minore"
+          iconBtn="it-plus-circle"
+          sm=true
+          class="plus-text mt-20 p-0"
+          modalId="modal-minor"
+           aria-label="Vai alla modale aggiungi minore"}}
             {{/cmp-card/cmp-card-content-box}}
 
             {{#>cmp-card/cmp-card-content-box bg-grey=true
@@ -88,6 +83,7 @@
 
             {{> cmp-info-button-card/cmp-info-button-card big-title="ISEE: 18.000,00€" label-2="Scadenza ISEE <br>
             <span>01/03/2022</span>"
+            isee-success=true
             show-more-isee="true"
             collapse-id="collapse2"
             modalId="modal-isee"
@@ -109,7 +105,7 @@
             conto-bancario=vantaggi-economici.controllare-dati-personali-var-1.conto-bancario-1.info
             info-title="Intesa Sanpaolo"
             collapse-id="collapse-bank-1"
-            warning=true
+            acc-open=true
             modalId="modal-bank-account"
             }}
 
@@ -125,11 +121,12 @@
            }}
 
 
-            {{>partials/button/button label="Aggiungi conto bancario" link=true icon-url="./assets/bootstrap-italia/dist/svg/sprite.svg#it-close-circle"
-            icon-class="plus-icon icon-primary icon-sm"
-            class="plus-text mt-20"
-            modalId="modal-bank-account"
-            }}
+          {{>partials/button/button label="Aggiungi conto bancario"
+          iconBtn="it-plus-circle"
+          sm=true
+          class="plus-text mt-20 p-0"
+          modalId="modal-bank-account"
+           aria-label="Vai alla modale aggiungi conto bancario"}}
 
             {{/cmp-card/cmp-card-content-box}}
 
@@ -152,13 +149,8 @@
     </div>
   </div>
 
-
-  {{>cmp-modal/modal-isee}}
-
-  {{>cmp-modal/modal-address}}
-
-  {{>cmp-modal/modal-save}}
-  {{>cmp-modal/modal-registry-office documents=true}}
   {{>cmp-modal/modal-bank-account}}
+  {{>cmp-modal/modal-minor}}
+  {{>cmp-modal/modal-save}}
 </main>
 {{/base/base }}

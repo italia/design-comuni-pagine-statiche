@@ -207,25 +207,21 @@
         "alert-list": [
           {
             "text": "Richiedente - Indirizzo",
-            "id": "applicant-info"
+            "id": "applicant-warning"
           },
           {
             "text": "Minore",
-            "id": "minor"
+            "id": "minor-warning"
           },
           {
             "text": "Conto bancario per l’accredito",
-            "id": "bank-account"
+            "id": "bank-warning"
           }
         ],
         "alert-list-2": [
           {
-            "text": "Richiedente - Indirizzo",
-            "id": "applicant-info"
-          },
-          {
             "text": "Conto bancario per l’accredito",
-            "id": "bank-account"
+            "id": "bank-warning"
           }
         ]
       },
@@ -239,7 +235,8 @@
             "name": "Domicilio ",
             "description": "Yellow Street 16, 00100 Liverpool, UK",
             "warning": true,
-            "warning-message": "Domicilio non valido"
+            "warning-message": "Domicilio non valido",
+            "warningId": "applicant-warning"
           }
         ]
       },
@@ -330,7 +327,8 @@
             "description": "",
             "warning":true,
             "sucess":false,
-            "warning-message":"Dato mancante"
+            "warning-message":"Dato mancante",
+            "warningId": "bank-warning"
           },
           {
             "name": "Indirizzo istituto",
@@ -486,16 +484,16 @@
           },
           {
             "name": "Filiale",
-            "description": "",
-            "warning": true,
-            "success": false,
+            "description": "Filiale di Roma",
+            "success": true,
             "warning-message": "Dato mancante",
-            "success-message": "Documento inserito con successo"
+            "success-message": "Documento inserito con successo",
+            "warningId": "bank-warning"
 
           },
           {
             "name": "Indirizzo istituto",
-            "description": "Via ROma 16, 00100 Roma, IT"
+            "description": "Via Roma 16, 00100 Roma, IT"
           },
           {
             "name": "Iban",
@@ -515,14 +513,14 @@
           },
           {
             "name": "Filiale",
-            "description": "",
+            "description": "Filiale di Roma",
             "success": true,
             "success-message": "Dato inserito con successo"
 
           },
           {
             "name": "Indirizzo istituto",
-            "description": "Via ROma 16, 00100 Roma, IT"
+            "description": "Via Roma 16, 00100 Roma, IT"
           },
           {
             "name": "Iban",

@@ -4,9 +4,15 @@
     <div class="row justify-content-center">
       <div class="col-12 col-lg-10">
         {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi" link3="Pagamenti"}}
-        {{> cmp-heading/cmp-heading title="Calcolo IMU"}}
       </div>
+    </div>
+  </div>
 
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+          <h1 class="title-xxxlarge mb-4">Calcolo IMU</h1>
+        </div>
       <div class="col-12">
         {{> cmp-info-progress/cmp-info-progress
         step-list=pagamenti-dovuti.info-progress.step-1
@@ -16,10 +22,11 @@
         }}
       </div>
     </div>
+  </div>
 
+  <div class="container">
     <div class="row justify-content-center">
       <div class="col-12 col-lg-8">
-        {{#>cmp-card/cmp-card-content-box header-m0=true}}
         <p class="text-paragraph mt-2 mt-lg-3 mb-3 mb-md-4">
           Il Comune di Firenze gestisce i dati personali forniti e liberamente comunicati sulla base dell’articolo 13 del Regolamento (UE) 2016/679 General data protection regulation (Gdpr) e degli articoli 13 e successive modifiche e integrazione del decreto legislativo (di seguito d.lgs) 267/2000 (Testo unico enti locali).
         </p>
@@ -34,7 +41,6 @@
         </div>
 
         {{> partials/button/button label="Avanti" aria-label="Vai allo step successivo" primary=true class=" mobile-full mb-2 mb-md-5"}}
-        {{/cmp-card/cmp-card-content-box}}
       </div>
     </div>
   </div>

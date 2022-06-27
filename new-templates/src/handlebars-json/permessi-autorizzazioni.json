@@ -202,7 +202,8 @@
         {
           "name": "Patente auto",
           "warning": true,
-          "warning-message": "Documento mancante"
+          "warning-message": "Documento mancante",
+          "warningId": "applicant-warning"
         }
       ],
       "vehicle-1": [
@@ -233,7 +234,8 @@
         {
           "name": "Dichiarazione di concessione",
           "warning": true,
-          "warning-message": "Documento mancante"
+          "warning-message": "Documento mancante",
+          "warningId": "vehicles-warning"
         },
         {
           "name": "Libretto di circolazione",
@@ -291,11 +293,11 @@
       "alert-list": [
         {
           "text": "Richiedente - Documenti",
-          "id": "applicant-info"
+          "id": "applicant-warning"
         },
         {
           "text": "Veicolo",
-          "id": "vehicles-info"
+          "id": "vehicles-warning"
         }
       ]
     },

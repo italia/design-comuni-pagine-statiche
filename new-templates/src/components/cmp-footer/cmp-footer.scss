@@ -24,6 +24,27 @@
     }
   }
 
+  .it-brand-wrapper {
+    padding: 0;
+  }
+
+  .logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    @include media-breakpoint-up(sm) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    .ue-logo {
+      max-width: 50%;
+    }
+  }
+
   a {
     @include font(16, 16);
     text-decoration: underline;

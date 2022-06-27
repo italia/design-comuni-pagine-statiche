@@ -232,7 +232,8 @@
           "name": "Certificato disabilità",
           "description": "",
           "warning": true,
-          "warning-message": "Documento mancante"
+          "warning-message": "Documento mancante",
+          "warningId": "beneficiary-warning"
         },
         {
           "name": "Certificato dieta patologica",
@@ -326,7 +327,7 @@
       "alert-list": [
         {
           "text": "Beneficiario - Documenti",
-          "id": "beneficiary-info"
+          "id": "beneficiary-warning"
         }
       ]
     },

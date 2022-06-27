@@ -10,7 +10,7 @@
       </span>
     </button>
   </div>
-  <div id="{{collapse-id}}" class="accordion-collapse collapse" role="region">
+  <div id="{{collapse-id}}" class="accordion-collapse collapse{{#if acc-open}} show{{/if}}" role="region">
     <div class="accordion-body p-0">
       {{#if anagrafica-indirizzo}}
         {{>cmp-info-summary/cmp-info-summary info-title="Anagrafica" info=true info-list=info-anagrafica class="has-border"}}

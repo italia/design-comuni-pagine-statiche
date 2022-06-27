@@ -20,6 +20,10 @@
         <div class="text-paragraph-small">{{info.name}}</div>
         {{/if}}
         {{#if info.warning}}
+          {{#if info.description}}
+            <p class="data-text {{#if info.summary}}summary-inline{{/if}}">
+            {{info.description}}</p>
+          {{/if}}
         <p class="fw-semibold data-text description-alert d-flex align-items-center border-light">
           <span class="d-flex align-items-center">
             <svg class="icon icon-sm icon-warning">

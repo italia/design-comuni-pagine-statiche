@@ -6,8 +6,8 @@
         {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi" link3="Pagamenti"}}
         {{> cmp-heading/cmp-heading
         title="Pagamento multa"
-        subTitle="Inserisci le informazioni necessarie per il pagamento della multa. Potrai ricontrollare tutti i dati
-        nel riepilogo, prima di effettuare il pagamento."
+        subTitle="Inserisci le informazioni necessarie per il pagamento della multa.<span class='d-flex d-lg-block mb-lg-2'>Potrai ricontrollare tutti i dati
+        nel riepilogo, prima di effettuare il pagamento.</span>"
         description="Hai bisogno di assistenza? <a href='' class='title-small-semi-bold t-primary' aria-label='Vai alla pagina Contatti' title='Vai alla pagina Contatti'>Contattaci</a>"
         desClass="mb-8"
         }}
@@ -27,9 +27,9 @@
         <div class="col-12 col-lg-8">
           <p class="text-paragraph-small mt-3 mb-40 mb-lg-25">I campi contraddistinti dal simbolo asterisco sono
             obbligatori</p>
-          <div>
+        
             {{#>cmp-card/cmp-card-content-box
-            class="p-big"
+            class="p-4 pt-lg-30 pb-lg-30 pl-lg-30 pr-lg-30"
             bg-grey=true
             h2-class="mb-0"
             margin-class="mb-0"
@@ -40,11 +40,13 @@
             <p class="subtitle-small pb-4 mb-0">Inserisci il codice di 18 cifre presente nell’avviso della multa.
               <a href="#" class="t-primary d-block d-lg-inline" aria-label="Vai alla pagina Dove trovare il codice" title="Vai alla pagina Dove trovare il codice">Dove trovare il codice</a>
             </p>
+            <div class="bg-white">
             {{>partials/input/input type="text" id="code" name="code" label="Codice avviso" required=true
             formClass="mb-0 mt-0"}}
+            </div>
             {{/cmp-card/cmp-card-content-box}}
           </div>
-          {{>cmp-nav-steps/cmp-nav-steps save="true" saveBtn=true
+          {{>cmp-nav-steps/cmp-nav-steps save="true" saveBtn=true validate=true
           modalId="modal-save-1"
           }}
         </div>
@@ -61,10 +63,9 @@
       </div>
     </div>
   </div>
-  {{>cmp-modal/modal-documents}}
-
-  {{>cmp-modal/modal-isee}}
-
+  
   {{>cmp-modal/modal-save}}
 </main>
+
+
 {{/base/base }}

@@ -362,7 +362,7 @@
           "description": "documento_ISEE-2019.pdf",
           "warning": true,
           "success": false,
-          "warningId": "isee-info",
+          "warningId": "isee-warning",
           "warning-message": "Documento scaduto",
           "success-message": "Documento inserito con successo"
         }
@@ -374,7 +374,7 @@
         },
         {
           "text": "ISEE",
-          "id": "isee-info"
+          "id": "isee-warning"
         }
       ]
     },

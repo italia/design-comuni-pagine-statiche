@@ -25,7 +25,7 @@
       </div>
       <div class="col-12 col-lg-8 offset-lg-1">
         <div class="steppers-content" aria-live="polite">
-          <div>
+       
             <p class="text-paragraph-small mb-40">I campi contraddistinti dal simbolo asterisco sono obbligatori</p>
             {{#>cmp-card/cmp-card-content-box
             class="p-big p-4"
@@ -39,9 +39,7 @@
             {{> partials/select/select placeholder="Seleziona un'opzione" select-option-list=inserire-dati-specifici
             id="select-school" label-hidden=true label-text="Scegli la scuola"}}
             {{/cmp-card/cmp-card-content-box}}
-          </div>
 
-          <div class="mt-4">
             {{#>cmp-card/cmp-card-content-box
             class="p-big"
             id-title="rate-choice"
@@ -61,9 +59,7 @@
             label-5="100%"
             }}
             {{/cmp-card/cmp-card-content-box}}
-          </div>
 
-          <div class="mt-4">
             {{#>cmp-card/cmp-card-content-box
             class="p-big"
             id-title="outings-choice"
@@ -82,9 +78,7 @@
             label-4="30%"
             label-5="40%"}}
             {{/cmp-card/cmp-card-content-box}}
-          </div>
-
-          <div class="mt-4">
+   
             {{#>cmp-card/cmp-card-content-box
             class="p-big"
             id-title="attendance"
@@ -98,9 +92,7 @@
             subtitle="Indica i giorni di frequenza del servizio"}}
             {{> cmp-card-radio/cmp-card-radio percentage=true frequency=true id='frequency'}}
             {{/cmp-card/cmp-card-content-box}}
-          </div>
 
-          <div class="mt-4">
             {{#>cmp-card/cmp-card-content-box
             class="p-big"
             id-title="different-diet"
@@ -113,7 +105,7 @@
             subtitle="Indica la dieta per il beneficiario"}}
             {{> cmp-card-radio/cmp-card-radio percentage=true frequency=true diet=true id='diet'}}
             {{/cmp-card/cmp-card-content-box}}
-          </div>
+  
           {{> cmp-nav-steps/cmp-nav-steps save="true" saveBtn=true}}
         </div>
       </div>

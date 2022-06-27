@@ -1,0 +1,84 @@
+{{#>base/base title="Archetipo: Pagamenti dovuti" headerActive3=true}}
+<main>
+  <div class="container" id="main-container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi" link3="Pagamenti"}}
+        {{> cmp-heading/cmp-heading
+        title="Pagamento multa"
+        subTitle="Inserisci le informazioni necessarie per il pagamento della multa.<span
+          class='d-flex d-lg-block mb-lg-2'>Potrai ricontrollare tutti i dati
+          nel riepilogo, prima di effettuare il pagamento.</span>"
+        description="Hai bisogno di assistenza? <a href='' class='title-small-semi-bold t-primary'
+          aria-label='Vai alla pagina Contatti' title='Vai alla pagina Contatti'>Contattaci</a>"
+        desClass="mb-8"
+        }}
+      </div>
+
+      <div class="col-12">
+        {{> cmp-info-progress/cmp-info-progress
+        step-list=pagamenti-dovuti-multa.info-progress.step-3
+        step-num="3"
+        step-tot="4"
+        step-title="Dati specifici del servizio"
+        }}
+      </div>
+    </div>
+    <div class="steppers-content" aria-live="polite">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8">
+          {{> cmp-alert-box/cmp-alert-box
+          warning=true
+          message="Ci sono alcune informazioni mancanti o errate"
+          alertSpan-class="title-small-semi-bold"
+          description-class="mb-1"
+          class="mb-5"
+          alert-link-list=pagamenti-dovuti-multa.inserire-dati-specifici.error-list
+          }}
+
+            <p class="text-paragraph-small mb-40 mb-lg-25">I campi contraddistinti dal simbolo asterisco sono
+              obbligatori</p>
+            <div>
+              {{#>cmp-card/cmp-card-content-box
+              class="p-4 pt-lg-30 pb-lg-30 pl-lg-30 pr-lg-30"
+              bg-grey=true
+              h2-class="mb-1 mb-lg-3"
+              id-title="warning-code"
+              margin-class="mb-0"
+              header-m0=true
+              card-title="Codice avviso"
+              required-icon=true
+              }}
+              <p class="subtitle-small mb-4 mb-0">Inserisci il codice di 18 cifre presente nell’avviso della multa.
+                <a href="#" class="t-primary d-block d-lg-inline" aria-label="Vai alla pagina Dove trovare il codice"
+                  title="Vai alla pagina Dove trovare il codice">Dove trovare il codice</a>
+              </p>
+
+                {{>partials/input/input type="text" id="code" name="code" label="Codice avviso" required=true
+                formClass="mb-0 mt-0" inputClass="is-invalid"}}
+                <div class="form-feedback just-validate-error-label" id="code-error-0">Questo campo è richiesto</div>
+
+              {{/cmp-card/cmp-card-content-box}}
+            </div>
+            {{>cmp-nav-steps/cmp-nav-steps save="true" saveBtn=true 
+            }}
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-grey-card shadow-contacts">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6 offset-lg-3 p-contacts">
+          {{>cmp-contacts/cmp-contacts}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  {{>cmp-modal/modal-save}}
+</main>
+{{/base/base }}

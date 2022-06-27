@@ -1,0 +1,103 @@
+{{#>base/base title="Archetipo: Pagamenti dovuti" headerActive3=true}}
+<main>
+  <div class="container" id="main-container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi" link3="Pagamenti"}}
+        {{> cmp-heading/cmp-heading
+        title="Pagamento multa"
+        subTitle="Inserisci le informazioni necessarie per il pagamento della multa.<span
+          class='d-lg-block mb-lg-2'>Potrai ricontrollare tutti i dati
+          nel riepilogo, prima di effettuare il pagamento.</span>"
+        description="Hai bisogno di assistenza? <a href='' class='title-small-semi-bold t-primary'
+          aria-label='Vai alla pagina Contatti' title='Vai alla pagina Contatti'>Contattaci</a>"
+        desClass="mb-8"
+        }}
+      </div>
+
+      <div class="col-12">
+        {{> cmp-info-progress/cmp-info-progress
+        step-list=pagamenti-dovuti-multa.info-progress.step-3
+        step-num="3"
+        step-tot="4"
+        step-title="Dati specifici del servizio"
+        }}
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+
+          <p class="text-paragraph-small mt-3 mb-40 mb-lg-25">I campi contraddistinti dal simbolo asterisco sono
+            obbligatori</p>
+
+          {{#>cmp-card/cmp-card-content-box
+          class="p-4 pt-lg-30 pb-lg-30 pl-lg-30 pr-lg-30"
+          bg-grey=true
+          h2-class="mb-0"
+          margin-class="mb-0"
+          header-m0=true
+          card-title="Codice avviso"
+          required-icon=true
+          }}
+
+          <p class="subtitle-small pb-3 mb-4">Inserisci il codice di 18 cifre presente nell’avviso della multa.
+            <a href="#" class="t-primary d-block d-lg-inline mt-1 " aria-label="Vai alla pagina Dove trovare il codice"
+              title="Vai alla pagina Dove trovare il codice">Dove trovare il codice</a>
+          </p>
+
+     
+            {{>partials/input/input type="text" id="code" name="code" label="Codice avviso" required=true
+            formClass="mb-4 mb-lg-30 mt-0" inputClass="just-validate-success-field" value="1234 5678 9012 3456 78 "}}
+
+
+
+          {{>cmp-info-summary/cmp-info-summary-no-modify
+          class="p-3 p-lg-4 mb-4 mb-lg-30"
+          info=true
+          info-list=pagamenti-dovuti-multa.inserire-dati-specifici.riepilogo-multa
+          }}
+
+          <div class="bg-white p-3 p-lg-4">
+            <h2 class="title-xxlarge">Calcolo importo</h2>
+            <p class="text-paragraph mb-4">
+              Per il calcolo del corretto importo da pagare, inserisci la data in cui hai ricevuto l'avviso. Il
+              conteggio dei giorni parte dalla data successiva alla ricezione dell'avviso.</p>
+
+
+            {{>partials/input-calendar/input-calendar
+            class="px-0"
+            form-class="mb-4"
+            label-text="Inserisci la data di ricevuta avviso" required=true}}
+
+
+            <p class="title-large-semi-bold mb-2 mb-lg-4">Importo dovuto <span class="d-block d-lg-inline">38,42 €</span>
+            </p>
+
+            <p class="mb-0">Stai pagando <strong>entro 5 giorni</strong> dalla ricezione dell'avviso. L'importo da pagare è stato <strong>ridotto del 30%</strong>.</p>
+          </div>
+          {{/cmp-card/cmp-card-content-box}}
+
+
+          {{>cmp-nav-steps/cmp-nav-steps save="true" saveBtn=true }}
+   
+      </div>
+    </div>
+  </div>
+
+
+  <div class="bg-grey-card shadow-contacts">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6 offset-lg-3 p-contacts">
+          {{>cmp-contacts/cmp-contacts}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{>cmp-modal/modal-save}}
+</main>
+{{/base/base }}

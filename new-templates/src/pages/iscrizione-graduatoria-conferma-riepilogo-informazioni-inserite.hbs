@@ -39,7 +39,7 @@
         bg-grey=true
         h3-title=true
         h3-class="mb-0"
-        margin-class="mb-4"
+        margin-class="mb-40 mb-lg-4"
         card-title="Richiedente" }}
 
         {{>cmp-info-summary/cmp-info-summary
@@ -72,13 +72,12 @@
 
         {{/cmp-card/cmp-card-content-box}}
 
-        <div class="pt-3 pt-lg-0"">
           {{#>cmp-card/cmp-card-content-box
           class="mb-0"
           bg-grey=true
           h3-title=true
           h3-class="mb-0"
-          margin-class="mb-4"
+          margin-class="mb-40 mb-lg-4"
           card-title="Beneficiario" }}
 
           {{>cmp-info-summary/cmp-info-summary
@@ -102,15 +101,13 @@
           info-list=documenti-figli.info
           }}
           {{/cmp-card/cmp-card-content-box}}
-        </div>
 
-        <div class="pt-3 pt-lg-0"">
           {{#>cmp-card/cmp-card-content-box
           class="mb-0"
           bg-grey=true
           h3-title=true
           h3-class="mb-0"
-          margin-class="mb-40"
+          margin-class="mb-40 mb-lg-4"
           card-title="Altro Genitore" }}
 
           {{>cmp-info-summary/cmp-info-summary
@@ -141,14 +138,14 @@
           info-list=allegati-altro-genitore.info
           }}
           {{/cmp-card/cmp-card-content-box}}
-        </div>
 
-        <div class="pt-3 pt-lg-0"">
+
           {{#>cmp-card/cmp-card-content-box
           class="mb-0"
           bg-grey=true
           h3-title=true
           h3-class="mb-0"
+          margin-class="mb-40"
           card-title="ISEE" }}
           {{>cmp-info-summary/cmp-info-summary
           class="p-4"
@@ -157,11 +154,10 @@
           info-list=isee-familiare.info
           }}
           {{/cmp-card/cmp-card-content-box}}
-        </div>
+    
 
-        <h2 class="title-xxlarge mb-4 mt-40">Preferenze di servizio</h2>
+        <h2 class="title-xxlarge mb-4">Preferenze di servizio</h2>
 
-        <div class="mt-4">
           {{#>cmp-card/cmp-card-content-box
           bg-grey=true }}
 
@@ -172,7 +168,6 @@
           info-list=preferenze-servizio.info
           }}
           {{/cmp-card/cmp-card-content-box}}
-        </div>
 
         {{>cmp-nav-steps/cmp-nav-steps next=true saveBtn=true modalId="modal-terms" }}
       </div>
