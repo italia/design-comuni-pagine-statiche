@@ -46,6 +46,8 @@ function openNextStep() {
   if (activeStep == steps.length) {
     formWrapper.classList.add('d-none');
     cardRating.classList.add('d-none');
+    const event = new Event('feedback-submit');
+    document.dispatchEvent(event);
   }
 }
 
