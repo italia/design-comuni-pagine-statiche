@@ -18,7 +18,7 @@
       <div class="tab-pane fade show active" id="data-ex-tab1" role="tabpanel" aria-labelledby="data-ex-tab1-tab">
         <div class="row">
           <div class="col-12 col-lg-3 d-lg-block mb-4 d-none ">
-            {{>cmp-navscroll/cmp-navscroll accordion-title="INDICE DI PAGINA"
+            {{>cmp-navscroll/cmp-navscroll accordion-title="INDICE DI PAGINA" id="one"
             link-list=link-list.links-area-personale-scrivania}}
           </div>
 
@@ -104,11 +104,12 @@
           </div>
         </div>
       </div>
-      <div class="tab-pane" id="data-ex-tab2" role="tabpanel" aria-labelledby="data-ex-tab2-tab"></div>
+      <div class="tab-pane" id="data-ex-tab2" role="tabpanel"></div>
       <div class="tab-pane" id="data-ex-tab3" role="tabpanel" aria-labelledby="data-ex-tab3-tab">
         <div class="row">
           <div class="d-none d-sm-none d-lg-block col-lg-3">
             {{>cmp-navscroll/cmp-navscroll
+            id="Three"
             accordion-title="INDICE DELLA PAGINA"
             link-list=link-list.area-personale-page-3
             }}
@@ -118,6 +119,8 @@
             {{>cmp-filter/cmp-filter
             title="Pratiche"
             id-title="data-ex-tab3-tab"
+            id-input="pratiche"
+            id-dropdown="pratiche"
             }}
             {{>cmp-accordion/cmp-accordion
             accordion=accordion.area-personale-page-3.pratiche
@@ -129,6 +132,8 @@
             {{>cmp-filter/cmp-filter
             title="Pagamenti"
             id-title="payments"
+            id-input="pagamenti"
+            id-dropdown="pagamenti"
             }}
             {{>cmp-accordion/cmp-accordion
             accordion=accordion.area-personale-page-3.pagamenti
@@ -140,7 +145,7 @@
           </div>
         </div>
       </div>
-      <div class="tab-pane" id="data-ex-tab4" role="tabpanel" aria-labelledby="data-ex-tab4-tab"></div>
+      <div class="tab-pane" id="data-ex-tab4" role="tabpanel"></div>
     </div>
   </div>
   </div>

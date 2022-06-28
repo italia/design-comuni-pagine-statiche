@@ -34,7 +34,7 @@
   <div class="container">
     <div class="row pb-4 pb-lg-80">
       <div class="col-12 col-lg-3 mb-4 border-col">
-        {{>cmp-navscroll/cmp-navscroll accordion-title="INDICE DELLA PAGINA"
+        {{>cmp-navscroll/cmp-navscroll accordion-title="INDICE DELLA PAGINA" id="one"
         link-list=vantaggi-economici.trovare-informazioni-servizio.navscroll}}
       </div>
 
@@ -136,10 +136,10 @@
               <div class="card-wrapper rounded h-auto pb-0">
                 <div class="card card-teaser card-teaser-info align-items-center rounded shadow-sm p-3">
                   <div class="card-body pe-3">
-                    <h5 class="card-title mb-2">
+                    <span class="title-small mb-2">
                       <a class="u-main-black" href="#" aria-label="Vai alla pagina di Ufficio sussidi"
                         title="Vai alla pagina di Ufficio sussidi">Ufficio sussidi</a>
-                    </h5>
+                    </span>
                     <p class="subtitle-small mb-0">Via Dei Transiti 21, 50302
                       <br>
                       05 0505
@@ -156,30 +156,15 @@
             </div>
 
             <div class="col-12 mb-30">
-              <h6 class="mb-1"><small>Argomenti:</small></h6>
-              <a href="#" title="Vai all'argomento Sussidi" aria-label="Vai all'argomento Sussidi">
-                <div class="chip chip-simple bg-success">
-                  <span class="chip-label fw-bold text-white">Sussidi</span>
-                </div>
-              </a>
-              <a href="#" title="Vai all'argomento Famiglia" aria-label="Vai all'argomento Famiglia">
-                <div class="chip chip-simple bg-success">
-                  <span class="chip-label fw-bold text-white">Famiglia</span>
-                </div>
-              </a>
-              <a href="#" title="Vai all'argomento Madri" aria-label="Vai all'argomento Madri">
-                <div class="chip chip-simple bg-success">
-                  <span class="chip-label fw-bold text-white">Madri</span>
-                </div>
-              </a>
-              <a href="#" title="Vai all'argomento Servizi Sociali" aria-label="Vai all'argomento Servizi Sociali">
-                <div class="chip chip-simple bg-success">
-                  <span class="chip-label fw-bold text-white">Servizi Sociali</span>
-                </div>
-              </a>
+              <span class="text-paragraph-small">Argomenti:</span>
+              <div class="d-flex flex-wrap gap-2 mt-10 mb-30">
+                {{>partials/cmp-tag/cmp-tag label-tag="Sussidi" class="t-primary bg-tag"}}
+                {{>partials/cmp-tag/cmp-tag label-tag="Famiglia" class="t-primary bg-tag"}}
+                {{>partials/cmp-tag/cmp-tag label-tag="Madri" class="t-primary bg-tag"}}
+                {{>partials/cmp-tag/cmp-tag label-tag="Servizi Sociali" class="t-primary bg-tag"}}
+              </div>
+              <p class="text-paragraph-small mb-0">Pagina aggiornata il 14/04/2022</p>
             </div>
-            <p class="text-paragraph-small m-0">Pagina aggiornata il 14/04/2022</p>
-          </div>
         </section>
       </div>
     </div>

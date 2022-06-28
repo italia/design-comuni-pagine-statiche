@@ -36,7 +36,7 @@
 
       <div class="col-12 col-lg-3 mb-4 border-col">
         {{>cmp-navscroll/cmp-navscroll 
-          accordion-title="INDICE DELLA PAGINA"
+          accordion-title="INDICE DELLA PAGINA" id="one"
           link-list=link-list.segnalazioni-disservizio-1
         }}
       </div>
@@ -125,6 +125,29 @@
           }}
         </section>
 
+        <section class="mb-30 it-page-section">
+          <h2 class="mb-3" id="contacts">Contatti</h2>
+            <div class="card-wrapper rounded h-auto mt-10">
+              <div class="card card-teaser card-teaser-info rounded shadow-sm p-3 w-50">
+                <div class="card-body pe-3">
+                  <span class="title-small">
+                    <a class="u-main-black" href="#" aria-label="Vai alla pagina di Ufficio servizio pubblico" title="Vai alla pagina di Ufficio servizio pubblico">Ufficio servizio pubblico</a>
+                  </span>
+                    <p class="subtitle-small mb-0">Via Dei Transiti 21, 50302
+                      <br>
+                       05 0505
+                      <br>
+                      <a href='mailto:ufficioserviziopubblico@email.it' aria-label='Invia una email a ufficioserviziopubblico@email.it' title='Invia una email a ufficioserviziopubblico@email.it'>ufficioserviziopubblico@email.it</a>
+                    </p>
+                </div>
+                <div class="avatar size-xl">
+                  <img src="https://picsum.photos/200/200" alt="Immagine" />
+                </div>
+              </div>
+            </div>
+        </section>
+
+
         <section class="mb-30">
           <h2 class="title-xxlarge mb-3" id="contacts">Contatti</h2>
           {{>cmp-card-img/cmp-card-img 
@@ -134,7 +157,7 @@
           }}
         </section>
 
-        <div class="wrapper-tag mb-4 mb-lg-80">
+        <div class="wrapper-tag">
            <span class="text-paragraph-small">Argomenti:</span>
            <div class="d-flex flex-wrap gap-2 mt-10 mb-30">
             {{>partials/cmp-tag/cmp-tag label-tag="Servizio pubblico" class="t-primary bg-tag"}}

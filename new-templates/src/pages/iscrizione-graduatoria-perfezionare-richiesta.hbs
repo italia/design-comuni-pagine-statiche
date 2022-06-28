@@ -4,7 +4,7 @@
     <div class="row">
       <div class="col-12 col-lg-10">
         {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi" link3="Iscrizioni"}}
-        {{> cmp-heading/cmp-heading title="Iscrizione alla scuola dell'infanzia" description="Hai bisogno di assistenza? <a href='#' class='title-small-semi-bold t-primary' aria-label='Vai alla pagina contatti per richiedere assistenza' title='Vai alla pagina contatti per richiedere assistenza'>Contattaci</a>"}}
+        {{> cmp-heading/cmp-heading title="Iscrizione alla scuola dell'infanzia" description="Hai bisogno di assistenza? <a href='#' class='title-small-semi-bold t-primary' aria-label='Contattaci per richiedere assistenza' title='Contattaci per richiedere assistenza'>Contattaci</a>"}}
       </div>
 
       <hr class="d-none d-lg-block mb-0 mt-0">
@@ -14,6 +14,7 @@
       <div class="col-12 col-lg-3 d-lg-block mb-4 d-none ">
         {{>cmp-navscroll/cmp-navscroll
         accordion-title="INFORMAZIONI RICHIESTE"
+        id="one"
         link-list=link-list.links-perfezionamento-richiesta}}
       </div>
 
@@ -45,7 +46,7 @@
           info-list=perfezionamento-richiesta-checkbox.checkbox}}
 
           {{/cmp-card/cmp-card-content-box}}
-        {{> cmp-nav-steps/cmp-nav-steps saveBtn=true}}
+        {{> cmp-nav-steps/cmp-nav-steps saveBtn=true aria-label-save="di iscrizione"}}
       </div>
     </div>
   </div>

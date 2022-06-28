@@ -1,8 +1,8 @@
 {{#>cmp-modal/cmp-modal-structure id="modal-vehicle-data" modalTitle="Veicolo" buttons=true modalInfo="I campi
 contraddistinti dal
 simbolo asterisco sono obbligatori"}}
-<div>
-  <form action="" id="documents-form" class="text-black" enctype="multipart/form-data">
+
+  <form action="" id="vehicle-data-form" class="text-black" enctype="multipart/form-data">
     <div class="mb-4">
       {{>partials/input/input id="accountholder" type="text" label="Intestatario" placeholder="Mario Rossi" text="Campo
       non modificabile" required=true disabled=true}}
@@ -38,5 +38,5 @@ simbolo asterisco sono obbligatori"}}
     </div>
 
   </form>
-</div>
+
 {{/cmp-modal/cmp-modal-structure}}

@@ -10,7 +10,7 @@
           class='d-block d-lg-inline'>Potrai ricontrollare tutti i dati
           nel riepilogo, prima di inviare la richiesta.</span>"
         description="Hai bisogno di assistenza? <a class='title-small-semi-bold t-primary'
-          aria-label='Vai a contattaci per ricevere assistenza' title='Vai a contattaci per ricevere assistenza'
+          aria-label='contattaci per richiedere assistenza' title='contattaci per richiedere assistenza'
           href='#'>Contattaci</a>"
         desClass="mt-lg-2"
         }}
@@ -27,7 +27,7 @@
     <div class="steppers-content" aria-live="polite">
       <div class="row">
         <div class="col-12 col-lg-3 mb-4 d-none d-lg-block">
-          {{>cmp-navscroll/cmp-navscroll accordion-title="INFORMAZIONI RICHIESTE"
+          {{>cmp-navscroll/cmp-navscroll accordion-title="INFORMAZIONI RICHIESTE" id="one"
           link-list=permessi-autorizzazioni.controllare-dati-personali.navscroll
           br-none="true"}}
         </div>
@@ -112,6 +112,7 @@
           {{>cmp-nav-steps/cmp-nav-steps saveBtn=true
           save="true"
           modalId="modal-save-1"
+          aria-label-save="per il permesso ztl"
           }}
         </div>
       </div>

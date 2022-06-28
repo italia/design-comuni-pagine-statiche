@@ -19,7 +19,7 @@
           title="Segnalazione disservizio"
           double-button=true
           label="Segnala disservizio"
-          aria-label="Vai alla pagina Segnala disservizio"
+          aria-label="Vai alla pagina segnalazione disservizio"
           second-label="Tutte le segnalazioni"
           second-ariaLabel="Vai alla pagina Tutte le segnalazioni"
           description="Un servizio aperto a tutti i cittadini per segnalare disservizi, guasti e criticità
@@ -36,8 +36,8 @@
     <div class="row mt-lg-80 mt-3">
 
       <div class="col-12 col-lg-3 mb-4 border-col">
-        {{>cmp-navscroll/cmp-navscroll 
-          accordion-title="INDICE DELLA PAGINA"
+        {{>cmp-navscroll/cmp-navscroll  
+          accordion-title="INDICE DELLA PAGINA" id="one"
           link-list=link-list.segnalazioni-disservizio-1
         }}
       </div>
@@ -124,13 +124,26 @@
           }}
         </section>
 
-        <section class="mb-30">
-          <h2 class="title-xxlarge mb-3" id="contacts">Contatti</h2>
-          {{>cmp-card-img/cmp-card-img 
-            card-title="Ufficio scuola"      
-            card-description="Via Dei Transiti 21, 50302<br> 050505 <br> ufficioscuola@email.it" 
-            img=true
-          }}
+        <section class="mb-30 it-page-section">
+          <h2 class="mb-3" id="contacts">Contatti</h2>
+            <div class="card-wrapper rounded h-auto mt-10">
+              <div class="card card-teaser card-teaser-info rounded shadow-sm p-3 w-50">
+                <div class="card-body pe-3">
+                  <span class="title-small">
+                    <a class="u-main-black" href="#" aria-label="Vai alla pagina di Ufficio Servizio pubblico" title="Vai alla pagina di Ufficio Servizio pubblico">Ufficio Servizio pubblico</a>
+                  </span>
+                    <p class="subtitle-small mb-0">Via Dei Transiti 21, 50302
+                      <br>
+                       05 0505
+                      <br>
+                      <a href='mailto:ufficioserviziopubblico@email.it' aria-label='Invia una email a ufficioserviziopubblico@email.it' title='Invia una email a ufficioserviziopubblico@email.it'>ufficioserviziopubblico@email.it</a>
+                    </p>
+                </div>
+                <div class="avatar size-xl">
+                  <img src="https://picsum.photos/200/200" alt="Immagine" />
+                </div>
+              </div>
+            </div>
         </section>
 
          <div class="wrapper-tag mb-4 mb-lg-80">

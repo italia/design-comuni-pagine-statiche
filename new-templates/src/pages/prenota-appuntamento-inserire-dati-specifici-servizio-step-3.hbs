@@ -31,7 +31,7 @@
     <div class="row">
       <div class="col-12 col-lg-3 d-lg-block mb-4 d-none ">
           {{>cmp-navscroll/cmp-navscroll
-          accordion-title="INFORMAZIONI RICHIESTE"
+          accordion-title="INFORMAZIONI RICHIESTE" id="one"
           link-list=link-list.prenota-appuntamento-step-3}}
       </div>
       <div class="col-12 col-lg-8 offset-lg-1">
@@ -62,14 +62,15 @@
             id-title="details"
             bg-grey=true
             h2-class="mb-0"
-            header-class="mb-3"
+            header-m0=true
+           subtitleClass="mb-3"
             card-title="Dettagli*"
             subtitle="Aggiungi ulteriori dettagli"
             }}
             {{> partials/text-area/text-area label="Inserire massimo 200 caratteri" class="p-0" placeholder="Aggiungi ulteriori dettagli" id="form-details"}}
             {{/cmp-card/cmp-card-content-box}}
 
-          {{> cmp-nav-steps/cmp-nav-steps save="true"}}
+          {{> cmp-nav-steps/cmp-nav-steps save="true" aria-label-save="di prenotazione appuntamento"}}
         </div>
       </div>
     </div>

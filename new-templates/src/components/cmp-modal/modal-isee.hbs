@@ -1,6 +1,6 @@
 {{#>cmp-modal/cmp-modal-structure-scrollable id="modal-isee" modalTitle="ISEE" buttons=true modalInfo="I campi contraddistinti dal simbolo asterisco sono obbligatori"}}
-<div>
-  <form action="" id="contacts-form">
+
+  <form action="" id="isee-form">
     {{>partials/input/input id="isee" type="text" label="Valore ISEE" text="Inserisci valore ISEE" required=true}}
     {{>partials/input/input id="scadenza" type="text" label="Scadenza ISEE" text="Inserisci data scadenza ISEE
     gg/mm/aaaa" required=true}}
@@ -12,5 +12,5 @@
     filiale protocollo"  required=true }}
     {{>partials/cmp-upload/cmp-upload  inputId="cond-lav-isee" label="Modulo condizione lavorativa" required="true" error="true" document="documento_ISEE-2019.pdf"}}
   </form>
-</div>
+
 {{/cmp-modal/cmp-modal-structure-scrollable}}

@@ -1,7 +1,7 @@
 {{#>cmp-modal/cmp-modal-structure id="modal-registry-office" modalTitle="Anagrafica" buttons=true modalInfo="I campi contraddistinti dal
 simbolo asterisco sono obbligatori"}}
-<div>
-  <form action="" id="contacts-form">
+
+  <form action="" id="registry-office-form">
 
     {{>partials/input/input id="name" type="text" label="Nome" text="Inserisci nome" required=true }}
     {{>partials/input/input id="surname" type="text" label="Cognome" text="Inserisci cognome" required=true}}
@@ -16,14 +16,14 @@ simbolo asterisco sono obbligatori"}}
     {{>partials/select/select class="mt-30" id="property-type" label-class="mb-3" label-text="Nazionalità" text="Seleziona nazionalità" placeholder="Seleziona" no-bg=true required=true select-option-list=vantaggi-economici.controllare-dati-personali.modal-registry-office.list-2}}
 
   </form>
-</div>
+
 {{#if documents}}
 <h4 class="cmp-modal__header-title" id="documents-modal-title">Documenti</h4>
-<div>
-  <form method="post" action="" enctype="multipart/form-data" id="documents-form">
+
+  <form method="post" action="" enctype="multipart/form-data" id="documents-title-form">
   {{>partials/cmp-upload/cmp-upload inputId="ci" label="Carta di identità" required="true" class="mb-2"}}
   </form>
-</div>
+
 {{/if}}
 {{/cmp-modal/cmp-modal-structure}}
 

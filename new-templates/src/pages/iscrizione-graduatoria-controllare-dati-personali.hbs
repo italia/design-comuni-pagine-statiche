@@ -9,7 +9,7 @@
         title="Iscrizione alla scuola dell'infanzia"
         subTitle="Inserisci le informazioni necessarie per richiedere l’iscrizione alla Scuola dell’infanzia. <br>
         Potrai ricontrollare tutti i dati nel riepilogo, prima di inviare la richiesta."
-        description="Hai bisogno di assistenza? <a class='title-small-semi-bold t-primary' href='#'>Contattaci</a>"
+        description="Hai bisogno di assistenza? <a class='title-small-semi-bold t-primary' href='#' aria-label='contattaci per richiedere assistenza' title='contattaci per richiedere assistenza'>Contattaci</a>"
         desClass="mt-lg-2 mb-4"
         }}
       </div>
@@ -27,6 +27,7 @@
         <div class="col-12 col-lg-3 mb-4 d-none d-lg-block">
           {{>cmp-navscroll/cmp-navscroll
           accordion-title="INFORMAZIONI RICHIESTE"
+          id="one"
           link-list=iscrizione-graduatoria.controllare-dati-personali.navscroll
           br-none="true"
           }}
@@ -167,6 +168,7 @@
           save="true"
           saveBtn=true
           modalId="modal-save-1"
+          aria-label-save="di iscrizione"
           }}
         </div>
       </div>

@@ -19,7 +19,7 @@
         primary=true
         class="text-button"
         label="Richiedi online"
-        aria-label="Vai a rilascio del permesso ZTL online"
+        aria-label="richiedi online il permesso ztl"
         servizio-attivo=true
         label-tag="Servizio attivo"
         }}
@@ -31,7 +31,7 @@
   <div class="container">
     <div class="row pb-4 pb-lg-80">
       <div class="col-12 col-lg-3 mb-4 border-col">
-        {{>cmp-navscroll/cmp-navscroll accordion-title="INDICE DELLA PAGINA"
+        {{>cmp-navscroll/cmp-navscroll accordion-title="INDICE DELLA PAGINA" id="one"
         link-list=permessi-autorizzazioni.trovare-informazioni-servizio.navscroll}}
       </div>
 
@@ -48,17 +48,21 @@
 
         <section class="mb-30">
           <h2 class="title-xxlarge mb-3" id="description">Descrizione</h2>
-          <p class="text-paragraph lora">L'autorizzazione consente il transito e la sosta h 24 dei veicoli nelle zone a traffico limitato.
+          <p class="text-paragraph lora">L'autorizzazione consente il transito e la sosta h 24 dei veicoli nelle zone a
+            traffico limitato.
             <br><br>
-            Il permesso ZTL è valido per 5 anni dalla data del rilascio e si può rinnovare da due mesi prima della data di scadenza.
+            Il permesso ZTL è valido per 5 anni dalla data del rilascio e si può rinnovare da due mesi prima della data
+            di scadenza.
           </p>
         </section>
 
         <section class="mb-30">
           <h2 class="title-xxlarge mb-3" id="how-to">Come fare</h2>
-          <p class="text-paragraph lora">La richiesta può essere inviata online o consegnata di persona all’Ufficio Protocollo Generale, in via dei Transiti 21.
+          <p class="text-paragraph lora">La richiesta può essere inviata online o consegnata di persona all’Ufficio
+            Protocollo Generale, in via dei Transiti 21.
             <br><br>
-            In caso di esito positivo dell'istruttoria il permesso viene inviato nella casella di posta elettronica indicata nella richiesta.
+            In caso di esito positivo dell'istruttoria il permesso viene inviato nella casella di posta elettronica
+            indicata nella richiesta.
           </p>
         </section>
 
@@ -74,16 +78,21 @@
 
         <section class="mb-30">
           <h2 class="title-xxlarge mb-3" id="obtain">Cosa si ottiene</h2>
-          <p class="text-paragraph lora">Si ottiene un permesso da esporre sul parabrezza del veicolo durante tutto il tempo di durata del transito e della sosta in ZTL o da esibire, a richiesta degli agenti addetti al controllo, quando è associato a veicoli che non consentono la chiusura a chiave dell’abitacolo.</p>
+          <p class="text-paragraph lora">Si ottiene un permesso da esporre sul parabrezza del veicolo durante tutto il
+            tempo di durata del transito e della sosta in ZTL o da esibire, a richiesta degli agenti addetti al
+            controllo, quando è associato a veicoli che non consentono la chiusura a chiave dell’abitacolo.</p>
         </section>
 
         <section class="mb-30">
-          {{>cmp-timeline/cmp-timeline title="Tempi e scadenze" id-title="deadlines"  timeline=permessi-autorizzazioni.trovare-informazioni-servizio.timeline }}
+          {{>cmp-timeline/cmp-timeline title="Tempi e scadenze" id-title="deadlines"
+          timeline=permessi-autorizzazioni.trovare-informazioni-servizio.timeline }}
         </section>
 
         <section class="mb-30">
           <h2 class="title-xxlarge mb-3" id="costs">Costi</h2>
-          <p class="text-paragraph lora">L’importo del permesso ZTL per il centro storico è di € 5,00. La tariffa non è dovuta alla scadenza del permesso in caso di rinnovo, quando sia effettuato in continuità di validità del precedente pass in scadenza. Non è considerato rinnovo quello del permesso scaduto da oltre un anno.</p>
+          <p class="text-paragraph lora">L’importo del permesso ZTL per il centro storico è di € 5,00. La tariffa non è
+            dovuta alla scadenza del permesso in caso di rinnovo, quando sia effettuato in continuità di validità del
+            precedente pass in scadenza. Non è considerato rinnovo quello del permesso scaduto da oltre un anno.</p>
           {{>cmp-icon-link/cmp-icon-link link="Allegato se necessario" dimensione-file="(PDF 1MB)"}}
         </section>
 
@@ -95,7 +104,8 @@
             class="btn btn-primary mobile-full">
             <span>Richiedi online</span>
           </button>
-          <p class="text-paragraph lora mt-4">Oppure, puoi prenotare un appuntamento e presentarti presso gli uffici.</p>
+          <p class="text-paragraph lora mt-4">Oppure, puoi prenotare un appuntamento e presentarti presso gli uffici.
+          </p>
           <button type="button" aria-label="Vai alla pagina prenota appuntamento"
             class="btn btn-outline-primary t-primary bg-white mobile-full">
             <span>Prenota appuntamento</span>
@@ -116,10 +126,10 @@
               <div class="card-wrapper rounded h-auto pb-0">
                 <div class="card card-teaser card-teaser-info align-items-center rounded shadow-sm p-3">
                   <div class="card-body pe-3">
-                    <h5 class="card-title mb-2">
+                    <span class="title-small mb-2">
                       <a class="u-main-black" href="#" aria-label="Vai alla pagina di Ufficio mobilità"
                         title="Vai alla pagina di Ufficio mobilità">Ufficio mobilità</a>
-                    </h5>
+                    </span>
                     <p class="subtitle-small mb-0">Via Dei Transiti 21, 50302
                       <br>
                       05 0505
@@ -136,20 +146,13 @@
             </div>
 
             <div class="col-12 mb-30">
-              <h6 class="mb-1"><small>Argomenti:</small></h6>
-              <a href="#" title="Vai all'argomento Autovettura" aria-label="Vai all'argomento Autovettura">
-                <div class="chip chip-simple bg-success">
-                  <span class="chip-label fw-bold text-white">Autovettura</span>
-                </div>
-              </a>
-              <a href="#" title="Vai all'argomento Permesso" aria-label="Vai all'argomento Permesso">
-                <div class="chip chip-simple bg-success">
-                  <span class="chip-label fw-bold text-white">Permesso</span>
-                </div>
-              </a>
+              <span class="text-paragraph-small">Argomenti:</span>
+              <div class="d-flex flex-wrap gap-2 mt-10 mb-30">
+                {{>partials/cmp-tag/cmp-tag label-tag="Autovettura" class="t-primary bg-tag"}}
+                {{>partials/cmp-tag/cmp-tag label-tag="Permesso" class="t-primary bg-tag"}}
+              </div>
+              <p class="text-paragraph-small mb-0">Pagina aggiornata il 14/04/2022</p>
             </div>
-            <p class="text-paragraph-small m-0">Pagina aggiornata il 14/04/2022</p>
-          </div>
         </section>
       </div>
     </div>

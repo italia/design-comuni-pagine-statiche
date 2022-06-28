@@ -7,7 +7,7 @@
         {{> cmp-heading/cmp-heading
         title="Pagamento multa"
         subTitle="Inserisci le informazioni necessarie per il pagamento della multa.<br class='d-none d-md-block'> Potrai ricontrollare tutti i dati nel riepilogo, prima di effettuare il pagamento."
-        description="Hai bisogno di assistenza? <a class='title-small-semi-bold t-primary' href='#' aria-label='Vai alla pagina Contatti' title='Vai alla pagina Contatti'>Contattaci</a>"
+        description="Hai bisogno di assistenza? <a class='title-small-semi-bold t-primary' href='#' aria-label='Contattaci per richiedere assistenza' title='Contattaci per richiedere assistenza'>Contattaci</a>"
         desClass="mt-lg-2"
         }}
       </div>
@@ -50,7 +50,8 @@
             {{/cmp-card/cmp-card-content-box}}
         
           {{>cmp-nav-steps/cmp-nav-steps save="true" saveBtn=true
-          modalId="modal-save-1"}}
+          modalId="modal-save-1"
+          aria-label-save="del pagamento multa"}}
         </div>
       </div>
     </div>

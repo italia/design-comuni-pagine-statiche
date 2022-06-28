@@ -16,7 +16,7 @@
           button=true
           bg-white=true
           label="Scarica la ricevuta (PDF 100KB)"
-          aria-label="Scarica la ricevuta della tua richiesta"
+          aria-label="Scarica la ricevuta pdf 100kb"
           outline-primary=true
           sm=true
           }}
@@ -27,7 +27,7 @@
     <div class="row">
       <div class="d-none d-sm-none d-lg-block col-lg-3">
         {{>cmp-navscroll/cmp-navscroll
-        accordion-title="INDICE DELLA PAGINA"
+        accordion-title="INDICE DELLA PAGINA" id="one"
         link-list=servizi-pagamento.finalizzare-procedura.navscroll
         }}
       </div>
@@ -37,8 +37,8 @@
         title="Prossimi passi"
         id-title="next-step"
         timeline=servizi-pagamento.finalizzare-procedura.timeline
-        label="<a class='t-primary' href='#' aria-label='Vai alla pagina consulta la richiesta'
-          title='Vai alla pagina consulta la richiesta'>Consulta la richiesta</a> nella tua area riservata."
+        label="<a class='t-primary' href='#' aria-label='Vai alla pagina Consulta richiesta'
+          title='Vai alla pagina Consulta richiesta'>Consulta la richiesta</a> nella tua area riservata."
         }}
         {{>cmp-icon-list/cmp-icon-list
         title="Servizi correlati"

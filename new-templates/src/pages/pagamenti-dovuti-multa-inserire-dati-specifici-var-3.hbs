@@ -10,7 +10,7 @@
           class='d-lg-block mb-lg-2'>Potrai ricontrollare tutti i dati
           nel riepilogo, prima di effettuare il pagamento.</span>"
         description="Hai bisogno di assistenza? <a href='' class='title-small-semi-bold t-primary'
-          aria-label='Vai alla pagina Contatti' title='Vai alla pagina Contatti'>Contattaci</a>"
+          aria-label='Contattaci per richiedere assistenza' title='Contattaci per richiedere assistenza'>Contattaci</a>"
         desClass="mb-8"
         }}
       </div>
@@ -70,7 +70,7 @@
             {{>partials/input-calendar/input-calendar
             class="px-0"
             form-class="mb-4"
-            label-text="Inserisci la data di ricevuta avviso" required=true}}
+            label-text="Inserisci la data di ricevuta avviso" required=true index="1"}}
 
 
             <p class="title-large-semi-bold mb-2 mb-lg-4">Importo dovuto <span class="d-block d-lg-inline">38,42 €</span>
@@ -81,7 +81,7 @@
           {{/cmp-card/cmp-card-content-box}}
 
 
-          {{>cmp-nav-steps/cmp-nav-steps save="true" saveBtn=true }}
+          {{>cmp-nav-steps/cmp-nav-steps save="true" saveBtn=true aria-label-save="del pagamento multa"}}
    
       </div>
     </div>

@@ -1,8 +1,8 @@
 <div class="cmp-upload">
-  <label for="file-1" class="cmp-upload__label {{class}}">{{label}}{{#if required}}*{{/if}}</label>
+  <span class="cmp-upload__label {{class}}">{{label}}{{#if required}}*{{/if}}</span>
   <ul class="upload-file-list cmp-upload__list m-0">
     {{#if success}}
-    <li id="file-1" class="upload-file success">
+    <li class="upload-file success">
       <svg class="icon icon-sm" aria-hidden="true">
         <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-file"></use>
       </svg>
@@ -11,7 +11,7 @@
         <span class="visually-hidden">File caricato:</span>
         {{document}}
       </p>
-      <button disabled aria-label="Caricamento ultimato">
+      <button aria-label="Caricamento ultimato">
         <span class="visually-hidden">Caricamento ultimato</span>
         <svg class="icon icon-sm" aria-hidden="true">
           <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-close"></use>
@@ -28,7 +28,7 @@
         <span class="visually-hidden">Errore caricamento file:</span>
         {{document}}<span class="upload-file-weight"></span>
       </p>
-      <button aria-label="Elimina file caricato">
+      <button aria-label="Elimina il documento">
         <span class="visually-hidden">Elimina file caricato nome-file-04.jpg</span>
         <svg class="icon" aria-hidden="true">
           <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-close"></use>

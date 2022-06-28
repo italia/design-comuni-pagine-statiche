@@ -6,7 +6,7 @@
   <ul class="link-list {{classMenu}}">
     {{#each icon-list as |item|}}
     <li class="{{class}}">
-      <a class="list-item icon-left t-primary title-small-semi-bold" href="#" title="{{item.aria-label}} {{item.link}}" aria-label="{{item.aria-label}} {{item.link}}">
+      <a class="list-item icon-left t-primary title-small-semi-bold" href="#" title="{{#if item.aria-label}} {{aria-label}} {{else}} {{item.aria-label}} {{item.link}}{{/if}}" aria-label="{{#if item.aria-label}} {{aria-label}} {{else}} {{item.aria-label}} {{item.link}}{{/if}}">
         <span class="list-item-title-icon-wrapper">
           <svg class="icon icon-sm align-self-start {{item.icon-class}} icon-color"><use href="./assets/bootstrap-italia/dist/svg/sprite.svg#{{item.icon}}"></use></svg>
           <span class="list-item-title title-small-semi-bold {{item.classLink}}">{{item.link}}</span>

@@ -8,7 +8,7 @@
         title="Assegno di maternità"
         subTitle="Inserisci le informazioni necessarie per richiedere l’assegno di maternità.<br>Potrai ricontrollare tutti i dati nel riepilogo, prima di inviare la richiesta."
         title-class="w-75"
-        description="Hai bisogno di assistenza? <a class='title-small-semi-bold t-primary' href='#'>Contattaci</a>"
+        description="Hai bisogno di assistenza? <a class='title-small-semi-bold t-primary' href='#' aria-label='contattaci per richiedere assistenza' title='contattaci per richiedere assistenza'>Contattaci</a>"
         desClass="mt-lg-2"
         }}
       </div>
@@ -24,7 +24,7 @@
     <div class="steppers-content" aria-live="polite">
       <div class="row">
         <div class="col-12 col-lg-3 mb-4 d-none d-lg-block">
-          {{>cmp-navscroll/cmp-navscroll accordion-title="INFORMAZIONI RICHIESTE"
+          {{>cmp-navscroll/cmp-navscroll accordion-title="INFORMAZIONI RICHIESTE" id="one"
             link-list=vantaggi-economici.controllare-dati-personali.navscroll
             br-none="true"}}
         </div>
@@ -130,7 +130,7 @@
 
             {{/cmp-card/cmp-card-content-box}}
 
-          {{>cmp-nav-steps/cmp-nav-steps save="true" saveBtn=true
+          {{>cmp-nav-steps/cmp-nav-steps save="true" saveBtn=true aria-label-save="per l'assegno di maternità"
           modalId="modal-save-1"
 
           }}

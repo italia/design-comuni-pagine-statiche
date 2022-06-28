@@ -32,7 +32,7 @@
   <div class="container">
     <div class="row pb-4 pb-lg-80">
       <div class="col-12 col-lg-3 mb-4 border-col">
-        {{>cmp-navscroll/cmp-navscroll accordion-title="INDICE DELLA PAGINA"
+        {{>cmp-navscroll/cmp-navscroll accordion-title="INDICE DELLA PAGINA" id="one"
         link-list=iscrizione-graduatoria.trovare-informazione-servizio.navscroll}}
       </div>
 
@@ -100,7 +100,8 @@
 
         <section class="mb-30 has-bg-grey p-4">
           <h2 class="mb-3" id="service-access">Accedi al servizio</h2>
-          <p class="text-paragraph lora mb-4">Puoi richiedere l’iscrizione alla Scuola dell’infanzia direttamente online tramite identità digitale.</p>
+          <p class="text-paragraph lora mb-4">Puoi richiedere l’iscrizione alla Scuola dell’infanzia direttamente online
+            tramite identità digitale.</p>
           <button type="button" aria-label="Vai alla pagina richiedi iscrizione online alla Scuola dell'infanzia"
             class="btn btn-primary mobile-full">
             <span>Richiedi iscrizione online</span>
@@ -115,7 +116,7 @@
 
         <section class="mb-30">
           <h2 class="title-xxlarge mb-3" id="more-info">Ulteriori informazioni</h2>
-          <h3 class="mb-3 subtitle-medium" id="more-info">Graduatorie di accesso</h3>
+          <h3 class="mb-3 subtitle-medium">Graduatorie di accesso</h3>
           <p class="text-paragraph lora">I bambini già ammessi alla frequenza nell’anno scolastico in corso scolastico
             successivo previa richiesta, su appositi moduli trasmessi alle strutture di riferimento.<br>
             Alle domande viene attribuito un punteggio secondo i criteri stabiliti dall'Amministrazione Comunale. La
@@ -139,10 +140,9 @@
               <div class="card-wrapper rounded h-auto pb-0">
                 <div class="card card-teaser card-teaser-info align-items-center rounded shadow-sm p-3">
                   <div class="card-body pe-3">
-                    <h5 class="card-title mb-2">
-                      <a class="u-main-black" href="#" aria-label="Vai alla pagina di Ufficio scuola"
-                        title="Vai alla pagina di Ufficio scuola">Ufficio scuola</a>
-                    </h5>
+                    <span class="card-title mb-2 title-small">
+                          <a class="u-main-black" href="#" aria-label="Vai alla pagina di Ufficio scuola" title="Vai alla pagina di Ufficio scuola">Ufficio scuola</a>
+                        </span>
                     <p class="subtitle-small mb-0">Via Dei Transiti 21, 50302
                       <br>
                       05 0505
@@ -159,31 +159,15 @@
             </div>
 
             <div class="col-12 mb-30">
-              <h6 class="mb-1"><small>Argomenti:</small></h6>
-              <a href="#" title="Vai all'argomento Educazione" aria-label="Vai all'argomento Educazione">
-                <div class="chip chip-simple bg-success">
-                  <span class="chip-label fw-bold text-white">Educazione</span>
-                </div>
-              </a>
-              <a href="#" title="Vai all'argomento Famiglia" aria-label="Vai all'argomento Famiglia">
-                <div class="chip chip-simple bg-success">
-                  <span class="chip-label fw-bold text-white">Famiglia</span>
-                </div>
-              </a>
-              <a href="#" title="Vai all'argomento Scuola materna" aria-label="Vai all'argomento di Scuola materna">
-                <div class="chip chip-simple bg-success">
-                  <span class="chip-label fw-bold text-white">Scuola materna</span>
-                </div>
-              </a>
-              <a href="#" title="Vai all'argomento Bambini 3 - 5 anni"
-                aria-label="Vai all'argomento di Bambini 3 - 5 anni">
-                <div class="chip chip-simple bg-success">
-                  <span class="chip-label fw-bold text-white">Bambini 3 - 5 anni</span>
-                </div>
-              </a>
+              <span class="text-paragraph-small">Argomenti:</span>
+              <div class="d-flex flex-wrap gap-2 mt-10 mb-30">
+                {{>partials/cmp-tag/cmp-tag label-tag="Educazione" class="t-primary bg-tag"}}
+                {{>partials/cmp-tag/cmp-tag label-tag="Famiglia" class="t-primary bg-tag"}}
+                {{>partials/cmp-tag/cmp-tag label-tag="Scuola materna" class="t-primary bg-tag"}}
+                {{>partials/cmp-tag/cmp-tag label-tag="Bambini 3 - 5 anni" class="t-primary bg-tag"}}
+              </div>
+              <p class="text-paragraph-small mb-0">Pagina aggiornata il 14/04/2022</p>
             </div>
-            <p class="text-paragraph-small m-0">Pagina aggiornata il 14/04/2022</p>
-          </div>
         </section>
       </div>
     </div>
