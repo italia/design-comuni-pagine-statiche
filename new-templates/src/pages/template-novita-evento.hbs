@@ -150,7 +150,7 @@
   <div class="container">
     <div class="row border-top border-light row-column-border row-column-menu-left">
       <aside class="col-lg-4">
-        <div class="sticky-wrapper navbar-wrapper">
+        <div class="d-none d-lg-block sticky-wrapper navbar-wrapper">
           <nav class="navbar it-navscroll-wrapper it-top-navscroll navbar-expand-lg">
             <button class="custom-navbar-toggler" type="button" aria-controls="navbarNav" aria-expanded="false"
               aria-label="Toggle navigation" data-bs-target="#navbarNav">
@@ -789,112 +789,8 @@
   </div>
   <section id="contenuti-correlati">
     <div class="section section-muted section-inset-shadow">
-      <div class="section-content">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h3 class="text-center">Contenuti correlati</h3>
-            </div>
-          </div>
-          <div class="row mt-lg-4">
-            <div class="col">
-              <div class="card-wrapper card-teaser-wrapper card-teaser-wrapper-equal card-teaser-block-4">
-                <div class="card card-teaser card-column shadow my-3 rounded">
-                  <div class="card-header">
-                    <svg class="icon">
-                      <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-pa"></use>
-                    </svg>
-                    <h5 class="card-title">
-                      Amministrazione
-                    </h5>
-                  </div>
-                  <div class="card-body">
-                    <div class="link-list-wrapper mt-3">
-                      <ul class="link-list">
-                        <li>
-                          <a class="list-item" href="#" title="vai alla sezione amministrazione - area servizi civici" aria-label="vai alla sezione amministrazione - area servizi civici"><span>Area servizi civici</span></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="card card-teaser card-column shadow my-3 rounded">
-                  <div class="card-header">
-                    <svg class="icon">
-                      <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-settings"></use>
-                    </svg>
-                    <h5 class="card-title">
-                      Servizi
-                    </h5>
-                  </div>
-                  <div class="card-body">
-                    <div class="link-list-wrapper mt-3">
-                      <ul class="link-list">
-                        <li>
-                          <a class="list-item" href="#" title="vai alla sezione servizi - pagamento retta scolastica" aria-label="vai alla sezione servizi - pagamento retta scolastica"><span>Pagamento retta scolastica</span></a>
-                        </li>
-                        <li>
-                          <a class="list-item" href="#" title="vai alla sezione servizi - Servizio di trasporto scolastico" aria-label="vai alla sezione servizi - Servizio di trasporto scolastico"><span>Servizio di trasporto scolastico</span></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="card card-teaser card-column shadow my-3 rounded">
-                  <div class="card-header">
-                    <svg class="icon">
-                      <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-file"></use>
-                    </svg>
-                    <h5 class="card-title">
-                      Documenti
-                    </h5>
-                  </div>
-                  <div class="card-body">
-                    <div class="link-list-wrapper mt-3">
-                      <ul class="link-list">
-                        <li>
-                          <a class="list-item" href="#" title="vai alla sezione documenti - attestazione ISEE" aria-label="vai alla sezione documenti - attestazione ISEE"><span>Attestazione ISEE</span></a>
-                        </li>
-                        <li>
-                          <a class="list-item" href="#" title="vai alla sezione documenti - Carta dei servizi educativi all'infanzia" aria-label="vai alla sezione documenti - Carta dei servizi educativi all'infanzia"><span>Carta dei servizi educativi all'infanzia</span></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="card card-teaser card-column shadow my-3 rounded">
-                  <div class="card-header">
-                    <svg class="icon">
-                      <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-calendar"></use>
-                    </svg>
-                    <h5 class="card-title">
-                      Notizie
-                    </h5>
-                  </div>
-                  <div class="card-body">
-                    <div class="link-list-wrapper mt-3">
-                      <ul class="link-list">
-                        <li>
-                          <a class="list-item" href="#" title="vai alla sezione notizie - Lorem ipsum dolor sit amet" aria-label="vai alla sezione notizie - Lorem ipsum dolor sit amet"><span>Lorem ipsum dolor sit amet</span></a>
-                        </li>
-                        <li>
-                          <a class="list-item" href="#" title="vai alla sezione notizie - Lorem ipsum dolor sit amet" aria-label="vai alla sezione notizie - Lorem ipsum dolor sit amet"><span>Lorem ipsum dolor sit amet</span></a>
-                        </li>
-                        <li>
-                          <a class="list-item" href="#" title="vai alla sezione notizie - Lorem ipsum dolor sit amet" aria-label="vai alla sezione notizie - Lorem ipsum dolor sit amet"><span>Lorem ipsum dolor sit amet</span></a>
-                        </li>
-                        <li>
-                          <a class="list-item" href="#" title="vai alla sezione notizie - Lorem ipsum dolor sit amet" aria-label="vai alla sezione notizie - Lorem ipsum dolor sit amet"><span>Lorem ipsum dolor sit amet</span></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+     {{>cmp-carousel/cmp-carousel carousel-title="Contenuti correlati" class="carousel-4-card"
+          carTitle-class="pb-0"}}
     </div>
   </section>
 </main>

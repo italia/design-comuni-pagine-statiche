@@ -74,6 +74,20 @@
   }
 }
 
+.map-wrapper.map-column {
+  @include media-breakpoint-down(md) {
+    margin: 0;
+  }
+}
+
+.figure.img-full img {
+  min-height: 300px;
+  
+  @include media-breakpoint-up(lg) {
+    height: 600px;
+  }
+}
+
 .drop-shadow {
   box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
 }
