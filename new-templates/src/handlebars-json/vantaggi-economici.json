@@ -325,9 +325,9 @@
           {
             "name": "Filiale",
             "description": "",
-            "warning":true,
-            "sucess":false,
-            "warning-message":"Dato mancante",
+            "warning": true,
+            "sucess": false,
+            "warning-message": "Dato mancante",
             "warningId": "bank-warning"
           },
           {
@@ -351,8 +351,8 @@
           {
             "name": "Filiale",
             "description": "Roma",
-            "warning":false,
-            "sucess":true
+            "warning": false,
+            "sucess": true
           },
           {
             "name": "Indirizzo istituto",
@@ -368,8 +368,8 @@
           }
         ]
       },
-      "modal-registry-office":{
-        "list-1":[
+      "modal-registry-office": {
+        "list-1": [
           {
             "value": "Maschio"
           },
@@ -377,7 +377,7 @@
             "value": "Femmina"
           }
         ],
-        "list-2":[
+        "list-2": [
           {
             "value": "Italiana"
           },
@@ -387,7 +387,7 @@
         ]
       }
     },
-    "controllare-dati-personali-var-1":{
+    "controllare-dati-personali-var-1": {
       "anagrafica": {
         "info": [
           {
@@ -489,7 +489,6 @@
             "warning-message": "Dato mancante",
             "success-message": "Documento inserito con successo",
             "warningId": "bank-warning"
-
           },
           {
             "name": "Indirizzo istituto",
@@ -516,7 +515,6 @@
             "description": "Filiale di Roma",
             "success": true,
             "success-message": "Dato inserito con successo"
-
           },
           {
             "name": "Indirizzo istituto",
@@ -532,9 +530,8 @@
           }
         ]
       }
-
     },
-    "conferma-riepilogo-informazioni-inserite":{
+    "conferma-riepilogo-informazioni-inserite": {
       "step-list": {
         "step-3": [
           {
@@ -554,7 +551,7 @@
           }
         ]
       },
-       "anagrafica": {
+      "anagrafica": {
         "info": [
           {
             "name": "Codice fiscale",
@@ -628,7 +625,7 @@
           }
         ]
       },
-            "anagrafica-2": {
+      "anagrafica-2": {
         "info": [
           {
             "name": "Codice fiscale",
@@ -662,31 +659,31 @@
           }
         ]
       },
-    "isee": {
-    "info": [
-      {
-        "name": "Scadenza ISEE",
-        "description": "06/10/2023"
+      "isee": {
+        "info": [
+          {
+            "name": "Scadenza ISEE",
+            "description": "06/10/2023"
+          },
+          {
+            "name": "Anno protocollo",
+            "description": "2022"
+          },
+          {
+            "name": "Numero protocollo",
+            "description": "1234567"
+          },
+          {
+            "name": "Codice filiale protocollo",
+            "description": "1234567"
+          },
+          {
+            "name": "Certificato ISEE",
+            "description": "documento_ISEE-2022.pdf"
+          }
+        ]
       },
-      {
-        "name": "Anno protocollo",
-        "description": "2022"
-      },
-      {
-        "name": "Numero protocollo",
-        "description": "1234567"
-      },
-      {
-        "name": "Codice filiale protocollo",
-        "description": "1234567"
-      },
-      {
-        "name": "Certificato ISEE",
-        "description": "documento_ISEE-2022.pdf"
-      }
-    ]
-  },
-        "conto-bancario": {
+      "conto-bancario": {
         "info": [
           {
             "name": "Intestatario",
@@ -695,7 +692,6 @@
           {
             "name": "Filiale",
             "description": "Filiale di Roma"
-
           },
           {
             "name": "Indirizzo istituto",
@@ -712,100 +708,100 @@
         ]
       }
     },
-    "finalizzare-procedura":{
-          "navscroll": [
-      {
-        "item": "Prossimi passi",
-        "anchor": "next-step"
-      },
-      {
-        "item": "Servizi correlati",
-        "anchor": "related-service"
-      },
-      {
-        "item": "Valuta il servizio",
-        "anchor": "rating"
-      }
-    ],
-    "related-services": [
-      {
-        "icon": "it-settings",
-        "aria-label": "Vai alla pagina",
-        "link": "Iscrizione asilo nido",
-        "class": "shadow"
-      },
-      {
-        "icon": "it-settings",
-        "aria-label": "Vai alla pagina",
-        "link": "Richiesta assegno nucleo familiare",
-        "class": "shadow mb-50 mb-lg-80"
-      }
-    ],
-        "timeline": [
-      {
-        "year": "2022",
-        "day": "20",
-        "month": "apr",
-        "event": "Esito richiesta"
-      }
-    ]
-    },
-    "area-personale":{
+    "finalizzare-procedura": {
       "navscroll": [
-      {
-        "item": "Ultimi messaggi",
-        "anchor": "latest-posts"
-      },
-      {
-        "item": "Ultime attività",
-        "anchor": "latest-activities"
-      }
+        {
+          "item": "Prossimi passi",
+          "anchor": "next-step"
+        },
+        {
+          "item": "Servizi correlati",
+          "anchor": "related-service"
+        },
+        {
+          "item": "Valuta il servizio",
+          "anchor": "rating"
+        }
+      ],
+      "related-services": [
+        {
+          "icon": "it-settings",
+          "aria-label": "Vai alla pagina",
+          "link": "Iscrizione asilo nido",
+          "class": "shadow"
+        },
+        {
+          "icon": "it-settings",
+          "aria-label": "Vai alla pagina",
+          "link": "Richiesta assegno nucleo familiare",
+          "class": "shadow mb-50 mb-lg-80"
+        }
+      ],
+      "timeline": [
+        {
+          "year": "2022",
+          "day": "20",
+          "month": "apr",
+          "event": "Esito richiesta"
+        }
+      ]
+    },
+    "area-personale": {
+      "navscroll": [
+        {
+          "item": "Ultimi messaggi",
+          "anchor": "latest-posts"
+        },
+        {
+          "item": "Ultime attività",
+          "anchor": "latest-activities"
+        }
       ],
       "tab-area-personale": [
-      {
-        "title": "Scrivania",
-        "icon": true,
-        "icon-name": "it-pa",
-        "active": "active",
-        "id-link": "data-ex-tab1",
-        "controls": "tab1"
-      },
-      {
-        "title": "Messaggi",
-        "icon": true,
-        "icon-name": "it-mail",
-        "active": "",
-        "id-link": "data-ex-tab2",
-        "controls": "tab2"
-      },
-      {
-        "title": "Attività",
-        "icon": true,
-        "icon-name": "it-files",
-        "active": "",
-        "id-link": "data-ex-tab3",
-        "controls": "tab3"
-      },
-      {
-        "title": "Servizi",
-        "icon": true,
-        "icon-name": "it-settings",
-        "active": "",
-        "id-link": "data-ex-tab4",
-        "controls": "tab4"
-      }
-    ]
+        {
+          "title": "Scrivania",
+          "icon": true,
+          "icon-name": "it-pa",
+          "active": "active",
+          "id-link": "data-ex-tab1",
+          "controls": "tab1"
+        },
+        {
+          "title": "Messaggi",
+          "icon": true,
+          "icon-name": "it-mail",
+          "active": "",
+          "id-link": "data-ex-tab2",
+          "controls": "tab2"
+        },
+        {
+          "title": "Attività",
+          "icon": true,
+          "icon-name": "it-files",
+          "active": "",
+          "id-link": "data-ex-tab3",
+          "controls": "tab3"
+        },
+        {
+          "title": "Servizi",
+          "icon": true,
+          "icon-name": "it-settings",
+          "active": "",
+          "id-link": "data-ex-tab4",
+          "controls": "tab4"
+        }
+      ]
     },
-    "area-personale-attivita":{
+    "area-personale-attivita": {
       "navscroll": [
-      {
-        "item": "Pratiche",
-        "anchor": "practices"
-      },
-      {
-        "item": "Pagamenti",
-        "anchor": "payments"
-      }
+        {
+          "item": "Pratiche",
+          "anchor": "practices"
+        },
+        {
+          "item": "Pagamenti",
+          "anchor": "payments"
+        }
       ],
       "pratiche": [
         {
@@ -814,13 +810,14 @@
           "date": "20/02/2022",
           "icon": "folder-concluded.svg",
           "icon-label": "Conclusa",
-          "label-tag":"Vantaggio economico",
-          "practice":"Pratica:",
-          "practice-number":"AN4059281",
+          "label-tag": "Vantaggio economico",
+          "practice": "Pratica:",
+          "practice-number": "AN4059281",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
               "class": "shadow p-0"
             }
           ]
@@ -831,14 +828,14 @@
           "date": "01/10/2021",
           "icon": "folder-concluded.svg",
           "icon-label": "Conclusa",
-          "label-tag":"Vantaggio economico",
-
-          "practice":"Pratica:",
-          "practice-number":"AN4059281",
+          "label-tag": "Vantaggio economico",
+          "practice": "Pratica:",
+          "practice-number": "AN4059281",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
               "class": "shadow p-0"
             }
           ]
@@ -849,14 +846,14 @@
           "date": "02/09/2021",
           "icon": "folder-concluded.svg",
           "icon-label": "Conclusa",
-          "label-tag":"Vantaggio economico",
-
-          "practice":"Pratica:",
-          "practice-number":"AN4059281",
+          "label-tag": "Vantaggio economico",
+          "practice": "Pratica:",
+          "practice-number": "AN4059281",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
               "class": "shadow p-0"
             }
           ]
@@ -867,14 +864,14 @@
           "date": "06/08/2021",
           "icon": "folder-concluded.svg",
           "icon-label": "Conclusa",
-          "label-tag":"Vantaggio economico",
-
-          "practice":"Pratica:",
-          "practice-number":"AN4059281",
+          "label-tag": "Vantaggio economico",
+          "practice": "Pratica:",
+          "practice-number": "AN4059281",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
               "class": "shadow p-0"
             }
           ]
@@ -885,14 +882,14 @@
           "date": "06/03/2021",
           "icon": "folder-concluded.svg",
           "icon-label": "Conclusa",
-          "label-tag":"Vantaggio economico",
-
-          "practice":"Pratica:",
-          "practice-number":"AN4059281",
+          "label-tag": "Vantaggio economico",
+          "practice": "Pratica:",
+          "practice-number": "AN4059281",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
               "class": "shadow p-0"
             }
           ]
@@ -905,13 +902,14 @@
           "date": "07/01/2022",
           "icon": "folder-pay.svg",
           "icon-label": "Pagato",
-          "label-tag":"Vantaggio economico",
-          "practice":"Pratica:",
-          "practice-number":"AN4059281",
+          "label-tag": "Vantaggio economico",
+          "practice": "Pratica:",
+          "practice-number": "AN4059281",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
               "class": "shadow p-0"
             }
           ]
@@ -922,13 +920,14 @@
           "date": "04/03/2021",
           "icon": "folder-pay.svg",
           "icon-label": "Pagato",
-          "label-tag":"Vantaggio economico",
-          "practice":"Pratica:",
-          "practice-number":"AN4059281",
+          "label-tag": "Vantaggio economico",
+          "practice": "Pratica:",
+          "practice-number": "AN4059281",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
               "class": "shadow p-0"
             }
           ]
@@ -939,13 +938,14 @@
           "date": "24/06/2021",
           "icon": "folder-pay.svg",
           "icon-label": "Pagato",
-          "label-tag":"Vantaggio economico",
-          "practice":"Pratica:",
-          "practice-number":"AN4059281",
+          "label-tag": "Vantaggio economico",
+          "practice": "Pratica:",
+          "practice-number": "AN4059281",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
               "class": "shadow p-0"
             }
           ]
@@ -956,13 +956,14 @@
           "date": "10/05/2021",
           "icon": "folder-pay.svg",
           "icon-label": "Pagato",
-          "label-tag":"Vantaggio economico",
-          "practice":"Pratica:",
-          "practice-number":"AN4059281",
+          "label-tag": "Vantaggio economico",
+          "practice": "Pratica:",
+          "practice-number": "AN4059281",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
               "class": "shadow p-0"
             }
           ]
@@ -973,19 +974,19 @@
           "date": "01/10/2021",
           "icon": "folder-pay.svg",
           "icon-label": "Pagato",
-          "label-tag":"Vantaggio economico",
-          "practice":"Pratica:",
-          "practice-number":"AN4059281",
+          "label-tag": "Vantaggio economico",
+          "practice": "Pratica:",
+          "practice-number": "AN4059281",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
               "class": "shadow p-0"
             }
           ]
         }
       ]
-
     }
   }
 }

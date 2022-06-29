@@ -22,7 +22,7 @@
         label="Avvia richiesta online"
         primary=true
         class="text-button"
-        aria-label="Vai ad Avvia la richiesta calcolo imu online"}}
+        aria-label="Avvia richiesta online per il calcolo imu"}}
       </div>
       <hr class="d-none d-lg-block mb-0 mt-2">
     </div>
@@ -132,10 +132,12 @@
           {{>cmp-icon-link/cmp-icon-link link="Termini e condizioni di servizio" dimensione-file="(PDF 1MB)"}}
         </section>
 
-        <section class="mb-30 it-page-section">
+        <section class="it-page-section">
           <h2 class="mb-3" id="contacts">Contatti</h2>
-            <div class="card-wrapper rounded h-auto mt-10">
-              <div class="card card-teaser card-teaser-info rounded shadow-sm p-3 w-50">
+          <div class="row">
+            <div class="col-12 col-md-8 col-lg-6 mb-30">
+              <div class="card-wrapper rounded h-auto pb-0">
+              <div class="card card-teaser card-teaser-info rounded shadow-sm p-3">
                 <div class="card-body pe-3">
                   <span class="title-small">
                     <a class="u-main-black" href="#" aria-label="Vai alla pagina di Ufficio tributi" title="Vai alla pagina di Ufficio tributi">Ufficio tributi</a>
@@ -154,15 +156,17 @@
                 </div>
               </div>
             </div>
-        </section>
+            </div>
 
-        <section class="mb-30">
-          <span class="text-paragraph-small">Argomenti:</span>
-          <div class="d-flex flex-wrap gap-2 mt-2 mb-30 ">
-            {{>partials/cmp-tag/cmp-tag label-tag="Abitazione" class="bg-tag"}}
-            {{>partials/cmp-tag/cmp-tag label-tag="Pagamenti" class="bg-tag"}}
+            <div class="col-12 mb-30">
+              <span class="text-paragraph-small">Argomenti:</span>
+              <div class="d-flex flex-wrap gap-2 mt-2 mb-30 ">
+                {{>partials/cmp-tag/cmp-tag label-tag="Abitazione" class="bg-tag"}}
+                {{>partials/cmp-tag/cmp-tag label-tag="Pagamenti" class="bg-tag"}}
+              </div>
+              <p class="text-paragraph-small mb-0">Pagina aggiornata il 14/04/2022</p>
+            </div>
           </div>
-          <p class="text-paragraph-small mb-0">Pagina aggiornata il 14/04/2022</p>
         </section>
 
       </div>

@@ -51,8 +51,15 @@
             card-title="Disservizio"
             margin-class="mb-40"
             }}
-            {{>partials/select/select placeholder="Tipo di disservizio*" class="p-md-3 p-lg-4 pb-lg-0"
-            select-option-list=serv-1-disservizio.list}}
+            {{>partials/select/select 
+              placeholder="Tipo di disservizio*" 
+              class="p-md-3 p-lg-4 pb-lg-0"
+              select-option-list=serv-1-disservizio.list 
+              label-text="Tipo di disservizio*" 
+              label-hidden=true 
+              id="inefficiency" 
+              selectClass="u-grey-dark"
+            }}
             <div class="text-area-wrapper p-3 px-lg-4 pt-lg-5 pb-lg-0 bg-white">
               {{>partials/input/input type="text" id="title" label="Titolo" required=true name="title"
               formClass="mb-0"}}
@@ -73,7 +80,7 @@
               </div>
               <hr>
               {{> partials/button/button label="Carica file" primary=true iconBtn="it-upload" iconWhite=true sm=true
-              class="w-100 fw-bold" aria-label="Carica il file"}}
+              class="w-100 fw-bold" aria-label="Carica file per il disservizio"}}
               <p class="title-xsmall u-grey-dark pt-10 mb-0">Seleziona una o più immagini da allegare alla
                 segnalazione</p>
             </div>

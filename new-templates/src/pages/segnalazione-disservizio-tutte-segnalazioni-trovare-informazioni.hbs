@@ -18,9 +18,9 @@
           title="Segnalazione disservizio"
           double-button=true
           label="Segnala disservizio"
-          aria-label="Vai alla pagina Segnala disservizio"
+          aria-label="Segnala disservizio"
           second-label="Tutte le segnalazioni"
-          second-ariaLabel="Vai alla pagina Tutte le segnalazioni"
+          second-ariaLabel="Tutte le segnalazioni"
           description="Un servizio aperto a tutti i cittadini per segnalare disservizi, guasti e criticità rilevati sul
           territorio comunale."
           label-tag="Servizio attivo"
@@ -107,7 +107,7 @@
             label="Segnala disservizio" 
             primary="true" 
             class="mobile-full" 
-            aria-label="Vai alla pagina Segnalazione disservizio"
+            aria-label="Vai alla pagina segnala disservizio"
           }}
           <p class="text-paragraph mt-4 lora">Uffici dove presentare la richiesta su appuntamento.</p>
           {{>partials/button/button 
@@ -125,10 +125,12 @@
           }}
         </section>
 
-        <section class="mb-30 it-page-section">
+        <section class="it-page-section">
           <h2 class="mb-3" id="contacts">Contatti</h2>
-            <div class="card-wrapper rounded h-auto mt-10">
-              <div class="card card-teaser card-teaser-info rounded shadow-sm p-3 w-50">
+          <div class="row">
+            <div class="col-12 col-md-8 col-lg-6 mb-30">
+              <div class="card-wrapper rounded h-auto pb-0">
+              <div class="card card-teaser card-teaser-info rounded shadow-sm p-3">
                 <div class="card-body pe-3">
                   <span class="title-small">
                     <a class="u-main-black" href="#" aria-label="Vai alla pagina di Ufficio servizio pubblico" title="Vai alla pagina di Ufficio servizio pubblico">Ufficio servizio pubblico</a>
@@ -145,25 +147,18 @@
                 </div>
               </div>
             </div>
+            </div>
+
+            <div class="col-12 mb-30">
+              <span class="text-paragraph-small">Argomenti:</span>
+              <div class="d-flex flex-wrap gap-2 mt-10 mb-30">
+                {{>partials/cmp-tag/cmp-tag label-tag="Servizio pubblico" class="t-primary bg-tag"}}
+              </div>
+                <p class="text-paragraph-small mb-0">Pagina aggiornata il 14/04/2022</p>
+            </div>
+          </div>
         </section>
 
-
-        <section class="mb-30">
-          <h2 class="title-xxlarge mb-3" id="contacts">Contatti</h2>
-          {{>cmp-card-img/cmp-card-img 
-            card-title="Ufficio servizio pubblico" 
-            card-description="Via Dei Transiti 21, 50302<br> 050505 <br> ufficioserviziopubblico@email.it" 
-            img=true
-          }}
-        </section>
-
-        <div class="wrapper-tag">
-           <span class="text-paragraph-small">Argomenti:</span>
-           <div class="d-flex flex-wrap gap-2 mt-10 mb-30">
-            {{>partials/cmp-tag/cmp-tag label-tag="Servizio pubblico" class="t-primary bg-tag"}}
-           </div>
-            <p class="text-paragraph-small mb-0">Pagina aggiornata il 14/04/2022</p>
-        </div>
       </div>
     </div>
   </div>

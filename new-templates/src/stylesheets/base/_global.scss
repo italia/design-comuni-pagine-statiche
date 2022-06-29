@@ -5,7 +5,7 @@ body {
 
 .form-check [type=checkbox]:focus+label, .form-check [type=radio]:focus+label, .toggles label input[type=checkbox]:focus+.lever, :focus:not(.focus--mouse) {
   border-color: #000 !important;
-  box-shadow: 0 0 0 2px #000!important;
+  box-shadow: 0 0 0 3px #000!important;
   outline: 3px solid #fff !important;
   outline-offset: 3px;
 }

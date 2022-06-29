@@ -296,7 +296,7 @@
           "warning-message": "Documento mancante"
         }
       ],
-      "isee-success":[
+      "isee-success": [
         {
           "name": "Valore ISEE",
           "description": "18.000,00€"
@@ -421,73 +421,73 @@
         }
       ],
       "info-figli": [
-          {
-            "name": "Codice Fiscale",
-            "description": "FRARSS72H25H501Y"
-          },
-          {
-            "name": "Data di nascita",
-            "description": "26/03/2018"
-          },
-          {
-            "name": "Luogo di nascita",
-            "description": "Roma"
-          },
-          {
-            "name": "Sesso",
-            "description": "Maschio"
-          },
-          {
-            "name": "Nazionalità",
-            "description": "Italiana"
-          }
-        ],
+        {
+          "name": "Codice Fiscale",
+          "description": "FRARSS72H25H501Y"
+        },
+        {
+          "name": "Data di nascita",
+          "description": "26/03/2018"
+        },
+        {
+          "name": "Luogo di nascita",
+          "description": "Roma"
+        },
+        {
+          "name": "Sesso",
+          "description": "Maschio"
+        },
+        {
+          "name": "Nazionalità",
+          "description": "Italiana"
+        }
+      ],
       "indirizzo-figli": [
-          {
-            "name": "Residenza",
-            "description": "Via Roma 16, 00100 Roma, IT"
-          },
-          {
-            "name": "Domicilio",
-            "description": "Via Roma 16, 00100 Roma, IT"
-          }
-        ],
+        {
+          "name": "Residenza",
+          "description": "Via Roma 16, 00100 Roma, IT"
+        },
+        {
+          "name": "Domicilio",
+          "description": "Via Roma 16, 00100 Roma, IT"
+        }
+      ],
       "documenti-figli": [
-          {
-            "name": "Carta disabilità",
-            "description": "francesco_rossi_certificato_disabilità.pdf"
-          },
-          {
-            "name": "Certificato dieta patologica",
-            "description": "francesco_rossi_dieta.pdf"
-          }
-        ],
-        "isee-familiare": [
-          {
-            "name": "Valore ISEE",
-            "description": "18.000,00€"
-          },
-            {
-              "name": "Scadenza ISEE",
-              "description": "06/10/2023"
-            },
-            {
-              "name": "Anno protocollo",
-              "description": "2022"
-            },
-            {
-              "name": "Numero protocollo",
-              "description": "12345678"
-            },
-            {
-              "name": "Codice filiale protocollo",
-              "description": "12345678"
-            },
-            {
-              "name": "Certificato ISEE",
-              "description": "documento_ISEE-2022.pdf"
-            }
-          ],
+        {
+          "name": "Carta disabilità",
+          "description": "francesco_rossi_certificato_disabilità.pdf"
+        },
+        {
+          "name": "Certificato dieta patologica",
+          "description": "francesco_rossi_dieta.pdf"
+        }
+      ],
+      "isee-familiare": [
+        {
+          "name": "Valore ISEE",
+          "description": "18.000,00€"
+        },
+        {
+          "name": "Scadenza ISEE",
+          "description": "06/10/2023"
+        },
+        {
+          "name": "Anno protocollo",
+          "description": "2022"
+        },
+        {
+          "name": "Numero protocollo",
+          "description": "12345678"
+        },
+        {
+          "name": "Codice filiale protocollo",
+          "description": "12345678"
+        },
+        {
+          "name": "Certificato ISEE",
+          "description": "documento_ISEE-2022.pdf"
+        }
+      ],
       "preferenze-servizio": [
         {
           "name": "Scuola",
@@ -611,17 +611,19 @@
           "icon": "folder-incomplete.svg",
           "icon-label": "Da completare",
           "color": "u-main-alert",
-          "practice":"Pagamento:",
-           "practice-number":"PA3028/17",
+          "practice": "Pagamento:",
+          "practice-number": "PA3028/17",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
               "class": "shadow p-0"
             },
             {
               "icon": "it-clip",
               "link": "Graduatoria",
+              "aria-label": "Scarica la",
               "class": "shadow p-0"
             }
           ]
@@ -633,17 +635,19 @@
           "icon": "it-folder",
           "icon-label": "In sospeso",
           "color": "u-main-error",
-          "practice":"Pagamento:",
-           "practice-number":"PA3028/17",
+          "practice": "Pagamento:",
+          "practice-number": "PA3028/17",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
               "class": "shadow p-0"
             },
             {
               "icon": "it-clip",
               "link": "Graduatoria",
+              "aria-label": "Scarica la",
               "class": "shadow p-0"
             }
           ]
@@ -654,17 +658,19 @@
           "date": "24/06/2021",
           "icon": "it-folder",
           "icon-label": "Conclusa",
-          "practice":"Pagamento:",
-           "practice-number":"PA3028/17",
+          "practice": "Pagamento:",
+          "practice-number": "PA3028/17",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
               "class": "shadow p-0"
             },
             {
               "icon": "it-clip",
               "link": "Graduatoria",
+              "aria-label": "Scarica la",
               "class": "shadow p-0"
             }
           ]
@@ -675,17 +681,19 @@
           "date": "10/05/2021",
           "icon": "it-folder",
           "icon-label": "Conclusa",
-          "practice":"Pagamento:",
-           "practice-number":"PA3028/17",
+          "practice": "Pagamento:",
+          "practice-number": "PA3028/17",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
               "class": "shadow p-0"
             },
             {
               "icon": "it-clip",
               "link": "Graduatoria",
+              "aria-label": "Scarica la",
               "class": "shadow p-0"
             }
           ]
@@ -700,11 +708,13 @@
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
               "class": "shadow p-0"
             },
             {
               "icon": "it-clip",
               "link": "Graduatoria",
+              "aria-label": "Scarica la",
               "class": "shadow p-0"
             }
           ]
@@ -718,14 +728,15 @@
           "icon": "folder-to-pay.svg",
           "icon-label": "Da pagare",
           "color": "u-main-error",
-          "label-tag":"Servizio non digitale",
-          "practice":"Pratica:",
-           "practice-number":"AN4059281",
-           "btn-label":"Paga ora",
+          "label-tag": "Servizio non digitale",
+          "practice": "Pratica:",
+          "practice-number": "AN4059281",
+          "btn-label": "Paga ora",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
               "class": "shadow p-0"
             }
           ]
@@ -736,14 +747,15 @@
           "date": "01/10/2021",
           "icon": "folder-pay.svg",
           "icon-label": "Pagato",
-          "label-tag":"Iscrizione servizio mensa",
-          "import":"23,00 €",
-          "practice":"Pagamento:",
-           "practice-number":"PA3028/17",
+          "label-tag": "Iscrizione servizio mensa",
+          "import": "23,00 €",
+          "practice": "Pagamento:",
+          "practice-number": "PA3028/17",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
               "class": "shadow p-0"
             }
           ]
@@ -754,14 +766,15 @@
           "date": "24/06/2021",
           "icon": "folder-pay.svg",
           "icon-label": "Pagato",
-          "label-tag":"Iscrizione servizio mensa",
-          "import":"23,00 €",
-          "practice":"Pagamento:",
-           "practice-number":"PA3028/17",
+          "label-tag": "Iscrizione servizio mensa",
+          "import": "23,00 €",
+          "practice": "Pagamento:",
+          "practice-number": "PA3028/17",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
               "class": "shadow p-0"
             }
           ]
@@ -772,14 +785,15 @@
           "date": "10/05/2021",
           "icon": "folder-pay.svg",
           "icon-label": "Pagato",
-          "label-tag":"Iscrizione servizio mensa",
-          "import":"23,00 €",
-          "practice":"Pagamento:",
-           "practice-number":"PA3028/17",
+          "label-tag": "Iscrizione servizio mensa",
+          "import": "23,00 €",
+          "practice": "Pagamento:",
+          "practice-number": "PA3028/17",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
               "class": "shadow p-0"
             }
           ]
@@ -790,14 +804,15 @@
           "date": "06/03/2021",
           "icon": "folder-pay.svg",
           "icon-label": "Pagato",
-          "label-tag":"Iscrizione servizio mensa",
-          "import":"23,00 €",
-          "practice":"Pagamento:",
-           "practice-number":"PA3028/17",
+          "label-tag": "Iscrizione servizio mensa",
+          "import": "23,00 €",
+          "practice": "Pagamento:",
+          "practice-number": "PA3028/17",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
               "class": "shadow p-0"
             }
           ]
@@ -811,14 +826,15 @@
           "icon": "folder-incomplete.svg",
           "icon-label": "Da completare",
           "color": "u-main-alert",
-          "label-tag":"Servizio non digitale",
-          "practice":"Pratica:",
-           "practice-number":"AN4059281",
-           "btn-label":"Paga ora",
+          "label-tag": "Servizio non digitale",
+          "practice": "Pratica:",
+          "practice-number": "AN4059281",
+          "btn-label": "Paga ora",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
               "class": "shadow p-0 p-0"
             }
           ]
@@ -829,14 +845,15 @@
           "date": "01/10/2022",
           "icon": "folder-concluded.svg",
           "icon-label": "Conclusa",
-          "label-tag":"Iscrizione scuola dell’infanzia",
-          "import":"23,00 €",
-          "practice":"Pagamento:",
-           "practice-number":"PA3028/17",
+          "label-tag": "Iscrizione scuola dell’infanzia",
+          "import": "23,00 €",
+          "practice": "Pagamento:",
+          "practice-number": "PA3028/17",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
               "class": "shadow p-0 p-0"
             }
           ]
@@ -847,14 +864,15 @@
           "date": "24/06/2021",
           "icon": "folder-concluded.svg",
           "icon-label": "Conclusa",
-          "label-tag":"Iscrizione corso formazione",
-          "import":"23,00 €",
-          "practice":"Pagamento:",
-           "practice-number":"PA3028/17",
+          "label-tag": "Iscrizione corso formazione",
+          "import": "23,00 €",
+          "practice": "Pagamento:",
+          "practice-number": "PA3028/17",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
               "class": "shadow p-0 p-0"
             }
           ]
@@ -865,14 +883,15 @@
           "date": "10/05/2021",
           "icon": "folder-concluded.svg",
           "icon-label": "Conclusa",
-          "label-tag":"Permesso ZTL",
-          "import":"23,00 €",
-          "practice":"Pagamento:",
-           "practice-number":"PA3028/17",
+          "label-tag": "Permesso ZTL",
+          "import": "23,00 €",
+          "practice": "Pagamento:",
+          "practice-number": "PA3028/17",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
               "class": "shadow p-0 p-0"
             }
           ]
@@ -883,14 +902,15 @@
           "date": "06/03/2021",
           "icon": "folder-concluded.svg",
           "icon-label": "Conclusa",
-          "label-tag":"Richiesta parcheggio residenti",
-          "import":"23,00 €",
-          "practice":"Pagamento:",
-           "practice-number":"PA3028/17",
+          "label-tag": "Richiesta parcheggio residenti",
+          "import": "23,00 €",
+          "practice": "Pagamento:",
+          "practice-number": "PA3028/17",
           "collapse": [
             {
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
               "class": "shadow p-0"
             }
           ]

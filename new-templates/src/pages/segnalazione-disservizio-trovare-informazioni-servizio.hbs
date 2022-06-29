@@ -19,7 +19,7 @@
           title="Segnalazione disservizio"
           double-button=true
           label="Segnala disservizio"
-          aria-label="Vai alla pagina segnalazione disservizio"
+          aria-label="Vai alla pagina segnala disservizio"
           second-label="Tutte le segnalazioni"
           second-ariaLabel="Vai alla pagina Tutte le segnalazioni"
           description="Un servizio aperto a tutti i cittadini per segnalare disservizi, guasti e criticità
@@ -105,7 +105,7 @@
             label="Segnala disservizio" 
             primary="true" 
             class="mobile-full" 
-            aria-label="Vai alla pagina Segnalazione disservizio"
+            aria-label="Vai alla pagina segnala disservizio"
           }}
           <p class="text-paragraph mt-4 lora">Oppure, prenota un appuntamento all’Ufficio Relazioni con il Pubblico (URP)</p>
           {{>partials/button/button 
@@ -124,10 +124,12 @@
           }}
         </section>
 
-        <section class="mb-30 it-page-section">
+        <section class="it-page-section">
           <h2 class="mb-3" id="contacts">Contatti</h2>
-            <div class="card-wrapper rounded h-auto mt-10">
-              <div class="card card-teaser card-teaser-info rounded shadow-sm p-3 w-50">
+          <div class="row">
+            <div class="col-12 col-md-8 col-lg-6 mb-30">
+              <div class="card-wrapper rounded h-auto pb-0">
+              <div class="card card-teaser card-teaser-info rounded shadow-sm p-3">
                 <div class="card-body pe-3">
                   <span class="title-small">
                     <a class="u-main-black" href="#" aria-label="Vai alla pagina di Ufficio Servizio pubblico" title="Vai alla pagina di Ufficio Servizio pubblico">Ufficio Servizio pubblico</a>
@@ -144,18 +146,20 @@
                 </div>
               </div>
             </div>
-        </section>
+            </div>
 
-         <div class="wrapper-tag mb-4 mb-lg-80">
-           <span class="text-paragraph-small">Argomenti:</span>
-           <div class="d-flex flex-wrap gap-2 mt-10 mb-30">
-            {{>partials/cmp-tag/cmp-tag label-tag="Gestione rifiuti" class="t-primary bg-tag"}}
-            {{>partials/cmp-tag/cmp-tag label-tag="Igiene pubblica" class="t-primary bg-tag"}}
-            {{>partials/cmp-tag/cmp-tag label-tag="Spazi verdi" class="t-primary bg-tag"}}
-            {{>partials/cmp-tag/cmp-tag label-tag="Inquinamento" class="t-primary bg-tag"}}
-           </div>
-           <p class="text-paragraph-small mb-0">Pagina aggiornata il 14/04/2022</p>
-         </div>
+            <div class="col-12 mb-30">
+              <span class="text-paragraph-small">Argomenti:</span>
+              <div class="d-flex flex-wrap gap-2 mt-10 mb-30">
+                {{>partials/cmp-tag/cmp-tag label-tag="Gestione rifiuti" class="t-primary bg-tag"}}
+                {{>partials/cmp-tag/cmp-tag label-tag="Igiene pubblica" class="t-primary bg-tag"}}
+                {{>partials/cmp-tag/cmp-tag label-tag="Spazi verdi" class="t-primary bg-tag"}}
+                {{>partials/cmp-tag/cmp-tag label-tag="Inquinamento" class="t-primary bg-tag"}}
+              </div>
+              <p class="text-paragraph-small mb-0">Pagina aggiornata il 14/04/2022</p>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   </div>

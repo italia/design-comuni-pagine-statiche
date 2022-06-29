@@ -577,7 +577,7 @@
               "icon": "it-clip",
               "link": "Ricevuta richiesta",
               "class": "shadow p-0",
-              "aria-label": "Vai al documento"
+              "aria-label": "Scarica la"
             }
           ]
         },
@@ -596,7 +596,7 @@
               "icon": "it-clip",
               "link": "Ricevuta pagamento",
               "class": "shadow p-0",
-              "aria-label": "Vai al documento"
+              "aria-label": "Scarica la"
             }
           ]
         },
@@ -615,7 +615,7 @@
               "icon": "it-clip",
               "link": "Ricevuta pagamento",
               "class": "shadow p-0",
-              "aria-label": "Vai al documento"
+              "aria-label": "Scarica la"
             }
           ]
         },
@@ -634,7 +634,7 @@
               "icon": "it-clip",
               "link": "Ricevuta pagamento",
               "class": "shadow p-0",
-              "aria-label": "Vai al documento"
+              "aria-label": "Scarica la"
             }
           ]
         },
@@ -653,7 +653,7 @@
               "icon": "it-clip",
               "link": "Ricevuta pagamento",
               "class": "shadow p-0",
-              "aria-label": "Vai al documento"
+              "aria-label": "Scarica la"
             }
           ]
         }
@@ -674,7 +674,7 @@
               "icon": "it-clip",
               "link": "Ricevuta pagamento",
               "class": "shadow p-0",
-              "aria-label": "Vai al documento"
+              "aria-label": "Scarica la"
             }
           ]
         },
@@ -693,7 +693,7 @@
               "icon": "it-clip",
               "link": "Ricevuta pagamento",
               "class": "shadow p-0",
-              "aria-label": "Vai al documento"
+              "aria-label": "Scarica la"
             }
           ]
         },
@@ -712,7 +712,7 @@
               "icon": "it-clip",
               "link": "Ricevuta pagamento",
               "class": "shadow p-0",
-              "aria-label": "Vai al documento"
+              "aria-label": "Scarica la"
             }
           ]
         },
@@ -731,7 +731,7 @@
               "icon": "it-clip",
               "link": "Ricevuta pagamento",
               "class": "shadow p-0",
-              "aria-label": "Vai al documento"
+              "aria-label": "Scarica la"
             }
           ]
         },
@@ -750,7 +750,7 @@
               "icon": "it-clip",
               "link": "Ricevuta pagamento",
               "class": "shadow p-0",
-              "aria-label": "Vai al documento"
+              "aria-label": "Scarica la"
             }
           ]
         }

@@ -19,7 +19,7 @@
         description="Il servizio permette di pagare online le multe ricevute dalla polizia municipale o di prenotare un
         appuntamento per pagare presso gli uffici."
         button=true
-        aria-label="Vai a Pagina pagamento online multa"
+        aria-label="Paga online la multa"
         label="Paga online"
         primary=true
         }}
@@ -100,10 +100,12 @@
           {{>cmp-icon-link/cmp-icon-link link="Termini e condizioni di servizio" dimensione-file="(PDF 1MB)"}}
         </section>
 
-        <section class="mb-30 it-page-section">
+        <section class="it-page-section">
           <h2 class="mb-3" id="contacts">Contatti</h2>
-            <div class="card-wrapper rounded h-auto mt-10">
-              <div class="card card-teaser card-teaser-info rounded shadow-sm p-3 w-50">
+          <div class="row">
+            <div class="col-12 col-md-8 col-lg-6 mb-30">
+              <div class="card-wrapper rounded h-auto pb-0">
+              <div class="card card-teaser card-teaser-info rounded shadow-sm p-3">
                 <div class="card-body pe-3">
                   <span class="title-small">
                     <a class="u-main-black" href="#" aria-label="Vai alla pagina di Ufficio polizia municipale" title="Vai alla pagina di Ufficio polizia municipale">Ufficio polizia municipale</a>
@@ -120,15 +122,19 @@
                 </div>
               </div>
             </div>
+            </div>
+
+            <div class="col-12 mb-30">
+              <span class="text-paragraph-small">Argomenti:</span>
+              <div class="d-flex flex-wrap gap-2 mt-2 mb-30 ">
+                {{>partials/cmp-tag/cmp-tag label-tag="Pagamenti" class="bg-tag"}}
+              </div>
+              <p class="text-paragraph-small mb-0">Pagina aggiornata il 14/04/2022</p>
+            </div>
+          </div>    
         </section>
 
-        <section class="mb-30">
-          <span class="text-paragraph-small">Argomenti:</span>
-          <div class="d-flex flex-wrap gap-2 mt-2 mb-30 ">
-            {{>partials/cmp-tag/cmp-tag label-tag="Pagamenti" class="bg-tag"}}
-          </div>
-          <p class="text-paragraph-small mb-0">Pagina aggiornata il 14/04/2022</p>
-        </section>
+       
 
       </div>
     </div>

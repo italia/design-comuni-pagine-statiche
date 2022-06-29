@@ -1,6 +1,6 @@
 {
   "accordion": {
-    "area-personale-page-3":{
+    "area-personale-page-3": {
       "pratiche": [
         {
           "num": "1",
@@ -9,19 +9,21 @@
           "icon": "folder-incomplete.svg",
           "icon-label": "Da completare",
           "color": "u-main-alert",
-          "warning-icon":true,
-          "label-tag":"Servizio non digitale",
+          "warning-icon": true,
+          "label-tag": "Servizio non digitale",
           "practice": "Pratica:",
-          "practice-number":"AN4059281",
-          "btn-label":"Perfeziona la richiesta",
+          "practice-number": "AN4059281",
+          "btn-label": "Perfeziona la richiesta",
           "collapse": [
             {
               "icon": "it-clip",
+              "aria-label": "Scarica la",
               "link": "Ricevuta richiesta",
               "class": "shadow p-0"
             },
             {
               "icon": "it-clip",
+              "aria-label": "Scarica la",
               "link": "Graduatoria",
               "class": "shadow p-0"
             }
@@ -33,9 +35,9 @@
           "date": "24/06/2021",
           "icon": "folder-concluded.svg",
           "icon-label": "Conclusa",
-          "label-tag":"Servizio non digitale",
+          "label-tag": "Servizio non digitale",
           "practice": "Pratica:",
-          "practice-number":"AN4059281",
+          "practice-number": "AN4059281",
           "collapse": [
             {
               "icon": "it-clip",
@@ -44,11 +46,13 @@
             },
             {
               "icon": "it-clip",
+              "aria-label": "Scarica la",
               "link": "Graduatoria",
               "class": "shadow p-0"
             },
             {
               "icon": "it-clip",
+              "aria-label": "Scarica la",
               "link": "Ricevuta richiesta",
               "class": "shadow p-0"
             }
@@ -60,9 +64,9 @@
           "date": "24/06/2021",
           "icon": "folder-concluded.svg",
           "icon-label": "Conclusa",
-          "label-tag":"Servizio non digitale",
+          "label-tag": "Servizio non digitale",
           "practice": "Pratica:",
-          "practice-number":"AN4059281",
+          "practice-number": "AN4059281",
           "collapse": [
             {
               "icon": "it-clip",
@@ -71,11 +75,13 @@
             },
             {
               "icon": "it-clip",
+              "aria-label": "Scarica la",
               "link": "Graduatoria",
               "class": "shadow p-0"
             },
             {
               "icon": "it-clip",
+              "aria-label": "Scarica la",
               "link": "Ricevuta richiesta",
               "class": "shadow p-0"
             }
@@ -87,22 +93,25 @@
           "date": "10/05/2021",
           "icon": "folder-concluded.svg",
           "icon-label": "Conclusa",
-          "label-tag":"Servizio non digitale",
+          "label-tag": "Servizio non digitale",
           "practice": "Pratica:",
-          "practice-number":"AN4059281",
+          "practice-number": "AN4059281",
           "collapse": [
             {
               "icon": "it-clip",
+              "aria-label": "Scarica la",
               "link": "Ricevuta richiesta",
               "class": "shadow p-0"
             },
             {
               "icon": "it-clip",
+              "aria-label": "Scarica la",
               "link": "Graduatoria",
               "class": "shadow p-0"
             },
             {
               "icon": "it-clip",
+              "aria-label": "Scarica la",
               "link": "Ricevuta richiesta",
               "class": "shadow p-0"
             }
@@ -114,22 +123,25 @@
           "date": "06/03/2021",
           "icon": "folder-concluded.svg",
           "icon-label": "Conclusa",
-          "label-tag":"Servizio non digitale",
+          "label-tag": "Servizio non digitale",
           "practice": "Pratica:",
-          "practice-number":"AN4059281",
+          "practice-number": "AN4059281",
           "collapse": [
             {
               "icon": "it-clip",
+              "aria-label": "Scarica la",
               "link": "Ricevuta richiesta",
               "class": "shadow p-0"
             },
             {
               "icon": "it-clip",
+              "aria-label": "Scarica la",
               "link": "Graduatoria",
               "class": "shadow p-0"
             },
             {
               "icon": "it-clip",
+              "aria-label": "Scarica la",
               "link": "Ricevuta richiesta",
               "class": "shadow p-0"
             }
@@ -143,22 +155,25 @@
           "date": "07/01/2022",
           "icon": "folder-pay.svg",
           "icon-label": "Pagato",
-          "label-tag":"Servizio non digitale",
+          "label-tag": "Servizio non digitale",
           "practice": "Pratica:",
-          "practice-number":"AN4059281",
+          "practice-number": "AN4059281",
           "collapse": [
             {
               "icon": "it-clip",
+              "aria-label": "Scarica la",
               "link": "Ricevuta richiesta",
               "class": "shadow p-0"
             },
             {
               "icon": "it-clip",
+              "aria-label": "Scarica la",
               "link": "Graduatoria",
               "class": "shadow p-0"
             },
             {
               "icon": "it-clip",
+              "aria-label": "Scarica la",
               "link": "Ricevuta richiesta",
               "class": "shadow p-0"
             }
@@ -170,22 +185,25 @@
           "date": "01/10/2021",
           "icon": "folder-pay.svg",
           "icon-label": "Pagato",
-          "label-tag":"Servizio non digitale",
+          "label-tag": "Servizio non digitale",
           "practice": "Pratica:",
-          "practice-number":"AN4059281",
+          "practice-number": "AN4059281",
           "collapse": [
             {
               "icon": "it-clip",
+              "aria-label": "Scarica la",
               "link": "Ricevuta richiesta",
               "class": "shadow p-0"
             },
             {
               "icon": "it-clip",
+              "aria-label": "Scarica la",
               "link": "Graduatoria",
               "class": "shadow p-0"
             },
             {
               "icon": "it-clip",
+              "aria-label": "Scarica la",
               "link": "Ricevuta richiesta",
               "class": "shadow p-0"
             }
@@ -197,22 +215,25 @@
           "date": "24/06/2021",
           "icon": "folder-pay.svg",
           "icon-label": "Pagato",
-          "label-tag":"Servizio non digitale",
+          "label-tag": "Servizio non digitale",
           "practice": "Pratica:",
-          "practice-number":"AN4059281",
+          "practice-number": "AN4059281",
           "collapse": [
             {
               "icon": "it-clip",
+              "aria-label": "Scarica la",
               "link": "Ricevuta richiesta",
               "class": "shadow p-0"
             },
             {
               "icon": "it-clip",
+              "aria-label": "Scarica la",
               "link": "Graduatoria",
               "class": "shadow p-0"
             },
             {
               "icon": "it-clip",
+              "aria-label": "Scarica la",
               "link": "Ricevuta richiesta",
               "class": "shadow p-0"
             }
@@ -224,9 +245,9 @@
           "date": "10/05/2021",
           "icon": "folder-pay.svg",
           "icon-label": "Pagato",
-          "label-tag":"Servizio non digitale",
+          "label-tag": "Servizio non digitale",
           "practice": "Pratica:",
-          "practice-number":"AN4059281",
+          "practice-number": "AN4059281",
           "collapse": [
             {
               "icon": "it-clip",
@@ -235,11 +256,13 @@
             },
             {
               "icon": "it-clip",
+              "aria-label": "Scarica la",
               "link": "Graduatoria",
               "class": "shadow p-0"
             },
             {
               "icon": "it-clip",
+              "aria-label": "Scarica la",
               "link": "Ricevuta richiesta",
               "class": "shadow p-0"
             }
@@ -251,22 +274,25 @@
           "date": "06/03/2021",
           "icon": "folder-pay.svg",
           "icon-label": "Pagato",
-          "label-tag":"Servizio non digitale",
+          "label-tag": "Servizio non digitale",
           "practice": "Pratica:",
-          "practice-number":"AN4059281",
+          "practice-number": "AN4059281",
           "collapse": [
             {
               "icon": "it-clip",
+              "aria-label": "Scarica la",
               "link": "Ricevuta richiesta",
               "class": "shadow p-0"
             },
             {
               "icon": "it-clip",
+              "aria-label": "Scarica la",
               "link": "Graduatoria",
               "class": "shadow p-0"
             },
             {
               "icon": "it-clip",
+              "aria-label": "Scarica la",
               "link": "Ricevuta richiesta",
               "class": "shadow p-0"
             }

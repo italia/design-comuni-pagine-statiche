@@ -84,6 +84,7 @@
                     {
                       "icon": "it-clip",
                       "link": "Ricevuta pagamento (PDF 80KB)",
+                      "aria-label":"Scarica la",
                       "class": "shadow mt-3"
                     }
                   ]
@@ -102,6 +103,7 @@
                     {
                       "icon": "it-clip",
                       "link": "Ricevuta pagamento (PDF 80KB)",
+                      "aria-label":"Scarica la",
                       "class": "shadow mt-3"
                     }
                   ]
@@ -120,6 +122,7 @@
                     {
                       "icon": "it-clip",
                       "link": "Ricevuta pagamento (PDF 80KB)",
+                      "aria-label":"Scarica la",
                       "class": "shadow mt-3"
                     }
                   ]
@@ -138,6 +141,7 @@
                     {
                       "icon": "it-clip",
                       "link": "Ricevuta pagamento (PDF 80KB)",
+                      "aria-label":"Scarica la",
                       "class": "shadow mt-3"
                     }
                   ]
@@ -158,6 +162,7 @@
                     {
                       "icon": "it-clip",
                       "link": "Ricevuta pagamento (PDF 80KB)",
+                      "aria-label":"Scarica la",
                       "class": "shadow mt-3"
                     }
                   ]
@@ -176,6 +181,7 @@
                     {
                       "icon": "it-clip",
                       "link": "Ricevuta pagamento (PDF 80KB)",
+                      "aria-label":"Scarica la",
                       "class": "shadow mt-3"
                     }
                   ]
@@ -194,6 +200,7 @@
                     {
                       "icon": "it-clip",
                       "link": "Ricevuta pagamento (PDF 80KB)",
+                      "aria-label":"Scarica la",
                       "class": "shadow mt-3"
                     }
                   ]
@@ -212,6 +219,7 @@
                     {
                       "icon": "it-clip",
                       "link": "Ricevuta pagamento (PDF 80KB)",
+                      "aria-label":"Scarica la",
                       "class": "shadow mt-3"
                     }
                   ]

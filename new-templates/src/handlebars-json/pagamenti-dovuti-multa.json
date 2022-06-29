@@ -365,6 +365,7 @@
               {
                 "icon": "it-clip",
                 "link": "Ricevuta pagamento (PDF 80KB)",
+                "aria-label":"Scarica la",
                 "class": "shadow mt-3 p-0"
               }
             ]
@@ -382,6 +383,7 @@
               {
                 "icon": "it-clip",
                 "link": "Ricevuta pagamento (PDF 80KB)",
+                "aria-label":"Scarica",
                 "class": "shadow mt-3 p-0"
               }
             ]
@@ -399,6 +401,7 @@
               {
                 "icon": "it-clip",
                 "link": "Ricevuta pagamento (PDF 80KB)",
+                "aria-label":"Scarica",
                 "class": "shadow mt-3 p-0"
               }
             ]
@@ -416,6 +419,7 @@
               {
                 "icon": "it-clip",
                 "link": "Ricevuta pagamento (PDF 80KB)",
+                "aria-label":"Scarica",
                 "class": "shadow mt-3 p-0"
               }
             ]
@@ -433,6 +437,7 @@
               {
                 "icon": "it-clip",
                 "link": "Ricevuta pagamento (PDF 80KB)",
+                "aria-label":"Scarica",
                 "class": "shadow mt-3 p-0"
               }
             ]
@@ -452,6 +457,7 @@
               {
                 "icon": "it-clip",
                 "link": "Ricevuta pagamento (PDF 80KB)",
+                "aria-label":"Scarica",
                 "class": "shadow mt-3 p-0"
               }
             ]
@@ -469,6 +475,7 @@
               {
                 "icon": "it-clip",
                 "link": "Ricevuta pagamento (PDF 80KB)",
+                "aria-label":"Scarica",
                 "class": "shadow mt-3 p-0"
               }
             ]
@@ -486,6 +493,7 @@
               {
                 "icon": "it-clip",
                 "link": "Ricevuta pagamento (PDF 80KB)",
+                "aria-label":"Scarica",
                 "class": "shadow mt-3 p-0"
               }
             ]
@@ -503,6 +511,7 @@
               {
                 "icon": "it-clip",
                 "link": "Ricevuta pagamento (PDF 80KB)",
+                "aria-label":"Scarica",
                 "class": "shadow mt-3 p-0"
               }
             ]
@@ -520,6 +529,7 @@
               {
                 "icon": "it-clip",
                 "link": "Ricevuta pagamento (PDF 80KB)",
+                "aria-label":"Scarica",
                 "class": "shadow mt-3 p-0"
               }
             ]
