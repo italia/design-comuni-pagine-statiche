@@ -1,33 +1,41 @@
 <div class="cmp-nav-steps">
   <nav class="steppers-nav">
-    <button type="button" class="btn btn-sm steppers-btn-prev p-0" aria-label="Torna indietro allo step precedente">
+    <button type="button" class="btn btn-sm steppers-btn-prev p-0 {{#if btn-back-step}}btn-back-step{{/if}}"
+      aria-label="Torna indietro allo step precedente">
       <svg class="icon icon-primary icon-sm">
         <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-chevron-left"></use>
       </svg>
       <span class="text-button-sm t-primary">Indietro</span>
     </button>
 
-    {{#if saveBtn}}
-    <button type="button" class="btn btn-outline-primary bg-white btn-sm steppers-btn-save d-none d-lg-block saveBtn" aria-label="Salva richiesta {{aria-label-save}}">
-      <span class="text-button-sm t-primary">Salva Richiesta</span>
-    </button>
 
-    <button type="button" class="btn btn-outline-primary bg-white btn-sm steppers-btn-save d-block d-lg-none saveBtn center" aria-label="Salva richiesta {{aria-label-save}}">
-      <span class="text-button-sm t-primary">Salva</span>
-    </button>
-    {{/if}}
+      {{#if saveBtn}}
+      <button type="button" class="btn btn-outline-primary bg-white btn-sm steppers-btn-save d-none d-lg-block saveBtn"
+        aria-label="Salva richiesta {{aria-label-save}}">
+        <span class="text-button-sm t-primary">Salva Richiesta</span>
+      </button>
+
+      <button type="button"
+        class="btn btn-outline-primary bg-white btn-sm steppers-btn-save d-block d-lg-none saveBtn center"
+        aria-label="Salva richiesta {{aria-label-save}}">
+        <span class="text-button-sm t-primary">Salva</span>
+      </button>
+      {{/if}}
 
 
     {{#if next}}
-    <button {{#if validate}}type="submit" {{else}}type="button"{{/if}} class="btn btn-primary btn-sm steppers-btn-confirm send" {{#if validate}} data-bs-validate="validate" {{else}}data-bs-toggle="modal"
-      data-bs-target="#{{modalId}}"{{/if}} aria-label="Invia la richiesta">
+    <button {{#if validate}}type="submit" {{else}}type="button" {{/if}}
+      class="btn btn-primary btn-sm steppers-btn-confirm send" {{#if validate}} data-bs-validate="validate"
+      {{else}}data-bs-toggle="modal" data-bs-target="#{{modalId}}" {{/if}} aria-label="Invia la richiesta">
       <span class="text-button-sm">Invia</span>
-       {{{icon}}}
+      {{{icon}}}
     </button>
 
     {{else}}
-    <button {{#if validate}}type="submit" {{else}}type="button"{{/if}} class="btn btn-primary btn-sm steppers-btn-confirm" {{#if validate}} data-bs-validate="validate" {{else}}data-bs-toggle="modal"
-      data-bs-target="#{{modalId}}"{{/if}} aria-label="Vai avanti allo step successivo">
+    <button {{#if validate}}type="submit" {{else}}type="button" {{/if}}
+      class="btn btn-primary btn-sm steppers-btn-confirm {{#if btn-next-step}}btn-next-step{{/if}}" {{#if validate}}
+      data-bs-validate="validate" {{else}}data-bs-toggle="modal" data-bs-target="#{{modalId}}" {{/if}}
+      aria-label="Vai avanti allo step successivo">
       <span class="text-button-sm">Avanti</span>
       <svg class="icon icon-white icon-sm">
         <use href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-chevron-right"></use>

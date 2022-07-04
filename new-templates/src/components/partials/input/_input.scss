@@ -5,10 +5,6 @@
     margin-top: 2rem;
   }
 
-  &__label {
-    color: get-color(dark, grey);
-  }
-
   input{
     &.form-control{
       background-size: 70px 45% !important;
@@ -19,15 +15,11 @@
       background-color: #fff;
     }
 
-
-
     &.is-invalid + .d-flex .form-text{
       display: none;
     }
 
   }
-
-
 
   input[type=text] {
     @include font(18, 18);
@@ -68,11 +60,15 @@
 }
 
 .form-group label {
-  color: get-color(dark, grey);
+  color: #596D88;
 }
 
 .bg-grey-card {
   .form-group label {
     color: #455A64;
   }
+}
+
+.form-feedback.just-validate-error-label{
+  color: #CE2740;
 }

@@ -17,7 +17,7 @@
         "description": "Elenco dei bambini ammessi alle scuole dell’Infanzia  comunali per l'anno educativo 2022/23",
         "classLink":"fw-normal",
         "icon-class":"icon-primary",
-        "only-ariaLabel": "Scarica il documento elenco dei bambini ammessi alle scuole dell'infanzia comunali per l'anno educativo 2022/23"
+        "only-ariaLabel": "scarica il documento elenco dei bambini ammessi alle scuole dell'infanzia comunali per l'anno educativo 2022-23"
       },
       {
         "icon": "it-clip",
@@ -25,7 +25,7 @@
         "description":"Lista d'attesa per le scuole dell’Infanzia comunali per l'anno educativo 2022/23",
         "classLink":"fw-normal",
         "icon-class":"icon-primary",
-        "only-ariaLabel": "Scarica il documento lista d'attesa per scuole dell'infanzia comunali per l'anno educativo 2022/23"
+        "only-ariaLabel": "scarica il documento lista d'attesa per scuole dell'infanzia comunali per l'anno educativo 2022-23"
       }
     ],
     "disservizio-servizi-correlati": [

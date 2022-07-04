@@ -55,6 +55,22 @@
           }
         ]
       }
+    },
+    "inserire-dati-specifici-2":{
+      "list":[
+        {
+          "name": "Sportello",
+          "description": "CIE"
+        },
+        {
+          "name": "Indirizzo",
+          "description": "via S. Caterina a Chiaia, 76"
+        },
+        {
+          "name": "Apertura",
+          "description": "lun, mar, mer ore 9:00 – 12:00"
+        }
+      ]
     }
   }
 }
