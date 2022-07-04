@@ -11,18 +11,17 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12 col-lg-10">
-        {{>cmp-heading/cmp-heading
-        title="Appuntamento confermato"
-        subTitle="L’appuntamento è fissato per<strong> Giovedì 11 marzo 2022 dalle ore 10:00 alle ore 10:30</strong>
-        </p>
-        <p class='subtitle-small pt-3 pt-lg-4'>Abbiamo inviato il riepilogo all’email:<br>
-          <strong>giulia.bianchi@gmail.com</strong>"
-          iconTitle="it-check-circle"
-          iconClass="mr-10 icons-sm mb-1"
-          }}
+        {{>cmp-hero/cmp-hero
+        hero-title="Appuntamento confermato"
+        icon="it-check-circle"
+        iconClass="mr-10 icon-sm mb-1"
+        hero-text="L’appuntamento è fissato per<strong> Giovedì 11 marzo 2022 dalle ore 10:00 alle ore 10:30</strong>
+        <br><br>Abbiamo inviato il riepilogo all’email:<br>
+        <strong>giulia.bianchi@gmail.com</strong>"
+        wrapper-class="pt-0 ps-0 pb-40"}}
       </div>
     </div>
-    <hr class="d-none d-lg-block mt-40 mb-40">
+    <hr class="d-none d-lg-block mb-40">
   </div>
 
   <div class="container">
@@ -34,8 +33,9 @@
         }}
       </div>
 
-      <div class="col-12 col-lg-8 offset-lg-1 mt-3 mt-lg-0">
-        {{#>cmp-card/cmp-card-content-box card-title="Cosa serve" id-title="needed" bg-grey-primary=true id-title="needed"
+      <div class="col-12 col-lg-8 offset-lg-1">
+        {{#>cmp-card/cmp-card-content-box card-title="Cosa serve" id-title="needed" bg-grey-primary=true
+        id-title="needed"
         class="p-3" cmpClass="mb-50" h2-class="mb-0"}}
         {{>cmp-ul-list/cmp-ul-list font-list="titillium" info-list=info-prenotazione.lista-1 }}
         {{/cmp-card/cmp-card-content-box}}
@@ -60,7 +60,8 @@
     <div class="container">
       <div class="row d-flex justify-content-center bg-primary">
         <div class="col-12 col-lg-6 px-4 p-lg-0">
-          {{>cmp-rating/cmp-rating public-template=true rating-title="Quanto è stato facile compilare questa richiesta online?"}}
+          {{>cmp-rating/cmp-rating public-template=true rating-title="Quanto è stato facile compilare questa richiesta
+          online?"}}
         </div>
       </div>
     </div>

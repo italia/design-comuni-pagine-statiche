@@ -1,25 +1,43 @@
 .cmp-hero{
+
+  .categoryicon-top {
+    .icon {
+      position: relative;
+      top: 12px;
+      &.big-lg-icon{
+        width: 1.75rem;
+        @include media-breakpoint-up(md) {
+          width: 1.833rem;
+        }
+      }
+    }
+  }
+
   .it-hero-wrapper{
     min-height: unset;
+
+    & .it-hero-text-wrapper{
+      padding: 48px 0;
+    }
   }
 
   .it-hero-wrapper .it-hero-text-wrapper .hero-title{
     @include font(40, 48);
     font-weight: 700;
-    line-height: 1.3;
+    line-height: 48px;
 
     @include media-breakpoint-up(sm) {
-      line-height: 1.25;
+      line-height: 48px;
     }
   }
 
   .it-hero-wrapper .it-hero-text-wrapper .hero-text{
-    @include font(18, 18);
+    @include font(16, 18);
     font-weight: 400;
-    line-height: 1.75;
+    line-height: 20px;
 
     @include media-breakpoint-up(sm) {
-      line-height: 1.556;
+      line-height: 20px;
     }
   }
 }
