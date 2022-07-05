@@ -11,6 +11,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{ htmlWebpackPlugin.options.description }}" />
     <link rel="stylesheet" href="./assets/bootstrap-italia/dist/css/bootstrap-italia.min.css">
+    {{#if service-json}}
+    <script type="application/ld+json">
+      {
+        "name": "Iscrizione alla Scuola dell’infanzia",
+        "serviceType": "P1Y",
+        "serviceOperator": {
+          "name": "New York"
+        },
+        "areaServed": {
+          "name": "New York"
+        },
+        "audience": {
+          "name": "New York"
+        },
+        "availableChannel": {
+          "serviceUrl": "New York",
+          "serviceLocation": {
+            "name": "New York",
+            "address": {
+              "streetAdress": "New York"
+              "postalCode": "New York"
+              "addressLocality": "New York"
+            }
+          }
+        }
+      }
+    </script>
+    {{/if}}
   </head>
 
   <body>
