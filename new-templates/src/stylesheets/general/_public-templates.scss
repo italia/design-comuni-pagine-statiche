@@ -1,7 +1,13 @@
 .card-teaser-wrapper {
   .card-image {
+    height: 100%;
+    width: 130px;
+    flex-shrink: 0;
+
     img {
+      align-self: flex-start;
       object-fit: cover;
+      width: 100%;
 
       @include media-breakpoint-up(md) {
         max-width: 100%;
@@ -9,7 +15,8 @@
 
       @include media-breakpoint-up(lg) {
         max-width: 150px;
-        max-height: 200px;
+        max-height: 160px;
+        height: 100%;
       }
     }
 

@@ -25,19 +25,14 @@
     @include font(40, 48);
     font-weight: 700;
     line-height: 48px;
-
-    @include media-breakpoint-up(sm) {
-      line-height: 48px;
-    }
+    margin-bottom: 1rem;
   }
 
   .it-hero-wrapper .it-hero-text-wrapper .hero-text{
     @include font(16, 18);
     font-weight: 400;
-    line-height: 20px;
-
-    @include media-breakpoint-up(sm) {
-      line-height: 20px;
-    }
+    line-height: 28px;
+    max-width: 600px;
+    color: get-color(black, main);
   }
 }
