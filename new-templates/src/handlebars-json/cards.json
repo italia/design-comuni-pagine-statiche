@@ -10,7 +10,7 @@
         "link": "Leggi di più",
         "icon": "it-arrow-right",
         "tag": true,
-        "img-path": "./assets/images/eventi-estate.png"
+        "img-path": "../assets/images/eventi-estate.png"
       },
       {
         "date": "03",
@@ -21,7 +21,7 @@
         "link": "Leggi di più",
         "icon": "it-arrow-right",
         "tag": true,
-        "img-path": "./assets/images/eventi-biblioteca-parco.png"
+        "img-path": "../assets/images/eventi-biblioteca-parco.png"
       },
       {
         "date": "10",
@@ -32,7 +32,7 @@
         "link": "Leggi di più",
         "icon": "it-arrow-right",
         "tag": true,
-        "img-path": "./assets/images/eventi-festa-associazioni.png"
+        "img-path": "../assets/images/eventi-festa-associazioni.png"
       },
       {
         "date": "30",
@@ -44,7 +44,7 @@
         "link": "Leggi di più",
         "icon": "it-arrow-right",
         "tag": true,
-        "img-path": "./assets/images/eventi-celluloide-festival.png"
+        "img-path": "../assets/images/eventi-celluloide-festival.png"
       },
       {
         "date": "27",
@@ -55,7 +55,7 @@
         "link": "Leggi di più",
         "icon": "it-arrow-right",
         "tag": true,
-        "img-path": "./assets/images/eventi-street-art.png"
+        "img-path": "../assets/images/eventi-street-art.png"
       },
       {
         "date": "16",
@@ -66,7 +66,7 @@
         "link": "Leggi di più",
         "icon": "it-arrow-right",
         "tag": true,
-        "img-path": "./assets/images/eventi-tram-via.png"
+        "img-path": "../assets/images/eventi-tram-via.png"
       }
     ],
     "card-places": [
@@ -76,7 +76,7 @@
         "description": "Sorta a metà Seicento come residenza di caccia di Carlo Emanuele II, che fece del centrale Salone di Diana uno snodo ideale fra palazzo e giardini.",
         "link": "Leggi di più",
         "icon": "it-arrow-right",
-        "img-path": "./assets/images/luoghi-castello-1.png"
+        "img-path": "../assets/images/luoghi-castello-1.png"
       },
       {
         "category": "Categoria",
@@ -84,7 +84,7 @@
         "description": "Scopri il programma degli eventi dell’estate, fra feste, cultura, attività all’aperto e momenti di socializzazione.",
         "link": "Leggi di più",
         "icon": "it-arrow-right",
-        "img-path": "./assets/images/luoghi-castello-2.png"
+        "img-path": "../assets/images/luoghi-castello-2.png"
       },
       {
         "category": "Categoria",
@@ -92,7 +92,7 @@
         "description": "Scopri il programma degli eventi dell’estate, fra feste, cultura, attività all’aperto e momenti di socializzazione.",
         "link": "Leggi di più",
         "icon": "it-arrow-right",
-        "img-path": "./assets/images/luoghi-castello-3.png"
+        "img-path": "../assets/images/luoghi-castello-3.png"
       },
       {
         "category": "Categoria",
@@ -101,7 +101,7 @@
         "description": "Il complesso è situato a Possagno e contiene i modelli in gesso e i bozzetti in argilla dello scultore neoclassico Antonio Canova.",
         "link": "Leggi di più",
         "icon": "it-arrow-right",
-        "img-path": "./assets/images/luoghi-gipsoteca.png"
+        "img-path": "../assets/images/luoghi-gipsoteca.png"
       },
       {
         "category": "Categoria",
@@ -109,7 +109,7 @@
         "description": "La Tomba Brion si trova in via Brioni a San Vito di Altivole. Luogo estremamente affascinante e carico di simbologia, si può raggiungere solamente in auto. ",
         "link": "Leggi di più",
         "icon": "it-arrow-right",
-        "img-path": "./assets/images/luoghi-tomba.png"
+        "img-path": "../assets/images/luoghi-tomba.png"
       },
       {
         "category": "Categoria",
@@ -117,7 +117,7 @@
         "description": "Scopri il programma degli eventi dell’estate, fra feste, cultura, attività all’aperto e momenti di socializzazione.",
         "link": "Leggi di più",
         "icon": "it-arrow-right",
-        "img-path": "./assets/images/luoghi-castello-4.png"
+        "img-path": "../assets/images/luoghi-castello-4.png"
       }
     ],
     "card-news": [
@@ -125,13 +125,13 @@
         "category-date": "18 MAG 2022",
         "title": "Tramvia, chiusure notturne in via Valfonda",
         "description": "Da lunedì chiusa via Valfonda. In programma anche divieti di transito di notte in via Vittorio Emanuele II e via Pisacane.",
-        "img-path": "./assets/images/notizie-tramvia.png"
+        "img-path": "../assets/images/notizie-tramvia.png"
       },
       {
         "category-date": "03 MAG 2022",
         "title": "Tramvia, dibattito aperto a tutti i cittadini",
         "description": "Tutte le informazioni utili sui principali cantieri attivi in città Tutte le informazioni utili sui principali cantieri attivi in città Tutte le informazioni utili sui cantieri.",
-        "img-path": "./assets/images/notizie-tramvia-2.png"
+        "img-path": "../assets/images/notizie-tramvia-2.png"
       },
       {
         "category-date": "30 MAR 2022",
@@ -145,13 +145,13 @@
         "category-date": "18 MAG 2022",
         "title": "Tramvia, chiusure notturne in via Valfonda",
         "description": "Da lunedì chiusa via Valfonda. In programma anche divieti di transito di notte in via Vittorio Emanuele II e via Pisacane.",
-        "img-path": "./assets/images/notizie-tramvia.png"
+        "img-path": "../assets/images/notizie-tramvia.png"
       },
       {
         "category-date": "03 MAG 2022",
         "title": "Tramvia, dibattito aperto a tutti i cittadini",
         "description": "Tutte le informazioni utili sui principali cantieri attivi in città Tutte le informazioni utili sui principali cantieri attivi in città Tutte le informazioni utili sui cantieri.",
-        "img-path": "./assets/images/notizie-tramvia-2.png"
+        "img-path": "../assets/images/notizie-tramvia-2.png"
       },
       {
         "category-date": "30 MAR 2022",
@@ -169,13 +169,13 @@
         "category-date": "18 MAG 2022",
         "title": "Tramvia, chiusure notturne in via Valfonda",
         "description": "Da lunedì chiusa via Valfonda. In programma anche divieti di transito di notte in via Vittorio Emanuele II e via Pisacane.",
-        "img-path": "./assets/images/notizie-tramvia-3.png"
+        "img-path": "../assets/images/notizie-tramvia-3.png"
       },
       {
         "category-date": "03 MAG 2022",
         "title": "Tramvia, dibattito aperto a tutti i cittadini",
         "description": "In questi giorni si sono aperti o apriranno cantieri che prevedono lavori di risistemazione del fondo stradale,  di riqualificazione di spazi verdi.",
-        "img-path": "./assets/images/notizie-tramvia-4.png"
+        "img-path": "../assets/images/notizie-tramvia-4.png"
       }
     ]
   }

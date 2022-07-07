@@ -12,7 +12,7 @@ function initCleanInput() {
           input.insertAdjacentHTML('afterend', `
           <button type="button" class="clean-input" aria-label="Elimina testo di ricerca">
             <svg class="icon">
-              <use xlink:href="./assets/bootstrap-italia/dist/svg/sprite.svg#it-close"></use>
+              <use xlink:href="../assets/bootstrap-italia/dist/svg/sprite.svg#it-close"></use>
             </svg>
           </button>
           `);
