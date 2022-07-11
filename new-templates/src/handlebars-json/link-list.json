@@ -192,6 +192,14 @@
         {
           "item": "Ulteriori informazioni",
           "anchor": "more-info"
+        },
+        {
+          "item": "Condizioni di servizio",
+          "anchor": "conditions"
+        },
+        {
+          "item": "Contatti",
+          "anchor": "contacts"
         }
     ]
   }
