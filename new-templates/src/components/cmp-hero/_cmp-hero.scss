@@ -34,5 +34,10 @@
     line-height: 28px;
     max-width: 600px;
     color: get-color(black, main);
+
+    p {
+      color: get-color(black, main);
+      font-family: "Titillium Web" !important;
+    }
   }
 }
