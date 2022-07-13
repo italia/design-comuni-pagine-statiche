@@ -57,15 +57,17 @@
             class="p-big"
             id-title="office"
             bg-grey=true
-            h2-class="mb-2"
+            h2-class="mb-0"
             card-title="Ufficio"
-            header-m0=true
             }}
-                  {{> cmp-info-radio/cmp-info-radio group="beneficiaries" idRadio="first"
-            title="Municipalità 1 - Chiaia, Posillipo, S. Ferdinando"
-            info-appointment=inserire-dati-specifici-appuntamento.info
-            }}
-                  {{/cmp-card/cmp-card-content-box}}
+
+            {{>cmp-info-summary/cmp-info-summary-no-modify
+            class="mb-4 mb-lg-30 p-4"
+            info-title="Municipalità 1 - Chiaia, Posillipo, S. Ferdinando"
+            info=true
+            info-list=prenotazione-appuntamento.inserire-dati-specifici-2.list}}
+
+            {{/cmp-card/cmp-card-content-box}}
    
             {{> cmp-nav-steps/cmp-nav-steps save="true" aria-label-save="di prenotazione appuntamento"}}
           </div>
