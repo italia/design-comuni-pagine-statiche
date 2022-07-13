@@ -26,6 +26,13 @@
       {{#if button}}
         {{>partials/button/button class="fw-bold"}}
       {{/if}}
+
+      {{#if double-button}}
+        <div class="d-lg-flex gap-30 mb-2">
+            {{>partials/button/button class="fw-bold btn-primary mr-lg-30"}}
+            {{>partials/button/button class="fw-bold btn-outline-primary t-primary" label=second-label aria-label=second-ariaLabel}}
+        </div>
+      {{/if}}
     </div>
     <div class="col-lg-3 offset-lg-1 mt-5 mt-lg-0">
       <div class="dropdown">

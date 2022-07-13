@@ -14,20 +14,22 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12 col-lg-10">
-        {{> cmp-heading/cmp-heading
-          title="Segnalazione disservizio"
-          double-button=true
-          label="Segnala disservizio"
-          aria-label="Vai alla pagina segnala disservizio"
-          second-label="Tutte le segnalazioni"
-          second-ariaLabel="Vai alla pagina Tutte le segnalazioni"
-          description="Un servizio aperto a tutti i cittadini per segnalare disservizi, guasti e criticità rilevati sul
-          territorio comunale."
-          label-tag="Servizio attivo"
-          servizio-attivo=true
+        {{> cmp-heading/cmp-heading-detail
+        title="Segnalazione disservizio"
+        subTitle="Un servizio aperto a tutti i cittadini per segnalare disservizi, guasti e criticità
+          rilevati sul territorio comunale."
+        pClass="mb-3"
+        double-button=true
+        label="Segnala disservizio"
+        aria-label="Vai alla pagina segnala disservizio"
+        second-label="Tutte le segnalazioni"
+        second-ariaLabel="Vai alla pagina Tutte le segnalazioni"
+        class="text-button"
+        label-tag-up="Servizio attivo"
+        servizio-attivo=true
         }}
       </div>
-      <hr class="d-none d-lg-block mb-lg-80 mt-2">
+      <hr class="d-none d-lg-block mb-0 mt-2">
     </div>
   </div>
 

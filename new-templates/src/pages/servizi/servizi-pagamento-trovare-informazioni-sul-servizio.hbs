@@ -15,15 +15,17 @@
   <div class="container" >
     <div class="row justify-content-center">
       <div class="col-12 col-lg-10">
-        {{> cmp-heading/cmp-heading
-          title="Richiesta servizio mensa scolastica"
-          button=true
-          label="Richiedi online"
-          aria-label="Richiedi online il servizio di mensa scolastica"
-          description="Il servizio di mensa scolastica per le scuole dell’infanzia e primarie statali."
-          primary=true
-          label-tag="Servizio attivo"
-          servizio-attivo=true
+        {{> cmp-heading/cmp-heading-detail
+        title="Richiesta servizio mensa scolastica"
+        subTitle="Il servizio di mensa scolastica per le scuole dell’infanzia e primarie statali."
+        pClass="mb-3"
+        button=true
+        label="Richiedi online"
+        primary=true
+        class="text-button"
+        label-tag-up="Servizio attivo"
+        aria-label="Richiedi online il servizio di mensa scolastica"
+        servizio-attivo=true
         }}
       </div>
       <hr class="d-none d-lg-block mb-0 mt-2">

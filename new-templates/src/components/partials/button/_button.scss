@@ -19,6 +19,10 @@
 
 .btn {
 
+  &:hover {
+    text-decoration: none;
+  }
+
   &.mobile-full {
     width: 100%;
 

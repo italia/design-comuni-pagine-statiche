@@ -11,17 +11,18 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12 col-lg-10">
-        {{> cmp-heading/cmp-heading
+        {{> cmp-heading/cmp-heading-detail
         title="Pagamento multa"
-        pClass="mt-3"
-        label-tag="Servizio attivo"
-        servizio-attivo=true
-        description="Il servizio permette di pagare online le multe ricevute dalla polizia municipale o di prenotare un
+        subTitle="Il servizio permette di pagare online le multe ricevute dalla polizia municipale o di prenotare un
         appuntamento per pagare presso gli uffici."
+        pClass="mb-3"
         button=true
-        aria-label="Paga online la multa"
         label="Paga online"
         primary=true
+        class="text-button"
+        label-tag-up="Servizio attivo"
+        aria-label="Paga online la multa"
+        servizio-attivo=true
         }}
       </div>
       <hr class="d-none d-lg-block mb-0 mt-2">
