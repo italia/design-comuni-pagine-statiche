@@ -1,14 +1,17 @@
 .cmp-steps-rating {
   .step-title {
-    @include font(18, 18);
-    font-weight: 600;
-    line-height: 36px;
     padding: 0.875rem;
     margin-bottom: 2.375rem;
 
     @include media-breakpoint-up(sm){
       padding: 0.78rem;
       margin-bottom: 2.111rem;
+    }
+
+    legend {
+      @include font(18, 18);
+      font-weight: 600;
+      line-height: 36px;
     }
   }
 }

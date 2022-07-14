@@ -1,19 +1,21 @@
 <div class="cmp-steps-rating">
   {{!-- Stepper --}}
-  <div class="iscrizioni-header w-100">
-    <h4 class="step-title d-flex align-items-center justify-content-between drop-shadow {{class}}">
-      <span class="d-block d-lg-inline">
-        {{step-title}}
-      </span>
-      <span class="step">{{step-num}}/{{step-tot}}</span>
-    </h4>
-    {{#if subtitle}}
-    <p class="title-xsmall mb-40">{{subtitle}}</p>
-    {{/if}}
-  </div>
-  {{!-- Body --}}
-  <div class="cmp-steps-rating__body">
-    {{> @partial-block}}
-  </div>
+  <fieldset>
+    <div class="iscrizioni-header w-100">
+      <h3 class="step-title d-flex align-items-center justify-content-between drop-shadow {{class}}">
+        <legend class="d-block d-lg-inline">
+          {{step-title}}
+        </legend>
+        <span class="step">{{step-num}}/{{step-tot}}</span>
+      </h3>
+      {{#if subtitle}}
+      <p class="title-xsmall mb-40">{{subtitle}}</p>
+      {{/if}}
+    </div>
+    {{!-- Body --}}
+    <div class="cmp-steps-rating__body">
+      {{> @partial-block}}
+    </div>
+  </fieldset>
 </div>
 
