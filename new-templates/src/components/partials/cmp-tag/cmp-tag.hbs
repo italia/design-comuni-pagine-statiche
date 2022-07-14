@@ -1,9 +1,11 @@
 <div class="cmp-tag">
-  <a class="cmp-tag__tag title-xsmall {{class}}"
+  <a class="chip chip-simple {{class}}"
   {{#if servizio-attivo}} 
     aria-label="{{label-tag}}{{label-tag-up}}" title="{{label-tag}}{{label-tag-up}}"
     {{else}} 
     aria-label="Visualizza tutti gli argomenti {{label-tag}}{{label-tag-up}}" title="Visualizza tutti gli argomenti {{label-tag}}{{label-tag-up}}"
   {{/if}}
-  href="#" data-element="service-status">{{label-tag}}{{label-tag-up}}</a>
+  href="#" data-element="service-topic">
+  <span class="chip-label">{{label-tag}}{{label-tag-up}}</span>
+  </a>
 </div>
