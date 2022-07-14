@@ -5,6 +5,7 @@
     font-family: Titillium Web;
     font-weight: 600;
     line-height: 1.5;
+    padding-left: 0;
   }
   &__list{
     @include font(16, 16);

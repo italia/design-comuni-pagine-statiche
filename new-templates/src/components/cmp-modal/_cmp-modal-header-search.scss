@@ -25,7 +25,7 @@
   }
 
   .modal-title {
-     @include font(18, 48);
+    @include font(18, 48);
     display: flex;
     align-items: center;
     box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.06);
@@ -46,6 +46,16 @@
       line-height: 1.1;
     }
 
+    h2 {
+      @include font(18, 48);
+      font-weight: 600;
+      line-height: 1.5;
+      
+      @include media-breakpoint-up(md) {
+        line-height: 1.1;
+      }
+    }
+    
     .search-link {
       margin-right: 1.5rem;
 

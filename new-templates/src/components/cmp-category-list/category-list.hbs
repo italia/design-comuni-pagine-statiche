@@ -1,11 +1,8 @@
 {{#if isMobile}}
 {{#each category as |filter|}}
+  <fieldset>
     <div class="categoy-list pb-4">
-      {{#if filter.h3Title}}
-        <h3 class="h6 text-uppercase category-list__title">{{filter.title}}</h3>
-        {{else}}
-        <h2 class="h6 text-uppercase category-list__title">{{filter.title}}</h2>
-      {{/if}}
+      <legend class="h6 text-uppercase category-list__title">{{filter.title}}</legend>
       <ul>
         {{#each filter.list as |checkbox|}}
           <li>
@@ -19,15 +16,13 @@
         {{/each}}
       </ul>
     </div>
+  </fieldset>
   {{/each}}
 {{else}}
 {{#each category as |filter|}}
+  <fieldset>
     <div class="categoy-list pb-4">
-      {{#if filter.h3Title}}
-        <h3 class="h6 text-uppercase category-list__title">{{filter.title}}</h3>
-        {{else}}
-        <h2 class="h6 text-uppercase category-list__title">{{filter.title}}</h2>
-      {{/if}}
+      <legend class="h6 text-uppercase category-list__title">{{filter.title}}</legend>
       <ul>
         {{#each filter.list as |checkbox|}}
           <li>
@@ -41,5 +36,6 @@
         {{/each}}
       </ul>
     </div>
+  </fieldset>
   {{/each}}
 {{/if}}
