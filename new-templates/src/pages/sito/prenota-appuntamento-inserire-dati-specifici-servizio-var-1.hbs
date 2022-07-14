@@ -49,18 +49,21 @@
             subtitle="Scegli l’ufficio a cui vuoi richiedere l’appuntamento"
             }}
             {{>partials/select/select placeholder="Seleziona opzione" id="office-choice" label-text="Tipo di ufficio" label-hidden=true class="p-0" select-option-list=ufficio-appuntamento}}
-            {{> cmp-info-radio/cmp-info-radio radio=true group="beneficiaries" idRadio="first"
-            title="Municipalità 1 - Chiaia, Posillipo, S. Ferdinando"
-            info-appointment=inserire-dati-specifici-appuntamento.info
-            }}
-            {{> cmp-info-radio/cmp-info-radio radio=true group="beneficiaries" idRadio="third"
-            title="Municipalità 3 - Stella, S. Carlo all'Arena"
-            info-appointment=inserire-dati-specifici-appuntamento.info
-            }}
-            {{> cmp-info-radio/cmp-info-radio radio=true group="beneficiaries" idRadio="four"
-            title="Municipalità 4 - S. Lorenzo, Vicaria, Poggioreale, Zona Industriale"
-            info-appointment=inserire-dati-specifici-appuntamento.info
-            }}
+            <fieldset>
+              <legend class="visually-hidden">Seleziona un ufficio</legend>
+              {{> cmp-info-radio/cmp-info-radio radio=true group="beneficiaries" idRadio="first"
+              title="Municipalità 1 - Chiaia, Posillipo, S. Ferdinando"
+              info-appointment=inserire-dati-specifici-appuntamento.info
+              }}
+              {{> cmp-info-radio/cmp-info-radio radio=true group="beneficiaries" idRadio="third"
+              title="Municipalità 3 - Stella, S. Carlo all'Arena"
+              info-appointment=inserire-dati-specifici-appuntamento.info
+              }}
+              {{> cmp-info-radio/cmp-info-radio radio=true group="beneficiaries" idRadio="four"
+              title="Municipalità 4 - S. Lorenzo, Vicaria, Poggioreale, Zona Industriale"
+              info-appointment=inserire-dati-specifici-appuntamento.info
+              }}
+            </fieldset>
             {{/cmp-card/cmp-card-content-box}}
           {{> cmp-nav-steps/cmp-nav-steps save="true" aria-label-save="di prenotazione appuntamento"}}
         </div>
