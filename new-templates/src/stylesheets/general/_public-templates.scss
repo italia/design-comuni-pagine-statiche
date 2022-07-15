@@ -449,3 +449,12 @@ a.read-more {
 .navbar.it-navscroll-wrapper .link-list-wrapper ul li a {
   font-weight: 400;
 }
+
+
+a {
+  &:hover {
+    .card-title {
+      color: inherit !important;
+    }
+  }
+}
