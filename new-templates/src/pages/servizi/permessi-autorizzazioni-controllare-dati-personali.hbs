@@ -1,4 +1,4 @@
-{{#>base/base title="Permessi e autorizzazioni - Inserire/Controllare i dati personali" headerActive3=true}}
+{{#>base/base title="Permessi mobilità - Nome del Comune" headerActive3=true}}
 <main>
   <div class="container" id="main-container">
     <div class="row justify-content-center">
@@ -71,6 +71,9 @@
           id-title="vehicles-info"
           subtitle="Seleziona o aggiungi il veicolo per il quale vuoi richiedere il permesso"}}
 
+          <fieldset>
+            <legend class="visually-hidden">Seleziona o aggiungi il veicolo per il quale vuoi richiedere il permesso</legend>
+
             {{> cmp-info-button-card/cmp-info-button-card
             radio=true
             group="vehicles"
@@ -88,18 +91,19 @@
             vehicle-data=permessi-autorizzazioni.controllare-dati-personali.vehicle-1
             }}
 
-          {{> cmp-info-button-card/cmp-info-button-card
-          radio=true
-          group="vehicles"
-          idRadio="vehicle2"
-          radio-title="Opel Zafira Life"
-          label-2="Targa <br> <span>EF 123 JR</span>"
-          show-more-vehicle="true"
-          collapse-id="collapse-benef-2"
-          modalId="modal-vehicle-data"
-          vehicle-name="Opel Zafira Life"
-          vehicle-data=permessi-autorizzazioni.controllare-dati-personali.vehicle-2
-          }}
+            {{> cmp-info-button-card/cmp-info-button-card
+            radio=true
+            group="vehicles"
+            idRadio="vehicle2"
+            radio-title="Opel Zafira Life"
+            label-2="Targa <br> <span>EF 123 JR</span>"
+            show-more-vehicle="true"
+            collapse-id="collapse-benef-2"
+            modalId="modal-vehicle-data"
+            vehicle-name="Opel Zafira Life"
+            vehicle-data=permessi-autorizzazioni.controllare-dati-personali.vehicle-2
+            }}
+          </fieldset>
 
           {{>partials/button/button label="Aggiungi veicolo"
           iconBtn="it-plus-circle"

@@ -9,7 +9,7 @@
     outline: 2px solid get-color(primary, main);
   }
 
-  &.radio-card:not(:first-child) {
+  &.radio-card:not(:first-of-type) {
     margin-top: 1rem;
 
     @include media-breakpoint-up(sm) {

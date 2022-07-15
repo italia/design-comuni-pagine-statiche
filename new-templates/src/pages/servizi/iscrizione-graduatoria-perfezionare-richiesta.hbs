@@ -1,4 +1,4 @@
-{{#>base/base title="Perfezionamento Richiesta" headerActive3=true}}
+{{#>base/base title="Area personale - Nome del Comune" headerActive3=true}}
 <main>
   <div class="container" id="main-container">
     <div class="row">
@@ -31,7 +31,10 @@
           h2-class="mb-1"
           margin-class="mb-40"
           }}
-          {{> cmp-card-radio/cmp-card-radio id='doposcuola'}}
+          <fieldset>
+            <legend class="visually-hidden">Hai bisogno del servizio di doposcuola?</legend>
+            {{> cmp-card-radio/cmp-card-radio id='doposcuola'}}
+          </fieldset>
           {{/cmp-card/cmp-card-content-box}}
 
           {{#>cmp-card/cmp-card-content-box

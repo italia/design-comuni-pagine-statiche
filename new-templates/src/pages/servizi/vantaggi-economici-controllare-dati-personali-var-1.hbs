@@ -98,7 +98,10 @@
             id-title="bank-account"
             subtitle="Seleziona o aggiungi il conto su cui vuoi ricevere l'assegno"}}
 
-            {{> cmp-info-button-card/cmp-info-button-card radio=true group="bank-accounts" idRadio="accounts"
+            <fieldset>
+              <legend class="visually-hidden">Seleziona o aggiungi il conto su cui vuoi ricevere l'assegno</legend>
+
+              {{> cmp-info-button-card/cmp-info-button-card radio=true group="bank-accounts" idRadio="accounts"
             radio-title="Intesa Sanpaolo"
             label-2="Iban <br> <span>IT12 3456 7890 123456</span>"
             show-accordion-bank="true"
@@ -112,14 +115,13 @@
             {{> cmp-info-button-card/cmp-info-button-card radio=true group="bank-accounts" idRadio="accounts-2"
             radio-title="Banca Popolare di Roma"
             label-2="Iban <br> <span>IT12 3456 7890 123456</span>"
-
             show-accordion-bank="true"
             info-title="Banca Popolare di Roma"
             collapse-id="collapse-bank-2"
             conto-bancario=vantaggi-economici.controllare-dati-personali-var-1.conto-bancario-2.info
             modalId="modal-bank-account"
            }}
-
+            </fieldset>
 
           {{>partials/button/button label="Aggiungi conto bancario"
           iconBtn="it-plus-circle"

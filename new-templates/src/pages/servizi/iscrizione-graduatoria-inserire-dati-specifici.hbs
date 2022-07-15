@@ -1,4 +1,4 @@
-{{#>base/base title="Preferenze di Servizio" headerActive3=true}}
+{{#>base/base title="Iscrizione alla Scuola dell’infanzia - Nome del Comune" headerActive3=true}}
 <main>
   <div class="container" id="main-container">
     <div class="row justify-content-center">
@@ -50,7 +50,10 @@
             card-title="Religione cattolica"
             subtitle="Vuoi avvalerti dell'insegnamento della
             religione cattolica?"}}
-            {{> cmp-card-radio/cmp-card-radio id='religione'}}
+            <fieldset>
+              <legend class="visually-hidden">Vuoi avvalerti dell'insegnamento della religione cattolica?</legend>
+              {{> cmp-card-radio/cmp-card-radio id='religione'}}
+            </fieldset>
             {{/cmp-card/cmp-card-content-box}}
   
             {{#>cmp-card/cmp-card-content-box
@@ -62,7 +65,10 @@
             required-icon=true
             card-title="Uscite didattiche"
             subtitle="Autorizzi le uscite didattiche?"}}
-            {{> cmp-card-radio/cmp-card-radio id='uscite'}}
+            <fieldset>
+              <legend class="visually-hidden">Autorizzi le uscite didattiche?</legend>
+              {{> cmp-card-radio/cmp-card-radio id='uscite'}}
+            </fieldset>
             {{/cmp-card/cmp-card-content-box}}
 
             {{#>cmp-card/cmp-card-content-box
@@ -74,7 +80,10 @@
             required-icon=true
             card-title="Riprese multimediali"
             subtitle="Autorizzi la scuola a produrre e utilizzare foto e video in cui compare tua figlia o tuo figlio?"}}
-            {{> cmp-card-radio/cmp-card-radio id='multimedia'}}
+            <fieldset>
+              <legend class="visually-hidden">Autorizzi la scuola a produrre e utilizzare foto e video in cui compare tua figlia o tuo figlio?</legend>
+              {{> cmp-card-radio/cmp-card-radio id='multimedia'}}
+            </fieldset>
             {{/cmp-card/cmp-card-content-box}}
             
           {{> cmp-nav-steps/cmp-nav-steps save="true" saveBtn=true aria-label-save="di iscrizione"}}
