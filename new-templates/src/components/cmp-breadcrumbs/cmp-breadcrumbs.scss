@@ -9,6 +9,10 @@
 
   .breadcrumb-container .breadcrumb .breadcrumb-item a{
     color: get-color(primary, main);
+
+    &:hover {
+      color: #006242;
+    }
   }
 
   .separator {
