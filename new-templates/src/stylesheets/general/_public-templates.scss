@@ -114,11 +114,11 @@
     line-height: 1.3;
     letter-spacing: 1.1px;
   }
-  h5.card-title{
-    a{
-      color: get-color(primary, main)
-    }
-  }
+  // h5.card-title{
+  //   a{
+  //     color: get-color(primary, main)
+  //   }
+  // }
 }
 
 a.read-more {
@@ -184,13 +184,14 @@ a.read-more {
 
       a{  
         color: get-color(primary, main);
+        text-decoration: underline;
+
+        &:hover {
+          color: #006242;
+        }
       }
     }
   }
-}
-
-.link-list-wrapper ul li a.active span {
-  text-decoration: none;
 }
 
 // .chip .chip-label:hover {
@@ -199,6 +200,7 @@ a.read-more {
 
 .card.card-teaser {
   padding: 16px 24px;
+  text-decoration: none;
 
   @include media-breakpoint-up(lg) {
     flex-direction: row;
@@ -209,6 +211,7 @@ a.read-more {
   &.card-bg-blue {
     &:hover {
       color: #fff;
+      text-decoration: underline;
     }
   }
 }
@@ -224,6 +227,20 @@ a.read-more {
 
   @include media-breakpoint-up(lg) {
     flex: 0 0 32%;
+  }
+}
+
+.link-list-wrapper ul li a {
+  text-decoration: underline;
+  
+  span {
+    display: unset;
+  }
+
+  &:hover:not(.disabled){
+    span {
+      color: inherit;
+    }
   }
 }
 
@@ -277,6 +294,12 @@ a.read-more {
 
     span {
       color: #007A52 !important;
+    }
+
+    &:hover {
+      span {
+        color: #006242 !important;
+      }
     }
   }
 }
@@ -421,4 +444,8 @@ a.read-more {
   .nav-item {
     padding: 2px;
   }
+}
+
+.navbar.it-navscroll-wrapper .link-list-wrapper ul li a {
+  font-weight: 400;
 }
