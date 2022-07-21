@@ -2,9 +2,9 @@
   &__tag {
     @include font(14, 14);
     font-weight: 600;
-    color: get-color(primary, main);
+    color: #008758;
     padding: 0 0.75rem;
-    border: 1px solid get-color(primary, main);
+    border: 1px solid #008758;
     text-decoration: none;
     border-radius: 50px;
 
