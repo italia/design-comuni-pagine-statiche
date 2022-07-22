@@ -1,0 +1,11 @@
+{{#>cmp-modal/cmp-modal-structure id="modal-bank-account" id-form="bank-account-form" modalTitle="Conto bancario per l’accredito" buttons=true modalInfo="I campi contraddistinti dal
+simbolo asterisco sono obbligatori"}}
+  <form action="" id="bank-account-form">
+    {{>partials/input/input id="nameSurname" type="text" label="Intestatario" text="Inserisci nome e cognome dell’intestatario" required=true}}
+    {{>partials/input/input id="bank" type="text" label="Istituto di credito" text="Inserisci Istituto di credito" required=true}}
+    {{>partials/input/input id="branch" type="text" label="Filiale" text="Inserisci filiale" required=true }}
+    {{>partials/input/input id="address" type="text" label="Indirizzo istituto" text="Inserisci indirizzo istituto di credito" required=true }}
+    {{>partials/input/input id="iban" type="text" label="Iban" text="Inserisci Inserisci iban" required=true}}
+    {{>partials/cmp-upload/cmp-upload inputId="doc-id" label="Documento iban" required="true" success="true" document="documento_iban.pdf"}}
+  </form>
+{{/cmp-modal/cmp-modal-structure}}

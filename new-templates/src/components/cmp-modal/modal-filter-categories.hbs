@@ -1,0 +1,18 @@
+<div class="modal it-dialog-scrollable fade categories-modal" tabindex="-1" role="dialog" id="modal-categories" aria-labelledby="modalrightTitle">
+  <div class="modal-dialog modal-dialog-right" role="document">
+    <div class="modal-content">
+      <div class="modal-header py-3 mb-4">
+        <h2 class="modal-title h5 no_toc" id="modalrightTitle">645 Risultati</h2>
+        <button type="button" aria-label="Rimuovi filtri">
+          Rimuovi tutti i filtri
+        </button>
+      </div>
+      <div class="modal-body">
+        {{> cmp-category-list/category-list category=categories isMobile=true}}
+      </div>
+      <div class="modal-footer mt-3">
+        <button class="btn btn-primary w-100" type="button" data-bs-dismiss="modal" aria-label="Filtra e chiudi finestra modale">Vai ai risultati</button>
+      </div>
+    </div>
+  </div>
+</div>

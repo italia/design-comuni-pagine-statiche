@@ -1,0 +1,48 @@
+.cmp-filter {
+  padding: 0 .75rem;
+
+  @include media-breakpoint-up(sm) {
+    padding: 0;
+  }
+
+  &:not(:last-child) {
+    @include media-breakpoint-up(lg) {
+      margin-top: 0;
+    }
+  }
+
+  &:not(:first-child) {
+    margin-top: 2rem;
+
+    @include media-breakpoint-up(sm) {
+      margin-top: 1.78rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      margin-top: 2.89rem;
+    }
+  }
+
+  &__title {
+    margin-bottom: 0.5rem;
+
+    @include media-breakpoint-up(sm) {
+      margin-bottom: 0.44rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 0.89rem;
+    }
+  }
+
+  .filter-section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .filter-wrapper button span {
+    @include font(14, 16);
+    font-weight: 600;
+    color: get-color(primary, main);
+  }
+}

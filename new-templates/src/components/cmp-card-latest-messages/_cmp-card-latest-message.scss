@@ -1,0 +1,29 @@
+.cmp-card-latest-messages{
+  p{
+    margin: 0;
+  }
+
+  .drop-shadow {
+    box-shadow: 0 0.2rem 0.3rem  rgba(0, 0, 0, 0.1);
+  }
+
+  .date-regular{
+    color: rgba(25,25,25,0.7);
+  }
+
+  .green-title-big {
+    @include font(24, 24);
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  .card {
+    &:after {
+      content: unset;
+    }
+  }
+
+  .date-xsmall {
+    opacity: .7;
+  }
+}

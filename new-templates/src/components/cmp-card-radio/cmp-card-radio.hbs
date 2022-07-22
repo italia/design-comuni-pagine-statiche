@@ -1,0 +1,69 @@
+<div class="cmp-card-radio {{cmp-class}}">
+  <div class="card card-teaser">
+    <div class="card-body">
+      <div class="form-check m-0">
+        {{#if percentage}}
+          {{#if frequency}}
+            {{#if diet}}
+              <div class="radio-body border-bottom border-light">
+                <input name="{{id}}" type="radio" id="{{id}}-1">
+                <label for="{{id}}-1">Nessuna dieta</label>
+              </div>
+              <div class="radio-body border-bottom border-light">
+                <input name="{{id}}" type="radio" id="{{id}}-2">
+                <label for="{{id}}-2">Dieta per patologia</label>
+              </div>
+              <div class="radio-body">
+                <input name="{{id}}" type="radio" id="{{id}}-3">
+                <label for="{{id}}-3">Dieta etico religiosa</label>
+              </div>
+            {{else}}
+              <div class="radio-body border-bottom border-light">
+                <input name="{{id}}" type="radio" id="{{id}}-1">
+                <label for="{{id}}-1">1 giorno</label>
+              </div>
+              <div class="radio-body border-bottom border-light">
+                <input name="{{id}}" type="radio" id="{{id}}-2">
+                <label for="{{id}}-2">3 giorni</label>
+              </div>
+              <div class="radio-body">
+                <input name="{{id}}" type="radio" id="{{id}}-3">
+                <label for="{{id}}-3">5 giorni</label>
+              </div>
+            {{/if}}
+          {{else}}
+            <div class="radio-body border-bottom border-light">
+              <input name="{{id}}" type="radio" id="{{id}}-1">
+              <label for="{{id}}-1">{{label-1}}</label>
+            </div>
+            <div class="radio-body border-bottom border-light">
+              <input name="{{id}}" type="radio" id="{{id}}-2">
+              <label for="{{id}}-2">{{label-2}}</label>
+            </div>
+            <div class="radio-body border-bottom border-light">
+              <input name="{{id}}" type="radio" id="{{id}}-3">
+              <label for="{{id}}-3">{{label-3}}</label>
+            </div>
+            <div class="radio-body border-bottom border-light">
+              <input name="{{id}}" type="radio" id="{{id}}-4">
+              <label for="{{id}}-4">{{label-4}}</label>
+            </div>
+            <div class="radio-body">
+              <input name="{{id}}" type="radio" id="{{id}}-5">
+              <label for="{{id}}-5">{{label-5}}</label>
+            </div>
+            {{/if}}
+          {{else}}
+          <div class="radio-body border-bottom border-light">
+          <input name="{{id}}" type="radio" id="{{id}}-1">
+          <label for="{{id}}-1">Sì</label>
+          </div>
+          <div class="radio-body">
+          <input name="{{id}}" type="radio" id="{{id}}-2">
+          <label for="{{id}}-2">No</label>
+          </div>
+        {{/if}}
+      </div>
+    </div>
+  </div>
+</div>

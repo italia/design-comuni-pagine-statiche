@@ -1,0 +1,29 @@
+.cmp-contacts{
+
+  .card{
+    /* box-shadow: 0 0.2rem 0.4rem rgba(0,0,0,0.15); */
+
+    &:after{
+      content: unset;
+    }
+  }
+
+  .contact-list li{
+    @include font(16, 18);
+    margin: 1rem 0;
+    color: get-color(primary, main);
+    font-weight: 400;
+
+    @include media-breakpoint-up(md) {
+      line-height: 1.5;
+      margin: 0.889rem 0;
+    }
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+    span{
+      margin-left: 10px;
+    }
+  }
+}

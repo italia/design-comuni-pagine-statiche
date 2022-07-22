@@ -1,0 +1,74 @@
+.cmp-input {
+  margin-bottom: 2rem;
+
+  &:not(:first-child) {
+    margin-top: 2rem;
+  }
+
+  input{
+    &.form-control{
+      background-size: 70px 45% !important;
+    }
+
+    &.just-validate-success-field,
+    &.is-invalid{
+      background-color: #fff;
+    }
+
+    &.is-invalid + .d-flex .form-text{
+      display: none;
+    }
+
+  }
+
+  input[type=text] {
+    @include font(18, 18);
+  }
+
+  .clean-input {
+    position: absolute;
+    right: 0;
+    top: 10px;
+  }
+
+  &__text {
+    @include font(14, 16);
+    font-weight: 400;
+    line-height: 1.5;
+    color: get-color(dark, grey);
+    margin-left: 8px;
+    opacity: .9;
+    mix-blend-mode: normal;
+  }
+
+  &__icon-input {
+    position: absolute;
+    right: 0;
+    top: 8px;
+    z-index: 8;
+    padding: 0 8px;
+    background-color: #fff;
+  }
+
+  .input-wrapper {
+    padding: 1.5rem 1.875rem 1.875rem;
+
+    @include media-breakpoint-up(sm) {
+      padding: 1.333rem 1.667rem 1.667rem;
+    }
+  }
+}
+
+.form-group label {
+  color: #596D88;
+}
+
+.bg-grey-card {
+  .form-group label {
+    color: #455A64;
+  }
+}
+
+.form-feedback.just-validate-error-label{
+  color: #CE2740;
+}

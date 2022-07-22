@@ -1,0 +1,53 @@
+.modal-address {
+
+  input[type=text]{
+    font-weight: 600;
+    font-size: 1rem;
+
+    &#residence{
+      background-color: get-color(lighten,grey);
+    }
+
+    &::placeholder{
+      color: get-color(black,main);
+    }
+  }
+
+  .toggles label input[type=checkbox]+.lever {
+    width: 2.18rem;
+    height: 0.75rem;
+
+    @include media-breakpoint-up(sm) {
+      width: 1.94rem;
+      height: 0.67rem;
+    }
+  }
+
+  .toggles label input[type=checkbox]+.lever:before,
+  .toggles label input[type=checkbox]+.lever:after {
+    width: 1.25rem;
+    height: 1.25rem;
+    top: -0.25rem;
+
+    @include media-breakpoint-up(sm) {
+      width: 1.11rem;
+      height: 1.11rem;
+      top: -0.22rem;
+    }
+  }
+
+  .toggles label input[type=checkbox]+.lever:after {
+    background-size: 0.5rem;
+
+    @include media-breakpoint-up(sm) {
+      background-size: 0.44rem;
+    }
+  }
+
+  .toggles label input[type=checkbox]+.lever {
+
+    vertical-align: unset;
+    margin: unset;
+   float: unset;
+  }
+}

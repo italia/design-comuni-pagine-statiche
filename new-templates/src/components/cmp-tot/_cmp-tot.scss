@@ -1,0 +1,15 @@
+.cmp-tot{
+  .title-tot{
+    @include font(16,28);
+    font-weight: 400;
+
+    @include media-breakpoint-up(md) {
+      font-weight: 600;
+    }
+  }
+
+  span.value-tot{
+    @include font(18,28);
+    font-weight: 600;
+  }
+}

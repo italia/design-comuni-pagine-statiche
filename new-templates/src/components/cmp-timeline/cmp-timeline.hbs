@@ -1,0 +1,31 @@
+<div class="cmp-timeline">
+  <h2 class="title-xxlarge mb-3" id="{{id-title}}">{{title}}</h2>
+  {{#if description}}
+    <div class="richtext-wrapper {{#if lora}}lora{{/if}}">
+      <p>{{description}}</p>
+    </div>
+  {{/if}}
+  <div class="calendar-vertical mb-3">
+    {{#each timeline as |date|}}
+      <div class="calendar-date">
+          <div class="calendar-date-day">
+            <small class="calendar-date-day__year">{{date.year}}</small>
+            <span class="title-xxlarge-regular d-flex justify-content-center">{{date.day}}</span>
+            <small class="calendar-date-day__month">{{date.month}}</small>
+          </div>
+          <div class="calendar-date-description rounded">
+            <div class="calendar-date-description-content">
+              <h3 class="title-medium-2 mb-0">{{date.event}}</h3>
+                {{#if date.info}}
+                  <p class="info-text mt-1 mb-0">{{date.info}}</p>
+                {{/if}}
+            </div>
+          </div>
+        </div>
+    {{/each}}
+
+  </div>
+  {{#if label}}
+    <p class="mt-4 mt-lg-30 mb-10">{{{label}}}</p>
+  {{/if}}
+</div>

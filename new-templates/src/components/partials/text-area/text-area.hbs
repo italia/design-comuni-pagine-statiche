@@ -1,0 +1,10 @@
+<div class="cmp-text-area {{class}}">
+  <div class="form-group">
+    <label for="{{id}}" class="{{#if visible}}d-block{{else}}visually-hidden{{/if}}">{{placeholder}}{{#if required}}*{{/if}}</label>
+    <textarea class="text-area {{textareaClass}}" id="{{id}}" rows="2" {{#if required}}required{{/if}} {{#if maxlength}}="{{maxlength}}"{{/if}}></textarea>
+      {{#if label}}
+    <span class="label {{labelClass}}">{{label}}</span>
+  {{/if}}
+  </div>
+
+</div>

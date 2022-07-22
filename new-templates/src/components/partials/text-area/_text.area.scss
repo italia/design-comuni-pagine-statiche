@@ -1,0 +1,45 @@
+.cmp-text-area {
+  padding: 1rem;
+
+  @include media-breakpoint-up(sm) {
+    padding: 0.889rem;
+  }
+
+  .text-area .focus--mouse {
+    padding-top: 50px;
+  }
+
+  .label {
+    @include font(12, 14);
+    font-weight: 400;
+    line-height: 1.5;
+    color: #455A64;
+    margin-left: 8px;
+    opacity: 0.9;
+    mix-blend-mode: normal;
+  }
+
+  .form-group {
+    margin-bottom: 0;
+
+    & .is-invalid+.label {
+      display: none;
+    }
+
+    .text-area {
+      border: none;
+      border-bottom: 1px solid get-color(dark, grey);
+      resize: none;
+      @include font(16, 16);
+
+      &.form-control {
+        box-shadow: unset;
+        background-size: 70px 30% !important;
+      }
+
+      &:focus {
+        max-height: auto;
+      }
+    }
+  }
+}

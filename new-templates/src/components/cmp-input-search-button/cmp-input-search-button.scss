@@ -1,0 +1,53 @@
+.cmp-input-search-button.form-group {
+    display: flex;
+    align-items: flex-end;
+    gap: 1.875rem;
+
+    @include media-breakpoint-up(sm) {
+      gap: 1.67rem;
+    }
+
+    .btn{
+      @include media-breakpoint-up(md){
+        padding: 0.67rem 3.89rem;
+      }
+    }
+
+    .input-group-prepend {
+      svg {
+        fill: get-color(primary, main);
+
+        @include media-breakpoint-down(sm) {
+          width: 1rem;
+          height: 1rem;
+        }
+      }
+    }
+
+    label {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+
+    input {
+      @include font(16, 40);
+
+      @include media-breakpoint-up(md) {
+        height: auto;
+      }
+
+      &::placeholder {
+        font-weight: normal;
+        color:get-color(black,main);
+        @include font(16, 40);
+
+        @include media-breakpoint-up(md){
+          font-weight: 700;
+          color: get-color(light,grey);
+        }
+
+      }
+    }
+  }
+

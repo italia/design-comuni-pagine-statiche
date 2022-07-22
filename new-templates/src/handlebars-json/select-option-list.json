@@ -1,0 +1,109 @@
+{
+  "inserire-dati-specifici": [
+    {
+      "value": "Istituto Narcisi"
+    },
+    {
+      "value": "Istituto Narcisi"
+    },
+    {
+      "value": "Istituto Narcisi"
+    },
+    {
+      "value": "Istituto Narcisi"
+    }
+  ],
+  "ufficio-appuntamento": [
+    {
+      "value": "Affari generali"
+    },
+    {
+      "value": "Affari generali, amministrativi e contabili"
+    },
+    {
+      "value": "Albo pretorio"
+    },
+    {
+      "value": "Amministrativo"
+    },
+    {
+      "value": "Amministrativo lavori pubblici"
+    },
+    {
+      "value": "Amministrativo patrimonio"
+    },
+    {
+      "value": "Amministrativo sport"
+    },
+    {
+      "value": "Anagrafe"
+    },
+    {
+      "value": "Anticorruzione, trasparenza, controlli interni, antiriciclaggio, antifrode"
+    },
+    {
+      "value": "Asili nido"
+    },
+    {
+      "value": "Assistenza tecnica"
+    },
+    {
+      "value": "Autoparco"
+    },
+    {
+      "value": "Bilancio"
+    },
+    {
+      "value": "Cantieri"
+    },
+    {
+      "value": "Cimiteri"
+    },
+    {
+      "value": "Commercio e somministrazione"
+    },
+    {
+      "value": "Concessione occasionale suolo pubblico (Cosp)"
+    }
+  ],
+  "motivo-appuntamento": [
+    {
+      "value": "Cambio residenza"
+    },
+    {
+      "value": "Cambio residenza"
+    },
+    {
+      "value": "Cambio residenza"
+    },
+    {
+      "value": "Cambio residenza"
+    }
+  ],
+  "property-location": [
+    {
+      "value": "H501 - Roma"
+    },
+    {
+      "value": "L736 - Venezia"
+    },
+    {
+      "value": "L065 - Tavagnacco"
+    }
+  ],
+  "property-type": [
+    {
+      "value": "Abitazione principale"
+    },
+    {
+      "value": "Altro immobile"
+    }
+  ],
+  "serv-1-disservizio": {
+    "list": [
+      {
+        "value": "Danneggiamento proprietà pubblica"
+      }
+    ]
+  }
+}

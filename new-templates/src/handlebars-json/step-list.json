@@ -1,0 +1,248 @@
+{
+  "step-list": {
+    "disservizio-step-1": [
+      {
+        "title": "Autorizzazioni e condizioni",
+        "active": true,
+        "completed": false
+      },
+      {
+        "title": "Dati di segnalazione",
+        "active": false,
+        "completed": false
+      },
+      {
+        "title": "Riepilogo",
+        "active": false,
+        "completed": false
+      }
+    ],
+    "disservizio-step-2": [
+      {
+        "title": "Informativa sulla privacy",
+        "active": false,
+        "completed": true
+      },
+      {
+        "title": "Dati di segnalazione",
+        "active": true,
+        "completed": false
+      },
+      {
+        "title": "Riepilogo",
+        "active": false,
+        "completed": false
+      }
+    ],
+    "disservizio-step-3": [
+      {
+        "title": "Autorizzazioni e condizioni",
+        "active": false,
+        "completed": true
+      },
+      {
+        "title": "Dati di segnalazione",
+        "active": false,
+        "completed": true
+      },
+      {
+        "title": "Riepilogo",
+        "active": true,
+        "completed": false
+      }
+    ],
+    "rating-step-1": [
+      {
+        "title": "Cosa ha funzionato meglio?",
+        "active": true,
+        "completed": false
+      },
+      {
+        "title": "Vuoi aggiungere altri dettagli?",
+        "active": false,
+        "completed": false
+      }
+    ],
+    "rating-step-2": [
+      {
+        "title": "Cosa ha funzionato meglio?",
+        "active": false,
+        "completed": true
+      },
+      {
+        "title": "Vuoi aggiungere altri dettagli?",
+        "active": true,
+        "completed": false
+      }
+    ],
+    "tab-area-personale-1": [
+      {
+        "title": "Scrivania",
+        "icon": true,
+        "icon-name": "it-pa",
+        "active": "active",
+        "id-link": "data-ex-tab1",
+        "controls": "tab1"
+      },
+      {
+        "title": "Messaggi",
+        "icon": true,
+        "icon-name": "it-mail",
+        "active": "",
+        "id-link": "data-ex-tab2",
+        "controls": "tab2"
+      },
+      {
+        "title": "Attività",
+        "icon": true,
+        "icon-name": "it-files",
+        "active": "",
+        "id-link": "data-ex-tab3",
+        "controls": "tab3"
+      },
+      {
+        "title": "Servizi",
+        "icon": true,
+        "icon-name": "it-settings",
+        "active": "",
+        "id-link": "data-ex-tab4",
+        "controls": "tab4"
+      }
+    ],
+    "prenota-appuntamento-step-1": [
+      {
+        "title": "Luogo",
+        "active": true,
+        "completed": false
+      },
+      {
+        "title": "Data e orario",
+        "active": false,
+        "completed": false
+      },
+      {
+        "title": "Dettagli appuntamento",
+        "active": false,
+        "completed": false
+      },
+      {
+        "title": "Richiedente",
+        "active": false,
+        "completed": false
+      },
+      {
+        "title": "Riepilogo",
+        "active": false,
+        "completed": false
+      }
+    ],
+    "prenota-appuntamento-step-2": [
+      {
+        "title": "Luogo",
+        "active": false,
+        "completed": true
+      },
+      {
+        "title": "Data e orario",
+        "active": true,
+        "completed": false
+      },
+      {
+        "title": "Dettagli appuntamento",
+        "active": false,
+        "completed": false
+      },
+      {
+        "title": "Richiedente",
+        "active": false,
+        "completed": false
+      },
+      {
+        "title": "Riepilogo",
+        "active": false,
+        "completed": false
+      }
+    ],
+    "prenota-appuntamento-step-3": [
+      {
+        "title": "Luogo",
+        "active": false,
+        "completed": true
+      },
+      {
+        "title": "Data e orario",
+        "active": false,
+        "completed": true
+      },
+      {
+        "title": "Dettagli appuntamento",
+        "active": true,
+        "completed": false
+      },
+      {
+        "title": "Richiedente",
+        "active": false,
+        "completed": false
+      },
+      {
+        "title": "Riepilogo",
+        "active": false,
+        "completed": false
+      }
+    ],
+    "prenota-appuntamento-step-4": [
+      {
+        "title": "Luogo",
+        "active": false,
+        "completed": true
+      },
+      {
+        "title": "Data e orario",
+        "active": false,
+        "completed": true
+      },
+      {
+        "title": "Dettagli appuntamento",
+        "active": false,
+        "completed": true
+      },
+      {
+        "title": "Richiedente",
+        "active": true,
+        "completed": false
+      },
+      {
+        "title": "Riepilogo",
+        "active": false,
+        "completed": false
+      }
+    ],
+    "prenota-appuntamento-step-5": [
+      {
+        "title": "Luogo",
+        "active": false,
+        "completed": true
+      },
+      {
+        "title": "Data e orario",
+        "active": false,
+        "completed": true
+      },
+      {
+        "title": "Dettagli appuntamento",
+        "active": false,
+        "completed": true
+      },
+      {
+        "title": "Richiedente",
+        "active": false,
+        "completed": true
+      },
+      {
+        "title": "Riepilogo",
+        "active": true,
+        "completed": false
+      }
+    ]
+  }
+}

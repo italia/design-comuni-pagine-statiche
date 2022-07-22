@@ -1,0 +1,161 @@
+.cmp-modal {
+  .btn-close {
+    background: rgba(0, 0, 0, 0) url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 25 25' fill='hsl%280deg, 0%, 0%%29'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+  }
+
+  &__success-message {
+    @include font(18, 18);
+    font-weight: 600;
+    line-height: 1.56;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-left: 0.625rem;
+
+    @include media-breakpoint-up(sm) {
+      margin-left: 0.56rem;
+    }
+  }
+
+  .modal .modal-dialog .modal-content .modal-header h4 {
+    @include font(24, 28);
+    font-weight: 600;
+    line-height: 1.167;
+
+    @include media-breakpoint-up(sm) {
+      line-height: 1.43;
+    }
+
+    &.title-mini {
+      @include media-breakpoint-up(sm) {
+        font-size: 1.33rem;
+        line-height: 1.67;
+      }
+    }
+  }
+
+  .modal.it-dialog-scrollable .modal-dialog .modal-content {
+    height: calc(100vh - 130px);
+  }
+
+  .modal.it-dialog-scrollable .modal-dialog .modal-content .modal-body {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+    @include media-breakpoint-up(sm) {
+      padding-top: 1.33rem;
+      padding-bottom: 1.33rem;
+    }
+  }
+
+  .modal .modal-dialog .modal-content .modal-body {
+    padding-bottom: 1.5rem;
+    color: get-color(black, main);
+
+    @include media-breakpoint-up(sm) {
+      padding-bottom: 1.33rem;
+    }
+  }
+
+  .modal .modal-dialog .modal-content .modal-header h5 {
+    text-transform: capitalize;
+  }
+
+  .modal {
+    height: auto;
+
+    @include media-breakpoint-up(sm) {
+      height: 100%;
+    }
+
+    .modal-dialog {
+      // margin: 3rem 1.5rem;
+
+      @include media-breakpoint-up(sm) {
+        margin: auto;
+        // margin: 2.67rem 1.33rem;
+   /*      max-width: 38.89rem; */
+      }
+    }
+
+    .modal-dialog.small {
+      @include media-breakpoint-up(sm) {
+        margin: auto;
+  /*       max-width: 19.44rem; */
+      }
+    }
+  }
+
+  &__header {
+    flex-direction: column;
+
+    &-content {
+      margin: 1.5rem 0;
+
+      @include media-breakpoint-up(sm) {
+        margin: 1.33rem 0;
+      }
+    }
+
+    &-title {
+      width: 100%;
+      margin-top: 1.5rem;
+      @include font(24,28);
+
+      @include media-breakpoint-up(sm) {
+        margin-top: 1.33rem;
+      }
+    }
+
+    &-info {
+      @include font(14, 16);
+      align-self: start;
+      font-weight: 400;
+      line-height: 1.28;
+
+      &.header-font {
+        line-height: 1.5;
+      }
+    }
+
+    &-link {
+      @include font(16, 16);
+      margin-top: 1.125rem;
+      height: 1.5rem;
+      width: 100%;
+
+      @include media-breakpoint-up(sm) {
+        margin-top: 1.11rem;
+        height: 1.33rem;
+      }
+    }
+  }
+
+  .modal-footer.shadow {
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
+  }
+
+
+  #modal-vehicle-data {
+    input::placeholder {
+      color: get-color(black, main);
+    }
+
+    .select-wrapper {
+      padding: unset;
+
+      select {
+        color: get-color(black, main);
+      }
+    }
+
+    .cmp-input__text {
+      @include font(14, 16);
+      font-weight: 400;
+      line-height: 1.5;
+    }
+  }
+}
+
+.upload[type="file"]+label {
+  max-width: 100%;
+}

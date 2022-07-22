@@ -1,0 +1,304 @@
+{
+  "accordion": {
+    "area-personale-page-3": {
+      "pratiche": [
+        {
+          "num": "1",
+          "title": "Iscrizione scuola d’infanzia",
+          "date": "15/02/2022",
+          "icon": "folder-incomplete.svg",
+          "icon-label": "Da completare",
+          "color": "u-main-alert",
+          "warning-icon": true,
+          "label-tag": "Servizio non digitale",
+          "practice": "Pratica:",
+          "practice-number": "AN4059281",
+          "btn-label": "Perfeziona la richiesta",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "aria-label": "Scarica la",
+              "link": "Ricevuta richiesta",
+              "class": "shadow p-0"
+            },
+            {
+              "icon": "it-clip",
+              "aria-label": "Scarica la",
+              "link": "Graduatoria",
+              "class": "shadow p-0"
+            }
+          ]
+        },
+        {
+          "num": "2",
+          "title": "Richiesta assegno maternità",
+          "date": "24/06/2021",
+          "icon": "folder-concluded.svg",
+          "icon-label": "Conclusa",
+          "label-tag": "Servizio non digitale",
+          "practice": "Pratica:",
+          "practice-number": "AN4059281",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "class": "shadow p-0"
+            },
+            {
+              "icon": "it-clip",
+              "aria-label": "Scarica la",
+              "link": "Graduatoria",
+              "class": "shadow p-0"
+            },
+            {
+              "icon": "it-clip",
+              "aria-label": "Scarica la",
+              "link": "Ricevuta richiesta",
+              "class": "shadow p-0"
+            }
+          ]
+        },
+        {
+          "num": "3",
+          "title": "Iscrizione corso di formazione",
+          "date": "24/06/2021",
+          "icon": "folder-concluded.svg",
+          "icon-label": "Conclusa",
+          "label-tag": "Servizio non digitale",
+          "practice": "Pratica:",
+          "practice-number": "AN4059281",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "class": "shadow p-0"
+            },
+            {
+              "icon": "it-clip",
+              "aria-label": "Scarica la",
+              "link": "Graduatoria",
+              "class": "shadow p-0"
+            },
+            {
+              "icon": "it-clip",
+              "aria-label": "Scarica la",
+              "link": "Ricevuta richiesta",
+              "class": "shadow p-0"
+            }
+          ]
+        },
+        {
+          "num": "4",
+          "title": "Richiesta permesso ZTL",
+          "date": "10/05/2021",
+          "icon": "folder-concluded.svg",
+          "icon-label": "Conclusa",
+          "label-tag": "Servizio non digitale",
+          "practice": "Pratica:",
+          "practice-number": "AN4059281",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "aria-label": "Scarica la",
+              "link": "Ricevuta richiesta",
+              "class": "shadow p-0"
+            },
+            {
+              "icon": "it-clip",
+              "aria-label": "Scarica la",
+              "link": "Graduatoria",
+              "class": "shadow p-0"
+            },
+            {
+              "icon": "it-clip",
+              "aria-label": "Scarica la",
+              "link": "Ricevuta richiesta",
+              "class": "shadow p-0"
+            }
+          ]
+        },
+        {
+          "num": "5",
+          "title": "Richiesta parcheggio residenti",
+          "date": "06/03/2021",
+          "icon": "folder-concluded.svg",
+          "icon-label": "Conclusa",
+          "label-tag": "Servizio non digitale",
+          "practice": "Pratica:",
+          "practice-number": "AN4059281",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "aria-label": "Scarica la",
+              "link": "Ricevuta richiesta",
+              "class": "shadow p-0"
+            },
+            {
+              "icon": "it-clip",
+              "aria-label": "Scarica la",
+              "link": "Graduatoria",
+              "class": "shadow p-0"
+            },
+            {
+              "icon": "it-clip",
+              "aria-label": "Scarica la",
+              "link": "Ricevuta richiesta",
+              "class": "shadow p-0"
+            }
+          ]
+        }
+      ],
+      "pagamenti": [
+        {
+          "num": "6",
+          "title": "Pagamento servizio mensa",
+          "date": "07/01/2022",
+          "icon": "folder-pay.svg",
+          "icon-label": "Pagato",
+          "label-tag": "Servizio non digitale",
+          "practice": "Pratica:",
+          "practice-number": "AN4059281",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "aria-label": "Scarica la",
+              "link": "Ricevuta richiesta",
+              "class": "shadow p-0"
+            },
+            {
+              "icon": "it-clip",
+              "aria-label": "Scarica la",
+              "link": "Graduatoria",
+              "class": "shadow p-0"
+            },
+            {
+              "icon": "it-clip",
+              "aria-label": "Scarica la",
+              "link": "Ricevuta richiesta",
+              "class": "shadow p-0"
+            }
+          ]
+        },
+        {
+          "num": "7",
+          "title": "Pagamento contravvenzioni",
+          "date": "01/10/2021",
+          "icon": "folder-pay.svg",
+          "icon-label": "Pagato",
+          "label-tag": "Servizio non digitale",
+          "practice": "Pratica:",
+          "practice-number": "AN4059281",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "aria-label": "Scarica la",
+              "link": "Ricevuta richiesta",
+              "class": "shadow p-0"
+            },
+            {
+              "icon": "it-clip",
+              "aria-label": "Scarica la",
+              "link": "Graduatoria",
+              "class": "shadow p-0"
+            },
+            {
+              "icon": "it-clip",
+              "aria-label": "Scarica la",
+              "link": "Ricevuta richiesta",
+              "class": "shadow p-0"
+            }
+          ]
+        },
+        {
+          "num": "8",
+          "title": "Pagamento contravvenzioni",
+          "date": "24/06/2021",
+          "icon": "folder-pay.svg",
+          "icon-label": "Pagato",
+          "label-tag": "Servizio non digitale",
+          "practice": "Pratica:",
+          "practice-number": "AN4059281",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "aria-label": "Scarica la",
+              "link": "Ricevuta richiesta",
+              "class": "shadow p-0"
+            },
+            {
+              "icon": "it-clip",
+              "aria-label": "Scarica la",
+              "link": "Graduatoria",
+              "class": "shadow p-0"
+            },
+            {
+              "icon": "it-clip",
+              "aria-label": "Scarica la",
+              "link": "Ricevuta richiesta",
+              "class": "shadow p-0"
+            }
+          ]
+        },
+        {
+          "num": "9",
+          "title": "Pagamento contravvenzioni",
+          "date": "10/05/2021",
+          "icon": "folder-pay.svg",
+          "icon-label": "Pagato",
+          "label-tag": "Servizio non digitale",
+          "practice": "Pratica:",
+          "practice-number": "AN4059281",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "class": "shadow p-0"
+            },
+            {
+              "icon": "it-clip",
+              "aria-label": "Scarica la",
+              "link": "Graduatoria",
+              "class": "shadow p-0"
+            },
+            {
+              "icon": "it-clip",
+              "aria-label": "Scarica la",
+              "link": "Ricevuta richiesta",
+              "class": "shadow p-0"
+            }
+          ]
+        },
+        {
+          "num": "10",
+          "title": "Pagamento contravvenzioni",
+          "date": "06/03/2021",
+          "icon": "folder-pay.svg",
+          "icon-label": "Pagato",
+          "label-tag": "Servizio non digitale",
+          "practice": "Pratica:",
+          "practice-number": "AN4059281",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "aria-label": "Scarica la",
+              "link": "Ricevuta richiesta",
+              "class": "shadow p-0"
+            },
+            {
+              "icon": "it-clip",
+              "aria-label": "Scarica la",
+              "link": "Graduatoria",
+              "class": "shadow p-0"
+            },
+            {
+              "icon": "it-clip",
+              "aria-label": "Scarica la",
+              "link": "Ricevuta richiesta",
+              "class": "shadow p-0"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

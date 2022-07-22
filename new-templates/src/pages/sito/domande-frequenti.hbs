@@ -1,0 +1,58 @@
+{{#>base/base title="Domande freqeunti - Nome del Comune"}}
+  <main>
+    <div class="container" id="main-container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-10">
+          {{>cmp-breadcrumbs/cmp-breadcrumbs link2="Home" link3="Domande più frequenti"}}
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-10">
+          {{>cmp-hero/cmp-hero
+        hero-title="Domande frequenti"
+        hero-text="Elenco di risposte alle domande più frequenti raccolte dalle richieste di assistenza dei cittadini."
+        wrapper-class="pt-0 ps-0 pb-4 pb-lg-60"}}
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-8 offset-lg-2 px-sm-3 mt-2">
+          {{>partials/input-search/input-search
+            id="autocomplete-three"
+            label-text="Cerca nel sito"
+            placeholder-text="Cerca"
+            wrapper-class="mb-2 mb-lg-4"
+            icon-class="icon-primary"
+            btnSearch=true
+          }}
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-8 offset-lg-2 px-0 px-sm-3">
+          {{>cmp-accordion/cmp-accordion-faq accordion=domande-frequenti.accordion}}
+        </div>
+        <div class="col-12 col-lg-8 offset-lg-2 px-4">
+          {{>partials/button/button outline-primary=true label="Carica altre domande" class="w-100 mt-40 mb-40 title-medium-bold" aria-label="Carica altre domande da consultare"}}
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-grey-card shadow-contacts">
+      <div class="container">
+        <div class="row d-flex justify-content-center p-contacts">
+          <div class="col-12 col-lg-6">
+            {{>cmp-contacts/cmp-contacts-trasversali assistance=true appointment=true city-problems=true}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  {{/base/base}}

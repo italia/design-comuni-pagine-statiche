@@ -1,0 +1,64 @@
+{
+   "icon-list": {
+     "scheda-servizio": [
+       {
+         "icon": "it-pa",
+         "link": "Ufficio via C. Benso Conte di Cavour [prenota]"
+       },
+       {
+        "icon": "it-pa",
+        "link": "Ufficio largo Michelangelo Buonarroti [prenota]"
+      }
+     ],
+     "allegati-area-personale": [
+      {
+        "icon": "it-clip",
+        "link": "Ammessi",
+        "description": "Elenco dei bambini ammessi alle scuole dell’Infanzia  comunali per l'anno educativo 2022/23",
+        "classLink":"fw-normal",
+        "icon-class":"icon-primary",
+        "only-ariaLabel": "scarica il documento ammessi elenco dei bambini ammessi alle scuole dellinfanzia comunali per lanno educativo 202223"
+      },
+      {
+        "icon": "it-clip",
+        "link": "Lista d'attesa",
+        "description":"Lista d'attesa per le scuole dell’Infanzia comunali per l'anno educativo 2022/23",
+        "classLink":"fw-normal",
+        "icon-class":"icon-primary",
+        "only-ariaLabel": "scarica il documento lista dattesa lista dattesa per le scuole dellinfanzia comunali per lanno educativo 202223"
+      }
+    ],
+    "disservizio-servizi-correlati": [
+      {
+        "icon": "it-clip",
+        "link": "Richiesta appuntamento",
+        "classLink":"fw-normal",
+        "icon-class":"icon-primary"
+      }
+    ],
+        "calendario-reservation-pagamento": [
+      {
+        "icon": "it-calendar",
+        "link": "Outlook",
+        "classLink":"fw-normal",
+        "icon-class":"icon-primary",
+        "aria-label":"aggiungi al calendario"
+      },
+      {
+        "icon": "it-calendar",
+        "link": "Google Calendar",
+        "classLink":"fw-normal",
+        "icon-class":"icon-primary",
+        "aria-label":"aggiungi al calendario"
+      },
+      {
+        "icon": "it-calendar",
+        "link": "iCloud Calendar",
+        "classLink":"fw-normal",
+        "icon-class":"icon-primary",
+        "aria-label":"aggiungi al calendario"
+      }
+    ]
+   }
+
+}

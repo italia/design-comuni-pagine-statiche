@@ -1,0 +1,72 @@
+{
+  "inserire-dati-specifici-appuntamento": {
+    "info": [
+      {
+        "label": "Sportello",
+        "value": "CIE"
+      },
+      {
+        "label": "Indirizzo",
+        "value": "via S. Caterina a Chiaia, 76"
+      },
+      {
+        "label": "Apertura",
+        "value": "lun, mar, mer ore 9:00 – 12:00"
+      }
+    ]
+  },
+  "immobile": {
+    "info": [
+      {
+        "label": "Tipologia",
+        "value": "Abitazione principale"
+      }
+    ]
+  },
+  "prenota-appuntamento": {
+    "office": [
+      {
+        "name": "Tipologia ufficio",
+        "description": "Ufficio anagrafe"
+      },
+      {
+        "name": "Municipalità",
+        "description": "Municipalità 1 - Chiaia, Posillipo, S. Ferdinando"
+      }
+    ],
+    "date": [
+      {
+        "name": "Data",
+        "description": "Giovedì 11 Marzo 2022"
+      },
+      {
+        "name": "Ora",
+        "description": "10:00 - 10:30"
+      }
+    ],
+    "appointment-details": [
+      {
+        "name": "Motivo",
+        "description": "Cambio residenza"
+      },
+      {
+        "name": "Dettagli",
+        "description": "Avrei bisogno di capire come spostare la mia residenza da un altro comune."
+      }
+    ],
+    "applicant": [
+      {
+        "name": "Nome",
+        "description": "Giulia"
+      },
+      {
+        "name": "Cognome",
+        "description": "Bianchi"
+      },
+      {
+        "name": "Email",
+        "description": "giulia-bianchi@gmail.com"
+      }
+    ]
+  }
+}

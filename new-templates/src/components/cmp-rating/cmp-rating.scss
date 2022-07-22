@@ -1,0 +1,78 @@
+.cmp-rating {
+  padding: 1.5rem 0;
+
+  @include media-breakpoint-up(sm) {
+    padding: 1.33rem 0;
+  }
+
+  /* .shadow-rating {
+    box-shadow: inset 0 -1.3rem 0.125rem -0.9rem rgb(0 0 0 / 5%);
+  }
+ */
+
+  .rating>label svg {
+    fill: #7D97B0;
+  }
+
+  .form-group {
+    margin-bottom: 0;
+    min-height: 5rem;
+
+    @include media-breakpoint-up(sm) {
+      min-height: 5.56rem;
+    }
+  }
+
+  .card {
+    padding: 1rem;
+
+    @include media-breakpoint-up(sm) {
+      padding: 0.89rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding: 1.78rem;
+    }
+
+    &::after {
+      content: unset;
+    }
+  }
+
+  .card-header {
+    padding: 0;
+    margin-bottom: 1.25rem;
+
+    @include media-breakpoint-up(sm) {
+      margin-bottom: 1.11rem;
+    }
+  }
+
+  .card-body {
+    padding: 0;
+  }
+
+  .rating {
+    input {
+      &:focus {
+        &+label {
+          border-color: #f90 !important;
+          box-shadow: 0 0 0 2px #f90 !important;
+          outline: none !important;
+        }
+      }
+    }
+  }
+}
+
+.cmp-rating-section {
+  padding: 1.5rem 1rem;
+
+  @include media-breakpoint-up(sm) {
+    padding: 1.33rem 0.89rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 4.44rem 0;
+  }
+}

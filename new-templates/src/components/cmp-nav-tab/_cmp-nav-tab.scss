@@ -1,0 +1,40 @@
+.cmp-nav-tab {
+  .nav-tabs {
+    overflow-x: hidden;
+
+    .nav-link {
+      font-weight: 400;
+
+      &.active {
+        font-weight: 700;
+      }
+      
+      .text-tab {
+        @include font(14, 18); 
+      }
+
+      .icon {
+        width: 0.81rem;
+        height: 0.81rem;
+
+        @include media-breakpoint-up(sm) {
+          width: 0.72rem;
+          height: 0.72rem;
+        }
+
+        @include media-breakpoint-up(md) {
+          width: 1.11rem;
+          height: 1.11rem;
+        }
+      }
+
+      &:not(.active) {
+        color: get-color(black, main);
+
+        .icon {
+          fill: get-color(black, main);
+        }
+      }
+    }
+  }
+}

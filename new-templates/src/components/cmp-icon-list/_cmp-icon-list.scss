@@ -1,0 +1,78 @@
+.cmp-icon-list {
+  .shadow {
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2)!important;
+    padding: .44rem .56rem;
+
+    @include media-breakpoint-up(sm) {
+      padding: 0.39rem .5rem;
+    }
+
+    &:not(:first-child) {
+      margin: 0.625rem 0 3.125rem 0;
+
+      @include media-breakpoint-up(sm) {
+        margin: 0.56rem 0 2.78rem 0;
+      }
+
+      @include media-breakpoint-up(lg) {
+        margin: 1.33rem 0 4.44rem 0;
+      }
+    }
+
+    .list-item-title {
+      color: get-color(primary, main);
+    }
+  }
+
+  .icon-color {
+    fill: get-color(light, grey);
+  }
+
+
+  .link-list-wrapper {
+    ul li a p {
+      @include font(16, 18);
+      line-height: 1.5;
+      font-weight: 400;
+
+      @include media-breakpoint-up(md) {
+        line-height: 1.556;
+      }
+    }
+
+    ul li a.icon-left {
+      padding: 0.75rem .625rem;
+
+      @include media-breakpoint-up(sm) {
+        padding: 0.6675rem 0.56rem;
+      }
+
+      .icon {
+        margin-right: 1.25rem;
+
+        @include media-breakpoint-up(sm) {
+          margin-right: 1.11rem;
+        }
+      }
+    }
+
+    &.default {
+      ul li a.icon-left {
+        padding: 0 0.25em;
+
+        @include media-breakpoint-up(sm) {
+          padding: 0 0.25em;
+        }
+
+        .icon {
+          margin-right: 1rem;
+
+          @include media-breakpoint-up(sm) {
+            margin-right: 0.889rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,541 @@
+{
+  "pagamenti-dovuti-multa":{
+    "info-progress":{
+      "step-1": [
+        {
+          "title": "Informativa sulla privacy",
+          "active": true,
+          "completed": false
+        },
+        {
+          "title": "Dati generali",
+          "active": false,
+          "completed": false
+        },
+        {
+          "title": "Dati specifici del servizio",
+          "active": false,
+          "completed": false
+        },
+        {
+          "title": "Pagamento",
+          "active": false,
+          "completed": false
+        }
+      ],
+      "step-2": [
+        {
+          "title": "Informativa sulla privacy",
+          "active": false,
+          "completed": true
+        },
+        {
+          "title": "Dati generali",
+          "active": true,
+          "completed": false
+        },
+        {
+          "title": "Dati specifici del servizio",
+          "active": false,
+          "completed": false
+        },
+        {
+          "title": "Pagamento",
+          "active": false,
+          "completed": false
+        }
+      ],
+      "step-3": [
+        {
+          "title": "Informativa sulla privacy",
+          "active": false,
+          "completed": true
+        },
+        {
+          "title": "Dati generali",
+          "active": false,
+          "completed": true
+        },
+        {
+          "title": "Dati specifici del servizio",
+          "active": true,
+          "completed": false
+        },
+        {
+          "title": "Pagamento",
+          "active": false,
+          "completed": false
+        }
+      ],
+      "step-4": [
+        {
+          "title": "Informativa sulla privacy",
+          "active": false,
+          "completed": true
+        },
+        {
+          "title": "Dati generali",
+          "active": false,
+          "completed": true
+        },
+        {
+          "title": "Dati specifici del servizio",
+          "active": false,
+          "completed": true
+        },
+        {
+          "title": "Pagamento",
+          "active": true,
+          "completed": false
+        }
+      ]
+    },
+    "trovare-informazioni-servizio": {
+      "navscroll":[
+        {
+          "item": "A chi è rivolto",
+          "anchor": "who-needs"
+        },
+        {
+          "item": "Come fare",
+          "anchor": "how-to"
+        },
+        {
+          "item": "Cosa serve",
+          "anchor": "needed"
+        },
+        {
+          "item": "Tempi e scadenze",
+          "anchor": "deadlines"
+        },
+        {
+          "item": "Costi",
+          "anchor": "costs"
+        },
+        {
+          "item": "Accedi al servizio",
+          "anchor": "service-access"
+        },
+        {
+          "item": "Condizioni di servizio",
+          "anchor": "conditions"
+        },
+        {
+          "item": "Contatti",
+          "anchor": "contacts"
+        }
+      ],
+      "cosa-serve": [
+        {
+          "text": "la notifica della multa;"
+        },
+        {
+          "text": "il Codice Avviso PagoPA, che puoi trovare sull’avviso di pagamento;"
+        },
+        {
+          "text": "la targa del veicolo;"
+        },
+        {
+          "text": "i dettagli del conto o della carta con cui vuoi effettuare il pagamento."
+        }
+      ],
+      "timeline":[
+        {
+          "text": "Per i pagamenti entro 5 giorni dalla notifica o dalla contestazione immediata, si applica uno sconto del 30% sull’importo;"
+        },
+        {
+          "text": "Per i pagamenti entro 60 giorni, si paga una sanzione in misura ridotta;"
+        },
+        {
+          "text": "Per i pagamenti oltre 60 giorni, si paga la sanzione raddoppiata più gli interessi."
+        }
+      ]
+    },
+    "controllare-dati-personali":{
+      "navscroll":[
+        {
+          "item": "Contribuente",
+          "anchor": "taxpayer"
+        },
+        {
+          "item": "Coobbligato",
+          "anchor": "co-obliged"
+        },
+        {
+          "item": "Immobili",
+          "anchor": "properties"
+        }
+      ],
+      "anagrafica": [
+        {
+          "name": "Nome",
+          "description": "Giulia"
+        },
+        {
+          "name": "Cognome",
+          "description": "Bianchi"
+        },
+        {
+          "name": "Codice fiscale",
+          "description": "GLABNC72H25H501Y",
+          "summary-item-class":true
+        }
+      ],
+      "indirizzi": [
+        {
+          "name": "Residenza",
+          "description": "Via Roma 16, 00100 Roma, It",
+          "summary-item-class":true
+        }
+      ]
+    },
+    "inserire-dati-specifici":{
+      "riepilogo-multa":[
+        {
+          "name":"Codice avviso",
+          "description":"1234 5678 9012 3456 78"
+        },
+        {
+          "name":"Ente creditore",
+          "description":"Comune di Reggio Emilia"
+        },
+        {
+          "name":"Codice fiscale ente creditore",
+          "description":"00154902351"
+        },
+        {
+          "name":"Targa veicolo",
+          "description":"CK 345 HB"
+        },
+        {
+          "name":"Data rilevazione",
+          "description":"16/08/2022"
+        },
+        {
+          "name":"Importo entro 60 gg",
+          "description":"41,00 €"
+        },
+        {
+          "name":"Spese notfica",
+          "description":"13,88 €"
+        },
+        {
+          "name":"Spese procedura",
+          "description":"0,00 €"
+        },
+        {
+          "name":"Importo totale entro 60 gg",
+          "description":"54,88 €"
+        }
+      ],
+      "error-list":[
+        {
+          "text": "Codice Avviso",
+          "id": "warning-code"
+        }
+      ]
+    },
+    "confermare-riepilogo-informazioni-inserite":{
+      "info-1":{
+        "list":[
+          {
+            "name": "Codice Fiscale",
+            "description": "GLABNC72H25H501Y",
+            "summary-item-class":true
+          }
+        ],
+        "indirizzo":[
+          {
+            "name": "Residenza",
+            "description": "Via Roma 16, 00100 Roma, It",
+            "summary-item-class":true
+          }
+        ]
+      },
+      "multa-info-1": {
+        "list":[
+          {
+            "name": "Codice avviso",
+            "description": "1234 5678 9012 3456 78 "
+          },
+          {
+            "name": "Ente creditore",
+            "description": "Comune di Reggio Emilia"
+          },
+          {
+            "name": "Codice fiscale ente creditore",
+            "description": "00154902351"
+          },
+          {
+            "name": "Targa veicolo",
+            "description": "CK 345 HB"
+          },
+          {
+            "name": "Data rilevazione",
+            "description": "16/08/2022"
+          },
+          {
+            "name": "Data notifica",
+            "description": "15/09/2022"
+          },
+          {
+            "name": "Data pagamento",
+            "description": "17/09/2022"
+          },
+          {
+            "name": "Pagamento",
+            "description": "Pagamento in misura ridotta, perché il pagamento avviene dopo il 5° giorno dalla notifica."
+          },
+          {
+            "name": "Importo dovuto",
+            "description": "38,42 €"
+          }
+        ]
+      }
+    },
+    "area-personale":{
+      "tab-area-personale-1": [
+        {
+          "title": "Scrivania",
+          "icon": true,
+          "icon-name": "it-pa",
+          "active": "active",
+          "id-link": "data-ex-tab1",
+          "controls": "tab1"
+        },
+        {
+          "title": "Messaggi",
+          "icon": true,
+          "icon-name": "it-mail",
+          "active": "",
+          "id-link": "data-ex-tab2",
+          "controls": "tab2"
+        },
+        {
+          "title": "Attività",
+          "icon": true,
+          "icon-name": "it-files",
+          "active": "",
+          "id-link": "data-ex-tab3",
+          "controls": "tab3"
+        },
+        {
+          "title": "Servizi",
+          "icon": true,
+          "icon-name": "it-settings",
+          "active": "",
+          "id-link": "data-ex-tab4",
+          "controls": "tab4"
+        }
+      ],
+      "navscroll":{
+        "page-1": [
+          {
+            "item": "Ultimi messaggi",
+            "anchor": "latest-posts"
+          },
+          {
+            "item": "Ultime attività",
+            "anchor": "latest-activities"
+          }
+        ],
+        "page-3": [
+          {
+            "item": "Pratiche",
+            "anchor": "practices"
+          },
+          {
+            "item": "Pagamenti",
+            "anchor": "payments"
+          }
+        ]
+      },
+      "accordion":{
+        "pratiche": [
+          {
+            "num": "1",
+            "title": "Iscrizione scuola dell’infanzia",
+            "date": "15/02/2022",
+            "icon": "folder-concluded.svg",
+            "icon-label": "Conclusa",
+            "practice":"Pagamento:",
+            "practice-number":"PA3028/17",
+            "import":"38,92 €",
+            "collapse": [
+              {
+                "icon": "it-clip",
+                "link": "Ricevuta pagamento (PDF 80KB)",
+                "aria-label":"Scarica la",
+                "class": "shadow mt-3 p-0"
+              }
+            ]
+          },
+          {
+            "num": "2",
+            "title": "Richiesta assegno maternità",
+            "date": "01/10/2022",
+            "icon": "folder-concluded.svg",
+            "icon-label": "Conclusa",
+            "practice":"Pagamento:",
+             "practice-number":"PA3028/17",
+             "import":"38,92 €",
+            "collapse": [
+              {
+                "icon": "it-clip",
+                "link": "Ricevuta pagamento (PDF 80KB)",
+                "aria-label":"Scarica",
+                "class": "shadow mt-3 p-0"
+              }
+            ]
+          },
+          {
+            "num": "3",
+            "title": "Iscrizione corso di formazione",
+            "date": "02/09/2021",
+            "icon": "folder-concluded.svg",
+            "icon-label": "Conclusa",
+            "practice":"Pagamento:",
+             "practice-number":"PA3028/17",
+             "import":"38,92 €",
+            "collapse": [
+              {
+                "icon": "it-clip",
+                "link": "Ricevuta pagamento (PDF 80KB)",
+                "aria-label":"Scarica",
+                "class": "shadow mt-3 p-0"
+              }
+            ]
+          },
+          {
+            "num": "4",
+            "title": "Richiesta permesso ZTL",
+            "date": "06/08/2021",
+            "icon": "folder-concluded.svg",
+            "icon-label": "Conclusa",
+            "practice":"Pagamento:",
+             "practice-number":"PA3028/17",
+             "import":"38,92 €",
+            "collapse": [
+              {
+                "icon": "it-clip",
+                "link": "Ricevuta pagamento (PDF 80KB)",
+                "aria-label":"Scarica",
+                "class": "shadow mt-3 p-0"
+              }
+            ]
+          },
+          {
+            "num": "5",
+            "title": "Richiesta parcheggio residenti",
+            "date": "01/06/2021",
+            "icon": "folder-concluded.svg",
+            "icon-label": "Conclusa",
+            "practice":"Pagamento:",
+             "practice-number":"PA3028/17",
+             "import":"38,92 €",
+            "collapse": [
+              {
+                "icon": "it-clip",
+                "link": "Ricevuta pagamento (PDF 80KB)",
+                "aria-label":"Scarica",
+                "class": "shadow mt-3 p-0"
+              }
+            ]
+          }
+        ],
+        "pagamenti": [
+          {
+            "num": "6",
+            "title": "Pagamento multa",
+            "date": "21/07/2022",
+            "icon": "folder-pay.svg",
+            "icon-label": "Pagato",
+            "practice":"Pagamento:",
+             "practice-number":"PA3028/17",
+             "import":"38,92 €",
+            "collapse": [
+              {
+                "icon": "it-clip",
+                "link": "Ricevuta pagamento (PDF 80KB)",
+                "aria-label":"Scarica",
+                "class": "shadow mt-3 p-0"
+              }
+            ]
+          },
+          {
+            "num": "7",
+            "title": "Pagamento servizio mensa",
+            "date": "04/03/2022",
+            "icon": "folder-pay.svg",
+            "icon-label": "Pagato",
+            "practice":"Pagamento:",
+             "practice-number":"PA3028/17",
+             "import":"38,92 €",
+            "collapse": [
+              {
+                "icon": "it-clip",
+                "link": "Ricevuta pagamento (PDF 80KB)",
+                "aria-label":"Scarica",
+                "class": "shadow mt-3 p-0"
+              }
+            ]
+          },
+          {
+            "num": "8",
+            "title": "Pagamento multa",
+            "date": "24/06/2021",
+            "icon": "folder-pay.svg",
+            "icon-label": "Pagato",
+            "practice":"Pagamento:",
+             "practice-number":"PA3028/17",
+             "import":"38,92 €",
+            "collapse": [
+              {
+                "icon": "it-clip",
+                "link": "Ricevuta pagamento (PDF 80KB)",
+                "aria-label":"Scarica",
+                "class": "shadow mt-3 p-0"
+              }
+            ]
+          },
+          {
+            "num": "9",
+            "title": "Pagamento multa",
+            "date": "10/05/2021",
+            "icon": "folder-pay.svg",
+            "icon-label": "Pagato",
+            "practice":"Pagamento:",
+             "practice-number":"PA3028/17",
+             "import":"38,92 €",
+            "collapse": [
+              {
+                "icon": "it-clip",
+                "link": "Ricevuta pagamento (PDF 80KB)",
+                "aria-label":"Scarica",
+                "class": "shadow mt-3 p-0"
+              }
+            ]
+          },
+          {
+            "num": "10",
+            "title": "Pagamento multa",
+            "date": "01/10/2022",
+            "icon": "folder-pay.svg",
+            "icon-label": "Pagato",
+            "practice":"Pagamento:",
+             "practice-number":"PA3028/17",
+             "import":"38,92 €",
+            "collapse": [
+              {
+                "icon": "it-clip",
+                "link": "Ricevuta pagamento (PDF 80KB)",
+                "aria-label":"Scarica",
+                "class": "shadow mt-3 p-0"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

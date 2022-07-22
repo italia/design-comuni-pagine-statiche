@@ -1,0 +1,20 @@
+{
+  "info-list":[
+    {
+      "description":"Pratica:",
+      "summary": "AN4059281"
+    },
+    {
+      "description":"Data di pagamento:",
+      "summary": "07/04/2022"
+    },
+    {
+      "description":"Importo totale dovuto:",
+      "summary": "23,00 €"
+    },
+    {
+      "description":"Descrizione pagamento:",
+      "summary": "Pagamento del servizio per la mensa scolastica"
+    }
+  ]
+}

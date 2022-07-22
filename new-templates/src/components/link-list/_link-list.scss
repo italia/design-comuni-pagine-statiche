@@ -1,0 +1,10 @@
+.cmp-link-list {
+  .link-list-wrapper ul li a span,
+  .link-list-wrapper ul li a {
+    @include font(18, 18);
+    font-weight: 400;
+    line-height: 1.5;
+    text-decoration-line: underline;
+    padding: 0;
+  }
+}

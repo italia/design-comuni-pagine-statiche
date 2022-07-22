@@ -1,0 +1,128 @@
+.cmp-carousel {
+  &__title {
+    color: get-color(light, grey);
+    @include font(24, 32);
+    font-weight: 600;
+    line-height: 1.875;
+
+    @include media-breakpoint-up(md) {
+      line-height: 2.222;
+    }
+  }
+
+  .card {
+    &::after {
+      margin: 0;
+    }
+
+    .card-body {
+      padding: 1.111rem 1rem 1rem 1rem;
+    }
+
+    &.card-bg {
+      margin-left: .75rem;
+      margin-right: .75rem;
+
+      @include media-breakpoint-up(sm) {
+        margin-left: .67rem;
+        margin-right: .67rem;
+      }
+
+      @include media-breakpoint-up(lg) {
+        margin-left: .44rem;
+        margin-right: .44rem;
+      }
+    }
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid get-color(light-grey, grey);
+    padding: 1rem 1rem 0.75rem 1rem;
+
+    .icon {
+      fill: get-color(light, grey);
+    }
+
+    &-title {
+      color: get-color(light, grey);
+      @include font(20, 24);
+      font-weight: 600;
+      line-height: 1.5;
+
+      @include media-breakpoint-up(md) {
+        line-height: 1.54;
+      }
+    }
+  }
+
+  .card-body {
+    .link-list-wrapper ul li a span {
+      @include font(16, 16);
+      font-weight: 400;
+      line-height: 1.5;
+    }
+
+    .single-card {
+      height: 300px;
+    }
+
+    .link-list-wrapper ul li a span.show-more {
+      margin-top: 1rem;
+      @include font(16, 16);
+      font-weight: 700;
+      line-height: 1.5;
+
+      @include media-breakpoint-up(sm) {
+        margin-top: 0.89rem;
+      }
+    }
+  }
+
+  .link-list li a svg {
+    margin-left: 1rem;
+
+    @include media-breakpoint-up(sm) {
+      margin-left: 0.89rem;
+    }
+  }
+
+  &.carousel-4-card {
+    .splide__pagination {
+      li {
+        &:not([role="presentation"]) {
+          display: none;
+        }
+      }
+    }
+
+    .splide__arrows {
+      display: none;
+    }
+  }
+
+  .hr-shadow {
+    padding: 16px 0 40px 0;
+    box-shadow: 0 1rem 1.1rem -1.25rem rgb(0 0 0 / 20%);
+  }
+}
+
+.it-carousel-wrapper .splide__pagination button {
+  width: .75rem;
+  height: .75rem;
+  margin: 0 .25rem;
+
+  @include media-breakpoint-up(sm) {
+    width: 0.67rem;
+    height: 0.67rem;
+    margin: 0 0.22rem;
+  }
+}
+
+.it-carousel-wrapper .splide__track{
+  padding-top: 16px;
+  @include media-breakpoint-up(md) {
+    padding-top: 46px;
+  }
+}

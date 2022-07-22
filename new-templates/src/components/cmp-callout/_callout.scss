@@ -1,0 +1,14 @@
+.callout{
+    margin-top: 1rem;
+    margin-bottom: 0;
+
+  .callout-title{
+    @include font(18, 18);
+    font-weight: 700;
+    line-height: 1.1;
+  }
+
+  p{
+    color: get-color(light,grey);
+  }
+}
