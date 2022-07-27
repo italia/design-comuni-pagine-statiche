@@ -14,7 +14,7 @@
                   <span class="visually-hidden">Lingua attiva:</span>
                   <span>ITA</span>
                   <svg class="icon">
-                    <use href="../assets/bootstrap-italia/dist/svg/sprite.svg#it-expand"></use>
+                    <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
                   </svg>
                 </button>
                 <div class="dropdown-menu">
@@ -40,7 +40,7 @@
                     </span>
                     <span class="d-none d-lg-block">Mario Rossi</span>
                     <svg class="icon icon-white d-none d-lg-block">
-                      <use xlink:href="../assets/bootstrap-italia/dist/svg/sprite.svg#it-expand"></use>
+                      <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
                     </svg>
                   </a>
                   <div class="dropdown-menu">
@@ -66,7 +66,7 @@
                             <li>
                               <a class="list-item left-icon" href="#">
                                 <svg class="icon icon-primary icon-sm left">
-                                  <use xlink:href="../assets/bootstrap-italia/dist/svg/sprite.svg#it-external-link">
+                                  <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-external-link">
                                   </use>
                                 </svg>
                                 <span class="fw-bold">Esci</span>
@@ -79,11 +79,10 @@
                   </div>
                 </div>
               {{else}}
-                <a class="btn btn-primary btn-icon btn-full" href="#" title="Accedi all'area personale"
-                  aria-label="Accedi all'area personale" data-element="personal-area-login">
-                  <span class="rounded-icon">
+                <a class="btn btn-primary btn-icon btn-full" href="#" data-element="personal-area-login">
+                  <span class="rounded-icon" aria-hidden="true">
                     <svg class="icon icon-primary">
-                      <use xlink:href="../assets/bootstrap-italia/dist/svg/sprite.svg#it-user"></use>
+                      <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-user"></use>
                     </svg>
                   </span>
                   <span class="d-none d-lg-block">Accedi all'area personale</span>
@@ -103,9 +102,9 @@
           <div class="col-12">
             <div class="it-header-center-content-wrapper">
               <div class="it-brand-wrapper">
-                <a href="#" title="Vai alla home" aria-label="home Nome del Comune">
+                <a href="#" title="Vai alla homepage" aria-label="Home Nome del Comune">
                   <svg class="icon" aria-hidden="true">
-                    <use href="../assets/bootstrap-italia/dist/svg/sprite.svg#it-pa"></use>
+                    <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-pa"></use>
                   </svg>
                   <div class="it-brand-text">
                     <div class="it-brand-title">Nome del Comune</div>
@@ -119,42 +118,42 @@
                     <li>
                       <a href="#" target="_blank" aria-label="twitter" title="vai alla pagina twitter">
                         <svg class="icon icon-sm icon-white align-top">
-                          <use xlink:href="../assets/bootstrap-italia/dist/svg/sprite.svg#it-twitter"></use>
+                          <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-twitter"></use>
                         </svg>
                         <span class="visually-hidden">Twitter</span></a>
                     </li>
                     <li>
                       <a href="#" target="_blank" aria-label="facebook" title="vai alla pagina facebook">
                         <svg class="icon icon-sm icon-white align-top">
-                          <use xlink:href="../assets/bootstrap-italia/dist/svg/sprite.svg#it-facebook"></use>
+                          <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-facebook"></use>
                         </svg>
                         <span class="visually-hidden">Facebook</span></a>
                     </li>
                     <li>
                       <a href="#" target="_blank" aria-label="youtube" title="vai alla pagina youtube">
                         <svg class="icon icon-sm icon-white align-top">
-                          <use xlink:href="../assets/bootstrap-italia/dist/svg/sprite.svg#it-youtube"></use>
+                          <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-youtube"></use>
                         </svg>
                         <span class="visually-hidden">YouTube</span></a>
                     </li>
                     <li>
                       <a href="#" target="_blank" aria-label="telegram" title="vai alla pagina telegram">
                         <svg class="icon icon-sm icon-white align-top">
-                          <use xlink:href="../assets/bootstrap-italia/dist/svg/sprite.svg#it-telegram"></use>
+                          <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-telegram"></use>
                         </svg>
                         <span class="visually-hidden">Telegram</span></a>
                     </li>
                     <li>
                       <a href="#" target="_blank" aria-label="whatsapp" title="vai alla pagina whatsapp">
                         <svg class="icon icon-sm icon-white align-top">
-                          <use xlink:href="../assets/bootstrap-italia/dist/svg/sprite.svg#it-whatsapp"></use>
+                          <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-whatsapp"></use>
                         </svg>
                         <span class="visually-hidden">Whatsapp</span></a>
                     </li>
                     <li>
                       <a href="#" target="_blank" aria-label="rss" title="vai alla pagina rss">
                         <svg class="icon icon-sm icon-white align-top">
-                          <use xlink:href="../assets/bootstrap-italia/dist/svg/sprite.svg#it-rss"></use>
+                          <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-rss"></use>
                         </svg>
                         <span class="visually-hidden">RSS</span></a>
                     </li>
@@ -165,7 +164,7 @@
                   <button class="search-link rounded-icon" type="button" data-bs-toggle="modal"
                     data-bs-target="#search-modal" aria-label="Cerca nel sito">
                     <svg class="icon">
-                      <use href="../assets/bootstrap-italia/dist/svg/sprite.svg#it-search"></use>
+                      <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-search"></use>
                     </svg>
                   </button>
                 </div>
@@ -180,12 +179,12 @@
         <div class="row">
           <div class="col-12">
             <!--start nav-->
-            <nav class="navbar navbar-expand-lg has-megamenu" aria-label="Navigazione principale">
-              <button class="custom-navbar-toggler" type="button" aria-controls="nav4" aria-expanded="false"
+              <nav class="navbar navbar-expand-lg has-megamenu" aria-label="Navigazione principale">
+                <button class="custom-navbar-toggler" type="button" aria-controls="nav4" aria-expanded="false"
                 aria-label="Mostra/Nascondi la navigazione" data-bs-target="#nav4" data-bs-toggle="navbarcollapsible"
                 role="navigation">
                 <svg class="icon">
-                  <use href="../assets/bootstrap-italia/dist/svg/sprite.svg#it-burger"></use>
+                  <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-burger"></use>
                 </svg>
               </button>
               <div class="navbar-collapsable" id="nav4">
@@ -194,14 +193,14 @@
                   <button class="btn close-menu" type="button">
                     <span class="visually-hidden">Nascondi la navigazione</span>
                     <svg class="icon">
-                      <use href="../assets/bootstrap-italia/dist/svg/sprite.svg#it-close-big"></use>
+                      <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-close-big"></use>
                     </svg>
                   </button>
                 </div>
                 <div class="menu-wrapper">
                   <a href="#" title="Vai alla home" aria-label="home Nome del Comune" class="logo-hamburger">
                     <svg class="icon" aria-hidden="true">
-                      <use href="../assets/bootstrap-italia/dist/svg/sprite.svg#it-pa"></use>
+                      <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-pa"></use>
                     </svg>
                     <div class="it-brand-text">
                       <div class="it-brand-title">Nome del Comune</div>
@@ -209,46 +208,38 @@
                   </a>
                   <ul class="navbar-nav" data-element="main-navigation">
                     <li class="nav-item">
-                      <a class="nav-link{{#if active1}} active{{/if}}" href="#" aria-label="Amministrazione"
-                        title="vai alla pagina Amministrazione" data-element="management">
+                      <a class="nav-link{{#if active1}} active{{/if}}" href="#" data-element="management">
                         <span>Amministrazione</span>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link{{#if active2}} active{{/if}}" href="#" aria-label="Novità"
-                        title="vai alla pagina Novità" data-element="news">
+                      <a class="nav-link{{#if active2}} active{{/if}}" href="#" data-element="news">
                         <span>Novità</span>
                       </a>
                     </li>
                     <li class="nav-item ">
-                      <a class="nav-link{{#if active3}} active{{/if}}" href="#" aria-label="Servizi"
-                        title="vai alla pagina Servizi" data-element="all-services">
+                      <a class="nav-link{{#if active3}} active{{/if}}" href="#" data-element="all-services">
                         <span>Servizi</span>
                       </a>
                     </li>
                     <li class="nav-item ">
-                      <a class="nav-link{{#if active4}} active{{/if}}" href="#" aria-label="Vivere il Comune"
-                        title="vai alla pagina Vivere il Comune" data-element="live">
+                      <a class="nav-link{{#if active4}} active{{/if}}" href="#" data-element="live">
                         <span>Vivere il Comune</span>
                       </a>
                     </li>
                   </ul>
                   <ul class="navbar-nav navbar-secondary">
                     <li class="nav-item">
-                      <a class="nav-link" href="#" aria-label="Iscrizioni"
-                        title="vai alla pagina Iscrizioni">Iscrizioni</a>
+                      <a class="nav-link" href="#">Iscrizioni</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#" aria-label="Estate in città"
-                        title="vai alla pagina Estate in città">Estate in città</a>
+                      <a class="nav-link" href="#">Estate in città</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#" aria-label="Polizia locale"
-                        title="vai alla pagina Polizia locale">Polizia locale</a>
+                      <a class="nav-link" href="#">Polizia locale</a>
                     </li>
                     <li class="nav-item ">
-                      <a class="nav-link " href="#" aria-label="Tutti gli argomenti"
-                        title="vai alla pagina Tutti gli argomenti" data-element="all-topics">
+                      <a class="nav-link " href="#" data-element="all-topics">
                         <span class="fw-bold">Tutti gli argomenti...</span>
                       </a>
                     </li>
@@ -259,42 +250,42 @@
                       <li>
                         <a href="#" target="_blank" aria-label="twitter" title="vai alla pagina twitter">
                           <svg class="icon icon-sm icon-white align-top">
-                            <use xlink:href="../assets/bootstrap-italia/dist/svg/sprite.svg#it-twitter"></use>
+                            <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-twitter"></use>
                           </svg>
                           <span class="visually-hidden">Twitter</span></a>
                       </li>
                       <li>
                         <a href="#" target="_blank" aria-label="facebook" title="vai alla pagina facebook">
                           <svg class="icon icon-sm icon-white align-top">
-                            <use xlink:href="../assets/bootstrap-italia/dist/svg/sprite.svg#it-facebook"></use>
+                            <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-facebook"></use>
                           </svg>
                           <span class="visually-hidden">Facebook</span></a>
                       </li>
                       <li>
                         <a href="#" target="_blank" aria-label="youtube" title="vai alla pagina youtube">
                           <svg class="icon icon-sm icon-white align-top">
-                            <use xlink:href="../assets/bootstrap-italia/dist/svg/sprite.svg#it-youtube"></use>
+                            <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-youtube"></use>
                           </svg>
                           <span class="visually-hidden">YouTube</span></a>
                       </li>
                       <li>
                         <a href="#" target="_blank" aria-label="telegram" title="vai alla pagina telegram">
                           <svg class="icon icon-sm icon-white align-top">
-                            <use xlink:href="../assets/bootstrap-italia/dist/svg/sprite.svg#it-telegram"></use>
+                            <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-telegram"></use>
                           </svg>
                           <span class="visually-hidden">Telegram</span></a>
                       </li>
                       <li>
                         <a href="#" target="_blank" aria-label="whatsapp" title="vai alla pagina whatsapp">
                           <svg class="icon icon-sm icon-white align-top">
-                            <use xlink:href="../assets/bootstrap-italia/dist/svg/sprite.svg#it-whatsapp"></use>
+                            <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-whatsapp"></use>
                           </svg>
                           <span class="visually-hidden">Whatsapp</span></a>
                       </li>
                       <li>
                         <a href="#" target="_blank" aria-label="rss" title="vai alla pagina rss">
                           <svg class="icon icon-sm icon-white align-top">
-                            <use xlink:href="../assets/bootstrap-italia/dist/svg/sprite.svg#it-rss"></use>
+                            <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-rss"></use>
                           </svg>
                           <span class="visually-hidden">RSS</span></a>
                       </li>

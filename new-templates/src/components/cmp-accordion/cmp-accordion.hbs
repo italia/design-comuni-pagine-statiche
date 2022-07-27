@@ -5,7 +5,7 @@
       <div class="accordion-header" id="heading{{item.num}}">
         <button class="accordion-button collapsed title-snall-semi-bold {{#if item.text}}py-3{{/if}}" type="button"
           data-bs-toggle="collapse" data-bs-target="#collapse{{item.num}}" aria-expanded="true"
-          aria-controls="collapse{{item.num}}" aria-label="{{item.title}} {{item.icon-label}}">
+          aria-controls="collapse{{item.num}}">
           <div class="button-wrapper">
             {{item.title}}
             <div class="icon-wrapper">
@@ -32,7 +32,7 @@
           <p class="mb-2 fw-normal">Importo: <span class="label">{{item.import}}</span></p>
           {{/if}}
 
-          <a href="#" class="mb-2" aria-label="Vai a scheda servizio" title="Vai a scheda servizio">
+          <a href="#" class="mb-2">
             <span class="t-primary">Scheda servizio</span>
           </a>
 
@@ -47,7 +47,7 @@
           }}
 
           {{#if item.btn-label}}
-          {{>partials/button/button label=item.btn-label aria-label=item.btn-label primary="true" class="justify-content-center
+          {{>partials/button/button label=item.btn-label primary="true" class="justify-content-center
           my-3"}}
           {{/if}}
           {{/if}}

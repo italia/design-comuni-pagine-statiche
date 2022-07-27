@@ -7,7 +7,7 @@
       <h4 class="title-large-semi-bold mb-3">{{info-title}}</h4>
       {{/if}}
       {{#if info-list}}
-      <a href="#" class="{{#if no-header}}d-none{{/if}} text-decoration-none" title="Modifica {{info-title}}" aria-label="Modifica {{info-title}}"><span
+      <a href="#" class="{{#if no-header}}d-none{{/if}} text-decoration-none"><span
           class="text-button-sm-semi t-primary">Modifica</span></a>
       {{/if}}
     </div>
@@ -27,7 +27,7 @@
         <p class="fw-semibold data-text description-alert d-flex align-items-center border-light">
           <span class="d-flex align-items-center">
             <svg class="icon icon-sm icon-warning" aria-hidden="true">
-              <use href="../assets/bootstrap-italia/dist/svg/sprite.svg#it-error"></use>
+              <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-error"></use>
             </svg>
             {{info.warning-message}}
           </span>
@@ -62,7 +62,7 @@
           <p class="fw-semibold pb-2 pt-2 data-text description-success d-flex align-items-center">
             <span class="d-flex align-items-center">
               <svg class="icon icon-sm icon-success" aria-hidden="true">
-                <use href="../assets/bootstrap-italia/dist/svg/sprite.svg#it-check-circle"></use>
+                <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-check-circle"></use>
               </svg>
               {{info.success-message}}
             </span>
@@ -76,7 +76,7 @@
     </div>
     <div class="card-footer p-0 {{#if disservizio-page}} d-none {{/if}} ">
       {{#if btn}}
-      {{>partials/button/button label=btn-label-text aria-label=btn-label-text iconBtn="it-pencil" outline-primary=true class="w-100 mt-3"
+      {{>partials/button/button label=btn-label-text iconBtn="it-pencil" outline-primary=true class="w-100 mt-3"
       sm=true}}
       {{/if}}
     </div>

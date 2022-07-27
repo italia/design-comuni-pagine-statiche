@@ -113,10 +113,6 @@
 
         &:not(:first-child) {
           margin: .5rem 0;
-
-          @include media-breakpoint-up(sm) {
-            margin: .43rem 0 1.33rem 0;
-          }
         }
 
         .list-item-title{

@@ -499,8 +499,7 @@
         {
           "icon": "it-settings",
           "link": "Richiedi pass residenti",
-          "class": "shadow mb-50 mb-lg-80",
-          "aria-label": "Vai alla pagina"
+          "class": "shadow mb-50 mb-lg-80"
         }
       ]
     },

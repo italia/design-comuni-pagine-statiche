@@ -540,14 +540,12 @@
         {
           "icon": "it-settings",
           "link": "Iscrizione alla scuola dell'infanzia",
-          "class": "shadow mb-10",
-          "aria-label": "Vai al servizio"
+          "class": "shadow mb-10"
         },
         {
           "icon": "it-settings",
           "link": "Iscrizione trasporto scolastico",
-          "class": "shadow mb-50 mb-lg-80",
-          "aria-label": "Vai al servizio"
+          "class": "shadow mb-50 mb-lg-80"
         }
       ],
       "servizi-correlati-disservizio": [

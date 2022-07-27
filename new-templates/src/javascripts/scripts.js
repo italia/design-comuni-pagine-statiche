@@ -1,5 +1,4 @@
 /* eslint-disable */
-
 import Splide from '@splidejs/splide';
 
 import './pageStep';

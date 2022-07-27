@@ -4,13 +4,13 @@
     <div class="accordion-item">
       <div class="accordion-header" id="heading{{item.num}}">
         <button class="accordion-button collapsed title-snall-semi-bold {{#if item.text}}py-3{{/if}}" type="button" data-bs-toggle="collapse"
-          data-bs-target="#collapse{{item.num}}" aria-expanded="true" aria-controls="collapse{{item.num}}" aria-label="Approfondisci {{item.title}}">
+          data-bs-target="#collapse{{item.num}}" aria-expanded="true" aria-controls="collapse{{item.num}}">
           <div class="button-wrapper">
             {{item.title}}
             <div class="icon-wrapper">
               <svg class="icon icon-xs me-1 icon-primary {{#if warning-icon}}icon-warning{{/if}}">
-                <use href="../assets/bootstrap-italia/dist/svg/sprite.svg#{{item.icon}}"
-                  xlink:href="../assets/bootstrap-italia/dist/svg/sprite.svg#{{item.icon}}"></use>
+                <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#{{item.icon}}"
+                  xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#{{item.icon}}"></use>
                 <span class="{{color}}">{{item.icon-label}}</span>
               </svg>
             </div>
@@ -35,7 +35,7 @@
                   <p class="mb-2">Importo: <span class="label">44,00 €</span></p>
                 {{/if}}
 
-                <a href="#" aria-label="Scheda servizio" title="Scheda servizio"><span class="t-primary underline">Scheda servizio</span></a>
+                <a href="#"><span class="t-primary underline">Scheda servizio</span></a>
 
                 {{#if item.label-tag}}
                   {{>partials/cmp-tag/cmp-tag label-tag=item.label-tag }}
@@ -48,7 +48,7 @@
                 }}
 
               {{#if item.btn}}
-                  {{>partials/button/button label="Perfeziona la richiesta"  aria-label="Perfeziona la richiesta" primary="true" class="justify-content-center mb-20"}}
+                  {{>partials/button/button label="Perfeziona la richiesta" primary="true" class="justify-content-center mb-20"}}
               {{/if}}
 
             {{/if}}

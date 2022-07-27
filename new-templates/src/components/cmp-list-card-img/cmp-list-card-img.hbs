@@ -22,19 +22,19 @@
         </div>
         <div class="card-body ">
           <div class="category-top cmp-list-card-img__body">
-            <a class="text-decoration-none fw-bold cmp-list-card-img__body-heading-title" href="#" title="Categoria {{card.category}}" aria-label="Categoria {{card.category}}">{{card.category}}</a>
+            <a class="text-decoration-none fw-bold cmp-list-card-img__body-heading-title" href="#">{{card.category}}</a>
             {{#if card.category-date}}
             <span class="data">{{card.category-date}}</span>
             {{/if}}
           </div>
-          <h3 class="cmp-list-card-img__body-title "><a href="#" class="text-decoration-none" aria-label="Vai alla pagina {{card.title}}" title="Vai alla pagina {{card.title}}">{{card.title}}</a></h3>
+          <h3 class="cmp-list-card-img__body-title "><a href="#" class="text-decoration-none">{{card.title}}</a></h3>
           <p class="cmp-list-card-img__body-description">{{card.description}}</p>
 
-          <a class="read-more t-primary text-uppercase cmp-list-card-img__body-link " href="#" title="Leggi di più sulla pagina di {{card.title}}" aria-label="Leggi di più sulla pagina di {{card.title}}">
+          <a class="read-more t-primary text-uppercase cmp-list-card-img__body-link " href="#" aria-label="Leggi di più sulla pagina di {{card.title}}">
             <span class="text">{{card.link}}</span>
             <span class="visually-hidden">su Lorem ipsum dolor sit amet, consectetur adipiscing elit…</span>
             <svg class="icon icon-primary icon-xs ml-10">
-              <use href="../assets/bootstrap-italia/dist/svg/sprite.svg#{{card.icon}}"></use>
+              <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#{{card.icon}}"></use>
             </svg>
           </a>
         </div>

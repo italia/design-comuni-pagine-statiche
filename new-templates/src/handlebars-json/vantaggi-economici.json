@@ -726,13 +726,11 @@
       "related-services": [
         {
           "icon": "it-settings",
-          "aria-label": "Vai alla pagina",
           "link": "Iscrizione asilo nido",
           "class": "shadow"
         },
         {
           "icon": "it-settings",
-          "aria-label": "Vai alla pagina",
           "link": "Richiesta assegno nucleo familiare",
           "class": "shadow mb-50 mb-lg-80"
         }

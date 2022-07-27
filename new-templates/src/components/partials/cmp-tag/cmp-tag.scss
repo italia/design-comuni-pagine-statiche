@@ -17,7 +17,11 @@
   .bg-tag {
     @include media-breakpoint-down (md) {
       background-color: get-color(primary, main);
+
+      
+    .chip-label{
       color: get-color(white, main);
+    }
     }
   }
 }

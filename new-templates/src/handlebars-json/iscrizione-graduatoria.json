@@ -406,13 +406,11 @@
       "servizi-correlati": [
         {
           "icon": "it-settings",
-          "aria-label": "Vai alla pagina",
           "link": "Iscrizione servizio mensa",
           "class": "shadow mb-10"
         },
         {
           "icon": "it-settings",
-          "aria-label": "Vai alla pagina",
           "link": "Iscrizione trasporto scolastico",
           "class": "shadow mb-50 mb-lg-80"
         }
