@@ -3,7 +3,7 @@ const cssnano = require('cssnano');
 const glob = require('glob');
 const path = require('path');
 const fs = require('fs');
-
+const pkg = require('../package.json');
 const WebpackBar = require('webpackbar');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
@@ -62,6 +62,7 @@ for (let i = 0; i < pages.length; i++) {
       template: page.template,
       filename: page.output,
       templateParameters:{
+        version: pkg.version,
         ...require('../src/handlebars-json/iscrizione-graduatoria.json'),
         ...require('../src/handlebars-json/helpers-list'),
         ...require('../src/handlebars-json/info-list'),
