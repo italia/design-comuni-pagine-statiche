@@ -10,7 +10,7 @@
   aria-label="{{label}}"
   title="{{label}}">
   {{#if icon-url}}
-    <svg class="icon {{icon-class}}">
+    <svg class="icon {{icon-class}}" aria-hidden="true">
       <use href="{{icon-url}}" xlink:href="{{icon-url}}"></use>
     </svg>
   {{/if}}
@@ -33,7 +33,7 @@ class="btn
 
 {{#if iconBtn}}
   <span class="rounded-icon">
-    <svg class="icon {{#if iconWhite}}icon-white{{else}}icon-primary{{/if}} {{#if sm}}icon-sm{{/if}} {{#if xs}}icon-xs{{/if}} {{class-icon}}">
+    <svg class="icon {{#if iconWhite}}icon-white{{else}}icon-primary{{/if}} {{#if sm}}icon-sm{{/if}} {{#if xs}}icon-xs{{/if}} {{class-icon}}" aria-hidden="true">
       <use href="../assets/bootstrap-italia/dist/svg/sprite.svg#{{iconBtn}}"></use>
     </svg>
   </span>

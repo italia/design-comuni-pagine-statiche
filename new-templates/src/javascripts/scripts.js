@@ -152,3 +152,21 @@ function validateFormMulta() {
 }
 
 validateFormMulta();
+
+
+/* Header Hamburger Menu aria-expanded */
+
+const nav = document.querySelector(".custom-navbar-toggler");
+const closeBtn = document.querySelector('.close-menu');
+
+function menuExpanded(){
+  nav.addEventListener("click",function(){
+    nav.setAttribute("aria-expanded","true");
+  });
+
+  closeBtn.addEventListener("click",function(){
+    nav.setAttribute("aria-expanded","false");
+  });
+}
+
+menuExpanded();
