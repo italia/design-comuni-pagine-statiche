@@ -152,7 +152,14 @@ const hbs = {
     knownHelpersOnly: false,
   },
 };
+
+const BI = {
+  test: /\.txt$/,
+  use: 'raw-loader'
+}
+
 module.exports = [
+  BI,
   hbs,
   js,
   css,

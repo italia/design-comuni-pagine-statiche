@@ -37,6 +37,7 @@ const config = {
   root: ROOT,
   paths: {
     config: 'config',
+    node_modules: 'node_modules',
     src: 'src',
     dist: 'dist',
   },

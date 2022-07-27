@@ -108,7 +108,8 @@ for (let i = 0; i < pages.length; i++) {
         ...require('../src/handlebars-json/vantaggi-economici.json'),
         ...require('../src/handlebars-json/richiedi-assistenza.json'),
         ...require('../src/handlebars-json/prenotazione-appuntamento'),
-        ...require('../src/handlebars-json/domande-frequenti.json')
+        ...require('../src/handlebars-json/domande-frequenti.json'),
+        ...require('../src/handlebars-json/seganalazione-disservizio.json')
       },
       minify: {
         removeRedundantAttributes: false, // do not remove type="text"
@@ -144,7 +145,7 @@ const copyImages = new CopyPlugin({
 const copyBtItalia = new CopyPlugin({
   patterns: [
     {
-      from: path.join(config.root, config.paths.src, 'assets/bootstrap-italia'),
+      from: path.join(config.root, config.paths.node_modules, 'bootstrap-italia'),
       to: path.join(config.root, config.paths.dist, 'assets/bootstrap-italia'),
     },
   ],
