@@ -1,0 +1,14 @@
+{
+  "name": "design-cominu-pagine-statiche",
+  "version": "1.0.0",
+  "description": "Template HTML del progetto per la realizzazione dei siti web dei Comuni Italiani",
+  "scripts": {
+    "documentation-deploy-to-gh-pages": "./gh-pages.sh && gh-pages -d dist -m 'chore: update documentation'"
+  },
+  "author": "Presidenza del Consiglio dei Ministri",
+  "license": "BSD-3-Clause",
+  "repository": {},
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
