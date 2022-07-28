@@ -1,0 +1,420 @@
+{
+  "iscrizione-graduatoria":{
+    "info-progress":{
+        "step-1": [
+          {
+            "title": "Informativa sulla privacy",
+            "active": true,
+            "completed": false
+          },
+          {
+            "title": "Dati Generali",
+            "active": false,
+            "completed": false
+          },
+          {
+            "title": "Preferenze di servizio",
+            "active": false,
+            "completed": false
+          },
+          {
+            "title": "Riepilogo",
+            "active": false,
+            "completed": false
+          }
+        ],
+        "step-2": [
+          {
+            "title": "Informativa sulla privacy",
+            "active": false,
+            "completed": true
+          },
+          {
+            "title": "Dati Generali",
+            "active": true,
+            "completed": false
+          },
+          {
+            "title": "Preferenze di servizio",
+            "active": false,
+            "completed": false
+          },
+          {
+            "title": "Riepilogo",
+            "active": false,
+            "completed": false
+          }
+        ],
+        "step-3": [
+          {
+            "title": "Informativa sulla privacy",
+            "active": false,
+            "completed": true
+          },
+          {
+            "title": "Dati Generali",
+            "active": false,
+            "completed": true
+          },
+          {
+            "title": "Preferenze di servizio",
+            "active": true,
+            "completed": false
+          },
+          {
+            "title": "Riepilogo",
+            "active": false,
+            "completed": false
+          }
+        ],
+        "step-4": [
+          {
+            "title": "Informativa sulla privacy",
+            "active": false,
+            "completed": true
+          },
+          {
+            "title": "Dati Generali",
+            "active": false,
+            "completed": true
+          },
+          {
+            "title": "Preferenze di servizio",
+            "active": false,
+            "completed": true
+          },
+          {
+            "title": "Riepilogo",
+            "active": true,
+            "completed": false
+          }
+        ]
+    },
+    "trovare-informazione-servizio":{
+      "navscroll":[
+        {
+          "item": "A chi è rivolto",
+          "anchor": "who-needs"
+        },
+        {
+          "item": "Descrizione",
+          "anchor": "description"
+        },
+        {
+          "item": "Come fare",
+          "anchor": "how-to"
+        },
+        {
+          "item": "Cosa serve",
+          "anchor": "needed"
+        },
+        {
+          "item": "Cosa si ottiene",
+          "anchor": "obtain"
+        },
+        {
+          "item": "Tempi e scadenze",
+          "anchor": "deadlines"
+        },
+        {
+          "item": "Costi",
+          "anchor": "costs"
+        },
+        {
+          "item": "Accedi al servizio",
+          "anchor": "service-access"
+        },
+        {
+          "item": "Ulteriori informazioni",
+          "anchor": "more-info"
+        },
+        {
+          "item": "Condizioni di servizio",
+          "anchor": "conditions"
+        },
+        {
+          "item": "Contatti",
+          "anchor": "contacts"
+        }
+      ],
+      "chi-rivolto":{
+        "lista-1": [
+          {
+            "text": "Bambini di età compresa tra i 3 e i 5 anni compiuti o da compiere entro il 31 dicembre di ogni anno."
+          },
+          {
+            "text": "Bambini che compiranno i 3 anni dopo il 31 dicembre e, comunque, entro e non oltre il 30 aprile dell’anno successivo (ammissione anticipata)."
+          }
+        ]
+      },
+      "cosa-serve":{
+        "lista-1": [
+          {
+            "text": "SPID (Sistema Pubblico per la gestione dell'Identità Digitale), Carta identità elettronica (CIE) o Carta Nazionale dei Servizi (CNS);"
+          },
+          {
+            "text": "la documentazione attestante eventuali disabilità"
+          },
+          {
+            "text": "il permesso di soggiorno del genitore che presenta la richiesta"
+          },
+          {
+            "text": "l’ISEE in corso di validità"
+          }
+        ]
+      },
+      "timeline":[
+        {
+          "year": "2022",
+          "day": "10",
+          "month": "feb",
+          "event": "Apertura iscrizioni"
+        },
+        {
+          "year": "2022",
+          "day": "28",
+          "month": "feb",
+          "event": "Termine presentazione domande"
+        },
+        {
+          "year": "2022",
+          "day": "02",
+          "month": "mar",
+          "event": "Pubblicazione graduatorie"
+        },
+        {
+          "year": "2022",
+          "day": "02",
+          "month": "apr",
+          "event": "Perfezionamento richiesta"
+        }
+      ]
+    },
+    "controllare-dati-personali":{
+      "navscroll":[
+        {
+          "item": "Richiedente",
+          "anchor": "applicant-info"
+        },
+        {
+          "item": "Beneficiario",
+          "anchor": "beneficiary-info"
+        },
+        {
+          "item": "Altro Genitore",
+          "anchor": "other-parent-info"
+        },
+        {
+          "item": "ISEE",
+          "anchor": "isee-info"
+        }
+      ],
+      "anagrafica":{
+        "list-1":[
+          {
+            "name": "Nome",
+            "description": "Giulia"
+          },
+          {
+            "name": "Cognome",
+            "description": "Bianchi"
+          },
+          {
+            "name": "Codice Fiscale",
+            "description": "GLABNC72H25H501Y"
+          },
+          {
+            "name": "Data di nascita",
+            "description": "03/07/1975"
+          },
+          {
+            "name": "Luogo di nascita",
+            "description": "Roma"
+          },
+          {
+            "name": "Sesso",
+            "description": "Femmina"
+          },
+          {
+            "name": "Nazionalità",
+            "description": "Italiana"
+          },
+          {
+            "name": "Professione",
+            "description": "Impiegato"
+          },
+          {
+            "name": "Scolarità",
+            "description": "Laurea Magistrale"
+          }
+        ],
+        "list-2":[
+          {
+            "name": "Nome",
+            "description": "Mario"
+          },
+          {
+            "name": "Cognome",
+            "description": "Rossi"
+          },
+          {
+            "name": "Codice Fiscale",
+            "description": "MRARSS72H25H501Y"
+          },
+          {
+            "name": "Data di nascita",
+            "description": "03/07/1975"
+          },
+          {
+            "name": "Luogo di nascita",
+            "description": "Roma"
+          },
+          {
+            "name": "Sesso",
+            "description": "Maschio"
+          },
+          {
+            "name": "Nazionalità",
+            "description": "Italiana"
+          },
+          {
+            "name": "Professione",
+            "description": "Impiegato"
+          },
+          {
+            "name": "Scolarità",
+            "description": "Laurea Magistrale"
+          }
+        ]
+      },
+      "indirizzo": [
+        {
+          "name": "Residenza",
+          "description": "Via Roma 16, 00100 Roma, IT"
+        }
+      ],
+      "contatti":[
+        {
+          "name": "Telefono",
+          "description": "+39 331 1234567"
+        },
+        {
+          "name": "Email",
+          "description": "mario.rossi@gmail.com"
+        }
+      ],
+      "documenti-warning":[
+        {
+          "name": "Carta d'identità",
+          "description": "mario_rossi_carta_di_identità_fronte_retro.pdf",
+          "warning": false,
+          "success": false
+        },
+        {
+          "name": "Modulo condizione lavorativa",
+          "description": "",
+          "warning": true,
+          "success": false,
+          "warningId": "documenti-warning",
+          "warning-message": "Documento mancante",
+          "success-message": "Documento inserito con successo"
+        }
+      ],
+      "documenti":[
+        {
+          "name": "Carta d'identità",
+          "description": "mario_rossi_carta_di_identità_fronte_retro.pdf",
+          "warning": false,
+          "success": false
+        },
+        {
+          "name": "Modulo condizione lavorativa",
+          "description": "",
+          "warning": false,
+          "success": true,
+          "warning-message": "Documento mancante",
+          "success-message": "Documento inserito con successo"
+        }
+      ],
+      "isee":[
+        {
+          "name": "Valore ISEE",
+          "description": "18.000,00€"
+        },
+        {
+          "name": "Scadenza ISEE",
+          "description": "06/10/2023"
+        },
+        {
+          "name": "Anno protocollo",
+          "description": "2022"
+        },
+        {
+          "name": "Numero protocollo",
+          "description": "12345678"
+        },
+        {
+          "name": "Codice filiale protocollo",
+          "description": "12345678"
+        },
+        {
+          "name": "Certificato ISEE",
+          "description": "documento_ISEE-2019.pdf",
+          "warning": true,
+          "success": false,
+          "warningId": "isee-warning",
+          "warning-message": "Documento scaduto",
+          "success-message": "Documento inserito con successo"
+        }
+      ],
+      "alert-list": [
+        {
+          "text": "Altro genitore",
+          "id": "documenti-warning"
+        },
+        {
+          "text": "ISEE",
+          "id": "isee-warning"
+        }
+      ]
+    },
+    "finalizzare-procedura":{
+      "navscroll":[
+        {
+          "item": "Prossimi passi",
+          "anchor": "next-step"
+        },
+        {
+          "item": "Servizi correlati",
+          "anchor": "related-service"
+        }
+      ],
+      "timeline":[
+        {
+          "year": "2022",
+          "day": "02",
+          "month": "mar",
+          "event": "Pubblicazione graduatorie"
+        },
+        {
+          "year": "2022",
+          "day": "02",
+          "month": "apr",
+          "event": "Perfezionamento richieste"
+        }
+      ],
+      "servizi-correlati": [
+        {
+          "icon": "it-settings",
+          "link": "Iscrizione servizio mensa",
+          "class": "shadow mb-10"
+        },
+        {
+          "icon": "it-settings",
+          "link": "Iscrizione trasporto scolastico",
+          "class": "shadow mb-50 mb-lg-80"
+        }
+      ]
+    }
+  }
+}

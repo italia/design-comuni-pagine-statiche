@@ -1,0 +1,144 @@
+.cmp-info-button-card {
+  margin-top: 0;
+
+  p{
+    margin-bottom: 0;
+  }
+
+  &.has-border-green {
+    outline: 2px solid get-color(primary, main);
+  }
+
+  &.radio-card:not(:first-of-type) {
+    margin-top: 1rem;
+
+    @include media-breakpoint-up(sm) {
+     margin-top: 0.89rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      margin-top: 1.78rem;
+    }
+  }
+
+  .form-check [type=radio]:not(:checked)+label::before {
+    border-color: get-color(primary, main);
+  }
+
+  .radio-card {
+    position: relative;
+  }
+
+  .form-check [type=radio]+label {
+    position: relative;
+    padding-left: 0;
+    cursor: pointer;
+    display: inline-block;
+    height: auto;
+    line-height: 32px;
+    font-size: 1rem;
+    user-select: none;
+    margin-bottom: .5rem;
+    display: block;
+  }
+
+  .form-check [type=radio]+label::after,
+  .form-check [type=radio]+label::before {
+    content: "";
+    right: 0;
+    top: 0;
+    left: unset;
+  }
+
+  .big-title {
+    @include font(28, 32);
+    font-weight: 700;
+    line-height: 1.14;
+    max-width: 85%;
+    padding-bottom: 0.5rem;
+    color: get-color(black, main);
+
+    @include media-breakpoint-up(sm) {
+      padding-bottom: 0.44rem;
+    }
+
+    @include media-breakpoint-up(md) {
+      line-height: 1;
+      padding-bottom: 0.89rem;
+    }
+  }
+
+  .meium-title {
+    @include font(20, 32);
+    font-weight: 700;
+    line-height: 1.14;
+    padding-bottom: 0.5rem;
+    color: get-color(black, main);
+
+    @include media-breakpoint-up(sm) {
+      padding-bottom: 0.44rem;
+    }
+
+    @include media-breakpoint-up(md) {
+      line-height: 1;
+      padding-bottom: 0.89rem;
+    }
+  }
+
+
+
+  .name {
+    @include font(18, 18);
+    line-height: 1.5;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+
+    @include media-breakpoint-up(sm) {
+      margin-bottom: 0.44rem;
+    }
+  }
+
+  .card-info {
+    @include font(14, 16);
+    line-height: 1.5;
+    padding: 0.5rem 0;
+
+    @include media-breakpoint-up(sm) {
+      padding: 0.44rem 0;
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #E5E5E5;
+    }
+
+    &+.card-info {
+      margin-top: 0.25rem;
+
+      @include media-breakpoint-up(sm) {
+        margin-top: 0.22rem;
+      }
+    }
+
+    span {
+      @include font(16, 18);
+      font-weight: 600;
+    }
+  }
+
+  .cmp-alert-box {
+    margin-top: 1rem;
+
+    @include media-breakpoint-up(sm) {
+      margin-top: 0.89rem;
+    }
+  }
+
+  .accordion-button {
+    padding-left: 0;
+    font-weight: normal;
+
+    &::after {
+      margin-left: 0;
+    }
+  }
+}

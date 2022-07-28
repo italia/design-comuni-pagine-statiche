@@ -1,0 +1,61 @@
+<div class="cmp-accordion faq">
+  <div class="accordion" id="{{id}}">
+    {{#each accordion as |item|}}
+    <div class="accordion-item">
+      <div class="accordion-header" id="heading{{item.num}}">
+        <button class="accordion-button collapsed title-snall-semi-bold {{#if item.text}}py-3{{/if}}" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapse{{item.num}}" aria-expanded="true" aria-controls="collapse{{item.num}}">
+          <div class="button-wrapper">
+            {{item.title}}
+            <div class="icon-wrapper">
+              <svg class="icon icon-xs me-1 icon-primary {{#if warning-icon}}icon-warning{{/if}}">
+                <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#{{item.icon}}"
+                  xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#{{item.icon}}"></use>
+                <span class="{{color}}">{{item.icon-label}}</span>
+              </svg>
+            </div>
+          </button>
+          {{#if item.date}}
+            <p class="accordion-date title-xsmall-regular mb-0">{{item.date}}</p>
+          {{/if}}
+        </div>
+
+        <div id="collapse{{item.num}}" class="accordion-collapse collapse p-0"
+          data-bs-parent="#accordionExample{{item.num}}" role="region" aria-labelledby="heading{{item.num}}">
+          <div class="accordion-body">
+
+            {{#if item.text}}
+              <p class="mb-3">{{{item.text}}}</p>
+            {{else}}
+
+                <p>Pratica: <span class="label">AN4059281</span></p>
+
+                {{#if item.import}}
+                  <p>Metodo: <span class="label">PagoPA</span></p>
+                  <p class="mb-2">Importo: <span class="label">44,00 €</span></p>
+                {{/if}}
+
+                <a href="#"><span class="t-primary underline">Scheda servizio</span></a>
+
+                {{#if item.label-tag}}
+                  {{>partials/cmp-tag/cmp-tag label-tag=item.label-tag }}
+                {{/if}}
+
+                {{>cmp-icon-list/cmp-icon-list
+                    title=false
+                    class="mt-3"
+                    icon-list=item.collapse
+                }}
+
+              {{#if item.btn}}
+                  {{>partials/button/button label="Perfeziona la richiesta" primary="true" class="justify-content-center mb-20"}}
+              {{/if}}
+
+            {{/if}}
+          </div>
+        </button>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</div>

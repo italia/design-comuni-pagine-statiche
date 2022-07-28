@@ -1,0 +1,124 @@
+{{#>base/base title="Permessi mobilità - Nome del Comune" headerActive3=true}}
+<main>
+  <div class="container" id="main-container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi" link3="Permessi mobilità"}}
+        {{> cmp-heading/cmp-heading title="Permesso ZTL" description="Hai bisogno di assistenza?
+        <a href='' class='title-small-semi-bold t-primary'>Contattaci</a>"}}
+      </div>
+
+      <div class="col-12">
+        {{> cmp-info-progress/cmp-info-progress
+        step-list=permessi-autorizzazioni.conferma-riepilogo-informazioni.step-4
+        step-num="4"
+        step-title="Riepilogo"
+        step-tot="4"
+        }}
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+
+        {{>cmp-callout/callout
+        calloutType="warning"
+        icon="it-horn"
+        calloutTitle="Attenzione"
+        calloutText="Le informazioni che hai fornito hanno valore di dichiarazione.<span class='d-lg-block'> Verifica
+          che siano corrette.</span>"
+        textClass="titillium text-paragraph"
+        }}
+
+        <h2 class="title-xxlarge mb-4 mt-40">Dati Generali</h2>
+
+        {{#>cmp-card/cmp-card-content-box
+        class="mb-0"
+        bg-grey=true
+        id-title="applicant-info"
+        h3-title=true
+        h3-class="mb-4"
+        margin-class="mb-4"
+        header-m0=true
+        card-title="Richiedente" }}
+
+        {{>cmp-info-summary/cmp-info-summary
+        class="mb-4 mb-lg-30 p-3 p-lg-4"
+        info-title="Mario Rossi"
+        info=true
+        info-list=permessi-autorizzazioni.conferma-riepilogo-informazioni.anagrafica
+        }}
+
+        {{>cmp-info-summary/cmp-info-summary
+        class="mb-4 mb-lg-30 p-3 p-lg-4"
+        info-title="Indirizzo"
+        info=true
+        info-list=permessi-autorizzazioni.conferma-riepilogo-informazioni.indirizzo
+        }}
+
+        {{>cmp-info-summary/cmp-info-summary
+        class="mb-4 mb-lg-30 p-3 p-lg-4"
+        info-title="Contatti"
+        info=true
+        info-list=permessi-autorizzazioni.conferma-riepilogo-informazioni.contatti
+        }}
+
+        {{>cmp-info-summary/cmp-info-summary
+        class="p-3 p-lg-4 mb-0"
+        info-title="Documenti"
+        info=true
+        info-list=permessi-autorizzazioni.conferma-riepilogo-informazioni.documenti
+        }}
+
+        {{/cmp-card/cmp-card-content-box}}
+
+        <div class="pt-3 pt-lg-0">
+          {{#>cmp-card/cmp-card-content-box
+          class="mb-0"
+          id-title="vehicle"
+          bg-grey=true
+          h3-title=true
+          h3-class="mb-0"
+          margin-class="mb-4"
+          card-title="Veicolo" }}
+
+          {{>cmp-info-summary/cmp-info-summary
+          class="p-3 p-lg-4"
+          info-title="Mini Countryman F60"
+          info=true
+          info-list=permessi-autorizzazioni.conferma-riepilogo-informazioni.vehicle
+          }}
+          {{/cmp-card/cmp-card-content-box}}
+        </div>
+
+        <h2 class="title-xxlarge mb-4 mt-40">Preferenze di servizio</h2>
+        {{#>cmp-card/cmp-card-content-box
+        bg-grey=true }}
+
+        {{>cmp-info-summary/cmp-info-summary
+        class="p-3 p-lg-4"
+        header-class="pb-2"
+        info=true
+        info-list=permessi-autorizzazioni.conferma-riepilogo-informazioni.preferenze-servizio
+        }}
+        {{/cmp-card/cmp-card-content-box}}
+
+        {{>cmp-nav-steps/cmp-nav-steps next=true modalId="modal-terms" saveBtn=true aria-label-save="per il permesso ztl"}}
+      </div>
+    </div>
+  </div>
+
+
+  <div class="bg-grey-card shadow-contacts">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6 offset-lg-3 p-contacts">
+          {{>cmp-contacts/cmp-contacts}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{>cmp-modal/modal-terms-and-conditions}}
+</main>
+{{/base/base }}

@@ -1,0 +1,18 @@
+<div class="accordion-item">
+  <div class="accordion-header" id="heading-{{collapse-id}}">
+    <button class="collapsed accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#{{collapse-id}}"
+      aria-expanded="false" aria-controls="{{collapse-id}}">
+      <span class="d-flex align-items-center">
+      Mostra tutto
+        <svg class="icon icon-primary icon-sm">
+          <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
+        </svg>
+      </span>
+    </button>
+  </div>
+  <div id="{{collapse-id}}" class="accordion-collapse collapse{{#if acc-open}} show{{/if}}" role="region">
+    <div class="accordion-body p-0">
+      {{>cmp-info-summary/cmp-info-summary info-title=info-title info=true info-list=conto-bancario class="border border-light p-3 p-lg-4"}}
+    </div>
+  </div>
+</div>

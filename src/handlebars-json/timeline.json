@@ -1,0 +1,56 @@
+{
+  "timeline": {
+    "area-personale": [
+      {
+        "year": "2022",
+        "day": "10",
+        "month": "feb",
+        "event": "Apertura domande"
+      },
+      {
+        "year": "2022",
+        "day": "28",
+        "month": "feb",
+        "event": "Termine presentazione domande"
+      },
+      {
+        "year": "2022",
+        "day": "02",
+        "month": "mar",
+        "event": "Pubblicazione graduatorie"
+      },
+      {
+        "year": "2022",
+        "day": "02",
+        "month": "apr",
+        "event": "Perfezionamento richieste"
+      }
+    ],
+    "template-dettaglio-servizio": [
+      {
+        "year": "2022",
+        "day": "10",
+        "month": "feb",
+        "event": "Apertura iscrizioni"
+      },
+      {
+        "year": "2022",
+        "day": "28",
+        "month": "feb",
+        "event": "Termine presentazione domande"
+      },
+      {
+        "year": "2022",
+        "day": "02",
+        "month": "mar",
+        "event": "Pubblicazione graduatorie"
+      },
+      {
+        "year": "2022",
+        "day": "02",
+        "month": "apr",
+        "event": "Perfezionamento domande"
+      }
+    ]
+  }
+}

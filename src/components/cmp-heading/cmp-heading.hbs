@@ -1,0 +1,57 @@
+<div class="cmp-heading {{#if heading-p0}}p-0{{else}}pb-3 pb-lg-4{{/if}}">
+  {{#if iconTitle}}
+  <div class="categoryicon-top d-flex">
+    <svg class="icon icon-success {{iconClass}}" aria-hidden="true">
+      <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#{{iconTitle}}"></use>
+    </svg>
+    {{#if h2}}
+    <h2 class="title-xxxlarge mb-0 ml-10 {{title-class}}">{{title}}</h2>
+    {{else}}
+    <h1 class="title-xxxlarge {{title-class}}">{{title}}</h1>
+    {{/if}}
+  </div>
+  {{else}}
+  {{#if h2}}
+  <h2 class="title-xxxlarge {{title-class}}">{{title}}</h2>
+  {{else}}
+  <h1 class="title-xxxlarge {{title-class}}">{{title}}</h1>
+  {{/if}}
+  {{/if}}
+
+    {{#if label-tag-up}}
+  <div class="d-flex flex-wrap cmp-heading__tag">
+    {{>partials/cmp-tag/cmp-tag}}
+  </div>
+  {{/if}}
+
+  {{#if subTitle}}
+  <p class="subtitle-small {{pClass}}">{{{subTitle}}}</p>
+  {{/if}}
+
+  {{#if label-tag}}
+  <div class="d-flex flex-wrap gap-2 cmp-heading__tag">
+    {{>partials/cmp-tag/cmp-tag}}
+  </div>
+  {{/if}}
+
+  {{#if descriptionAfterTag}}
+  <p class="text-paragraph">
+    {{descriptionAfterTag}}
+  </p>
+  {{/if}}
+
+  {{#if description}}
+  <p class="subtitle-small {{desClass}}">{{{description}}}</p>
+  {{/if}}
+
+  {{#if button}}
+    {{>partials/button/button class="fw-bold"}}
+  {{/if}}
+
+  {{#if double-button}}
+  <div class="d-lg-flex gap-30 mb-2">
+      {{>partials/button/button class="fw-bold btn-primary mr-lg-30"}}
+      {{>partials/button/button class="fw-bold btn-outline-primary t-primary" label=second-label aria-label=second-ariaLabel}}
+  </div>
+  {{/if}}
+</div>

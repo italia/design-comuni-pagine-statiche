@@ -1,0 +1,39 @@
+<div class="row g-4">
+  {{#each cards as |card|}}
+  <div class="col-md-6 col-xl-4">
+    <div class="card-wrapper border border-light rounded shadow-sm cmp-list-card-img cmp-list-card-img-hr">
+      <div class="card no-after rounded">
+        <div class="row g-2 g-md-0 flex-md-column">
+          {{#if img-path}}
+          <div class="col-4 order-2 order-md-1">
+            <img class="rounded-top img-fluid img-responsive" src="{{img-path}}" title="titolo immagine"
+              alt="descrizione immagine">
+          </div>
+          {{/if}}
+          <div class="{{#if img-path}}col-8 {{else}} col-12 {{/if}} order-1 order-md-2">
+            <div class="{{#if img-path}}card-body {{else}} card-img-none rounded-top{{/if}}">
+              <div class="category-top cmp-list-card-img__body">
+                {{#if card.category}}
+                <a class="category cmp-list-card-img__body-heading-title" href="#">{{card.category}}</a>
+                {{/if}}
+                {{#if card.category-date}}
+                <span class="data">{{card.category-date}}</span>
+                {{/if}}
+              </div>
+              <a href="#" class="text-decoration-none"><h3 class="h5 card-title">{{card.title}}</h3></a>
+              <p class="card-text d-none d-md-block">{{card.description}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+  <!--end card-->
+
+  {{#if buttonNext}}
+  <div class="d-flex justify-content-end">
+    {{>partials/button/button primary="true" class="px-5 py-3 full-mb" }}
+  </div>
+  {{/if}}
+</div>

@@ -1,0 +1,48 @@
+{{#if link}}
+<a href="#" class=" ps-0
+  {{#if primary}}btn-primary{{/if}}
+  {{#if secondary}}btn-secondary{{/if}}
+  {{#if outline-primary}}btn-outline-primary{{/if}}
+  {{#if outline-secondary}}btn-outline-secondary{{/if}}
+  {{#if disabled}}disabled{{/if}}
+  {{#if fullMobile}}full-mobile{{/if}}
+  {{class}}"
+  aria-label="{{label}}"
+  title="{{label}}">
+  {{#if icon-url}}
+    <svg class="icon {{icon-class}}" aria-hidden="true">
+      <use href="{{icon-url}}" xlink:href="{{icon-url}}"></use>
+    </svg>
+  {{/if}}
+  {{label}}
+</a>
+{{else}}
+<button type="button" {{#if modalId}}data-bs-toggle="modal" data-bs-target="#{{modalId}}" {{/if}}
+{{#if aria-label}}aria-label="{{aria-label}}{{#if btn-label-text}} documento{{/if}}"{{/if}}
+class="btn
+  {{#if primary}}btn-primary{{/if}}
+  {{#if success}}btn-success{{/if}}
+  {{#if secondary}}btn-secondary{{/if}}
+  {{#if outline-primary}}btn-outline-primary{{/if}}
+  {{#if outline-secondary}}btn-outline-secondary{{/if}}
+  {{#if disabled}}disabled{{/if}}
+  {{#if fullMobile}}full-mobile{{/if}}
+  {{#if bg-white}}bg-white{{/if}}
+  {{class}}
+">
+
+{{#if iconBtn}}
+  <span class="rounded-icon">
+    <svg class="icon {{#if iconWhite}}icon-white{{else}}icon-primary{{/if}} {{#if sm}}icon-sm{{/if}} {{#if xs}}icon-xs{{/if}} {{class-icon}}" aria-hidden="true">
+      <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#{{iconBtn}}"></use>
+    </svg>
+  </span>
+{{/if}}
+
+{{#if iconBtnUrl}}
+    <img src="{{iconBtnUrl}}" alt="{{label}}" class="me-2">
+{{/if}}
+
+ <span class="{{label-class}}">{{label}}</span>
+</button>
+{{/if}}

@@ -1,0 +1,28 @@
+
+  <div class="form-group cmp-input {{formClass}}">
+    <label class="cmp-input__label" for="{{id}}">{{label}}{{#if required}}*{{/if}}</label>
+     <input
+    type="{{type}}"
+    class="form-control {{inputClass}}"
+    id="{{id}}"
+    name={{id}}
+    {{#if placeholder}} placeholder="{{placeholder}}"{{/if}}
+    {{#if required}} required {{/if}}
+    {{#if disabled}} disabled {{/if}}
+    {{#if value}} value="{{value}}"{{/if}}
+
+  >
+    {{#if address}}
+    <span class="cmp-input__icon-input">
+      <svg class="icon icon-sm"><use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-map-marker-circle"></use></svg>
+    </span>
+      {{/if}}
+    {{#if text}}
+      <div class="d-flex">
+      <span class="form-text cmp-input__text">
+      {{text}}</span>
+      </div>
+    {{/if}}
+  </div>
+
+

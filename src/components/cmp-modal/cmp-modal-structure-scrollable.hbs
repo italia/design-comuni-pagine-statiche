@@ -1,0 +1,28 @@
+<div class="cmp-modal-scrollable">
+  <div class="modal fade" tabindex="-1" role="dialog" id="{{id}}"
+      aria-labelledby="{{id}}-modal-title">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header flex-column align-items-start">
+          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Chiudi finestra modale">
+          </button>
+            <div class="cmp-modal-scrollable__header">
+              <h2 class="cmp-modal-scrollable__header-title" id="{{id}}-modal-title">{{modalTitle}}</h2>
+              <p class="cmp-modal-scrollable__header-info">{{modalInfo}}</p>
+            </div>
+        </div>
+
+        <div class="modal-body">
+            {{> @partial-block}}
+
+        </div>
+        {{#if buttons}}
+        <div class="modal-footer shadow flex-nowrap pt-4 w-100">
+          <button class="btn btn-outline-primary w-100 fw-bold me-4" data-bs-dismiss="modal" type="button">Annulla</button>
+          <button class="btn btn-primary w-100 fw-bold" type="submit"form="{{id-form}}">Salva</button>
+        </div>
+        {{/if}}
+      </div>
+    </div>
+  </div>
+</div>

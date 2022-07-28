@@ -1,0 +1,202 @@
+{{#>base/base title="Anagrafe e stato civile - Nome del Comune" headerActive3=true}}
+<main>
+  <div class="container" id="main-container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi" link3="Anagrafe e stato civile"}}
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        {{>cmp-hero/cmp-hero
+        hero-title="Anagrafe e stato civile"
+        hero-text="Certificati, dichiarazioni per nascita, matrimoni, unioni civili, decessi,<br> cittadinanza, cambio
+        di
+        residenza e abitazione, carta d’identità,<br>servizi elettorali e cimiteriali."
+        wrapper-class="pt-0 ps-0 pb-4 pb-lg-60"}}
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-grey-card">
+    <div class="container">
+      <div class="row ">
+        <h2 class="visually-hidden">Esplora tutti i servizi</h2>
+        <div class="col-12 col-lg-8 pt-30 pt-lg-50 pb-lg-50">
+          {{>partials/input-search/input-search
+          id="autocomplete-three"
+          label-text="Cerca una parola chiave"
+          placeholder-text="Cerca una parola chiave"
+          search-subtitle=true
+          text-subtitle="<strong>340 </strong>servizi trovati in ordine alfabetico"
+          text-subtitle-class="mt-2 mt-lg-3 mb-4"
+          wrapper-class="mb-0"
+          icon-class="icon-primary"
+          }}
+
+          {{>cmp-card-latest-messages/cmp-card-latest-messages
+          green-title-big="Abbandono di rifiuti in aree private "
+          description="Il servizio gestisce gli esposti e le segnalazioni riguardanti l'abbandono di rifiuti in aree
+          private"
+          cmp-card-class="mb-30"
+          cardRounded=true
+          cmp-card-class="mb-30"
+          }}
+
+          {{>cmp-card-latest-messages/cmp-card-latest-messages
+          green-title-big="Abbonamento bike sharing e car sharing"
+          description="Servizio di Bike sharing e Car sharing sul territorio comunale"
+          cmp-card-class="mb-30"
+          cardRounded=true
+          cmp-card-class="mb-30"
+          }}
+
+          {{>cmp-card-latest-messages/cmp-card-latest-messages
+          green-title-big="Accertamenti di Compatibilità paesaggistica"
+          description="Procedura per il rilascio di accertamento di compatibilità su un area con vincolo paesaggistico"
+          cmp-card-class="mb-30"
+          cardRounded=true
+          cmp-card-class="mb-30"
+          }}
+
+          {{>cmp-card-latest-messages/cmp-card-latest-messages
+          green-title-big="Accesso agli atti Urp"
+          description="Modalità di accesso agli atti tramite l'Ufficio relazioni con il pubblico"
+          cmp-card-class="mb-30"
+          cardRounded=true
+          cmp-card-class="mb-30"
+          }}
+
+          {{>cmp-card-latest-messages/cmp-card-latest-messages
+          green-title-big="Accesso agli atti da parte dei consiglieri comunali"
+          description="Gli amministratori comunali hanno diritto di ottenere dagli uffici del comune tutte le notizie e
+          le informazioni in loro possesso, utili all'espletamento del proprio mandato"
+          cardRounded=true
+          cmp-card-class="mb-30"
+          }}
+
+          {{>cmp-card-latest-messages/cmp-card-latest-messages
+          green-title-big="Accesso agli atti di pratiche Suape"
+          description="Modalità di accesso agli atti per le pratiche avviate tramite lo Sportello unico per le attività
+          produttive e per l'edilizia (Suape)"
+          cardRounded=true
+          cmp-card-class="mb-30"
+          }}
+
+          {{>cmp-card-latest-messages/cmp-card-latest-messages
+          green-title-big="Accesso agli atti di pratiche edilizie"
+          description="Accesso agli atti pratiche edilizie per la visione e rilascio della documentazione relativa alle
+          pratiche edilizie presentate in data antecedente al 13 Marzo 2017."
+          cardRounded=true
+          cmp-card-class="mb-30"
+          }}
+
+          {{>cmp-card-latest-messages/cmp-card-latest-messages
+          green-title-big="Accesso agli atti di sinistri stradali"
+          description="Procedura per accedere a informazioni e ottenere copie di documenti amministrativi riguardanti i
+          sinistri stradali."
+          cardRounded=true
+          cmp-card-class="mb-30"
+          }}
+
+          {{>cmp-card-latest-messages/cmp-card-latest-messages
+          green-title-big="Accesso agli atti documentale"
+          description="L'accesso agli atti è il diritto riconosciuto ed esercitato da tutti i soggetti che dimostrano di
+          avere un interesse diretto, concreto e attuale."
+          cardRounded=true
+          cmp-card-class="mb-30"
+          }}
+
+          {{>cmp-card-latest-messages/cmp-card-latest-messages
+          green-title-big="Accesso civico generalizzato"
+          description="Chiunque ha il diritto di accedere ai dati e ai documenti detenuti dalle pubbliche
+          amministrazioni."
+          cardRounded=true
+          cmp-card-class="mb-30"
+          }}
+
+          {{>partials/button/button
+          outline-primary="true"
+          class="pt-15 pb-15 pl-90 pr-90 full-mb text-button"
+          label="Carica altri risultati"
+          cmp-card-class="mb-30"
+          aria-label="carica altri risultati"
+          }}
+        </div>
+
+        <div class="col-12 col-lg-4 pt-50 pb-30 pt-lg-5 ps-lg-5">
+          <div class="link-list-wrap">
+            <div class="title-xsmall-semi-bold"><span>UFFICI</span></div>
+            <ul class="link-list t-primary">
+              <li class="mb-3 mt-3">
+                <a class="list-item ps-0 title-medium" href="#">
+                  <span>Stato civile - Nascita e cittadinanza</span>
+                </a>
+              </li>
+              <li class="mb-3">
+                <a class="list-item ps-0 title-medium" href="#">
+                  <span>Stato civile - Disposizioni anticipate di trattamento (Dat)</span></a>
+              </li>
+              <li class="mb-3">
+                <a class="list-item ps-0 title-medium" href="#">
+                  <span>Stato civile - Matrimoni e unioni civili</span>
+                </a>
+              </li>
+              <li class="mb-4">
+                <a class="list-item ps-0 title-medium" href="#">
+                  <span>Stato civile - Separazioni e divorzi</span>
+                </a>
+              </li>
+              <li>
+                <a class="list-item ps-0 text-button-xs-bold d-flex align-items-center text-decoration-none" href="#">
+                  <span class="mr-10">VAI ALL’AREA AMMINISTRATIVA</span>
+                  <svg class="icon icon-xs icon-primary">
+                    <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-arrow-right"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2 class="title-xxlarge mt-40 mb-40 mt-lg-60 mb-lg-40">Bandi</h2>
+    <div class="row flex-wrap justify-content-between gy-4 gy-lg-5 gx-lg-5 pb-40 pb-lg-60 align-items-stretch">
+      <div class="col-12 col-md-6 col-lg-4">
+        {{>cmp-card/cmp-card-simple
+        classTitle="title-xlarge"
+        card-title="Avviso pubblico manifestazione di interesse per l'istituzione di uffici separati di Stato Civile"
+        card-text="Gli Uffici saranno finalizzati alla celebrazione di matrimoni e/o unioni presso strutture e spazi
+        privati di interesse storico, artistico, culturale e/o paesaggistico."
+        }}
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-primary">
+    <div class="container">
+      <div class="row d-flex justify-content-center bg-primary">
+        <div class="col-12 col-lg-6">
+          {{>cmp-rating/cmp-rating public-template=true rating-title="Quanto è utile questa pagina?"}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-grey-card shadow-contacts">
+    <div class="container">
+      <div class="row d-flex justify-content-center p-contacts">
+        <div class="col-12 col-lg-6">
+          {{>cmp-contacts/cmp-contacts city-problems=true}}
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{{/base/base }}

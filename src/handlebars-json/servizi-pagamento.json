@@ -1,0 +1,939 @@
+{
+  "servizi-pagamento": {
+    "trovare-informazioni-servizio": {
+      "navscroll": [
+        {
+          "item": "A chi è rivolto",
+          "anchor": "who-needs"
+        },
+        {
+          "item": "Descrizione",
+          "anchor": "description"
+        },
+        {
+          "item": "Come fare",
+          "anchor": "how-to"
+        },
+        {
+          "item": "Cosa serve",
+          "anchor": "needed"
+        },
+        {
+          "item": "Tempi e scadenze",
+          "anchor": "deadlines"
+        },
+        {
+          "item": "Costi",
+          "anchor": "costs"
+        },
+        {
+          "item": "Accedi al servizio",
+          "anchor": "service-access"
+        },
+        {
+          "item": "Condizioni di servizio",
+          "anchor": "conditions"
+        },
+        {
+          "item": "Contatti",
+          "anchor": "contacts"
+        }
+      ],
+      "list-1": [
+        {
+          "text": "Alunni iscritti alla Scuola dell'infanzia"
+        },
+        {
+          "text": "Alunni iscritti alla Scuola primaria"
+        }
+      ],
+      "list-2": [
+        {
+          "text": "SPID (Sistema Pubblico per la gestione dell'Identità Digitale), Carta identità elettronica (CIE) o Carta Nazionale dei Servizi (CNS);"
+        },
+        {
+          "text": "attestazione ISEE in corso di validità"
+        },
+        {
+          "text": "certificazioni per diete speciali"
+        },
+        {
+          "text": "certificazione per disabilità"
+        }
+      ],
+      "timeline": [
+        {
+          "year": "2022",
+          "day": "01",
+          "month": "feb",
+          "event": "Apertura domande"
+        },
+        {
+          "year": "2022",
+          "day": "02",
+          "month": "mar",
+          "event": "Termine presentazione domande"
+        },
+        {
+          "year": "2022",
+          "day": "28",
+          "month": "apr",
+          "event": "Pagamento servizio mensa"
+        }
+      ]
+    },
+    "acconsentire-trattamento-dati-inseriti": {
+      "step-1": [
+        {
+          "title": "Informativa sulla privacy",
+          "active": true,
+          "completed": false
+        },
+        {
+          "title": "Dati Generali",
+          "active": false,
+          "completed": false
+        },
+        {
+          "title": "Preferenze di servizio",
+          "active": false,
+          "completed": false
+        },
+        {
+          "title": "Riepilogo",
+          "active": false,
+          "completed": false
+        }
+      ],
+      "step-2": [
+        {
+          "title": "Informativa sulla privacy",
+          "active": false,
+          "completed": true
+        },
+        {
+          "title": "Dati Generali",
+          "active": true,
+          "completed": false
+        },
+        {
+          "title": "Preferenze di servizio",
+          "active": false,
+          "completed": false
+        },
+        {
+          "title": "Riepilogo",
+          "active": false,
+          "completed": false
+        }
+      ],
+      "step-3": [
+        {
+          "title": "Informativa sulla privacy",
+          "active": false,
+          "completed": true
+        },
+        {
+          "title": "Dati Generali",
+          "active": false,
+          "completed": true
+        },
+        {
+          "title": "Preferenze di servizio",
+          "active": true,
+          "completed": false
+        },
+        {
+          "title": "Riepilogo",
+          "active": false,
+          "completed": false
+        }
+      ],
+      "step-4": [
+        {
+          "title": "Informativa sulla privacy",
+          "active": false,
+          "completed": true
+        },
+        {
+          "title": "Dati Generali",
+          "active": false,
+          "completed": true
+        },
+        {
+          "title": "Preferenze di servizio",
+          "active": false,
+          "completed": true
+        },
+        {
+          "title": "Riepilogo",
+          "active": true,
+          "completed": false
+        }
+      ]
+    },
+    "controllare-dati-personali": {
+      "navscroll": [
+        {
+          "item": "Richiedente",
+          "anchor": "applicant-info"
+        },
+        {
+          "item": "Beneficiario",
+          "anchor": "beneficiary-info"
+        },
+        {
+          "item": "ISEE",
+          "anchor": "isee-info"
+        }
+      ],
+      "anagrafica": [
+        {
+          "name": "Nome",
+          "description": "Francesco"
+        },
+        {
+          "name": "Cognome",
+          "description": "Rossi"
+        },
+        {
+          "name": "Codice fiscale",
+          "description": "FRARSS72H25H501Y"
+        },
+        {
+          "name": "Data di Nascita",
+          "description": "26/03/2018"
+        },
+        {
+          "name": "Luogo di Nascita",
+          "description": "Roma"
+        },
+        {
+          "name": "Sesso",
+          "description": "Maschio"
+        },
+        {
+          "name": "Nazionalità",
+          "description": "Italiana"
+        }
+      ],
+      "indirizzo": [
+        {
+          "name": "Residenza",
+          "description": "Via Roma 16, 00100 Roma, It"
+        },
+        {
+          "name": "Domicilio ",
+          "description": "Via Roma 16, 00100 Roma, It"
+        }
+      ],
+      "documenti": [
+        {
+          "name": "Certificato disabilità",
+          "description": "",
+          "warning": true,
+          "warning-message": "Documento mancante",
+          "warningId": "beneficiary-warning"
+        },
+        {
+          "name": "Certificato dieta patologica",
+          "description": "",
+          "warning": true,
+          "warning-message": "Documento mancante"
+        }
+      ],
+      "anagrafica-2": [
+        {
+          "name": "Nome",
+          "description": "Lucia"
+        },
+        {
+          "name": "Cognome",
+          "description": "Rossi"
+        },
+        {
+          "name": "Codice fiscale",
+          "description": "RSSLCU19C66H501Z"
+        },
+        {
+          "name": "Data di Nascita",
+          "description": "26/03/2019"
+        },
+        {
+          "name": "Luogo di Nascita",
+          "description": "Roma"
+        },
+        {
+          "name": "Sesso",
+          "description": "Femmina"
+        },
+        {
+          "name": "Nazionalità",
+          "description": "Italiana"
+        }
+      ],
+      "indirizzo-2": [
+        {
+          "name": "Residenza",
+          "description": "Via Roma 16, 00100 Roma, It"
+        },
+        {
+          "name": "Domicilio ",
+          "description": "Via Roma 16, 00100 Roma, It"
+        }
+      ],
+      "documenti-2": [
+        {
+          "name": "Certificato disabilità",
+          "description": "",
+          "warning": true,
+          "warning-message": "Documento mancante"
+        },
+        {
+          "name": "Certificato dieta patologica",
+          "description": "",
+          "warning": true,
+          "warning-message": "Documento mancante"
+        }
+      ],
+      "isee-success": [
+        {
+          "name": "Valore ISEE",
+          "description": "18.000,00€"
+        },
+        {
+          "name": "Scadenza ISEE",
+          "description": "06/10/2023"
+        },
+        {
+          "name": "Anno protocollo",
+          "description": "2022"
+        },
+        {
+          "name": "Numero protocollo",
+          "description": "12345678"
+        },
+        {
+          "name": "Codice filiale protocollo",
+          "description": "12345678"
+        },
+        {
+          "name": "Certificato ISEE",
+          "description": "documento_ISEE-2019.pdf",
+          "success": true,
+          "success-message": "Documento inserito con successo"
+        }
+      ],
+      "alert-list": [
+        {
+          "text": "Beneficiario - Documenti",
+          "id": "beneficiary-warning"
+        }
+      ]
+    },
+    "inserire-dati-specifici": {
+      "navscroll": [
+        {
+          "item": "Scegli la scuola",
+          "anchor": "school-choice"
+        },
+        {
+          "item": "Tariffa esonero",
+          "anchor": "rate-choice"
+        },
+        {
+          "item": "Tariffa riduzione",
+          "anchor": "outings-choice"
+        },
+        {
+          "item": "Frequenza",
+          "anchor": "attendance"
+        },
+        {
+          "item": "Dieta diversificata",
+          "anchor": "different-diet"
+        }
+      ]
+    },
+    "conferma-riepilogo": {
+      "indirizzo-genitore": [
+        {
+          "name": "Residenza",
+          "description": "Via Roma 16, 00100 Roma, It"
+        },
+        {
+          "name": "Domicilio",
+          "description": "Via Roma 16, 00100 Roma, It"
+        }
+      ],
+      "info-genitore": [
+        {
+          "name": "Codice Fiscale",
+          "description": "GLABNC72H25H501Y"
+        },
+        {
+          "name": "Data di nascita",
+          "description": "02/03/1975"
+        },
+        {
+          "name": "Luogo di nascita",
+          "description": "Roma"
+        },
+        {
+          "name": "Sesso",
+          "description": "Femmina"
+        },
+        {
+          "name": "Nazionalità",
+          "description": "Italiana"
+        },
+        {
+          "name": "Professione",
+          "description": "Insegnante"
+        },
+        {
+          "name": "Scolarità",
+          "description": "Laurea Magistrale"
+        }
+      ],
+      "contatti-genitore": [
+        {
+          "name": "Telefono",
+          "description": "+39 331 1234567"
+        },
+        {
+          "name": "Email",
+          "description": "giulia.bianchi@gmail.com"
+        },
+        {
+          "name": "Recapito postale",
+          "description": "Via Roma 16, 00100 Roma, It"
+        }
+      ],
+      "documenti-genitore": [
+        {
+          "name": "Carta d'identità",
+          "description": "giulia_bianchi_carta_di_identità_fronte_retro.pdf"
+        },
+        {
+          "name": "Modulo condizione lavorativa",
+          "description": "giulia_bianchi_modulo.pdf"
+        }
+      ],
+      "info-figli": [
+        {
+          "name": "Codice Fiscale",
+          "description": "FRARSS72H25H501Y"
+        },
+        {
+          "name": "Data di nascita",
+          "description": "26/03/2018"
+        },
+        {
+          "name": "Luogo di nascita",
+          "description": "Roma"
+        },
+        {
+          "name": "Sesso",
+          "description": "Maschio"
+        },
+        {
+          "name": "Nazionalità",
+          "description": "Italiana"
+        }
+      ],
+      "indirizzo-figli": [
+        {
+          "name": "Residenza",
+          "description": "Via Roma 16, 00100 Roma, IT"
+        },
+        {
+          "name": "Domicilio",
+          "description": "Via Roma 16, 00100 Roma, IT"
+        }
+      ],
+      "documenti-figli": [
+        {
+          "name": "Carta disabilità",
+          "description": "francesco_rossi_certificato_disabilità.pdf"
+        },
+        {
+          "name": "Certificato dieta patologica",
+          "description": "francesco_rossi_dieta.pdf"
+        }
+      ],
+      "isee-familiare": [
+        {
+          "name": "Valore ISEE",
+          "description": "18.000,00€"
+        },
+        {
+          "name": "Scadenza ISEE",
+          "description": "06/10/2023"
+        },
+        {
+          "name": "Anno protocollo",
+          "description": "2022"
+        },
+        {
+          "name": "Numero protocollo",
+          "description": "12345678"
+        },
+        {
+          "name": "Codice filiale protocollo",
+          "description": "12345678"
+        },
+        {
+          "name": "Certificato ISEE",
+          "description": "documento_ISEE-2022.pdf"
+        }
+      ],
+      "preferenze-servizio": [
+        {
+          "name": "Scuola",
+          "description": "Istituto Narcisi"
+        },
+        {
+          "name": "Tariffa esonero",
+          "description": "Nessuna"
+        },
+        {
+          "name": "Tariffa riduzione",
+          "description": "Nessuna"
+        },
+        {
+          "name": "Frequenza",
+          "description": "5 giorni"
+        },
+        {
+          "name": "Dieta diversificata",
+          "description": "Dieta per patologia"
+        }
+      ]
+    },
+    "finalizzare-procedura": {
+      "navscroll": [
+        {
+          "item": "Prossimi passi",
+          "anchor": "next-steps"
+        },
+        {
+          "item": "Servizi correlati",
+          "anchor": "related services"
+        }
+      ],
+      "timeline": [
+        {
+          "year": "2022",
+          "day": "23",
+          "month": "mar",
+          "event": "Termine presentazione domande"
+        },
+        {
+          "year": "2022",
+          "day": "10",
+          "month": "apr",
+          "event": "Pagamento servizio mensa"
+        }
+      ],
+      "servizi-correlati": [
+        {
+          "icon": "it-settings",
+          "link": "Iscrizione alla scuola dell'infanzia",
+          "class": "shadow mb-10"
+        },
+        {
+          "icon": "it-settings",
+          "link": "Iscrizione trasporto scolastico",
+          "class": "shadow mb-50 mb-lg-80"
+        }
+      ],
+      "servizi-correlati-disservizio": [
+        {
+          "icon": "it-settings",
+          "link": "Richiesta appuntamento",
+          "class": "shadow mb-4"
+        }
+      ]
+    },
+    "area-personale": {
+      "tab-area-personale-1": [
+        {
+          "title": "Scrivania",
+          "icon": true,
+          "icon-name": "it-pa",
+          "active": "active",
+          "id-link": "data-ex-tab1",
+          "controls": "tab1"
+        },
+        {
+          "title": "Messaggi",
+          "icon": true,
+          "icon-name": "it-mail",
+          "active": "",
+          "id-link": "data-ex-tab2",
+          "controls": "tab2"
+        },
+        {
+          "title": "Attività",
+          "icon": true,
+          "icon-name": "it-files",
+          "active": "",
+          "id-link": "data-ex-tab3",
+          "controls": "tab3"
+        },
+        {
+          "title": "Servizi",
+          "icon": true,
+          "icon-name": "it-settings",
+          "active": "",
+          "id-link": "data-ex-tab4",
+          "controls": "tab4"
+        }
+      ],
+      "area-personale-page-3": [
+        {
+          "item": "Pratiche",
+          "anchor": "practices"
+        },
+        {
+          "item": "Pagamenti",
+          "anchor": "payments"
+        }
+      ],
+      "accordion": [
+        {
+          "num": "1",
+          "title": "Iscrizione scuola d’infanzia",
+          "date": "15/02/2022",
+          "icon": "folder-incomplete.svg",
+          "icon-label": "Da completare",
+          "color": "u-main-alert",
+          "practice": "Pagamento:",
+          "practice-number": "PA3028/17",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
+              "class": "shadow p-0"
+            },
+            {
+              "icon": "it-clip",
+              "link": "Graduatoria",
+              "aria-label": "Scarica la",
+              "class": "shadow p-0"
+            }
+          ]
+        },
+        {
+          "num": "2",
+          "title": "Richiesta assegno maternità",
+          "date": "24/06/2021",
+          "icon": "it-folder",
+          "icon-label": "In sospeso",
+          "color": "u-main-error",
+          "practice": "Pagamento:",
+          "practice-number": "PA3028/17",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
+              "class": "shadow p-0"
+            },
+            {
+              "icon": "it-clip",
+              "link": "Graduatoria",
+              "aria-label": "Scarica la",
+              "class": "shadow p-0"
+            }
+          ]
+        },
+        {
+          "num": "3",
+          "title": "Iscrizione corso di formazione",
+          "date": "24/06/2021",
+          "icon": "it-folder",
+          "icon-label": "Conclusa",
+          "practice": "Pagamento:",
+          "practice-number": "PA3028/17",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
+              "class": "shadow p-0"
+            },
+            {
+              "icon": "it-clip",
+              "link": "Graduatoria",
+              "aria-label": "Scarica la",
+              "class": "shadow p-0"
+            }
+          ]
+        },
+        {
+          "num": "4",
+          "title": "Richiesta permesso ZTL",
+          "date": "10/05/2021",
+          "icon": "it-folder",
+          "icon-label": "Conclusa",
+          "practice": "Pagamento:",
+          "practice-number": "PA3028/17",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
+              "class": "shadow p-0"
+            },
+            {
+              "icon": "it-clip",
+              "link": "Graduatoria",
+              "aria-label": "Scarica la",
+              "class": "shadow p-0"
+            }
+          ]
+        },
+        {
+          "num": "5",
+          "title": "Richiesta parcheggio residenti",
+          "date": "06/03/2021",
+          "icon": "it-folder",
+          "icon-label": "Conclusa",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
+              "class": "shadow p-0"
+            },
+            {
+              "icon": "it-clip",
+              "link": "Graduatoria",
+              "aria-label": "Scarica la",
+              "class": "shadow p-0"
+            }
+          ]
+        }
+      ],
+      "pagamenti": [
+        {
+          "num": "6",
+          "title": "Pagamento servizio mensa",
+          "date": "07/01/2022",
+          "icon": "folder-to-pay.svg",
+          "icon-label": "Da pagare",
+          "color": "u-main-error",
+          "label-tag": "Servizio non digitale",
+          "practice": "Pratica:",
+          "practice-number": "AN4059281",
+          "btn-label": "Paga ora",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
+              "class": "shadow p-0"
+            }
+          ]
+        },
+        {
+          "num": "7",
+          "title": "Pagamento contravvenzione",
+          "date": "01/10/2021",
+          "icon": "folder-pay.svg",
+          "icon-label": "Pagato",
+          "label-tag": "Iscrizione servizio mensa",
+          "import": "23,00 €",
+          "practice": "Pagamento:",
+          "practice-number": "PA3028/17",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
+              "class": "shadow p-0"
+            }
+          ]
+        },
+        {
+          "num": "8",
+          "title": "Pagamento contravvenzione",
+          "date": "24/06/2021",
+          "icon": "folder-pay.svg",
+          "icon-label": "Pagato",
+          "label-tag": "Iscrizione servizio mensa",
+          "import": "23,00 €",
+          "practice": "Pagamento:",
+          "practice-number": "PA3028/17",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
+              "class": "shadow p-0"
+            }
+          ]
+        },
+        {
+          "num": "9",
+          "title": "Pagamento contravvenzione",
+          "date": "10/05/2021",
+          "icon": "folder-pay.svg",
+          "icon-label": "Pagato",
+          "label-tag": "Iscrizione servizio mensa",
+          "import": "23,00 €",
+          "practice": "Pagamento:",
+          "practice-number": "PA3028/17",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
+              "class": "shadow p-0"
+            }
+          ]
+        },
+        {
+          "num": "10",
+          "title": "Pagamento contravvenzione",
+          "date": "06/03/2021",
+          "icon": "folder-pay.svg",
+          "icon-label": "Pagato",
+          "label-tag": "Iscrizione servizio mensa",
+          "import": "23,00 €",
+          "practice": "Pagamento:",
+          "practice-number": "PA3028/17",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
+              "class": "shadow p-0"
+            }
+          ]
+        }
+      ],
+      "pratiche": [
+        {
+          "num": "1",
+          "title": "Richiesta servizio mensa",
+          "date": "20/03/2022",
+          "icon": "folder-incomplete.svg",
+          "icon-label": "Da completare",
+          "color": "u-main-alert",
+          "label-tag": "Servizio non digitale",
+          "practice": "Pratica:",
+          "practice-number": "AN4059281",
+          "btn-label": "Paga ora",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
+              "class": "shadow p-0 p-0"
+            }
+          ]
+        },
+        {
+          "num": "2",
+          "title": "Iscrizione alla scuola dell’infanzia",
+          "date": "01/10/2022",
+          "icon": "folder-concluded.svg",
+          "icon-label": "Conclusa",
+          "label-tag": "Iscrizione scuola dell’infanzia",
+          "import": "23,00 €",
+          "practice": "Pagamento:",
+          "practice-number": "PA3028/17",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
+              "class": "shadow p-0 p-0"
+            }
+          ]
+        },
+        {
+          "num": "3",
+          "title": "Iscrizione corso di formazione",
+          "date": "24/06/2021",
+          "icon": "folder-concluded.svg",
+          "icon-label": "Conclusa",
+          "label-tag": "Iscrizione corso formazione",
+          "import": "23,00 €",
+          "practice": "Pagamento:",
+          "practice-number": "PA3028/17",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
+              "class": "shadow p-0 p-0"
+            }
+          ]
+        },
+        {
+          "num": "4",
+          "title": "Richiesta permesso ZTL",
+          "date": "10/05/2021",
+          "icon": "folder-concluded.svg",
+          "icon-label": "Conclusa",
+          "label-tag": "Permesso ZTL",
+          "import": "23,00 €",
+          "practice": "Pagamento:",
+          "practice-number": "PA3028/17",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
+              "class": "shadow p-0 p-0"
+            }
+          ]
+        },
+        {
+          "num": "5",
+          "title": "Richiesta parcheggio residenti",
+          "date": "06/03/2021",
+          "icon": "folder-concluded.svg",
+          "icon-label": "Conclusa",
+          "label-tag": "Richiesta parcheggio residenti",
+          "import": "23,00 €",
+          "practice": "Pagamento:",
+          "practice-number": "PA3028/17",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
+              "class": "shadow p-0"
+            }
+          ]
+        }
+      ]
+    },
+    "effettuare-pagamento": {
+      "info-list": [
+        {
+          "description": "Pratica:",
+          "summary": "AN4059281"
+        },
+        {
+          "description": "Data di pagamento:",
+          "summary": "07/04/2022"
+        },
+        {
+          "description": "Importo totale dovuto:",
+          "summary": "23,00 €"
+        },
+        {
+          "description": "Descrizione pagamento:",
+          "summary": "Pagamento del servizio per la mensa scolastica"
+        }
+      ]
+    }
+  }
+}

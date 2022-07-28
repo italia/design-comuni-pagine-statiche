@@ -1,0 +1,990 @@
+{
+  "vantaggi-economici": {
+    "trovare-informazioni-servizio": {
+      "navscroll": [
+        {
+          "item": "A chi è rivolto",
+          "anchor": "who-needs"
+        },
+        {
+          "item": "Descrizione",
+          "anchor": "description"
+        },
+        {
+          "item": "Come fare",
+          "anchor": "how-to"
+        },
+        {
+          "item": "Cosa serve",
+          "anchor": "needed"
+        },
+        {
+          "item": "Cosa si ottiene",
+          "anchor": "obtain"
+        },
+        {
+          "item": "Tempi e scadenze",
+          "anchor": "deadlines"
+        },
+        {
+          "item": "Accedi al servizio",
+          "anchor": "service-access"
+        },
+        {
+          "item": "Condizioni di servizio",
+          "anchor": "conditions"
+        },
+        {
+          "item": "Contatti",
+          "anchor": "contacts"
+        }
+      ],
+      "list-1": [
+        {
+          "text": "Cittadine italiane"
+        },
+        {
+          "text": "Cittadine comunitarie"
+        },
+        {
+          "text": "Cittadine di paesi terzi, in possesso di uno dei seguenti titoli:",
+          "other-list": [
+            {
+              "text-2": "persona titolare del permesso di soggiorno CE per soggiornanti di lungo periodo"
+            },
+            {
+              "text-2": "familiare di cittadini italiani, dell’Unione o di cittadini soggiornanti di lungo periodo non aventi la cittadinanza di uno Stato membro, che sia titolare del diritto di soggiorno o del diritto di soggiorno permanente;"
+            },
+            {
+              "text-2": "rifugiata politica, i suoi familiari e superstiti;"
+            },
+            {
+              "text-2": "persona titolare della protezione sussidiaria;"
+            },
+            {
+              "text-2": "cittadina/lavoratrice del Marocco, Tunisia, Algeria e Turchia, e i suoi familiari;"
+            }
+          ]
+        },
+        {
+          "text": "persona titolare del permesso unico per lavoro o con autorizzazione al lavoro e i suoi familiari, ad eccezione delle categorie espressamente escluse dal D.lgs. 40/2014;"
+        },
+        {
+          "text": "persona che abbia soggiornato legalmente in almeno 2 stati membri, i suoi familiari e superstiti;"
+        },
+        {
+          "text": "persona apolide, i suoi familiari e superstiti;"
+        }
+      ],
+      "list-2": [
+        {
+          "text": "Attestazione ISEE e relativa Dichiarazione sostitutiva unica (Dsu), valida nell’anno che includa il bambino o la bambina;"
+        },
+        {
+          "text": "Copia del codice Iban intestato o cointestato alla richiedente dell’assegno di maternità;"
+        },
+        {
+          "text": "Permesso di soggiorno o copia ricevuta di avvenuta richiesta del permesso;"
+        },
+        {
+          "text": "Documento d'identità della richiedente."
+        }
+      ],
+      "timeline": [
+        {
+          "year": "",
+          "day": "",
+          "month": "",
+          "info": "Dopo 30 giorni dalla presentazione della richiesta",
+          "event": "Esito richiesta"
+        },
+        {
+          "year": "",
+          "day": "05",
+          "month": "giorni",
+          "event": "Ricevi l'assegno"
+        }
+      ]
+    },
+    "acconsentire-trattamento-dati-inseriti": {
+      "step-list": {
+        "step-1": [
+          {
+            "title": "Informativa sulla privacy",
+            "active": true,
+            "completed": false
+          },
+          {
+            "title": "Dati Generali",
+            "active": false,
+            "completed": false
+          },
+          {
+            "title": "Riepilogo",
+            "active": false,
+            "completed": false
+          }
+        ]
+      }
+    },
+    "controllare-dati-personali": {
+      "navscroll": [
+        {
+          "item": "Richiedente",
+          "anchor": "applicant-info"
+        },
+        {
+          "item": "Minore",
+          "anchor": "minor"
+        },
+        {
+          "item": "ISEE",
+          "anchor": "isee-info"
+        },
+        {
+          "item": "Conto bancario per l'accredito",
+          "anchor": "bank-account"
+        }
+      ],
+      "step-list": {
+        "step-2": [
+          {
+            "title": "Informativa sulla privacy",
+            "active": false,
+            "completed": true
+          },
+          {
+            "title": "Dati Generali",
+            "active": true,
+            "completed": false
+          },
+          {
+            "title": "Riepilogo",
+            "active": false,
+            "completed": false
+          }
+        ]
+      },
+      "anagrafica": {
+        "info": [
+          {
+            "name": "Nome",
+            "description": "Julie"
+          },
+          {
+            "name": "Cognome",
+            "description": "Crampton Smith "
+          },
+          {
+            "name": "Codice fiscale",
+            "description": "CRMJLU92H52Z826N"
+          },
+          {
+            "name": "Data di Nascita",
+            "description": "12/05/1992"
+          },
+          {
+            "name": "Luogo di Nascita",
+            "description": "Liverpool"
+          },
+          {
+            "name": "Sesso",
+            "description": "Femmina"
+          },
+          {
+            "name": "Nazionalità",
+            "description": "Inglese"
+          },
+          {
+            "name": "Professione",
+            "description": "Disoccupata"
+          },
+          {
+            "name": "Scolarità",
+            "description": "Laurea Triennale"
+          }
+        ],
+        "alert-list": [
+          {
+            "text": "Richiedente - Indirizzo",
+            "id": "applicant-warning"
+          },
+          {
+            "text": "Minore",
+            "id": "minor-warning"
+          },
+          {
+            "text": "Conto bancario per l’accredito",
+            "id": "bank-warning"
+          }
+        ],
+        "alert-list-2": [
+          {
+            "text": "Conto bancario per l’accredito",
+            "id": "bank-warning"
+          }
+        ]
+      },
+      "indirizzo": {
+        "info": [
+          {
+            "name": "Residenza",
+            "description": "Via Roma 16, 00100 Roma, It"
+          },
+          {
+            "name": "Domicilio ",
+            "description": "Yellow Street 16, 00100 Liverpool, UK",
+            "warning": true,
+            "warning-message": "Domicilio non valido",
+            "warningId": "applicant-warning"
+          }
+        ]
+      },
+      "contatti": {
+        "info": [
+          {
+            "name": "Telefono",
+            "description": "+39 331 1234567"
+          },
+          {
+            "name": "Email",
+            "description": "jsc@gmail.com"
+          },
+          {
+            "name": "Recapito postale",
+            "description": "Via Roma 16, 00100 Roma IT"
+          }
+        ]
+      },
+      "documenti": {
+        "info": [
+          {
+            "name": "Carta d'identità",
+            "description": "jsc_carta_di_identità.pdf",
+            "warning": false,
+            "success": false
+          },
+          {
+            "name": "Permesso di soggiorno",
+            "description": "permesso_soggiorno.pdf",
+            "warning": false,
+            "success": false,
+            "warning-message": "Documento mancante",
+            "success-message": "Documento inserito con successo"
+          }
+        ]
+      },
+      "anagrafica-2": {
+        "info": [
+          {
+            "name": "Nome",
+            "description": "Luigi"
+          },
+          {
+            "name": "Cognome",
+            "description": "Rossi "
+          },
+          {
+            "name": "Codice fiscale",
+            "description": "LGIRSS72H25H501Y"
+          },
+          {
+            "name": "Data di Nascita",
+            "description": "02/01/2022"
+          },
+          {
+            "name": "Luogo di Nascita",
+            "description": "Roma"
+          },
+          {
+            "name": "Sesso",
+            "description": "Maschio"
+          },
+          {
+            "name": "Nazionalità",
+            "description": "Italiana"
+          }
+        ]
+      },
+      "documenti-2": {
+        "info": [
+          {
+            "name": "Carta d'identità",
+            "description": "luigi_rossi_carta_di_identità.pdf",
+            "warning": false,
+            "success": false
+          }
+        ]
+      },
+      "conto-bancario": {
+        "info": [
+          {
+            "name": "Intestatario",
+            "description": "Julie Crampton Smith"
+          },
+          {
+            "name": "Filiale",
+            "description": "",
+            "warning": true,
+            "sucess": false,
+            "warning-message": "Dato mancante",
+            "warningId": "bank-warning"
+          },
+          {
+            "name": "Indirizzo istituto",
+            "description": "Via Roma 16, 00100 Roma, IT"
+          },
+          {
+            "name": "Iban",
+            "description": "IT12 3456 7890 123456"
+          },
+          {
+            "name": "Documento Iban",
+            "description": "documento_iban.pdf"
+          }
+        ],
+        "info-2": [
+          {
+            "name": "Intestatario",
+            "description": "Julie Crampton Smith"
+          },
+          {
+            "name": "Filiale",
+            "description": "Roma",
+            "warning": false,
+            "sucess": true
+          },
+          {
+            "name": "Indirizzo istituto",
+            "description": "Via Roma 16, 00100 Roma, IT"
+          },
+          {
+            "name": "Iban",
+            "description": "IT12 3456 7890 123456"
+          },
+          {
+            "name": "Documento Iban",
+            "description": "documento_iban.pdf"
+          }
+        ]
+      },
+      "modal-registry-office": {
+        "list-1": [
+          {
+            "value": "Maschio"
+          },
+          {
+            "value": "Femmina"
+          }
+        ],
+        "list-2": [
+          {
+            "value": "Italiana"
+          },
+          {
+            "value": "Inglese"
+          }
+        ]
+      }
+    },
+    "controllare-dati-personali-var-1": {
+      "anagrafica": {
+        "info": [
+          {
+            "name": "Nome",
+            "description": "Julie"
+          },
+          {
+            "name": "Cognome",
+            "description": "Crampton Smith "
+          },
+          {
+            "name": "Codice fiscale",
+            "description": "CRMJLU92H52Z826N"
+          },
+          {
+            "name": "Data di Nascita",
+            "description": "12/05/1992"
+          },
+          {
+            "name": "Luogo di Nascita",
+            "description": "Liverpool"
+          },
+          {
+            "name": "Sesso",
+            "description": "Femmina"
+          },
+          {
+            "name": "Nazionalità",
+            "description": "Inglese"
+          },
+          {
+            "name": "Professione",
+            "description": "Disoccupata"
+          },
+          {
+            "name": "Scolarità",
+            "description": "Laurea Triennale"
+          }
+        ]
+      },
+      "indirizzo": {
+        "info": [
+          {
+            "name": "Residenza",
+            "description": "Via Roma 16, 00100 Roma, It"
+          },
+          {
+            "name": "Domicilio ",
+            "description": "Yellow Street 16, 00100 Liverpool, UK",
+            "success": true,
+            "success-message": "Dato modificato con successo"
+          }
+        ]
+      },
+      "contatti": {
+        "info": [
+          {
+            "name": "Telefono",
+            "description": "+39 331 1234567"
+          },
+          {
+            "name": "Email",
+            "description": "jsc@gmail.com"
+          },
+          {
+            "name": "Recapito postale",
+            "description": "Via Roma 16, 00100 Roma IT"
+          }
+        ]
+      },
+      "documenti": {
+        "info": [
+          {
+            "name": "Carta d'identità",
+            "description": "jsc_carta_di_identità.pdf",
+            "warning": false,
+            "success": false
+          },
+          {
+            "name": "Permesso di soggiorno",
+            "description": "permesso_soggiorno.pdf",
+            "warning": false,
+            "success": false,
+            "warning-message": "Documento mancante",
+            "success-message": "Documento inserito con successo"
+          }
+        ]
+      },
+      "conto-bancario-1": {
+        "info": [
+          {
+            "name": "Intestatario",
+            "description": "Julie Crampton Smith"
+          },
+          {
+            "name": "Filiale",
+            "description": "Filiale di Roma",
+            "success": true,
+            "warning-message": "Dato mancante",
+            "success-message": "Documento inserito con successo",
+            "warningId": "bank-warning"
+          },
+          {
+            "name": "Indirizzo istituto",
+            "description": "Via Roma 16, 00100 Roma, IT"
+          },
+          {
+            "name": "Iban",
+            "description": "IT12 3456 7890 123456"
+          },
+          {
+            "name": "Documento Iban",
+            "description": "documento_iban.pdf"
+          }
+        ]
+      },
+      "conto-bancario-2": {
+        "info": [
+          {
+            "name": "Intestatario",
+            "description": "Julie Crampton Smith"
+          },
+          {
+            "name": "Filiale",
+            "description": "Filiale di Roma",
+            "success": true,
+            "success-message": "Dato inserito con successo"
+          },
+          {
+            "name": "Indirizzo istituto",
+            "description": "Via Roma 16, 00100 Roma, IT"
+          },
+          {
+            "name": "Iban",
+            "description": "IT12 3456 7890 123456"
+          },
+          {
+            "name": "Documento Iban",
+            "description": "documento_iban.pdf"
+          }
+        ]
+      }
+    },
+    "conferma-riepilogo-informazioni-inserite": {
+      "step-list": {
+        "step-3": [
+          {
+            "title": "Informativa sulla privacy",
+            "active": false,
+            "completed": true
+          },
+          {
+            "title": "Dati Generali",
+            "active": false,
+            "completed": true
+          },
+          {
+            "title": "Riepilogo",
+            "active": true,
+            "completed": false
+          }
+        ]
+      },
+      "anagrafica": {
+        "info": [
+          {
+            "name": "Codice fiscale",
+            "description": "CRMJLU92H52Z826N"
+          },
+          {
+            "name": "Data di Nascita",
+            "description": "12/05/1992"
+          },
+          {
+            "name": "Luogo di Nascita",
+            "description": "Liverpool"
+          },
+          {
+            "name": "Sesso",
+            "description": "Femmina"
+          },
+          {
+            "name": "Nazionalità",
+            "description": "Inglese"
+          },
+          {
+            "name": "Professione",
+            "description": "Disoccupata"
+          },
+          {
+            "name": "Scolarità",
+            "description": "Laurea Triennale"
+          }
+        ]
+      },
+      "indirizzo": {
+        "info": [
+          {
+            "name": "Residenza",
+            "description": "Via Roma 16, 00100 Roma, It"
+          },
+          {
+            "name": "Domicilio ",
+            "description": "Via Roma 16, 00100 Roma, It"
+          }
+        ]
+      },
+      "contatti": {
+        "info": [
+          {
+            "name": "Telefono",
+            "description": "+39 331 1234567"
+          },
+          {
+            "name": "Email",
+            "description": "jcs@gmail.com"
+          },
+          {
+            "name": "Recapito postale",
+            "description": "Via Roma 16, 00100 Roma IT"
+          }
+        ]
+      },
+      "documenti": {
+        "info": [
+          {
+            "name": "Carta d'identità",
+            "description": "jsc_carta_di_identità.pdf",
+            "warning": false,
+            "success": false
+          },
+          {
+            "name": "Permesso di soggiorno",
+            "description": "permesso_soggiorno.pdf"
+          }
+        ]
+      },
+      "anagrafica-2": {
+        "info": [
+          {
+            "name": "Codice fiscale",
+            "description": "LGIRSS72H25H501Y"
+          },
+          {
+            "name": "Data di Nascita",
+            "description": "02/01/2022"
+          },
+          {
+            "name": "Luogo di Nascita",
+            "description": "Roma"
+          },
+          {
+            "name": "Sesso",
+            "description": "Maschio"
+          },
+          {
+            "name": "Nazionalità",
+            "description": "Italiana"
+          }
+        ]
+      },
+      "documenti-2": {
+        "info": [
+          {
+            "name": "Carta d'identità",
+            "description": "luigi_rossi_carta_di_identità_fronte_retro.pdf",
+            "warning": false,
+            "success": false
+          }
+        ]
+      },
+      "isee": {
+        "info": [
+          {
+            "name": "Scadenza ISEE",
+            "description": "06/10/2023"
+          },
+          {
+            "name": "Anno protocollo",
+            "description": "2022"
+          },
+          {
+            "name": "Numero protocollo",
+            "description": "1234567"
+          },
+          {
+            "name": "Codice filiale protocollo",
+            "description": "1234567"
+          },
+          {
+            "name": "Certificato ISEE",
+            "description": "documento_ISEE-2022.pdf"
+          }
+        ]
+      },
+      "conto-bancario": {
+        "info": [
+          {
+            "name": "Intestatario",
+            "description": "Julie Crampton Smith"
+          },
+          {
+            "name": "Filiale",
+            "description": "Filiale di Roma"
+          },
+          {
+            "name": "Indirizzo istituto",
+            "description": "Via Roma 16, 00100 Roma, IT"
+          },
+          {
+            "name": "Iban",
+            "description": "IT12 3456 7890 123456"
+          },
+          {
+            "name": "Documento Iban",
+            "description": "documento_iban.pdf"
+          }
+        ]
+      }
+    },
+    "finalizzare-procedura": {
+      "navscroll": [
+        {
+          "item": "Prossimi passi",
+          "anchor": "next-step"
+        },
+        {
+          "item": "Servizi correlati",
+          "anchor": "related-service"
+        },
+        {
+          "item": "Valuta il servizio",
+          "anchor": "rating"
+        }
+      ],
+      "related-services": [
+        {
+          "icon": "it-settings",
+          "link": "Iscrizione asilo nido",
+          "class": "shadow"
+        },
+        {
+          "icon": "it-settings",
+          "link": "Richiesta assegno nucleo familiare",
+          "class": "shadow mb-50 mb-lg-80"
+        }
+      ],
+      "timeline": [
+        {
+          "year": "2022",
+          "day": "20",
+          "month": "apr",
+          "event": "Esito richiesta"
+        }
+      ]
+    },
+    "area-personale": {
+      "navscroll": [
+        {
+          "item": "Ultimi messaggi",
+          "anchor": "latest-posts"
+        },
+        {
+          "item": "Ultime attività",
+          "anchor": "latest-activities"
+        }
+      ],
+      "tab-area-personale": [
+        {
+          "title": "Scrivania",
+          "icon": true,
+          "icon-name": "it-pa",
+          "active": "active",
+          "id-link": "data-ex-tab1",
+          "controls": "tab1"
+        },
+        {
+          "title": "Messaggi",
+          "icon": true,
+          "icon-name": "it-mail",
+          "active": "",
+          "id-link": "data-ex-tab2",
+          "controls": "tab2"
+        },
+        {
+          "title": "Attività",
+          "icon": true,
+          "icon-name": "it-files",
+          "active": "",
+          "id-link": "data-ex-tab3",
+          "controls": "tab3"
+        },
+        {
+          "title": "Servizi",
+          "icon": true,
+          "icon-name": "it-settings",
+          "active": "",
+          "id-link": "data-ex-tab4",
+          "controls": "tab4"
+        }
+      ]
+    },
+    "area-personale-attivita": {
+      "navscroll": [
+        {
+          "item": "Pratiche",
+          "anchor": "practices"
+        },
+        {
+          "item": "Pagamenti",
+          "anchor": "payments"
+        }
+      ],
+      "pratiche": [
+        {
+          "num": "1",
+          "title": "Richiesta assegno maternità",
+          "date": "20/02/2022",
+          "icon": "folder-concluded.svg",
+          "icon-label": "Conclusa",
+          "label-tag": "Vantaggio economico",
+          "practice": "Pratica:",
+          "practice-number": "AN4059281",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
+              "class": "shadow p-0"
+            }
+          ]
+        },
+        {
+          "num": "2",
+          "title": "Iscrizione alla scuola dell’infanzia",
+          "date": "01/10/2021",
+          "icon": "folder-concluded.svg",
+          "icon-label": "Conclusa",
+          "label-tag": "Vantaggio economico",
+          "practice": "Pratica:",
+          "practice-number": "AN4059281",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
+              "class": "shadow p-0"
+            }
+          ]
+        },
+        {
+          "num": "3",
+          "title": "Iscrizione corso di formazione",
+          "date": "02/09/2021",
+          "icon": "folder-concluded.svg",
+          "icon-label": "Conclusa",
+          "label-tag": "Vantaggio economico",
+          "practice": "Pratica:",
+          "practice-number": "AN4059281",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
+              "class": "shadow p-0"
+            }
+          ]
+        },
+        {
+          "num": "4",
+          "title": "Richiesta permesso ZTL",
+          "date": "06/08/2021",
+          "icon": "folder-concluded.svg",
+          "icon-label": "Conclusa",
+          "label-tag": "Vantaggio economico",
+          "practice": "Pratica:",
+          "practice-number": "AN4059281",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
+              "class": "shadow p-0"
+            }
+          ]
+        },
+        {
+          "num": "5",
+          "title": "Richiesta parcheggio residenti",
+          "date": "06/03/2021",
+          "icon": "folder-concluded.svg",
+          "icon-label": "Conclusa",
+          "label-tag": "Vantaggio economico",
+          "practice": "Pratica:",
+          "practice-number": "AN4059281",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
+              "class": "shadow p-0"
+            }
+          ]
+        }
+      ],
+      "pagamenti": [
+        {
+          "num": "6",
+          "title": "Pagamento servizio mensa",
+          "date": "07/01/2022",
+          "icon": "folder-pay.svg",
+          "icon-label": "Pagato",
+          "label-tag": "Vantaggio economico",
+          "practice": "Pratica:",
+          "practice-number": "AN4059281",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
+              "class": "shadow p-0"
+            }
+          ]
+        },
+        {
+          "num": "7",
+          "title": "Pagamento permesso ZTL",
+          "date": "04/03/2021",
+          "icon": "folder-pay.svg",
+          "icon-label": "Pagato",
+          "label-tag": "Vantaggio economico",
+          "practice": "Pratica:",
+          "practice-number": "AN4059281",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
+              "class": "shadow p-0"
+            }
+          ]
+        },
+        {
+          "num": "8",
+          "title": "Pagamento contravvenzione",
+          "date": "24/06/2021",
+          "icon": "folder-pay.svg",
+          "icon-label": "Pagato",
+          "label-tag": "Vantaggio economico",
+          "practice": "Pratica:",
+          "practice-number": "AN4059281",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
+              "class": "shadow p-0"
+            }
+          ]
+        },
+        {
+          "num": "9",
+          "title": "Pagamento contravvenzione",
+          "date": "10/05/2021",
+          "icon": "folder-pay.svg",
+          "icon-label": "Pagato",
+          "label-tag": "Vantaggio economico",
+          "practice": "Pratica:",
+          "practice-number": "AN4059281",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
+              "class": "shadow p-0"
+            }
+          ]
+        },
+        {
+          "num": "10",
+          "title": "Pagamento contravvenzione",
+          "date": "01/10/2021",
+          "icon": "folder-pay.svg",
+          "icon-label": "Pagato",
+          "label-tag": "Vantaggio economico",
+          "practice": "Pratica:",
+          "practice-number": "AN4059281",
+          "collapse": [
+            {
+              "icon": "it-clip",
+              "link": "Ricevuta richiesta",
+              "aria-label": "Scarica la",
+              "class": "shadow p-0"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

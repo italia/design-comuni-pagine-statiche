@@ -1,0 +1,68 @@
+{{#>base/base title="Area personale - Nome del Comune" headerActive3=true}}
+<main>
+  <div class="container" id="main-container">
+    <div class="row">
+      <div class="col-12 col-lg-10">
+        {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi" link3="Iscrizioni"}}
+        {{> cmp-heading/cmp-heading title="Iscrizione alla scuola dell'infanzia" description="Hai bisogno di assistenza? <a href='#' class='title-small-semi-bold t-primary'>Contattaci</a>"}}
+      </div>
+
+      <hr class="d-none d-lg-block mb-0 mt-0">
+    </div>
+
+    <div class="row mt-lg-40">
+      <div class="col-12 col-lg-3 d-lg-block mb-4 d-none ">
+        {{>cmp-navscroll/cmp-navscroll
+        accordion-title="INFORMAZIONI RICHIESTE"
+        id="one"
+        link-list=link-list.links-perfezionamento-richiesta}}
+      </div>
+
+    <div class="col-12 col-lg-8 offset-lg-1">
+      <div class="steppers-content mt-3" aria-live="polite">
+
+          {{#>cmp-card/cmp-card-content-box
+          class="p-20 p-lg-30"
+          id-title="after-school-activity"
+          bg-grey=true
+          required-icon=true
+          card-title="Doposcuola"
+          subtitle="Hai bisogno del servizio di doposcuola?"
+          h2-class="mb-1"
+          margin-class="mb-40"
+          }}
+          <fieldset>
+            <legend class="visually-hidden">Hai bisogno del servizio di doposcuola?</legend>
+            {{> cmp-card-radio/cmp-card-radio id='doposcuola'}}
+          </fieldset>
+          {{/cmp-card/cmp-card-content-box}}
+
+          {{#>cmp-card/cmp-card-content-box
+          class="p-20 p-lg-30"
+          id-title="school-section"
+          bg-grey=true
+          required-icon=true
+          card-title="Sezione"
+          subtitle="Esprimi una preferenza per la sezione da frequentare"}}
+          {{>partials/checkbox/checkbox
+          class="d-flex flex-column bg-white p-3 p-lg-4"
+          info-list=perfezionamento-richiesta-checkbox.checkbox}}
+
+          {{/cmp-card/cmp-card-content-box}}
+        {{> cmp-nav-steps/cmp-nav-steps saveBtn=true aria-label-save="di iscrizione"}}
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="bg-grey-card shadow-contacts">
+    <div class="container">
+      <div class="row d-flex justify-content-center p-contacts">
+        <div class="col-12 col-lg-5">
+          {{>cmp-contacts/cmp-contacts}}
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{{/base/base }}

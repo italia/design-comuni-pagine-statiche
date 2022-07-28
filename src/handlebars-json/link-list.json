@@ -1,0 +1,206 @@
+{
+  "link-list": {
+    "links-preferenze-servizio-page": [
+      {
+        "item": "Scegli la scuola",
+        "anchor": "school-choice"
+      },
+      {
+        "item": "Religione cattolica",
+        "anchor": "religion-choice"
+      },
+      {
+        "item": "Uscite didattiche",
+        "anchor": "outings-choice"
+      },
+      {
+        "item": "Riprese multimediali",
+        "anchor": "media-choice"
+      }
+    ],
+    "links-area-personale-scrivania": [
+      {
+        "item": "Ultimi messaggi",
+        "anchor": "latest-posts"
+      },
+      {
+        "item": "Ultime attività",
+        "anchor": "latest-activities"
+      }
+    ],
+    "links-procedura-pagamento": [
+      {
+        "item": "Cosa serve",
+        "anchor": "needed"
+      },
+      {
+        "item": "Indirizzo",
+        "anchor": "address"
+      },
+      {
+        "item": "Aggiungi al tuo calendario",
+        "anchor": "calendar"
+      }
+    ],
+    "links-perfezionamento-richiesta": [
+      {
+        "item": "Doposcuola",
+        "anchor": "after-school-activity"
+      },
+      {
+        "item": "Sezione",
+        "anchor": "school-section"
+      }
+    ],
+    "area-personale-page-3": [
+      {
+        "item": "Pratiche",
+        "anchor": "practices"
+      },
+      {
+        "item": "Pagamenti",
+        "anchor": "payments"
+      }
+    ],
+    "segnalazioni-disservizio-1": [
+      {
+        "item": "A chi è rivolto",
+        "anchor": "who-needs"
+      },
+      {
+        "item": "Descrizione",
+        "anchor": "description"
+      },
+      {
+        "item": "Come fare",
+        "anchor": "how-to"
+      },
+      {
+        "item": "Cosa serve",
+        "anchor": "needed"
+      },
+      {
+        "item": "Cosa si ottiene",
+        "anchor": "obtain"
+      },
+      {
+        "item": "Costi",
+        "anchor": "costs"
+      },
+      {
+        "item": "Accedi al servizio",
+        "anchor": "service-access"
+      },
+      {
+        "item": "Condizioni di servizio",
+        "anchor": "conditions"
+      },
+      {
+        "item": "Contatti",
+        "anchor": "contacts"
+      }
+    ],
+    "disservizio-dati-specifici": [
+      {
+        "item": "Luogo",
+        "anchor": "report-place"
+      },
+      {
+        "item": "Disservizio",
+        "anchor": "report-info"
+      },
+      {
+        "item": "Autore della segnalazione",
+        "anchor": "report-author"
+      }
+    ],
+    "links-ztl-dati-servizio": [
+      {
+        "item": "Tipo di permesso",
+        "anchor": "permission"
+      },
+      {
+        "item": "Periodo di validità",
+        "anchor": "validity-period"
+      }
+    ],
+    "prenota-appuntamento-step-1": [
+      {
+        "item": "Ufficio",
+        "anchor": "office"
+      }
+    ],
+    "prenota-appuntamento-step-2": [
+      {
+        "item": "Appuntamenti disponibili",
+        "anchor": "appointment-available"
+      },
+      {
+        "item": "Ufficio",
+        "anchor": "office"
+      }
+    ],
+    "prenota-appuntamento-step-3": [
+      {
+        "item": "Motivo",
+        "anchor": "reason"
+      },
+      {
+        "item": "Dettagli",
+        "anchor": "details"
+      }
+    ],
+    "prenota-appuntamento-step-4": [
+      {
+        "item": "Richiedente",
+        "anchor": "applicant"
+      }
+    ],
+    "template-dettaglio-servizio":[
+        {
+          "item": "A chi è rivolto",
+          "anchor": "who-needs"
+        },
+        {
+          "item": "Descrizione",
+          "anchor": "description"
+        },
+        {
+          "item": "Come fare",
+          "anchor": "how-to"
+        },
+        {
+          "item": "Cosa serve",
+          "anchor": "needed"
+        },
+        {
+          "item": "Cosa si ottiene",
+          "anchor": "obtain"
+        },
+        {
+          "item": "Tempi e scadenze",
+          "anchor": "deadlines"
+        },
+        {
+          "item": "Quanto costa",
+          "anchor": "costs"
+        },
+        {
+          "item": "Accedi al servizio",
+          "anchor": "submit-request"
+        },
+        {
+          "item": "Ulteriori informazioni",
+          "anchor": "more-info"
+        },
+        {
+          "item": "Condizioni di servizio",
+          "anchor": "conditions"
+        },
+        {
+          "item": "Contatti",
+          "anchor": "contacts"
+        }
+    ]
+  }
+}

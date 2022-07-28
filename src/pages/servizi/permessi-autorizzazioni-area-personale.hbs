@@ -1,0 +1,163 @@
+{{#>base/base title="Area personale - Nome del Comune"}}
+<main>
+  <div class="container" id="main-container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        {{> cmp-breadcrumbs/cmp-breadcrumbs link2="Home" link3="Area personale"}}
+        {{> cmp-heading/cmp-heading title="Mario Rossi" subTitle="CF: MRARSS72H25H501Y"}}
+      </div>
+      <div class="col-12 p-0">
+        {{> cmp-nav-tab/cmp-nav-tab
+        step-list=permessi-autorizzazioni.area-personale.tab-area-personale
+        }}
+      </div>
+    </div>
+
+    <!-- Tab panels -->
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="data-ex-tab1" role="tabpanel">
+        <div class="row">
+          <div class="col-12 col-lg-3 d-lg-block mb-4 d-none ">
+            {{>cmp-navscroll/cmp-navscroll accordion-title="INDICE DI PAGINA" id="one"
+            link-list=permessi-autorizzazioni.area-personale.navscroll}}
+          </div>
+
+          <div class="col-12 col-lg-8 offset-lg-1">
+            <div class="mb-40 mb-lg-60">
+              {{#>cmp-card/cmp-card-content-box
+              card-title="Ultimi messaggi"
+              header-m0=true
+              id-title="latest-posts"
+              h2-class="mb-0"}}
+
+              {{>cmp-card-latest-messages/cmp-card-latest-messages
+              date="02/03/2022"
+              card-title="Richiesta pass ZTL"
+              header-m0=true
+              description="La richiesta AN4059281 è stata accetto"
+              modalId="modal-message"
+              id="1"
+              header-m0=true
+              description-class="text-truncate"}}
+
+              {{>cmp-card-latest-messages/cmp-card-latest-messages
+              date="28/02/2022"
+              card-title="Richiesta pass ZTL"
+              header-m0=true
+              description="La richiesta AN4059281 è stata ricevuto"
+              modalId="modal-message"
+              id="2"
+              header-m0=true
+              description-class="text-truncate"}}
+
+              {{>cmp-card-latest-messages/cmp-card-latest-messages
+              date="13/02/2022"
+              card-title="Nuovo servizio disponibile"
+              header-m0=true
+              description="Potrebbe interessarti il nuovo servizio disp"
+              modalId="modal-message"
+              id="3"
+              header-m0=true
+              description-class="text-truncate"}}
+
+              {{>partials/button/button label="Vedi altri messaggi" class="btn-xs btn-me btn-label
+              t-primary px-0"}}
+              {{/cmp-card/cmp-card-content-box}}
+            </div>
+
+            <div class="mb-50 mb-lg-90">
+              {{#>cmp-card/cmp-card-content-box
+              card-title="Ultime attività"
+              id-title="latest-activities"
+              h2-class="mb-3" }}
+
+              {{>cmp-icon-card/cmp-icon-card
+              card-class="pt-20 pb-4 ps-4 pr-30"
+              title-class="t-primary mb-2 title-small-semi-bold"
+              shadow-card=true
+              card-title="Richiesta pass ZTL"
+              date="28/02/2022"
+              icon="it-files"}}
+
+              {{>cmp-icon-card/cmp-icon-card
+              card-class="pt-20 pb-4 ps-4 pr-30"
+              title-class="t-primary mb-2 title-small-semi-bold"
+              shadow-card=true
+              card-title="Richiesta assegno maternità"
+              date="12/01/2022"
+              icon="it-files"}}
+
+              {{>cmp-icon-card/cmp-icon-card
+              card-class="pt-20 pb-4 ps-4 pr-30"
+              title-class="t-primary mb-2 title-small-semi-bold"
+              shadow-card=true
+              card-title="Pagamento contravvenzione"
+              date="02/10/2022"
+              icon="it-files"}}
+
+              {{>partials/button/button label="Vedi altre attività" class="btn-xs btn-me btn-label
+              t-primary px-0"}}
+              {{/cmp-card/cmp-card-content-box}}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane" id="data-ex-tab2" role="tabpanel"></div>
+      <div class="tab-pane" id="data-ex-tab3" role="tabpanel">
+        <div class="row">
+          <div class="d-none d-sm-none d-lg-block col-lg-3">
+            {{>cmp-navscroll/cmp-navscroll
+            accordion-title="INDICE DI PAGINA" id="Three"
+            link-list=permessi-autorizzazioni.area-personale.navscroll-attivita
+            }}
+          </div>
+
+          <div class="col-12 col-lg-8 offset-lg-1 px-0 px-sm-3">
+            {{>cmp-filter/cmp-filter
+            title="Pratiche"
+            id-title="practices"
+            id-input="pratiche"
+            id-dropdown="pratiche"
+            }}
+            {{>cmp-accordion/cmp-accordion
+            accordion=permessi-autorizzazioni.area-personale.pratiche
+            }}
+            {{>partials/button/button label="Vedi altre pratiche" class="d-block accordion-view-more mb-2 pt-3 t-primary
+            title-xsmall-semi-bold
+            ps-lg-3"}}
+            {{>cmp-filter/cmp-filter
+            title="Pagamenti"
+            id-title="payments"
+            id-input="pagamenti"
+            id-dropdown="pagamenti"
+            }}
+            {{>cmp-accordion/cmp-accordion
+            accordion=permessi-autorizzazioni.area-personale.pagamenti
+            }}
+            {{>partials/button/button label="Vedi altri pagamenti" class="d-block accordion-view-more mb-40 t-primary
+            title-xsmall-semi-bold
+            ps-lg-3"}}
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane" id="data-ex-tab4" role="tabpanel">
+
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="bg-grey-card shadow-contacts">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6 offset-lg-3 p-contacts">
+          {{>cmp-contacts/cmp-contacts city-problems=true}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{>cmp-modal/modal-message date="02/03/2022" card-title="Richiesta pass ZTL" description="La
+  richiesta AN4059281 è stata accettata ed è in fase di elaborazione." }}
+</main>
+{{/base/base }}

@@ -1,0 +1,92 @@
+{{#>base/base title="Prenotazioni - Nome del Comune" headerActive3=true}}
+<main>
+  <div class="container" id="main-container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi" link3="Prenotazioni"}}
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        {{>cmp-hero/cmp-hero
+        hero-title="Prenotazione appuntamento"
+        wrapper-class="pt-0 ps-0 pb-3 pb-lg-4"}}
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    {{> cmp-info-progress/cmp-info-progress
+        step-list=step-list.prenota-appuntamento-step-3
+        step-num="3"
+        step-tot="5"
+        step-title="Dettagli appuntamento"
+        classSubtitle="mt-40 mb-3"
+        subtitle="I campi contraddistinti dal simbolo asterisco sono obbligatori"
+        }}
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-3 d-lg-block mb-4 d-none ">
+          {{>cmp-navscroll/cmp-navscroll
+          accordion-title="INFORMAZIONI RICHIESTE" id="one"
+          link-list=link-list.prenota-appuntamento-step-3}}
+      </div>
+      <div class="col-12 col-lg-8 offset-lg-1">
+        <div class="steppers-content" aria-live="polite">
+
+            {{#>cmp-card/cmp-card-content-box
+            class="p-big"
+            id-title="reason"
+            bg-grey=true
+            h2-class="mb-0"
+            margin-class="mb-40"
+            header-class="mb-3"
+            card-title="Motivo*"
+            subtitle="Scegli il motivo dell’appuntamento"
+            }}
+             {{>partials/select/select
+             placeholder="Seleziona opzione"
+             label-hidden=true
+             id="motivo-appuntamento"
+             label-text="Motivo dell'appuntamento"
+             class="p-0"
+             select-option-list=motivo-appuntamento}}
+            {{/cmp-card/cmp-card-content-box}}
+
+
+            {{#>cmp-card/cmp-card-content-box
+            class="p-big"
+            id-title="details"
+            bg-grey=true
+            h2-class="mb-0"
+            header-m0=true
+           subtitleClass="mb-3"
+            card-title="Dettagli*"
+            subtitle="Aggiungi ulteriori dettagli"
+            }}
+            {{> partials/text-area/text-area label="Inserire massimo 200 caratteri" class="p-0" placeholder="Aggiungi ulteriori dettagli" id="form-details"}}
+            {{/cmp-card/cmp-card-content-box}}
+
+          {{> cmp-nav-steps/cmp-nav-steps save="true" aria-label-save="di prenotazione appuntamento"}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-grey-card shadow-contacts">
+    <div class="container">
+      <div class="row d-flex justify-content-center p-contacts">
+        <div class="col-12 col-lg-6">
+          {{>cmp-contacts/cmp-contacts-trasversali faq=true assistance=true}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+{{/base/base }}

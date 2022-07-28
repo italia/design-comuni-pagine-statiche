@@ -1,0 +1,25 @@
+<div class="cmp-input-search">
+  <div class="form-group autocomplete-wrapper {{wrapper-class}}">
+    <div class="input-group">
+      <label for="autocomplete-{{id}}"
+        class="{{#if label-visible}}label-visible{{else}}visually-hidden{{/if}}">{{label-text}}</label>
+      <input type="search" class="autocomplete form-control" placeholder="{{placeholder-text}}" id="autocomplete-{{id}}"
+        name="{{id}}" data-bs-autocomplete="[]">
+
+      {{#if btnSearch}}
+      <div class="input-group-append">
+        <button class="btn btn-primary" type="button" id="button-3">Invio</button>
+      </div>
+      {{/if}}
+      
+      <span class="autocomplete-icon" aria-hidden="true">
+        <svg class="icon icon-sm {{icon-class}}">
+          <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-search"></use>
+        </svg>
+      </span>
+    </div>
+          {{#if search-subtitle}}
+      <p id="autocomplete-label" class="{{text-subtitle-class}}">{{{text-subtitle}}}</p>
+      {{/if}}
+  </div>
+</div>

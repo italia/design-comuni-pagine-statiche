@@ -1,0 +1,15 @@
+<div class="cmp-text-button {{#if disservizioBtn}}mt-0{{/if}} {{#if sBtn}}mb-40 mb-lg-80 mt-lg-40{{/if}} {{textBtnClass}}">
+  {{#if cardDescription}}
+   <h2 class="title-xxlarge mb-0">{{cardTitle}}</h2>
+   <div class="text-wrapper">
+     <p class="subtitle-small mb-3 {{subtitle-class}}">{{cardDescription}}</p>
+   </div>
+   {{/if}}
+   <div class="button-wrapper {{class}}">
+      {{> @partial-block}}
+   </div>
+
+   {{#if linkLabel}}
+    <a class="{{classLink}} simple-link" href="#">{{linkLabel}} <span class="visually-hidden">{{linkLabel}}</span></a>
+    {{/if}}
+ </div>

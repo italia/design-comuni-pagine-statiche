@@ -1,0 +1,10 @@
+{{#>cmp-modal/cmp-modal-structure id="modal-documents" modalTitle="Documenti" buttons=true modalInfo="I campi
+contraddistinti dal
+simbolo asterisco sono obbligatori"}}
+<div>
+  <form method="post" action="" enctype="multipart/form-data" id="documents-form">
+  {{>partials/cmp-upload/cmp-upload inputId=label1-id label=label1-text document=document1 required="true" success="true" class="mb-3"}}
+  {{>partials/cmp-upload/cmp-upload inputId=label2-id label=label2-text document=document2 required="true" success=true class="mb-3"}}
+  </form>
+</div>
+{{/cmp-modal/cmp-modal-structure}}

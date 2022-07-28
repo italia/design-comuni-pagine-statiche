@@ -1,0 +1,100 @@
+.cmp-info-checkbox {
+
+  p{
+    margin-bottom: 0;
+  }
+
+  &:not(:first-child){
+    margin-top: 1rem;
+
+    @include media-breakpoint-up(sm) {
+      margin-top: 0.89rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      margin-top: 1.78rem;
+    }
+  }
+
+  &.has-border-green {
+    outline: 2px solid get-color(primary, main);
+  }
+
+  .card {
+    padding: 1rem;
+
+    @include media-breakpoint-up(sm) {
+      padding: 0.89rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding: 1.33rem;
+    }
+  }
+  .card-header {
+   padding: 0;
+   margin-bottom: 0;
+   border: none;
+  }
+
+  .card-body {
+    padding: 0;
+  }
+
+  .form-check.form-check-group {
+    margin-bottom: 0;
+    box-shadow: none;
+  }
+
+  .form-check [type=checkbox]:not(:checked)+label::after {
+    border-color: get-color(primary, main);
+  }
+
+  .form-check [type=checkbox] + label:after {
+    margin-top: 8px;
+  }
+
+  .form-check [type=checkbox]:checked+label::before {
+    top: 8px;
+  }
+
+  .form-check.form-check-group [type=checkbox]+label::after {
+    right: 0;
+  }
+
+
+  .form-check.form-check-group [type=checkbox]:checked+label::before {
+    right: 11px;
+  }
+
+  .info-wrapper {
+    padding: 0.25rem 0;
+
+    @include media-breakpoint-up(sm) {
+      padding: 0.22rem 0;
+    }
+  }
+
+  .info-wrapper-payment {
+    padding: 0.56rem 0;
+
+    @include media-breakpoint-up(sm) {
+      padding: 0.5rem 0;
+    }
+  }
+
+  .info-wrapper,
+  .info-wrapper-payment {
+    border-bottom: 1px solid get-color(light-grey, grey);
+
+    &__label {
+      @include font(16, 18);
+      font-weight: 400;
+    }
+
+    &__value {
+      @include font(16, 18);
+      font-weight: 600;
+    }
+  }
+}

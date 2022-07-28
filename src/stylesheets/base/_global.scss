@@ -1,0 +1,52 @@
+body {
+  font-family: 'Titillium Web';
+  color: get-color(black, main);
+}
+
+.form-check [type=checkbox]:focus+label, .form-check [type=radio]:focus+label, .toggles label input[type=checkbox]:focus+.lever, :focus:not(.focus--mouse) {
+  border-color: #000 !important;
+  box-shadow: 0 0 0 3px #000!important;
+  outline: 3px solid #fff !important;
+  outline-offset: 3px;
+}
+
+.shadow-contacts {
+  @include media-breakpoint-up(md) {
+    box-shadow: inset 0 10px 14px -12px rgba(0,0,0,0.34);
+  }
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.t-primary{
+  color: get-color(primary,main);
+}
+
+.t-alert{
+  color: get-color(alert,main);
+}
+
+.bg-grey-dsk {
+	@include media-breakpoint-up(md) {
+    background-color: #EBEEF0;
+  }
+}
+
+.p-contacts {
+  padding: 2.5rem 1.5rem;
+
+  @include media-breakpoint-up(lg) {
+    padding: 2.66rem 0;
+  }
+}
+
+.button-shadow {
+  box-shadow: 0 -0.6375rem 1.125rem -0.9rem rgb(0 0 0 / 10%);
+  margin-top: 1.25rem;
+
+  @include media-breakpoint-up(sm) {
+    margin-top: 1.11rem;
+  }
+}

@@ -1,0 +1,80 @@
+.select-partials {
+  background-color: #fff;
+  padding: 1rem;
+
+  @include media-breakpoint-up(sm) {
+    padding: 0.889rem;
+  }
+
+
+  label.hidden {
+    //visually-hidden
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+  }
+
+}
+
+.select-wrapper {
+  .card {
+    &::after {
+      content: unset;
+    }
+  }
+
+  label {
+    @include font(16, 16);
+    font-weight: 600;
+    line-height: 1.2;
+    color: get-color(dark, grey);
+    margin-left: 4px;
+    opacity: .9;
+    mix-blend-mode: normal;
+    padding-bottom: 0.625rem;
+
+    @include media-breakpoint-up(sm) {
+      padding-bottom: 0.56rem;
+    }
+  }
+
+  select {
+    font-weight: 600;
+
+    option {
+      font-size: 1.125rem;
+
+      @include media-breakpoint-up(sm) {
+        padding: 1rem;
+      }
+    }
+
+    option:checked {
+      color: get-color(black, main);
+      font-weight: 600;
+    }
+
+    &.form-control{
+      appearance: auto;
+      background-size: 70px 45% !important;
+    }
+
+    &.is-invalid + .d-flex .form-text{
+      display: none;
+    }
+  }
+
+  .card:after {
+    content: unset;
+  }
+}
+
+.bg-grey {
+  background-color: get-color(card, grey);
+}

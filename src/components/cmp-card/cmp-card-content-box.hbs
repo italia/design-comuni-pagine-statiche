@@ -1,0 +1,36 @@
+<div class="cmp-card {{cmpClass}} {{margin-class}}">
+  <div class="card {{#if bg-grey}}has-bkg-grey shadow-sm{{/if}} {{#if bg-grey-primary}}has-bkg-primary-grey{{/if}}  {{#if contacts}}contacts has-bkg-grey {{/if}} {{class}}" >
+  {{#if card-title}}
+    <div class="card-header border-0 p-0 mb-lg-30 {{#if header-m0}}m-0{{/if}} {{header-class}}">
+      <div class="d-flex">
+        {{#if card-title}}
+          {{#if h3-title}}
+            <h3 class="subtitle-large {{h3-class}} {{#if required-icon}}icon-required{{/if}}" id="{{id-title}}">{{{card-title}}}</h3>
+          {{else}}
+            <h2 class="title-xxlarge {{h2-class}} {{#if required-icon}}icon-required{{/if}}" id="{{id-title}}">{{card-title}}</h2>
+          {{/if}}
+        {{/if}}
+      </div>
+      {{#if second-title}}
+      <h3 class="subtitle-medium cmp-card__second-title {{secondTitle-class}}" >{{second-title}}</h3>
+      {{/if}}
+      {{#if subtitle}}
+      <p class="subtitle-small mb-0 {{subtitleClass}} {{#if lora}}lora{{/if}}">{{{subtitle}}}</p>
+      {{/if}}
+
+      {{#if toggle}}
+        {{>partials/toggle/toggle label="C’è un coobbligato"}}
+      {{/if}}
+
+      {{#if select}}
+        {{>partials/select/select id=select-id no-bg=true class=classSelect label-text=labelSelect}}
+      {{/if}}
+
+
+    </div>
+    {{/if}}
+    <div class="card-body p-0">
+      {{> @partial-block}}
+    </div>
+  </div>
+</div>

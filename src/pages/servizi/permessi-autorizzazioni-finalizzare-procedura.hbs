@@ -1,0 +1,71 @@
+{{#>base/base title="Permessi mobilità - Nome del Comune" headerActive3=true}}
+<main>
+  <div class="container" id="main-container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi" link3="Permessi mobilità"}}
+        {{>cmp-heading/cmp-heading
+        title="Richiesta inviata"
+        subTitle="Grazie abbiamo ricevuto la tua richiesta per la pratica <strong>AN4059281 permesso pass
+          ZTL</strong></p>
+        <p class=' subtitle-smallpt-3 pt-lg-4 mb-0'>Abbiamo inviato il riepilogo all’email: <br>
+          <strong>mario.rossi@gmail.com</strong>"
+          iconTitle="it-check-circle"
+          iconClass="mr-10 big-lg-icon mb-1"
+          iconBtn="it-download"
+          button=true
+          label="Scarica la ricevuta (PDF 100KB)"
+          aria-label="Scarica la ricevuta pdf 100kb"
+          outline-primary=true
+          sm=true
+          }}
+      </div>
+    </div>
+
+    <hr class="d-none d-lg-block mt-3 mb-40">
+    <div class="row">
+      <div class="d-none d-sm-none d-lg-block col-lg-3">
+        {{>cmp-navscroll/cmp-navscroll
+        accordion-title="INDICE DELLA PAGINA" id="one"
+        link-list=permessi-autorizzazioni.finalizzare-procedura.navscroll
+        }}
+      </div>
+
+      <div class="col-12 col-lg-8 offset-lg-1">
+        {{>cmp-timeline/cmp-timeline
+        title="Prossimi passi"
+        id-title="next-step"
+        timeline=permessi-autorizzazioni.finalizzare-procedura.timeline
+        label="<a class='t-primary' href='#'>Consulta la richiesta</a> nella tua area riservata."
+        }}
+
+        {{>cmp-icon-list/cmp-icon-list
+        title="Servizi correlati"
+        id-title="related-service"
+        icon-list=permessi-autorizzazioni.finalizzare-procedura.servizi-correlati
+        }}
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-primary">
+    <div class="container">
+      <div class="row d-flex justify-content-center bg-primary">
+        <div class="col-12 col-lg-6 p-lg-0 px-4">
+          {{>cmp-rating/cmp-rating id-title="rate-service"}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-grey-card shadow-contacts">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6 offset-lg-3 p-contacts">
+          {{>cmp-contacts/cmp-contacts appuntamento=true}}
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{{/base/base }}

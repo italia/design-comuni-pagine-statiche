@@ -1,0 +1,14 @@
+<div class="cmp-radio-list">
+  <div class="card-teaser shadow-rating">
+    <div class="card-body">
+      <div class="form-check m-0">
+      {{#each info-list as |item|}}
+        <div class="radio-body border-bottom border-light cmp-radio-list__item">
+        <input name="{{item.name}}" type="radio" id="{{item.id}}">
+        <label for="{{item.id}}">{{item.label}}</label>
+        </div>
+      {{/each}}
+      </div>
+    </div>
+  </div>
+</div>

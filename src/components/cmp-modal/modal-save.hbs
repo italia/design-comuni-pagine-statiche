@@ -1,0 +1,20 @@
+{{#>cmp-modal/cmp-modal-structure-2 id="modal-save-1" modalId="modal-save-2" modalTitle="Salva i dati in area personale" modalInfo="Vuoi salvare
+le informazioni anche nella tua area personale? Potrai usarle anche in altre occasioni." labelBtnSave="Salva nella mia
+area personale" labelBtnCancel="Salva solo per questa pratica" buttons=true class="small" no-body=true }}
+{{/cmp-modal/cmp-modal-structure-2}}
+
+
+{{#>cmp-modal/cmp-modal-structure-2 id="modal-save-2"  modalTitle="Salva i dati in area personale" modalInfo="Vuoi salvare le informazioni anche nella tua area personale? Potrai riutilizzarle in futuro per altre pratiche." success="true" class="small" }}
+
+{{#if success}}
+
+<div class="d-flex justify-content-center align-items-center pb-70">
+  <svg class="icon icon-success icon-md">
+    <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-check-circle"></use>
+  </svg>
+  <span class="cmp-modal__success-message">Salvataggio effettuato</span>
+</div>
+
+{{/if}}
+
+{{/cmp-modal/cmp-modal-structure-2 }}

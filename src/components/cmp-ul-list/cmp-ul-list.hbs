@@ -1,0 +1,26 @@
+<div class="cmp-ul-list">
+{{#if heading-title}}
+  <div class="cmp-ul-list__description {{font-title}}">
+    {{heading-title}}
+  </div>
+  {{/if}}
+  {{#if description}}
+  <p class="description {{font-list}} mb-0 {{desClass}}">{{{description}}}</p>
+  {{/if}}
+  <ul class="list-wrapper {{font-list}}">
+    {{#each info-list as |list|}}
+    <li>
+      <span>
+        {{{list.text}}}
+      </span>
+      {{#if list.other-list}}
+      <ul class="pl-30">
+      {{#each list.other-list as |second-list|}}
+        <li>{{second-list.text-2}}</li>
+        {{/each}}
+      </ul>
+      {{/if}}
+    </li>
+    {{/each}}
+  </ul>
+</div>

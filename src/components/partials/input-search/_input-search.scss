@@ -1,0 +1,48 @@
+.cmp-input-search{
+  .form-group {
+    position: relative;
+    margin-bottom: 2.5rem;
+
+    @include media-breakpoint-up(sm) {
+      margin-bottom: 2.222rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 0.889rem;
+    }
+
+    input {
+      padding-left: 2.8rem;
+      background-color: #fff;
+
+      @include media-breakpoint-up(sm) {
+        padding-left: 2.5rem;
+      }
+    }
+
+    label{
+      @include font(16,16);
+      font-weight: 700;
+      
+      &.label-visible{
+        transform: translatey(-105%);
+      }
+    }
+  }
+
+  .autocomplete-icon {
+    position: absolute;
+    left: 0;
+    right: auto;
+    top: 6px;
+    background-color: #fff;
+    z-index: 5;
+  }
+
+  .filter-wrapper {
+    .icon.icon-sm {
+      width: 13px;
+      height: 13px;
+    }
+  }
+}

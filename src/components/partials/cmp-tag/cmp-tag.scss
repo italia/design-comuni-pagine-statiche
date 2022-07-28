@@ -1,0 +1,27 @@
+.cmp-tag {
+  &__tag {
+    @include font(14, 14);
+    font-weight: 600;
+    color: #008758;
+    padding: 0 0.75rem;
+    border: 1px solid #008758;
+    text-decoration: none;
+    border-radius: 50px;
+
+    @include media-breakpoint-up(md) {
+      font-weight: 700;
+      padding: 0 0.667rem;
+    }
+  }
+
+  .bg-tag {
+    @include media-breakpoint-down (md) {
+      background-color: get-color(primary, main);
+
+      
+    .chip-label{
+      color: get-color(white, main);
+    }
+    }
+  }
+}
