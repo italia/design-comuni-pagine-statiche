@@ -1,11 +1,9 @@
 {
-  "name": "comuni-gov",
-  "description": "",
+  "name": "design-comuni-pagine-statiche",
+  "description": "Template HTML del progetto per la realizzazione dei siti web dei Comuni Italiani",
   "version": "1.0.0",
-  "author": {
-    "name": "AMA"
-  },
-  "license": "MIT",
+  "author": "Presidenza del Consiglio dei Ministri",
+  "license": "BSD-3-Clause",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server --config ./config/webpack.config.js",
     "start:dist": "cross-env NODE_ENV=production webpack-dev-server --config ./config/webpack.config.js && http-server ./dist -o",
