@@ -10,7 +10,6 @@ import '../components/cmp-info-checkbox/cmp-info-checkbox';
 import '../components/partials/input/input';
 
 const alertMessage = document.getElementById('alert-message');
-
 const saveBtns = document.querySelectorAll('.saveBtn');
 const stepperNav = document.querySelector('.steppers-nav');
 
@@ -58,8 +57,6 @@ function getSplide() {
   });
   carouselContenuti.mount();
 }
-
-
 
 function validateFormAssistenza() {
   const errorWrapper = document.querySelector('#errorMsgContainer');
