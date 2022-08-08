@@ -2,9 +2,6 @@
 
 # I template HTML del modello per i siti web e i servizi digitali dei Comuni Italiani
 
-## RISORSA IN AGGIORNAMENTO
-
-I template HTML contenuti in questo repository sono **in aggiornamento** per rispecchiare il nuovo [modello Comuni di Designers Italia](https://designers.italia.it/kit/comuni/). I template HTML adesso disponibili sono da considerare come esempio.
  
 ## ⌨️ Il codice pronto all'uso
 
