@@ -15,12 +15,9 @@ description:
       - PNRR/Beneficiari/Comuni
     genericName: Template siti web e servizi digitali dei Comuni Italiani
     longDescription: |
-      In questo repository è possibile trovare alcune pagine statiche
-      esemplificative del modello di sito web e dei servizi digitali per i Comuni Italiani. È possibile
-      visualizzare e scaricare il codice HTML/CSS e Javascript dei template, già
-      pronto all’uso e validato in termini di accessibilità e conformità alle
-      Linee guida di design per i servizi web della PA, e costruiti sulle
-      fondamenta fornite dallo UI Kit e dalla libreria Bootstrap Italia.
+      I template HTML rendono più semplice l'adozione del modello di sito web e dei servizi digitali per i Comuni Italiani. Il codice HTML/CSS e Javascript dei template è pronto all'uso e già validato in termini di accessibilità e conformità alle
+      Linee guida di design per i servizi web della PA. I template sono costruiti sulle
+      fondamenta dello UI Kit e dalla libreria Bootstrap Italia.
 
 
       Sulla pagina del Modello Comuni su Designers Italia è possibile trovare ulteriori risorse a supporto, come la documentazione tecnica e i prototipi a media e alta definizione.
