@@ -1,10 +1,6 @@
 [![Get invited](https://slack.developers.italia.it/badge.svg)](https://slack.developers.italia.it/)
 
 # I template HTML del modello per i siti web e i servizi digitali dei Comuni Italiani
-
-## RISORSA IN AGGIORNAMENTO
-
-I template HTML contenuti in questo repository sono **in aggiornamento** per rispecchiare il nuovo [modello Comuni di Designers Italia](https://designers.italia.it/kit/comuni/). I template HTML adesso disponibili sono da considerare come esempio.
  
 ## ⌨️ Il codice pronto all'uso
 
@@ -44,7 +40,7 @@ npm run build
 
 ## 🔧 Segnalazione bug e richieste di aiuto
 
-Per segnalare un bug apri in issue qui su GitHub. Se invece vuoi discutere delle scelte fatte o qualcosa non ti è chiaro, puoi unirti al canale [Slack](https://slack.developers.italia.it/) nel canale `#design-siti-dei-comuni` o scrivere sul [forum](https://forum.italia.it/c/design) di Designers Italia.
+Per segnalare un bug apri un issue qui su GitHub. Se invece vuoi discutere delle scelte fatte o qualcosa non ti è chiaro, puoi farlo su [Slack](https://slack.developers.italia.it/) nel canale `#design-siti-dei-comuni` o scrivere su [Forum Italia](https://forum.italia.it/c/design) di Designers Italia.
 
 ## ✨ Come contribuire
 
