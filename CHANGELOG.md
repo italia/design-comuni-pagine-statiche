@@ -1,3 +1,13 @@
+## [2.0.3](https://github.com/italia/design-comuni-pagine-statiche/compare/v2.0.2...v2.0.3) (2022-08-29)
+
+
+### Bug Fixes
+
+* logged in personal area ([6e1b21d](https://github.com/italia/design-comuni-pagine-statiche/commit/6e1b21d5ed880e83bab7911b42657fdb1574bc6f)) (@melenapozzi)
+* remove extra colon from JSON-LD ([553ba1f](https://github.com/italia/design-comuni-pagine-statiche/commit/553ba1f3701ba1aac51870b60481b61671c7c703)) (@tensor5)
+
+
+
 ## [2.0.2](https://github.com/italia/design-comuni-pagine-statiche/compare/v2.0.1...v2.0.2) (2022-08-04)
 
 
