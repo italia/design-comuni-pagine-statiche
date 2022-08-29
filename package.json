@@ -74,6 +74,6 @@
     "ftp-deploy": "^2.3.3",
     "just-validate": "^3.8.1",
     "raw-loader": "^4.0.2",
-    "webpack-dev-server": "^3.8.0"
+    "webpack-dev-server": "^4.10.0"
   }
 }
