@@ -13,7 +13,7 @@ description:
       - PNRR
       - PNRR/Misura/1.4.1
       - PNRR/Beneficiari/Comuni
-    genericName: Template siti web e servizi digitali dei Comuni Italiani
+    genericName: Template HTML per i Comuni Italiani
     longDescription: |
       I template HTML rendono più semplice l'adozione del modello di sito web e dei servizi digitali per i Comuni Italiani. Il codice HTML/CSS e Javascript dei template è pronto all'uso e già validato in termini di accessibilità e conformità alle
       Linee guida di design per i servizi web della PA. I template sono costruiti sulle
