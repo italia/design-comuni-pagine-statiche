@@ -59,13 +59,12 @@
     "stylelint-webpack-plugin": "^2.4.0",
     "url-loader": "^4.1.1",
     "webpack": "^4.46.0",
-    "webpack-cli": "^3.3.12",
+    "webpack-cli": "^4.10.0",
     "webpack-merge": "^4.2.1",
     "webpackbar": "^4.0.0"
   },
   "dependencies": {
     "@splidejs/splide": "^4.0.1",
-    "@webpack-cli/serve": "^0.2.0",
     "bootstrap-italia": "^2.0.2",
     "chalk": "^2.4.2",
     "clear": "^0.1.0",
