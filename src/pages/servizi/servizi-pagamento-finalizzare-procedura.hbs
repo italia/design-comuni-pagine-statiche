@@ -32,18 +32,23 @@
       </div>
 
       <div class="col-12 col-lg-8 offset-lg-1">
-        {{>cmp-timeline/cmp-timeline
-        title="Prossimi passi"
-        id-title="next-step"
-        timeline=servizi-pagamento.finalizzare-procedura.timeline
-        label="<a class='t-primary' href='#'>Consulta la richiesta</a> nella tua area riservata."
-        }}
-        {{>cmp-icon-list/cmp-icon-list
-        title="Servizi correlati"
-        titleClass="mb-lg-4"
-        id-title="related-service"
-        icon-list=servizi-pagamento.finalizzare-procedura.servizi-correlati
-        }}
+        <div class="it-page-sections-container">
+          <section class="it-page-section" id="next-step">
+            {{>cmp-timeline/cmp-timeline
+            title="Prossimi passi"
+            timeline=servizi-pagamento.finalizzare-procedura.timeline
+            label="<a class='t-primary' href='#'>Consulta la richiesta</a> nella tua area riservata."
+            }}
+          </section>
+
+          <section class="it-page-section" id="related-service">
+            {{>cmp-icon-list/cmp-icon-list
+            title="Servizi correlati"
+            titleClass="mb-lg-4"
+            icon-list=servizi-pagamento.finalizzare-procedura.servizi-correlati
+            }}
+          </section>
+        </div>
       </div>
     </div>
   </div>
