@@ -5,9 +5,9 @@
       <div class="d-flex">
         {{#if card-title}}
           {{#if h3-title}}
-            <h3 class="subtitle-large {{h3-class}} {{#if required-icon}}icon-required{{/if}}" id="{{id-title}}">{{{card-title}}}</h3>
+            <h3 class="subtitle-large {{h3-class}} {{#if required-icon}}icon-required{{/if}}" {{#if id-title}}id="{{id-title}}"{{/if}}>{{{card-title}}}</h3>
           {{else}}
-            <h2 class="title-xxlarge {{h2-class}} {{#if required-icon}}icon-required{{/if}}" id="{{id-title}}">{{card-title}}</h2>
+            <h2 class="title-xxlarge {{h2-class}} {{#if required-icon}}icon-required{{/if}}" {{#if id-title}}id="{{id-title}}"{{/if}}>{{card-title}}</h2>
           {{/if}}
         {{/if}}
       </div>
