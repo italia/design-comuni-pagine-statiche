@@ -35,8 +35,9 @@
       </div>
 
       <div class="col-12 col-lg-8 offset-lg-1">
-        <section class="mb-30">
-          <h2 class="title-xxlarge mb-3" id="who-needs">A chi è rivolto</h2>
+        <div class="it-page-sections-container">
+        <section class="it-page-section mb-30" id="who-needs">
+          <h2 class="title-xxlarge mb-3">A chi è rivolto</h2>
           <div class="richtext-wrapper lora">
             <ul>
               <li><span>Bambini di età compresa tra i 3 e i 5 anni compiuti o da compiere entro il 31 dicembre di ogni anno.</span></li>
@@ -45,8 +46,8 @@
           </div>
         </section>
 
-        <section class="mb-30">
-          <h2 class="title-xxlarge mb-3" id="description" data-element="service-description">Descrizione</h2>
+        <section class="it-page-section mb-30" id="description">
+          <h2 class="title-xxlarge mb-3" data-element="service-description">Descrizione</h2>
           <div class="richtext-wrapper lora">
             <p>Le domande di iscrizione devono essere presentate alle scuole nei mesi di
             gennaio/febbraio.
@@ -60,8 +61,8 @@
           
         </section>
 
-        <section class="mb-30">
-          <h2 class="title-xxlarge mb-3" id="how-to">Come fare</h2>
+        <section class="it-page-section mb-30" id="how-to">
+          <h2 class="title-xxlarge mb-3">Come fare</h2>
           <div class="richtext-wrapper lora">
             <p> Puoi presentare la richiesta di iscrizione esclusivamente online dalle ore
             10:00 del 4 gennaio 2022 alle 20:00
@@ -71,8 +72,8 @@
           </div>
         </section>
 
-        <section class="mb-30 has-bg-grey p-3">
-          <h2 class="title-xxlarge mb-3" id="needed">Cosa serve</h2>
+        <section class="it-page-section mb-30 has-bg-grey p-3" id="needed">
+          <h2 class="title-xxlarge mb-3">Cosa serve</h2>
           <div class="richtext-wrapper lora">
             <p>Per accedere al servizio, assicurati di avere:</p>
             <ul>
@@ -85,18 +86,17 @@
           </div>
         </section>
 
-        <section class="mb-30">
-          <h2 class="title-xxlarge mb-3" id="obtain">Cosa si ottiene</h2>
+        <section class="it-page-section mb-30" id="obtain">
+          <h2 class="title-xxlarge mb-3">Cosa si ottiene</h2>
           <div class="richtext-wrapper lora">
             <p>Se - in base ai requisiti e alla graduatoria - la richiesta verrà accettata,
             sarà possibile perfezionare l’iscrizione all’asilo.</p>
           </div>
         </section>
 
-        <section class="mb-30">
+        <section class="it-page-section mb-30" id="deadlines">
           {{>cmp-timeline/cmp-timeline
           title="Tempi e scadenze"
-          id-title="deadlines"
           timeline=timeline.template-dettaglio-servizio
           description="Le graduatorie verranno aggiornate ogni mese con nuove assegnazioni e trasferimenti in base ai
           posti disponibili."
@@ -104,8 +104,8 @@
           }}
         </section>
 
-        <section class="mb-30">
-          <h2 class="title-xxlarge mb-3" id="costs">Quanto costa</h2>
+        <section class="it-page-section mb-30" id="costs">
+          <h2 class="title-xxlarge mb-3">Quanto costa</h2>
           <div class="richtext-wrapper lora">
             <p>L’importo della retta si
             basa sul reddito del nucleo famigliare in base al certificato ISEE. Per maggiori informazioni, consulta la
@@ -114,8 +114,8 @@
           {{>cmp-icon-link/cmp-icon-link link="Tabella rette in base al reddito"}}
         </section>
 
-        <section class="mb-30 has-bg-grey p-4">
-          <h2 class="mb-3" id="submit-request">Accedi al servizio</h2>
+        <section class="it-page-section mb-30 has-bg-grey p-4" id="submit-request">
+          <h2 class="mb-3">Accedi al servizio</h2>
           <p class="text-paragraph lora mb-4">Puoi richiedere l’iscrizione alla Scuola dell’infanzia direttamente online
             tramite identità digitale.</p>
           <button type="button"
@@ -130,8 +130,8 @@
           </button>
         </section>
         
-        <section class="mb-30">
-          <h2 class="title-xxlarge mb-3" id="more-info">Ulteriori informazioni</h2>
+        <section class="it-page-section mb-30" id="more-info">
+          <h2 class="title-xxlarge mb-3">Ulteriori informazioni</h2>
           <h3 class="mb-3 subtitle-medium">Graduatorie di accesso</h3>
           <div class="richtext-wrapper lora">
             <p>I bambini già ammessi alla frequenza nell’anno scolastico in corso sono riammessi di diritto nell’anno scolastico successivo previa richiesta, su appositi moduli trasmessi alle strutture di riferimento.<br> Alle domande viene attribuito un punteggio secondo i criteri stabiliti dall'Amministrazione Comunale. La famiglia può in qualsiasi momento rinunciare al posto, presentando al responsabile del servizio specifica dichiarazione scritta di rinuncia.<br><br>
@@ -139,15 +139,15 @@
           </div>
         </section>
 
-        <section class="mb-30">
-          <h2 class="title-xxlarge mb-3" id="conditions">Condizioni di servizio</h2>
+        <section class="it-page-section mb-30" id="conditions">
+          <h2 class="title-xxlarge mb-3">Condizioni di servizio</h2>
           <p class="text-paragraph lora">Per conoscere i dettagli di
             scadenze, requisiti e altre informazioni importanti, leggi i termini e le condizioni di servizio.</p>
           {{>cmp-icon-link/cmp-icon-link link="Termini e condizioni di servizio" dimensione-file="(PDF 1MB)"}}
         </section>
 
-        <section class="it-page-section">
-          <h2 class="mb-3" id="contacts">Contatti</h2>
+        <section class="it-page-section" id="contacts">
+          <h2 class="mb-3">Contatti</h2>
           <div class="row">
             <div class="col-12 col-md-8 col-lg-6 mb-30">
               <div class="card-wrapper rounded h-auto mt-10">
@@ -178,6 +178,7 @@
               <p class="text-paragraph-small mb-0">Pagina aggiornata il 14/04/2022</p>
             </div>
         </section>
+        </div>
       </div>
     </div>
   </div>
