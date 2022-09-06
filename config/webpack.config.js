@@ -24,8 +24,7 @@ module.exports = {
     ? 'hidden-source-map'
     : 'cheap-eval-source-map',
   devServer: {
-    contentBase: path.join(config.root, config.paths.src),
-    watchContentBase: true,
+    static: path.join(config.root, config.paths.src),
     hot: true,
     open: true,
     port: config.port,
