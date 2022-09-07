@@ -157,60 +157,8 @@
   <div class="container">
     <div class="row border-top border-light row-column-border row-column-menu-left">
       <aside class="col-lg-4">
-        <div class="sticky-wrapper navbar-wrapper">
-
-          <nav class="navbar it-navscroll-wrapper navbar-expand-lg it-top-navscroll" data-bs-navscroll>
-            <button class="custom-navbar-toggler" type="button" aria-controls="navbarNavProgress" aria-expanded="false"
-             data-bs-toggle="navbarcollapsible" data-bs-target="#navbarNavProgress">
-              <span class="it-list"></span>Indice della pagina
-            </button>
-            <div class="progress custom-navbar-progressbar">
-              <div class="progress-bar it-navscroll-progressbar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
-                aria-valuemax="100"></div>
-            </div>
-            <div class="navbar-collapsable" id="navbarNavProgress">
-              <div class="overlay"></div>
-              <a class="it-back-button" href="#" role="button">
-                <svg class="icon icon-sm icon-primary align-top">
-                  <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-chevron-left"></use>
-                </svg>
-                <span>Torna indietro</span>
-              </a>
-              <div class="menu-wrapper">
-                <div class="link-list-wrapper">
-                  <h3>Indice della pagina</h3>
-                  <div class="progress">
-                    <div class="progress-bar it-navscroll-progressbar" role="progressbar" aria-valuenow="0"
-                      aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
-                  <ul class="link-list">
-                    <li class="nav-item">
-                      <a class="nav-link active" href="#descrizione">
-                        <span>Descrizione</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#documenti">
-                        <span>Documenti</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#a-cura-di">
-                        <span>A cura di</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#ulteriori-informazioni">
-                        <span>Ulteriori informazioni</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </nav>
-        </div>
-
+        {{>cmp-navscroll/cmp-navscroll accordion-title="INDICE DELLA PAGINA"  id="one"
+        link-list=link-list.template-novita-notizia}}
       </aside>
       <section class="col-lg-8 it-page-sections-container border-light">
         <article id="descrizione" class="it-page-section anchor-offset">
