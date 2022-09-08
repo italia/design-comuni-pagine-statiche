@@ -75,5 +75,8 @@
     "just-validate": "^3.8.1",
     "raw-loader": "^4.0.2",
     "webpack-dev-server": "^4.10.0"
+  },
+  "overrides": {
+    "minimist": "1.2.6"
   }
 }
