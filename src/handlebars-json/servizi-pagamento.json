@@ -515,11 +515,11 @@
       "navscroll": [
         {
           "item": "Prossimi passi",
-          "anchor": "next-steps"
+          "anchor": "next-step"
         },
         {
           "item": "Servizi correlati",
-          "anchor": "related services"
+          "anchor": "related-service"
         }
       ],
       "timeline": [

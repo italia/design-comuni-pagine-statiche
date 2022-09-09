@@ -1,32 +1,40 @@
-<aside class="cmp-navscroll sticky-top" aria-labelledby="accordion-title-{{id}}">
-  <div class="inline-menu">
-    <div class="link-list-wrapper">
-      <ul>
-        <li>
-          <a class="list-item large medium right-icon p-0 text-decoration-none" href="#collapse-{{id}}"
-            data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapse-{{id}}" data-focus-mouse="true">
-            <span class="list-item-title-icon-wrapper pb-10 px-3">
-              <span id="accordion-title-{{id}}" class="title-xsmall-semi-bold">{{accordion-title}}</span>
-              <svg class="icon icon-xs right">
-                <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
-              </svg>
-            </span>
-            <!-- Progress Bar -->
-            <div class="progress bg-light">
-              <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+<div class="cmp-navscroll sticky-top" aria-labelledby="accordion-title-{{id}}">
+  <nav class="navbar it-navscroll-wrapper navbar-expand-lg" data-bs-navscroll>
+    <div class="navbar-custom" id="navbarNavProgress">
+      <div class="menu-wrapper">
+        <div class="link-list-wrapper">
+          <div class="accordion">
+            <div class="accordion-item">
+              <span class="accordion-header" id="accordion-title-{{id}}">
+                <button class="accordion-button pb-10 px-3" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse-{{id}}" aria-expanded="true" aria-controls="collapse-{{id}}">
+                  {{accordion-title}}
+                  <svg class="icon icon-xs right">
+                    <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
+                  </svg>
+                </button>
+              </span>
+              <div class="progress">
+                <div class="progress-bar it-navscroll-progressbar" role="progressbar" aria-valuenow="0"
+                  aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div id="collapse-{{id}}" class="accordion-collapse collapse show" role="region" aria-labelledby="accordion-title-{{id}}">
+                <div class="accordion-body">
+                  <ul class="link-list" data-element="page-index">
+                    {{#each link-list as |link| }}
+                    <li class="nav-item">
+                      <a class="nav-link" href="#{{link.anchor}}">
+                        <span class="title-medium">{{link.item}}</span>
+                      </a>
+                    </li>
+                    {{/each}}
+                  </ul>
+                </div>
+              </div>
             </div>
-          </a>
-          <ul class="link-sublist collapse show" id="collapse-{{id}}" data-element="page-index">
-            {{#each link-list as |link| }}
-            <li>
-              <a class="list-item" href="#{{link.anchor}}">
-                <span class="title-medium">{{link.item}}</span>
-              </a>
-            </li>
-            {{/each}}
-          </ul>
-        </li>
-      </ul>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</aside>
+  </nav>
+</div>

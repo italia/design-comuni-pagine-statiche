@@ -17,8 +17,9 @@
       </div>
       <div class="col-lg-3 offset-lg-1">
         <div class="dropdown d-inline">
-          <button aria-label="condividi sui social" class="btn btn-dropdown dropdown-toggle text-decoration-underline d-inline-flex align-items-center fs-0" type="button"
-            id="shareActions" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button aria-label="condividi sui social"
+            class="btn btn-dropdown dropdown-toggle text-decoration-underline d-inline-flex align-items-center fs-0"
+            type="button" id="shareActions" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <svg class="icon" aria-hidden="true">
               <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-share"></use>
             </svg>
@@ -64,7 +65,8 @@
           </div>
         </div>
         <div class="dropdown d-inline">
-          <button aria-label="vedi azioni da compiere sulla pagina" class="btn btn-dropdown dropdown-toggle text-decoration-underline d-inline-flex align-items-center fs-0"
+          <button aria-label="vedi azioni da compiere sulla pagina"
+            class="btn btn-dropdown dropdown-toggle text-decoration-underline d-inline-flex align-items-center fs-0"
             type="button" id="viewActions" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <svg class="icon" aria-hidden="true">
               <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-more-items"></use>
@@ -149,58 +151,8 @@
   <div class="container">
     <div class="row border-top border-light row-column-border row-column-menu-left">
       <aside class="col-lg-4">
-        <div class="d-none d-lg-block sticky-wrapper navbar-wrapper">
-          <nav class="navbar it-navscroll-wrapper it-top-navscroll navbar-expand-lg">
-            <button class="custom-navbar-toggler" type="button" aria-controls="navbarNav" aria-expanded="false"
-             data-bs-target="#navbarNav">
-              <span class="it-list"></span>Indice della pagina
-            </button>
-            <div class="navbar-collapsable" id="navbarNav">
-              <div class="overlay"></div>
-              <div class="close-div visually-hidden">
-                <button class="btn close-menu" type="button">
-                  <span class="it-close"></span>Chiudi
-                </button>
-              </div>
-              <a class="it-back-button" href="#">
-                <svg class="icon icon-sm icon-primary align-top">
-                  <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-chevron-left"></use>
-                </svg>
-                <span>Torna indietro</span></a>
-              <div class="menu-wrapper">
-                <div class="link-list-wrapper menu-link-list">
-                  <h3 class="no_toc border-light">Indice della pagina</h3>
-                  <ul class="link-list">
-                    <li class="nav-item active">
-                      <a class="nav-link active" href="#cos-e"><span>Cos'è</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#luogo"><span>Luogo</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#date-e-orari"><span>Date e orari</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#costi"><span>Costi</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#documenti"><span>Documenti</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#contatti"><span>Contatti</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#appuntamenti" ><span>Appuntamenti</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#ulteriori-informazioni"><span>Ulteriori informazioni</span></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </nav>
-        </div>
+        {{>cmp-navscroll/cmp-navscroll accordion-title="INDICE DELLA PAGINA"  id="one"
+        link-list=link-list.template-novita-evento}}
       </aside>
       <section class="col-lg-8 it-page-sections-container border-light">
         <article id="cos-e" class="it-page-section anchor-offset">
@@ -292,14 +244,15 @@
             </div>
           </div>
           <div class="ratio ratio-16x9 my-4">
-            <iframe class="embed-responsive-item" title="Video YouTube"
-              src="https://www.youtube.com/embed/0rIBULTnWuQ" allowfullscreen></iframe>
+            <iframe class="embed-responsive-item" title="Video YouTube" src="https://www.youtube.com/embed/0rIBULTnWuQ"
+              allowfullscreen></iframe>
           </div>
           <div class="accordion border-0 mb-4" id="videoTranscription">
             <div class="accordion-item">
               <div class="accordion-header" id="heading1c">
                 <button class="accordion-button collapsed title-snall-semi-bold py-3" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#collapse1c" aria-expanded="true" aria-controls="collapse1c">
+                  data-bs-toggle="collapse" data-bs-target="#collapse1c" aria-expanded="true"
+                  aria-controls="collapse1c">
                   <div class="button-wrapper d-flex">
                     Trascrizione del video
                     <div class="icon-wrapper">
@@ -312,7 +265,8 @@
               <div id="collapse1c" class="accordion-collapse collapse p-0" data-bs-parent="#videoTranscription"
                 role="region" aria-labelledby="heading1c">
                 <div class="accordion-body ps-0 pb-4">
-                  <p class="font-serif mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa necessitatibus
+                  <p class="font-serif mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa
+                    necessitatibus
                     odit, quasi quaerat inventore molestiae repellendus, harum eius adipisci porro, voluptas itaque
                     corporis tempore pariatur veniam cupiditate! Pariatur, sint amet. Quis, nam quod assumenda fugiat
                     perspiciatis tenetur necessitatibus. Expedita aliquid ipsa at magni, quas tempora minima voluptas
@@ -351,7 +305,7 @@
               <div class="card-body">
                 <h5 class="card-title">
                   <a href="#" class="text-decoration-none">
-                  Cagliari
+                    Cagliari
                   </a>
                 </h5>
                 <div class="card-text">
@@ -421,7 +375,7 @@
                 <span class="category-top">
                   Tribuna 1 e 4
                 </span>
-              <p class="card-title big-heading">&euro; 30</p>
+                <p class="card-title big-heading">&euro; 30</p>
               </h5>
               <p class="mt-4">Tribune coperte site nella via Roma lato Palazzo Vivanet (tribuna n. 1) e nella via Roma
                 fronte palazzo Civico (tribuna n. 4), per circa 770 posti a sedere.</p>
@@ -475,7 +429,8 @@
             </svg>
             <div class="card-body">
               <h5 class="card-title">
-                <a href="#" class="text-decoration-none" title="Scarica la locandina sant'efisio 2019" aria-label="Scarica la locandina sant'efisio 2019">Locandina Sant'Efisio 2019</a>
+                <a href="#" class="text-decoration-none" title="Scarica la locandina sant'efisio 2019"
+                  aria-label="Scarica la locandina sant'efisio 2019">Locandina Sant'Efisio 2019</a>
               </h5>
             </div>
           </div>
@@ -489,7 +444,7 @@
             <div class="card-body">
               <h5 class="card-title">
                 <a href="#" class="text-decoration-none">
-                Arciconfraternita del Gonfalone sotto l’invocazione di Sant'Efisio martire
+                  Arciconfraternita del Gonfalone sotto l’invocazione di Sant'Efisio martire
                 </a>
               </h5>
               <div class="card-text">
@@ -499,7 +454,8 @@
                     target="_blank" title="vai sul sito del festival di sant'elfisio"
                     href="#">www.festadisantelfisio.com</a></p>
                 <p><a aria-label="invia un'email a arcisantefisio@tiscali.it< - apertura casella postale"
-                    title="invia un'email a arcisantefisio@tiscali.it< - apertura casella postale" href="mailto:arcisantefisio@tiscali.it">arcisantefisio@tiscali.it</a></p>
+                    title="invia un'email a arcisantefisio@tiscali.it< - apertura casella postale"
+                    href="mailto:arcisantefisio@tiscali.it">arcisantefisio@tiscali.it</a></p>
               </div>
             </div>
           </div>
@@ -511,13 +467,16 @@
             <div class="card-body">
               <h5 class="card-title">
                 <a href="#" class="text-decoration-none">
-                Ufficio delle Attività Produttive
+                  Ufficio delle Attività Produttive
                 </a>
               </h5>
               <div class="card-text">
                 <p>Piazza Alcide De Gasperi, 2</p>
                 <p class="mt-3">T +39 070 6776430</p>
-                <p><a href="mailto:produttive@comune.cagliari.it" aria-label="invia un'email a produttive@comune.cagliari.it - apertura casella portale" title="invia un'email a produttive@comune.cagliari.it - apertura casella portale">produttive@comune.cagliari.it</a></p>
+                <p><a href="mailto:produttive@comune.cagliari.it"
+                    aria-label="invia un'email a produttive@comune.cagliari.it - apertura casella portale"
+                    title="invia un'email a produttive@comune.cagliari.it - apertura casella portale">produttive@comune.cagliari.it</a>
+                </p>
               </div>
             </div>
           </div>
@@ -530,8 +489,7 @@
                 <div class="img-responsive-wrapper">
                   <div class="img-responsive">
                     <figure class="img-wrapper">
-                      <img src="https://picsum.photos/400/200"
-                        title="titolo immagine" alt="descrizione immagine">
+                      <img src="https://picsum.photos/400/200" title="titolo immagine" alt="descrizione immagine">
                     </figure>
                     <div class="card-calendar d-flex flex-column justify-content-center">
                       <span class="card-date">31</span>
@@ -542,7 +500,8 @@
                 <div class="card-body">
                   <h5 class="card-title">
                     <a href="#" class="text-decoration-none">
-                    Il ballo dell'isola in festa</a></h5>
+                      Il ballo dell'isola in festa</a>
+                  </h5>
                   <p class="card-text"></p>
                   <a class="read-more" href="#" aria-label="Leggi di più - Il ballo dell'isola in festa">
                     <span class="text">Leggi di più</span>
@@ -558,8 +517,7 @@
                 <div class="img-responsive-wrapper">
                   <div class="img-responsive">
                     <figure class="img-wrapper">
-                      <img src="https://picsum.photos/400/200"
-                        title="titolo immagine" alt="descrizione immagine">
+                      <img src="https://picsum.photos/400/200" title="titolo immagine" alt="descrizione immagine">
                     </figure>
                     <div class="card-calendar d-flex flex-column justify-content-center">
                       <span class="card-date">31</span>
@@ -568,7 +526,8 @@
                   </div>
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title"> <a href="#" class="text-decoration-none">La coralità sarda per Sant'Efisio</a></h5>
+                  <h5 class="card-title"> <a href="#" class="text-decoration-none">La coralità sarda per Sant'Efisio</a>
+                  </h5>
                   <p class="card-text"></p>
                   <a class="read-more" href="#" aria-label="leggi di più - la coralità sarda per Sant'Efisio">
                     <span class="text">Leggi di più</span>
@@ -584,8 +543,7 @@
                 <div class="img-responsive-wrapper">
                   <div class="img-responsive">
                     <figure class="img-wrapper">
-                      <img src="https://picsum.photos/400/200"
-                        title="titolo immagine" alt="descrizione immagine">
+                      <img src="https://picsum.photos/400/200" title="titolo immagine" alt="descrizione immagine">
                     </figure>
                     <div class="card-calendar d-flex flex-column justify-content-center">
                       <span class="card-date">31</span>
@@ -772,7 +730,10 @@
                   <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-info-circle"></use>
                 </svg>
               </div>
-              <p>Per ulteriori informazioni contattare <a href="#" title="invia un'email a santefisio@comune.cagliari.it - apertura casella postale" aria-label="invia un'email a santefisio@comune.cagliari.it - apertura casella postale">santefisio@comune.cagliari.it</a></p>
+              <p>Per ulteriori informazioni contattare <a href="#"
+                  title="invia un'email a santefisio@comune.cagliari.it - apertura casella postale"
+                  aria-label="invia un'email a santefisio@comune.cagliari.it - apertura casella postale">santefisio@comune.cagliari.it</a>
+              </p>
               <p><a href="#">Ufficio Sant'Elfisio</a></p>
             </div>
           </div>
@@ -787,7 +748,7 @@
   <section id="contenuti-correlati" class="bg-grey-card shadow-contacts">
     <div class="container pt-5">
       {{>cmp-carousel/cmp-carousel carousel-title="Contenuti correlati" class="carousel-4-card"
-          carTitle-class="pb-0"}}
+      carTitle-class="pb-0"}}
     </div>
   </section>
 </main>

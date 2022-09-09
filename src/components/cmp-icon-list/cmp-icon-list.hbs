@@ -1,6 +1,6 @@
 <div class="cmp-icon-list">
   {{#if title}}
-  <h2 class="title-xxlarge mt-40 mb-2 mb-lg-4 {{titleClass}}" id="{{id-title}}">{{{title}}}</h2>
+  <h2 class="title-xxlarge mt-40 mb-2 mb-lg-4 {{titleClass}}" {{#if id-title}}id="{{id-title}}"{{/if}}>{{{title}}}</h2>
   {{/if}}
 <div class="link-list-wrapper {{#if default}}default{{/if}}">
   <ul class="link-list {{classMenu}}">

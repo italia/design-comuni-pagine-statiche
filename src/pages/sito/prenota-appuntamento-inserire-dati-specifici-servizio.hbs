@@ -38,20 +38,20 @@
       </div>
       <div class="col-12 col-lg-8 offset-lg-1">
         <div class="steppers-content" aria-live="polite">
-
-
-          {{#>cmp-card/cmp-card-content-box
-          class="p-big"
-          id-title="office"
-          bg-grey=true
-          h2-class="mb-0"
-          card-title="Ufficio"
-          subtitle="Scegli l’ufficio a cui vuoi richiedere l’appuntamento"
-          }}
-          {{>partials/select/select placeholder="Seleziona opzione" id="office-option" label-text="Tipo di ufficio"
-          label-hidden=true class="p-0" select-option-list=ufficio-appuntamento}}
-          {{/cmp-card/cmp-card-content-box}}
-
+          <div class="it-page-sections-container">
+            <section class="it-page-section" id="office">
+              {{#>cmp-card/cmp-card-content-box
+              class="p-big"
+              bg-grey=true
+              h2-class="mb-0"
+              card-title="Ufficio"
+              subtitle="Scegli l’ufficio a cui vuoi richiedere l’appuntamento"
+              }}
+              {{>partials/select/select placeholder="Seleziona opzione" id="office-option" label-text="Tipo di ufficio"
+              label-hidden=true class="p-0" select-option-list=ufficio-appuntamento}}
+              {{/cmp-card/cmp-card-content-box}}
+            </section>
+          </div>
           {{> cmp-nav-steps/cmp-nav-steps save="true" aria-label-save="di prenotazione appuntamento"}}
         </div>
       </div>
