@@ -1,8 +1,6 @@
 /* eslint-disable */
 import Splide from '@splidejs/splide';
 
-import './pageStep';
-
 import '../components/cmp-rating/cmp-rating';
 import '../components/partials/toggle/toggle';
 import '../components/cmp-info-button-card/cmp-info-button-card';
