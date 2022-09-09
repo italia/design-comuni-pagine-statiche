@@ -346,47 +346,54 @@
         <div class="steppers-content" aria-live="polite">
           <div class="row">
             <div class="col-12 col-lg-3 mb-4 d-none d-lg-block">
-              <aside class="cmp-navscroll sticky-top" aria-labelledby="accordion-title-one">
-                <div class="inline-menu">
-                  <div class="link-list-wrapper">
-                    <ul>
-                      <li>
-                        <a class="list-item large medium right-icon p-0 text-decoration-none" href="#collapse-one" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapse-one" data-focus-mouse="true">
-                          <span class="list-item-title-icon-wrapper pb-10 px-3">
-                            <span id="accordion-title-one" class="title-xsmall-semi-bold">INFORMAZIONI RICHIESTE</span>
-                            <svg class="icon icon-xs right">
-                              <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
-                            </svg>
-                          </span>
-                          <!-- Progress Bar -->
-                          <div class="progress bg-light">
-                            <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="cmp-navscroll sticky-top" aria-labelledby="accordion-title-one">
+                <nav class="navbar it-navscroll-wrapper navbar-expand-lg" data-bs-navscroll>
+                  <div class="navbar-custom" id="navbarNavProgress">
+                    <div class="menu-wrapper">
+                      <div class="link-list-wrapper">
+                        <div class="accordion">
+                          <div class="accordion-item">
+                            <span class="accordion-header" id="accordion-title-one">
+                              <button class="accordion-button pb-10 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-one" aria-expanded="true" aria-controls="collapse-one">
+                                INFORMAZIONI RICHIESTE
+                                <svg class="icon icon-xs right">
+                                  <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
+                                </svg>
+                              </button>
+                            </span>
+                            <div class="progress">
+                              <div class="progress-bar it-navscroll-progressbar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div id="collapse-one" class="accordion-collapse collapse show" role="region" aria-labelledby="accordion-title-one">
+                              <div class="accordion-body">
+                                <ul class="link-list" data-element="page-index">
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#applicant-info">
+                                      <span class="title-medium">Richiedente</span>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#beneficiary-info">
+                                      <span class="title-medium">Beneficiario</span>
+                                    </a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#isee-info">
+                                      <span class="title-medium">ISEE</span>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
                           </div>
-                        </a>
-                        <ul class="link-sublist collapse show" id="collapse-one" data-element="page-index">
-                          <li>
-                            <a class="list-item" href="#applicant-info">
-                              <span class="title-medium">Richiedente</span>
-                            </a>
-                          </li>
-                          <li>
-                            <a class="list-item" href="#beneficiary-info">
-                              <span class="title-medium">Beneficiario</span>
-                            </a>
-                          </li>
-                          <li>
-                            <a class="list-item" href="#isee-info">
-                              <span class="title-medium">ISEE</span>
-                            </a>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </aside>        </div>
-            <div class="col-12 col-lg-8 offset-lg-1">
+                </nav>
+              </div>        </div>
     
+            <div class="col-12 col-lg-8 offset-lg-1">
               <div class="cmp-warning-box border-start border-warning border-2 mb-50">
                 <div class="warning-box-icon">
                   <svg class="icon icon-warning" aria-hidden="true">
@@ -405,11 +412,13 @@
                 </ul>
               </div>
     
+              <div class="it-page-sections-container">
+                <section class="it-page-section" id="applicant-info">
     <div class="cmp-card mb-40">
       <div class="card has-bkg-grey shadow-sm">
         <div class="card-header border-0 p-0 mb-lg-30">
           <div class="d-flex">
-                <h2 class="title-xxlarge mb-1" id="applicant-info">Richiedente</h2>
+                <h2 class="title-xxlarge mb-1">Richiedente</h2>
           </div>
           <p class="subtitle-small mb-0">Informazione su di te</p>
     
@@ -419,533 +428,35 @@
         </div>
         <div class="card-body p-0">
           
-                    <div class="cmp-info-button-card">
-                      <div class="card p-3 p-lg-4">
-                        <div class="card-body p-0">
-                          <h3 class="big-title mb-0">Giulia Bianchi</h3>
-                    
-                    
-                    
-                    
-                          <p class="card-info">Codice Fiscale <br> <span>GLABNC72H25H501Y</span></p>
-                    
-                    
-                    
-                    
-                    
-                          <div class="accordion-item">
-                            <div class="accordion-header" id="heading-collapse-parents">
-                              <button class="collapsed accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-parents" aria-expanded="false" aria-controls="collapse-parents">
-                                <span class="d-flex align-items-center">
-                                Mostra tutto
-                                  <svg class="icon icon-primary icon-sm">
-                                    <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
-                                  </svg>
-                                </span>
-                              </button>
-                          
-                          
-                            </div>
-                            <div id="collapse-parents" class="accordion-collapse collapse" role="region">
-                              <div class="accordion-body p-0">
-                                <div class="cmp-info-summary bg-white has-border">
-                                  <div class="card">
-                                
-                                    <div class="card-header border-bottom border-light p-0 mb-0 d-flex justify-content-between d-flex justify-content-end">
-                                      <h4 class="title-large-semi-bold mb-3">Anagrafica</h4>
-                                      <a href="#" class="text-decoration-none"><span class="text-button-sm-semi t-primary">Modifica</span></a>
-                                    </div>
-                                
-                                    <div class="card-body p-0">
-                                      <div class="single-line-info border-light">
-                                        <div class="text-paragraph-small">Codice Fiscale</div>
-                                        <div class="border-light">
-                                          <p class="data-text">
-                                            GLABNC72H25H501Y
-                                          </p>
-                                
-                                
-                                
-                                        </div>
-                                      </div>
-                                      <div class="single-line-info border-light">
-                                        <div class="text-paragraph-small">Data di nascita</div>
-                                        <div class="border-light">
-                                          <p class="data-text">
-                                            02/03/1975
-                                          </p>
-                                
-                                
-                                
-                                        </div>
-                                      </div>
-                                      <div class="single-line-info border-light">
-                                        <div class="text-paragraph-small">Luogo di nascita</div>
-                                        <div class="border-light">
-                                          <p class="data-text">
-                                            Roma
-                                          </p>
-                                
-                                
-                                
-                                        </div>
-                                      </div>
-                                      <div class="single-line-info border-light">
-                                        <div class="text-paragraph-small">Sesso</div>
-                                        <div class="border-light">
-                                          <p class="data-text">
-                                            Femmina
-                                          </p>
-                                
-                                
-                                
-                                        </div>
-                                      </div>
-                                      <div class="single-line-info border-light">
-                                        <div class="text-paragraph-small">Nazionalità</div>
-                                        <div class="border-light">
-                                          <p class="data-text">
-                                            Italiana
-                                          </p>
-                                
-                                
-                                
-                                        </div>
-                                      </div>
-                                      <div class="single-line-info border-light">
-                                        <div class="text-paragraph-small">Professione</div>
-                                        <div class="border-light">
-                                          <p class="data-text">
-                                            Impiegata
-                                          </p>
-                                
-                                
-                                
-                                        </div>
-                                      </div>
-                                      <div class="single-line-info border-light">
-                                        <div class="text-paragraph-small">Scolarità</div>
-                                        <div class="border-light">
-                                          <p class="data-text">
-                                            Laurea Magistrale
-                                          </p>
-                                
-                                
-                                
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="card-footer p-0">
-                                    </div>
-                                  </div>
-                                </div>      <div class="cmp-info-summary bg-white has-border">
-                                  <div class="card">
-                                
-                                    <div class="card-header border-bottom border-light p-0 mb-0 d-flex justify-content-between d-flex justify-content-end">
-                                      <h4 class="title-large-semi-bold mb-3">Indirizzi</h4>
-                                      <a href="#" class="text-decoration-none"><span class="text-button-sm-semi t-primary">Modifica</span></a>
-                                    </div>
-                                
-                                    <div class="card-body p-0">
-                                      <div class="single-line-info border-light">
-                                        <div class="text-paragraph-small">Residenza</div>
-                                        <div class="border-light">
-                                          <p class="data-text">
-                                            Via Roma 16, 00100 Roma, IT
-                                          </p>
-                                
-                                
-                                
-                                        </div>
-                                      </div>
-                                      <div class="single-line-info border-light">
-                                        <div class="text-paragraph-small">Domicilio</div>
-                                        <div class="border-light">
-                                          <p class="data-text">
-                                            Piazza Risorgimento 16, 00100 Roma, It
-                                          </p>
-                                
-                                
-                                
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="card-footer p-0">
-                                    </div>
-                                  </div>
-                                </div>      <div class="cmp-info-summary bg-white has-border">
-                                  <div class="card">
-                                
-                                    <div class="card-header border-bottom border-light p-0 mb-0 d-flex justify-content-between d-flex justify-content-end">
-                                      <h4 class="title-large-semi-bold mb-3">Contatti</h4>
-                                      <a href="#" class="text-decoration-none"><span class="text-button-sm-semi t-primary">Modifica</span></a>
-                                    </div>
-                                
-                                    <div class="card-body p-0">
-                                      <div class="single-line-info border-light">
-                                        <div class="text-paragraph-small">Telefono</div>
-                                        <div class="border-light">
-                                          <p class="data-text">
-                                            +39 331 1234567
-                                          </p>
-                                
-                                
-                                
-                                        </div>
-                                      </div>
-                                      <div class="single-line-info border-light">
-                                        <div class="text-paragraph-small">Email</div>
-                                        <div class="border-light">
-                                          <p class="data-text">
-                                            giulia.bianchi@gmail.com
-                                          </p>
-                                
-                                
-                                
-                                        </div>
-                                      </div>
-                                      <div class="single-line-info border-light">
-                                        <div class="text-paragraph-small">Recapito postale</div>
-                                        <div class="border-light">
-                                          <p class="data-text">
-                                            P.zza Risorgimento 16, 00100 Roma
-                                          </p>
-                                
-                                
-                                
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="card-footer p-0">
-                                    </div>
-                                  </div>
-                                </div>      <div class="cmp-info-summary bg-white has-border">
-                                  <div class="card">
-                                
-                                    <div class="card-header border-bottom border-light p-0 mb-0 d-flex justify-content-between d-flex justify-content-end">
-                                      <h4 class="title-large-semi-bold mb-3">Documenti</h4>
-                                      <a href="#" class="text-decoration-none"><span class="text-button-sm-semi t-primary">Modifica</span></a>
-                                    </div>
-                                
-                                    <div class="card-body p-0">
-                                      <div class="single-line-info border-light">
-                                        <div class="text-paragraph-small">Carta d&#x27;identità</div>
-                                        <div class="border-light">
-                                          <p class="data-text">
-                                            giulia_bianchi_carta_di_identità_fronte_retro.pdf
-                                          </p>
-                                
-                                
-                                
-                                          <p class="fw-semibold pb-2 pt-2 data-text description-success d-flex align-items-center">
-                                            <span class="d-flex align-items-center">
-                                              <svg class="icon icon-sm icon-success" aria-hidden="true">
-                                                <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-check-circle"></use>
-                                              </svg>
-                                              Documento inserito con successo
-                                            </span>
-                                          </p>
-                                        </div>
-                                      </div>
-                                      <div class="single-line-info border-light">
-                                        <div class="text-paragraph-small">Modulo condizione lavorativa</div>
-                                        <div class="border-light">
-                                          <p class="data-text">
-                                            giulia_bianchi_modulo.pdf
-                                          </p>
-                                
-                                
-                                
-                                          <p class="fw-semibold pb-2 pt-2 data-text description-success d-flex align-items-center">
-                                            <span class="d-flex align-items-center">
-                                              <svg class="icon icon-sm icon-success" aria-hidden="true">
-                                                <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-check-circle"></use>
-                                              </svg>
-                                              Documento inserito con successo
-                                            </span>
-                                          </p>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="card-footer p-0">
-                                    </div>
-                                  </div>
-                                </div>    </div>
-                            </div>
-                          </div>
-                    
-                    
-                    
-                    
-                        </div>
-                      </div>
-                    </div>    </div>
-      </div>
-    </div>
-    
-    <div class="cmp-card mb-40">
-      <div class="card has-bkg-grey shadow-sm">
-        <div class="card-header border-0 p-0 mb-lg-30">
-          <div class="d-flex">
-                <h2 class="title-xxlarge mb-1" id="beneficiary-info">Beneficiario</h2>
-          </div>
-          <p class="subtitle-small mb-0">Informazioni sulla persona che utilizzerà il servizio</p>
-    
-    
-    
-    
-        </div>
-        <div class="card-body p-0">
-          
-                      <div class="cmp-info-button-card radio-card">
-                        <div class="card p-3 p-lg-4">
-                          <div class="card-header mb-0 p-0">
-                            <div class="form-check m-0">
-                              <input class="radio-input" name="beneficiaries" type="radio" id="son">
-                              <label for="son">
-                                <h3 class="big-title mb-0">Francesco Rossi</h3>
-                              </label>
-                            </div>
-                          </div>
-                          <div class="card-body p-0">
-                      
-                      
-                      
-                      
-                            <p class="card-info">Codice Fiscale <br> <span>FRARSS72H25H501Y</span></p>
-                      
-                      
-                      
-                      
-                            <div class="accordion-item">
-                              <div class="accordion-header" id="heading-collapse-benef-1">
-                                <button class="collapsed accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-benef-1" aria-expanded="false" aria-controls="collapse-benef-1">
-                                  <span class="d-flex align-items-center">
-                                  Mostra tutto
-                                    <svg class="icon icon-primary icon-sm">
-                                      <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
-                                    </svg>
-                                  </span>
-                                </button>
-                              </div>
-                              <div id="collapse-benef-1" class="accordion-collapse collapse show" role="region">
-                                <div class="accordion-body p-0">
-                                      <div class="cmp-info-summary bg-white has-border">
-                                        <div class="card">
-                                      
-                                          <div class="card-header border-bottom border-light p-0 mb-0 d-flex justify-content-between d-flex justify-content-end">
-                                            <h4 class="title-large-semi-bold mb-3">Anagrafica</h4>
-                                            <a href="#" class="text-decoration-none"><span class="text-button-sm-semi t-primary">Modifica</span></a>
-                                          </div>
-                                      
-                                          <div class="card-body p-0">
-                                            <div class="single-line-info border-light">
-                                              <div class="text-paragraph-small">Nome</div>
-                                              <div class="border-light">
-                                                <p class="data-text">
-                                                  Francesco
-                                                </p>
-                                      
-                                      
-                                      
-                                              </div>
-                                            </div>
-                                            <div class="single-line-info border-light">
-                                              <div class="text-paragraph-small">Cognome</div>
-                                              <div class="border-light">
-                                                <p class="data-text">
-                                                  Rossi
-                                                </p>
-                                      
-                                      
-                                      
-                                              </div>
-                                            </div>
-                                            <div class="single-line-info border-light">
-                                              <div class="text-paragraph-small">Codice fiscale</div>
-                                              <div class="border-light">
-                                                <p class="data-text">
-                                                  FRARSS72H25H501Y
-                                                </p>
-                                      
-                                      
-                                      
-                                              </div>
-                                            </div>
-                                            <div class="single-line-info border-light">
-                                              <div class="text-paragraph-small">Data di Nascita</div>
-                                              <div class="border-light">
-                                                <p class="data-text">
-                                                  26/03/2018
-                                                </p>
-                                      
-                                      
-                                      
-                                              </div>
-                                            </div>
-                                            <div class="single-line-info border-light">
-                                              <div class="text-paragraph-small">Luogo di Nascita</div>
-                                              <div class="border-light">
-                                                <p class="data-text">
-                                                  Roma
-                                                </p>
-                                      
-                                      
-                                      
-                                              </div>
-                                            </div>
-                                            <div class="single-line-info border-light">
-                                              <div class="text-paragraph-small">Sesso</div>
-                                              <div class="border-light">
-                                                <p class="data-text">
-                                                  Maschio
-                                                </p>
-                                      
-                                      
-                                      
-                                              </div>
-                                            </div>
-                                            <div class="single-line-info border-light">
-                                              <div class="text-paragraph-small">Nazionalità</div>
-                                              <div class="border-light">
-                                                <p class="data-text">
-                                                  Italiana
-                                                </p>
-                                      
-                                      
-                                      
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="card-footer p-0">
-                                          </div>
-                                        </div>
-                                      </div>          <div class="cmp-info-summary bg-white has-border">
-                                        <div class="card">
-                                      
-                                          <div class="card-header border-bottom border-light p-0 mb-0 d-flex justify-content-between d-flex justify-content-end">
-                                            <h4 class="title-large-semi-bold mb-3">Indirizzo</h4>
-                                            <a href="#" class="text-decoration-none"><span class="text-button-sm-semi t-primary">Modifica</span></a>
-                                          </div>
-                                      
-                                          <div class="card-body p-0">
-                                            <div class="single-line-info border-light">
-                                              <div class="text-paragraph-small">Residenza</div>
-                                              <div class="border-light">
-                                                <p class="data-text">
-                                                  Via Roma 16, 00100 Roma, It
-                                                </p>
-                                      
-                                      
-                                      
-                                              </div>
-                                            </div>
-                                            <div class="single-line-info border-light">
-                                              <div class="text-paragraph-small">Domicilio </div>
-                                              <div class="border-light">
-                                                <p class="data-text">
-                                                  Via Roma 16, 00100 Roma, It
-                                                </p>
-                                      
-                                      
-                                      
-                                              </div>
-                                            </div>
-                                          </div>
-                                          <div class="card-footer p-0">
-                                          </div>
-                                        </div>
-                                      </div>          <div class="cmp-info-summary bg-white has-border">
-                                        <div class="card">
-                                      
-                                          <div class="card-header border-bottom border-light p-0 mb-0 d-flex justify-content-between d-flex justify-content-end">
-                                            <h4 class="title-large-semi-bold mb-3">Documenti</h4>
-                                            <a href="#" class="d-none text-decoration-none"><span class="text-button-sm-semi t-primary">Modifica</span></a>
-                                          </div>
-                                      
-                                          <div class="card-body p-0">
-                                            <div class="single-line-info border-light" id="beneficiary-warning">
-                                              <div class="text-paragraph-small">Certificato disabilità</div>
-                                              <p class="fw-semibold data-text description-alert d-flex align-items-center border-light">
-                                                <span class="d-flex align-items-center">
-                                                  <svg class="icon icon-sm icon-warning" aria-hidden="true">
-                                                    <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-error"></use>
-                                                  </svg>
-                                                  Documento mancante
-                                                </span>
-                                              </p>
-                                            </div>
-                                            <div class="single-line-info border-light" id="">
-                                              <div class="text-paragraph-small">Certificato dieta patologica</div>
-                                              <p class="fw-semibold data-text description-alert d-flex align-items-center border-light">
-                                                <span class="d-flex align-items-center">
-                                                  <svg class="icon icon-sm icon-warning" aria-hidden="true">
-                                                    <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-error"></use>
-                                                  </svg>
-                                                  Documento mancante
-                                                </span>
-                                              </p>
-                                            </div>
-                                          </div>
-                                          <div class="card-footer p-0">
-                                            <button type="button" data-bs-toggle="modal" data-bs-target="#modal-documents" class="btn btn-outline-primary w-100 mt-3">
-                                            
-                                              <span class="rounded-icon">
-                                                <svg class="icon icon-primary icon-sm" aria-hidden="true">
-                                                  <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-pencil"></use>
-                                                </svg>
-                                              </span>
-                                            
-                                            
-                                             <span class="">Aggiungi</span>
-                                            </button>
-                                          </div>
-                                        </div>
-                                      </div>
+                        <div class="cmp-info-button-card">
+                          <div class="card p-3 p-lg-4">
+                            <div class="card-body p-0">
+                              <h3 class="big-title mb-0">Giulia Bianchi</h3>
+                        
+                        
+                        
+                        
+                              <p class="card-info">Codice Fiscale <br> <span>GLABNC72H25H501Y</span></p>
+                        
+                        
+                        
+                        
+                        
+                              <div class="accordion-item">
+                                <div class="accordion-header" id="heading-collapse-parents">
+                                  <button class="collapsed accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-parents" aria-expanded="false" aria-controls="collapse-parents">
+                                    <span class="d-flex align-items-center">
+                                    Mostra tutto
+                                      <svg class="icon icon-primary icon-sm">
+                                        <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
+                                      </svg>
+                                    </span>
+                                  </button>
+                              
+                              
                                 </div>
-                              </div>
-                            </div>
-                      
-                      
-                      
-                      
-                      
-                          </div>
-                        </div>
-                      </div>
-                    <div class="cmp-info-button-card radio-card">
-                      <div class="card p-3 p-lg-4">
-                        <div class="card-header mb-0 p-0">
-                          <div class="form-check m-0">
-                            <input class="radio-input" name="beneficiaries" type="radio" id="daughter">
-                            <label for="daughter">
-                              <h3 class="big-title mb-0">Lucia Rossi</h3>
-                            </label>
-                          </div>
-                        </div>
-                        <div class="card-body p-0">
-                    
-                    
-                    
-                    
-                          <p class="card-info">Codice Fiscale <br> <span>LCARSS72H25H501Y</span></p>
-                    
-                    
-                    
-                    
-                          <div class="accordion-item">
-                            <div class="accordion-header" id="heading-collapse-benef-2">
-                              <button class="collapsed accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-benef-2" aria-expanded="false" aria-controls="collapse-benef-2">
-                                <span class="d-flex align-items-center">
-                                Mostra tutto
-                                  <svg class="icon icon-primary icon-sm">
-                                    <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
-                                  </svg>
-                                </span>
-                              </button>
-                            </div>
-                            <div id="collapse-benef-2" class="accordion-collapse collapse" role="region">
-                              <div class="accordion-body p-0">
+                                <div id="collapse-parents" class="accordion-collapse collapse" role="region">
+                                  <div class="accordion-body p-0">
                                     <div class="cmp-info-summary bg-white has-border">
                                       <div class="card">
                                     
@@ -956,10 +467,10 @@
                                     
                                         <div class="card-body p-0">
                                           <div class="single-line-info border-light">
-                                            <div class="text-paragraph-small">Nome</div>
+                                            <div class="text-paragraph-small">Codice Fiscale</div>
                                             <div class="border-light">
                                               <p class="data-text">
-                                                Lucia
+                                                GLABNC72H25H501Y
                                               </p>
                                     
                                     
@@ -967,10 +478,10 @@
                                             </div>
                                           </div>
                                           <div class="single-line-info border-light">
-                                            <div class="text-paragraph-small">Cognome</div>
+                                            <div class="text-paragraph-small">Data di nascita</div>
                                             <div class="border-light">
                                               <p class="data-text">
-                                                Rossi
+                                                02/03/1975
                                               </p>
                                     
                                     
@@ -978,29 +489,7 @@
                                             </div>
                                           </div>
                                           <div class="single-line-info border-light">
-                                            <div class="text-paragraph-small">Codice fiscale</div>
-                                            <div class="border-light">
-                                              <p class="data-text">
-                                                RSSLCU19C66H501Z
-                                              </p>
-                                    
-                                    
-                                    
-                                            </div>
-                                          </div>
-                                          <div class="single-line-info border-light">
-                                            <div class="text-paragraph-small">Data di Nascita</div>
-                                            <div class="border-light">
-                                              <p class="data-text">
-                                                26/03/2019
-                                              </p>
-                                    
-                                    
-                                    
-                                            </div>
-                                          </div>
-                                          <div class="single-line-info border-light">
-                                            <div class="text-paragraph-small">Luogo di Nascita</div>
+                                            <div class="text-paragraph-small">Luogo di nascita</div>
                                             <div class="border-light">
                                               <p class="data-text">
                                                 Roma
@@ -1032,15 +521,37 @@
                                     
                                             </div>
                                           </div>
+                                          <div class="single-line-info border-light">
+                                            <div class="text-paragraph-small">Professione</div>
+                                            <div class="border-light">
+                                              <p class="data-text">
+                                                Impiegata
+                                              </p>
+                                    
+                                    
+                                    
+                                            </div>
+                                          </div>
+                                          <div class="single-line-info border-light">
+                                            <div class="text-paragraph-small">Scolarità</div>
+                                            <div class="border-light">
+                                              <p class="data-text">
+                                                Laurea Magistrale
+                                              </p>
+                                    
+                                    
+                                    
+                                            </div>
+                                          </div>
                                         </div>
                                         <div class="card-footer p-0">
                                         </div>
                                       </div>
-                                    </div>          <div class="cmp-info-summary bg-white has-border">
+                                    </div>      <div class="cmp-info-summary bg-white has-border">
                                       <div class="card">
                                     
                                         <div class="card-header border-bottom border-light p-0 mb-0 d-flex justify-content-between d-flex justify-content-end">
-                                          <h4 class="title-large-semi-bold mb-3">Indirizzo</h4>
+                                          <h4 class="title-large-semi-bold mb-3">Indirizzi</h4>
                                           <a href="#" class="text-decoration-none"><span class="text-button-sm-semi t-primary">Modifica</span></a>
                                         </div>
                                     
@@ -1049,7 +560,7 @@
                                             <div class="text-paragraph-small">Residenza</div>
                                             <div class="border-light">
                                               <p class="data-text">
-                                                Via Roma 16, 00100 Roma, It
+                                                Via Roma 16, 00100 Roma, IT
                                               </p>
                                     
                                     
@@ -1057,10 +568,10 @@
                                             </div>
                                           </div>
                                           <div class="single-line-info border-light">
-                                            <div class="text-paragraph-small">Domicilio </div>
+                                            <div class="text-paragraph-small">Domicilio</div>
                                             <div class="border-light">
                                               <p class="data-text">
-                                                Via Roma 16, 00100 Roma, It
+                                                Piazza Risorgimento 16, 00100 Roma, It
                                               </p>
                                     
                                     
@@ -1071,222 +582,724 @@
                                         <div class="card-footer p-0">
                                         </div>
                                       </div>
-                                    </div>          <div class="cmp-info-summary bg-white has-border">
+                                    </div>      <div class="cmp-info-summary bg-white has-border">
+                                      <div class="card">
+                                    
+                                        <div class="card-header border-bottom border-light p-0 mb-0 d-flex justify-content-between d-flex justify-content-end">
+                                          <h4 class="title-large-semi-bold mb-3">Contatti</h4>
+                                          <a href="#" class="text-decoration-none"><span class="text-button-sm-semi t-primary">Modifica</span></a>
+                                        </div>
+                                    
+                                        <div class="card-body p-0">
+                                          <div class="single-line-info border-light">
+                                            <div class="text-paragraph-small">Telefono</div>
+                                            <div class="border-light">
+                                              <p class="data-text">
+                                                +39 331 1234567
+                                              </p>
+                                    
+                                    
+                                    
+                                            </div>
+                                          </div>
+                                          <div class="single-line-info border-light">
+                                            <div class="text-paragraph-small">Email</div>
+                                            <div class="border-light">
+                                              <p class="data-text">
+                                                giulia.bianchi@gmail.com
+                                              </p>
+                                    
+                                    
+                                    
+                                            </div>
+                                          </div>
+                                          <div class="single-line-info border-light">
+                                            <div class="text-paragraph-small">Recapito postale</div>
+                                            <div class="border-light">
+                                              <p class="data-text">
+                                                P.zza Risorgimento 16, 00100 Roma
+                                              </p>
+                                    
+                                    
+                                    
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="card-footer p-0">
+                                        </div>
+                                      </div>
+                                    </div>      <div class="cmp-info-summary bg-white has-border">
                                       <div class="card">
                                     
                                         <div class="card-header border-bottom border-light p-0 mb-0 d-flex justify-content-between d-flex justify-content-end">
                                           <h4 class="title-large-semi-bold mb-3">Documenti</h4>
-                                          <a href="#" class="d-none text-decoration-none"><span class="text-button-sm-semi t-primary">Modifica</span></a>
+                                          <a href="#" class="text-decoration-none"><span class="text-button-sm-semi t-primary">Modifica</span></a>
                                         </div>
                                     
                                         <div class="card-body p-0">
-                                          <div class="single-line-info border-light" id="">
-                                            <div class="text-paragraph-small">Certificato disabilità</div>
-                                            <p class="fw-semibold data-text description-alert d-flex align-items-center border-light">
-                                              <span class="d-flex align-items-center">
-                                                <svg class="icon icon-sm icon-warning" aria-hidden="true">
-                                                  <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-error"></use>
-                                                </svg>
-                                                Documento mancante
-                                              </span>
-                                            </p>
+                                          <div class="single-line-info border-light">
+                                            <div class="text-paragraph-small">Carta d&#x27;identità</div>
+                                            <div class="border-light">
+                                              <p class="data-text">
+                                                giulia_bianchi_carta_di_identità_fronte_retro.pdf
+                                              </p>
+                                    
+                                    
+                                    
+                                              <p class="fw-semibold pb-2 pt-2 data-text description-success d-flex align-items-center">
+                                                <span class="d-flex align-items-center">
+                                                  <svg class="icon icon-sm icon-success" aria-hidden="true">
+                                                    <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-check-circle"></use>
+                                                  </svg>
+                                                  Documento inserito con successo
+                                                </span>
+                                              </p>
+                                            </div>
                                           </div>
-                                          <div class="single-line-info border-light" id="">
-                                            <div class="text-paragraph-small">Certificato dieta patologica</div>
-                                            <p class="fw-semibold data-text description-alert d-flex align-items-center border-light">
-                                              <span class="d-flex align-items-center">
-                                                <svg class="icon icon-sm icon-warning" aria-hidden="true">
-                                                  <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-error"></use>
-                                                </svg>
-                                                Documento mancante
-                                              </span>
-                                            </p>
+                                          <div class="single-line-info border-light">
+                                            <div class="text-paragraph-small">Modulo condizione lavorativa</div>
+                                            <div class="border-light">
+                                              <p class="data-text">
+                                                giulia_bianchi_modulo.pdf
+                                              </p>
+                                    
+                                    
+                                    
+                                              <p class="fw-semibold pb-2 pt-2 data-text description-success d-flex align-items-center">
+                                                <span class="d-flex align-items-center">
+                                                  <svg class="icon icon-sm icon-success" aria-hidden="true">
+                                                    <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-check-circle"></use>
+                                                  </svg>
+                                                  Documento inserito con successo
+                                                </span>
+                                              </p>
+                                            </div>
                                           </div>
                                         </div>
                                         <div class="card-footer p-0">
-                                          <button type="button" data-bs-toggle="modal" data-bs-target="#modal-documents" class="btn btn-outline-primary w-100 mt-3">
-                                          
-                                            <span class="rounded-icon">
-                                              <svg class="icon icon-primary icon-sm" aria-hidden="true">
-                                                <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-pencil"></use>
-                                              </svg>
-                                            </span>
-                                          
-                                          
-                                           <span class="">Aggiungi</span>
-                                          </button>
                                         </div>
                                       </div>
-                                    </div>
+                                    </div>    </div>
+                                </div>
                               </div>
+                        
+                        
+                        
+                        
                             </div>
                           </div>
-                    
-                    
-                    
-                    
-                    
-                        </div>
-                      </div>
-                    </div>
-                    <button type="button" class="btn plus-text mt-20 p-0">
-                    
-                      <span class="rounded-icon">
-                        <svg class="icon icon-primary icon-sm" aria-hidden="true">
-                          <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-plus-circle"></use>
-                        </svg>
-                      </span>
-                    
-                    
-                     <span class="">Aggiungi beneficiario</span>
-                    </button>
-        </div>
+                        </div>    </div>
       </div>
     </div>
+                </section>
     
-    
-    <div class="cmp-card">
+                <section class="it-page-section" id="beneficiary-info">
+    <div class="cmp-card mb-40">
       <div class="card has-bkg-grey shadow-sm">
         <div class="card-header border-0 p-0 mb-lg-30">
           <div class="d-flex">
-                <h2 class="title-xxlarge mb-1" id="isee-info">ISEE</h2>
+                <h2 class="title-xxlarge mb-1">Beneficiario</h2>
           </div>
-          <p class="subtitle-small mb-0">Informazioni sul valore dell’ISEE del tuo nucleo familiare basato sulla tua
-              ultima
-              dichiarazione</p>
+          <p class="subtitle-small mb-0">Informazioni sulla persona che utilizzerà il servizio</p>
     
     
     
     
         </div>
         <div class="card-body p-0">
-                    <div class="cmp-info-button-card">
-                      <div class="card p-3 p-lg-4">
-                        <div class="card-body p-0">
-                          <h3 class="big-title mb-0">ISEE: 18.000,00€</h3>
-                    
-                    
-                    
-                    
-                          <p class="card-info">Scadenza ISEE <br>
-                              <span>01/10/2019</span></p>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                          <div class="accordion-item">
-                            <div class="accordion-header">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                                <span class="d-flex align-items-center">
-                                  Mostra tutto
-                                  <svg class="icon icon-primary icon-sm">
-                                    <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
-                                  </svg>
-                                </span>
-                              </button>
+          
+                        <div class="cmp-info-button-card radio-card">
+                          <div class="card p-3 p-lg-4">
+                            <div class="card-header mb-0 p-0">
+                              <div class="form-check m-0">
+                                <input class="radio-input" name="beneficiaries" type="radio" id="son">
+                                <label for="son">
+                                  <h3 class="big-title mb-0">Francesco Rossi</h3>
+                                </label>
+                              </div>
                             </div>
-                            <div id="collapse2" class="accordion-collapse collapse rounded" role="region">
-                              <div class="accordion-body p-0">
-                                <div class="cmp-info-summary bg-white border border-light p-3 p-lg-4">
-                                  <div class="card">
-                                
-                                    <div class="card-header border-bottom border-light p-0 mb-0 d-flex justify-content-between d-flex justify-content-end">
-                                      <h4 class="title-large-semi-bold mb-3">Dati ISEE</h4>
-                                      <a href="#" class="text-decoration-none"><span class="text-button-sm-semi t-primary">Modifica</span></a>
-                                    </div>
-                                
-                                    <div class="card-body p-0">
-                                      <div class="single-line-info border-light">
-                                        <div class="text-paragraph-small">Valore ISEE</div>
-                                        <div class="border-light">
-                                          <p class="data-text">
-                                            18.000,00€
-                                          </p>
-                                
-                                
-                                
+                            <div class="card-body p-0">
+                        
+                        
+                        
+                        
+                              <p class="card-info">Codice Fiscale <br> <span>FRARSS72H25H501Y</span></p>
+                        
+                        
+                        
+                        
+                              <div class="accordion-item">
+                                <div class="accordion-header" id="heading-collapse-benef-1">
+                                  <button class="collapsed accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-benef-1" aria-expanded="false" aria-controls="collapse-benef-1">
+                                    <span class="d-flex align-items-center">
+                                    Mostra tutto
+                                      <svg class="icon icon-primary icon-sm">
+                                        <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
+                                      </svg>
+                                    </span>
+                                  </button>
+                                </div>
+                                <div id="collapse-benef-1" class="accordion-collapse collapse show" role="region">
+                                  <div class="accordion-body p-0">
+                                        <div class="cmp-info-summary bg-white has-border">
+                                          <div class="card">
+                                        
+                                            <div class="card-header border-bottom border-light p-0 mb-0 d-flex justify-content-between d-flex justify-content-end">
+                                              <h4 class="title-large-semi-bold mb-3">Anagrafica</h4>
+                                              <a href="#" class="text-decoration-none"><span class="text-button-sm-semi t-primary">Modifica</span></a>
+                                            </div>
+                                        
+                                            <div class="card-body p-0">
+                                              <div class="single-line-info border-light">
+                                                <div class="text-paragraph-small">Nome</div>
+                                                <div class="border-light">
+                                                  <p class="data-text">
+                                                    Francesco
+                                                  </p>
+                                        
+                                        
+                                        
+                                                </div>
+                                              </div>
+                                              <div class="single-line-info border-light">
+                                                <div class="text-paragraph-small">Cognome</div>
+                                                <div class="border-light">
+                                                  <p class="data-text">
+                                                    Rossi
+                                                  </p>
+                                        
+                                        
+                                        
+                                                </div>
+                                              </div>
+                                              <div class="single-line-info border-light">
+                                                <div class="text-paragraph-small">Codice fiscale</div>
+                                                <div class="border-light">
+                                                  <p class="data-text">
+                                                    FRARSS72H25H501Y
+                                                  </p>
+                                        
+                                        
+                                        
+                                                </div>
+                                              </div>
+                                              <div class="single-line-info border-light">
+                                                <div class="text-paragraph-small">Data di Nascita</div>
+                                                <div class="border-light">
+                                                  <p class="data-text">
+                                                    26/03/2018
+                                                  </p>
+                                        
+                                        
+                                        
+                                                </div>
+                                              </div>
+                                              <div class="single-line-info border-light">
+                                                <div class="text-paragraph-small">Luogo di Nascita</div>
+                                                <div class="border-light">
+                                                  <p class="data-text">
+                                                    Roma
+                                                  </p>
+                                        
+                                        
+                                        
+                                                </div>
+                                              </div>
+                                              <div class="single-line-info border-light">
+                                                <div class="text-paragraph-small">Sesso</div>
+                                                <div class="border-light">
+                                                  <p class="data-text">
+                                                    Maschio
+                                                  </p>
+                                        
+                                        
+                                        
+                                                </div>
+                                              </div>
+                                              <div class="single-line-info border-light">
+                                                <div class="text-paragraph-small">Nazionalità</div>
+                                                <div class="border-light">
+                                                  <p class="data-text">
+                                                    Italiana
+                                                  </p>
+                                        
+                                        
+                                        
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="card-footer p-0">
+                                            </div>
+                                          </div>
+                                        </div>          <div class="cmp-info-summary bg-white has-border">
+                                          <div class="card">
+                                        
+                                            <div class="card-header border-bottom border-light p-0 mb-0 d-flex justify-content-between d-flex justify-content-end">
+                                              <h4 class="title-large-semi-bold mb-3">Indirizzo</h4>
+                                              <a href="#" class="text-decoration-none"><span class="text-button-sm-semi t-primary">Modifica</span></a>
+                                            </div>
+                                        
+                                            <div class="card-body p-0">
+                                              <div class="single-line-info border-light">
+                                                <div class="text-paragraph-small">Residenza</div>
+                                                <div class="border-light">
+                                                  <p class="data-text">
+                                                    Via Roma 16, 00100 Roma, It
+                                                  </p>
+                                        
+                                        
+                                        
+                                                </div>
+                                              </div>
+                                              <div class="single-line-info border-light">
+                                                <div class="text-paragraph-small">Domicilio </div>
+                                                <div class="border-light">
+                                                  <p class="data-text">
+                                                    Via Roma 16, 00100 Roma, It
+                                                  </p>
+                                        
+                                        
+                                        
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="card-footer p-0">
+                                            </div>
+                                          </div>
+                                        </div>          <div class="cmp-info-summary bg-white has-border">
+                                          <div class="card">
+                                        
+                                            <div class="card-header border-bottom border-light p-0 mb-0 d-flex justify-content-between d-flex justify-content-end">
+                                              <h4 class="title-large-semi-bold mb-3">Documenti</h4>
+                                              <a href="#" class="d-none text-decoration-none"><span class="text-button-sm-semi t-primary">Modifica</span></a>
+                                            </div>
+                                        
+                                            <div class="card-body p-0">
+                                              <div class="single-line-info border-light" id="beneficiary-warning">
+                                                <div class="text-paragraph-small">Certificato disabilità</div>
+                                                <p class="fw-semibold data-text description-alert d-flex align-items-center border-light">
+                                                  <span class="d-flex align-items-center">
+                                                    <svg class="icon icon-sm icon-warning" aria-hidden="true">
+                                                      <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-error"></use>
+                                                    </svg>
+                                                    Documento mancante
+                                                  </span>
+                                                </p>
+                                              </div>
+                                              <div class="single-line-info border-light" id="">
+                                                <div class="text-paragraph-small">Certificato dieta patologica</div>
+                                                <p class="fw-semibold data-text description-alert d-flex align-items-center border-light">
+                                                  <span class="d-flex align-items-center">
+                                                    <svg class="icon icon-sm icon-warning" aria-hidden="true">
+                                                      <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-error"></use>
+                                                    </svg>
+                                                    Documento mancante
+                                                  </span>
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <div class="card-footer p-0">
+                                              <button type="button" data-bs-toggle="modal" data-bs-target="#modal-documents" class="btn btn-outline-primary w-100 mt-3">
+                                              
+                                                <span class="rounded-icon">
+                                                  <svg class="icon icon-primary icon-sm" aria-hidden="true">
+                                                    <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-pencil"></use>
+                                                  </svg>
+                                                </span>
+                                              
+                                              
+                                               <span class="">Aggiungi</span>
+                                              </button>
+                                            </div>
+                                          </div>
                                         </div>
-                                      </div>
-                                      <div class="single-line-info border-light">
-                                        <div class="text-paragraph-small">Scadenza ISEE</div>
-                                        <div class="border-light">
-                                          <p class="data-text">
-                                            06/10/2023
-                                          </p>
-                                
-                                
-                                
-                                        </div>
-                                      </div>
-                                      <div class="single-line-info border-light">
-                                        <div class="text-paragraph-small">Anno protocollo</div>
-                                        <div class="border-light">
-                                          <p class="data-text">
-                                            2022
-                                          </p>
-                                
-                                
-                                
-                                        </div>
-                                      </div>
-                                      <div class="single-line-info border-light">
-                                        <div class="text-paragraph-small">Numero protocollo</div>
-                                        <div class="border-light">
-                                          <p class="data-text">
-                                            12345678
-                                          </p>
-                                
-                                
-                                
-                                        </div>
-                                      </div>
-                                      <div class="single-line-info border-light">
-                                        <div class="text-paragraph-small">Codice filiale protocollo</div>
-                                        <div class="border-light">
-                                          <p class="data-text">
-                                            12345678
-                                          </p>
-                                
-                                
-                                
-                                        </div>
-                                      </div>
-                                      <div class="single-line-info border-light">
-                                        <div class="text-paragraph-small">Certificato ISEE</div>
-                                        <div class="border-light">
-                                          <p class="data-text">
-                                            documento_ISEE-2019.pdf
-                                          </p>
-                                
-                                
-                                
-                                          <p class="fw-semibold pb-2 pt-2 data-text description-success d-flex align-items-center">
-                                            <span class="d-flex align-items-center">
-                                              <svg class="icon icon-sm icon-success" aria-hidden="true">
-                                                <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-check-circle"></use>
-                                              </svg>
-                                              Documento inserito con successo
-                                            </span>
-                                          </p>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="card-footer p-0">
-                                    </div>
                                   </div>
-                                </div>    </div>
+                                </div>
+                              </div>
+                        
+                        
+                        
+                        
+                        
                             </div>
                           </div>
-                    
                         </div>
-                      </div>
-                    </div>    </div>
+                        <div class="cmp-info-button-card radio-card">
+                          <div class="card p-3 p-lg-4">
+                            <div class="card-header mb-0 p-0">
+                              <div class="form-check m-0">
+                                <input class="radio-input" name="beneficiaries" type="radio" id="daughter">
+                                <label for="daughter">
+                                  <h3 class="big-title mb-0">Lucia Rossi</h3>
+                                </label>
+                              </div>
+                            </div>
+                            <div class="card-body p-0">
+                        
+                        
+                        
+                        
+                              <p class="card-info">Codice Fiscale <br> <span>LCARSS72H25H501Y</span></p>
+                        
+                        
+                        
+                        
+                              <div class="accordion-item">
+                                <div class="accordion-header" id="heading-collapse-benef-2">
+                                  <button class="collapsed accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-benef-2" aria-expanded="false" aria-controls="collapse-benef-2">
+                                    <span class="d-flex align-items-center">
+                                    Mostra tutto
+                                      <svg class="icon icon-primary icon-sm">
+                                        <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
+                                      </svg>
+                                    </span>
+                                  </button>
+                                </div>
+                                <div id="collapse-benef-2" class="accordion-collapse collapse" role="region">
+                                  <div class="accordion-body p-0">
+                                        <div class="cmp-info-summary bg-white has-border">
+                                          <div class="card">
+                                        
+                                            <div class="card-header border-bottom border-light p-0 mb-0 d-flex justify-content-between d-flex justify-content-end">
+                                              <h4 class="title-large-semi-bold mb-3">Anagrafica</h4>
+                                              <a href="#" class="text-decoration-none"><span class="text-button-sm-semi t-primary">Modifica</span></a>
+                                            </div>
+                                        
+                                            <div class="card-body p-0">
+                                              <div class="single-line-info border-light">
+                                                <div class="text-paragraph-small">Nome</div>
+                                                <div class="border-light">
+                                                  <p class="data-text">
+                                                    Lucia
+                                                  </p>
+                                        
+                                        
+                                        
+                                                </div>
+                                              </div>
+                                              <div class="single-line-info border-light">
+                                                <div class="text-paragraph-small">Cognome</div>
+                                                <div class="border-light">
+                                                  <p class="data-text">
+                                                    Rossi
+                                                  </p>
+                                        
+                                        
+                                        
+                                                </div>
+                                              </div>
+                                              <div class="single-line-info border-light">
+                                                <div class="text-paragraph-small">Codice fiscale</div>
+                                                <div class="border-light">
+                                                  <p class="data-text">
+                                                    RSSLCU19C66H501Z
+                                                  </p>
+                                        
+                                        
+                                        
+                                                </div>
+                                              </div>
+                                              <div class="single-line-info border-light">
+                                                <div class="text-paragraph-small">Data di Nascita</div>
+                                                <div class="border-light">
+                                                  <p class="data-text">
+                                                    26/03/2019
+                                                  </p>
+                                        
+                                        
+                                        
+                                                </div>
+                                              </div>
+                                              <div class="single-line-info border-light">
+                                                <div class="text-paragraph-small">Luogo di Nascita</div>
+                                                <div class="border-light">
+                                                  <p class="data-text">
+                                                    Roma
+                                                  </p>
+                                        
+                                        
+                                        
+                                                </div>
+                                              </div>
+                                              <div class="single-line-info border-light">
+                                                <div class="text-paragraph-small">Sesso</div>
+                                                <div class="border-light">
+                                                  <p class="data-text">
+                                                    Femmina
+                                                  </p>
+                                        
+                                        
+                                        
+                                                </div>
+                                              </div>
+                                              <div class="single-line-info border-light">
+                                                <div class="text-paragraph-small">Nazionalità</div>
+                                                <div class="border-light">
+                                                  <p class="data-text">
+                                                    Italiana
+                                                  </p>
+                                        
+                                        
+                                        
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="card-footer p-0">
+                                            </div>
+                                          </div>
+                                        </div>          <div class="cmp-info-summary bg-white has-border">
+                                          <div class="card">
+                                        
+                                            <div class="card-header border-bottom border-light p-0 mb-0 d-flex justify-content-between d-flex justify-content-end">
+                                              <h4 class="title-large-semi-bold mb-3">Indirizzo</h4>
+                                              <a href="#" class="text-decoration-none"><span class="text-button-sm-semi t-primary">Modifica</span></a>
+                                            </div>
+                                        
+                                            <div class="card-body p-0">
+                                              <div class="single-line-info border-light">
+                                                <div class="text-paragraph-small">Residenza</div>
+                                                <div class="border-light">
+                                                  <p class="data-text">
+                                                    Via Roma 16, 00100 Roma, It
+                                                  </p>
+                                        
+                                        
+                                        
+                                                </div>
+                                              </div>
+                                              <div class="single-line-info border-light">
+                                                <div class="text-paragraph-small">Domicilio </div>
+                                                <div class="border-light">
+                                                  <p class="data-text">
+                                                    Via Roma 16, 00100 Roma, It
+                                                  </p>
+                                        
+                                        
+                                        
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="card-footer p-0">
+                                            </div>
+                                          </div>
+                                        </div>          <div class="cmp-info-summary bg-white has-border">
+                                          <div class="card">
+                                        
+                                            <div class="card-header border-bottom border-light p-0 mb-0 d-flex justify-content-between d-flex justify-content-end">
+                                              <h4 class="title-large-semi-bold mb-3">Documenti</h4>
+                                              <a href="#" class="d-none text-decoration-none"><span class="text-button-sm-semi t-primary">Modifica</span></a>
+                                            </div>
+                                        
+                                            <div class="card-body p-0">
+                                              <div class="single-line-info border-light" id="">
+                                                <div class="text-paragraph-small">Certificato disabilità</div>
+                                                <p class="fw-semibold data-text description-alert d-flex align-items-center border-light">
+                                                  <span class="d-flex align-items-center">
+                                                    <svg class="icon icon-sm icon-warning" aria-hidden="true">
+                                                      <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-error"></use>
+                                                    </svg>
+                                                    Documento mancante
+                                                  </span>
+                                                </p>
+                                              </div>
+                                              <div class="single-line-info border-light" id="">
+                                                <div class="text-paragraph-small">Certificato dieta patologica</div>
+                                                <p class="fw-semibold data-text description-alert d-flex align-items-center border-light">
+                                                  <span class="d-flex align-items-center">
+                                                    <svg class="icon icon-sm icon-warning" aria-hidden="true">
+                                                      <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-error"></use>
+                                                    </svg>
+                                                    Documento mancante
+                                                  </span>
+                                                </p>
+                                              </div>
+                                            </div>
+                                            <div class="card-footer p-0">
+                                              <button type="button" data-bs-toggle="modal" data-bs-target="#modal-documents" class="btn btn-outline-primary w-100 mt-3">
+                                              
+                                                <span class="rounded-icon">
+                                                  <svg class="icon icon-primary icon-sm" aria-hidden="true">
+                                                    <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-pencil"></use>
+                                                  </svg>
+                                                </span>
+                                              
+                                              
+                                               <span class="">Aggiungi</span>
+                                              </button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                  </div>
+                                </div>
+                              </div>
+                        
+                        
+                        
+                        
+                        
+                            </div>
+                          </div>
+                        </div>
+                        <button type="button" class="btn plus-text mt-20 p-0">
+                        
+                          <span class="rounded-icon">
+                            <svg class="icon icon-primary icon-sm" aria-hidden="true">
+                              <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-plus-circle"></use>
+                            </svg>
+                          </span>
+                        
+                        
+                         <span class="">Aggiungi beneficiario</span>
+                        </button>
+        </div>
       </div>
     </div>
+                </section>
     
+                <section class="it-page-section" id="isee-info">
+    <div class="cmp-card">
+      <div class="card has-bkg-grey shadow-sm">
+        <div class="card-header border-0 p-0 mb-lg-30">
+          <div class="d-flex">
+                <h2 class="title-xxlarge mb-1">ISEE</h2>
+          </div>
+          <p class="subtitle-small mb-0">Informazioni sul valore dell’ISEE del tuo nucleo familiare basato sulla tua
+                  ultima
+                  dichiarazione</p>
+    
+    
+    
+    
+        </div>
+        <div class="card-body p-0">
+                        <div class="cmp-info-button-card">
+                          <div class="card p-3 p-lg-4">
+                            <div class="card-body p-0">
+                              <h3 class="big-title mb-0">ISEE: 18.000,00€</h3>
+                        
+                        
+                        
+                        
+                              <p class="card-info">Scadenza ISEE <br>
+                                      <span>01/10/2019</span></p>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                              <div class="accordion-item">
+                                <div class="accordion-header">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                    <span class="d-flex align-items-center">
+                                      Mostra tutto
+                                      <svg class="icon icon-primary icon-sm">
+                                        <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
+                                      </svg>
+                                    </span>
+                                  </button>
+                                </div>
+                                <div id="collapse2" class="accordion-collapse collapse rounded" role="region">
+                                  <div class="accordion-body p-0">
+                                    <div class="cmp-info-summary bg-white border border-light p-3 p-lg-4">
+                                      <div class="card">
+                                    
+                                        <div class="card-header border-bottom border-light p-0 mb-0 d-flex justify-content-between d-flex justify-content-end">
+                                          <h4 class="title-large-semi-bold mb-3">Dati ISEE</h4>
+                                          <a href="#" class="text-decoration-none"><span class="text-button-sm-semi t-primary">Modifica</span></a>
+                                        </div>
+                                    
+                                        <div class="card-body p-0">
+                                          <div class="single-line-info border-light">
+                                            <div class="text-paragraph-small">Valore ISEE</div>
+                                            <div class="border-light">
+                                              <p class="data-text">
+                                                18.000,00€
+                                              </p>
+                                    
+                                    
+                                    
+                                            </div>
+                                          </div>
+                                          <div class="single-line-info border-light">
+                                            <div class="text-paragraph-small">Scadenza ISEE</div>
+                                            <div class="border-light">
+                                              <p class="data-text">
+                                                06/10/2023
+                                              </p>
+                                    
+                                    
+                                    
+                                            </div>
+                                          </div>
+                                          <div class="single-line-info border-light">
+                                            <div class="text-paragraph-small">Anno protocollo</div>
+                                            <div class="border-light">
+                                              <p class="data-text">
+                                                2022
+                                              </p>
+                                    
+                                    
+                                    
+                                            </div>
+                                          </div>
+                                          <div class="single-line-info border-light">
+                                            <div class="text-paragraph-small">Numero protocollo</div>
+                                            <div class="border-light">
+                                              <p class="data-text">
+                                                12345678
+                                              </p>
+                                    
+                                    
+                                    
+                                            </div>
+                                          </div>
+                                          <div class="single-line-info border-light">
+                                            <div class="text-paragraph-small">Codice filiale protocollo</div>
+                                            <div class="border-light">
+                                              <p class="data-text">
+                                                12345678
+                                              </p>
+                                    
+                                    
+                                    
+                                            </div>
+                                          </div>
+                                          <div class="single-line-info border-light">
+                                            <div class="text-paragraph-small">Certificato ISEE</div>
+                                            <div class="border-light">
+                                              <p class="data-text">
+                                                documento_ISEE-2019.pdf
+                                              </p>
+                                    
+                                    
+                                    
+                                              <p class="fw-semibold pb-2 pt-2 data-text description-success d-flex align-items-center">
+                                                <span class="d-flex align-items-center">
+                                                  <svg class="icon icon-sm icon-success" aria-hidden="true">
+                                                    <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-check-circle"></use>
+                                                  </svg>
+                                                  Documento inserito con successo
+                                                </span>
+                                              </p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="card-footer p-0">
+                                        </div>
+                                      </div>
+                                    </div>    </div>
+                                </div>
+                              </div>
+                        
+                            </div>
+                          </div>
+                        </div>    </div>
+      </div>
+    </div>
+                </section>
+              </div>
               <div class="cmp-nav-steps">
                 <nav class="steppers-nav">
                   <button type="button" class="btn btn-sm steppers-btn-prev p-0">

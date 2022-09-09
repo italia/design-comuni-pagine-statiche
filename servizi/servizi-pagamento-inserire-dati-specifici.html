@@ -348,64 +348,73 @@
     
         <div class="row">
           <div class="col-12 col-lg-3 d-lg-block mb-4 d-none">
-            <aside class="cmp-navscroll sticky-top" aria-labelledby="accordion-title-one">
-              <div class="inline-menu">
-                <div class="link-list-wrapper">
-                  <ul>
-                    <li>
-                      <a class="list-item large medium right-icon p-0 text-decoration-none" href="#collapse-one" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapse-one" data-focus-mouse="true">
-                        <span class="list-item-title-icon-wrapper pb-10 px-3">
-                          <span id="accordion-title-one" class="title-xsmall-semi-bold">INFORMAZIONI RICHIESTE</span>
-                          <svg class="icon icon-xs right">
-                            <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
-                          </svg>
-                        </span>
-                        <!-- Progress Bar -->
-                        <div class="progress bg-light">
-                          <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="cmp-navscroll sticky-top" aria-labelledby="accordion-title-one">
+              <nav class="navbar it-navscroll-wrapper navbar-expand-lg" data-bs-navscroll>
+                <div class="navbar-custom" id="navbarNavProgress">
+                  <div class="menu-wrapper">
+                    <div class="link-list-wrapper">
+                      <div class="accordion">
+                        <div class="accordion-item">
+                          <span class="accordion-header" id="accordion-title-one">
+                            <button class="accordion-button pb-10 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-one" aria-expanded="true" aria-controls="collapse-one">
+                              INFORMAZIONI RICHIESTE
+                              <svg class="icon icon-xs right">
+                                <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
+                              </svg>
+                            </button>
+                          </span>
+                          <div class="progress">
+                            <div class="progress-bar it-navscroll-progressbar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <div id="collapse-one" class="accordion-collapse collapse show" role="region" aria-labelledby="accordion-title-one">
+                            <div class="accordion-body">
+                              <ul class="link-list" data-element="page-index">
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#school-choice">
+                                    <span class="title-medium">Scegli la scuola</span>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#rate-choice">
+                                    <span class="title-medium">Tariffa esonero</span>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#outings-choice">
+                                    <span class="title-medium">Tariffa riduzione</span>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#attendance">
+                                    <span class="title-medium">Frequenza</span>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#different-diet">
+                                    <span class="title-medium">Dieta diversificata</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
                         </div>
-                      </a>
-                      <ul class="link-sublist collapse show" id="collapse-one" data-element="page-index">
-                        <li>
-                          <a class="list-item" href="#school-choice">
-                            <span class="title-medium">Scegli la scuola</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a class="list-item" href="#rate-choice">
-                            <span class="title-medium">Tariffa esonero</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a class="list-item" href="#outings-choice">
-                            <span class="title-medium">Tariffa riduzione</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a class="list-item" href="#attendance">
-                            <span class="title-medium">Frequenza</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a class="list-item" href="#different-diet">
-                            <span class="title-medium">Dieta diversificata</span>
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </aside>      </div>
+              </nav>
+            </div>      </div>
           <div class="col-12 col-lg-8 offset-lg-1">
             <div class="steppers-content" aria-live="polite">
-           
+              <div class="it-page-sections-container">
                 <p class="text-paragraph-small mb-40">I campi contraddistinti dal simbolo asterisco sono obbligatori</p>
+    
+                <section class="it-page-section" id="school-choice">
     <div class="cmp-card mb-40">
       <div class="card has-bkg-grey shadow-sm p-big p-4">
         <div class="card-header border-0 p-0 mb-lg-30">
           <div class="d-flex">
-                <h2 class="title-xxlarge mb-0 icon-required" id="school-choice">Scegli la scuola</h2>
+                <h2 class="title-xxlarge mb-0 icon-required">Scegli la scuola</h2>
           </div>
           <p class="subtitle-small mb-0">Scegli l’istituto a cui vuoi iscrivere il minore</p>
     
@@ -414,25 +423,27 @@
     
         </div>
         <div class="card-body p-0">
-                      <div class="select-wrapper p-big p-4 select-partials">
-                        <label for="select-school" class="visually-hidden">Scegli la scuola</label>
-                        <select id="select-school" class="">
-                          <option selected="selected" value="">Seleziona un&#x27;opzione</option>
-                          <option value="Istituto Narcisi">Istituto Narcisi</option>
-                          <option value="Istituto Narcisi">Istituto Narcisi</option>
-                          <option value="Istituto Narcisi">Istituto Narcisi</option>
-                          <option value="Istituto Narcisi">Istituto Narcisi</option>
-                        </select>
-                      </div>
+                        <div class="select-wrapper p-big p-4 select-partials">
+                          <label for="select-school" class="visually-hidden">Scegli la scuola</label>
+                          <select id="select-school" class="">
+                            <option selected="selected" value="">Seleziona un&#x27;opzione</option>
+                            <option value="Istituto Narcisi">Istituto Narcisi</option>
+                            <option value="Istituto Narcisi">Istituto Narcisi</option>
+                            <option value="Istituto Narcisi">Istituto Narcisi</option>
+                            <option value="Istituto Narcisi">Istituto Narcisi</option>
+                          </select>
+                        </div>
         </div>
       </div>
     </div>
+                </section>
     
+                <section class="it-page-section" id="rate-choice">
     <div class="cmp-card mb-40">
       <div class="card has-bkg-grey shadow-sm p-big">
         <div class="card-header border-0 p-0 mb-lg-30 m-0">
           <div class="d-flex">
-                <h2 class="title-xxlarge mb-1 icon-required" id="rate-choice">Tariffa esonero</h2>
+                <h2 class="title-xxlarge mb-1 icon-required">Tariffa esonero</h2>
           </div>
           <p class="subtitle-small mb-0 mb-4">Indica la tariffa di esonero a cui ha diritto il beneficiario</p>
     
@@ -441,43 +452,45 @@
     
         </div>
         <div class="card-body p-0">
-                      <div class="cmp-card-radio">
-                        <div class="card card-teaser">
-                          <div class="card-body">
-                            <div class="form-check m-0">
-                                  <div class="radio-body border-bottom border-light">
-                                    <input name="rate" type="radio" id="rate-1">
-                                    <label for="rate-1">Nessuna</label>
-                                  </div>
-                                  <div class="radio-body border-bottom border-light">
-                                    <input name="rate" type="radio" id="rate-2">
-                                    <label for="rate-2">25%</label>
-                                  </div>
-                                  <div class="radio-body border-bottom border-light">
-                                    <input name="rate" type="radio" id="rate-3">
-                                    <label for="rate-3">50%</label>
-                                  </div>
-                                  <div class="radio-body border-bottom border-light">
-                                    <input name="rate" type="radio" id="rate-4">
-                                    <label for="rate-4">75%</label>
-                                  </div>
-                                  <div class="radio-body">
-                                    <input name="rate" type="radio" id="rate-5">
-                                    <label for="rate-5">100%</label>
-                                  </div>
+                        <div class="cmp-card-radio">
+                          <div class="card card-teaser">
+                            <div class="card-body">
+                              <div class="form-check m-0">
+                                    <div class="radio-body border-bottom border-light">
+                                      <input name="rate" type="radio" id="rate-1">
+                                      <label for="rate-1">Nessuna</label>
+                                    </div>
+                                    <div class="radio-body border-bottom border-light">
+                                      <input name="rate" type="radio" id="rate-2">
+                                      <label for="rate-2">25%</label>
+                                    </div>
+                                    <div class="radio-body border-bottom border-light">
+                                      <input name="rate" type="radio" id="rate-3">
+                                      <label for="rate-3">50%</label>
+                                    </div>
+                                    <div class="radio-body border-bottom border-light">
+                                      <input name="rate" type="radio" id="rate-4">
+                                      <label for="rate-4">75%</label>
+                                    </div>
+                                    <div class="radio-body">
+                                      <input name="rate" type="radio" id="rate-5">
+                                      <label for="rate-5">100%</label>
+                                    </div>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
         </div>
       </div>
     </div>
+                </section>
     
+                <section class="it-page-section" id="outings-choice">
     <div class="cmp-card mb-40">
       <div class="card has-bkg-grey shadow-sm p-big">
         <div class="card-header border-0 p-0 mb-lg-30 m-0">
           <div class="d-flex">
-                <h2 class="title-xxlarge mb-1 icon-required" id="outings-choice">Tariffa riduzione</h2>
+                <h2 class="title-xxlarge mb-1 icon-required">Tariffa riduzione</h2>
           </div>
           <p class="subtitle-small mb-0 mb-4">Indica la tariffa di riduzione a cui ha diritto il beneficiario</p>
     
@@ -486,43 +499,45 @@
     
         </div>
         <div class="card-body p-0">
-                      <div class="cmp-card-radio">
-                        <div class="card card-teaser">
-                          <div class="card-body">
-                            <div class="form-check m-0">
-                                  <div class="radio-body border-bottom border-light">
-                                    <input name="reduction" type="radio" id="reduction-1">
-                                    <label for="reduction-1">Nessuna</label>
-                                  </div>
-                                  <div class="radio-body border-bottom border-light">
-                                    <input name="reduction" type="radio" id="reduction-2">
-                                    <label for="reduction-2">10%</label>
-                                  </div>
-                                  <div class="radio-body border-bottom border-light">
-                                    <input name="reduction" type="radio" id="reduction-3">
-                                    <label for="reduction-3">20%</label>
-                                  </div>
-                                  <div class="radio-body border-bottom border-light">
-                                    <input name="reduction" type="radio" id="reduction-4">
-                                    <label for="reduction-4">30%</label>
-                                  </div>
-                                  <div class="radio-body">
-                                    <input name="reduction" type="radio" id="reduction-5">
-                                    <label for="reduction-5">40%</label>
-                                  </div>
+                        <div class="cmp-card-radio">
+                          <div class="card card-teaser">
+                            <div class="card-body">
+                              <div class="form-check m-0">
+                                    <div class="radio-body border-bottom border-light">
+                                      <input name="reduction" type="radio" id="reduction-1">
+                                      <label for="reduction-1">Nessuna</label>
+                                    </div>
+                                    <div class="radio-body border-bottom border-light">
+                                      <input name="reduction" type="radio" id="reduction-2">
+                                      <label for="reduction-2">10%</label>
+                                    </div>
+                                    <div class="radio-body border-bottom border-light">
+                                      <input name="reduction" type="radio" id="reduction-3">
+                                      <label for="reduction-3">20%</label>
+                                    </div>
+                                    <div class="radio-body border-bottom border-light">
+                                      <input name="reduction" type="radio" id="reduction-4">
+                                      <label for="reduction-4">30%</label>
+                                    </div>
+                                    <div class="radio-body">
+                                      <input name="reduction" type="radio" id="reduction-5">
+                                      <label for="reduction-5">40%</label>
+                                    </div>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
         </div>
       </div>
     </div>
-       
+                </section>
+    
+                <section class="it-page-section" id="attendance">
     <div class="cmp-card mb-40">
       <div class="card has-bkg-grey shadow-sm p-big">
         <div class="card-header border-0 p-0 mb-lg-30 m-0">
           <div class="d-flex">
-                <h2 class="title-xxlarge mb-1 icon-required" id="attendance">Frequenza</h2>
+                <h2 class="title-xxlarge mb-1 icon-required">Frequenza</h2>
           </div>
           <p class="subtitle-small mb-0 mb-4">Indica i giorni di frequenza del servizio</p>
     
@@ -531,35 +546,37 @@
     
         </div>
         <div class="card-body p-0">
-                      <div class="cmp-card-radio">
-                        <div class="card card-teaser">
-                          <div class="card-body">
-                            <div class="form-check m-0">
-                                    <div class="radio-body border-bottom border-light">
-                                      <input name="frequency" type="radio" id="frequency-1">
-                                      <label for="frequency-1">1 giorno</label>
-                                    </div>
-                                    <div class="radio-body border-bottom border-light">
-                                      <input name="frequency" type="radio" id="frequency-2">
-                                      <label for="frequency-2">3 giorni</label>
-                                    </div>
-                                    <div class="radio-body">
-                                      <input name="frequency" type="radio" id="frequency-3">
-                                      <label for="frequency-3">5 giorni</label>
-                                    </div>
+                        <div class="cmp-card-radio">
+                          <div class="card card-teaser">
+                            <div class="card-body">
+                              <div class="form-check m-0">
+                                      <div class="radio-body border-bottom border-light">
+                                        <input name="frequency" type="radio" id="frequency-1">
+                                        <label for="frequency-1">1 giorno</label>
+                                      </div>
+                                      <div class="radio-body border-bottom border-light">
+                                        <input name="frequency" type="radio" id="frequency-2">
+                                        <label for="frequency-2">3 giorni</label>
+                                      </div>
+                                      <div class="radio-body">
+                                        <input name="frequency" type="radio" id="frequency-3">
+                                        <label for="frequency-3">5 giorni</label>
+                                      </div>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
         </div>
       </div>
     </div>
+                </section>
     
+                <section class="it-page-section" id="different-diet">
     <div class="cmp-card">
       <div class="card has-bkg-grey shadow-sm p-big">
         <div class="card-header border-0 p-0 mb-lg-30 m-0">
           <div class="d-flex">
-                <h2 class="title-xxlarge mb-1 icon-required" id="different-diet">Dieta diversificata</h2>
+                <h2 class="title-xxlarge mb-1 icon-required">Dieta diversificata</h2>
           </div>
           <p class="subtitle-small mb-0 mb-4">Indica la dieta per il beneficiario</p>
     
@@ -568,30 +585,31 @@
     
         </div>
         <div class="card-body p-0">
-                      <div class="cmp-card-radio">
-                        <div class="card card-teaser">
-                          <div class="card-body">
-                            <div class="form-check m-0">
-                                    <div class="radio-body border-bottom border-light">
-                                      <input name="diet" type="radio" id="diet-1">
-                                      <label for="diet-1">Nessuna dieta</label>
-                                    </div>
-                                    <div class="radio-body border-bottom border-light">
-                                      <input name="diet" type="radio" id="diet-2">
-                                      <label for="diet-2">Dieta per patologia</label>
-                                    </div>
-                                    <div class="radio-body">
-                                      <input name="diet" type="radio" id="diet-3">
-                                      <label for="diet-3">Dieta etico religiosa</label>
-                                    </div>
+                        <div class="cmp-card-radio">
+                          <div class="card card-teaser">
+                            <div class="card-body">
+                              <div class="form-check m-0">
+                                      <div class="radio-body border-bottom border-light">
+                                        <input name="diet" type="radio" id="diet-1">
+                                        <label for="diet-1">Nessuna dieta</label>
+                                      </div>
+                                      <div class="radio-body border-bottom border-light">
+                                        <input name="diet" type="radio" id="diet-2">
+                                        <label for="diet-2">Dieta per patologia</label>
+                                      </div>
+                                      <div class="radio-body">
+                                        <input name="diet" type="radio" id="diet-3">
+                                        <label for="diet-3">Dieta etico religiosa</label>
+                                      </div>
+                              </div>
                             </div>
                           </div>
                         </div>
-                      </div>
         </div>
       </div>
     </div>
-      
+                </section>
+              </div>
               <div class="cmp-nav-steps">
                 <nav class="steppers-nav">
                   <button type="button" class="btn btn-sm steppers-btn-prev p-0">
@@ -626,7 +644,6 @@
           </div>
         </div>
       </div>
-    
     
       <div class="bg-grey-card shadow-contacts">
         <div class="container">

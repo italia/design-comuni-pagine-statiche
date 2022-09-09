@@ -285,7 +285,8 @@
             
             
             
-              <p class="subtitle-small">Hai bisogno di assistenza? <a href="#" class="title-small-semi-bold t-primary">Contattaci</a></p>
+              <p class="subtitle-small">Hai bisogno di assistenza?
+                    <a href="#" class="title-small-semi-bold t-primary">Contattaci</a></p>
             
             
             </div>
@@ -296,49 +297,57 @@
     
         <div class="row mt-lg-40">
           <div class="col-12 col-lg-3 d-lg-block mb-4 d-none">
-            <aside class="cmp-navscroll sticky-top" aria-labelledby="accordion-title-one">
-              <div class="inline-menu">
-                <div class="link-list-wrapper">
-                  <ul>
-                    <li>
-                      <a class="list-item large medium right-icon p-0 text-decoration-none" href="#collapse-one" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapse-one" data-focus-mouse="true">
-                        <span class="list-item-title-icon-wrapper pb-10 px-3">
-                          <span id="accordion-title-one" class="title-xsmall-semi-bold">INFORMAZIONI RICHIESTE</span>
-                          <svg class="icon icon-xs right">
-                            <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
-                          </svg>
-                        </span>
-                        <!-- Progress Bar -->
-                        <div class="progress bg-light">
-                          <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="cmp-navscroll sticky-top" aria-labelledby="accordion-title-one">
+              <nav class="navbar it-navscroll-wrapper navbar-expand-lg" data-bs-navscroll>
+                <div class="navbar-custom" id="navbarNavProgress">
+                  <div class="menu-wrapper">
+                    <div class="link-list-wrapper">
+                      <div class="accordion">
+                        <div class="accordion-item">
+                          <span class="accordion-header" id="accordion-title-one">
+                            <button class="accordion-button pb-10 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-one" aria-expanded="true" aria-controls="collapse-one">
+                              INFORMAZIONI RICHIESTE
+                              <svg class="icon icon-xs right">
+                                <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
+                              </svg>
+                            </button>
+                          </span>
+                          <div class="progress">
+                            <div class="progress-bar it-navscroll-progressbar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <div id="collapse-one" class="accordion-collapse collapse show" role="region" aria-labelledby="accordion-title-one">
+                            <div class="accordion-body">
+                              <ul class="link-list" data-element="page-index">
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#after-school-activity">
+                                    <span class="title-medium">Doposcuola</span>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#school-section">
+                                    <span class="title-medium">Sezione</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
                         </div>
-                      </a>
-                      <ul class="link-sublist collapse show" id="collapse-one" data-element="page-index">
-                        <li>
-                          <a class="list-item" href="#after-school-activity">
-                            <span class="title-medium">Doposcuola</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a class="list-item" href="#school-section">
-                            <span class="title-medium">Sezione</span>
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </aside>      </div>
+              </nav>
+            </div>      </div>
     
-        <div class="col-12 col-lg-8 offset-lg-1">
-          <div class="steppers-content mt-3" aria-live="polite">
-    
+          <div class="col-12 col-lg-8 offset-lg-1">
+            <div class="steppers-content mt-3" aria-live="polite">
+              <div class="it-page-sections-container">
+                <section class="it-page-section" id="after-school-activity">
     <div class="cmp-card mb-40">
       <div class="card has-bkg-grey shadow-sm p-20 p-lg-30">
         <div class="card-header border-0 p-0 mb-lg-30">
           <div class="d-flex">
-                <h2 class="title-xxlarge mb-1 icon-required" id="after-school-activity">Doposcuola</h2>
+                <h2 class="title-xxlarge mb-1 icon-required">Doposcuola</h2>
           </div>
           <p class="subtitle-small mb-0">Hai bisogno del servizio di doposcuola?</p>
     
@@ -347,34 +356,36 @@
     
         </div>
         <div class="card-body p-0">
-                    <fieldset>
-                      <legend class="visually-hidden">Hai bisogno del servizio di doposcuola?</legend>
-                      <div class="cmp-card-radio">
-                        <div class="card card-teaser">
-                          <div class="card-body">
-                            <div class="form-check m-0">
-                                <div class="radio-body border-bottom border-light">
-                                <input name="doposcuola" type="radio" id="doposcuola-1">
-                                <label for="doposcuola-1">Sì</label>
+                        <fieldset>
+                          <legend class="visually-hidden">Hai bisogno del servizio di doposcuola?</legend>
+                          <div class="cmp-card-radio">
+                            <div class="card card-teaser">
+                              <div class="card-body">
+                                <div class="form-check m-0">
+                                    <div class="radio-body border-bottom border-light">
+                                    <input name="doposcuola" type="radio" id="doposcuola-1">
+                                    <label for="doposcuola-1">Sì</label>
+                                    </div>
+                                    <div class="radio-body">
+                                    <input name="doposcuola" type="radio" id="doposcuola-2">
+                                    <label for="doposcuola-2">No</label>
+                                    </div>
                                 </div>
-                                <div class="radio-body">
-                                <input name="doposcuola" type="radio" id="doposcuola-2">
-                                <label for="doposcuola-2">No</label>
-                                </div>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      </div>
-                    </fieldset>
+                        </fieldset>
         </div>
       </div>
     </div>
+                </section>
     
+                <section class="it-page-section" id="school-section">
     <div class="cmp-card">
       <div class="card has-bkg-grey shadow-sm p-20 p-lg-30">
         <div class="card-header border-0 p-0 mb-lg-30">
           <div class="d-flex">
-                <h2 class="title-xxlarge icon-required" id="school-section">Sezione</h2>
+                <h2 class="title-xxlarge icon-required">Sezione</h2>
           </div>
           <p class="subtitle-small mb-0">Esprimi una preferenza per la sezione da frequentare</p>
     
@@ -383,61 +394,62 @@
     
         </div>
         <div class="card-body p-0">
-                    <div class="form-check d-flex flex-column bg-white p-3 p-lg-4 mt-0">
-                    		<div class="checkbox-body border-light py-3 d-flex align-items-center w-100">
-                    			<input type="checkbox" id="green-section" name="green-section" value="green-section">
-                    			<label for="green-section" class="subtitle-small_semi-bold mb-0">Classe verde</label>
-                    		</div>
-                    		<div class="checkbox-body border-light py-3 d-flex align-items-center w-100">
-                    			<input type="checkbox" id="blue-section" name="blue-section" value="blue-section">
-                    			<label for="blue-section" class="subtitle-small_semi-bold mb-0">Classe blu</label>
-                    		</div>
-                    		<div class="checkbox-body border-light py-3 d-flex align-items-center w-100">
-                    			<input type="checkbox" id="yellow-section" name="yellow-section" value="yellow-section">
-                    			<label for="yellow-section" class="subtitle-small_semi-bold mb-0">Classe gialla</label>
-                    		</div>
-                    		<div class="checkbox-body border-light py-3 d-flex align-items-center w-100">
-                    			<input type="checkbox" id="no-section" name="no-section" value="no-section">
-                    			<label for="no-section" class="subtitle-small_semi-bold mb-0">Nessuna preferenza</label>
-                    		</div>
-                    </div>
-          
+                        <div class="form-check d-flex flex-column bg-white p-3 p-lg-4 mt-0">
+                        		<div class="checkbox-body border-light py-3 d-flex align-items-center w-100">
+                        			<input type="checkbox" id="green-section" name="green-section" value="green-section">
+                        			<label for="green-section" class="subtitle-small_semi-bold mb-0">Classe verde</label>
+                        		</div>
+                        		<div class="checkbox-body border-light py-3 d-flex align-items-center w-100">
+                        			<input type="checkbox" id="blue-section" name="blue-section" value="blue-section">
+                        			<label for="blue-section" class="subtitle-small_semi-bold mb-0">Classe blu</label>
+                        		</div>
+                        		<div class="checkbox-body border-light py-3 d-flex align-items-center w-100">
+                        			<input type="checkbox" id="yellow-section" name="yellow-section" value="yellow-section">
+                        			<label for="yellow-section" class="subtitle-small_semi-bold mb-0">Classe gialla</label>
+                        		</div>
+                        		<div class="checkbox-body border-light py-3 d-flex align-items-center w-100">
+                        			<input type="checkbox" id="no-section" name="no-section" value="no-section">
+                        			<label for="no-section" class="subtitle-small_semi-bold mb-0">Nessuna preferenza</label>
+                        		</div>
+                        </div>
         </div>
       </div>
     </div>
-            <div class="cmp-nav-steps">
-              <nav class="steppers-nav">
-                <button type="button" class="btn btn-sm steppers-btn-prev p-0">
-                  <svg class="icon icon-primary icon-sm" aria-hidden="true">
-                    <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-chevron-left"></use>
-                  </svg>
-                  <span class="text-button-sm t-primary">Indietro</span>
-                </button>
-            
-            
-                  <button type="button" class="btn btn-outline-primary bg-white btn-sm steppers-btn-save d-none d-lg-block saveBtn">
-                    <span class="text-button-sm t-primary">Salva Richiesta</span>
-                  </button>
-            
-                  <button type="button" class="btn btn-outline-primary bg-white btn-sm steppers-btn-save d-block d-lg-none saveBtn center">
-                    <span class="text-button-sm t-primary">Salva</span>
-                  </button>
-            
-            
-                <button type="button" class="btn btn-primary btn-sm steppers-btn-confirm" data-bs-toggle="modal" data-bs-target="#">
-                  <span class="text-button-sm">Avanti</span>
-                  <svg class="icon icon-white icon-sm" aria-hidden="true">
-                    <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-chevron-right"></use>
-                  </svg>
-                </button>
-              </nav>
-                <div id="alert-message" class="alert alert-success cmp-disclaimer rounded d-none" role="alert">
-                  <span class="d-inline-block text-uppercase cmp-disclaimer__message">Richiesta salvata con successo</span>
+                </section>
               </div>
-            
-            </div>      </div>
+              <div class="cmp-nav-steps">
+                <nav class="steppers-nav">
+                  <button type="button" class="btn btn-sm steppers-btn-prev p-0">
+                    <svg class="icon icon-primary icon-sm" aria-hidden="true">
+                      <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-chevron-left"></use>
+                    </svg>
+                    <span class="text-button-sm t-primary">Indietro</span>
+                  </button>
+              
+              
+                    <button type="button" class="btn btn-outline-primary bg-white btn-sm steppers-btn-save d-none d-lg-block saveBtn">
+                      <span class="text-button-sm t-primary">Salva Richiesta</span>
+                    </button>
+              
+                    <button type="button" class="btn btn-outline-primary bg-white btn-sm steppers-btn-save d-block d-lg-none saveBtn center">
+                      <span class="text-button-sm t-primary">Salva</span>
+                    </button>
+              
+              
+                  <button type="button" class="btn btn-primary btn-sm steppers-btn-confirm" data-bs-toggle="modal" data-bs-target="#">
+                    <span class="text-button-sm">Avanti</span>
+                    <svg class="icon icon-white icon-sm" aria-hidden="true">
+                      <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-chevron-right"></use>
+                    </svg>
+                  </button>
+                </nav>
+                  <div id="alert-message" class="alert alert-success cmp-disclaimer rounded d-none" role="alert">
+                    <span class="d-inline-block text-uppercase cmp-disclaimer__message">Richiesta salvata con successo</span>
+                </div>
+              
+              </div>        </div>
+          </div>
         </div>
-      </div>
       </div>
     
       <div class="bg-grey-card shadow-contacts">

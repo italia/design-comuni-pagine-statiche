@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-italia",
-  "version": "2.0.2",
+  "version": "2.0.4",
   "keywords": [
     "css",
     "sass",
@@ -18,7 +18,7 @@
     "dist/bootstrap-italia.esm.js",
     "dist/plugins/fonts-loader.js"
   ],
-  "description": "Bootstrap Italia è un tema Bootstrap 5 per la creazione di applicazioni web nel pieno rispetto delle Linee guida di design per i servizi web della PA",
+  "description": "Bootstrap Italia è un tema Bootstrap 5 per la creazione di applicazioni web nel pieno rispetto delle linee guida di design per i siti internet e i servizi digitali della PA",
   "homepage": "https://italia.github.io/bootstrap-italia/",
   "style": "dist/css/bootstrap-italia.min.css",
   "main": "dist/js/bootstrap-italia.min.js",
@@ -102,7 +102,7 @@
     "uuid": "^8.3.2"
   }
 
-,"_resolved": "https://registry.npmjs.org/bootstrap-italia/-/bootstrap-italia-2.0.2.tgz"
-,"_integrity": "sha512-F3EZ3ANQwbNomhtNu1G95CaJN78FShQTfmuptXfOpSVZNgnwzdVkkB4Mspg8cqPkTeKX2t55N6M8A8P97OVpBA=="
-,"_from": "bootstrap-italia@2.0.2"
+,"_resolved": "https://registry.npmjs.org/bootstrap-italia/-/bootstrap-italia-2.0.4.tgz"
+,"_integrity": "sha512-9t+/eZ1pplDKGUWPoSvxQexKTwzUNn20I+/Du6MASSI1jTuapt/e9Fsz1Spj4grul0C17TY8G9SvstUOqI+T4w=="
+,"_from": "bootstrap-italia@2.0.4"
 }

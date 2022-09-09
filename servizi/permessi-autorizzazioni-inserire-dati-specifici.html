@@ -348,49 +348,57 @@
     
         <div class="row">
           <div class="col-12 col-lg-3 d-lg-block mb-4 d-none">
-            <aside class="cmp-navscroll sticky-top" aria-labelledby="accordion-title-one">
-              <div class="inline-menu">
-                <div class="link-list-wrapper">
-                  <ul>
-                    <li>
-                      <a class="list-item large medium right-icon p-0 text-decoration-none" href="#collapse-one" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapse-one" data-focus-mouse="true">
-                        <span class="list-item-title-icon-wrapper pb-10 px-3">
-                          <span id="accordion-title-one" class="title-xsmall-semi-bold">INFORMAZIONI RICHIESTE</span>
-                          <svg class="icon icon-xs right">
-                            <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
-                          </svg>
-                        </span>
-                        <!-- Progress Bar -->
-                        <div class="progress bg-light">
-                          <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="cmp-navscroll sticky-top" aria-labelledby="accordion-title-one">
+              <nav class="navbar it-navscroll-wrapper navbar-expand-lg" data-bs-navscroll>
+                <div class="navbar-custom" id="navbarNavProgress">
+                  <div class="menu-wrapper">
+                    <div class="link-list-wrapper">
+                      <div class="accordion">
+                        <div class="accordion-item">
+                          <span class="accordion-header" id="accordion-title-one">
+                            <button class="accordion-button pb-10 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-one" aria-expanded="true" aria-controls="collapse-one">
+                              INFORMAZIONI RICHIESTE
+                              <svg class="icon icon-xs right">
+                                <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
+                              </svg>
+                            </button>
+                          </span>
+                          <div class="progress">
+                            <div class="progress-bar it-navscroll-progressbar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <div id="collapse-one" class="accordion-collapse collapse show" role="region" aria-labelledby="accordion-title-one">
+                            <div class="accordion-body">
+                              <ul class="link-list" data-element="page-index">
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#permission-type">
+                                    <span class="title-medium">Tipo di permesso</span>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#validity-period">
+                                    <span class="title-medium">Periodo di validità</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
                         </div>
-                      </a>
-                      <ul class="link-sublist collapse show" id="collapse-one" data-element="page-index">
-                        <li>
-                          <a class="list-item" href="#permission-type">
-                            <span class="title-medium">Tipo di permesso</span>
-                          </a>
-                        </li>
-                        <li>
-                          <a class="list-item" href="#validity-period">
-                            <span class="title-medium">Periodo di validità</span>
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </aside>      </div>
+              </nav>
+            </div>      </div>
     
           <div class="col-12 col-lg-8 offset-lg-1">
             <div class="steppers-content" aria-live="polite">
-     
+              <div class="it-page-sections-container">
+                <section class="it-page-section" id="permission-type">
     <div class="cmp-card mb-40 mt-2">
       <div class="card has-bkg-grey shadow-sm p-big">
         <div class="card-header border-0 p-0 mb-lg-30">
           <div class="d-flex">
-                <h2 class="title-xxlarge mb-1 icon-required" id="permission-type">Tipo di permesso</h2>
+                <h2 class="title-xxlarge mb-1 icon-required">Tipo di permesso</h2>
           </div>
           <p class="subtitle-small mb-0">Scegli il tipo di permesso ZTL</p>
     
@@ -399,30 +407,31 @@
     
         </div>
         <div class="card-body p-0">
-                      <div class="form-check d-flex flex-column align-items-center bg-white w-100 p-3 p-lg-4 mt-0">
-                      		<div class="checkbox-body border-light py-3 d-flex align-items-center w-100">
-                      			<input type="checkbox" id="ztl-a" name="ztl-a" value="ztl-a">
-                      			<label for="ztl-a" class="subtitle-small_semi-bold mb-0">Zona Traffico Limitato A</label>
-                      		</div>
-                      		<div class="checkbox-body border-light py-3 d-flex align-items-center w-100">
-                      			<input type="checkbox" id="ztl-b" name="ztl-b" value="ztl-b">
-                      			<label for="ztl-b" class="subtitle-small_semi-bold mb-0">Zona Traffico Limitato B</label>
-                      		</div>
-                      		<div class="checkbox-body border-light py-3 d-flex align-items-center w-100">
-                      			<input type="checkbox" id="ztl-c" name="ztl-c" value="ztl-c">
-                      			<label for="ztl-c" class="subtitle-small_semi-bold mb-0">Zona Traffico Limitato C</label>
-                      		</div>
-                      </div>
+                        <div class="form-check d-flex flex-column align-items-center bg-white w-100 p-3 p-lg-4 mt-0">
+                        		<div class="checkbox-body border-light py-3 d-flex align-items-center w-100">
+                        			<input type="checkbox" id="ztl-a" name="ztl-a" value="ztl-a">
+                        			<label for="ztl-a" class="subtitle-small_semi-bold mb-0">Zona Traffico Limitato A</label>
+                        		</div>
+                        		<div class="checkbox-body border-light py-3 d-flex align-items-center w-100">
+                        			<input type="checkbox" id="ztl-b" name="ztl-b" value="ztl-b">
+                        			<label for="ztl-b" class="subtitle-small_semi-bold mb-0">Zona Traffico Limitato B</label>
+                        		</div>
+                        		<div class="checkbox-body border-light py-3 d-flex align-items-center w-100">
+                        			<input type="checkbox" id="ztl-c" name="ztl-c" value="ztl-c">
+                        			<label for="ztl-c" class="subtitle-small_semi-bold mb-0">Zona Traffico Limitato C</label>
+                        		</div>
+                        </div>
         </div>
       </div>
     </div>
-        
+                </section>
     
+                <section class="it-page-section" id="validity-period">
     <div class="cmp-card">
       <div class="card has-bkg-grey shadow-sm p-big">
         <div class="card-header border-0 p-0 mb-lg-30">
           <div class="d-flex">
-                <h2 class="title-xxlarge mb-1 icon-required" id="validity-period">Periodo di validità</h2>
+                <h2 class="title-xxlarge mb-1 icon-required">Periodo di validità</h2>
           </div>
           <p class="subtitle-small mb-0">Indica il periodo di validità del permesso ZTL</p>
     
@@ -432,22 +441,23 @@
         </div>
         <div class="card-body p-0">
           
-                      <div class="d-lg-flex justify-content-between flex-column flex-lg-row">
-                        <div class="calendar-partials card p-big">
-                          <div class="form-group mb-0 me-lg-4 p-3 pt-lg-40 pb-lg-40 pl-lg-40">
-                            <label class="active" for="date-1">Dal</label>
-                            <input type="date" class="it-date-datepicker icon-primary form-control" id="date-1" name="dateStandard">
-                          </div>
-                        </div>              <div class="calendar-partials card p-big">
-                          <div class="form-group mb-0 p-3 pt-lg-40 pb-lg-40 ps-lg-8 pr-lg-40">
-                            <label class="active" for="date-2">Al</label>
-                            <input type="date" class="it-date-datepicker icon-primary form-control" id="date-2" name="dateStandard">
-                          </div>
-                        </div>            </div>
+                        <div class="d-lg-flex justify-content-between flex-column flex-lg-row">
+                          <div class="calendar-partials card p-big">
+                            <div class="form-group mb-0 me-lg-4 p-3 pt-lg-40 pb-lg-40 pl-lg-40">
+                              <label class="active" for="date-1">Dal</label>
+                              <input type="date" class="it-date-datepicker icon-primary form-control" id="date-1" name="dateStandard">
+                            </div>
+                          </div>                <div class="calendar-partials card p-big">
+                            <div class="form-group mb-0 p-3 pt-lg-40 pb-lg-40 ps-lg-8 pr-lg-40">
+                              <label class="active" for="date-2">Al</label>
+                              <input type="date" class="it-date-datepicker icon-primary form-control" id="date-2" name="dateStandard">
+                            </div>
+                          </div>              </div>
         </div>
       </div>
     </div>
-    
+                </section>
+              </div>
               <div class="cmp-nav-steps">
                 <nav class="steppers-nav">
                   <button type="button" class="btn btn-sm steppers-btn-prev p-0">
@@ -483,7 +493,7 @@
         </div>
       </div>
     
-     <div class="bg-grey-card shadow-contacts">
+      <div class="bg-grey-card shadow-contacts">
         <div class="container">
           <div class="row">
             <div class="col-12 col-lg-6 offset-lg-3 p-contacts">

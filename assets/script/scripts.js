@@ -88,121 +88,12 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(8);
-module.exports = __webpack_require__(7);
+__webpack_require__(7);
+module.exports = __webpack_require__(6);
 
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports) {
-
-/* eslint-disable */
-
-/* Steps Page - Next and Back button */
-var content = document.querySelector('.section-wrapper');
-var currentStep = 1;
-var navscroll = document.querySelector("[data-index=\"".concat(currentStep, "\"]"));
-var progressBar = document.querySelector("[data-progress=\"".concat(currentStep, "\"]"));
-
-function pageSteps() {
-  if (!content) return;
-  var btnSave = content.querySelectorAll('.saveBtn');
-  var btnNext = content.querySelector('.btn-next-step');
-  var btnBack = content.querySelector('.btn-back-step');
-  navscroll.classList.add('d-lg-block');
-  progressBar.classList.remove('d-none');
-  btnSave.forEach(function (element) {
-    element.classList.add('invisible');
-  });
-
-  if (btnNext) {
-    btnNext.addEventListener('click', function () {
-      openNext();
-    });
-  }
-
-  if (btnBack) {
-    btnBack.addEventListener('click', function () {
-      backPrevious();
-    });
-  }
-}
-
-function openNext() {
-  var btnSave = content.querySelectorAll('.saveBtn');
-  var steps = content.querySelectorAll('[data-steps]');
-  var nextStep = content.querySelector("[data-steps=\"".concat(currentStep + 1, "\"]"));
-  var stepWrapper = content.querySelector('[data-steps].active');
-  navscroll.classList.remove('d-lg-block');
-  progressBar.classList.remove('d-block');
-  progressBar.classList.add('d-none');
-
-  if (currentStep !== steps.length) {
-    stepWrapper.classList.add('d-none');
-    stepWrapper.classList.remove('active');
-    nextStep.classList.add('active');
-    nextStep.classList.remove('d-none');
-    currentStep = currentStep + 1;
-    progressBar = document.querySelector("[data-progress=\"".concat(currentStep, "\"]"));
-    progressBar.classList.add('d-block');
-    progressBar.classList.remove('d-none');
-
-    if (currentStep < steps.length - 1) {
-      navscroll = document.querySelector("[data-index=\"".concat(currentStep, "\"]"));
-      navscroll.classList.add('d-lg-block');
-    }
-
-    if (currentStep == steps.length - 1) {
-      content.classList.remove('offset-lg-1');
-    }
-
-    if (currentStep == steps.length) {
-      content.querySelector('.steppers-btn-confirm span').innerHTML = 'Invia';
-      btnSave.forEach(function (element) {
-        element.classList.remove('invisible');
-        element.classList.add('visible');
-      });
-    }
-  }
-}
-
-function backPrevious() {
-  var btnSave = content.querySelectorAll('.saveBtn');
-  var steps = content.querySelectorAll('[data-steps]');
-  var stepWrapper = content.querySelector('[data-steps].active');
-  var previousStep = content.querySelector("[data-steps=\"".concat(currentStep - 1, "\"]"));
-
-  if (currentStep !== 1) {
-    previousStep.classList.remove('d-none');
-    previousStep.classList.add('active');
-    stepWrapper.classList.add('d-none');
-    stepWrapper.classList.remove('active');
-    navscroll.classList.remove('d-lg-block');
-    progressBar.classList.add('d-none');
-    currentStep = currentStep - 1;
-    progressBar = document.querySelector("[data-progress=\"".concat(currentStep, "\"]"));
-    progressBar.classList.toggle('d-none');
-    content.querySelector('.steppers-btn-confirm span').innerHTML = 'Avanti';
-
-    if (currentStep < steps.length - 1) {
-      navscroll = document.querySelector("[data-index=\"".concat(currentStep, "\"]"));
-      navscroll.classList.add('d-lg-block');
-      content.classList.add('offset-lg-1');
-    }
-
-    if (currentStep < steps.length) {
-      btnSave.forEach(function (element) {
-        element.classList.remove('visible');
-        element.classList.add('invisible');
-      });
-    }
-  }
-}
-
-pageSteps();
-
-/***/ }),
-/* 2 */
 /***/ (function(module, exports) {
 
 /* eslint-disable */
@@ -216,10 +107,11 @@ function initRatings() {
   var btnBack = wrapper.querySelector('.btn-back');
   radios.forEach(function (radio) {
     radio.addEventListener('change', function () {
+      /* changing the rating resets and restarts the flow */
+      resetBlock();
+
       if (radio.checked) {
-        if (activeStep == 0) {
-          openNextStep();
-        }
+        openNextStep();
       }
     });
   });
@@ -240,16 +132,19 @@ function initRatings() {
 }
 
 function openNextStep() {
-  var steps = wrapper.querySelectorAll('[data-step]');
   var formWrapper = wrapper.querySelector('.form-rating');
-  var cardRating = wrapper.querySelector('.cmp-rating__card-first');
-  var stepOneWrapper = wrapper.querySelector("[data-step=\"".concat(activeStep + 1, "\"]"));
   formWrapper.classList.remove('d-none');
-  stepOneWrapper.classList.remove('d-none');
-  stepOneWrapper.classList.add('active');
+  var inputRadio = document.querySelector('[name="ratingA"]:checked');
+  var currentFieldset = parseInt(inputRadio.value) > 3 ? document.querySelector('.fieldset-rating-one') : document.querySelector('.fieldset-rating-two');
+  currentFieldset.classList.remove('d-none');
+  var currentStepWrapper = wrapper.querySelector("[data-step=\"".concat(activeStep + 1, "\"]"));
+  currentStepWrapper.classList.remove('d-none');
+  currentStepWrapper.classList.add('active');
+  var steps = wrapper.querySelectorAll('[data-step]');
   activeStep = activeStep + 1;
 
   if (activeStep == steps.length) {
+    var cardRating = wrapper.querySelector('.cmp-rating__card-first');
     formWrapper.classList.add('d-none');
     cardRating.classList.add('d-none');
     var event = new Event('feedback-submit');
@@ -258,35 +153,55 @@ function openNextStep() {
 }
 
 function backToPrevious() {
-  var steps = wrapper.querySelectorAll('[data-step]');
+  // var steps = wrapper.querySelectorAll('[data-step]');
   var formWrapper = wrapper.querySelector('.form-rating');
-  var cardRating = wrapper.querySelector('.cmp-rating__card-first');
-  var previousWrapper = wrapper.querySelector("[data-step=\"".concat(activeStep - 1, "\"]"));
-  var currentWrapper = wrapper.querySelector("[data-step=\"".concat(activeStep, "\"]"));
   formWrapper.classList.remove('d-none');
   activeStep = activeStep - 1;
 
   if (activeStep == 0) {
     formWrapper.classList.add('d-none');
+    var cardRating = wrapper.querySelector('.cmp-rating__card-first');
     cardRating.classList.remove('d-none');
+    resetFieldsets();
+    document.querySelector('[name="ratingA"]:checked').checked = false;
   } else {
-    previousWrapper.classList.remove('d-none');
-    previousWrapper.classList.add('active');
-    currentWrapper.classList.add('d-none');
-    currentWrapper.classList.remove('active');
+    var previousWrapper = wrapper.querySelector("[data-step=\"".concat(activeStep + 1, "\"]"));
+    previousWrapper.classList.add('d-none');
+    previousWrapper.classList.remove('active');
+    var currentWrapper = wrapper.querySelector("[data-step=\"".concat(activeStep, "\"]"));
+    currentWrapper.classList.remove('d-none');
+    currentWrapper.classList.add('active');
   }
+}
+
+function resetBlock() {
+  closePreviousStep();
+  var formWrapper = wrapper.querySelector('.form-rating');
+  formWrapper.classList.add('d-none');
+  resetFieldsets();
+  activeStep = 0;
+}
+
+function resetFieldsets() {
+  var fieldset1 = document.querySelector('.fieldset-rating-one');
+  var fieldset2 = document.querySelector('.fieldset-rating-two');
+  fieldset1.classList.add('d-none');
+  fieldset2.classList.add('d-none');
 }
 
 function closePreviousStep() {
   var stepWrapper = wrapper.querySelector('[data-step].active');
-  stepWrapper.classList.add('d-none');
-  stepWrapper.classList.remove('active');
+
+  if (stepWrapper) {
+    stepWrapper.classList.add('d-none');
+    stepWrapper.classList.remove('active');
+  }
 }
 
 initRatings();
 
 /***/ }),
-/* 3 */
+/* 2 */
 /***/ (function(module, exports) {
 
 /* eslint-disable */
@@ -303,7 +218,7 @@ function startToggle() {
 startToggle();
 
 /***/ }),
-/* 4 */
+/* 3 */
 /***/ (function(module, exports) {
 
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
@@ -336,7 +251,7 @@ function borderCardRadio() {
 borderCardRadio();
 
 /***/ }),
-/* 5 */
+/* 4 */
 /***/ (function(module, exports) {
 
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
@@ -369,7 +284,7 @@ function borderCardCheckbox() {
 borderCardCheckbox();
 
 /***/ }),
-/* 6 */
+/* 5 */
 /***/ (function(module, exports) {
 
 /* eslint-disable */
@@ -404,13 +319,13 @@ function initCleanInput() {
 initCleanInput();
 
 /***/ }),
-/* 7 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
 
 /***/ }),
-/* 8 */
+/* 7 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -424,7 +339,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 /*!
  * Splide.js
- * Version  : 4.0.7
+ * Version  : 4.0.17
  * License  : MIT
  * Copyright: 2022 Naotoshi Fujita
  */
@@ -1309,7 +1224,6 @@ function Slide$1(Splide2, index, slideIndex, slide) {
   var label = getAttribute(slide, ARIA_LABEL);
   var isClone = slideIndex > -1;
   var container = child(slide, "." + CLASS_CONTAINER);
-  var focusableNodes = queryAll(slide, options.focusableNodes || "");
   var destroyed;
 
   function mount() {
@@ -1388,7 +1302,7 @@ function Slide$1(Splide2, index, slideIndex, slide) {
       setAttribute(slide, ARIA_HIDDEN, hidden || "");
     }
 
-    setAttribute(focusableNodes, TAB_INDEX, hidden ? -1 : "");
+    setAttribute(queryAll(slide, options.focusableNodes || ""), TAB_INDEX, hidden ? -1 : "");
 
     if (slideFocus) {
       setAttribute(slide, TAB_INDEX, hidden ? -1 : 0);
@@ -1466,11 +1380,6 @@ function Slides(Splide2, Components2, options) {
     init();
     on(EVENT_REFRESH, destroy);
     on(EVENT_REFRESH, init);
-    on([EVENT_MOUNTED, EVENT_REFRESH], function () {
-      Slides2.sort(function (Slide1, Slide2) {
-        return Slide1.index - Slide2.index;
-      });
-    });
   }
 
   function init() {
@@ -1496,6 +1405,9 @@ function Slides(Splide2, Components2, options) {
     var object = Slide$1(Splide2, index, slideIndex, slide);
     object.mount();
     Slides2.push(object);
+    Slides2.sort(function (Slide1, Slide2) {
+      return Slide1.index - Slide2.index;
+    });
   }
 
   function get(excludeClones) {
@@ -2062,7 +1974,7 @@ function Controller(Splide2, Components2, options) {
   }
 
   function computeDestIndex(dest, from, snapPage) {
-    if (isEnough()) {
+    if (isEnough() || hasFocus()) {
       var end = getEnd();
       var index = computeMovableDestIndex(dest);
 
@@ -2179,9 +2091,9 @@ function Arrows(Splide2, Components2, options) {
       i18n = options.i18n;
   var Elements = Components2.Elements,
       Controller = Components2.Controller;
-  var userArrows = Elements.arrows,
+  var placeholder = Elements.arrows,
       track = Elements.track;
-  var wrapper = userArrows;
+  var wrapper = placeholder;
   var prev = Elements.prev;
   var next = Elements.next;
   var created;
@@ -2227,7 +2139,7 @@ function Arrows(Splide2, Components2, options) {
     removeClass(wrapper, wrapperClasses);
 
     if (created) {
-      remove(userArrows ? [prev, next] : wrapper);
+      remove(placeholder ? [prev, next] : wrapper);
       prev = next = null;
     } else {
       removeAttribute([prev, next], ALL_ATTRIBUTES);
@@ -2245,12 +2157,12 @@ function Arrows(Splide2, Components2, options) {
   }
 
   function createArrows() {
-    wrapper = userArrows || create("div", classes.arrows);
+    wrapper = placeholder || create("div", classes.arrows);
     prev = createArrow(true);
     next = createArrow(false);
     created = true;
     append(wrapper, [prev, next]);
-    !userArrows && before(wrapper, track);
+    !placeholder && before(wrapper, track);
   }
 
   function createArrow(prev2) {
@@ -2274,7 +2186,8 @@ function Arrows(Splide2, Components2, options) {
   return {
     arrows: arrows,
     mount: mount,
-    destroy: destroy
+    destroy: destroy,
+    update: update
   };
 }
 
@@ -2436,6 +2349,7 @@ function Scroll(Splide2, Components2, options) {
       getLimit = Move.getLimit,
       exceededLimit = Move.exceededLimit,
       translate = Move.translate;
+  var isSlide = Splide2.is(SLIDE);
   var interval;
   var callback;
   var friction = 1;
@@ -2449,7 +2363,7 @@ function Scroll(Splide2, Components2, options) {
     var from = getPosition();
     clear();
 
-    if (snap) {
+    if (snap && (!isSlide || !exceededLimit())) {
       var size = Components2.Layout.sliderSize();
       var offset = sign(destination) * size * floor(abs(destination) / size) || 0;
       destination = Move.toPosition(Components2.Controller.toDest(destination % size)) + offset;
@@ -2477,7 +2391,7 @@ function Scroll(Splide2, Components2, options) {
     var diff = (target - position) * friction;
     translate(position + diff);
 
-    if (Splide2.is(SLIDE) && !noConstrain && exceededLimit()) {
+    if (isSlide && !noConstrain && exceededLimit()) {
       friction *= FRICTION_FACTOR;
 
       if (abs(diff) < BOUNCE_DIFF_THRESHOLD) {
@@ -2819,19 +2733,30 @@ function LazyLoad(Splide2, Components2, options) {
       emit = _EventInterface12.emit;
 
   var isSequential = options.lazyLoad === "sequential";
-  var events = [EVENT_MOUNTED, EVENT_REFRESH, EVENT_MOVED, EVENT_SCROLLED];
+  var events = [EVENT_MOVED, EVENT_SCROLLED];
   var entries = [];
 
   function mount() {
     if (options.lazyLoad) {
       init();
       on(EVENT_REFRESH, init);
-      isSequential || on(events, observe);
     }
   }
 
   function init() {
     empty(entries);
+    register();
+
+    if (isSequential) {
+      loadNext();
+    } else {
+      off(events);
+      on(events, check);
+      check();
+    }
+  }
+
+  function register() {
     Components2.Slides.forEach(function (Slide) {
       queryAll(Slide.slide, IMAGE_SELECTOR).forEach(function (img) {
         var src = getAttribute(img, SRC_DATA_ATTRIBUTE);
@@ -2846,10 +2771,9 @@ function LazyLoad(Splide2, Components2, options) {
         }
       });
     });
-    isSequential && loadNext();
   }
 
-  function observe() {
+  function check() {
     entries = entries.filter(function (data) {
       var distance = options.perPage * ((options.preloadPages || 1) + 1) - 1;
       return data[1].isWithin(Splide2.index, distance) ? load(data) : true;
@@ -2888,7 +2812,8 @@ function LazyLoad(Splide2, Components2, options) {
 
   return {
     mount: mount,
-    destroy: apply(empty, entries)
+    destroy: apply(empty, entries),
+    check: check
   };
 }
 
@@ -2904,6 +2829,7 @@ function Pagination(Splide2, Components2, options) {
       getIndex = Controller.getIndex,
       go = Controller.go;
   var resolve = Components2.Direction.resolve;
+  var placeholder = Elements.pagination;
   var items = [];
   var list;
   var paginationClasses;
@@ -2911,8 +2837,10 @@ function Pagination(Splide2, Components2, options) {
   function mount() {
     destroy();
     on([EVENT_UPDATED, EVENT_REFRESH], mount);
+    var enabled = options.pagination && Slides.isEnough();
+    placeholder && display(placeholder, enabled ? "" : "none");
 
-    if (options.pagination && Slides.isEnough()) {
+    if (enabled) {
       on([EVENT_MOVE, EVENT_SCROLL, EVENT_SCROLLED], update);
       createPagination();
       update();
@@ -2925,7 +2853,7 @@ function Pagination(Splide2, Components2, options) {
 
   function destroy() {
     if (list) {
-      remove(Elements.pagination ? slice(list.children) : list);
+      remove(placeholder ? slice(list.children) : list);
       removeClass(list, paginationClasses);
       empty(items);
       list = null;
@@ -2940,7 +2868,7 @@ function Pagination(Splide2, Components2, options) {
         i18n = options.i18n,
         perPage = options.perPage;
     var max = hasFocus() ? length : ceil(length / perPage);
-    list = Elements.pagination || create("ul", classes.pagination, Elements.track.parentElement);
+    list = placeholder || create("ul", classes.pagination, Elements.track.parentElement);
     addClass(list, paginationClasses = CLASS_PAGINATION + "--" + getDirection());
     setAttribute(list, ROLE, "tablist");
     setAttribute(list, ARIA_LABEL, i18n.select);
@@ -4063,27 +3991,23 @@ var SplideRenderer = /*#__PURE__*/function () {
 
 
 
-// EXTERNAL MODULE: ./javascripts/pageStep.js
-var pageStep = __webpack_require__(1);
-
 // EXTERNAL MODULE: ./components/cmp-rating/cmp-rating.js
-var cmp_rating = __webpack_require__(2);
+var cmp_rating = __webpack_require__(1);
 
 // EXTERNAL MODULE: ./components/partials/toggle/toggle.js
-var toggle = __webpack_require__(3);
+var toggle = __webpack_require__(2);
 
 // EXTERNAL MODULE: ./components/cmp-info-button-card/cmp-info-button-card.js
-var cmp_info_button_card = __webpack_require__(4);
+var cmp_info_button_card = __webpack_require__(3);
 
 // EXTERNAL MODULE: ./components/cmp-info-checkbox/cmp-info-checkbox.js
-var cmp_info_checkbox = __webpack_require__(5);
+var cmp_info_checkbox = __webpack_require__(4);
 
 // EXTERNAL MODULE: ./components/partials/input/input.js
-var input = __webpack_require__(6);
+var input = __webpack_require__(5);
 
 // CONCATENATED MODULE: ./javascripts/scripts.js
 /* eslint-disable */
-
 
 
 

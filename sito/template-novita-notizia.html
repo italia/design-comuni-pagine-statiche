@@ -426,46 +426,57 @@
       <div class="container">
         <div class="row border-top border-light row-column-border row-column-menu-left">
           <aside class="col-lg-4">
-            <div class="sticky-wrapper navbar-wrapper">
-              <nav class="navbar it-navscroll-wrapper it-top-navscroll navbar-expand-lg">
-                <button class="custom-navbar-toggler" type="button" aria-controls="navbarNav" aria-expanded="false" data-bs-target="#navbarNav">
-                  <span class="it-list"></span>Indice della pagina
-                </button>
-                <div class="navbar-collapsable" id="navbarNav">
-                  <div class="overlay"></div>
-                  <div class="close-div visually-hidden">
-                    <button class="btn close-menu" type="button">
-                      <span class="it-close"></span>Chiudi
-                    </button>
-                  </div>
-                  <a class="it-back-button" href="#">
-                    <svg class="icon icon-sm icon-primary align-top">
-                      <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-chevron-left"></use>
-                    </svg>
-                    <span>Torna indietro</span></a>
+            <div class="cmp-navscroll sticky-top" aria-labelledby="accordion-title-one">
+              <nav class="navbar it-navscroll-wrapper navbar-expand-lg" data-bs-navscroll>
+                <div class="navbar-custom" id="navbarNavProgress">
                   <div class="menu-wrapper">
-                    <div class="link-list-wrapper menu-link-list">
-                      <h3 class="no_toc border-light">Indice della pagina</h3>
-                      <ul class="link-list">
-                        <li class="nav-item active">
-                          <a class="nav-link active" href="#descrizione"><span>Descrizione</span></a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#documenti"><span>Documenti</span></a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#a-cura-di"><span>A cura di</span></a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#ulteriori-informazioni"><span>Ulteriori informazioni</span></a>
-                        </li>
-                      </ul>
+                    <div class="link-list-wrapper">
+                      <div class="accordion">
+                        <div class="accordion-item">
+                          <span class="accordion-header" id="accordion-title-one">
+                            <button class="accordion-button pb-10 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-one" aria-expanded="true" aria-controls="collapse-one">
+                              INDICE DELLA PAGINA
+                              <svg class="icon icon-xs right">
+                                <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
+                              </svg>
+                            </button>
+                          </span>
+                          <div class="progress">
+                            <div class="progress-bar it-navscroll-progressbar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <div id="collapse-one" class="accordion-collapse collapse show" role="region" aria-labelledby="accordion-title-one">
+                            <div class="accordion-body">
+                              <ul class="link-list" data-element="page-index">
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#descrizione">
+                                    <span class="title-medium">Descrizione</span>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#documenti">
+                                    <span class="title-medium">Documenti</span>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#a-cura-di">
+                                    <span class="title-medium">A cura di</span>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#ulteriori-informazioni">
+                                    <span class="title-medium">Ulteriori informazioni</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </nav>
-            </div>
-          </aside>
+            </div>      </aside>
           <section class="col-lg-8 it-page-sections-container border-light">
             <article id="descrizione" class="it-page-section anchor-offset">
               <h4>Descrizione</h4>
