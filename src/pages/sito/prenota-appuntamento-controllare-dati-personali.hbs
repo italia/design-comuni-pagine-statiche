@@ -1,12 +1,12 @@
 {{#>base/base title="Prenotazioni - Nome del Comune" headerActive3=true}}
-  <main>
-    <div class="container" id="main-container">
-      <div class="row justify-content-center">
-        <div class="col-12 col-lg-10">
-          {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi" link3="Prenotazioni"}}
-        </div>
+<main>
+  <div class="container" id="main-container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi" link3="Prenotazioni"}}
       </div>
     </div>
+  </div>
 
   <div class="container">
     <div class="row justify-content-center">
@@ -18,8 +18,8 @@
     </div>
   </div>
 
-    <div class="container">
-      {{> cmp-info-progress/cmp-info-progress
+  <div class="container">
+    {{> cmp-info-progress/cmp-info-progress
     step-list=step-list.prenota-appuntamento-step-4
     step-num="4"
     step-tot="5"
@@ -27,49 +27,53 @@
     classSubtitle="mt-40 mb-3"
     subtitle="I campi contraddistinti dal simbolo asterisco sono obbligatori"
     }}
-    </div>
+  </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-3 d-lg-block mb-4 d-none ">
-          {{>cmp-navscroll/cmp-navscroll
-          accordion-title="INFORMAZIONI RICHIESTE" id="one"
-          link-list=link-list.prenota-appuntamento-step-4}}
-        </div>
-        <div class="col-12 col-lg-8 offset-lg-1">
-          <div class="steppers-content" aria-live="polite">
-            
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-3 d-lg-block mb-4 d-none ">
+        {{>cmp-navscroll/cmp-navscroll
+        accordion-title="INFORMAZIONI RICHIESTE" id="one"
+        link-list=link-list.prenota-appuntamento-step-4}}
+      </div>
+      <div class="col-12 col-lg-8 offset-lg-1">
+        <div class="steppers-content" aria-live="polite">
+          <div class="it-page-sections-container">
+            <section class="it-page-section" id="applicant">
               {{#>cmp-card/cmp-card-content-box
-            class="p-big"
-            id-title="applicant"
-            bg-grey=true
-            h2-class="mb-3"
-            card-title="Richiedente"
-            header-m0=true
-            }}
-                <div class="form-wrapper bg-white p-4">
-                  {{>partials/input/input type="text" id="name" label="Nome" required=true name="aname" text="Inserisci il tuo nome" formClass="mb-0"}}
-                  {{>partials/input/input type="text" id="surname" label="Cognome" required=true name="surname" text="Inserisci il tuo cognome" formClass="mb-0"}}
-                  {{>partials/input/input type="email" id="email" label="Email" required=true name="email" text="Inserisci la tua email" formClass="mb-0"}}
-                </div>
+              class="p-big"
+              bg-grey=true
+              h2-class="mb-3"
+              card-title="Richiedente"
+              header-m0=true
+              }}
+              <div class="form-wrapper bg-white p-4">
+                {{>partials/input/input type="text" id="name" label="Nome" required=true name="aname" text="Inserisci il
+                tuo nome" formClass="mb-0"}}
+                {{>partials/input/input type="text" id="surname" label="Cognome" required=true name="surname"
+                text="Inserisci il tuo cognome" formClass="mb-0"}}
+                {{>partials/input/input type="email" id="email" label="Email" required=true name="email" text="Inserisci
+                la tua email" formClass="mb-0"}}
+              </div>
 
-                {{/cmp-card/cmp-card-content-box}}
-            
-            {{> cmp-nav-steps/cmp-nav-steps save="true" saveBtn=true aria-label-save="di prenotazione appuntamento"}}
+              {{/cmp-card/cmp-card-content-box}}
+            </section>
           </div>
+          {{> cmp-nav-steps/cmp-nav-steps save="true" saveBtn=true aria-label-save="di prenotazione appuntamento"}}
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="bg-grey-card shadow-contacts">
-      <div class="container">
-        <div class="row d-flex justify-content-center p-contacts">
-          <div class="col-12 col-lg-6">
-            {{>cmp-contacts/cmp-contacts-trasversali faq=true assistance=true}}
-          </div>
+  <div class="bg-grey-card shadow-contacts">
+    <div class="container">
+      <div class="row d-flex justify-content-center p-contacts">
+        <div class="col-12 col-lg-6">
+          {{>cmp-contacts/cmp-contacts-trasversali faq=true assistance=true}}
         </div>
       </div>
     </div>
+  </div>
 
-  </main>
-  {{/base/base }}
+</main>
+{{/base/base }}

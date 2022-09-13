@@ -27,87 +27,88 @@
       </div>
       <div class="col-12 col-lg-8 offset-lg-1">
         <div class="steppers-content" aria-live="polite">
+          <div class="it-page-sections-container">
+            <section class="it-page-section" id="report-place">
+              {{#>cmp-card/cmp-card-content-box
+              class="p-big p-lg-4"
+              bg-grey=true
+              h2-class="mb-1"
+              header-m0=true
+              card-title="Luogo"
+              subtitle="Indica il luogo del disservizio"
+              margin-class="mb-40"
+              }}
+              {{> partials/input-autocomplete/input-autocomplete placeholder="Cerca un luogo*" link=true class="mt-3"}}
+              {{/cmp-card/cmp-card-content-box}}
+            </section>
 
-            {{#>cmp-card/cmp-card-content-box
-            class="p-big p-lg-4"
-            id-title="report-place"
-            bg-grey=true
-            h2-class="mb-1"
-            header-m0=true
-            card-title="Luogo"
-            subtitle="Indica il luogo del disservizio"
-            margin-class="mb-40"
-            }}
-            {{> partials/input-autocomplete/input-autocomplete placeholder="Cerca un luogo*" link=true class="mt-3"}}
-            {{/cmp-card/cmp-card-content-box}}
-
-            {{#>cmp-card/cmp-card-content-box
-            class="p-big"
-            id-title="report-info"
-            bg-grey=true
-            h2-class="mb-3"
-            header-m0=true
-            required-icon=true
-            card-title="Disservizio"
-            margin-class="mb-40"
-            }}
-            {{>partials/select/select 
-              placeholder="Tipo di disservizio*" 
+            <section class="it-page-section" id="report-info">
+              {{#>cmp-card/cmp-card-content-box
+              class="p-big"
+              bg-grey=true
+              h2-class="mb-3"
+              header-m0=true
+              required-icon=true
+              card-title="Disservizio"
+              margin-class="mb-40"
+              }}
+              {{>partials/select/select
+              placeholder="Tipo di disservizio*"
               class="p-md-3 p-lg-4 pb-lg-0"
-              select-option-list=serv-1-disservizio.list 
-              label-text="Tipo di disservizio*" 
-              label-hidden=true 
-              id="inefficiency" 
+              select-option-list=serv-1-disservizio.list
+              label-text="Tipo di disservizio*"
+              label-hidden=true
+              id="inefficiency"
               selectClass="u-grey-dark"
-            }}
-            <div class="text-area-wrapper p-3 px-lg-4 pt-lg-5 pb-lg-0 bg-white">
-              {{>partials/input/input type="text" id="title" label="Titolo" required=true name="title"
-              formClass="mb-0"}}
-            </div>
-            {{>partials/text-area/text-area placeholder="Dettagli*" id="details" visible=true class="m-0 p-3 px-lg-4 pt-lg-5 pb-lg-4 bg-white" num="2" label="Inserire al massimo 200 caratteri"}}
-
-            <div class="btn-wrapper px-3 pt-2 pb-3 px-lg-4 pb-lg-4 pt-lg-0 bg-white">
-              <label class="title-xsmall-bold u-grey-dark pb-2 ms-2">Immagini</label>
-              <div class="upload-wrapper d-flex justify-content-between align-items-center">
-                <img src="../assets/images/img-disservizio-thumbnail.png" alt=""
-                  class=" img" />
-                <span class="t-primary fw-bold w-100 ms-2">6yhakandsahm413d8.jpg</span>
-                <a href="#" class="align-self-center" aria-label="elimina immagina caricata">
-                  <svg class="icon icon-primary icon-sm mb-1 ">
-                    <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-close"></use>
-                  </svg>
-                </a>
+              }}
+              <div class="text-area-wrapper p-3 px-lg-4 pt-lg-5 pb-lg-0 bg-white">
+                {{>partials/input/input type="text" id="title" label="Titolo" required=true name="title"
+                formClass="mb-0"}}
               </div>
-              <hr>
-              {{> partials/button/button label="Carica file" primary=true iconBtn="it-upload" iconWhite=true sm=true
-              class="w-100 fw-bold" aria-label="Carica file per il disservizio"}}
-              <p class="title-xsmall u-grey-dark pt-10 mb-0">Seleziona una o più immagini da allegare alla
-                segnalazione</p>
-            </div>
-            {{/cmp-card/cmp-card-content-box}}
+              {{>partials/text-area/text-area placeholder="Dettagli*" id="details" visible=true class="m-0 p-3 px-lg-4
+              pt-lg-5 pb-lg-4 bg-white" num="2" label="Inserire al massimo 200 caratteri"}}
 
+              <div class="btn-wrapper px-3 pt-2 pb-3 px-lg-4 pb-lg-4 pt-lg-0 bg-white">
+                <label class="title-xsmall-bold u-grey-dark pb-2 ms-2">Immagini</label>
+                <div class="upload-wrapper d-flex justify-content-between align-items-center">
+                  <img src="../assets/images/img-disservizio-thumbnail.png" alt="" class=" img" />
+                  <span class="t-primary fw-bold w-100 ms-2">6yhakandsahm413d8.jpg</span>
+                  <a href="#" class="align-self-center" aria-label="elimina immagina caricata">
+                    <svg class="icon icon-primary icon-sm mb-1 ">
+                      <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-close"></use>
+                    </svg>
+                  </a>
+                </div>
+                <hr>
+                {{> partials/button/button label="Carica file" primary=true iconBtn="it-upload" iconWhite=true sm=true
+                class="w-100 fw-bold" aria-label="Carica file per il disservizio"}}
+                <p class="title-xsmall u-grey-dark pt-10 mb-0">Seleziona una o più immagini da allegare alla
+                  segnalazione</p>
+              </div>
+              {{/cmp-card/cmp-card-content-box}}
+            </section>
 
-            {{#>cmp-card/cmp-card-content-box
-            h2-class="mb-1"
-            header-m0=true
-            bg-grey=true
-            card-title="Autore della segnalazione"
-            id-title="report-author"
-            subtitle="Informazione su di te"}}
+            <section class="it-page-section" id="report-author">
+              {{#>cmp-card/cmp-card-content-box
+              h2-class="mb-1"
+              header-m0=true
+              bg-grey=true
+              card-title="Autore della segnalazione"
+              subtitle="Informazione su di te"}}
 
-            {{> cmp-info-button-card/cmp-info-button-card 
-            big-title="Giulia Bianchi"
-            label-2="Codice Fiscale <br> <span>GLABNC72H25H501Y</span>"
-            card-class="mt-3"
-            onlyContact=true
-            no-header=true
-            show-more-anagrafica="true"
-            collapse-id="collapse-parents"
-            modalId="modal-documents"
-            bnt-label-text="Modifica"}}
-            {{/cmp-card/cmp-card-content-box}}
-
-
+              {{> cmp-info-button-card/cmp-info-button-card
+              big-title="Giulia Bianchi"
+              label-2="Codice Fiscale <br> <span>GLABNC72H25H501Y</span>"
+              card-class="mt-3"
+              onlyContact=true
+              no-header=true
+              show-more-anagrafica="true"
+              collapse-id="collapse-parents"
+              modalId="modal-documents"
+              bnt-label-text="Modifica"}}
+              {{/cmp-card/cmp-card-content-box}}
+            </section>
+          </div>
           {{> cmp-nav-steps/cmp-nav-steps save="true" saveBtn=true aria-label-save="di segnalazione disservizio"}}
         </div>
       </div>

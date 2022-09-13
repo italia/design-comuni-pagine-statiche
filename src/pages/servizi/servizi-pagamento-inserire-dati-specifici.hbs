@@ -25,93 +25,98 @@
       </div>
       <div class="col-12 col-lg-8 offset-lg-1">
         <div class="steppers-content" aria-live="polite">
-       
+          <div class="it-page-sections-container">
             <p class="text-paragraph-small mb-40">I campi contraddistinti dal simbolo asterisco sono obbligatori</p>
-            {{#>cmp-card/cmp-card-content-box
-            class="p-big p-4"
-            id-title="school-choice"
-            bg-grey=true
-            h2-class="mb-0"
-            margin-class="mb-40"
-            required-icon=true
-            card-title="Scegli la scuola"
-            subtitle="Scegli l’istituto a cui vuoi iscrivere il minore"}}
-            {{> partials/select/select placeholder="Seleziona un'opzione" select-option-list=inserire-dati-specifici
-            id="select-school" label-hidden=true label-text="Scegli la scuola"}}
-            {{/cmp-card/cmp-card-content-box}}
 
-            {{#>cmp-card/cmp-card-content-box
-            class="p-big"
-            id-title="rate-choice"
-            bg-grey=true
-            header-m0=true
-            subtitleClass="mb-4"
-            h2-class="mb-1"
-            margin-class="mb-40"
-            required-icon=true
-            card-title="Tariffa esonero"
-            subtitle="Indica la tariffa di esonero a cui ha diritto il beneficiario"}}
-            {{> cmp-card-radio/cmp-card-radio percentage=true id='rate'
-            label-1="Nessuna"
-            label-2="25%"
-            label-3="50%"
-            label-4="75%"
-            label-5="100%"
-            }}
-            {{/cmp-card/cmp-card-content-box}}
+            <section class="it-page-section" id="school-choice">
+              {{#>cmp-card/cmp-card-content-box
+              class="p-big p-4"
+              bg-grey=true
+              h2-class="mb-0"
+              margin-class="mb-40"
+              required-icon=true
+              card-title="Scegli la scuola"
+              subtitle="Scegli l’istituto a cui vuoi iscrivere il minore"}}
+              {{> partials/select/select placeholder="Seleziona un'opzione" select-option-list=inserire-dati-specifici
+              id="select-school" label-hidden=true label-text="Scegli la scuola"}}
+              {{/cmp-card/cmp-card-content-box}}
+            </section>
 
-            {{#>cmp-card/cmp-card-content-box
-            class="p-big"
-            id-title="outings-choice"
-            bg-grey=true
-            h2-class="mb-1"
-            margin-class="mb-40"
-            header-m0=true
-            subtitleClass="mb-4"
-            required-icon=true
-            card-title="Tariffa riduzione"
-            subtitle="Indica la tariffa di riduzione a cui ha diritto il beneficiario"}}
-            {{> cmp-card-radio/cmp-card-radio percentage=true id='reduction'
-            label-1="Nessuna"
-            label-2="10%"
-            label-3="20%"
-            label-4="30%"
-            label-5="40%"}}
-            {{/cmp-card/cmp-card-content-box}}
-   
-            {{#>cmp-card/cmp-card-content-box
-            class="p-big"
-            id-title="attendance"
-            bg-grey=true
-            h2-class="mb-1"
-            header-m0=true
-            subtitleClass="mb-4"
-            margin-class="mb-40"
-            required-icon=true
-            card-title="Frequenza"
-            subtitle="Indica i giorni di frequenza del servizio"}}
-            {{> cmp-card-radio/cmp-card-radio percentage=true frequency=true id='frequency'}}
-            {{/cmp-card/cmp-card-content-box}}
+            <section class="it-page-section" id="rate-choice">
+              {{#>cmp-card/cmp-card-content-box
+              class="p-big"
+              bg-grey=true
+              header-m0=true
+              subtitleClass="mb-4"
+              h2-class="mb-1"
+              margin-class="mb-40"
+              required-icon=true
+              card-title="Tariffa esonero"
+              subtitle="Indica la tariffa di esonero a cui ha diritto il beneficiario"}}
+              {{> cmp-card-radio/cmp-card-radio percentage=true id='rate'
+              label-1="Nessuna"
+              label-2="25%"
+              label-3="50%"
+              label-4="75%"
+              label-5="100%"
+              }}
+              {{/cmp-card/cmp-card-content-box}}
+            </section>
 
-            {{#>cmp-card/cmp-card-content-box
-            class="p-big"
-            id-title="different-diet"
-            bg-grey=true
-            h2-class="mb-1"
-            header-m0=true
-            subtitleClass="mb-4"
-            required-icon=true
-            card-title="Dieta diversificata"
-            subtitle="Indica la dieta per il beneficiario"}}
-            {{> cmp-card-radio/cmp-card-radio percentage=true frequency=true diet=true id='diet'}}
-            {{/cmp-card/cmp-card-content-box}}
-  
+            <section class="it-page-section" id="outings-choice">
+              {{#>cmp-card/cmp-card-content-box
+              class="p-big"
+              bg-grey=true
+              h2-class="mb-1"
+              margin-class="mb-40"
+              header-m0=true
+              subtitleClass="mb-4"
+              required-icon=true
+              card-title="Tariffa riduzione"
+              subtitle="Indica la tariffa di riduzione a cui ha diritto il beneficiario"}}
+              {{> cmp-card-radio/cmp-card-radio percentage=true id='reduction'
+              label-1="Nessuna"
+              label-2="10%"
+              label-3="20%"
+              label-4="30%"
+              label-5="40%"}}
+              {{/cmp-card/cmp-card-content-box}}
+            </section>
+
+            <section class="it-page-section" id="attendance">
+              {{#>cmp-card/cmp-card-content-box
+              class="p-big"
+              bg-grey=true
+              h2-class="mb-1"
+              header-m0=true
+              subtitleClass="mb-4"
+              margin-class="mb-40"
+              required-icon=true
+              card-title="Frequenza"
+              subtitle="Indica i giorni di frequenza del servizio"}}
+              {{> cmp-card-radio/cmp-card-radio percentage=true frequency=true id='frequency'}}
+              {{/cmp-card/cmp-card-content-box}}
+            </section>
+
+            <section class="it-page-section" id="different-diet">
+              {{#>cmp-card/cmp-card-content-box
+              class="p-big"
+              bg-grey=true
+              h2-class="mb-1"
+              header-m0=true
+              subtitleClass="mb-4"
+              required-icon=true
+              card-title="Dieta diversificata"
+              subtitle="Indica la dieta per il beneficiario"}}
+              {{> cmp-card-radio/cmp-card-radio percentage=true frequency=true diet=true id='diet'}}
+              {{/cmp-card/cmp-card-content-box}}
+            </section>
+          </div>
           {{> cmp-nav-steps/cmp-nav-steps save="true" saveBtn=true aria-label-save="del servizio mensa"}}
         </div>
       </div>
     </div>
   </div>
-
 
   <div class="bg-grey-card shadow-contacts">
     <div class="container">

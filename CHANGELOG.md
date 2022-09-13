@@ -1,3 +1,18 @@
+## [2.0.4](https://github.com/italia/design-comuni-pagine-statiche/compare/v2.0.3...v2.0.4) (2022-09-09)
+
+
+### Bug Fixes
+
+* **core:** align experience rating and cms behaviour ([264d240](https://github.com/italia/design-comuni-pagine-statiche/commit/264d240443747fc682bd07fea5fbb2f4295c628a))
+* **core:** Navscroll Progress Bar in all pages ([6456ce7](https://github.com/italia/design-comuni-pagine-statiche/commit/6456ce7110097dfaf4563b7754ffa9cb033e06c8))
+
+
+### Features
+
+* remove page step functionality and related page ([52a476f](https://github.com/italia/design-comuni-pagine-statiche/commit/52a476f00812716b750f20109be5ad985f8ddf38))
+
+
+
 ## [2.0.3](https://github.com/italia/design-comuni-pagine-statiche/compare/v2.0.2...v2.0.3) (2022-08-29)
 
 

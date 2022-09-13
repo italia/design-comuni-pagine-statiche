@@ -26,48 +26,49 @@
 
       <div class="col-12 col-lg-8 offset-lg-1">
         <div class="steppers-content" aria-live="polite">
- 
-            {{#>cmp-card/cmp-card-content-box
-            class="p-big"
-            id-title="permission-type"
-            bg-grey=true
-            h2-class="mb-1"
-            margin-class="mb-40 mt-2"
-            required-icon=true
-            card-title="Tipo di permesso"
-            subtitle="Scegli il tipo di permesso ZTL"}}
-            {{>partials/checkbox/checkbox
-            class="d-flex flex-column align-items-center bg-white w-100 p-3 p-lg-4"
-            info-list=ztl-dati-checkbox.checkbox}}
-            {{/cmp-card/cmp-card-content-box}}
-    
+          <div class="it-page-sections-container">
+            <section class="it-page-section" id="permission-type">
+              {{#>cmp-card/cmp-card-content-box
+              class="p-big"
+              bg-grey=true
+              h2-class="mb-1"
+              margin-class="mb-40 mt-2"
+              required-icon=true
+              card-title="Tipo di permesso"
+              subtitle="Scegli il tipo di permesso ZTL"}}
+              {{>partials/checkbox/checkbox
+              class="d-flex flex-column align-items-center bg-white w-100 p-3 p-lg-4"
+              info-list=ztl-dati-checkbox.checkbox}}
+              {{/cmp-card/cmp-card-content-box}}
+            </section>
 
-            {{#>cmp-card/cmp-card-content-box
-            class="p-big"
-            id-title="validity-period"
-            bg-grey=true
-            h2-class="mb-1"
-            required-icon=true
-            card-title="Periodo di validità"
-            subtitle="Indica il periodo di validità del permesso ZTL"}}
+            <section class="it-page-section" id="validity-period">
+              {{#>cmp-card/cmp-card-content-box
+              class="p-big"
+              bg-grey=true
+              h2-class="mb-1"
+              required-icon=true
+              card-title="Periodo di validità"
+              subtitle="Indica il periodo di validità del permesso ZTL"}}
 
-            <div class="d-lg-flex justify-content-between flex-column flex-lg-row">
-              {{>partials/input-calendar/input-calendar
-              form-class="mb-0 me-lg-4 p-3 pt-lg-40 pb-lg-40 pl-lg-40"
-              label-text="Dal" index="1"}}
-              {{>partials/input-calendar/input-calendar
-              form-class="mb-0 p-3 pt-lg-40 pb-lg-40 ps-lg-8 pr-lg-40"
-              label-text="Al" index="2"}}
-            </div>
-            {{/cmp-card/cmp-card-content-box}}
-
+              <div class="d-lg-flex justify-content-between flex-column flex-lg-row">
+                {{>partials/input-calendar/input-calendar
+                form-class="mb-0 me-lg-4 p-3 pt-lg-40 pb-lg-40 pl-lg-40"
+                label-text="Dal" index="1"}}
+                {{>partials/input-calendar/input-calendar
+                form-class="mb-0 p-3 pt-lg-40 pb-lg-40 ps-lg-8 pr-lg-40"
+                label-text="Al" index="2"}}
+              </div>
+              {{/cmp-card/cmp-card-content-box}}
+            </section>
+          </div>
           {{> cmp-nav-steps/cmp-nav-steps save="true" saveBtn=true aria-label-save="per il permesso ztl"}}
         </div>
       </div>
     </div>
   </div>
 
- <div class="bg-grey-card shadow-contacts">
+  <div class="bg-grey-card shadow-contacts">
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-6 offset-lg-3 p-contacts">

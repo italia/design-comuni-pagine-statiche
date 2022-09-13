@@ -6,7 +6,8 @@
         {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi" link3="Iscrizioni"}}
         {{>cmp-heading/cmp-heading
         title="Richiesta inviata"
-        subTitle="Grazie, abbiamo ricevuto la tua richiesta per la pratica <strong>iscrizione alla scuola dell’infanzia.</strong></p>
+        subTitle="Grazie, abbiamo ricevuto la tua richiesta per la pratica <strong>iscrizione alla scuola
+          dell’infanzia.</strong></p>
         <p class='subtitle-small pt-3 pt-lg-4'>Abbiamo inviato il riepilogo all’email:<br>
           <strong>giulia.bianchi@gmail.com</strong>"
           iconTitle="it-check-circle"
@@ -30,33 +31,38 @@
       </div>
 
       <div class="col-12 col-lg-8 offset-lg-1">
-        {{>cmp-timeline/cmp-timeline
-        title="Prossimi passi"
-        id-title="next-step"
-        timeline=iscrizione-graduatoria.finalizzare-procedura.timeline
-        label="<a class='t-primary' href='#'>Consulta la richiesta</a> nella tua area riservata."
+        <div class="it-page-sections-container">
+          <section class="it-page-section" id="next-step">
+          {{>cmp-timeline/cmp-timeline
+          title="Prossimi passi"
+          timeline=iscrizione-graduatoria.finalizzare-procedura.timeline
+          label="<a class='t-primary' href='#'>Consulta la richiesta</a> nella tua area riservata."
           }}
-           {{>cmp-icon-list/cmp-icon-list
-           title="Servizi correlati"
-           titleClass="mb-3"
-           id-title="related-service"
-           icon-list=iscrizione-graduatoria.finalizzare-procedura.servizi-correlati
-           }}
+          </section>
+
+          <section class="it-page-section" id="related-service">
+          {{>cmp-icon-list/cmp-icon-list
+          title="Servizi correlati"
+          titleClass="mb-3"
+          icon-list=iscrizione-graduatoria.finalizzare-procedura.servizi-correlati
+          }}
+          </section>
         </div>
       </div>
+    </div>
   </div>
 
   <div class="bg-primary">
     <div class="container">
       <div class="row d-flex justify-content-center bg-primary">
-          <div class="col-12 col-lg-6 p-lg-0 px-4">
+        <div class="col-12 col-lg-6 p-lg-0 px-4">
           {{>cmp-rating/cmp-rating id-title="rating"}}
-          </div>
         </div>
+      </div>
     </div>
   </div>
 
-   <div class="bg-grey-card shadow-contacts">
+  <div class="bg-grey-card shadow-contacts">
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-6 offset-lg-3 p-contacts">
