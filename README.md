@@ -44,6 +44,11 @@ Per segnalare un bug apri un issue qui su GitHub. Se invece vuoi discutere delle
 
 ## ✨ Come contribuire
 
-Vorresti contribuire ai prototipi? Sei nel posto giusto!
+Vorresti dare una mano contribuendo allo sviluppo del progetto?
 
-Inizia spendendo qualche minuto per approfondire la tua conoscenza sulle [linee guida di design per i servizi web della PA](https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/), e fai riferimento alle [indicazioni su Designers Italia](https://designers.italia.it/come-partecipo/) sui modi che hai a disposizione per contribuire.
+Se non l'hai già fatto, inizia spendendo qualche minuto per approfondire la tua conoscenza su l'[Architettura dell'Informazione dei siti web dei Comuni Italiani](https://docs.google.com/spreadsheets/d/1D4KbaA__xO9x_iBm08KvZASjrrFLYLKX/edit#gid=1529184526) e fai riferimento alle [indicazioni su come contribuire](https://github.com/italia/design-comuni-wordpress-theme/blob/main/CONTRIBUTING.md).
+
+A questo punto, è necessario scaricare una copia in locale del tema tramite il comando `git fork https://github.com/italia/design-comuni-pagine-statiche.git` da terminale o cliccando sul pulsante Fork <br>
+![fork](https://user-images.githubusercontent.com/69706/188419656-21fa5b0e-c52a-4168-a1d1-8ea9a149da6a.png)
+
+Una volta terminate le modifiche, è necessario aprire una _pull request_ per sottoporle alla revisione del team.
