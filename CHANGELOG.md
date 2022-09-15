@@ -1,3 +1,12 @@
+## [2.0.5](https://github.com/italia/design-comuni-pagine-statiche/compare/v2.0.4...v2.0.5) (2022-09-15)
+
+
+### Bug Fixes
+
+* contacts card ([1d1681e](https://github.com/italia/design-comuni-pagine-statiche/commit/1d1681e08312ecc56fe715fc1628c2383e17f4c3))
+
+
+
 ## [2.0.4](https://github.com/italia/design-comuni-pagine-statiche/compare/v2.0.3...v2.0.4) (2022-09-09)
 
 
