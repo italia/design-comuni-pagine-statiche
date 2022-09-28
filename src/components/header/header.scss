@@ -67,6 +67,16 @@
     }
   }
 
+  .dropdown-menu {
+    .link-list {
+      a {
+        &:hover {
+          color: inherit;
+        }
+      }
+    }
+  }
+
   .search-link {
     width: 3rem;
     height: 3rem;
