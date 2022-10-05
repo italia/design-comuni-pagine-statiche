@@ -102,7 +102,11 @@
           <div class="col-12">
             <div class="it-header-center-content-wrapper">
               <div class="it-brand-wrapper">
-                <a href="#" title="Vai alla homepage" aria-label="Home Nome del Comune">
+                {{#if home}}
+                <a href="#">
+                {{else}}
+                <a href="#" title="Vai alla homepage">
+                {{/if}}
                   <svg class="icon" aria-hidden="true">
                     <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-pa"></use>
                   </svg>
