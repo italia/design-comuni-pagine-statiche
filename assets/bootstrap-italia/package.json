@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-italia",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "keywords": [
     "css",
     "sass",
@@ -102,7 +102,7 @@
     "uuid": "^8.3.2"
   }
 
-,"_resolved": "https://registry.npmjs.org/bootstrap-italia/-/bootstrap-italia-2.0.4.tgz"
-,"_integrity": "sha512-9t+/eZ1pplDKGUWPoSvxQexKTwzUNn20I+/Du6MASSI1jTuapt/e9Fsz1Spj4grul0C17TY8G9SvstUOqI+T4w=="
-,"_from": "bootstrap-italia@2.0.4"
+,"_resolved": "https://registry.npmjs.org/bootstrap-italia/-/bootstrap-italia-2.0.5.tgz"
+,"_integrity": "sha512-wdtmKTyow8Hpvmg8GxntJrwZ0k06MFG4WyAvbw5tW8aC6IddmmgTT8ixwmvc+dQ3KQ5MO3Z6i+WbKtBEf+pY6w=="
+,"_from": "bootstrap-italia@2.0.5"
 }
