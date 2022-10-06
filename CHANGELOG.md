@@ -1,3 +1,20 @@
+## [2.0.6](https://github.com/italia/design-comuni-pagine-statiche/compare/v2.0.5...v2.0.6) (2022-10-06)
+
+
+### Bug Fixes
+
+* **a11y:** various fixes ([4d2ec8e](https://github.com/italia/design-comuni-pagine-statiche/commit/4d2ec8ebb4257900bc53e9f083711a30e748852f))
+* add left line on active index link sidebar ([3cb2db6](https://github.com/italia/design-comuni-pagine-statiche/commit/3cb2db6a298ccaf15532f742b6ffdf4c3ac867f9))
+* bullet points ([8335d8a](https://github.com/italia/design-comuni-pagine-statiche/commit/8335d8ac1e6746dfe0a04dd00e6520e4c7e0ca13))
+* header hover ([6a99b4f](https://github.com/italia/design-comuni-pagine-statiche/commit/6a99b4fe3f4b389cbe88888346a50f349652cbec))
+
+
+### Features
+
+* remove rating ([c6a16c8](https://github.com/italia/design-comuni-pagine-statiche/commit/c6a16c8ef7c943fb39102afb516809605c667b9a))
+
+
+
 ## [2.0.5](https://github.com/italia/design-comuni-pagine-statiche/compare/v2.0.4...v2.0.5) (2022-09-15)
 
 
