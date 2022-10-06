@@ -63,15 +63,22 @@
 }
 
 .richtext-wrapper {
-  ul {
+  ul, ol {
     li {
       margin-left: 1.75rem;
-      list-style-type: disc !important;
     
       @include media-breakpoint-up(sm) {
         margin-left: 1.55rem
       }
     }
+  }
+
+  ul {
+    list-style-type: disc !important;
+  }
+
+  ol {
+    list-style-type: auto;
   }
 
   p {
