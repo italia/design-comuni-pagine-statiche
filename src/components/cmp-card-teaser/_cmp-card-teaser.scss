@@ -1,10 +1,12 @@
 .card-teaser {
-  padding: 0;
-  height: 100%;
-
-  .card-body {
+  &.arguments-card {
     padding: 0;
     height: 100%;
+
+    .card-body {
+      padding: 0;
+      height: 100%;
+    }
   }
 
   .teaser-content {
