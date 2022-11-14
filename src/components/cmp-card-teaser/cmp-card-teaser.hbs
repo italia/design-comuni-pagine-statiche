@@ -1,16 +1,16 @@
-<div class="card-teaser card-teaser-image card-flex rounded border border-light">
-  <div class="card-body d-flex justify-content-between">
-    <div class="teaser-content">
+<div class="card card-teaser card-teaser-image card-flex no-after rounded shadow-sm border border-light mb-0">
+  <div class="card-image-wrapper with-read-more">
+    <div class="card-body p-3">
       <div class="category-top">
-        <a class="text-decoration-none fw-semibold" href="#">{{category}}</a>
+        <a href="#" class="title-xsmall-semi-bold fw-semibold text-decoration-none">{{category}}</a>
       </div>
-      <h4 class="text-paragraph-medium ">
+      <h4 class="card-title text-paragraph-medium u-grey-light">
         <a href="#" class="text-decoration-none">{{title}}</a>
       </h4>
-      <p class="m-0 u-grey-light text-paragraph-card">{{description}}</p>
+      <p class="text-paragraph-card u-grey-light m-0">{{description}}</p>
     </div>
     {{#if image}}
-    <div class="card-image">
+    <div class="card-image card-image-rounded">
       <img src="{{image}}" alt="Immagine di esempio" />
     </div>
     {{/if}}
