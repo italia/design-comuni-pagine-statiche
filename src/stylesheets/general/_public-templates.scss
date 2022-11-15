@@ -2,6 +2,13 @@
   .card-teaser {
     height: auto;
   }
+
+  &.card-teaser-block-3 {
+    @include media-breakpoint-up(md) {
+      justify-content: flex-start !important;
+      column-gap: 2%;
+    }
+  }
   
   .card-image {
     height: 100%;
