@@ -8,11 +8,11 @@
     </div>
     <div class="row">
       <div class="col-lg-8 px-lg-4 py-lg-2">
-        <h1>
+        <h1 data-audio>
           Osservatorio sul turismo
         </h1>
         <h2 class="visually-hidden">Dettagli della notizia</h2>
-        <p>
+        <p data-audio>
           Donec in consequat nunc. Duis semper fermentum lacus, ac condimentum
           justo auctor a. Nam erat erat, porta vel pharetra in, ullamcorper vel
           turpis.
@@ -94,21 +94,13 @@
                 <li role="none">
                   <a class="list-item" href="#" role="menuitem">
                     <svg class="icon" aria-hidden="true">
-                      <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-download"></use>
-                    </svg>
-                    <span>Scarica</span>
-                  </a>
-                </li>
-                <li role="none">
-                  <a class="list-item" href="#" role="menuitem">
-                    <svg class="icon" aria-hidden="true">
                       <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-print"></use>
                     </svg>
                     <span>Stampa</span>
                   </a>
                 </li>
                 <li role="none">
-                  <a class="list-item" href="#" role="menuitem">
+                  <a class="list-item" role="menuitem" onclick="listenElements(this, '[data-audio]')">
                     <svg class="icon" aria-hidden="true">
                       <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-hearing"></use>
                     </svg>
@@ -161,7 +153,7 @@
         link-list=link-list.template-novita-notizia}}
       </aside>
       <section class="col-lg-8 it-page-sections-container border-light">
-        <article id="descrizione" class="it-page-section anchor-offset">
+        <article id="descrizione" class="it-page-section anchor-offset" data-audio>
           <h4>Descrizione</h4>
           <p class="font-serif">
             Vivamus orci risus, fringilla sit amet enim vel, semper faucibus
