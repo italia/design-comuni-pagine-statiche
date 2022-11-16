@@ -39,7 +39,7 @@ var srcElement;
 const {T2S, message} = initT2S()
 
 const play = (text) => {
-  srcElement.children[1].innerText = "Stop"
+  srcElement.children[1].innerText = "Ferma audio"
   t2sPlay = true
   message.text = text;
   T2S.cancel();
