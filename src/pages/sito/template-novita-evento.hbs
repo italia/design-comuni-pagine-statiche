@@ -115,18 +115,22 @@
 
         <div class="mt-4 mb-4">
           <span class="subtitle-small">Argomenti</span>
-          <div class="chip-wrapper mt-2">
-            <a href="#" class="text-decoration-none">
-              <div class="chip chip-simple chip-primary">
-                <span class="chip-label">Cultura</span>
-              </div>
-            </a>
-            <a href="#" class="text-decoration-none">
-              <div class="chip chip-simple chip-primary">
-                <span class="chip-label">Vivere la città</span>
-              </div>
-            </a>
-          </div>
+          <ul class="d-flex flex-wrap gap-1 mt-2">
+            <li>
+              <a href="#" class="text-decoration-none">
+                <div class="chip chip-simple chip-primary">
+                  <span class="chip-label">Cultura</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none">
+                <div class="chip chip-simple chip-primary">
+                  <span class="chip-label">Vivere la città</span>
+                </div>
+              </a>
+            </li>
+          </ul>
         </div>
         <div class="mt-5">
           <a href="#" class="btn btn-outline-primary btn-icon">
@@ -151,7 +155,7 @@
   <div class="container">
     <div class="row border-top border-light row-column-border row-column-menu-left">
       <aside class="col-lg-4">
-        {{>cmp-navscroll/cmp-navscroll accordion-title="INDICE DELLA PAGINA"  id="one"
+        {{>cmp-navscroll/cmp-navscroll accordion-title="INDICE DELLA PAGINA" id="one"
         link-list=link-list.template-novita-evento}}
       </aside>
       <section class="col-lg-8 it-page-sections-container border-light">
