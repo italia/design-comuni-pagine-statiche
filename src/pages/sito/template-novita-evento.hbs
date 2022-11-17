@@ -745,12 +745,25 @@
       </section>
     </div>
   </div>
-  <section id="contenuti-correlati" class="bg-grey-card shadow-contacts">
-    <div class="container pt-5">
-      {{>cmp-carousel/cmp-carousel carousel-title="Contenuti correlati" class="carousel-4-card"
-      carTitle-class="pb-0"}}
+  <div class="bg-primary">
+    <div class="container">
+      <div class="row d-flex justify-content-center bg-primary">
+        <div class="col-12 col-lg-6">
+          {{>cmp-rating/cmp-rating public-template=true}}
+        </div>
+      </div>
     </div>
-  </section>
+  </div>
+  
+  <div class="bg-grey-card shadow-contacts">
+    <div class="container">
+      <div class="row d-flex justify-content-center p-contacts">
+        <div class="col-12 col-lg-6">
+          {{>cmp-contacts/cmp-contacts city-problems=true}}
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
 
 {{/base/base }}
