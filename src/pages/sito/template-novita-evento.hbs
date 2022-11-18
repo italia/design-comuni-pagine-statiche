@@ -8,9 +8,9 @@
     </div>
     <div class="row">
       <div class="col-lg-8 px-lg-4 py-lg-2">
-        <h1>363^ Festa di Sant'Efisio</h1>
-        <h2 class="h4 py-2">dal 01 maggio 2019 al 04 maggio 2019</h2>
-        <p>
+        <h1 data-audio>363^ Festa di Sant'Efisio</h1>
+        <h2 class="h4 py-2" data-audio>dal 01 maggio 2019 al 04 maggio 2019</h2>
+        <p data-audio>
           Il 1° maggio 2019 Cagliari e tutta la Sardegna festeggiano la 363ª Festa di Sant'Efisio. Un intenso momento di
           devozione, fede, cultura e tradizioni centenarie che si fondono in una processione che non ha eguali.
         </p>
@@ -79,21 +79,13 @@
                 <li role="none">
                   <a class="list-item" href="#" role="menuitem">
                     <svg class="icon" aria-hidden="true">
-                      <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-download"></use>
-                    </svg>
-                    <span>Scarica</span>
-                  </a>
-                </li>
-                <li role="none">
-                  <a class="list-item" href="#" role="menuitem" onclick="window.print()">
-                    <svg class="icon" aria-hidden="true">
                       <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-print"></use>
                     </svg>
                     <span>Stampa</span>
                   </a>
                 </li>
                 <li role="none">
-                  <a class="list-item" href="#" role="menuitem">
+                  <a class="list-item" role="menuitem" onclick="listenElements(this, '[data-audio]')">
                     <svg class="icon" aria-hidden="true">
                       <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-hearing"></use>
                     </svg>
@@ -155,7 +147,7 @@
         link-list=link-list.template-novita-evento}}
       </aside>
       <section class="col-lg-8 it-page-sections-container border-light">
-        <article id="cos-e" class="it-page-section anchor-offset">
+        <article id="cos-e" class="it-page-section anchor-offset" data-audio>
           <h4>Cos'è?</h4>
           <p class="font-serif">
             Sant'Efisio, nato in una città dell'Asia Minore, visse all'epoca dell'Imperatore Diocleziano nel III sec.
