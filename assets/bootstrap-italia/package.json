@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-italia",
-  "version": "2.0.5",
+  "version": "2.0.9",
   "keywords": [
     "css",
     "sass",
@@ -11,7 +11,7 @@
     "web"
   ],
   "module": "dist/bootstrap-italia.esm.js",
-  "types": "./decs.d.ts",
+  "types": "./types/decs.d.ts",
   "sideEffects": [
     "*.css",
     "*.scss",
@@ -102,7 +102,7 @@
     "uuid": "^8.3.2"
   }
 
-,"_resolved": "https://registry.npmjs.org/bootstrap-italia/-/bootstrap-italia-2.0.5.tgz"
-,"_integrity": "sha512-wdtmKTyow8Hpvmg8GxntJrwZ0k06MFG4WyAvbw5tW8aC6IddmmgTT8ixwmvc+dQ3KQ5MO3Z6i+WbKtBEf+pY6w=="
-,"_from": "bootstrap-italia@2.0.5"
+,"_resolved": "https://registry.npmjs.org/bootstrap-italia/-/bootstrap-italia-2.0.9.tgz"
+,"_integrity": "sha512-Ji0uP+//VqllorJ/uTDWh01ImPSUuCL9dX9oEBjAgsvGEXW7W/v7TlQ0xWMijS0hztlhhCshC3jzsfyv2+tPQw=="
+,"_from": "bootstrap-italia@2.0.9"
 }

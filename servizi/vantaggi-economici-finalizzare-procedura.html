@@ -49,14 +49,14 @@
                             </div>
                           </div>
                         </div>
-                          <a class="btn btn-primary btn-icon btn-full" href="#" data-element="personal-area-login">
-                            <span class="rounded-icon" aria-hidden="true">
-                              <svg class="icon icon-primary">
-                                <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-user"></use>
-                              </svg>
-                            </span>
-                            <span class="d-none d-lg-block">Accedi all'area personale</span>
-                          </a>
+                        <a class="btn btn-primary btn-icon btn-full" href="#" data-element="personal-area-login">
+                          <span class="rounded-icon" aria-hidden="true">
+                            <svg class="icon icon-primary">
+                              <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-user"></use>
+                            </svg>
+                          </span>
+                          <span class="d-none d-lg-block">Accedi all'area personale</span>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -71,14 +71,14 @@
                     <div class="col-12">
                       <div class="it-header-center-content-wrapper">
                         <div class="it-brand-wrapper">
-                          <a href="#" title="Vai alla homepage">
-                            <svg class="icon" aria-hidden="true">
-                              <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-pa"></use>
-                            </svg>
-                            <div class="it-brand-text">
-                              <div class="it-brand-title">Nome del Comune</div>
-                            </div>
-                          </a>
+                            <a href="#" title="Vai alla homepage">
+                              <svg class="icon" aria-hidden="true">
+                                <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-pa"></use>
+                              </svg>
+                              <div class="it-brand-text">
+                                <div class="it-brand-title">Nome del Comune</div>
+                              </div>
+                            </a>
                         </div>
                         <div class="it-right-zone">
                           <div class="it-socials d-none d-lg-flex">
@@ -147,8 +147,8 @@
                   <div class="row">
                     <div class="col-12">
                       <!--start nav-->
-                        <nav class="navbar navbar-expand-lg has-megamenu" aria-label="Navigazione principale">
-                          <button class="custom-navbar-toggler" type="button" aria-controls="nav4" aria-expanded="false" aria-label="Mostra/Nascondi la navigazione" data-bs-target="#nav4" data-bs-toggle="navbarcollapsible">
+                      <div class="navbar navbar-expand-lg has-megamenu">
+                        <button class="custom-navbar-toggler" type="button" aria-controls="nav4" aria-expanded="false" aria-label="Mostra/Nascondi la navigazione" data-bs-target="#nav4" data-bs-toggle="navbarcollapsible">
                           <svg class="icon">
                             <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-burger"></use>
                           </svg>
@@ -164,7 +164,7 @@
                             </button>
                           </div>
                           <div class="menu-wrapper">
-                            <a href="#" aria-label="home Nome del Comune" class="logo-hamburger">
+                            <a href="#" class="logo-hamburger">
                               <svg class="icon" aria-hidden="true">
                                 <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-pa"></use>
                               </svg>
@@ -172,44 +172,48 @@
                                 <div class="it-brand-title">Nome del Comune</div>
                               </div>
                             </a>
-                            <ul class="navbar-nav" data-element="main-navigation">
-                              <li class="nav-item">
-                                <a class="nav-link" href="#" data-element="management">
-                                  <span>Amministrazione</span>
-                                </a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#" data-element="news">
-                                  <span>Novità</span>
-                                </a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link active" href="#" data-element="all-services">
-                                  <span>Servizi</span>
-                                </a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#" data-element="live">
-                                  <span>Vivere il Comune</span>
-                                </a>
-                              </li>
-                            </ul>
-                            <ul class="navbar-nav navbar-secondary">
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">Iscrizioni</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">Estate in città</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">Polizia locale</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#" data-element="all-topics">
-                                  <span class="fw-bold">Tutti gli argomenti...</span>
-                                </a>
-                              </li>
-                            </ul>
+                            <nav aria-label="Principale">
+                              <ul class="navbar-nav" data-element="main-navigation">
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#" data-element="management">
+                                    <span>Amministrazione</span>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#" data-element="news">
+                                    <span>Novità</span>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link active" href="#" data-element="all-services">
+                                    <span>Servizi</span>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#" data-element="live">
+                                    <span>Vivere il Comune</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </nav>
+                            <nav aria-label="Secondaria">
+                              <ul class="navbar-nav navbar-secondary">
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Iscrizioni</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Estate in città</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Polizia locale</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#" data-element="all-topics">
+                                    <span class="fw-bold">Tutti gli argomenti...</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </nav>
                             <div class="it-socials">
                               <span>Seguici su</span>
                               <ul>
@@ -259,7 +263,7 @@
                             </div>
                           </div>
                         </div>
-                      </nav>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -270,7 +274,7 @@
         <div class="row justify-content-center">
           <div class="col-12 col-lg-10">
             <div class="cmp-breadcrumbs" role="navigation">
-              <nav class="breadcrumb-container">
+              <nav class="breadcrumb-container" aria-label="breadcrumb">
                 <ol class="breadcrumb p-0" data-element="breadcrumb">
                   <li class="breadcrumb-item"><a href="#">Home</a><span class="separator">/</span></li>
                   <li class="breadcrumb-item"><a href="#">Servizi</a></li>
@@ -285,7 +289,6 @@
                 </svg>
                 <h1 class="title-xxxlarge">Richiesta inviata</h1>
               </div>
-            
             
               <p class="subtitle-small">Grazie, abbiamo ricevuto la tua richiesta per la pratica <strong>AN4059281 assegno di
                       maternità.</strong></p>
@@ -315,7 +318,7 @@
         <div class="row">
           <div class="d-none d-sm-none d-lg-block col-lg-3">
             <div class="cmp-navscroll sticky-top" aria-labelledby="accordion-title-one">
-              <nav class="navbar it-navscroll-wrapper navbar-expand-lg" data-bs-navscroll>
+              <nav class="navbar it-navscroll-wrapper navbar-expand-lg" aria-label="INDICE DELLA PAGINA" data-bs-navscroll>
                 <div class="navbar-custom" id="navbarNavProgress">
                   <div class="menu-wrapper">
                     <div class="link-list-wrapper">

@@ -49,14 +49,14 @@
                             </div>
                           </div>
                         </div>
-                          <a class="btn btn-primary btn-icon btn-full" href="#" data-element="personal-area-login">
-                            <span class="rounded-icon" aria-hidden="true">
-                              <svg class="icon icon-primary">
-                                <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-user"></use>
-                              </svg>
-                            </span>
-                            <span class="d-none d-lg-block">Accedi all'area personale</span>
-                          </a>
+                        <a class="btn btn-primary btn-icon btn-full" href="#" data-element="personal-area-login">
+                          <span class="rounded-icon" aria-hidden="true">
+                            <svg class="icon icon-primary">
+                              <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-user"></use>
+                            </svg>
+                          </span>
+                          <span class="d-none d-lg-block">Accedi all'area personale</span>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -71,14 +71,14 @@
                     <div class="col-12">
                       <div class="it-header-center-content-wrapper">
                         <div class="it-brand-wrapper">
-                          <a href="#" title="Vai alla homepage">
-                            <svg class="icon" aria-hidden="true">
-                              <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-pa"></use>
-                            </svg>
-                            <div class="it-brand-text">
-                              <div class="it-brand-title">Nome del Comune</div>
-                            </div>
-                          </a>
+                            <a href="#" title="Vai alla homepage">
+                              <svg class="icon" aria-hidden="true">
+                                <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-pa"></use>
+                              </svg>
+                              <div class="it-brand-text">
+                                <div class="it-brand-title">Nome del Comune</div>
+                              </div>
+                            </a>
                         </div>
                         <div class="it-right-zone">
                           <div class="it-socials d-none d-lg-flex">
@@ -147,8 +147,8 @@
                   <div class="row">
                     <div class="col-12">
                       <!--start nav-->
-                        <nav class="navbar navbar-expand-lg has-megamenu" aria-label="Navigazione principale">
-                          <button class="custom-navbar-toggler" type="button" aria-controls="nav4" aria-expanded="false" aria-label="Mostra/Nascondi la navigazione" data-bs-target="#nav4" data-bs-toggle="navbarcollapsible">
+                      <div class="navbar navbar-expand-lg has-megamenu">
+                        <button class="custom-navbar-toggler" type="button" aria-controls="nav4" aria-expanded="false" aria-label="Mostra/Nascondi la navigazione" data-bs-target="#nav4" data-bs-toggle="navbarcollapsible">
                           <svg class="icon">
                             <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-burger"></use>
                           </svg>
@@ -164,7 +164,7 @@
                             </button>
                           </div>
                           <div class="menu-wrapper">
-                            <a href="#" aria-label="home Nome del Comune" class="logo-hamburger">
+                            <a href="#" class="logo-hamburger">
                               <svg class="icon" aria-hidden="true">
                                 <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-pa"></use>
                               </svg>
@@ -172,44 +172,48 @@
                                 <div class="it-brand-title">Nome del Comune</div>
                               </div>
                             </a>
-                            <ul class="navbar-nav" data-element="main-navigation">
-                              <li class="nav-item">
-                                <a class="nav-link" href="#" data-element="management">
-                                  <span>Amministrazione</span>
-                                </a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#" data-element="news">
-                                  <span>Novità</span>
-                                </a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link active" href="#" data-element="all-services">
-                                  <span>Servizi</span>
-                                </a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#" data-element="live">
-                                  <span>Vivere il Comune</span>
-                                </a>
-                              </li>
-                            </ul>
-                            <ul class="navbar-nav navbar-secondary">
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">Iscrizioni</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">Estate in città</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#">Polizia locale</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link" href="#" data-element="all-topics">
-                                  <span class="fw-bold">Tutti gli argomenti...</span>
-                                </a>
-                              </li>
-                            </ul>
+                            <nav aria-label="Principale">
+                              <ul class="navbar-nav" data-element="main-navigation">
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#" data-element="management">
+                                    <span>Amministrazione</span>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#" data-element="news">
+                                    <span>Novità</span>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link active" href="#" data-element="all-services">
+                                    <span>Servizi</span>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#" data-element="live">
+                                    <span>Vivere il Comune</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </nav>
+                            <nav aria-label="Secondaria">
+                              <ul class="navbar-nav navbar-secondary">
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Iscrizioni</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Estate in città</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#">Polizia locale</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="#" data-element="all-topics">
+                                    <span class="fw-bold">Tutti gli argomenti...</span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </nav>
                             <div class="it-socials">
                               <span>Seguici su</span>
                               <ul>
@@ -259,7 +263,7 @@
                             </div>
                           </div>
                         </div>
-                      </nav>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -270,7 +274,7 @@
         <div class="row justify-content-center">
           <div class="col-12 col-lg-10">
             <div class="cmp-breadcrumbs" role="navigation">
-              <nav class="breadcrumb-container">
+              <nav class="breadcrumb-container" aria-label="breadcrumb">
                 <ol class="breadcrumb p-0" data-element="breadcrumb">
                   <li class="breadcrumb-item"><a href="#">Home</a><span class="separator">/</span></li>
                   <li class="breadcrumb-item"><a href="#">Servizi</a></li>
@@ -288,23 +292,26 @@
             <div class="cmp-heading pb-3 pb-lg-4">
               <div class="row">
                 <div class="col-lg-8">
-                    <h1 class="title-xxxlarge" data-element="service-title">Iscrizione alla Scuola dell’infanzia</h1>
+                  <h1 class="title-xxxlarge" data-element="service-title">Iscrizione alla Scuola dell’infanzia</h1>
             
-                    <div class="d-flex flex-wrap cmp-heading__tag">
-                      <div class="cmp-tag">
-                        <span class="cmp-tag__tag title-xsmall" data-element="service-status">Servizio attivo</span>
+                  <ul class="d-flex flex-wrap gap-1 my-3">
+                    <li>
+                      <div class="chip chip-simple text-button" href="#" data-element="service-status">
+                        <span class="chip-label">Servizio attivo</span>
                       </div>
-                    </div>
+                    </li>
+                  </ul>
             
-                    <p class="subtitle-small mb-3">Come iscrivere i propri figli alle Scuole dell'infanzia comunali o nelle strutture accreditate.</p>
+            
+                  <p class="subtitle-small mb-3">Come iscrivere i propri figli alle Scuole dell'infanzia comunali o nelle strutture accreditate.</p>
             
             
-                    <button type="button" class="btn btn-primary fw-bold">
-                    
-                    
-                    
-                     <span class="">Richiesta di iscrizione online</span>
-                    </button>
+                  <button type="button" class="btn btn-primary fw-bold">
+                  
+                  
+                  
+                   <span class="">Richiesta di iscrizione online</span>
+                  </button>
             
                 </div>
                 <div class="col-lg-3 offset-lg-1 mt-5 mt-lg-0">
@@ -367,21 +374,13 @@
                           <li role="none">
                             <a class="list-item" href="#" role="menuitem">
                               <svg class="icon" aria-hidden="true">
-                                <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-download"></use>
-                              </svg>
-                              <span>Scarica</span>
-                            </a>
-                          </li>
-                          <li role="none">
-                            <a class="list-item" href="#" role="menuitem">
-                              <svg class="icon" aria-hidden="true">
                                 <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-print"></use>
                               </svg>
                               <span>Stampa</span>
                             </a>
                           </li>
                           <li role="none">
-                            <a class="list-item" href="#" role="menuitem">
+                            <a class="list-item" href="#" role="menuitem" onclick="listenElements(this, '[data-audio]')">
                               <svg class="icon" aria-hidden="true">
                                 <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-hearing"></use>
                               </svg>
@@ -411,7 +410,7 @@
         <div class="row row-column-menu-left pb-4 pb-lg-80">
           <div class="col-12 col-lg-3 mb-4 border-col">
             <div class="cmp-navscroll sticky-top" aria-labelledby="accordion-title-one">
-              <nav class="navbar it-navscroll-wrapper navbar-expand-lg" data-bs-navscroll>
+              <nav class="navbar it-navscroll-wrapper navbar-expand-lg" aria-label="INDICE DELLA PAGINA" data-bs-navscroll>
                 <div class="navbar-custom" id="navbarNavProgress">
                   <div class="menu-wrapper">
                     <div class="link-list-wrapper">
@@ -689,28 +688,28 @@
     
                   <div class="col-12 mb-30">
                     <span class="text-paragraph-small">Argomenti:</span>
-                    <div class="d-flex flex-wrap gap-2 mt-10 mb-30">
-                      <div class="cmp-tag">
-                        <a class="chip chip-simple t-primary bg-tag text-decoration-none" href="#" data-element="service-topic">
-                        <span class="chip-label">Educazione</span>
+                    <ul class="d-flex flex-wrap gap-2 mt-10 mb-3">
+                      <li>
+                        <a class="chip chip-simple" href="#" data-element="service-topic">
+                          <span class="chip-label">Educazione</span>
                         </a>
-                      </div>
-                      <div class="cmp-tag">
-                        <a class="chip chip-simple t-primary bg-tag text-decoration-none" href="#" data-element="service-topic">
-                        <span class="chip-label">Famiglia</span>
+                      </li>
+                      <li>
+                        <a class="chip chip-simple" href="#" data-element="service-topic">
+                          <span class="chip-label">Famiglia</span>
                         </a>
-                      </div>
-                      <div class="cmp-tag">
-                        <a class="chip chip-simple t-primary bg-tag text-decoration-none" href="#" data-element="service-topic">
-                        <span class="chip-label">Scuola materna</span>
+                      </li>
+                      <li>
+                        <a class="chip chip-simple" href="#" data-element="service-topic">
+                          <span class="chip-label">Scuola materna</span>
                         </a>
-                      </div>
-                      <div class="cmp-tag">
-                        <a class="chip chip-simple t-primary bg-tag text-decoration-none" href="#" data-element="service-topic">
-                        <span class="chip-label">Bambini 3 - 5 anni</span>
+                      </li>
+                      <li>
+                        <a class="chip chip-simple" href="#" data-element="service-topic">
+                          <span class="chip-label">Bambini 3 - 5 anni</span>
                         </a>
-                      </div>
-                    </div>
+                      </li>
+                    </ul>
                     <p class="text-paragraph-small mb-0">Pagina aggiornata il 14/04/2022</p>
                   </div>
               </div></section>
