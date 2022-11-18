@@ -59,10 +59,6 @@
     "inserire-dati-specifici-2":{
       "list":[
         {
-          "name": "Sportello",
-          "description": "CIE"
-        },
-        {
           "name": "Indirizzo",
           "description": "via S. Caterina a Chiaia, 76"
         },
