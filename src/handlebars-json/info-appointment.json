@@ -2,10 +2,6 @@
   "inserire-dati-specifici-appuntamento": {
     "info": [
       {
-        "label": "Sportello",
-        "value": "CIE"
-      },
-      {
         "label": "Indirizzo",
         "value": "via S. Caterina a Chiaia, 76"
       },
