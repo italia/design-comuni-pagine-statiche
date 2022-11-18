@@ -1,9 +1,9 @@
 {{#if no-link}}
-<div class="chip chip-simple {{class}}" href="#" data-element="service-topic">
+<div class="chip chip-simple {{class}}" href="#" {{#if data-element}}data-element="{{data-element}}"{{/if}}>
   <span class="chip-label">{{label-tag}}</span>
 </div>
 {{else}}
-<a class="chip chip-simple {{class}}" href="#" data-element="service-topic">
+<a class="chip chip-simple {{class}}" href="#" {{#if data-element}}data-element="{{data-element}}"{{/if}}>
   <span class="chip-label">{{label-tag}}</span>
 </a>
 {{/if}}
