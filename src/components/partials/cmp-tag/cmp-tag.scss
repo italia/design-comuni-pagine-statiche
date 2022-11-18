@@ -1,36 +1,30 @@
-.cmp-tag {
-  &__tag {
-    @include font(14, 14);
-    font-weight: 600;
-    color: #008758;
-    padding: 0 0.75rem;
-    border: 1px solid #008758;
-    text-decoration: none;
-    border-radius: 50px;
+.chip {
+  border-color: #007a52;
+  background: #fff;
+  
+  .chip-label {
+    color: #007A52;
+  }
 
-    @include media-breakpoint-up(md) {
-      font-weight: 700;
-      padding: 0 0.667rem;
+  &:is(a) {
+    text-decoration: none;
+
+    &:hover:not(.chip-disabled) {
+      background-color: #007A52;
+
+      .chip-label {
+        color: #fff;
+      }
     }
   }
 
-  div.chip-simple {
-    &:hover {
+  &:is(div) {
+    &:hover:not(.chip-disabled) {
       background-color: transparent;
       border-color: #007A52;
 
       .chip-label {
         color: #007A52;
-      }
-    }
-  }
-
-  .bg-tag {
-    @include media-breakpoint-down(md) {
-      background-color: get-color(primary, main);
-
-      .chip-label {
-        color: get-color(white, main);
       }
     }
   }
