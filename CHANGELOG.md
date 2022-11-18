@@ -1,3 +1,24 @@
+# [2.1.0](https://github.com/italia/design-comuni-pagine-statiche/compare/v2.0.6...v2.1.0) (2022-11-18)
+
+
+### Bug Fixes
+
+* **a11y:** improve accessibility  ([8d57978](https://github.com/italia/design-comuni-pagine-statiche/commit/8d57978de32151d21577a3745d3f1225e8154fdb))
+* **a11y:** improve arguments chips accessibility ([da95cbb](https://github.com/italia/design-comuni-pagine-statiche/commit/da95cbbdb8ce5fb8d5d48b05f26a823715b4279d))
+* column order teaser card ([485e6c8](https://github.com/italia/design-comuni-pagine-statiche/commit/485e6c8e0af9f4596d295c75bab8dd68bf2e0881))
+* margin bottom for ul ol for richtext wrapper ([55bd1e6](https://github.com/italia/design-comuni-pagine-statiche/commit/55bd1e6e54250a171e45b270e489b02e9b1a4d9c))
+* use home cards for argomento ([0ec3ea4b](https://github.com/italia/design-comuni-pagine-statiche/commit/0ec3ea4ba162cddcfa03b91a66c9e2e9c855b600)
+* homepage mobile ([1ed0eb1](https://github.com/italia/design-comuni-pagine-statiche/commit/1ed0eb1ae846d170f29c6c97d5e6ef164162860b)
+
+
+### Features
+
+* add t2s (action ascolta) ([e67775b](https://github.com/italia/design-comuni-pagine-statiche/commit/e67775b6475de6ab3cf9e9207ae9ec7c2f7045f8))
+* add print.css ([bbd2fff](https://github.com/italia/design-comuni-pagine-statiche/commit/bbd2fffb2cb61499c1bbbe8fb327229e51aa2944))
+* create teaser card component, remove flex and add column to argument page ([04feb16](https://github.com/italia/design-comuni-pagine-statiche/commit/04feb1662245ad4c586d8fcf4d79c05f52a0875c)
+
+
+
 ## [2.0.6](https://github.com/italia/design-comuni-pagine-statiche/compare/v2.0.5...v2.0.6) (2022-10-06)
 
 
