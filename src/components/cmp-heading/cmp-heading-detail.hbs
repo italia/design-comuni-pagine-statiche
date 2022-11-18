@@ -7,12 +7,13 @@
       <h1 class="title-xxxlarge {{title-class}}" data-element="service-title">{{title}}</h1>
       {{/if}}
 
-      {{#if label-tag-up}}
-      <div class="d-flex flex-wrap my-4">
-        <div class="chip chip-simple">
-          <span class="chip-label fw-bold" data-element="service-status">Servizio attivo</span>
-        </div>
-      </div>
+      {{#if label-tag}}
+      <ul class="d-flex flex-wrap gap-1 my-3">
+        <li>
+          {{>partials/cmp-tag/cmp-tag label-tag=label-tag class="t-primary bg-tag" no-link=true}}
+        </li>
+      </ul>
+
       {{/if}}
 
       {{#if subTitle}}

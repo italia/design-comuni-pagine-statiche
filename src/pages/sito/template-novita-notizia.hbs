@@ -133,18 +133,10 @@
           </div>
           <ul class="d-flex flex-wrap gap-1">
             <li>
-              <a href="#" class="text-decoration-none">
-                <div class="chip chip-simple chip-primary">
-                  <span class="chip-label">Cultura</span>
-                </div>
-              </a>
+              {{>partials/cmp-tag/cmp-tag label-tag="Cultura" class="t-primary bg-tag"}}
             </li>
             <li>
-              <a href="#" class="text-decoration-none">
-                <div class="chip chip-simple chip-primary">
-                  <span class="chip-label">Muoversi</span>
-                </div>
-              </a>
+              {{>partials/cmp-tag/cmp-tag label-tag="Muoversi" class="t-primary bg-tag"}}
             </li>
           </ul>
         </div>
@@ -234,16 +226,14 @@
             </div>
             <div class="col-12 col-sm-4">
               <h6><small>Persone</small></h6>
-              <a href="#" class="text-decoration-none">
-                <div class="chip chip-simple chip-primary">
-                  <span class="chip-label">Mario Rossi</span>
-                </div>
-              </a>
-              <a href="#" class="text-decoration-none">
-                <div class="chip chip-simple chip-primary">
-                  <span class="chip-label">Alessandro Bianchi</span>
-                </div>
-              </a>
+              <ul class="d-flex flex-wrap gap-1 mt-2">
+                <li>
+                  {{>partials/cmp-tag/cmp-tag label-tag="Mario Rossi" class="t-primary bg-tag"}}
+                </li>
+                <li>
+                  {{>partials/cmp-tag/cmp-tag label-tag="Alessandro Bianchi" class="t-primary bg-tag"}}
+                </li>
+              </ul>
             </div>
           </div>
         </article>

@@ -117,18 +117,10 @@
           <span class="subtitle-small">Argomenti</span>
           <ul class="d-flex flex-wrap gap-1 mt-2">
             <li>
-              <a href="#" class="text-decoration-none">
-                <div class="chip chip-simple chip-primary">
-                  <span class="chip-label">Cultura</span>
-                </div>
-              </a>
+              {{>partials/cmp-tag/cmp-tag label-tag="Cultura" class="t-primary bg-tag"}}
             </li>
             <li>
-              <a href="#" class="text-decoration-none">
-                <div class="chip chip-simple chip-primary">
-                  <span class="chip-label">Vivere la città</span>
-                </div>
-              </a>
+              {{>partials/cmp-tag/cmp-tag label-tag="Vivere la città" class="t-primary bg-tag"}}
             </li>
           </ul>
         </div>
@@ -287,16 +279,14 @@
           </p>
           <div class="pt-3 pb-5">
             <h5 class="h6 font-serif fw-bold">Parteciperanno:</h5>
-            <a href="#" class="text-decoration-none">
-              <div class="chip chip-simple chip-primary">
-                <span class="chip-label">Valerio Alfio Boi</span>
-              </div>
-            </a>
-            <a href="#" class="text-decoration-none">
-              <div class="chip chip-simple chip-primary">
-                <span class="chip-label">Marco Murgia</span>
-              </div>
-            </a>
+            <ul class="d-flex flex-wrap gap-1 mt-2">
+              <li>
+                {{>partials/cmp-tag/cmp-tag label-tag="Valerio Alfio Boi" class="t-primary bg-tag"}}
+              </li>
+              <li>
+                {{>partials/cmp-tag/cmp-tag label-tag="Marco Murgia" class="t-primary bg-tag"}}
+              </li>
+            </ul>
           </div>
         </article>
         <article id="luogo" class="it-page-section anchor-offset">

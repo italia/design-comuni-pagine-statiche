@@ -14,14 +14,24 @@
     }
   }
 
+  div.chip-simple {
+    &:hover {
+      background-color: transparent;
+      border-color: #007A52;
+
+      .chip-label {
+        color: #007A52;
+      }
+    }
+  }
+
   .bg-tag {
-    @include media-breakpoint-down (md) {
+    @include media-breakpoint-down(md) {
       background-color: get-color(primary, main);
 
-      
-    .chip-label{
-      color: get-color(white, main);
-    }
+      .chip-label {
+        color: get-color(white, main);
+      }
     }
   }
 }
