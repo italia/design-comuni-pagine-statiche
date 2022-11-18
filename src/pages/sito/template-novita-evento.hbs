@@ -107,18 +107,14 @@
 
         <div class="mt-4 mb-4">
           <span class="subtitle-small">Argomenti</span>
-          <div class="chip-wrapper mt-2">
-            <a href="#" class="text-decoration-none">
-              <div class="chip chip-simple chip-primary">
-                <span class="chip-label">Cultura</span>
-              </div>
-            </a>
-            <a href="#" class="text-decoration-none">
-              <div class="chip chip-simple chip-primary">
-                <span class="chip-label">Vivere la città</span>
-              </div>
-            </a>
-          </div>
+          <ul class="d-flex flex-wrap gap-1 mt-2">
+            <li>
+              {{>partials/cmp-tag/cmp-tag label-tag="Cultura"}}
+            </li>
+            <li>
+              {{>partials/cmp-tag/cmp-tag label-tag="Vivere la città"}}
+            </li>
+          </ul>
         </div>
         <div class="mt-5">
           <a href="#" class="btn btn-outline-primary btn-icon">
@@ -143,7 +139,7 @@
   <div class="container">
     <div class="row border-top border-light row-column-border row-column-menu-left">
       <aside class="col-lg-4">
-        {{>cmp-navscroll/cmp-navscroll accordion-title="INDICE DELLA PAGINA"  id="one"
+        {{>cmp-navscroll/cmp-navscroll accordion-title="INDICE DELLA PAGINA" id="one"
         link-list=link-list.template-novita-evento}}
       </aside>
       <section class="col-lg-8 it-page-sections-container border-light">
@@ -275,16 +271,14 @@
           </p>
           <div class="pt-3 pb-5">
             <h5 class="h6 font-serif fw-bold">Parteciperanno:</h5>
-            <a href="#" class="text-decoration-none">
-              <div class="chip chip-simple chip-primary">
-                <span class="chip-label">Valerio Alfio Boi</span>
-              </div>
-            </a>
-            <a href="#" class="text-decoration-none">
-              <div class="chip chip-simple chip-primary">
-                <span class="chip-label">Marco Murgia</span>
-              </div>
-            </a>
+            <ul class="d-flex flex-wrap gap-1 mt-2">
+              <li>
+                {{>partials/cmp-tag/cmp-tag label-tag="Valerio Alfio Boi"}}
+              </li>
+              <li>
+                {{>partials/cmp-tag/cmp-tag label-tag="Marco Murgia"}}
+              </li>
+            </ul>
           </div>
         </article>
         <article id="luogo" class="it-page-section anchor-offset">
