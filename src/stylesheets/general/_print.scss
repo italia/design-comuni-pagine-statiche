@@ -1,0 +1,27 @@
+@media print {
+    header nav, footer, .dropdown, .cmp-navscroll, [data-element="personal-area-login"]  {
+        display: none !important;
+    }
+
+    .it-header-wrapper {
+        print-color-adjust: exact !important; 
+        -webkit-print-color-adjust: exact !important; 
+    }
+
+    .it-header-navbar-wrapper {
+        display: none !important;
+        width: 0 !important;
+    }
+
+    .it-header-center-wrapper {
+        padding-left: 0 !important;
+    }
+
+    .it-header-wrapper .it-nav-wrapper .it-brand-wrapper {
+        padding-left: 0 !important;
+    }
+
+    .it-search-wrapper {
+        display: none !important;
+    }
+}
