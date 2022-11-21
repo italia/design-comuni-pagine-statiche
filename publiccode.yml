@@ -55,7 +55,7 @@ maintenance:
 name: Sito web e servizi digitali dei Comuni Italiani
 platforms:
   - web
-releaseDate: '2022-11-18'
-softwareVersion: v2.1.0
+releaseDate: '2022-11-21'
+softwareVersion: v2.1.1
 softwareType: standalone/web
 url: 'https://github.com/italia/design-comuni-pagine-statiche'
