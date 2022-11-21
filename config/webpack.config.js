@@ -11,7 +11,7 @@ module.exports = {
     path.join(config.root, config.paths.src, 'stylesheets/styles.scss'),
   ],
   optimization: {
-    minimize: false,
+    minimize: true,
   },
   output: {
     path: path.join(config.root, config.paths.dist),
