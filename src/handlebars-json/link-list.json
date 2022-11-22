@@ -208,6 +208,10 @@
         "anchor": "cos-e"
       },
       {
+        "item": "A chi è rivolto",
+        "anchor": "destinatari"
+      }
+      {
         "item": "Luogo",
         "anchor": "luogo"
       },
