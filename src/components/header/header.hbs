@@ -32,61 +32,61 @@
                 </div>
               </div>
               {{#if logged}}
-                <div class="it-user-wrapper nav-item dropdown">
-                  <a aria-expanded="false" class="btn btn-primary btn-icon btn-full" data-bs-toggle="dropdown" href="#"
-                    data-focus-mouse="false">
-                    <span class="rounded-icon">
-                      <img src="https://picsum.photos/20/20" class="border rounded-circle icon-white" alt="Mario Rossi">
-                    </span>
-                    <span class="d-none d-lg-block">Mario Rossi</span>
-                    <svg class="icon icon-white d-none d-lg-block">
-                      <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
-                    </svg>
-                  </a>
-                  <div class="dropdown-menu">
-                    <div class="row">
-                      <div class="col-12">
-                        <div class="link-list-wrapper">
-                          <ul class="link-list">
-                            <li>
-                              <a class="dropdown-item list-item" href="#"><span>I miei servizi</span></a>
-                            </li>
-                            <li>
-                              <a class="dropdown-item list-item" href="#"><span>Le mie pratiche</span></a>
-                            </li>
-                            <li>
-                              <a class="dropdown-item list-item" href="#"><span>Notifiche</span></a>
-                            </li>
-                            <li>
-                              <span class="divider"></span>
-                            </li>
-                            <li>
-                              <a class="dropdown-item list-item" href="#"><span>Impostazioni</span></a>
-                            </li>
-                            <li>
-                              <a class="list-item left-icon" href="#">
-                                <svg class="icon icon-primary icon-sm left">
-                                  <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-external-link">
-                                  </use>
-                                </svg>
-                                <span class="fw-bold">Esci</span>
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
+              <div class="it-user-wrapper nav-item dropdown">
+                <a aria-expanded="false" class="btn btn-primary btn-icon btn-full" data-bs-toggle="dropdown" href="#"
+                  data-focus-mouse="false">
+                  <span class="rounded-icon">
+                    <img src="https://picsum.photos/20/20" class="border rounded-circle icon-white" alt="Mario Rossi">
+                  </span>
+                  <span class="d-none d-lg-block">Mario Rossi</span>
+                  <svg class="icon icon-white d-none d-lg-block">
+                    <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
+                  </svg>
+                </a>
+                <div class="dropdown-menu">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="link-list-wrapper">
+                        <ul class="link-list">
+                          <li>
+                            <a class="dropdown-item list-item" href="#"><span>I miei servizi</span></a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item list-item" href="#"><span>Le mie pratiche</span></a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item list-item" href="#"><span>Notifiche</span></a>
+                          </li>
+                          <li>
+                            <span class="divider"></span>
+                          </li>
+                          <li>
+                            <a class="dropdown-item list-item" href="#"><span>Impostazioni</span></a>
+                          </li>
+                          <li>
+                            <a class="list-item left-icon" href="#">
+                              <svg class="icon icon-primary icon-sm left">
+                                <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-external-link">
+                                </use>
+                              </svg>
+                              <span class="fw-bold">Esci</span>
+                            </a>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>
                 </div>
+              </div>
               {{else}}
-                <a class="btn btn-primary btn-icon btn-full" href="#" data-element="personal-area-login">
-                  <span class="rounded-icon" aria-hidden="true">
-                    <svg class="icon icon-primary">
-                      <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-user"></use>
-                    </svg>
-                  </span>
-                  <span class="d-none d-lg-block">Accedi all'area personale</span>
-                </a>
+              <a class="btn btn-primary btn-icon btn-full" href="#" data-element="personal-area-login">
+                <span class="rounded-icon" aria-hidden="true">
+                  <svg class="icon icon-primary">
+                    <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-user"></use>
+                  </svg>
+                </span>
+                <span class="d-none d-lg-block">Accedi all'area personale</span>
+              </a>
               {{/if}}
             </div>
           </div>
@@ -102,14 +102,18 @@
           <div class="col-12">
             <div class="it-header-center-content-wrapper">
               <div class="it-brand-wrapper">
-                <a href="#" title="Vai alla homepage" aria-label="Home Nome del Comune">
-                  <svg class="icon" aria-hidden="true">
-                    <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-pa"></use>
-                  </svg>
-                  <div class="it-brand-text">
-                    <div class="it-brand-title">Nome del Comune</div>
-                  </div>
-                </a>
+                {{#if home}}
+                <a href="#">
+                  {{else}}
+                  <a href="#" title="Vai alla homepage">
+                    {{/if}}
+                    <svg class="icon" aria-hidden="true">
+                      <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-pa"></use>
+                    </svg>
+                    <div class="it-brand-text">
+                      <div class="it-brand-title">Nome del Comune</div>
+                    </div>
+                  </a>
               </div>
               <div class="it-right-zone">
                 <div class="it-socials d-none d-lg-flex">
@@ -179,10 +183,9 @@
         <div class="row">
           <div class="col-12">
             <!--start nav-->
-              <nav class="navbar navbar-expand-lg has-megamenu" aria-label="Navigazione principale">
-                <button class="custom-navbar-toggler" type="button" aria-controls="nav4" aria-expanded="false"
-                aria-label="Mostra/Nascondi la navigazione" data-bs-target="#nav4" data-bs-toggle="navbarcollapsible"
-                role="navigation">
+            <div class="navbar navbar-expand-lg has-megamenu">
+              <button class="custom-navbar-toggler" type="button" aria-controls="nav4" aria-expanded="false"
+                aria-label="Mostra/Nascondi la navigazione" data-bs-target="#nav4" data-bs-toggle="navbarcollapsible">
                 <svg class="icon">
                   <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-burger"></use>
                 </svg>
@@ -198,7 +201,7 @@
                   </button>
                 </div>
                 <div class="menu-wrapper">
-                  <a href="#" aria-label="home Nome del Comune" class="logo-hamburger">
+                  <a href="#" class="logo-hamburger">
                     <svg class="icon" aria-hidden="true">
                       <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-pa"></use>
                     </svg>
@@ -206,44 +209,48 @@
                       <div class="it-brand-title">Nome del Comune</div>
                     </div>
                   </a>
-                  <ul class="navbar-nav" data-element="main-navigation">
-                    <li class="nav-item">
-                      <a class="nav-link{{#if active1}} active{{/if}}" href="#" data-element="management">
-                        <span>Amministrazione</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link{{#if active2}} active{{/if}}" href="#" data-element="news">
-                        <span>Novità</span>
-                      </a>
-                    </li>
-                    <li class="nav-item ">
-                      <a class="nav-link{{#if active3}} active{{/if}}" href="#" data-element="all-services">
-                        <span>Servizi</span>
-                      </a>
-                    </li>
-                    <li class="nav-item ">
-                      <a class="nav-link{{#if active4}} active{{/if}}" href="#" data-element="live">
-                        <span>Vivere il Comune</span>
-                      </a>
-                    </li>
-                  </ul>
-                  <ul class="navbar-nav navbar-secondary">
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Iscrizioni</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Estate in città</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Polizia locale</a>
-                    </li>
-                    <li class="nav-item ">
-                      <a class="nav-link " href="#" data-element="all-topics">
-                        <span class="fw-bold">Tutti gli argomenti...</span>
-                      </a>
-                    </li>
-                  </ul>
+                  <nav aria-label="Principale">
+                    <ul class="navbar-nav" data-element="main-navigation">
+                      <li class="nav-item">
+                        <a class="nav-link{{#if active1}} active{{/if}}" href="#" data-element="management">
+                          <span>Amministrazione</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link{{#if active2}} active{{/if}}" href="#" data-element="news">
+                          <span>Novità</span>
+                        </a>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="nav-link{{#if active3}} active{{/if}}" href="#" data-element="all-services">
+                          <span>Servizi</span>
+                        </a>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="nav-link{{#if active4}} active{{/if}}" href="#" data-element="live">
+                          <span>Vivere il Comune</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <nav aria-label="Secondaria">
+                    <ul class="navbar-nav navbar-secondary">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Iscrizioni</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Estate in città</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Polizia locale</a>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="nav-link " href="#" data-element="all-topics">
+                          <span class="fw-bold">Tutti gli argomenti...</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
                   <div class="it-socials">
                     <span>Seguici su</span>
                     <ul>
@@ -293,7 +300,7 @@
                   </div>
                 </div>
               </div>
-            </nav>
+            </div>
           </div>
         </div>
       </div>

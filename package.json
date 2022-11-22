@@ -1,7 +1,7 @@
 {
   "name": "design-comuni-pagine-statiche",
   "description": "Template HTML del progetto per la realizzazione dei siti web dei Comuni Italiani",
-  "version": "2.0.5",
+  "version": "2.1.1",
   "author": "Presidenza del Consiglio dei Ministri",
   "license": "BSD-3-Clause",
   "scripts": {
@@ -40,7 +40,7 @@
     "handlebars-loader": "^1.7.1",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^4.0.0-beta.8",
-    "http-server": "^0.11.1",
+    "http-server": "^14.1.1",
     "image-webpack-loader": "^8.1.0",
     "less": "^3.9.0",
     "less-loader": "^5.0.0",
@@ -65,7 +65,7 @@
   },
   "dependencies": {
     "@splidejs/splide": "^4.0.1",
-    "bootstrap-italia": "^2.0.4",
+    "bootstrap-italia": "^2.0.9",
     "chalk": "^2.4.2",
     "clear": "^0.1.0",
     "command-line-args": "^5.2.1",
