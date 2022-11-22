@@ -152,7 +152,7 @@
       </aside>
       <section class="col-lg-8 it-page-sections-container border-light">
         <article id="descrizione" class="it-page-section anchor-offset" data-audio>
-          <h4>Descrizione</h4>
+          <h2>Descrizione</h2>
           <p class="font-serif">
             Vivamus orci risus, fringilla sit amet enim vel, semper faucibus
             elit. Aliquam nec laoreet leo. Integer eu venenatis purus, eu
@@ -162,7 +162,7 @@
           </p>
         </article>
         <article id="documenti" class="it-page-section anchor-offset mt-5">
-          <h4>Documenti</h4>
+          <h2>Documenti</h2>
           <div class="card-wrapper card-teaser-wrapper card-teaser-wrapper-equal">
             <div class="card card-teaser shadow-sm p-4 mt-3 rounded border border-light flex-nowrap">
               <svg class="icon" aria-hidden="true">
@@ -193,7 +193,7 @@
           </div>
         </article>
         <article id="a-cura-di" class="it-page-section anchor-offset mt-5">
-          <h4>A cura di</h4>
+          <h2>A cura di</h2>
           <div class="row">
             <div class="col-12 col-sm-8">
               <p class="h6"><small>Questa pagina è gestita da</small></p>
@@ -229,15 +229,31 @@
             </div>
           </div>
         </article>
-        <article id="ulteriori-informazioni" class="it-page-section anchor-offset mt-5">
-          <h4 class="mb-3">Ulteriori informazioni</h4>
-
-        </article>
         <article id="ultimo-aggiornamento" class="anchor-offset mt-5">
-          <h5 class="font-serif">Ultimo aggiornamento</h5>
+          <h4 class="h6">Ultimo aggiornamento</h4>
           <p class="h6"><strong>10/06/2019, 16:00</strong></p>
         </article>
       </section>
+    </div>
+  </div>
+  
+  <div class="bg-primary">
+    <div class="container">
+      <div class="row d-flex justify-content-center bg-primary">
+        <div class="col-12 col-lg-6">
+          {{>cmp-rating/cmp-rating public-template=true}}
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="bg-grey-card shadow-contacts">
+    <div class="container">
+      <div class="row d-flex justify-content-center p-contacts">
+        <div class="col-12 col-lg-6">
+          {{>cmp-contacts/cmp-contacts city-problems=true}}
+        </div>
+      </div>
     </div>
   </div>
 </main>

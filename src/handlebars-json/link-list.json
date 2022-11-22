@@ -208,6 +208,10 @@
         "anchor": "cos-e"
       },
       {
+        "item": "A chi è rivolto",
+        "anchor": "destinatari"
+      },
+      {
         "item": "Luogo",
         "anchor": "luogo"
       },
@@ -220,16 +224,16 @@
         "anchor": "costi"
       },
       {
-        "item": "Documenti",
-        "anchor": "documenti"
-      },
-      {
-        "item": "Contatti",
-        "anchor": "contatti"
+        "item": "Allegati",
+        "anchor": "allegati"
       },
       {
         "item": "Appuntamenti",
         "anchor": "appuntamenti"
+      },
+      {
+        "item": "Contatti",
+        "anchor": "contatti"
       },
       {
         "item": "Ulteriori informazioni",

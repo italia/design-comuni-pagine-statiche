@@ -108,21 +108,8 @@
   }
 }
 
-.it-carousel-wrapper .splide__pagination button {
+.it-carousel-wrapper .splide__pagination.page {
   width: .75rem;
   height: .75rem;
   margin: 0 .25rem;
-
-  @include media-breakpoint-up(sm) {
-    width: 0.67rem;
-    height: 0.67rem;
-    margin: 0 0.22rem;
-  }
-}
-
-.it-carousel-wrapper .splide__track{
-  padding-top: 16px;
-  @include media-breakpoint-up(md) {
-    padding-top: 46px;
-  }
 }

@@ -1,9 +1,9 @@
-{{#>base/base title="363^ Festa di Sant'Efisio - Nome del Comune" headerActive2=true}}
+{{#>base/base title="363^ Festa di Sant'Efisio" headerActive2=true}}
 <main>
   <div class="container" id="main-container">
     <div class="row">
       <div class="col px-lg-4">
-        {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Novità" link3="363^ Festa di Sant'Efisio"}}
+        {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Vivere il Comune" link3="Eventi" link4="363^ Festa di Sant'Efisio"}}
       </div>
     </div>
     <div class="row">
@@ -106,7 +106,7 @@
         </div>
 
         <div class="mt-4 mb-4">
-          <span class="subtitle-small">Argomenti</span>
+          <h6 class="text-secondary">Argomenti</h6>
           <ul class="d-flex flex-wrap gap-1 mt-2">
             <li>
               {{>partials/cmp-tag/cmp-tag label-tag="Cultura"}}
@@ -116,17 +116,10 @@
             </li>
           </ul>
         </div>
-        <div class="mt-5">
-          <a href="#" class="btn btn-outline-primary btn-icon">
-            <svg class="icon icon-primary" aria-hidden="true">
-              <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-calendar"></use>
-            </svg>
-            <span>Vai al calendario eventi</span>
-          </a>
-        </div>
       </div>
     </div>
   </div>
+
   <div class="container-fluid my-3">
     <div class="row">
       <figure class="figure px-0 img-full">
@@ -136,15 +129,15 @@
       </figure>
     </div>
   </div>
+
   <div class="container">
     <div class="row border-top border-light row-column-border row-column-menu-left">
       <aside class="col-lg-4">
-        {{>cmp-navscroll/cmp-navscroll accordion-title="INDICE DELLA PAGINA" id="one"
-        link-list=link-list.template-novita-evento}}
+        {{>cmp-navscroll/cmp-navscroll accordion-title="INDICE DELLA PAGINA" id="one" link-list=link-list.template-novita-evento}}
       </aside>
       <section class="col-lg-8 it-page-sections-container border-light">
-        <article id="cos-e" class="it-page-section anchor-offset" data-audio>
-          <h4>Cos'è?</h4>
+        <article id="cos-e" class="it-page-section mb-5" data-audio>
+          <h2 class="mb-3">Cos'è?</h2>
           <p class="font-serif">
             Sant'Efisio, nato in una città dell'Asia Minore, visse all'epoca dell'Imperatore Diocleziano nel III sec.
             d.C.
@@ -166,10 +159,21 @@
             Cagliari al luogo del martirio del Santo e i riti di scioglimento del Voto voluto dalla Municipalità di
             Cagliari.
           </p>
+          <div class="pt-3 mb-4">
+            <h3 class="h4">Parteciperanno</h3>
+            <ul class="d-flex flex-wrap gap-1 mt-2">
+              <li>
+                {{>partials/cmp-tag/cmp-tag label-tag="Valerio Alfio Boi"}}
+              </li>
+              <li>
+                {{>partials/cmp-tag/cmp-tag label-tag="Marco Murgia"}}
+              </li>
+            </ul>
+          </div>
           <div class="it-carousel-wrapper it-carousel-landscape-abstract-three-cols splide" data-bs-carousel-splide>
             <div class="it-header-block">
               <div class="it-header-block-title">
-                <h4>Galleria di immagini</h2>
+                <h3 class="h4">Galleria di immagini</h2>
               </div>
             </div>
             <div class="splide__track">
@@ -231,69 +235,60 @@
               </ul>
             </div>
           </div>
-          <div class="ratio ratio-16x9 my-4">
-            <iframe class="embed-responsive-item" title="Video YouTube" src="https://www.youtube.com/embed/0rIBULTnWuQ"
-              allowfullscreen></iframe>
-          </div>
-          <div class="accordion border-0 mb-4" id="videoTranscription">
-            <div class="accordion-item">
-              <div class="accordion-header" id="heading1c">
-                <button class="accordion-button collapsed title-snall-semi-bold py-3" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#collapse1c" aria-expanded="true"
-                  aria-controls="collapse1c">
-                  <div class="button-wrapper d-flex">
-                    Trascrizione del video
-                    <div class="icon-wrapper">
-                      <svg class="icon icon-sm me-1 icon-primary">
-                        <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
-                      </svg>
-                    </div>
-                </button>
-              </div>
-              <div id="collapse1c" class="accordion-collapse collapse p-0" data-bs-parent="#videoTranscription"
-                role="region" aria-labelledby="heading1c">
-                <div class="accordion-body ps-0 pb-4">
-                  <p class="font-serif mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa
-                    necessitatibus
-                    odit, quasi quaerat inventore molestiae repellendus, harum eius adipisci porro, voluptas itaque
-                    corporis tempore pariatur veniam cupiditate! Pariatur, sint amet. Quis, nam quod assumenda fugiat
-                    perspiciatis tenetur necessitatibus. Expedita aliquid ipsa at magni, quas tempora minima voluptas
-                    asperiores eaque nesciunt dicta laborum. Modi repudiandae unde impedit nisi doloremque est tempore
-                    dolor labore id veritatis. Ut dolores perspiciatis placeat totam sint quibusdam nostrum quia ea.</p>
+          <div class="mb-4">
+            <h3 class="h4">Video</h3>
+            <div class="ratio ratio-16x9 my-4">
+              <iframe class="embed-responsive-item" title="Video YouTube" src="https://www.youtube.com/embed/0rIBULTnWuQ"
+                allowfullscreen></iframe>
+            </div>
+            <div class="accordion border-0 mb-4" id="videoTranscription">
+              <div class="accordion-item">
+                <div class="accordion-header" id="heading1c">
+                  <button class="accordion-button collapsed title-snall-semi-bold py-3" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapse1c" aria-expanded="true"
+                    aria-controls="collapse1c">
+                    <div class="button-wrapper d-flex">
+                      Trascrizione del video
+                      <div class="icon-wrapper">
+                        <svg class="icon icon-sm me-1 icon-primary">
+                          <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
+                        </svg>
+                      </div>
+                  </button>
+                </div>
+                <div id="collapse1c" class="accordion-collapse collapse p-0" data-bs-parent="#videoTranscription"
+                  role="region" aria-labelledby="heading1c">
+                  <div class="accordion-body ps-0 pb-4">
+                    <p class="font-serif mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa
+                      necessitatibus
+                      odit, quasi quaerat inventore molestiae repellendus, harum eius adipisci porro, voluptas itaque
+                      corporis tempore pariatur veniam cupiditate! Pariatur, sint amet. Quis, nam quod assumenda fugiat
+                      perspiciatis tenetur necessitatibus. Expedita aliquid ipsa at magni, quas tempora minima voluptas
+                      asperiores eaque nesciunt dicta laborum. Modi repudiandae unde impedit nisi doloremque est tempore
+                      dolor labore id veritatis. Ut dolores perspiciatis placeat totam sint quibusdam nostrum quia ea.</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <p class="font-serif">
-            Ogni 1° di maggio, quindi, i fedeli accompagnano il Santo in questa tradizionale processione, ripercorrendo
-            il tragitto che giunge dal carcere in cui venne imprigionato al luogo del martirio a Nora, per poi tornare
-            alla sua Chiesa di Stampace il 4 maggio entro la mezzanotte.
-          </p>
-          <div class="pt-3 pb-5">
-            <h5 class="h6 font-serif fw-bold">Parteciperanno:</h5>
-            <ul class="d-flex flex-wrap gap-1 mt-2">
-              <li>
-                {{>partials/cmp-tag/cmp-tag label-tag="Valerio Alfio Boi"}}
-              </li>
-              <li>
-                {{>partials/cmp-tag/cmp-tag label-tag="Marco Murgia"}}
-              </li>
-            </ul>
-          </div>
         </article>
-        <article id="luogo" class="it-page-section anchor-offset">
-          <h4>Luogo</h4>
+        <article id="destinatari" class="it-page-section mb-5">
+          <h2 class="mb-3">A chi è rivolto</h2>
+          <p>Cittadini di tutte l'età.</p>
+        </article>
+        <article id="luogo" class="it-page-section mb-5">
+          <h2 class="mb-3">Luogo</h2>
           <div class="card-wrapper card-teaser-wrapper">
             <div class="card card-teaser shadow mt-3 rounded">
               <svg class="icon icon-success" aria-hidden="true">
                 <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-pin"></use>
               </svg>
               <div class="card-body">
-                <h5 class="card-title">
+                <h3 class="card-title h5">
                   <a href="#" class="text-decoration-none">
                     Cagliari
                   </a>
-                </h5>
+                </h3>
                 <div class="card-text">
                   <p>Via Sant'Efisio, 14 - 09124</p>
                   <p class="mt-3">Ulteriori dettagli</p>
@@ -301,40 +296,40 @@
               </div>
             </div>
           </div>
-          <div class="map-wrapper map-column mt-4 mb-5">
+          <div class="map-wrapper map-column mt-4">
             <img src="https://via.placeholder.com/320x180/ebebeb/808080/?text=Map" alt="Festa di Sant'Efisio"
               class="img-fluid" style="object-fit:cover;width:100%;" />
           </div>
         </article>
-        <article id="date-e-orari" class="it-page-section anchor-offset">
-          <h4>Date e orari</h4>
+        <article id="date-e-orari" class="it-page-section mb-5">
+          <h2 class="mb-3">Date e orari</h2>
           <div class="point-list-wrapper my-4">
             <div class="point-list">
-              <div class="point-list-aside point-list-primary">
+              <h3 class="point-list-aside point-list-primary fw-normal">
                 <div class="point-date font-monospace">01</div>
                 <div class="point-month font-monospace">mag</div>
-              </div>
+              </h3>
               <div class="point-list-content">
                 <div class="card card-teaser shadow rounded">
                   <div class="card-body">
-                    <h5 class="card-title">
+                    <h3 class="card-title h5 m-0">
                       09:00 - Inizio evento
-                    </h5>
+                    </h3>
                   </div>
                 </div>
               </div>
             </div>
             <div class="point-list">
-              <div class="point-list-aside point-list-primary">
+              <h3 class="point-list-aside point-list-primary fw-normal">
                 <div class="point-date font-monospace">04</div>
                 <div class="point-month font-monospace">mag</div>
-              </div>
+              </h3>
               <div class="point-list-content">
                 <div class="card card-teaser shadow rounded">
                   <div class="card-body">
-                    <h5 class="card-title">
+                    <h3 class="card-title h5 m-0">
                       18:00 - Fine evento
-                    </h5>
+                    </h3>
                   </div>
                 </div>
               </div>
@@ -344,21 +339,13 @@
             Per informazioni sul programma dettagliato degli appuntamenti religiosi e civili, consultare il programma
             nella sezione documenti.
           </p>
-          <div class="mt-3">
-            <a href="#" class="btn btn-outline-primary btn-icon">
-              <svg class="icon icon-primary" aria-hidden="true">
-                <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-plus-circle"></use>
-              </svg>
-              <span>Aggiungi al calendario</span>
-            </a>
-          </div>
         </article>
-        <article id="costi" class="it-page-section anchor-offset mt-5">
-          <h4>Costi</h4>
-          <div class="card no-after border-start mt-3">
+        <article id="costi" class="it-page-section mb-5">
+          <h2 class="mb-3">Costi</h2>
+          <div class="card no-after border-start">
             <div class="card-body">
               <h5>
-                <span class="category-top">
+                <span>
                   Tribuna 1 e 4
                 </span>
                 <p class="card-title big-heading">&euro; 30</p>
@@ -370,7 +357,7 @@
           <div class="card no-after border-start mt-3">
             <div class="card-body">
               <h5>
-                <span class="category-top">
+                <span>
                   Tribuna 3
                 </span>
                 <p class="card-title big-heading">&euro; 30</p>
@@ -385,7 +372,7 @@
           <div class="card no-after border-start mt-3">
             <div class="card-body">
               <h5>
-                <span class="category-top">
+                <span>
                   Tribuna 5
                 </span>
                 <p class="card-title big-heading">&euro; 25</p>
@@ -397,7 +384,7 @@
           <div class="card no-after border-start mt-3">
             <div class="card-body">
               <h5>
-                <span class="category-top">
+                <span>
                   Tribuna 2
                 </span>
                 <p class="card-title big-heading">&euro; 15</p>
@@ -407,68 +394,22 @@
             </div>
           </div>
         </article>
-        <article id="documenti" class="it-page-section anchor-offset mt-5">
-          <h4>Documenti</h4>
-          <div class="card card-teaser shadow mt-3 rounded">
-            <svg class="icon" aria-hidden="true">
-              <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-clip"></use>
-            </svg>
+        <article id="allegati" class="it-page-section mb-5">
+          <h2 class="mb-3">Allegati</h2>
+          <div class="card card-teaser shadow rounded">
             <div class="card-body">
-              <h5 class="card-title">
+              <h3 class="card-title h5 m-0">
+                <svg class="icon" aria-hidden="true">
+                  <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-clip"></use>
+                </svg>
                 <a href="#" class="text-decoration-none" title="Scarica la locandina sant'efisio 2019"
-                  aria-label="Scarica la locandina sant'efisio 2019">Locandina Sant'Efisio 2019</a>
-              </h5>
+                  aria-label="Scarica la locandina sant'efisio 2019">Locandina Sant'Efisio 2019 (PDF - 1MB)</a>
+              </h3>
             </div>
           </div>
         </article>
-        <article id="contatti" class="it-page-section anchor-offset mt-5">
-          <h4>Contatti</h4>
-          <div class="card card-teaser shadow mt-3 rounded">
-            <svg class="icon" aria-hidden="true">
-              <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-telephone"></use>
-            </svg>
-            <div class="card-body">
-              <h5 class="card-title">
-                <a href="#" class="text-decoration-none">
-                  Arciconfraternita del Gonfalone sotto l’invocazione di Sant'Efisio martire
-                </a>
-              </h5>
-              <div class="card-text">
-                <p>Via Sant'Efisio, 14 - 09124</p>
-                <p class="mt-3">T +39 070 668632</p>
-                <p><a aria-label="scopri di più su www.festadisantelfisio.com - link esterno - apertura nuova scheda"
-                    target="_blank" title="vai sul sito del festival di sant'elfisio"
-                    href="#">www.festadisantelfisio.com</a></p>
-                <p><a aria-label="invia un'email a arcisantefisio@tiscali.it< - apertura casella postale"
-                    title="invia un'email a arcisantefisio@tiscali.it< - apertura casella postale"
-                    href="mailto:arcisantefisio@tiscali.it">arcisantefisio@tiscali.it</a></p>
-              </div>
-            </div>
-          </div>
-          <h5 class="mt-4">Con il supporto di:</h5>
-          <div class="card card-teaser shadow mt-3 rounded">
-            <svg class="icon" aria-hidden="true">
-              <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-pa"></use>
-            </svg>
-            <div class="card-body">
-              <h5 class="card-title">
-                <a href="#" class="text-decoration-none">
-                  Ufficio delle Attività Produttive
-                </a>
-              </h5>
-              <div class="card-text">
-                <p>Piazza Alcide De Gasperi, 2</p>
-                <p class="mt-3">T +39 070 6776430</p>
-                <p><a href="mailto:produttive@comune.cagliari.it"
-                    aria-label="invia un'email a produttive@comune.cagliari.it - apertura casella portale"
-                    title="invia un'email a produttive@comune.cagliari.it - apertura casella portale">produttive@comune.cagliari.it</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </article>
-        <article id="appuntamenti" class="it-page-section anchor-offset mt-5">
-          <h4>Appuntamenti</h4>
+        <article id="appuntamenti" class="it-page-section mb-5">
+          <h2 class="mb-3">Appuntamenti</h2>
           <div class="card-wrapper card-teaser-wrapper card-teaser-wrapper-equal">
             <div class="card-wrapper card-teaser">
               <div class="card card-img no-after">
@@ -551,15 +492,63 @@
             </div>
           </div>
         </article>
-        <article id="ulteriori-informazioni" class="it-page-section anchor-offset mt-5">
-          <h4 class="mb-3">Ulteriori informazioni</h4>
-          <strong>Patrocinato da:</strong>
-          <div class="link-list-wrapper">
+        <article id="contatti" class="it-page-section mb-5">
+          <h2 class="mb-3">Contatti</h2>
+          <div class="mb-4">
+            <div class="card card-teaser shadow rounded">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-telephone"></use>
+              </svg>
+              <div class="card-body">
+                <h3 class="card-title h5">
+                  <a href="#" class="text-decoration-none">
+                    Arciconfraternita del Gonfalone sotto l’invocazione di Sant'Efisio martire
+                  </a>
+                </h3>
+                <div class="card-text">
+                  <p>Via Sant'Efisio, 14 - 09124</p>
+                  <p class="mt-3">T +39 070 668632</p>
+                  <p><a aria-label="scopri di più su www.festadisantelfisio.com - link esterno - apertura nuova scheda"
+                      target="_blank" title="vai sul sito del festival di sant'elfisio"
+                      href="#">www.festadisantelfisio.com</a></p>
+                  <p><a aria-label="invia un'email a arcisantefisio@tiscali.it< - apertura casella postale"
+                      title="invia un'email a arcisantefisio@tiscali.it< - apertura casella postale"
+                      href="mailto:arcisantefisio@tiscali.it">arcisantefisio@tiscali.it</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h4 class="h5">Con il supporto di:</h4>
+          <div class="card card-teaser shadow mt-3 rounded">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-pa"></use>
+            </svg>
+            <div class="card-body">
+              <h3 class="card-title h5">
+                <a href="#" class="text-decoration-none">
+                  Ufficio delle Attività Produttive
+                </a>
+              </h3>
+              <div class="card-text">
+                <p>Piazza Alcide De Gasperi, 2</p>
+                <p class="mt-3">T +39 070 6776430</p>
+                <p><a href="mailto:produttive@comune.cagliari.it"
+                    aria-label="invia un'email a produttive@comune.cagliari.it - apertura casella portale"
+                    title="invia un'email a produttive@comune.cagliari.it - apertura casella portale">produttive@comune.cagliari.it</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article id="ulteriori-informazioni" class="it-page-section mb-5">
+          <h3 class="mb-3">Ulteriori informazioni</h3>
+          <h4 class="h5">Patrocinato da:</h4>
+          <div class="link-list-wrapper mb-3">
             <ul class="link-list">
               <li><a class="list-item px-0" href="#"><span>Regione Autonome della Sardegna</span></a></li>
             </ul>
           </div>
-          <strong>Sponsor:</strong>
+          <h4 class="h5">Sponsor:</h4>
           <div class="link-list-wrapper">
             <ul class="link-list">
               <li><a class="list-item px-0" href="#"><span>Provincia di Cagliari</span></a></li>
@@ -571,34 +560,33 @@
               <li><a class="list-item px-0" href="#"><span>Camera di Commercio di Cagliari</span></a></li>
             </ul>
           </div>
-          <div class="mt-5">
-            <div class="callout">
-              <div class="callout-title">
-                <svg class="icon" aria-hidden="true">
-                  <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-info-circle"></use>
-                </svg>
-              </div>
-              <p>Per ulteriori informazioni contattare <a href="#"
-                  title="invia un'email a santefisio@comune.cagliari.it - apertura casella postale"
-                  aria-label="invia un'email a santefisio@comune.cagliari.it - apertura casella postale">santefisio@comune.cagliari.it</a>
-              </p>
-              <p><a href="#">Ufficio Sant'Elfisio</a></p>
-            </div>
-          </div>
         </article>
-        <article id="ultimo-aggiornamento" class="it-page-section anchor-offset mt-5">
-          <h5 class="font-serif">Ultimo aggiornamento</h5>
-          <p class="h6"><strong>10/06/2019, 16:00</strong></p>
+        <article id="ultimo-aggiornamento" class="it-page-section mt-5">
+          <h4 class="h6">Ultimo aggiornamento: <span class="h6 fw-normal">10/06/2019, 16:00</span></h4>
         </article>
       </section>
     </div>
   </div>
-  <section id="contenuti-correlati" class="bg-grey-card shadow-contacts">
-    <div class="container pt-5">
-      {{>cmp-carousel/cmp-carousel carousel-title="Contenuti correlati" class="carousel-4-card"
-      carTitle-class="pb-0"}}
+
+  <div class="bg-primary">
+    <div class="container">
+      <div class="row d-flex justify-content-center bg-primary">
+        <div class="col-12 col-lg-6">
+          {{>cmp-rating/cmp-rating public-template=true}}
+        </div>
+      </div>
     </div>
-  </section>
+  </div>
+  
+  <div class="bg-grey-card shadow-contacts">
+    <div class="container">
+      <div class="row d-flex justify-content-center p-contacts">
+        <div class="col-12 col-lg-6">
+          {{>cmp-contacts/cmp-contacts city-problems=true}}
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
 
 {{/base/base }}
