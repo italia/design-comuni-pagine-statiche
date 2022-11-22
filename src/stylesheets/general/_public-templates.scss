@@ -110,19 +110,6 @@
   line-height: 1.5;
 }
 
-.card .card-body {
-  .category-top {
-    @include font(14, 14);
-    line-height: 1.3;
-    letter-spacing: 1.1px;
-  }
-  // h5.card-title{
-  //   a{
-  //     color: get-color(primary, main)
-  //   }
-  // }
-}
-
 a.read-more {
   @include font(14, 14);
   line-height: 1.3;
