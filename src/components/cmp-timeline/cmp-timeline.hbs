@@ -8,20 +8,20 @@
   <div class="calendar-vertical mb-3">
     {{#each timeline as |date|}}
       <div class="calendar-date">
-          <div class="calendar-date-day">
-            <small class="calendar-date-day__year">{{date.year}}</small>
-            <span class="title-xxlarge-regular d-flex justify-content-center">{{date.day}}</span>
-            <small class="calendar-date-day__month">{{date.month}}</small>
-          </div>
-          <div class="calendar-date-description rounded">
-            <div class="calendar-date-description-content">
-              <h3 class="title-medium-2 mb-0">{{date.event}}</h3>
-                {{#if date.info}}
-                  <p class="info-text mt-1 mb-0">{{date.info}}</p>
-                {{/if}}
-            </div>
+        <h3 class="calendar-date-day">
+          <small class="calendar-date-day__year">{{date.year}}</small>
+          <span class="title-xxlarge-regular d-flex justify-content-center">{{date.day}}</span>
+          <small class="calendar-date-day__month">{{date.month}}</small>
+        </h3>
+        <div class="calendar-date-description rounded">
+          <div class="calendar-date-description-content">
+            <h4 class="h5 mb-0">{{date.event}}</h4>
+              {{#if date.info}}
+                <p class="info-text mt-1 mb-0">{{date.info}}</p>
+              {{/if}}
           </div>
         </div>
+      </div>
     {{/each}}
 
   </div>
