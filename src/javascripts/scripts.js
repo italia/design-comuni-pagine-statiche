@@ -11,6 +11,71 @@ const alertMessage = document.getElementById('alert-message');
 const saveBtns = document.querySelectorAll('.saveBtn');
 const stepperNav = document.querySelector('.steppers-nav');
 
+const initT2S = () => {
+  if ("speechSynthesis" in window || speechSynthesis) {
+    const T2S = window.speechSynthesis || speechSynthesis;
+    const message = new SpeechSynthesisUtterance();
+    message.voiceURI = 'native';
+    message.volume = 1;
+    message.rate = 0.8;
+    message.pitch = 1;
+    message.lang = 'it-IT', 'Paulina';
+    const resetLanguage = () => {
+      var voices = [];
+      voices = T2S.getVoices();
+      message.voice = voices.find((voice) => voice.lang === 'it-IT', 'Paulina');
+    }
+    resetLanguage();
+    if (T2S.onvoiceschanged !== undefined) {
+      T2S.onvoiceschanged = resetLanguage;
+    }
+    return {T2S, message}
+  }
+}
+
+var t2sPlay = false;
+var srcElement;
+
+const {T2S, message} = initT2S()
+
+const play = (text) => {
+  srcElement.children[1].innerText = "Ferma audio"
+  t2sPlay = true
+  message.text = text;
+  T2S.cancel();
+  T2S.speak(message);
+  window.onbeforeunload = () => {
+    T2S.cancel();
+  }
+}
+
+const stop = () => {
+  srcElement.children[1].innerText = "Ascolta";
+  t2sPlay = false;
+  T2S.cancel();
+}
+
+message.addEventListener('end', () => { stop() })
+
+const cleanHtml = (html) => {
+  const div = document.createElement("div");
+  div.innerHTML = html;
+  return div.textContent || div.innerText || "";
+}
+
+window.listenElements = (sourceElement, elements) => {
+  srcElement = sourceElement;
+  if (t2sPlay === true) {
+    stop();
+    return;
+  }
+  var text = "";
+  for (const element of document.querySelectorAll(elements)) {
+    text = text + cleanHtml(element.innerHTML) + " "
+  }
+  play(text)
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
     getSplide()

@@ -8,11 +8,11 @@
     </div>
     <div class="row">
       <div class="col-lg-8 px-lg-4 py-lg-2">
-        <h1>
+        <h1 data-audio>
           Osservatorio sul turismo
         </h1>
         <h2 class="visually-hidden">Dettagli della notizia</h2>
-        <p>
+        <p data-audio>
           Donec in consequat nunc. Duis semper fermentum lacus, ac condimentum
           justo auctor a. Nam erat erat, porta vel pharetra in, ullamcorper vel
           turpis.
@@ -94,21 +94,13 @@
                 <li role="none">
                   <a class="list-item" href="#" role="menuitem">
                     <svg class="icon" aria-hidden="true">
-                      <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-download"></use>
-                    </svg>
-                    <span>Scarica</span>
-                  </a>
-                </li>
-                <li role="none">
-                  <a class="list-item" href="#" role="menuitem">
-                    <svg class="icon" aria-hidden="true">
                       <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-print"></use>
                     </svg>
                     <span>Stampa</span>
                   </a>
                 </li>
                 <li role="none">
-                  <a class="list-item" href="#" role="menuitem">
+                  <a class="list-item" role="menuitem" onclick="listenElements(this, '[data-audio]')">
                     <svg class="icon" aria-hidden="true">
                       <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-hearing"></use>
                     </svg>
@@ -131,16 +123,14 @@
           <div class="row">
             <span class="mb-2 small">Argomenti</span>
           </div>
-          <a href="#" class="text-decoration-none">
-            <div class="chip chip-simple chip-primary">
-              <span class="chip-label">Cultura</span>
-            </div>
-          </a>
-          <a href="#" class="text-decoration-none">
-            <div class="chip chip-simple chip-primary">
-              <span class="chip-label">Muoversi</span>
-            </div>
-          </a>
+          <ul class="d-flex flex-wrap gap-1">
+            <li>
+              {{>partials/cmp-tag/cmp-tag label-tag="Cultura"}}
+            </li>
+            <li>
+              {{>partials/cmp-tag/cmp-tag label-tag="Muoversi"}}
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -157,11 +147,11 @@
   <div class="container">
     <div class="row border-top border-light row-column-border row-column-menu-left">
       <aside class="col-lg-4">
-        {{>cmp-navscroll/cmp-navscroll accordion-title="INDICE DELLA PAGINA"  id="one"
+        {{>cmp-navscroll/cmp-navscroll accordion-title="INDICE DELLA PAGINA" id="one"
         link-list=link-list.template-novita-notizia}}
       </aside>
       <section class="col-lg-8 it-page-sections-container border-light">
-        <article id="descrizione" class="it-page-section anchor-offset">
+        <article id="descrizione" class="it-page-section anchor-offset" data-audio>
           <h2>Descrizione</h2>
           <p class="font-serif">
             Vivamus orci risus, fringilla sit amet enim vel, semper faucibus
@@ -228,16 +218,14 @@
             </div>
             <div class="col-12 col-sm-4">
               <h6><small>Persone</small></h6>
-              <a href="#" class="text-decoration-none">
-                <div class="chip chip-simple chip-primary">
-                  <span class="chip-label">Mario Rossi</span>
-                </div>
-              </a>
-              <a href="#" class="text-decoration-none">
-                <div class="chip chip-simple chip-primary">
-                  <span class="chip-label">Alessandro Bianchi</span>
-                </div>
-              </a>
+              <ul class="d-flex flex-wrap gap-1 mt-2">
+                <li>
+                  {{>partials/cmp-tag/cmp-tag label-tag="Mario Rossi"}}
+                </li>
+                <li>
+                  {{>partials/cmp-tag/cmp-tag label-tag="Alessandro Bianchi"}}
+                </li>
+              </ul>
             </div>
           </div>
         </article>

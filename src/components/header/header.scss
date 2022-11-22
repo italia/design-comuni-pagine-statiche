@@ -3,13 +3,24 @@
     font-size: 18px;
   }
 
+  .it-nav-wrapper .it-header-navbar-wrapper nav {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .navbar .navbar-collapsable .navbar-nav li a.nav-link {
-    @include media-breakpoint-up(lg) {
-      padding: 13px 10px;
-    }
+    // @include media-breakpoint-up(lg) {
+    //   padding: 13px 10px;
+    // }
 
     @include media-breakpoint-up(xl) {
       padding: 0.89rem 1.33rem;
+    }
+  }
+
+  .navbar .navbar-collapsable .menu-wrapper .navbar-nav {
+    @include media-breakpoint-up(lg) {
+      padding: 0;
     }
   }
 
@@ -62,6 +73,16 @@
       &[aria-expanded="true"] {
         svg {
           transform: scaleY(-1)
+        }
+      }
+    }
+  }
+
+  .dropdown-menu {
+    .link-list {
+      a {
+        &:hover {
+          color: inherit;
         }
       }
     }
@@ -139,6 +160,13 @@
 
       @include media-breakpoint-down(sm) {
         right: auto;
+      }
+
+      @include media-breakpoint-up(lg) {
+        background: transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
       }
     }
 

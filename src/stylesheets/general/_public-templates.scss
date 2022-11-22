@@ -1,4 +1,15 @@
 .card-teaser-wrapper {
+  .card-teaser {
+    height: auto;
+  }
+
+  &.card-teaser-block-3 {
+    @include media-breakpoint-up(md) {
+      justify-content: flex-start !important;
+      column-gap: 2%;
+    }
+  }
+  
   .card-image {
     height: 100%;
     width: 130px;
@@ -63,15 +74,23 @@
 }
 
 .richtext-wrapper {
-  ul {
+  ul, ol {
+    margin-bottom: 1.5rem;
     li {
       margin-left: 1.75rem;
-      list-style-type: disc !important;
     
       @include media-breakpoint-up(sm) {
         margin-left: 1.55rem
       }
     }
+  }
+
+  ul {
+    list-style-type: disc !important;
+  }
+
+  ol {
+    list-style-type: auto;
   }
 
   p {
@@ -247,7 +266,7 @@ a.read-more {
       line-height: 1.5;
     }
 
-    h4.card-title {
+    h3.card-title {
       @include font(20, 20);
       line-height: 1.5;
 
@@ -306,21 +325,6 @@ a.read-more {
 
     &.active {
       transform: translateY(-150%);
-    }
-  }
-}
-
-.chip {
-  &.chip-simple {
-    border-color: #007a52;
-    margin-bottom: 5px;
-
-    .chip-label {
-      color: #007A52;
-    }
-
-    &:hover {
-      background-color: #007A52;
     }
   }
 }

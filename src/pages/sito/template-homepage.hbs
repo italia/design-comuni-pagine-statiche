@@ -2,14 +2,10 @@
 <main>
   <h1 class="visually-hidden" id="main-container">Nome del comune</h1>
   <section id="head-section">
-    <h2 class="visually-hidden">Ultime notizie</h2>
+    <h2 class="visually-hidden">Contenuti in evidenza</h2>
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 offset-lg-1 order-lg-2 px-0 px-lg-2">
-          <img src="https://picsum.photos/800/600" title="titolo immagine" alt="descrizione immagine"
-            class="img-fluid" />
-        </div>
-        <div class="col-lg-5 order-lg-1">
+        <div class="col-lg-5 order-2 order-lg-1">
           <div class="card mb-5">
             <div class="card-body pb-5">
               <div class="category-top">
@@ -20,14 +16,13 @@
                 <span class="data fw-normal">18 mag 2022</span>
               </div>
               <a href="#" class="text-decoration-none">
-                <h3 class="h4 card-title title-xlarge">Parte l'estate con oltre 300 eventi in centro e nei quartieri</h3>
+                <h3 class="h4 card-title title-xlarge">Parte l'estate con oltre 300 eventi in centro e nei quartieri
+                </h3>
               </a>
               <p class="mb-4 subtitle-small pt-3 lora"><strong>Inaugurazione lunedì 2 luglio</strong> con il concerto
                 gratuito in
                 piazza XX Settembre degli Sweet Soul Music Revue. Sul palco 20 musicisti dal tutto il mondo</p>
-              <div class="chip chip-simple">
-                <a href="#" class="chip-label">Estate in città</a>
-              </div>
+              {{>partials/cmp-tag/cmp-tag label-tag="Estate in città"}}
               <a class="read-more pb-3" href="#">
                 <span class="text">Tutte le novità</span>
                 <svg class="icon">
@@ -36,6 +31,10 @@
               </a>
             </div>
           </div>
+        </div>
+        <div class="col-lg-6 offset-lg-1 order-1 order-lg-2 px-0 px-lg-2">
+          <img src="https://picsum.photos/800/600" title="titolo immagine" alt="descrizione immagine"
+            class="img-fluid" />
         </div>
       </div>
     </div>
@@ -61,7 +60,7 @@
                 </div>
               </div>
 
-              <a class="read-more ps-3 position-absolute bottom-0 mb-3" href="#">
+              <a class="read-more ps-3" href="#">
                 <span class="text">Vai alla pagina</span>
                 <svg class="icon">
                   <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-arrow-right"></use>
@@ -128,7 +127,7 @@
                         <div class="card-body">
                           <h4 class="card-title pb-4 mb-10">15<span>lun</span></h4>
                           <p class="card-text px-2 pb-10 mb-10"><a href="#">Saldo
-                                TASI</a>
+                              TASI</a>
                           </p>
                           <p class="card-text px-2 pb-10 mb-10 d-flex">
                             <img src="https://picsum.photos/200" alt="random image" class="me-3 rounded">
@@ -199,14 +198,15 @@
                         <div class="card-body">
                           <h4 class="card-title pb-4 mb-10">19<span>mar</span></h4>
                           <p class="card-text px-2 pb-10 mb-10"><a href="#">Saldo
-                                TASI</a>
+                              TASI</a>
                           </p>
                           <p class="card-text px-2 pb-10 mb-10 d-flex">
                             <img src="https://picsum.photos/200" alt="random image" class="me-3 rounded">
                             <a href="#">Concerto gratuito piazza
                               XXIV maggio</a>
                           </p>
-                          <p class="card-text px-2 pb-10 mb-10"><a href="#">Convocazione Consiglio Comunale - Prima seduta</a></p>
+                          <p class="card-text px-2 pb-10 mb-10"><a href="#">Convocazione Consiglio Comunale - Prima
+                              seduta</a></p>
                           <p class="card-text px-2 "><a href="#">Seconda rata TARI</a></p>
                         </div>
                       </div>
@@ -220,15 +220,14 @@
                         <div class="card-body">
                           <h4 class="card-title pb-4 mb-10">20<span>mar</span></h4>
                           <p class="card-text px-2 pb-10 mb-10"><a href="#">Saldo
-                                TASI</a>
+                              TASI</a>
                           </p>
                           <p class="card-text px-2 pb-10 mb-10 d-flex">
                             <img src="https://picsum.photos/200" alt="random image" class="me-3 rounded">
                             <a href="#">Concerto gratuito piazza
                               XXIV maggio</a>
                           </p>
-                          <p class="card-text px-2 pb-10 mb-10"><a href="#"
-                             >Convocazione
+                          <p class="card-text px-2 pb-10 mb-10"><a href="#">Convocazione
                               Consiglio Comunale - Prima seduta</a></p>
                           <p class="card-text px-2 "><a href="#">Seconda rata TARI</a></p>
                         </div>
@@ -243,7 +242,7 @@
                         <div class="card-body">
                           <h4 class="card-title pb-4 mb-10">21<span>mar</span></h4>
                           <p class="card-text px-2 pb-10 mb-10"><a href="#">Saldo
-                                TASI</a>
+                              TASI</a>
                           </p>
                           <p class="card-text px-2 pb-10 mb-10 d-flex">
                             <img src="https://picsum.photos/200" alt="random image" class="me-3 rounded">
@@ -329,8 +328,8 @@
                     </li>
                     <li role="listitem">
                       <a class="list-item active icon-left" href="#">
-                          <span class="text-success">Come segnalare lo smarrimento del proprio
-                            animale</span>
+                        <span class="text-success">Come segnalare lo smarrimento del proprio
+                          animale</span>
                         </span>
                       </a>
                     </li>
@@ -356,21 +355,21 @@
                   <ul class="link-list" role="list">
                     <li role="listitem">
                       <a class="list-item active icon-left mb-2" href="#">
-                          <span class="text-underline">Tutte le strutture sportive della città</span>
+                        <span class="text-underline">Tutte le strutture sportive della città</span>
                         </span>
                       </a>
                     </li>
                     <li role="listitem">
                       <a class="list-item active icon-left mb-2" href="#">
-                          <span class="text-underline">Da lunedì 3 settembre chiudono le vasche della piscina
-                            comunale</span>
+                        <span class="text-underline">Da lunedì 3 settembre chiudono le vasche della piscina
+                          comunale</span>
                         </span>
                       </a>
                     </li>
                     <li role="listitem">
                       <a class="list-item active icon-left" href="#">
-                          <span class="text-underline">Concessione di contributi ad enti, associazioni, società
-                            sportive</span>
+                        <span class="text-underline">Concessione di contributi ad enti, associazioni, società
+                          sportive</span>
                         </span>
                       </a>
                     </li>
@@ -392,38 +391,39 @@
               <div class="col-lg-3">
                 <h3 class="text-uppercase mb-3 title-xsmall-bold text u-grey-light">Altri argomenti</h3>
               </div>
-              <div class="col-lg-9 argomenti">
-                <div class="chip chip-simple pb-0 mb-2">
-                  <a href="#" class="chip-label">Associazioni</a>
-                </div>
-                <div class="chip chip-simple pb-0 mb-2">
-                  <a href="#" class="chip-label">Concorsi</a>
-                </div>
-                <div class="chip chip-simple pb-0 mb-2">
-                  <a href="#" class="chip-label">Energie rinnovabili</a>
-                </div>
-                <div class="chip chip-simple pb-0 mb-2">
-                  <a href="#" class="chip-label">Gestione rifiuti</a>
-                </div>
-                <div class="chip chip-simple pb-0 mb-2">
-                  <a href="#" class="chip-label">Imposte</a>
-                </div>
-                <div class="chip chip-simple pb-0 mb-2">
-                  <a href="#" class="chip-label">Istruzione</a>
-                </div>
-                <div class="chip chip-simple pb-0 mb-2">
-                  <a href="#" class="chip-label">Pista ciclabile</a>
-                </div>
+              <div class="col-lg-9">
+                <ul class="d-flex flex-wrap gap-1">
+                  <li>
+                    {{>partials/cmp-tag/cmp-tag label-tag="Associazioni"}}
+                  </li>
+                  <li>
+                    {{>partials/cmp-tag/cmp-tag label-tag="Concorsi"}}
+                  </li>
+                  <li>
+                    {{>partials/cmp-tag/cmp-tag label-tag="Energie rinnovabili"}}
+                  </li>
+                  <li>
+                    {{>partials/cmp-tag/cmp-tag label-tag="Gestione rifiuti"}}
+                  </li>
+                  <li>
+                    {{>partials/cmp-tag/cmp-tag label-tag="Imposte"}}
+                  </li>
+                  <li>
+                    {{>partials/cmp-tag/cmp-tag label-tag="Istruzione"}}
+                  </li>
+                  <li>
+                    {{>partials/cmp-tag/cmp-tag label-tag="Pista ciclabile"}}
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
           <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2 text-center">
-            <a href="#" class="btn btn-primary mt-40"
-              >Vedi tutti</a>
+            <a href="#" class="btn btn-primary mt-40">Vedi tutti</a>
           </div>
         </div>
         <div class="row pt-5">
-          <h3 class="mb-0 u-grey-light">Siti tematici</h3>
+          <h2 class="h3 mb-0 u-grey-light">Siti tematici</h2>
         </div>
         <div class="pt-4 pt-lg-30">
           <div class="card-wrapper card-teaser-wrapper card-teaser-wrapper-equal card-teaser-block-3 pb-0">
@@ -432,9 +432,9 @@
                 <img src="https://picsum.photos/200/200" alt="Immagine">
               </div>
               <div class="card-body">
-                <h4 class="card-title text-white sito-tematico">
+                <h3 class="card-title text-white sito-tematico">
                   Mobilità in Comune
-                </h4>
+                </h3>
                 <p class="card-text text-sans-serif text-white">
                   Il sito del turismo del Comune e della Città Metropolitana
                 </p>
@@ -445,9 +445,9 @@
                 <img src="https://picsum.photos/200/200" alt="Immagine">
               </div>
               <div class="card-body">
-                <h4 class="card-title sito-tematico">
+                <h3 class="card-title sito-tematico">
                   Turismo
-                </h4>
+                </h3>
                 <p class="card-text text-sans-serif">
                   Il sito che offre informazioni sulle attività turistiche attive in città
                 </p>
@@ -458,9 +458,9 @@
                 <img src="https://picsum.photos/200/200" alt="Immagine">
               </div>
               <div class="card-body">
-                <h4 class="card-title sito-tematico">
+                <h3 class="card-title sito-tematico">
                   Musei Civici
-                </h4>
+                </h3>
                 <p class="card-text text-sans-serif">
                   Tutte le informazioni sui musei e gli eventi culturali della città
                 </p>
@@ -490,7 +490,8 @@
               <div class="link-list-heading text-uppercase mb-3 ps-0">Link utili</div>
               <ul class="link-list" role="list">
                 <li role="listitem">
-                  <a class="list-item mb-3 active ps-0" href="#"><span class="text-button-normal">Rilascio Carta Identità Elettronica (CIE)</span></a>
+                  <a class="list-item mb-3 active ps-0" href="#"><span class="text-button-normal">Rilascio Carta
+                      Identità Elettronica (CIE)</span></a>
                 </li>
                 <li role="listitem">
                   <a class="list-item mb-3 active ps-0" href="#"><span class="text-button-normal">Cambio di
@@ -498,7 +499,7 @@
                 </li>
                 <li role="listitem">
                   <a class="list-item mb-3 active ps-0" href="#">Tributi
-                      online</span></a>
+                    online</span></a>
                 </li>
                 <li role="listitem">
                   <a class="list-item mb-3 active ps-0" href="#"><span class="text-button-normal">Prenotazione
