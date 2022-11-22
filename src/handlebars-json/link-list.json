@@ -228,12 +228,12 @@
         "anchor": "documenti"
       },
       {
-        "item": "Contatti",
-        "anchor": "contatti"
-      },
-      {
         "item": "Appuntamenti",
         "anchor": "appuntamenti"
+      },
+      {
+        "item": "Contatti",
+        "anchor": "contatti"
       },
       {
         "item": "Ulteriori informazioni",
