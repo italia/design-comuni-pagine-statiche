@@ -1,6 +1,11 @@
 ## [2.1.2](https://github.com/italia/design-comuni-pagine-statiche/compare/v2.1.1...v2.1.2) (2022-11-28)
 
 
+### Bug Fixes
+
+* headings and page structure for Event template
+
+
 
 ## [2.1.1](https://github.com/italia/design-comuni-pagine-statiche/compare/v2.1.0...v2.1.1) (2022-11-21)
 
