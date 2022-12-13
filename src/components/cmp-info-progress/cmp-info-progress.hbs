@@ -30,3 +30,28 @@
     {{/if}}
   </div>
 </div>
+
+<div class="steppers">
+  <div class="visually-hidden">Steps per Prenotazione Appuntamento</div>
+  <ul class="steppers-header">
+    {{#each step-list as |step| }}
+    <li class="{{#if step.completed}}confirmed{{/if}} {{#if step.active}}active{{/if}}">
+      {{step.title}}
+      {{#if step.active}}
+      <span class="visually-hidden">Attivo</span>
+      {{/if}}
+      {{#if step.completed}}
+      <svg class="d-block icon icon-primary icon-sm" aria-hidden="true">
+        <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-check"></use>
+      </svg>
+      <span class="visually-hidden">Confermato</span>
+      {{/if}}
+    </li>
+    {{/each}}
+  </ul>
+  <span class="steppers-index" aria-hidden="true">{{step-num}}/{{step-tot}}</span>
+  <span class="visually-hidden">step {{step-num}} di {{step-tot}}</span>
+</div>
+{{#if subtitle}}
+<p class="title-xsmall mt-5 mb-3">{{subtitle}}</p>
+{{/if}}

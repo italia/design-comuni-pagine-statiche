@@ -11,15 +11,15 @@
 
   .info-progress-wrapper {
     &:first-child {
-      border-left: 1px solid #E7EAED;
+      border-left: 1px solid #e7eaed;
     }
 
     &:not(:last-child) {
-      border-right: 1px solid #E7EAED;
+      border-right: 1px solid #e7eaed;
     }
   }
 
-  .completed{
+  .completed {
     .title-medium {
       font-weight: 700;
       color: get-color(primary, main);
@@ -32,9 +32,9 @@
       color: get-color(primary, main);
     }
 
-      .info-progress-body {
-        border-bottom: 2px solid get-color(primary, main);;
-      }
+    .info-progress-body {
+      border-bottom: 2px solid get-color(primary, main);
+    }
   }
 
   .iscrizioni-header {
@@ -63,6 +63,33 @@
       @include font(14, 14);
       font-weight: 600;
       line-height: 1.5;
+    }
+  }
+}
+
+.steppers {
+  margin-bottom: 1.5rem;
+
+  @include media-breakpoint-up(sm) {
+    margin-bottom: 2.222rem;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: 0 24px;
+    height: 64px;
+    background: #fff;
+    box-shadow: 0 8px 20px rgb(0 0 0 / 10%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .steppers-header {
+    @include media-breakpoint-down(sm) {
+      height: auto;
+      padding: 0;
+      box-shadow: unset;
+      display: inline-block;
     }
   }
 }
