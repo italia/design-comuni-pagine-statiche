@@ -1,15 +1,22 @@
 <div class="cmp-breadcrumbs {{class}}" role="navigation">
   <nav class="breadcrumb-container" aria-label="breadcrumb">
     <ol class="breadcrumb p-0" data-element="breadcrumb">
-    {{#if link1}}
+      <li class="breadcrumb-item"><a href="#">Home</a><span class="separator">/</span></li>
+      {{#if link1}}
       <li class="breadcrumb-item"><a href="#">{{link1}}</a><span class="separator">/</span></li>
-    {{/if}}
-    {{#if link2}}
-      <li class="breadcrumb-item"><a href="#">{{link2}}</a></li>
-    {{/if}}
-    {{#if link3}}
-      <li class="breadcrumb-item active" aria-current="page"><span class="separator">/</span>{{link3}}</li>
-    {{/if}}
+      {{/if}}
+      {{#if link2}}
+      <li class="breadcrumb-item"><a href="#">{{link2}}</a><span class="separator">/</span></li>
+      {{/if}}
+      {{#if link3}}
+      <li class="breadcrumb-item"><a href="#">{{link3}}</a><span class="separator">/</span></li>
+      {{/if}}
+      {{#if link4}}
+      <li class="breadcrumb-item"><a href="#">{{link4}}</a><span class="separator">/</span></li>
+      {{/if}}
+      {{#if active}}
+      <li class="breadcrumb-item active" aria-current="page">{{active}}</li>
+      {{/if}}
     </ol>
   </nav>
 </div>
