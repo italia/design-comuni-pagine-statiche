@@ -6,7 +6,7 @@
           {{#if frequency}}
             {{#if diet}}
               <div class="radio-body border-bottom border-light">
-                <input name="{{id}}" type="radio" id="{{id}}-1">
+                <input name="{{id}}" type="radio" id="{{id}}-1" {{#if required}}required{{/if}}>
                 <label for="{{id}}-1">Nessuna dieta</label>
               </div>
               <div class="radio-body border-bottom border-light">
@@ -33,7 +33,7 @@
             {{/if}}
           {{else}}
             <div class="radio-body border-bottom border-light">
-              <input name="{{id}}" type="radio" id="{{id}}-1">
+              <input name="{{id}}" type="radio" id="{{id}}-1" {{#if required}}required{{/if}}>
               <label for="{{id}}-1">{{label-1}}</label>
             </div>
             <div class="radio-body border-bottom border-light">
@@ -55,7 +55,7 @@
             {{/if}}
           {{else}}
           <div class="radio-body border-bottom border-light">
-          <input name="{{id}}" type="radio" id="{{id}}-1">
+          <input name="{{id}}" type="radio" id="{{id}}-1" {{#if required}}required{{/if}}>
           <label for="{{id}}-1">Sì</label>
           </div>
           <div class="radio-body">

@@ -37,7 +37,7 @@
               margin-class="mb-40"
               required-icon=true
               card-title="Seleziona Istituto"}}
-              {{> partials/select/select placeholder="Scegli un'opzione" label-text="Seleziona Istituto"
+              {{> partials/select/select required=true placeholder="Scegli un'opzione" label-text="Seleziona Istituto"
               id="school-option" label-hidden=true select-option-list=inserire-dati-specifici}}
               {{/cmp-card/cmp-card-content-box}}
             </section>
@@ -54,7 +54,7 @@
               religione cattolica?"}}
               <fieldset>
                 <legend class="visually-hidden">Vuoi avvalerti dell'insegnamento della religione cattolica?</legend>
-                {{> cmp-card-radio/cmp-card-radio id='religione'}}
+                {{> cmp-card-radio/cmp-card-radio id='religione' required=true}}
               </fieldset>
               {{/cmp-card/cmp-card-content-box}}
             </section>
@@ -70,7 +70,7 @@
               subtitle="Autorizzi le uscite didattiche?"}}
               <fieldset>
                 <legend class="visually-hidden">Autorizzi le uscite didattiche?</legend>
-                {{> cmp-card-radio/cmp-card-radio id='uscite'}}
+                {{> cmp-card-radio/cmp-card-radio id='uscite' required=true}}
               </fieldset>
               {{/cmp-card/cmp-card-content-box}}
             </section>
@@ -89,7 +89,7 @@
               <fieldset>
                 <legend class="visually-hidden">Autorizzi la scuola a produrre e utilizzare foto e video in cui compare
                   tua figlia o tuo figlio?</legend>
-                {{> cmp-card-radio/cmp-card-radio id='multimedia'}}
+                {{> cmp-card-radio/cmp-card-radio id='multimedia' required=true}}
               </fieldset>
               {{/cmp-card/cmp-card-content-box}}
             </section>
