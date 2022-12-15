@@ -74,7 +74,7 @@
     margin-bottom: 2.222rem;
   }
 
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     padding: 0 24px;
     height: 64px;
     background: #fff;
@@ -85,11 +85,17 @@
   }
 
   .steppers-header {
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       height: auto;
       padding: 0;
       box-shadow: unset;
       display: inline-block;
+    }
+  }
+
+  .steppers-index {
+    @include media-breakpoint-up(lg) {
+      display: none;
     }
   }
 }
