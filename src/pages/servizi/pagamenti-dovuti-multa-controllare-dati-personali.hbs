@@ -3,7 +3,7 @@
   <div class="container" id="main-container">
     <div class="row justify-content-center">
       <div class="col-12 col-lg-10">
-        {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi" link3="Pagamenti"}}
+        {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Servizi" active="Pagamenti"}}
         {{> cmp-heading/cmp-heading
         title="Pagamento multa"
         subTitle="Inserisci le informazioni necessarie per il pagamento della multa.<br class='d-none d-md-block'> Potrai ricontrollare tutti i dati nel riepilogo, prima di effettuare il pagamento."
@@ -65,10 +65,6 @@
         </div>
       </div>
     </div>
-
-  {{>cmp-modal/modal-documents}}
-
-  {{>cmp-modal/modal-isee}}
 
   {{>cmp-modal/modal-save}}
 </main>

@@ -3,7 +3,7 @@
   <div class="container" id="main-container">
     <div class="row justify-content-center">
       <div class="col-12 col-lg-10">
-        {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi" link3="Segnalazione disservizio"}}
+        {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Servizi" active="Segnalazione disservizio"}}
         {{> cmp-heading/cmp-heading title="Segnalazione disservizio"}}
       </div>
       <div class="col-12">
@@ -38,7 +38,7 @@
               subtitle="Indica il luogo del disservizio"
               margin-class="mb-40"
               }}
-              {{> partials/input-autocomplete/input-autocomplete placeholder="Cerca un luogo*" link=true class="mt-3"}}
+              {{> partials/input-autocomplete/input-autocomplete required=true placeholder="Cerca un luogo*" link=true class="mt-3"}}
               {{/cmp-card/cmp-card-content-box}}
             </section>
 
@@ -60,12 +60,13 @@
               label-hidden=true
               id="inefficiency"
               selectClass="u-grey-dark"
+              required=true
               }}
               <div class="text-area-wrapper p-3 px-lg-4 pt-lg-5 pb-lg-0 bg-white">
                 {{>partials/input/input type="text" id="title" label="Titolo" required=true name="title"
                 formClass="mb-0"}}
               </div>
-              {{>partials/text-area/text-area placeholder="Dettagli*" id="details" visible=true class="m-0 p-3 px-lg-4
+              {{>partials/text-area/text-area placeholder="Dettagli*" id="details" required=true visible=true class="m-0 p-3 px-lg-4
               pt-lg-5 pb-lg-4 bg-white" num="2" label="Inserire al massimo 200 caratteri"}}
 
               <div class="btn-wrapper px-3 pt-2 pb-3 px-lg-4 pb-lg-4 pt-lg-0 bg-white">

@@ -3,7 +3,7 @@
   <div class="container" id="main-container">
     <div class="row justify-content-center">
       <div class="col-12 col-lg-10">
-        {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi" link3="Servizi scolastici"}}
+        {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Servizi" active="Servizi scolastici"}}
         {{> cmp-heading/cmp-heading title="Richiesta servizio mensa scolastica" description="Hai bisogno di assistenza?
         <a href='' class='title-small-semi-bold t-primary'>Contattaci</a>"}}
       </div>
@@ -38,7 +38,7 @@
               card-title="Scegli la scuola"
               subtitle="Scegli l’istituto a cui vuoi iscrivere il minore"}}
               {{> partials/select/select placeholder="Seleziona un'opzione" select-option-list=inserire-dati-specifici
-              id="select-school" label-hidden=true label-text="Scegli la scuola"}}
+              id="select-school" label-hidden=true label-text="Scegli la scuola" required=true}}
               {{/cmp-card/cmp-card-content-box}}
             </section>
 
@@ -59,6 +59,7 @@
               label-3="50%"
               label-4="75%"
               label-5="100%"
+              required=true
               }}
               {{/cmp-card/cmp-card-content-box}}
             </section>
@@ -79,7 +80,8 @@
               label-2="10%"
               label-3="20%"
               label-4="30%"
-              label-5="40%"}}
+              label-5="40%"
+              required=true }}
               {{/cmp-card/cmp-card-content-box}}
             </section>
 
@@ -94,7 +96,7 @@
               required-icon=true
               card-title="Frequenza"
               subtitle="Indica i giorni di frequenza del servizio"}}
-              {{> cmp-card-radio/cmp-card-radio percentage=true frequency=true id='frequency'}}
+              {{> cmp-card-radio/cmp-card-radio percentage=true frequency=true id='frequency' required=true}}
               {{/cmp-card/cmp-card-content-box}}
             </section>
 
@@ -108,7 +110,7 @@
               required-icon=true
               card-title="Dieta diversificata"
               subtitle="Indica la dieta per il beneficiario"}}
-              {{> cmp-card-radio/cmp-card-radio percentage=true frequency=true diet=true id='diet'}}
+              {{> cmp-card-radio/cmp-card-radio percentage=true frequency=true diet=true id='diet' required=true}}
               {{/cmp-card/cmp-card-content-box}}
             </section>
           </div>

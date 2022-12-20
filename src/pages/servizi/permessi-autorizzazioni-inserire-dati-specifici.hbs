@@ -3,7 +3,7 @@
   <div class="container" id="main-container">
     <div class="row justify-content-center">
       <div class="col-12 col-lg-10">
-        {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Home" link2="Servizi" link3="Permessi mobilità"}}
+        {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Servizi" active="Permessi mobilità"}}
         {{> cmp-heading/cmp-heading title="Permesso ZTL" description="Hai bisogno di assistenza?
         <a href='' class='title-small-semi-bold t-primary'>Contattaci</a>"}}
       </div>
@@ -38,7 +38,7 @@
               subtitle="Scegli il tipo di permesso ZTL"}}
               {{>partials/checkbox/checkbox
               class="d-flex flex-column align-items-center bg-white w-100 p-3 p-lg-4"
-              info-list=ztl-dati-checkbox.checkbox}}
+              info-list=ztl-dati-checkbox.checkbox required=true}}
               {{/cmp-card/cmp-card-content-box}}
             </section>
 
@@ -54,10 +54,10 @@
               <div class="d-lg-flex justify-content-between flex-column flex-lg-row">
                 {{>partials/input-calendar/input-calendar
                 form-class="mb-0 me-lg-4 p-3 pt-lg-40 pb-lg-40 pl-lg-40"
-                label-text="Dal" index="1"}}
+                label-text="Dal" index="1" required=true}}
                 {{>partials/input-calendar/input-calendar
                 form-class="mb-0 p-3 pt-lg-40 pb-lg-40 ps-lg-8 pr-lg-40"
-                label-text="Al" index="2"}}
+                label-text="Al" index="2" required=true}}
               </div>
               {{/cmp-card/cmp-card-content-box}}
             </section>
