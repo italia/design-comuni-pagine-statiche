@@ -2,7 +2,30 @@
 <main>
   <div class="container px-4 my-4">
     <div class="row">
-      <div class="col-12 px-lg-4 py-lg-2">
+      <div class="col-12 col-md-4 px-lg-4 py-lg-2">
+
+        <div class="sidebar-wrapper it-line-right-side">
+          <div class="sidebar-linklist-wrapper">
+            <div class="link-list-wrapper">
+              <ul class="link-list">
+                <li>
+                  <h3>Header</h3>
+                </li>
+                <li><a class="list-item medium active" href="#generali"><span>Generali</span></a></li>
+                <li><a class="list-item medium" href="#amministrazione"><span>Amministrazione</span></a></li>
+                <li><a class="list-item medium" href="#servizi"><span>Servizi</span></a></li>
+                <li><a class="list-item medium" href="#novita"><span>Novità</span></a></li>
+                <li><a class="list-item medium" href="#eventi"><span>Vivere il Comune</span></a></li>
+                <li><a class="list-item medium" href="#appuntamento"><span>Prenotazione Appuntamento</span></a></li>
+                <li><a class="list-item medium" href="#assistenza"><span>Richiesta Assistenza</span></a></li>
+                <li><a class="list-item medium" href="#segnalazione"><span>Segnalazione Disservizio</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-12 col-md-8 px-lg-4 py-lg-2">
         <h1>I templates HTML per il sito comunale</h1>
         <span class="text-muted fw-semibold">Versione {{version}}</span>
         <ul class="nav nav-tabs auto mt-3">
@@ -16,7 +39,7 @@
 
         <section class="my-5">
           <div class="it-list-wrapper">
-            <h2 class="text-secondary">Generali</h2>
+            <h2 id="generali" class="text-secondary">Generali</h2>
             <ul class="it-list mb-5">
               <li>
                 <a href="homepage.html" target="_blank" class="list-item" data-focus-mouse="false">
@@ -70,7 +93,7 @@
               </li>
             </ul>
             
-            <h2 class="text-secondary">Sezione Amministrazione</h2>
+            <h2 id="amministrazione" class="text-secondary">Sezione Amministrazione</h2>
             <ul class="it-list mb-5">
               <li>
                 <a href="amministrazione.html" target="_blank" class="list-item" data-focus-mouse="false">
@@ -94,7 +117,7 @@
               </li>
             </ul>
 
-            <h2 class="text-secondary">Sezione Novità</h2>
+            <h2 id="novita" class="text-secondary">Sezione Novità</h2>
             <ul class="it-list mb-5">
               <li>
                 <a href="novita.html" target="_blank" class="list-item" data-focus-mouse="false">
@@ -118,7 +141,7 @@
               </li>
             </ul>
 
-            <h2 class="text-secondary">Sezione Servizi</h2>
+            <h2 id="servizi" class="text-secondary">Sezione Servizi</h2>
             <ul class="it-list mb-5">
               <li>
                 <a href="servizi.html" target="_blank" class="list-item" data-focus-mouse="false">
@@ -152,7 +175,7 @@
               </li>
             </ul>
 
-            <h2 class="text-secondary">Sezione Vivere il Comune</h2>
+            <h2 id="eventi" class="text-secondary">Sezione Vivere il Comune</h2>
             <ul class="it-list mb-5">
               <li>
                 <a href="eventi.html" target="_blank" class="list-item" data-focus-mouse="false">
@@ -211,7 +234,7 @@
             </ul>
             --}}
             
-            <h2 class="text-secondary">Prenotazione Appuntamento</h2>
+            <h2 id="appuntamento" class="text-secondary">Prenotazione Appuntamento</h2>
             <p>Templates specifici per la funzionalità di prenotazione appuntamento</p>
             <ul class="it-list mb-5">
               <li>
@@ -300,7 +323,7 @@
               </li>
             </ul>
 
-            <h2 class="text-secondary">Richiesta Assistenza</h2>
+            <h2 id="assistenza" class="text-secondary">Richiesta Assistenza</h2>
             <p>Templates specifici per la funzionalità di richiesta assistenza</p>
             <ul class="it-list">
               <li>
@@ -327,7 +350,7 @@
               </li>
             </ul>
 
-            <h2 class="text-secondary">Segnalazione Disservizio</h2>
+            <h2 id="segnalazione" class="text-secondary">Segnalazione Disservizio</h2>
             <p>Templates specifici per la funzionalità di segnalazione disservizio</p>
             <ul class="it-list">
               <li>
