@@ -23,45 +23,33 @@
         }}
       </div>
     </div>
+    
     <div class="steppers-content" aria-live="polite">
       <div class="row justify-content-center">
         <div class="col-12 col-lg-8">
-          {{> cmp-alert-box/cmp-alert-box
-          warning=true
-          message="Ci sono alcune informazioni mancanti o errate"
-          alertSpan-class="title-small-semi-bold"
-          description-class="mb-1"
-          class="mb-5"
-          alert-link-list=pagamenti-dovuti-multa.inserire-dati-specifici.error-list
+          <p class="text-paragraph-small mt-3 mb-40 mb-lg-25">I campi contraddistinti dal simbolo asterisco sono
+            obbligatori</p>
+
+          {{#>cmp-card/cmp-card-content-box
+          class="p-4 pt-lg-30 pb-lg-30 pl-lg-30 pr-lg-30"
+          bg-grey=true
+          h2-class="mb-0"
+          margin-class="mb-0"
+          header-m0=true
+          card-title="Codice avviso"
+          required-icon=true
           }}
+          <p class="subtitle-small pb-4 mb-0">Inserisci il codice di 18 cifre presente nell’avviso della multa.
+            <a href="#" class="t-primary d-block d-lg-inline">Dove trovare il codice</a>
+          </p>
+          <div class="bg-white">
+            {{>partials/input/input type="text" id="code" name="code" label="Codice avviso" required=true
+            formClass="mb-0 mt-0"}}
+          </div>
+          {{/cmp-card/cmp-card-content-box}}
 
-            <p class="text-paragraph-small mb-40 mb-lg-25">I campi contraddistinti dal simbolo asterisco sono
-              obbligatori</p>
-            <div>
-              {{#>cmp-card/cmp-card-content-box
-              class="p-4 pt-lg-30 pb-lg-30 pl-lg-30 pr-lg-30"
-              bg-grey=true
-              h2-class="mb-1 mb-lg-3"
-              id-title="warning-code"
-              margin-class="mb-0"
-              header-m0=true
-              card-title="Codice avviso"
-              required-icon=true
-              }}
-              <p class="subtitle-small mb-4 mb-0">Inserisci il codice di 18 cifre presente nell’avviso della multa.
-                <a href="#" class="t-primary d-block d-lg-inline"
-                  >Dove trovare il codice</a>
-              </p>
-
-                {{>partials/input/input type="text" id="code" name="code" label="Codice avviso" required=true
-                formClass="mb-0 mt-0" inputClass="is-invalid"}}
-                <div class="form-feedback just-validate-error-label" id="code-error-0">Questo campo è richiesto</div>
-
-              {{/cmp-card/cmp-card-content-box}}
-            </div>
-            {{>cmp-nav-steps/cmp-nav-steps save="true" saveBtn=true aria-label-save="del pagamento multa"
-            }}
-
+          {{>cmp-nav-steps/cmp-nav-steps save="true" saveBtn=true validate=true aria-label-save="del pagamento multa" modalId="modal-save-1"
+          }}
         </div>
       </div>
     </div>
@@ -77,7 +65,8 @@
     </div>
   </div>
 
-
   {{>cmp-modal/modal-save}}
 </main>
+
+
 {{/base/base }}
