@@ -17,7 +17,7 @@
   {{label}}
 </a>
 {{else}}
-<button type="button" {{#if modalId}}data-bs-toggle="modal" data-bs-target="#{{modalId}}" {{/if}}
+<button type="button" {{#if data-element}}data-element="{{data-element}}"{{/if}} {{#if modalId}}data-bs-toggle="modal" data-bs-target="#{{modalId}}" {{/if}}
 {{#if aria-label}}aria-label="{{aria-label}}{{#if btn-label-text}} documento{{/if}}"{{/if}}
 class="btn
   {{#if primary}}btn-primary{{/if}}
