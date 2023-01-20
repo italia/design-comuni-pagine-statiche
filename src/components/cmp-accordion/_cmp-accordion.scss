@@ -1,3 +1,84 @@
+.accordion-collapse {
+  .cmp-info-summary {
+    border: 1px solid get-color(card,grey);
+
+    &:first-child {
+      margin-top: 1rem;
+
+      @include media-breakpoint-up(sm) {
+        margin-top: 0.89rem;
+      }
+
+      @include media-breakpoint-up(md) {
+        margin-top: 0;
+      }
+    }
+
+    &.has-border {
+      border: 1px solid get-color(light-grey, grey);
+      padding: 1rem;
+      border-radius: 4px;
+
+      @include media-breakpoint-up(sm){
+        padding: 0.89rem;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 1.875rem;
+        @include media-breakpoint-up(sm){
+          margin-bottom: 1.67rem;
+        }
+      }
+
+      @include media-breakpoint-up(lg) {
+        padding: 1.33rem;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    padding: 1.33rem 0 0;
+  }
+}
+
+.card .card-teaser .icon {
+  min-width: auto;
+}
+
+.accordion-header {
+
+  .accordion-button {
+    @include font(14, 14);
+    line-height: 1.5;
+    padding: 0;
+    padding-top: 1rem;
+    border-top: 0;
+
+    @include media-breakpoint-up(sm) {
+      padding-top: 0.89rem;
+    }
+
+
+    @include media-breakpoint-up(md) {
+      @include font(18, 18);
+      line-height: 1.56;
+      padding-top: 1.33rem;
+    }
+
+    &:not(.collapsed){
+      color: get-color(primary, main);
+
+      .icon {
+        transform: rotate(180deg);
+      }
+    }
+
+    &:after {
+      content: unset;
+    }
+  }
+}
+
 .cmp-accordion {
   .accordion-date {
     padding-left: .75rem;
@@ -12,7 +93,6 @@
   }
 
   .accordion-header {
-    
     .accordion-button {
       font-size: 1rem;
       padding: 0.875rem .75rem 0 .75rem;
@@ -174,4 +254,3 @@
 .accordion-view-more {
   padding-left: .75rem;
 }
-
