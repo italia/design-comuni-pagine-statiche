@@ -15,7 +15,7 @@
   }
 
   &-regular-medium {
-    @include font(16, 18);
+    font-size: 1rem;
     line-height: 1.5;
     font-weight: 400;
 
@@ -25,7 +25,7 @@
   }
 
   &-regular-medium-semi {
-    @include font(16, 18);
+    font-size: 1rem;
     line-height: 1.5;
     font-weight: 600;
 
