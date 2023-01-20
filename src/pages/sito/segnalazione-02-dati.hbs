@@ -38,7 +38,7 @@
               subtitle="Indica il luogo del disservizio"
               margin-class="mb-40"
               }}
-              {{> partials/input-autocomplete/input-autocomplete required=true placeholder="Cerca un luogo*" link=true class="mt-3"}}
+              {{> cmp-input-autocomplete/input-autocomplete required=true placeholder="Cerca un luogo*" link=true class="mt-3"}}
               {{/cmp-card/cmp-card-content-box}}
             </section>
 
@@ -63,7 +63,7 @@
               required=true
               }}
               <div class="text-area-wrapper p-3 px-lg-4 pt-lg-5 pb-lg-0 bg-white">
-                {{>partials/input/input type="text" id="title" label="Titolo" required=true name="title"
+                {{> cmp-input/input type="text" id="title" label="Titolo" required=true name="title"
                 formClass="mb-0"}}
               </div>
               {{>partials/text-area/text-area placeholder="Dettagli*" id="details" required=true visible=true class="m-0 p-3 px-lg-4
