@@ -3,7 +3,7 @@
 @import "base/mixins";
 @import "base/reset";
 @import "base/fonts";
-@import "../elements/headings/all";
+@import "headings/all";
 @import "base/global";
 
 @import "general/splide";
@@ -41,20 +41,20 @@
 @import "../components/cmp-timeline/cmp-timeline";
 
 @import "../components/cmp-button/cmp-button";
-@import "../components/partials/cmp-tag/cmp-tag";
-@import "../components/partials/input/input";
-@import "../components/partials/checkbox/checkbox";
+@import "../components/cmp-tag/cmp-tag";
+@import "../components/cmp-input/input";
+@import "../components/cmp-checkbox/checkbox";
 @import "../components/cmp-text-button/cmp-text-button";
 @import "../components/cmp-icon-list/cmp-icon-list";
-@import "../components/partials/select/select";
-@import "../components/partials/cmp-upload/cmp-upload";
+@import "../components/cmp-select/select";
+@import "../components/cmp-upload/cmp-upload";
 @import "../components/cmp-nav-tab/cmp-nav-tab";
 @import "../components/cmp-accordion/cmp-accordion";
 @import "../components/cmp-filter/cmp-filter";
-@import "../components/partials/input-search/input-search";
-@import "../components/partials/dropdown/dropdown";
-@import "../components/partials/input-autocomplete/input-autocomplete";
-@import "../components/partials/text-area/text.area";
+@import "../components/cmp-input-search/input-search";
+@import "../components/cmp-dropdown/dropdown";
+@import "../components/cmp-input-autocomplete/input-autocomplete";
+@import "../components/cmp-text-area/text.area";
 @import "../components/cmp-map/cmp-map";
 @import "../components/cmp-hero/cmp-hero";
 @import "../components/cmp-hero-img/cmp-hero-img";
@@ -64,8 +64,8 @@
 @import "../components/cmp-info-radio/cmp-info-radio";
 @import "../components/cmp-input-search-button/cmp-input-search-button";
 @import "../components/cmp-category-list/category-list";
-@import "../components/partials/input-calendar/input-calendar";
-@import "../components/partials/toggle/toggle";
+@import "../components/cmp-input-calendar/input-calendar";
+@import "../components/cmp-toggle/toggle";
 @import "../components/cmp-info-checkbox/cmp-info-checkbox";
 @import "../components/cmp-callout/callout";
 @import "../components/cmp-modal/cmp-modal-scrollable";

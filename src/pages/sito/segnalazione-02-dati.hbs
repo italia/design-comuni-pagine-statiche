@@ -52,7 +52,7 @@
               card-title="Disservizio"
               margin-class="mb-40"
               }}
-              {{>partials/select/select
+              {{> cmp-select/select
               placeholder="Tipo di disservizio*"
               class="p-md-3 p-lg-4 pb-lg-0"
               select-option-list=serv-1-disservizio.list
@@ -66,7 +66,7 @@
                 {{> cmp-input/input type="text" id="title" label="Titolo" required=true name="title"
                 formClass="mb-0"}}
               </div>
-              {{>partials/text-area/text-area placeholder="Dettagli*" id="details" required=true visible=true class="m-0 p-3 px-lg-4
+              {{> cmp-text-area/text-area placeholder="Dettagli*" id="details" required=true visible=true class="m-0 p-3 px-lg-4
               pt-lg-5 pb-lg-4 bg-white" num="2" label="Inserire al massimo 200 caratteri"}}
 
               <div class="btn-wrapper px-3 pt-2 pb-3 px-lg-4 pb-lg-4 pt-lg-0 bg-white">

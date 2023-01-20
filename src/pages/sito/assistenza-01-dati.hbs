@@ -65,7 +65,7 @@
               }}
 
               <div class="form-wrapper bg-white p-4">
-                {{>partials/select/select
+                {{> cmp-select/select
                 class="mb-40 mt-4"
                 id="category"
                 selectClass="form-control"
@@ -76,7 +76,7 @@
                 text="Seleziona la categoria del servizio per cui vuoi richiedere assistenza"
                 select-option-list=richiedi-assistenza.controllare-dati-personali.select-categoria}}
 
-                {{>partials/select/select
+                {{> cmp-select/select
                 id="service"
                 selectClass="form-control"
                 label-text="Servizio"
@@ -86,7 +86,7 @@
                 text="Seleziona il servizio per cui vuoi richiedere assistenza"
                 select-option-list=richiedi-assistenza.controllare-dati-personali.select-servizio}}
 
-                {{>partials/text-area/text-area
+                {{> cmp-text-area/text-area
                 class="p-0 mt-40"
                 textareaClass="form-control"
                 num="-details"

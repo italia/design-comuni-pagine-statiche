@@ -49,7 +49,7 @@
               card-title="Motivo*"
               subtitle="Scegli il motivo dell’appuntamento"
               }}
-              {{>partials/select/select
+              {{> cmp-select/select
               placeholder="Seleziona opzione"
               label-hidden=true
               id="motivo-appuntamento"
@@ -69,7 +69,7 @@
               card-title="Dettagli*"
               subtitle="Aggiungi ulteriori dettagli"
               }}
-              {{> partials/text-area/text-area label="Inserire massimo 200 caratteri" class="p-0" placeholder="Aggiungi
+              {{> cmp-text-area/text-area label="Inserire massimo 200 caratteri" class="p-0" placeholder="Aggiungi
               ulteriori dettagli" id="form-details"}}
               {{/cmp-card/cmp-card-content-box}}
             </section>

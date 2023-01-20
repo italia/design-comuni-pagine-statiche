@@ -3,8 +3,8 @@ contraddistinti dal simbolo asterisco sono obbligatori"}}
 
   <form action="" id="tributes-form" class="text-black">
 
-    {{>partials/select/select class="mt-30 mb-40" id="property-location" label-class="mb-3" label-text="Ubicazione immobile" text="Inserire l’informazione per proseguire con la richiesta" text-class="mb-30" placeholder="Seleziona opzione" no-bg=true required=true select-option-list=property-location}}
-    {{>partials/select/select class="mt-30" id="property-type" label-class="mb-3" label-text="Tipologia dell’immobile" text="Inserire l’informazione per proseguire con la richiesta" placeholder="Seleziona opzione" no-bg=true required=true select-option-list=property-type}}
+    {{> cmp-select/select class="mt-30 mb-40" id="property-location" label-class="mb-3" label-text="Ubicazione immobile" text="Inserire l’informazione per proseguire con la richiesta" text-class="mb-30" placeholder="Seleziona opzione" no-bg=true required=true select-option-list=property-location}}
+    {{> cmp-select/select class="mt-30" id="property-type" label-class="mb-3" label-text="Tipologia dell’immobile" text="Inserire l’informazione per proseguire con la richiesta" placeholder="Seleziona opzione" no-bg=true required=true select-option-list=property-type}}
     {{> cmp-input/input id="accountholder" type="number" label="Rendita catastale" text="Inserire l’informazione per
     proseguire con la richiesta" required=true}}
     {{> cmp-input/input id="vehicle-type" type="number" label="Aliquota IMU" text="Inserire l’informazione per
