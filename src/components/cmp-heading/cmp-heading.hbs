@@ -39,13 +39,13 @@
   {{/if}}
 
   {{#if button}}
-    {{>partials/button/button class="fw-bold"}}
+    {{> cmp-button/cmp-button class="fw-bold"}}
   {{/if}}
 
   {{#if double-button}}
   <div class="d-lg-flex gap-30 mb-2">
-      {{>partials/button/button class="fw-bold btn-primary mr-lg-30"}}
-      {{>partials/button/button class="fw-bold btn-outline-primary t-primary" label=second-label aria-label=second-ariaLabel}}
+      {{> cmp-button/cmp-button class="fw-bold btn-primary mr-lg-30"}}
+      {{> cmp-button/cmp-button class="fw-bold btn-outline-primary t-primary" label=second-label aria-label=second-ariaLabel}}
   </div>
   {{/if}}
 </div>
