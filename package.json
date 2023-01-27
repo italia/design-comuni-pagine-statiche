@@ -37,7 +37,7 @@
     "gh-pages": "^4.0.0",
     "glob": "^7.1.4",
     "handlebars": "^4.7.6",
-    "handlebars-loader": "^1.7.1",
+    "handlebars-loader": "^1.7.3",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^4.0.0-beta.8",
     "http-server": "^14.1.1",
