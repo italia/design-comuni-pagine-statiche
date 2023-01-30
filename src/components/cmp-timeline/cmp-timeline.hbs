@@ -1,7 +1,7 @@
 <div class="cmp-timeline">
   <h2 class="title-xxlarge mb-3" {{#if id-title}}id="{{id-title}}"{{/if}}>{{title}}</h2>
   {{#if description}}
-    <div class="richtext-wrapper {{#if lora}}lora{{/if}}">
+    <div class="richtext-wrapper {{#if lora}}lora{{/if}}" data-element="service-calendar-text">
       <p>{{description}}</p>
     </div>
   {{/if}}
