@@ -20,10 +20,10 @@
 
   <div class="container">
     {{> cmp-info-progress/cmp-info-progress
-    step-list=step-list.prenota-appuntamento-step-2
-    step-num="2"
+    step-list=step-list.prenota-appuntamento-step-3
+    step-num="3"
     step-tot="5"
-    step-title="Data e orario"
+    step-title="Dettagli appuntamento"
     classSubtitle="mt-40 mb-3"
     subtitle="I campi contraddistinti dal simbolo asterisco sono obbligatori"
     }}
@@ -34,42 +34,43 @@
       <div class="col-12 col-lg-3 d-lg-block mb-4 d-none ">
         {{>cmp-navscroll/cmp-navscroll
         accordion-title="INFORMAZIONI RICHIESTE" id="one"
-        link-list=link-list.prenota-appuntamento-step-2}}
+        link-list=link-list.prenota-appuntamento-step-3}}
       </div>
       <div class="col-12 col-lg-8 offset-lg-1">
         <div class="steppers-content" aria-live="polite">
           <div class="it-page-sections-container">
-            <section class="it-page-section" id="appointment-available">
-              {{#>cmp-card/cmp-card-content-box
-              class="p-big"
-              bg-grey=true
-              h2-class="mb-2"
-              card-title="Appuntamenti disponibili*"
-              margin-class="mb-40"
-              }}
-              {{>partials/select/select class="p-0 mt-1" id="appointment" label-text="Seleziona un mese"
-              label-hidden=true placeholder="Seleziona un mese"
-              select-option-list=prenotazione-appuntamento.controllare-dati-personali.appuntamenti-disponibili.select}}
-              {{>cmp-card-radio-list/cmp-card-radio-list
-              radio-list=prenotazione-appuntamento.controllare-dati-personali.appuntamenti-disponibili.radio-list }}
-
-              {{/cmp-card/cmp-card-content-box}}
-            </section>
-
-            <section class="it-page-section" id="office">
+            <section class="it-page-section" id="reason">
               {{#>cmp-card/cmp-card-content-box
               class="p-big"
               bg-grey=true
               h2-class="mb-0"
-              card-title="Ufficio"
+              margin-class="mb-40"
+              header-class="mb-3"
+              card-title="Motivo*"
+              subtitle="Scegli il motivo dell’appuntamento"
               }}
+              {{>partials/select/select
+              placeholder="Seleziona opzione"
+              label-hidden=true
+              id="motivo-appuntamento"
+              label-text="Motivo dell'appuntamento"
+              class="p-0"
+              select-option-list=motivo-appuntamento}}
+              {{/cmp-card/cmp-card-content-box}}
+            </section>
 
-              {{>cmp-info-summary/cmp-info-summary-no-modify
-              class="mb-4 mb-lg-30 p-4"
-              info-title="Municipalità 1 - Chiaia, Posillipo, S. Ferdinando"
-              info=true
-              info-list=prenotazione-appuntamento.inserire-dati-specifici-2.list}}
-
+            <section class="it-page-section" id="details">
+              {{#>cmp-card/cmp-card-content-box
+              class="p-big"
+              bg-grey=true
+              h2-class="mb-0"
+              header-m0=true
+              subtitleClass="mb-3"
+              card-title="Dettagli*"
+              subtitle="Aggiungi ulteriori dettagli"
+              }}
+              {{> partials/text-area/text-area label="Inserire massimo 200 caratteri" class="p-0" placeholder="Aggiungi
+              ulteriori dettagli" id="form-details"}}
               {{/cmp-card/cmp-card-content-box}}
             </section>
           </div>
@@ -78,7 +79,6 @@
       </div>
     </div>
   </div>
-
 
   <div class="bg-grey-card shadow-contacts">
     <div class="container">
