@@ -325,15 +325,18 @@
             </div>
           </div>
           <!-- Desktop -->
-          <div class="info-progress-wrapper d-none d-lg-flex w-100 px-3 flex-column justify-content-end step-active">
+          <div class="info-progress-wrapper d-none d-lg-flex w-100 px-3 flex-column justify-content-end completed">
             <div class="info-progress-body d-flex justify-content-between align-self-end align-items-end w-100 py-3">
               <span class="d-block h-100 title-medium text-uppercase">Dettagli appuntamento</span>
         
+              <svg class="d-block icon icon-primary icon-sm" aria-hidden="true">
+                <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-check"></use>
+              </svg>
         
             </div>
           </div>
           <!-- Desktop -->
-          <div class="info-progress-wrapper d-none d-lg-flex w-100 px-3 flex-column justify-content-end">
+          <div class="info-progress-wrapper d-none d-lg-flex w-100 px-3 flex-column justify-content-end step-active">
             <div class="info-progress-body d-flex justify-content-between align-self-end align-items-end w-100 py-3">
               <span class="d-block h-100 title-medium text-uppercase">Richiedente</span>
         
@@ -353,9 +356,9 @@
           <div class="iscrizioni-header d-lg-none w-100">
             <h4 class="step-title d-flex align-items-center justify-content-between drop-shadow">
               <span class="d-block d-lg-inline">
-                Dettagli appuntamento
+                Richiedente
               </span>
-              <span class="step">3/5</span>
+              <span class="step">4/5</span>
             </h4>
             <p class="title-xsmall mt-40 mb-3">I campi contraddistinti dal simbolo asterisco sono obbligatori</p>
           </div>
@@ -387,13 +390,8 @@
                             <div class="accordion-body">
                               <ul class="link-list" data-element="page-index">
                                 <li class="nav-item">
-                                  <a class="nav-link" href="#reason">
-                                    <span class="title-medium">Motivo</span>
-                                  </a>
-                                </li>
-                                <li class="nav-item">
-                                  <a class="nav-link" href="#details">
-                                    <span class="title-medium">Dettagli</span>
+                                  <a class="nav-link" href="#applicant">
+                                    <span class="title-medium">Richiedente</span>
                                   </a>
                                 </li>
                               </ul>
@@ -409,59 +407,94 @@
           <div class="col-12 col-lg-8 offset-lg-1">
             <div class="steppers-content" aria-live="polite">
               <div class="it-page-sections-container">
-                <section class="it-page-section" id="reason">
-    <div class="cmp-card mb-40">
-      <div class="card has-bkg-grey shadow-sm p-big">
-        <div class="card-header border-0 p-0 mb-lg-30 mb-3">
-          <div class="d-flex">
-                <h2 class="title-xxlarge mb-0">Motivo*</h2>
-          </div>
-          <p class="subtitle-small mb-0">Scegli il motivo dell’appuntamento</p>
-    
-    
-    
-    
-        </div>
-        <div class="card-body p-0">
-                        <div class="select-wrapper p-0 select-partials">
-                          <label for="motivo-appuntamento" class="visually-hidden">Motivo dell&#x27;appuntamento</label>
-                          <select id="motivo-appuntamento" class="">
-                            <option selected="selected" value="">Seleziona opzione</option>
-                            <option value="Cambio residenza">Cambio residenza</option>
-                            <option value="Cambio residenza">Cambio residenza</option>
-                            <option value="Cambio residenza">Cambio residenza</option>
-                            <option value="Cambio residenza">Cambio residenza</option>
-                          </select>
-                        </div>
-        </div>
-      </div>
-    </div>
-                </section>
-    
-                <section class="it-page-section" id="details">
+                <section class="it-page-section" id="applicant">
     <div class="cmp-card">
       <div class="card has-bkg-grey shadow-sm p-big">
-        <div class="card-header border-0 p-0 mb-lg-30 m-0">
+        <div class="card-header border-0 p-0 mb-lg-30">
           <div class="d-flex">
-                <h2 class="title-xxlarge mb-0">Dettagli*</h2>
+                <h2 class="title-xxlarge mb-1">Richiedente</h2>
           </div>
-          <p class="subtitle-small mb-0 mb-3">Aggiungi ulteriori dettagli</p>
+          <p class="subtitle-small mb-0">Informazioni su di te</p>
     
     
     
     
         </div>
         <div class="card-body p-0">
-                        <div class="cmp-text-area p-0">
-                          <div class="form-group">
-                            <label for="form-details" class="visually-hidden">Aggiungi
-                                      ulteriori dettagli</label>
-                            <textarea class="text-area" id="form-details" rows="2"></textarea>
-                            <span class="label">Inserire massimo 200 caratteri</span>
-                          </div>
+                        <div class="cmp-info-button-card">
+                          <div class="card p-3 p-lg-4">
+                            <div class="card-body p-0">
+                              <h3 class="big-title mb-0">Giulia Bianchi</h3>
                         
-                        </div>
-        </div>
+                        
+                        
+                        
+                              <p class="card-info">Codice Fiscale <br> <span>GLABNC72H25H501Y</span></p>
+                        
+                        
+                              <div class="accordion-item">
+                                <div class="accordion-header" id="heading-collapse-parents">
+                                  <button class="collapsed accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-parents" aria-expanded="false" aria-controls="collapse-parents">
+                                    <span class="d-flex align-items-center">
+                                    Mostra tutto
+                                      <svg class="icon icon-primary icon-sm">
+                                        <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
+                                      </svg>
+                                    </span>
+                                  </button>
+                              
+                              
+                                </div>
+                                <div id="collapse-parents" class="accordion-collapse collapse" role="region">
+                                  <div class="accordion-body p-0">
+                                    <div class="cmp-info-summary bg-white has-border">
+                                      <div class="card">
+                                    
+                                        <div class="card-header border-bottom border-light p-0 mb-0 d-flex justify-content-between d-flex justify-content-end">
+                                          <h4 class="title-large-semi-bold mb-3">Contatti</h4>
+                                          <a href="#" class="d-none text-decoration-none"><span class="text-button-sm-semi t-primary">Modifica</span></a>
+                                        </div>
+                                    
+                                        <div class="card-body p-0">
+                                          <div class="single-line-info border-light">
+                                            <div class="text-paragraph-small">Telefono</div>
+                                            <div class="border-light">
+                                              <p class="data-text">
+                                                +39 331 1234567
+                                              </p>
+                                    
+                                    
+                                    
+                                            </div>
+                                          </div>
+                                          <div class="single-line-info border-light">
+                                            <div class="text-paragraph-small">Email</div>
+                                            <div class="border-light">
+                                              <p class="data-text">
+                                                mario.rossi@gmail.com
+                                              </p>
+                                    
+                                    
+                                    
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="card-footer p-0 d-none">
+                                        </div>
+                                      </div>
+                                    </div>    </div>
+                                </div>
+                              </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                            </div>
+                          </div>
+                        </div>    </div>
       </div>
     </div>
                 </section>
@@ -476,6 +509,13 @@
                   </button>
               
               
+                    <button type="button" class="btn btn-outline-primary bg-white btn-sm steppers-btn-save d-none d-lg-block saveBtn">
+                      <span class="text-button-sm t-primary">Salva Richiesta</span>
+                    </button>
+              
+                    <button type="button" class="btn btn-outline-primary bg-white btn-sm steppers-btn-save d-block d-lg-none saveBtn center">
+                      <span class="text-button-sm t-primary">Salva</span>
+                    </button>
               
               
                   <button type="button" class="btn btn-primary btn-sm steppers-btn-confirm" data-bs-toggle="modal" data-bs-target="#">

@@ -300,43 +300,35 @@
       </div>
     
       <div class="container">
+    
         <div class="cmp-info-progress d-flex" data-progress="">
         
           <!-- Desktop -->
-          <div class="info-progress-wrapper d-none d-lg-flex w-100 px-3 flex-column justify-content-end completed">
+          <div class="info-progress-wrapper d-none d-lg-flex w-100 px-3 flex-column justify-content-end step-active">
             <div class="info-progress-body d-flex justify-content-between align-self-end align-items-end w-100 py-3">
               <span class="d-block h-100 title-medium text-uppercase">Luogo</span>
         
-              <svg class="d-block icon icon-primary icon-sm" aria-hidden="true">
-                <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-check"></use>
-              </svg>
         
             </div>
           </div>
           <!-- Desktop -->
-          <div class="info-progress-wrapper d-none d-lg-flex w-100 px-3 flex-column justify-content-end completed">
+          <div class="info-progress-wrapper d-none d-lg-flex w-100 px-3 flex-column justify-content-end">
             <div class="info-progress-body d-flex justify-content-between align-self-end align-items-end w-100 py-3">
               <span class="d-block h-100 title-medium text-uppercase">Data e orario</span>
         
-              <svg class="d-block icon icon-primary icon-sm" aria-hidden="true">
-                <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-check"></use>
-              </svg>
         
             </div>
           </div>
           <!-- Desktop -->
-          <div class="info-progress-wrapper d-none d-lg-flex w-100 px-3 flex-column justify-content-end completed">
+          <div class="info-progress-wrapper d-none d-lg-flex w-100 px-3 flex-column justify-content-end">
             <div class="info-progress-body d-flex justify-content-between align-self-end align-items-end w-100 py-3">
               <span class="d-block h-100 title-medium text-uppercase">Dettagli appuntamento</span>
         
-              <svg class="d-block icon icon-primary icon-sm" aria-hidden="true">
-                <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-check"></use>
-              </svg>
         
             </div>
           </div>
           <!-- Desktop -->
-          <div class="info-progress-wrapper d-none d-lg-flex w-100 px-3 flex-column justify-content-end step-active">
+          <div class="info-progress-wrapper d-none d-lg-flex w-100 px-3 flex-column justify-content-end">
             <div class="info-progress-body d-flex justify-content-between align-self-end align-items-end w-100 py-3">
               <span class="d-block h-100 title-medium text-uppercase">Richiedente</span>
         
@@ -356,9 +348,9 @@
           <div class="iscrizioni-header d-lg-none w-100">
             <h4 class="step-title d-flex align-items-center justify-content-between drop-shadow">
               <span class="d-block d-lg-inline">
-                Richiedente
+                Luogo
               </span>
-              <span class="step">4/5</span>
+              <span class="step">1/5</span>
             </h4>
             <p class="title-xsmall mt-40 mb-3">I campi contraddistinti dal simbolo asterisco sono obbligatori</p>
           </div>
@@ -390,8 +382,8 @@
                             <div class="accordion-body">
                               <ul class="link-list" data-element="page-index">
                                 <li class="nav-item">
-                                  <a class="nav-link" href="#applicant">
-                                    <span class="title-medium">Richiedente</span>
+                                  <a class="nav-link" href="#office">
+                                    <span class="title-medium">Ufficio</span>
                                   </a>
                                 </li>
                               </ul>
@@ -407,94 +399,110 @@
           <div class="col-12 col-lg-8 offset-lg-1">
             <div class="steppers-content" aria-live="polite">
               <div class="it-page-sections-container">
-                <section class="it-page-section" id="applicant">
+                <section class="it-page-section" id="office">
     <div class="cmp-card">
       <div class="card has-bkg-grey shadow-sm p-big">
         <div class="card-header border-0 p-0 mb-lg-30">
           <div class="d-flex">
-                <h2 class="title-xxlarge mb-1">Richiedente</h2>
+                <h2 class="title-xxlarge mb-0">Ufficio</h2>
           </div>
-          <p class="subtitle-small mb-0">Informazioni su di te</p>
+          <p class="subtitle-small mb-0">Scegli l’ufficio a cui vuoi richiedere l’appuntamento</p>
     
     
     
     
         </div>
         <div class="card-body p-0">
-                        <div class="cmp-info-button-card">
-                          <div class="card p-3 p-lg-4">
-                            <div class="card-body p-0">
-                              <h3 class="big-title mb-0">Giulia Bianchi</h3>
-                        
-                        
-                        
-                        
-                              <p class="card-info">Codice Fiscale <br> <span>GLABNC72H25H501Y</span></p>
-                        
-                        
-                              <div class="accordion-item">
-                                <div class="accordion-header" id="heading-collapse-parents">
-                                  <button class="collapsed accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-parents" aria-expanded="false" aria-controls="collapse-parents">
-                                    <span class="d-flex align-items-center">
-                                    Mostra tutto
-                                      <svg class="icon icon-primary icon-sm">
-                                        <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
-                                      </svg>
-                                    </span>
-                                  </button>
-                              
-                              
+                        <div class="select-wrapper p-0 select-partials">
+                          <label for="office-choice" class="visually-hidden">Tipo di ufficio</label>
+                          <select id="office-choice" class="">
+                            <option selected="selected" value="">Seleziona opzione</option>
+                            <option value="Affari generali">Affari generali</option>
+                            <option value="Affari generali, amministrativi e contabili">Affari generali, amministrativi e contabili</option>
+                            <option value="Albo pretorio">Albo pretorio</option>
+                            <option value="Amministrativo">Amministrativo</option>
+                            <option value="Amministrativo lavori pubblici">Amministrativo lavori pubblici</option>
+                            <option value="Amministrativo patrimonio">Amministrativo patrimonio</option>
+                            <option value="Amministrativo sport">Amministrativo sport</option>
+                            <option value="Anagrafe">Anagrafe</option>
+                            <option value="Anticorruzione, trasparenza, controlli interni, antiriciclaggio, antifrode">Anticorruzione, trasparenza, controlli interni, antiriciclaggio, antifrode</option>
+                            <option value="Asili nido">Asili nido</option>
+                            <option value="Assistenza tecnica">Assistenza tecnica</option>
+                            <option value="Autoparco">Autoparco</option>
+                            <option value="Bilancio">Bilancio</option>
+                            <option value="Cantieri">Cantieri</option>
+                            <option value="Cimiteri">Cimiteri</option>
+                            <option value="Commercio e somministrazione">Commercio e somministrazione</option>
+                            <option value="Concessione occasionale suolo pubblico (Cosp)">Concessione occasionale suolo pubblico (Cosp)</option>
+                          </select>
+                        </div>
+                        <fieldset>
+                          <legend class="visually-hidden">Seleziona un ufficio</legend>
+                          <div class="cmp-info-radio radio-card">
+                              <div class="card p-3 p-lg-4">
+                                <div class="card-header mb-0 p-0">
+                                  <div class="form-check m-0">
+                                    <input class="radio-input" name="beneficiaries" type="radio" id="first">
+                                    <label for="first"> <h3 class="big-title">Municipalità 1 - Chiaia, Posillipo, S. Ferdinando</h3></label>
+                                  </div>
                                 </div>
-                                <div id="collapse-parents" class="accordion-collapse collapse" role="region">
-                                  <div class="accordion-body p-0">
-                                    <div class="cmp-info-summary bg-white has-border">
-                                      <div class="card">
-                                    
-                                        <div class="card-header border-bottom border-light p-0 mb-0 d-flex justify-content-between d-flex justify-content-end">
-                                          <h4 class="title-large-semi-bold mb-3">Contatti</h4>
-                                          <a href="#" class="d-none text-decoration-none"><span class="text-button-sm-semi t-primary">Modifica</span></a>
-                                        </div>
-                                    
-                                        <div class="card-body p-0">
-                                          <div class="single-line-info border-light">
-                                            <div class="text-paragraph-small">Telefono</div>
-                                            <div class="border-light">
-                                              <p class="data-text">
-                                                +39 331 1234567
-                                              </p>
-                                    
-                                    
-                                    
-                                            </div>
-                                          </div>
-                                          <div class="single-line-info border-light">
-                                            <div class="text-paragraph-small">Email</div>
-                                            <div class="border-light">
-                                              <p class="data-text">
-                                                mario.rossi@gmail.com
-                                              </p>
-                                    
-                                    
-                                    
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="card-footer p-0 d-none">
-                                        </div>
-                                      </div>
-                                    </div>    </div>
+                              <div class="card-body p-0">
+                                <div class="info-wrapper">
+                                  <span class="info-wrapper__label">Indirizzo</span>
+                                  <p class="info-wrapper__value">via S. Caterina a Chiaia, 76</p>
+                                </div>
+                                <div class="info-wrapper">
+                                  <span class="info-wrapper__label">Apertura</span>
+                                  <p class="info-wrapper__value">lun, mar, mer ore 9:00 – 12:00</p>
                                 </div>
                               </div>
-                        
-                        
-                        
-                        
-                        
-                        
-                        
                             </div>
                           </div>
-                        </div>    </div>
+                          
+                          <div class="cmp-info-radio radio-card">
+                              <div class="card p-3 p-lg-4">
+                                <div class="card-header mb-0 p-0">
+                                  <div class="form-check m-0">
+                                    <input class="radio-input" name="beneficiaries" type="radio" id="third">
+                                    <label for="third"> <h3 class="big-title">Municipalità 3 - Stella, S. Carlo all&#x27;Arena</h3></label>
+                                  </div>
+                                </div>
+                              <div class="card-body p-0">
+                                <div class="info-wrapper">
+                                  <span class="info-wrapper__label">Indirizzo</span>
+                                  <p class="info-wrapper__value">via S. Caterina a Chiaia, 76</p>
+                                </div>
+                                <div class="info-wrapper">
+                                  <span class="info-wrapper__label">Apertura</span>
+                                  <p class="info-wrapper__value">lun, mar, mer ore 9:00 – 12:00</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                          <div class="cmp-info-radio radio-card">
+                              <div class="card p-3 p-lg-4">
+                                <div class="card-header mb-0 p-0">
+                                  <div class="form-check m-0">
+                                    <input class="radio-input" name="beneficiaries" type="radio" id="four">
+                                    <label for="four"> <h3 class="big-title">Municipalità 4 - S. Lorenzo, Vicaria, Poggioreale, Zona Industriale</h3></label>
+                                  </div>
+                                </div>
+                              <div class="card-body p-0">
+                                <div class="info-wrapper">
+                                  <span class="info-wrapper__label">Indirizzo</span>
+                                  <p class="info-wrapper__value">via S. Caterina a Chiaia, 76</p>
+                                </div>
+                                <div class="info-wrapper">
+                                  <span class="info-wrapper__label">Apertura</span>
+                                  <p class="info-wrapper__value">lun, mar, mer ore 9:00 – 12:00</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          
+                        </fieldset>
+        </div>
       </div>
     </div>
                 </section>
@@ -509,13 +517,6 @@
                   </button>
               
               
-                    <button type="button" class="btn btn-outline-primary bg-white btn-sm steppers-btn-save d-none d-lg-block saveBtn">
-                      <span class="text-button-sm t-primary">Salva Richiesta</span>
-                    </button>
-              
-                    <button type="button" class="btn btn-outline-primary bg-white btn-sm steppers-btn-save d-block d-lg-none saveBtn center">
-                      <span class="text-button-sm t-primary">Salva</span>
-                    </button>
               
               
                   <button type="button" class="btn btn-primary btn-sm steppers-btn-confirm" data-bs-toggle="modal" data-bs-target="#">

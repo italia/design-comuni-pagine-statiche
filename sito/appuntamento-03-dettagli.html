@@ -314,15 +314,18 @@
             </div>
           </div>
           <!-- Desktop -->
-          <div class="info-progress-wrapper d-none d-lg-flex w-100 px-3 flex-column justify-content-end step-active">
+          <div class="info-progress-wrapper d-none d-lg-flex w-100 px-3 flex-column justify-content-end completed">
             <div class="info-progress-body d-flex justify-content-between align-self-end align-items-end w-100 py-3">
               <span class="d-block h-100 title-medium text-uppercase">Data e orario</span>
         
+              <svg class="d-block icon icon-primary icon-sm" aria-hidden="true">
+                <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-check"></use>
+              </svg>
         
             </div>
           </div>
           <!-- Desktop -->
-          <div class="info-progress-wrapper d-none d-lg-flex w-100 px-3 flex-column justify-content-end">
+          <div class="info-progress-wrapper d-none d-lg-flex w-100 px-3 flex-column justify-content-end step-active">
             <div class="info-progress-body d-flex justify-content-between align-self-end align-items-end w-100 py-3">
               <span class="d-block h-100 title-medium text-uppercase">Dettagli appuntamento</span>
         
@@ -350,9 +353,9 @@
           <div class="iscrizioni-header d-lg-none w-100">
             <h4 class="step-title d-flex align-items-center justify-content-between drop-shadow">
               <span class="d-block d-lg-inline">
-                Data e orario
+                Dettagli appuntamento
               </span>
-              <span class="step">2/5</span>
+              <span class="step">3/5</span>
             </h4>
             <p class="title-xsmall mt-40 mb-3">I campi contraddistinti dal simbolo asterisco sono obbligatori</p>
           </div>
@@ -384,13 +387,13 @@
                             <div class="accordion-body">
                               <ul class="link-list" data-element="page-index">
                                 <li class="nav-item">
-                                  <a class="nav-link" href="#appointment-available">
-                                    <span class="title-medium">Appuntamenti disponibili</span>
+                                  <a class="nav-link" href="#reason">
+                                    <span class="title-medium">Motivo</span>
                                   </a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="nav-link" href="#office">
-                                    <span class="title-medium">Ufficio</span>
+                                  <a class="nav-link" href="#details">
+                                    <span class="title-medium">Dettagli</span>
                                   </a>
                                 </li>
                               </ul>
@@ -406,114 +409,57 @@
           <div class="col-12 col-lg-8 offset-lg-1">
             <div class="steppers-content" aria-live="polite">
               <div class="it-page-sections-container">
-                <section class="it-page-section" id="appointment-available">
+                <section class="it-page-section" id="reason">
     <div class="cmp-card mb-40">
       <div class="card has-bkg-grey shadow-sm p-big">
-        <div class="card-header border-0 p-0 mb-lg-30">
+        <div class="card-header border-0 p-0 mb-lg-30 mb-3">
           <div class="d-flex">
-                <h2 class="title-xxlarge mb-2">Appuntamenti disponibili*</h2>
+                <h2 class="title-xxlarge mb-0">Motivo*</h2>
           </div>
+          <p class="subtitle-small mb-0">Scegli il motivo dell’appuntamento</p>
     
     
     
     
         </div>
         <div class="card-body p-0">
-                        <div class="select-wrapper p-0 mt-1 select-partials">
-                          <label for="appointment" class="visually-hidden">Seleziona un mese</label>
-                          <select id="appointment" class="">
-                            <option selected="selected" value="">Seleziona un mese</option>
-                            <option value="Gennaio">Gennaio</option>
-                            <option value="Febbraio">Febbraio</option>
-                            <option value="Marzo">Marzo</option>
-                            <option value="Aprile">Aprile</option>
-                            <option value="Maggio">Maggio</option>
-                            <option value="Giugno">Giugno</option>
-                            <option value="Luglio">Luglio</option>
-                            <option value="Agosto">Agosto</option>
-                            <option value="Settembre">Settembre</option>
-                            <option value="Ottobre">Ottobre</option>
-                            <option value="Novembre">Novembre</option>
-                            <option value="Dicembre">Dicembre</option>
+                        <div class="select-wrapper p-0 select-partials">
+                          <label for="motivo-appuntamento" class="visually-hidden">Motivo dell&#x27;appuntamento</label>
+                          <select id="motivo-appuntamento" class="">
+                            <option selected="selected" value="">Seleziona opzione</option>
+                            <option value="Cambio residenza">Cambio residenza</option>
+                            <option value="Cambio residenza">Cambio residenza</option>
+                            <option value="Cambio residenza">Cambio residenza</option>
+                            <option value="Cambio residenza">Cambio residenza</option>
                           </select>
                         </div>
-                        <div class="cmp-card-radio-list mt-4">
-                          <div class="card p-3">
-                            <div class="card-body p-0">
-                              <div class="form-check m-0">
-                                <fieldset>
-                                  <legend class="visually-hidden">Seleziona un giorno e orario</legend>
-                                    <div class="radio-body border-bottom border-light">
-                                      <input name="radio" type="radio" id="radio-1">
-                                      <label for="radio-1">Giovedì 11 Marzo 2022 ore 10:00</label>
-                                    </div>
-                                    <div class="radio-body border-bottom border-light">
-                                      <input name="radio" type="radio" id="radio-2">
-                                      <label for="radio-2">Venerdì 12 Marzo 2022 ore 11:15</label>
-                                    </div>
-                                    <div class="radio-body border-bottom border-light">
-                                      <input name="radio" type="radio" id="radio-3">
-                                      <label for="radio-3">Lunedì 15 Marzo 2022 ore 09:00</label>
-                                    </div>
-                                </fieldset>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-          
         </div>
       </div>
     </div>
                 </section>
     
-                <section class="it-page-section" id="office">
+                <section class="it-page-section" id="details">
     <div class="cmp-card">
       <div class="card has-bkg-grey shadow-sm p-big">
-        <div class="card-header border-0 p-0 mb-lg-30">
+        <div class="card-header border-0 p-0 mb-lg-30 m-0">
           <div class="d-flex">
-                <h2 class="title-xxlarge mb-0">Ufficio</h2>
+                <h2 class="title-xxlarge mb-0">Dettagli*</h2>
           </div>
+          <p class="subtitle-small mb-0 mb-3">Aggiungi ulteriori dettagli</p>
     
     
     
     
         </div>
         <div class="card-body p-0">
-          
-                        <div class="cmp-info-summary bg-white mb-4 mb-lg-30 p-4">
-                          <div class="card">
-                        
-                            <div class="card-header border-bottom border-light p-0 mb-0 d-flex justify-content-between d-flex justify-content-end">
-                              <h4 class="title-large-semi-bold mb-3">Municipalità 1 - Chiaia, Posillipo, S. Ferdinando</h4>
-                            </div>
-                        
-                            <div class="card-body p-0">
-                              <div class="single-line-info border-light">
-                                <div class="text-paragraph-small">Indirizzo</div>
-                                <div class="border-light">
-                                  <p class="data-text">
-                                    via S. Caterina a Chiaia, 76
-                                  </p>
-                        
-                        
-                        
-                                </div>
-                              </div>
-                              <div class="single-line-info border-light">
-                                <div class="text-paragraph-small">Apertura</div>
-                                <div class="border-light">
-                                  <p class="data-text">
-                                    lun, mar, mer ore 9:00 – 12:00
-                                  </p>
-                        
-                        
-                        
-                                </div>
-                              </div>
-                            </div>
-                            <div class="card-footer p-0">
-                            </div>
+                        <div class="cmp-text-area p-0">
+                          <div class="form-group">
+                            <label for="form-details" class="visually-hidden">Aggiungi
+                                      ulteriori dettagli</label>
+                            <textarea class="text-area" id="form-details" rows="2"></textarea>
+                            <span class="label">Inserire massimo 200 caratteri</span>
                           </div>
+                        
                         </div>
         </div>
       </div>
@@ -547,7 +493,6 @@
           </div>
         </div>
       </div>
-    
     
       <div class="bg-grey-card shadow-contacts">
         <div class="container">
