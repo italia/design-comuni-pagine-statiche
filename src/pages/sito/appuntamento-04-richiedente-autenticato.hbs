@@ -20,10 +20,10 @@
 
   <div class="container">
     {{> cmp-info-progress/cmp-info-progress
-    step-list=step-list.prenota-appuntamento-step-3
-    step-num="3"
+    step-list=step-list.prenota-appuntamento-step-4
+    step-num="4"
     step-tot="5"
-    step-title="Dettagli appuntamento"
+    step-title="Richiedente"
     classSubtitle="mt-40 mb-3"
     subtitle="I campi contraddistinti dal simbolo asterisco sono obbligatori"
     }}
@@ -34,20 +34,18 @@
       <div class="col-12 col-lg-3 d-lg-block mb-4 d-none ">
         {{>cmp-navscroll/cmp-navscroll
         accordion-title="INFORMAZIONI RICHIESTE" id="one"
-        link-list=link-list.prenota-appuntamento-step-3}}
+        link-list=link-list.prenota-appuntamento-step-4}}
       </div>
       <div class="col-12 col-lg-8 offset-lg-1">
         <div class="steppers-content" aria-live="polite">
           <div class="it-page-sections-container">
-            <section class="it-page-section" id="reason">
+            <section class="it-page-section" id="applicant">
               {{#>cmp-card/cmp-card-content-box
               class="p-big"
               bg-grey=true
-              h2-class="mb-0"
-              margin-class="mb-40"
-              header-class="mb-3"
-              card-title="Motivo*"
-              subtitle="Scegli il motivo dell’appuntamento"
+              h2-class="mb-1"
+              card-title="Richiedente"
+              subtitle="Informazioni su di te"
               }}
               {{> cmp-select/select
               placeholder="Seleziona opzione"
@@ -71,10 +69,17 @@
               }}
               {{> cmp-text-area/text-area label="Inserire massimo 200 caratteri" class="p-0" placeholder="Aggiungi
               ulteriori dettagli" id="form-details"}}
+              {{> cmp-info-button-card/cmp-info-button-card big-title="Giulia Bianchi"
+              label-2="Codice Fiscale <br> <span>GLABNC72H25H501Y</span>"
+              show-more-anagrafica="true"
+              onlyContact=true
+              no-header=true
+              collapse-id="collapse-parents"
+              }}
               {{/cmp-card/cmp-card-content-box}}
             </section>
           </div>
-          {{> cmp-nav-steps/cmp-nav-steps save="true" aria-label-save="di prenotazione appuntamento"}}
+          {{> cmp-nav-steps/cmp-nav-steps save="true" saveBtn=true aria-label-save="di prenotazione appuntamento"}}
         </div>
       </div>
     </div>
