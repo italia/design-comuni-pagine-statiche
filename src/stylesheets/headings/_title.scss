@@ -98,7 +98,7 @@
   }
 
   &-small-semi-bold {
-    @include font(16, 18);
+    font-size: 1rem;
     font-weight: 600;
     line-height: 1.5 !important;
   }

@@ -2,10 +2,10 @@
 import Splide from '@splidejs/splide';
 
 import '../components/cmp-rating/cmp-rating';
-import '../components/partials/toggle/toggle';
+import '../components/cmp-toggle/toggle';
 import '../components/cmp-info-button-card/cmp-info-button-card';
 import '../components/cmp-info-checkbox/cmp-info-checkbox';
-import '../components/partials/input/input';
+import '../components/cmp-input/input';
 
 const alertMessage = document.getElementById('alert-message');
 const saveBtns = document.querySelectorAll('.saveBtn');

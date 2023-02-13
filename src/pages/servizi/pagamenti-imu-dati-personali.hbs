@@ -1,4 +1,4 @@
-{{#>base/base title="Pagamenti - Nome del Comune" headerActive3=true}}
+{{#>cmp-base/base title="Pagamenti - Nome del Comune" headerActive3=true}}
 <main>
   <div class="container" id="main-container">
     <div class="row justify-content-center">
@@ -66,7 +66,7 @@
               modalId="modal-documents"
               }}
 
-              {{>partials/button/button
+              {{> cmp-button/cmp-button
               label="Aggiungi contribuente"
               iconBtn="it-plus-circle"
               sm=true
@@ -85,7 +85,7 @@
               required="true"
               subtitle="Seleziona o aggiungi il coobbligato per il quale pagherai l’imposta"
               margin-class="mb-40"}}
-              {{>partials/toggle/toggle label="C’è un coobbligato" id="toggle" toggleWhite=true}}
+              {{> cmp-toggle/toggle label="C’è un coobbligato" id="toggle" toggleWhite=true}}
               {{/cmp-card/cmp-card-content-box}}
             </section>
 
@@ -104,7 +104,7 @@
               info-appointment=pagamenti-dovuti.controllare-dati-personali.immobili.info-2 accordion=true id="2"
               collapse-id="collapse-benef-5"}}
 
-              {{>partials/button/button label="Aggiungi immobile"
+              {{> cmp-button/cmp-button label="Aggiungi immobile"
               iconBtn="it-plus-circle"
               sm=true
               class="plus-text mt-20 p-0"
@@ -145,4 +145,4 @@
   {{>cmp-modal/modal-save}}
 
 </main>
-{{/base/base }}
+{{/cmp-base/base }}

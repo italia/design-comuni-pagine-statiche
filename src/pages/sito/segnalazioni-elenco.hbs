@@ -1,4 +1,4 @@
-{{#>base/base title="Elenco segnalazioni - Nome del Comune"}}
+{{#>cmp-base/base title="Elenco segnalazioni - Nome del Comune"}}
 <main>
   <div class="container" id="main-container">
     <div class="row justify-content-center mb-md-40 mb-lg-80">
@@ -23,10 +23,10 @@
         <div class="d-flex justify-content-between border-bottom border-light pb-3 mt-5">
           <span class="search-results">645 Risultati</span>
 
-          {{>partials/button/button label="Filtra" label-class="t-primary title-xsmall-semi-bold ms-1"
+          {{> cmp-button/cmp-button label="Filtra" label-class="t-primary title-xsmall-semi-bold ms-1"
           iconBtn="it-funnel" class="p-0 pe-2 d-lg-none" xs=true
           modalId="modal-categories"}}
-          {{>partials/button/button label="Rimuovi tutti i filtri" label-class="title-xsmall-semi-bold ms-1"
+          {{> cmp-button/cmp-button label="Rimuovi tutti i filtri" label-class="title-xsmall-semi-bold ms-1"
           class="p-0 pe-2 d-none d-lg-block" xs=true}}
         </div>
 
@@ -59,7 +59,7 @@
                 credenziali SPID o CIE."
                 subtitle-class="mt-3"
                 disservizioBtn=true}}
-                {{>partials/button/button label="Segnala disservizio" modalId="modal-disservizio"
+                {{> cmp-button/cmp-button label="Segnala disservizio" modalId="modal-disservizio"
                 class="btn btn-primary mobile-full py-3 mt-2 mb-4 mb-lg-0"}}
                 {{/cmp-text-button/cmp-text-button}}
               </div>
@@ -101,7 +101,7 @@
               {{/cmp-card/cmp-card-content-box}}
             </div>
             <div class="col-12 text-center">
-              {{>partials/button/button label="Carica altre segnalazioni" 
+              {{> cmp-button/cmp-button label="Carica altre segnalazioni" 
               class="btn btn-outline-primary mobile-full py-3 mt-10 mx-auto"}}
 
             </div>
@@ -112,7 +112,7 @@
                 credenziali SPID o CIE."
                 subtitle-class="mt-3"
                 disservizioBtn=true}}
-                {{>partials/button/button label="Segnala disservizio" modalId="modal-disservizio" class="btn btn-primary mobile-full py-3 mt-2 mb-4 mb-lg-0"}}
+                {{> cmp-button/cmp-button label="Segnala disservizio" modalId="modal-disservizio" class="btn btn-primary mobile-full py-3 mt-2 mb-4 mb-lg-0"}}
                 {{/cmp-text-button/cmp-text-button}}
               </div>
           </div>
@@ -144,4 +144,4 @@
 {{!--   {{> cmp-modal/modal-filter-categories categories=categories}} --}}
   {{>cmp-modal/modal-clickMap}}
 </main>
-{{/base/base}}
+{{/cmp-base/base}}

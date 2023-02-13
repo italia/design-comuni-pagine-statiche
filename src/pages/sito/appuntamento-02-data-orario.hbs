@@ -1,4 +1,4 @@
-{{#>base/base title="Prenotazioni - Nome del Comune" headerActive3=true}}
+{{#>cmp-base/base title="Prenotazioni - Nome del Comune" headerActive3=true}}
 <main>
   <div class="container" id="main-container">
     <div class="row justify-content-center">
@@ -47,7 +47,7 @@
               card-title="Appuntamenti disponibili*"
               margin-class="mb-40"
               }}
-              {{>partials/select/select class="p-0 mt-1" id="appointment" label-text="Seleziona un mese"
+              {{>cmp-select/select class="p-0 mt-1" id="appointment" label-text="Seleziona un mese"
               label-hidden=true placeholder="Seleziona un mese"
               select-option-list=prenotazione-appuntamento.controllare-dati-personali.appuntamenti-disponibili.select}}
               {{>cmp-card-radio-list/cmp-card-radio-list
@@ -91,4 +91,4 @@
   </div>
 
 </main>
-{{/base/base }}
+{{/cmp-base/base }}
