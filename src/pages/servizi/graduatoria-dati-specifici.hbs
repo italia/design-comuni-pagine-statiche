@@ -1,4 +1,4 @@
-{{#>base/base title="Iscrizione alla Scuola dell’infanzia - Nome del Comune" headerActive3=true}}
+{{#>cmp-base/base title="Iscrizione alla Scuola dell’infanzia - Nome del Comune" headerActive3=true}}
 <main>
   <div class="container" id="main-container">
     <div class="row justify-content-center">
@@ -37,7 +37,7 @@
               margin-class="mb-40"
               required-icon=true
               card-title="Seleziona Istituto"}}
-              {{> partials/select/select required=true placeholder="Scegli un'opzione" label-text="Seleziona Istituto"
+              {{> cmp-select/select required=true placeholder="Scegli un'opzione" label-text="Seleziona Istituto"
               id="school-option" label-hidden=true select-option-list=inserire-dati-specifici}}
               {{/cmp-card/cmp-card-content-box}}
             </section>
@@ -112,4 +112,4 @@
   </div>
 
 </main>
-{{/base/base }}
+{{/cmp-base/base }}

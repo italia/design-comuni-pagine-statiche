@@ -20,7 +20,7 @@
   }
 
   &-small {
-    @include font(16, 18);
+    font-size: 1rem;
     line-height: 1.5;
     font-weight: 400;
 

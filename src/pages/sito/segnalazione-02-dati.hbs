@@ -1,4 +1,4 @@
-{{#>base/base title="Segnalazione disservizio - Nome del Comune" headerActive3=true}}
+{{#>cmp-base/base title="Segnalazione disservizio - Nome del Comune" headerActive3=true}}
 <main>
   <div class="container" id="main-container">
     <div class="row justify-content-center">
@@ -38,7 +38,7 @@
               subtitle="Indica il luogo del disservizio"
               margin-class="mb-40"
               }}
-              {{> partials/input-autocomplete/input-autocomplete required=true placeholder="Cerca un luogo*" link=true class="mt-3"}}
+              {{> cmp-input-autocomplete/input-autocomplete required=true placeholder="Cerca un luogo*" link=true class="mt-3"}}
               {{/cmp-card/cmp-card-content-box}}
             </section>
 
@@ -52,7 +52,7 @@
               card-title="Disservizio"
               margin-class="mb-40"
               }}
-              {{>partials/select/select
+              {{> cmp-select/select
               placeholder="Tipo di disservizio*"
               class="p-md-3 p-lg-4 pb-lg-0"
               select-option-list=serv-1-disservizio.list
@@ -63,10 +63,10 @@
               required=true
               }}
               <div class="text-area-wrapper p-3 px-lg-4 pt-lg-5 pb-lg-0 bg-white">
-                {{>partials/input/input type="text" id="title" label="Titolo" required=true name="title"
+                {{> cmp-input/input type="text" id="title" label="Titolo" required=true name="title"
                 formClass="mb-0"}}
               </div>
-              {{>partials/text-area/text-area placeholder="Dettagli*" id="details" required=true visible=true class="m-0 p-3 px-lg-4
+              {{> cmp-text-area/text-area placeholder="Dettagli*" id="details" required=true visible=true class="m-0 p-3 px-lg-4
               pt-lg-5 pb-lg-4 bg-white" num="2" label="Inserire al massimo 200 caratteri"}}
 
               <div class="btn-wrapper px-3 pt-2 pb-3 px-lg-4 pb-lg-4 pt-lg-0 bg-white">
@@ -81,7 +81,7 @@
                   </a>
                 </div>
                 <hr>
-                {{> partials/button/button label="Carica file" primary=true iconBtn="it-upload" iconWhite=true sm=true
+                {{> cmp-button/cmp-button label="Carica file" primary=true iconBtn="it-upload" iconWhite=true sm=true
                 class="w-100 fw-bold" aria-label="Carica file per il disservizio"}}
                 <p class="title-xsmall u-grey-dark pt-10 mb-0">Seleziona una o più immagini da allegare alla
                   segnalazione</p>
@@ -128,4 +128,4 @@
   </div>
 
 </main>
-{{/base/base }}
+{{/cmp-base/base }}

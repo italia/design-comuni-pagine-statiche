@@ -1,4 +1,4 @@
-{{#>base/base title="Prenotazioni - Nome del Comune" headerActive3=true}}
+{{#>cmp-base/base title="Prenotazioni - Nome del Comune" headerActive3=true}}
 <main>
   <div class="container" id="main-container">
     <div class="row justify-content-center">
@@ -47,7 +47,7 @@
               card-title="Ufficio"
               subtitle="Scegli l’ufficio a cui vuoi richiedere l’appuntamento"
               }}
-              {{>partials/select/select placeholder="Seleziona opzione" id="office-option" label-text="Tipo di ufficio"
+              {{> cmp-select/select placeholder="Seleziona opzione" id="office-option" label-text="Tipo di ufficio"
               label-hidden=true class="p-0" select-option-list=ufficio-appuntamento}}
               {{/cmp-card/cmp-card-content-box}}
             </section>
@@ -70,4 +70,4 @@
   </div>
 
 </main>
-{{/base/base }}
+{{/cmp-base/base }}

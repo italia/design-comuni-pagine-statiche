@@ -1,4 +1,4 @@
-{{#>base/base title="Servizi - Nome del Comune" headerActive3=true}}
+{{#>cmp-base/base title="Servizi - Nome del Comune" headerActive3=true}}
 <main>
   <div class="container" id="main-container">
     <div class="row justify-content-center">
@@ -28,7 +28,7 @@
         </div>
 
         <div class="col-12 col-lg-8 pt-lg-50 pb-lg-50">
-          {{>partials/input-search/input-search
+          {{> cmp-input-search/input-search
             id="autocomplete-three"
             label-text="Cerca una parola chiave"
             placeholder-text="Cerca una parola chiave"
@@ -93,7 +93,7 @@
           cardRounded=true
           }}
 
-          {{>partials/button/button
+          {{> cmp-button/cmp-button
           outline-primary="true"
           class="pt-15 pb-15 pl-90 pr-90 mb-30 mt-3 mb-lg-50 full-mb text-button"
           label="Carica altri risultati"
@@ -325,4 +325,4 @@
     </div>
   </div>
 </main>
-{{/base/base }}
+{{/cmp-base/base }}

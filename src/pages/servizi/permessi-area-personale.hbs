@@ -1,4 +1,4 @@
-{{#>base/base title="Area personale - Nome del Comune" logged=true}}
+{{#>cmp-base/base title="Area personale - Nome del Comune" logged=true}}
 <main>
   <div class="container" id="main-container">
     <div class="row justify-content-center">
@@ -60,7 +60,7 @@
                 header-m0=true
                 description-class="text-truncate"}}
 
-                {{>partials/button/button label="Vedi altri messaggi" class="btn-xs btn-me btn-label
+                {{> cmp-button/cmp-button label="Vedi altri messaggi" class="btn-xs btn-me btn-label
                 t-primary px-0"}}
                 {{/cmp-card/cmp-card-content-box}}
               </div>
@@ -94,7 +94,7 @@
                 date="02/10/2022"
                 icon="it-files"}}
 
-                {{>partials/button/button label="Vedi altre attività" class="btn-xs btn-me btn-label
+                {{> cmp-button/cmp-button label="Vedi altre attività" class="btn-xs btn-me btn-label
                 t-primary px-0"}}
                 {{/cmp-card/cmp-card-content-box}}
               </div>
@@ -118,10 +118,10 @@
                 id-input="pratiche"
                 id-dropdown="pratiche"
                 }}
-                {{>cmp-accordion/cmp-accordion
+                {{> cmp-accordion/cmp-accordion
                 accordion=permessi-autorizzazioni.area-personale.pratiche
                 }}
-                {{>partials/button/button label="Vedi altre pratiche" class="d-block accordion-view-more mb-2 pt-3
+                {{> cmp-button/cmp-button label="Vedi altre pratiche" class="d-block accordion-view-more mb-2 pt-3
                 t-primary
                 title-xsmall-semi-bold
                 ps-lg-3"}}
@@ -133,10 +133,10 @@
                 id-input="pagamenti"
                 id-dropdown="pagamenti"
                 }}
-                {{>cmp-accordion/cmp-accordion
+                {{> cmp-accordion/cmp-accordion
                 accordion=permessi-autorizzazioni.area-personale.pagamenti
                 }}
-                {{>partials/button/button label="Vedi altri pagamenti" class="d-block accordion-view-more mb-2
+                {{> cmp-button/cmp-button label="Vedi altri pagamenti" class="d-block accordion-view-more mb-2
                 t-primary
                 title-xsmall-semi-bold
                 ps-lg-3"}}
@@ -163,4 +163,4 @@
   {{>cmp-modal/modal-message date="02/03/2022" card-title="Richiesta pass ZTL" description="La
   richiesta AN4059281 è stata accettata ed è in fase di elaborazione." }}
 </main>
-{{/base/base }}
+{{/cmp-base/base }}

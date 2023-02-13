@@ -1,4 +1,4 @@
-{{#>base/base title="Servizi sociali - Nome del Comune" headerActive3=true}}
+{{#>cmp-base/base title="Servizi sociali - Nome del Comune" headerActive3=true}}
 <main>
   <div class="container" id="main-container">
     <div class="row justify-content-center">
@@ -77,7 +77,7 @@
                   richiesta.</p>
               </div>
 
-              {{>partials/button/button label="Aggiungi minore"
+              {{> cmp-button/cmp-button label="Aggiungi minore"
               iconBtn="it-plus-circle"
               sm=true
               class="plus-text mt-20 p-0"
@@ -135,7 +135,7 @@
               modalId="modal-bank-account"
               }}
 
-              {{>partials/button/button label="Aggiungi conto bancario"
+              {{> cmp-button/cmp-button label="Aggiungi conto bancario"
               iconBtn="it-plus-circle"
               sm=true
               class="plus-text mt-20 p-0"
@@ -169,4 +169,4 @@
   {{>cmp-modal/modal-save}}
 
 </main>
-{{/base/base }}
+{{/cmp-base/base }}

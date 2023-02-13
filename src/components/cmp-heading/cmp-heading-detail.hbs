@@ -10,7 +10,7 @@
       {{#if label-tag}}
       <ul class="d-flex flex-wrap gap-1 my-3">
         <li>
-          {{>partials/cmp-tag/cmp-tag label-tag=label-tag data-element="service-status" no-link=true}}
+          {{> cmp-tag/cmp-tag label-tag=label-tag data-element="service-status" no-link=true}}
         </li>
       </ul>
 
@@ -25,13 +25,13 @@
       {{/if}}
 
       {{#if button}}
-      {{>partials/button/button class="fw-bold"}}
+      {{> cmp-button/cmp-button class="fw-bold"}}
       {{/if}}
 
       {{#if double-button}}
       <div class="d-lg-flex gap-30 mb-2">
-        {{>partials/button/button class="fw-bold btn-primary mr-lg-30"}}
-        {{>partials/button/button class="fw-bold btn-outline-primary t-primary" label=second-label
+        {{> cmp-button/cmp-button class="fw-bold btn-primary mr-lg-30"}}
+        {{> cmp-button/cmp-button class="fw-bold btn-outline-primary t-primary" label=second-label
         aria-label=second-ariaLabel}}
       </div>
       {{/if}}

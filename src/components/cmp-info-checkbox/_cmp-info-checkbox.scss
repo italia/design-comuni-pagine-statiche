@@ -88,12 +88,12 @@
     border-bottom: 1px solid get-color(light-grey, grey);
 
     &__label {
-      @include font(16, 18);
+      font-size: 1rem;
       font-weight: 400;
     }
 
     &__value {
-      @include font(16, 18);
+      font-size: 1rem;
       font-weight: 600;
     }
   }

@@ -1,4 +1,4 @@
-{{#>base/base title="Segnalazione disservizio - Nome del Comune" headerActive3=true}}
+{{#>cmp-base/base title="Segnalazione disservizio - Nome del Comune" headerActive3=true}}
 <main>
   <div class="container" id="main-container">
     <div class="row justify-content-center">
@@ -103,14 +103,14 @@
           <section class="it-page-section mb-30 has-bg-grey p-3" id="service-access">
             <h2 class="title-xxlarge mb-3">Fai una segnalazione</h2>
             <p class="text-paragraph lora">Invia una segnalazione online dal tuo smartphone o computer</p>
-            {{>partials/button/button
+            {{> cmp-button/cmp-button
             label="Segnala disservizio"
             primary="true"
             class="mobile-full"
             }}
             <p class="text-paragraph mt-4 lora">Oppure, prenota un appuntamento all’Ufficio Relazioni con il Pubblico
               (URP)</p>
-            {{>partials/button/button
+            {{> cmp-button/cmp-button
             label="Prenota appuntamento"
             class="mobile-full btn-outline-primary t-primary bg-white"
             }}
@@ -157,16 +157,16 @@
                 <span class="text-paragraph-small">Argomenti:</span>
                 <ul class="d-flex flex-wrap gap-2 mt-10 mb-3">
                   <li>
-                    {{>partials/cmp-tag/cmp-tag label-tag="Gestione rifiuti" data-element="service-topic"}}
+                    {{> cmp-tag/cmp-tag label-tag="Gestione rifiuti" data-element="service-topic"}}
                   </li>
                   <li>
-                    {{>partials/cmp-tag/cmp-tag label-tag="Igiene pubblica" data-element="service-topic"}}
+                    {{> cmp-tag/cmp-tag label-tag="Igiene pubblica" data-element="service-topic"}}
                   </li>
                   <li>
-                    {{>partials/cmp-tag/cmp-tag label-tag="Spazi verdi" data-element="service-topic"}}
+                    {{> cmp-tag/cmp-tag label-tag="Spazi verdi" data-element="service-topic"}}
                   </li>
                   <li>
-                    {{>partials/cmp-tag/cmp-tag label-tag="Inquinamento" data-element="service-topic"}}
+                    {{> cmp-tag/cmp-tag label-tag="Inquinamento" data-element="service-topic"}}
                   </li>
                 </ul>
                 <p class="text-paragraph-small mb-0">Pagina aggiornata il 14/04/2022</p>
@@ -201,4 +201,4 @@
     </div>
   </div>
 </main>
-{{/base/base }}
+{{/cmp-base/base }}

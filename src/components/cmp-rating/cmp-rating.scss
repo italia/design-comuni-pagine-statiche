@@ -10,8 +10,8 @@
   }
  */
 
-  .rating>label svg {
-    fill: #7D97B0;
+  .rating > label svg {
+    fill: #7d97b0;
   }
 
   .form-group {
@@ -55,11 +55,88 @@
   .rating {
     input {
       &:focus {
-        &+label {
+        & + label {
           border-color: #f90 !important;
           box-shadow: 0 0 0 2px #f90 !important;
           outline: none !important;
         }
+      }
+    }
+  }
+
+  .cmp-steps-rating {
+    .step-title {
+      padding: 0.875rem;
+      margin-bottom: 2.375rem;
+
+      @include media-breakpoint-up(sm) {
+        padding: 0.78rem;
+        margin-bottom: 2.111rem;
+      }
+
+      legend {
+        @include font(18, 18);
+        font-weight: 600;
+        line-height: 36px;
+      }
+    }
+  }
+
+  .iscrizioni-header {
+    .drop-shadow {
+      box-shadow: 0 0.9375rem 1.325rem -0.9rem rgba(0, 0, 0, 0.1);
+    }
+
+    .small-title {
+      @include font(20, 20);
+      font-weight: 600;
+      line-height: 1.55;
+    }
+
+    .step-wrapper {
+      @include font(24, 24);
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    .step-title {
+      @include font(18, 18);
+      font-weight: 600;
+      line-height: 2;
+    }
+
+    .step {
+      @include font(14, 14);
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
+    .header-text {
+      @include font(16, 16);
+      font-weight: 400;
+      line-height: 1.5;
+    }
+  }
+
+  .cmp-radio-list {
+    font-size: 1rem;
+    font-weight: 600;
+
+    &__item:not(:last-child) {
+      margin-bottom: 1rem;
+
+      @include media-breakpoint-up(sm) {
+        margin-bottom: 0.89rem;
+      }
+    }
+
+    .form-check [type="checkbox"] + label,
+    .form-check [type="radio"] + label {
+      height: auto;
+      margin-bottom: 1.25rem;
+
+      @include media-breakpoint-up(sm) {
+        margin-bottom: 1.11rem;
       }
     }
   }
