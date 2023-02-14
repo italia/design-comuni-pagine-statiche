@@ -56,11 +56,7 @@
 }
 
 .numResult {
-  font-weight: 400;
-
-  @include media-breakpoint-up(md) {
-    font-weight: 600;
-  }
+  font-weight: 600;
 }
 
 .has-bg-grey {
@@ -238,20 +234,6 @@ a.read-more {
   }
 }
 
-.link-list-wrapper ul li a {
-  text-decoration: underline;
-  
-  span {
-    display: unset;
-  }
-
-  &:hover:not(.disabled){
-    span {
-      color: inherit;
-    }
-  }
-}
-
 .evidence-section {
   .section {
     background-repeat: no-repeat;
@@ -389,11 +371,7 @@ a.read-more {
   }
 }
 
-.card .categoryicon-top span.text{
-  color: #007a52;
-}
-
-.bg-none{
+.bg-none {
   background-color: unset;
 }
 
@@ -446,21 +424,10 @@ a.read-more {
     }
 }
 
-.nav-tabs {
-  .nav-item {
-    padding: 2px;
-  }
-}
-
-.navbar.it-navscroll-wrapper .link-list-wrapper ul li a {
-  font-weight: 400;
-}
-
-
-a {
-  &:hover {
-    .card-title {
-      color: inherit !important;
-    }
-  }
-}
+// a {
+//   &:hover {
+//     .card-title {
+//       color: inherit !important;
+//     }
+//   }
+// }
