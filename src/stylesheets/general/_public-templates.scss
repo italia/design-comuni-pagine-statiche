@@ -238,20 +238,6 @@ a.read-more {
   }
 }
 
-.link-list-wrapper ul li a {
-  text-decoration: underline;
-  
-  span {
-    display: unset;
-  }
-
-  &:hover:not(.disabled){
-    span {
-      color: inherit;
-    }
-  }
-}
-
 .evidence-section {
   .section {
     background-repeat: no-repeat;
