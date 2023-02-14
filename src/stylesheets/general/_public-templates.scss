@@ -56,11 +56,7 @@
 }
 
 .numResult {
-  font-weight: 400;
-
-  @include media-breakpoint-up(md) {
-    font-weight: 600;
-  }
+  font-weight: 600;
 }
 
 .has-bg-grey {
@@ -375,7 +371,7 @@ a.read-more {
   }
 }
 
-.bg-none{
+.bg-none {
   background-color: unset;
 }
 
