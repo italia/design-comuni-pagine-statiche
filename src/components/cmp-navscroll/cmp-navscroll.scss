@@ -1,10 +1,5 @@
 .cmp-navscroll {
   z-index: 0;
-  top: 3.125rem;
-
-  @include media-breakpoint-up(sm) {
-    top: 2.78rem;
-  }
 
   .navbar.it-navscroll-wrapper {
     display: block;
