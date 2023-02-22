@@ -250,16 +250,8 @@
         "anchor": "descrizione"
       },
       {
-        "item": "Allegati",
-        "anchor": "allegati"
-      },
-      {
         "item": "A cura di",
         "anchor": "a-cura-di"
-      },
-      {
-        "item": "Ulteriori informazioni",
-        "anchor": "ulteriori-informazioni"
       }
     ]
   }
