@@ -4,43 +4,4 @@
   @include media-breakpoint-up(sm) {
     margin-bottom: 2.222rem;
   }
-
-  @include media-breakpoint-down(md) {
-    padding: 0 24px;
-    height: 64px;
-    background: #fff;
-    box-shadow: 0 8px 20px rgb(0 0 0 / 10%);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .steppers-header {
-    @include media-breakpoint-down(md) {
-      height: auto;
-      padding: 0;
-      box-shadow: unset;
-      display: inline-block;
-    }
-
-    li {
-      &:not(.active) {
-        @include media-breakpoint-down(md) {
-          clip: rect(1px, 1px, 1px, 1px);
-          height: 0;
-          position: absolute;
-          display: block;
-        }
-      }
-    }
-  }
-
-  .steppers-index {
-    font-size: 0.875rem;
-    font-weight: 600;
-
-    @include media-breakpoint-up(lg) {
-      display: none;
-    }
-  }
 }

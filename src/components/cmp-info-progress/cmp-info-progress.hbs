@@ -1,22 +1,24 @@
 <div class="steppers">
-  <ul class="steppers-header">
-    {{#each step-list as |step| }}
-    <li class="{{#if step.completed}}confirmed{{/if}} {{#if step.active}}active{{/if}}">
-      {{step.title}}
-      {{#if step.active}}
-      <span class="visually-hidden">Attivo</span>
-      {{/if}}
-      {{#if step.completed}}
-      <svg class="icon steppers-success" aria-hidden="true">
-        <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-check"></use>
-      </svg>
-      <span class="visually-hidden">Confermato</span>
-      {{/if}}
-    </li>
-    {{/each}}
-  </ul>
-  <span class="steppers-index" aria-hidden="true">{{step-num}}/{{step-tot}}</span>
+  <div class="steppers-header">
+    <ul>
+      {{#each step-list as |step| }}
+      <li class="{{#if step.completed}}confirmed{{/if}} {{#if step.active}}active{{/if}}">
+        {{step.title}}
+        {{#if step.active}}
+        <span class="visually-hidden">Attivo</span>
+        {{/if}}
+        {{#if step.completed}}
+        <svg class="icon steppers-success" aria-hidden="true">
+          <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-check"></use>
+        </svg>
+        <span class="visually-hidden">Confermato</span>
+        {{/if}}
+      </li>
+      {{/each}}
+    </ul>
+    <span class="steppers-index" aria-hidden="true">{{step-num}}/{{step-tot}}</span>
+  </div>
 </div>
 {{#if subtitle}}
-  <p class="title-xsmall d-lg-none my-5">{{subtitle}}</p>
+<p class="title-xsmall d-lg-none my-5">{{subtitle}}</p>
 {{/if}}
