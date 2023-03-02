@@ -1,4 +1,4 @@
-{{#>base/base title="Risultati di ricerca - Nome del Comune"}}
+{{#>cmp-base/base title="Risultati di ricerca - Nome del Comune"}}
   <main>
     <h1 class="visually-hidden" id="search-container">Ricerca</h1>
     <div class="container" id="main-container">
@@ -24,7 +24,7 @@
           <div class="d-flex justify-content-between align-items-center border-bottom border-light pb-3 mb-2">
             <h2 class="visually-hidden" id="search-result">Risultati di ricerca</h2>
             <span class="search-results u-grey-light"><span class="numResult">645</span> Risultati</span>
-            {{>partials/button/button label="Filtra" label-class="t-primary title-xsmall-semi-bold ms-1"
+            {{> cmp-button/cmp-button label="Filtra" label-class="t-primary title-xsmall-semi-bold ms-1"
           iconBtn="it-funnel" class="p-0 pe-2 d-lg-none" xs=true modalId="modal-categories"}}
 
             <button type="button" class="btn d-none d-lg-block btn-result" disabled>Rimuovi tutti i filtri</button>
@@ -73,7 +73,7 @@
               }}
 
                 {{>cmp-card-latest-messages/cmp-card-latest-messages
-              category="NOTIZIE"
+              category="NOVITÀ"
               green-title-big="Agevolazioni tariffarie a favore delle categorie svantaggiate"
               description="Da lunedì 16 dicembre sarà possibile richiedere o rinnovare gli abbonamenti"
               cmp-card-class="mb-30"
@@ -81,7 +81,7 @@
               category-class="text-uppercase"
               }}
                 {{>cmp-card-latest-messages/cmp-card-latest-messages
-              category="NOTIZIE"
+              category="NOVITÀ"
               green-title-big="Accertamenti TaRi: il sindaco e l’assessore fanno il punto"
               description="Circa 17mila le utenze che hanno presentato spontaneamente autodenuncia al Comune e che ora
               fanno la raccolta differenziata."
@@ -90,7 +90,7 @@
               category-class="text-uppercase"
               }}
                 {{>cmp-card-latest-messages/cmp-card-latest-messages
-              category="NOTIZIE"
+              category="NOVITÀ"
               green-title-big="Accordo tra Cin-Tirrenia e continuità territoriale"
               description="A partire dal 25 febbraio 2019 sarà possibile acquistare l’abbonamento mensile CTM di marzo
               con le nuove tariffe agevolate."
@@ -99,7 +99,7 @@
               category-class="text-uppercase"
               }}
                 {{>cmp-card-latest-messages/cmp-card-latest-messages
-              category="NOTIZIE"
+              category="NOVITÀ"
               green-title-big="Accertamento TARI"
               description="Risultati degli accertamenti TARI"
               cmp-card-class="mb-30"
@@ -107,7 +107,7 @@
               category-class="text-uppercase"
               }}
                 {{>cmp-card-latest-messages/cmp-card-latest-messages
-              category="NOTIZIE"
+              category="NOVITÀ"
               green-title-big="Agevolazioni tariffarie a carattere sociale delle utenze del Servizio Idrico Integrato"
               description="Pubblicato bando, allegati e modulistica"
               cmp-card-class="mb-30"
@@ -115,7 +115,7 @@
               category-class="text-uppercase"
               }}
                 {{>cmp-card-latest-messages/cmp-card-latest-messages
-              category="NOTIZIE"
+              category="NOVITÀ"
               green-title-big="La TARI scende del 17,7%"
               description="I dati diffusi dall’Osservatorio prezzi e tariffe di Cittadinanzattiva"
               cmp-card-class="mb-4"
@@ -128,7 +128,7 @@
 
           <div class="container p-0">
             <div class="d-flex justify-content-center">
-              {{>partials/button/button
+              {{> cmp-button/cmp-button
                 outline-primary="true"
                 class="pt-15 pb-15 pl-90 pr-90 mb-30 mb-lg-50 full-mb text-button"
                 label="Carica altri risultati"
@@ -162,4 +162,4 @@
 {{!--     {{> cmp-modal/modal-filter-categories categories=categories-results-filter}} --}}
     {{>cmp-modal/modal-clickMap}}
   </main>
-  {{/base/base}}
+  {{/cmp-base/base}}

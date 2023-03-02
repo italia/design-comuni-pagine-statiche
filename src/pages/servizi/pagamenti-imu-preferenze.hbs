@@ -1,4 +1,4 @@
-{{#>base/base title="Pagamenti - Nome del Comune" headerActive3=true}}
+{{#>cmp-base/base title="Pagamenti - Nome del Comune" headerActive3=true}}
 <main>
   <div class="container" id="main-container">
     <div class="row justify-content-center">
@@ -32,7 +32,7 @@
         }}
 
         <div class="text-area-wrapper pt-25 pb-25 pl-25 pr-25 pt-lg-40 pb-lg-40 pl-lg-40 pr-lg-40 bg-white">
-          {{>partials/input/input type="text" id="amount-1" label="Importo versato" required=true name="amount-1"
+          {{> cmp-input/input type="text" id="amount-1" label="Importo versato" required=true name="amount-1"
           text="Inserisci la somma già versata" formClass="mb-0 border-bold"}}
         </div>
 
@@ -87,7 +87,7 @@
         margin-class="mb-40 mb-lg-4"
         }}
         <div class="text-area-wrapper pt-25 pb-25 pl-25 pr-25 pt-lg-40 pb-lg-40 pl-lg-40 pr-lg-40 bg-white">
-          {{>partials/input/input type="text" id="amount-5" label="Importo versato" required=true name="amount-5"
+          {{> cmp-input/input type="text" id="amount-5" label="Importo versato" required=true name="amount-5"
           text="Inserisci la somma già versata" formClass="mb-0 border-bold"}}
         </div>
         {{>cmp-info-checkbox/cmp-info-checkbox
@@ -128,7 +128,7 @@
         }}
 
         <div class="text-area-wrapper pt-25 pb-25 pl-25 pr-25 pt-lg-40 pb-lg-40 pl-lg-40 pr-lg-40 bg-white">
-          {{>partials/input/input type="text" id="amount-2" label="Importo versato" required=true name="amount-2"
+          {{> cmp-input/input type="text" id="amount-2" label="Importo versato" required=true name="amount-2"
           text="Inserisci la somma già versata" formClass="mb-0 border-bold"}}
         </div>
         {{>cmp-info-checkbox/cmp-info-checkbox
@@ -187,4 +187,4 @@
 
   {{>cmp-modal/modal-terms-and-conditions}}
 </main>
-{{/base/base }}
+{{/cmp-base/base }}

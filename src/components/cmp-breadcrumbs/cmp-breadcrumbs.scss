@@ -7,12 +7,11 @@
     margin-bottom: 1.333rem;
   }
 
-  .breadcrumb-container .breadcrumb .breadcrumb-item a{
+  .breadcrumb-container .breadcrumb .breadcrumb-item a {
     color: get-color(primary, main);
-    font-weight: 400;
 
     &:hover {
-      color: #006242;
+      color: $color-text-primary-hover;
     }
   }
 
@@ -21,8 +20,8 @@
     font-weight: 400;
   }
 
-  .breadcrumb-item.active {
-    color: get-color(light, grey);
+  .breadcrumb-container .breadcrumb .breadcrumb-item.active {
+    color: $color-text-secondary;
   }
 
   .breadcrumb > li {

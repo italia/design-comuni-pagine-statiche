@@ -1,4 +1,4 @@
-{{#>base/base title="Permessi mobilità - Nome del Comune" headerActive3=true}}
+{{#>cmp-base/base title="Permessi mobilità - Nome del Comune" headerActive3=true}}
 <main>
   <div class="container" id="main-container">
     <div class="row justify-content-center">
@@ -36,7 +36,7 @@
               required-icon=true
               card-title="Tipo di permesso"
               subtitle="Scegli il tipo di permesso ZTL"}}
-              {{>partials/checkbox/checkbox
+              {{> cmp-checkbox/checkbox
               class="d-flex flex-column align-items-center bg-white w-100 p-3 p-lg-4"
               info-list=ztl-dati-checkbox.checkbox required=true}}
               {{/cmp-card/cmp-card-content-box}}
@@ -52,10 +52,10 @@
               subtitle="Indica il periodo di validità del permesso ZTL"}}
 
               <div class="d-lg-flex justify-content-between flex-column flex-lg-row">
-                {{>partials/input-calendar/input-calendar
+                {{> cmp-input-calendar/input-calendar
                 form-class="mb-0 me-lg-4 p-3 pt-lg-40 pb-lg-40 pl-lg-40"
                 label-text="Dal" index="1" required=true}}
-                {{>partials/input-calendar/input-calendar
+                {{> cmp-input-calendar/input-calendar
                 form-class="mb-0 p-3 pt-lg-40 pb-lg-40 ps-lg-8 pr-lg-40"
                 label-text="Al" index="2" required=true}}
               </div>
@@ -78,4 +78,4 @@
     </div>
   </div>
 </main>
-{{/base/base }}
+{{/cmp-base/base }}

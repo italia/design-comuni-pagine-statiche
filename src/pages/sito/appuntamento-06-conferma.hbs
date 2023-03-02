@@ -1,91 +1,85 @@
-{{#>base/base title="Prenotazioni - Nome del Comune" headerActive3=true}}
-  <main>
-    <div class="container" id="main-container">
-      <div class="row justify-content-center">
-        <div class="col-12 col-lg-10">
-          {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Servizi" active="Prenotazioni"}}
-        </div>
+{{#>cmp-base/base title="Prenotazioni - Nome del Comune" headerActive3=true}}
+<main>
+  <div class="container" id="main-container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        {{> cmp-breadcrumbs/cmp-breadcrumbs active="Prenotazione appuntamento"}}
       </div>
     </div>
+  </div>
 
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-12 col-lg-10">
         {{>cmp-hero/cmp-hero
-        hero-title="Prenotazione appuntamento"
-        wrapper-class="pt-0 ps-0 pb-3 pb-lg-4"}}
+        hero-title="Appuntamento confermato"
+        icon="it-check-circle"
+        iconClass="mr-10 icon-sm mb-1"
+        hero-text="L’appuntamento è fissato per<strong> Giovedì 11 marzo 2022 dalle ore 10:00 alle ore 10:30</strong>
+        <br><br>Abbiamo inviato il riepilogo all’email:<br>
+        <strong>giulia.bianchi@gmail.com</strong>"
+        wrapper-class="pt-0 ps-0 pb-40"}}
+      </div>
+    </div>
+    <hr class="d-none d-lg-block mb-40">
+  </div>
+
+  <div class="container">
+    <div class="row mb-4 mb-lg-80">
+      <div class="d-none d-sm-none d-lg-block col-lg-3">
+        {{>cmp-navscroll/cmp-navscroll
+        accordion-title="INDICE DELLA PAGINA" id="one"
+        link-list=link-list.links-procedura-pagamento
+        }}
+      </div>
+
+      <div class="col-12 col-lg-8 offset-lg-1">
+        <div class="it-page-sections-container">
+          <section class="it-page-section" id="needed">
+            {{#>cmp-card/cmp-card-content-box card-title="Cosa serve" bg-grey-primary=true
+            class="p-3" cmpClass="mb-50" h2-class="mb-0"}}
+            {{>cmp-ul-list/cmp-ul-list font-list="titillium" info-list=info-prenotazione.lista-1 }}
+            {{/cmp-card/cmp-card-content-box}}
+          </section>
+          
+          <section class="it-page-section" id="address">
+            <div class="address-wrapper mb-50">
+              <h2 class="title-xxlarge mb-10">Indirizzo</h2>
+              {{>cmp-card-img/cmp-card-img card-title="Ufficio anagrafe 03" card-description="Via Grazia Deledda 9/a -
+              20127<br> Milano <br> anagrafe@comune.it"}}
+            </div>
+          </section>
+
+          <section class="it-page-section" id="calendar">
+            {{>cmp-icon-list/cmp-icon-list
+            title="Aggiungi al tuo calendario"
+            icon-list=icon-list.calendario-reservation-pagamento
+            classMenu="mt-3"
+            }}
+          </section>
+        </div>
       </div>
     </div>
   </div>
 
+  <div class="bg-primary">
     <div class="container">
-      {{> cmp-info-progress/cmp-info-progress
-        step-list=step-list.prenota-appuntamento-step-5
-        step-num="5"
-        step-tot="5"
-        step-title="Verifica dei dati"
-        }}
-    </div>
-
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12 col-lg-8">
-          <div class="mt-2">
-            <h2 class="visually-hidden">Dettagli dell'appuntamento</h2>
-            {{#>cmp-card/cmp-card-content-box
-        class="mb-0"
-        bg-grey=true
-        h3-title=true
-        h3-class="mb-0"
-        margin-class="mb-4"
-        card-title="Riepilogo" }}
-
-              {{>cmp-info-summary/cmp-info-summary
-        class="mb-3 mb-lg-4 p-3 p-lg-4"
-        info-title="Ufficio"
-        info=true
-        info-list=prenota-appuntamento.office
-        }}
-
-              {{>cmp-info-summary/cmp-info-summary
-        class="mb-3 mb-lg-4 p-3 p-lg-4"
-        info-title="Data e orario"
-        info=true
-        info-list=prenota-appuntamento.date
-        }}
-
-              {{>cmp-info-summary/cmp-info-summary
-        class="mb-3 mb-lg-4 p-3 p-lg-4"
-        info-title="Dettagli appuntamento"
-        info=true
-        info-list=prenota-appuntamento.appointment-details
-        }}
-
-              {{>cmp-info-summary/cmp-info-summary
-        class="p-3 p-lg-4 mb-0"
-        info-title="Richiedente"
-        info=true
-        info-list=prenota-appuntamento.applicant
-        }}
-
-              {{/cmp-card/cmp-card-content-box}}
-          </div>
-
-          {{>cmp-nav-steps/cmp-nav-steps next=true modalId="modal-terms" saveBtn=true aria-label-save="di prenotazione appuntamento"}}
+      <div class="row d-flex justify-content-center bg-primary">
+        <div class="col-12 col-lg-6 px-4 p-lg-0">
+          {{>cmp-rating/cmp-rating}}
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="bg-grey-card shadow-contacts">
-      <div class="container">
-        <div class="row d-flex justify-content-center">
-          <div class="col-12 col-lg-6 p-contacts">
-            {{>cmp-contacts/cmp-contacts-trasversali faq=true assistance=true}}
-          </div>
+  <div class="bg-grey-card shadow-contacts">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-12 col-lg-6 p-contacts">
+          {{>cmp-contacts/cmp-contacts-trasversali faq=true assistance=true}}
         </div>
       </div>
     </div>
-
-    {{>cmp-modal/modal-terms-and-conditions}}
-  </main>
-  {{/base/base }}
+  </div>
+</main>
+{{/cmp-base/base }}

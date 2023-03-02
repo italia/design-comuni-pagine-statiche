@@ -1,9 +1,9 @@
-{{#>base/base title="Prenotazioni - Nome del Comune" headerActive3=true}}
+{{#>cmp-base/base title="Prenotazioni - Nome del Comune" headerActive3=true}}
 <main>
   <div class="container" id="main-container">
     <div class="row justify-content-center">
       <div class="col-12 col-lg-10">
-        {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Servizi" active="Prenotazioni"}}
+        {{> cmp-breadcrumbs/cmp-breadcrumbs active="Prenotazione appuntamento"}}
       </div>
     </div>
   </div>
@@ -48,11 +48,11 @@
               header-m0=true
               }}
               <div class="form-wrapper bg-white p-4">
-                {{>partials/input/input type="text" id="name" label="Nome" required=true name="aname" text="Inserisci il
+                {{> cmp-input/input type="text" id="name" label="Nome" required=true name="aname" text="Inserisci il
                 tuo nome" formClass="mb-0"}}
-                {{>partials/input/input type="text" id="surname" label="Cognome" required=true name="surname"
+                {{> cmp-input/input type="text" id="surname" label="Cognome" required=true name="surname"
                 text="Inserisci il tuo cognome" formClass="mb-0"}}
-                {{>partials/input/input type="email" id="email" label="Email" required=true name="email" text="Inserisci
+                {{> cmp-input/input type="email" id="email" label="Email" required=true name="email" text="Inserisci
                 la tua email" formClass="mb-0"}}
               </div>
 
@@ -76,4 +76,4 @@
   </div>
 
 </main>
-{{/base/base }}
+{{/cmp-base/base }}

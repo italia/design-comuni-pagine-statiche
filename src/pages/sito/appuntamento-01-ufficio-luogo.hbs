@@ -1,9 +1,9 @@
-{{#>base/base title="Prenotazioni - Nome del Comune" headerActive3=true}}
+{{#>cmp-base/base title="Prenotazioni - Nome del Comune" headerActive3=true}}
 <main>
   <div class="container" id="main-container">
     <div class="row justify-content-center">
       <div class="col-12 col-lg-10">
-        {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Servizi" active="Prenotazioni"}}
+        {{> cmp-breadcrumbs/cmp-breadcrumbs active="Prenotazione appuntamento"}}
       </div>
     </div>
   </div>
@@ -19,11 +19,12 @@
   </div>
 
   <div class="container">
+
     {{> cmp-info-progress/cmp-info-progress
-    step-list=step-list.prenota-appuntamento-step-4
-    step-num="4"
+    step-list=step-list.prenota-appuntamento-step-1
+    step-num="1"
     step-tot="5"
-    step-title="Richiedente"
+    step-title="Luogo"
     classSubtitle="mt-40 mb-3"
     subtitle="I campi contraddistinti dal simbolo asterisco sono obbligatori"
     }}
@@ -34,30 +35,40 @@
       <div class="col-12 col-lg-3 d-lg-block mb-4 d-none ">
         {{>cmp-navscroll/cmp-navscroll
         accordion-title="INFORMAZIONI RICHIESTE" id="one"
-        link-list=link-list.prenota-appuntamento-step-4}}
+        link-list=link-list.prenota-appuntamento-step-1}}
       </div>
       <div class="col-12 col-lg-8 offset-lg-1">
         <div class="steppers-content" aria-live="polite">
           <div class="it-page-sections-container">
-            <section class="it-page-section" id="applicant">
+            <section class="it-page-section" id="office">
               {{#>cmp-card/cmp-card-content-box
               class="p-big"
               bg-grey=true
-              h2-class="mb-1"
-              card-title="Richiedente"
-              subtitle="Informazioni su di te"
+              h2-class="mb-0"
+              card-title="Ufficio"
+              subtitle="Scegli l’ufficio a cui vuoi richiedere l’appuntamento"
               }}
-              {{> cmp-info-button-card/cmp-info-button-card big-title="Giulia Bianchi"
-              label-2="Codice Fiscale <br> <span>GLABNC72H25H501Y</span>"
-              show-more-anagrafica="true"
-              onlyContact=true
-              no-header=true
-              collapse-id="collapse-parents"
-              }}
+              {{>cmp-select/select placeholder="Seleziona opzione" id="office-choice" label-text="Tipo di ufficio"
+              label-hidden=true class="p-0" select-option-list=ufficio-appuntamento}}
+              <fieldset>
+                <legend class="visually-hidden">Seleziona un ufficio</legend>
+                {{> cmp-info-radio/cmp-info-radio radio=true group="beneficiaries" idRadio="first"
+                title="Municipalità 1 - Chiaia, Posillipo, S. Ferdinando"
+                info-appointment=inserire-dati-specifici-appuntamento.info
+                }}
+                {{> cmp-info-radio/cmp-info-radio radio=true group="beneficiaries" idRadio="third"
+                title="Municipalità 3 - Stella, S. Carlo all'Arena"
+                info-appointment=inserire-dati-specifici-appuntamento.info
+                }}
+                {{> cmp-info-radio/cmp-info-radio radio=true group="beneficiaries" idRadio="four"
+                title="Municipalità 4 - S. Lorenzo, Vicaria, Poggioreale, Zona Industriale"
+                info-appointment=inserire-dati-specifici-appuntamento.info
+                }}
+              </fieldset>
               {{/cmp-card/cmp-card-content-box}}
             </section>
           </div>
-          {{> cmp-nav-steps/cmp-nav-steps save="true" saveBtn=true aria-label-save="di prenotazione appuntamento"}}
+          {{> cmp-nav-steps/cmp-nav-steps save="true" aria-label-save="di prenotazione appuntamento"}}
         </div>
       </div>
     </div>
@@ -74,4 +85,4 @@
   </div>
 
 </main>
-{{/base/base }}
+{{/cmp-base/base }}

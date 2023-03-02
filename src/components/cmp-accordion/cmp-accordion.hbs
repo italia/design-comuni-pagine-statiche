@@ -37,7 +37,7 @@
           </a>
 
           {{#if item.label-tag}}
-          {{>partials/cmp-tag/cmp-tag label-tag=item.label-tag }}
+          {{> cmp-tag/cmp-tag label-tag=item.label-tag }}
           {{/if}}
 
           {{>cmp-icon-list/cmp-icon-list
@@ -47,7 +47,7 @@
           }}
 
           {{#if item.btn-label}}
-          {{>partials/button/button label=item.btn-label primary="true" class="justify-content-center
+          {{> cmp-button/cmp-button label=item.btn-label primary="true" class="justify-content-center
           my-3"}}
           {{/if}}
           {{/if}}
