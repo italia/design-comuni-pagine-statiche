@@ -1,6 +1,12 @@
 .chip {
-  border-color: #007a52;
-  background: #fff;
+  &:not(.chip-disabled) {
+    border-color: #007a52;
+    background: #fff;
+
+    &.chip-danger {
+      border-color: #cc334d;
+    }
+  }
   
   .chip-label {
     color: #007A52;
@@ -25,6 +31,16 @@
 
       .chip-label {
         color: #007A52;
+      }
+    }
+
+    &.chip-danger {
+      &:hover {
+        border-color: #cc334d;
+
+        .chip-label {
+          color: #cc334d;
+        }
       }
     }
   }
