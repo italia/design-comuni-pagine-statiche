@@ -236,8 +236,12 @@
         "anchor": "contatti"
       },
       {
-        "item": "Ulteriori informazioni",
-        "anchor": "ulteriori-informazioni"
+        "item": "Patrocinato da",
+        "anchor": "patrocinio"
+      },
+      {
+        "item": "Sponsor",
+        "anchor": "sponsor"
       }
     ],
     "template-novita-notizia": [
@@ -246,16 +250,8 @@
         "anchor": "descrizione"
       },
       {
-        "item": "Documenti",
-        "anchor": "documenti"
-      },
-      {
         "item": "A cura di",
         "anchor": "a-cura-di"
-      },
-      {
-        "item": "Ulteriori informazioni",
-        "anchor": "ulteriori-informazioni"
       }
     ]
   }

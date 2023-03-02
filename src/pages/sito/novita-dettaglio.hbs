@@ -1,0 +1,230 @@
+{{#>cmp-base/base title="Stralcio automatico dei debiti fino a mille euro - Nome del Comune" headerActive2=true}}
+<main>
+  <div class="container" id="main-container">
+    <div class="row">
+      <div class="col px-lg-4">
+        {{>cmp-breadcrumbs/cmp-breadcrumbs link1="Novità" link2="Notizie" active="Stralcio automatico dei debiti fino a mille euro"}}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 px-lg-4 py-lg-2">
+        <h1 data-audio>
+          Stralcio automatico dei debiti fino a mille euro
+        </h1>
+        <h2 class="visually-hidden">Dettagli della notizia</h2>
+        <p data-audio>
+          Delibera del Consiglio comunale in merito ai carichi di importo residuo fino a 1.000,00 €
+        </p>
+        <div class="row mt-5 mb-4">
+          <div class="col-6">
+            <small>Data:</small>
+            <p class="fw-semibold font-monospace">31 gennaio 2023</p>
+          </div>
+          <div class="col-6">
+            <small>Tempo di lettura:</small>
+            <p class="fw-semibold">1 min</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-3 offset-lg-1">
+        <div class="dropdown d-inline">
+          <button aria-label="condividi sui social"
+            class="btn btn-dropdown dropdown-toggle text-decoration-underline d-inline-flex align-items-center fs-0"
+            type="button" id="shareActions" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-share"></use>
+            </svg>
+            <small>Condividi</small>
+          </button>
+          <div class="dropdown-menu shadow-lg" aria-labelledby="shareActions">
+            <div class="link-list-wrapper">
+              <ul class="link-list" role="menu">
+                <li role="none">
+                  <a class="list-item" href="#" role="menuitem">
+                    <svg class="icon" aria-hidden="true">
+                      <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-facebook"></use>
+                    </svg>
+                    <span>Facebook</span>
+                  </a>
+                </li>
+                <li role="none">
+                  <a class="list-item" href="#" role="menuitem">
+                    <svg class="icon" aria-hidden="true">
+                      <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-twitter"></use>
+                    </svg>
+                    <span>Twitter</span>
+                  </a>
+                </li>
+                <li role="none">
+                  <a class="list-item" href="#" role="menuitem">
+                    <svg class="icon" aria-hidden="true">
+                      <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-linkedin"></use>
+                    </svg>
+                    <span>Linkedin</span>
+                  </a>
+                </li>
+                <li role="none">
+                  <a class="list-item" href="#" role="menuitem">
+                    <svg class="icon" aria-hidden="true">
+                      <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-whatsapp"></use>
+                    </svg>
+                    <span>Whatsapp</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown d-inline">
+          <button aria-label="vedi azioni da compiere sulla pagina"
+            class="btn btn-dropdown dropdown-toggle text-decoration-underline d-inline-flex align-items-center fs-0"
+            type="button" id="viewActions" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-more-items"></use>
+            </svg>
+            <small>Vedi azioni</small>
+          </button>
+          <div class="dropdown-menu shadow-lg" aria-labelledby="viewActions">
+            <div class="link-list-wrapper">
+              <ul class="link-list" role="menu">
+                <li role="none">
+                  <a class="list-item" href="#" role="menuitem">
+                    <svg class="icon" aria-hidden="true">
+                      <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-print"></use>
+                    </svg>
+                    <span>Stampa</span>
+                  </a>
+                </li>
+                <li role="none">
+                  <a class="list-item" role="menuitem" onclick="listenElements(this, '[data-audio]')">
+                    <svg class="icon" aria-hidden="true">
+                      <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-hearing"></use>
+                    </svg>
+                    <span>Ascolta</span>
+                  </a>
+                </li>
+                <li role="none">
+                  <a class="list-item" href="#" role="menuitem">
+                    <svg class="icon" aria-hidden="true">
+                      <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-mail"></use>
+                    </svg>
+                    <span>Invia</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="mt-4 mb-4">
+          <div class="row">
+            <span class="mb-2 small">Argomenti</span>
+          </div>
+          <ul class="d-flex flex-wrap gap-1">
+            <li>
+              {{> cmp-tag/cmp-tag label-tag="Cultura"}}
+            </li>
+            <li>
+              {{> cmp-tag/cmp-tag label-tag="Muoversi"}}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid my-3">
+    <div class="row">
+      <figure class="figure px-0 img-full">
+        <img src="https://images.unsplash.com/photo-1635859890085-ec8cb5466806?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" class="figure-img img-fluid"
+          alt="Un'immagine generica segnaposto con angoli arrotondati in una figura.">
+        <figcaption class="figure-caption text-center pt-3">Una didascalia per l'immagine sopra.</figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row border-top border-light row-column-border row-column-menu-left">
+      <aside class="col-lg-3">
+        {{>cmp-navscroll/cmp-navscroll accordion-title="INDICE DELLA PAGINA" id="one"
+        link-list=link-list.template-novita-notizia}}
+      </aside>
+      <section class="col-lg-9 it-page-sections-container border-light">
+        <article id="descrizione" class="it-page-section anchor-offset" data-audio>
+          <p class="font-serif">
+            Il Consiglio Comunale con provvedimento n. 15/2023 adottato nella seduta del 30 gennaio 2023 ha deliberato di non applicare lo stralcio automatico previsto dai commi 227 e 228 dell’art. 1 della L. 197/2022 (Legge di Bilancio 2023) per carichi di importo residuo fino a 1.000,00 euro e affidati all’Agente della Riscossione dal 1° gennaio 2000 al 31 dicembre 2015.
+          </p>
+          <p class="font-serif">
+            Tale provvedimento non produce invece effetti sulla definizione agevolata disciplinata dai commi 231 e seguenti del medesimo art. 1 della Legge di Bilancio che rimane quindi utilizzabile dai contribuenti per tutti i carichi affidati all’Agente della Riscossione dal 1° gennaio 2000 al 30 giugno 2022.
+          </p>
+          <p class="font-serif">
+            I contribuenti potranno pertanto accedere ai benefici della sopracitata definizione agevolata presentando, entro il 30 aprile 2023, all’Agenzia delle Entrate - Riscossione (AdER) una dichiarazione di adesione e impegnandosi a pagare, entro le scadenze previste dalla normativa, la quota capitale, le spese di notifica e le spese per le procedure esecutive.
+          </p>
+          <p class="font-serif">
+            Per l’accesso a tali modalità di adesione si invita a consultare il sito dell’Agenzia delle Entrate - Riscossione al seguente link: https://www.agenziaentrateriscossione.gov.it/it/
+          </p>
+        </article>
+        <article id="a-cura-di" class="it-page-section anchor-offset mt-5">
+          <h2 class="mb-3">A cura di</h2>
+          <div class="row">
+            <div class="col-12 col-sm-8 col-xl-6">
+              <div class="card-wrapper rounded shadow-sm h-auto">
+                <div class="card card-teaser card-teaser-info rounded shadow-sm p-4">
+                  <div class="card-body pe-3">
+                    <h5 class="card-title">
+                      <a class="text-decoration-none" href="#">
+                        Ufficio Imposte
+                      </a>
+                    </h5>
+                    <div class="card-text">
+                      <p>Via dei Transiti 9</p>
+                      <p>00100 Roma</p>
+                    </div>
+                  </div>
+                  <div class="avatar size-xl">
+                    <img src="https://picsum.photos/200/200" alt="Immagine" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-xl-6">
+              <h6><small>Persone</small></h6>
+              <ul class="d-flex flex-wrap gap-1 mt-2">
+                <li>
+                  {{> cmp-tag/cmp-tag label-tag="Mario Rossi"}}
+                </li>
+                <li>
+                  {{> cmp-tag/cmp-tag label-tag="Alessandro Bianchi"}}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article id="ultimo-aggiornamento" class="anchor-offset mt-5">
+          <h4 class="h6">Ultimo aggiornamento: <span class="h6 fw-normal">10/06/2019, 16:00</span></h4>
+        </article>
+      </section>
+    </div>
+  </div>
+  
+  <div class="bg-primary">
+    <div class="container">
+      <div class="row d-flex justify-content-center bg-primary">
+        <div class="col-12 col-lg-6">
+          {{>cmp-rating/cmp-rating public-template=true}}
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="bg-grey-card shadow-contacts">
+    <div class="container">
+      <div class="row d-flex justify-content-center p-contacts">
+        <div class="col-12 col-lg-6">
+          {{>cmp-contacts/cmp-contacts city-problems=true}}
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+{{/cmp-base/base }}

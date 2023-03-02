@@ -8,11 +8,12 @@ In questo repository è possibile trovare alcune pagine statiche esemplificative
 
 ## 📖 Come usare i template
 
-Per l'esecuzione del repository, è necessario avere installato una versione di node >= 14.18.0
+Per l'esecuzione del repository, è necessario avere installato una versione di node >= `14.18.0` o comunque non superiore alle `16.x.x`
+
 
 Come _templating language_ è stato usato Handlebars, insieme a fogli di stile in SCSS e Javascript. Il progetto viene compilato tramite Webpack.
 
-### Installazione
+### Installazione e Sviluppo
 
 Per iniziare, è necessario installare le dipendenze del progetto:
 
@@ -22,7 +23,7 @@ npm i
 
 ```
 
-In seguito puoi avviare il repository in modalità sviluppo:
+In seguito, avvia il progetto in modalità sviluppo:
 
 ```node
 

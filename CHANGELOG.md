@@ -1,3 +1,21 @@
+# [2.2.0](https://github.com/italia/design-comuni-pagine-statiche/compare/v2.1.2...v2.2.0) (2023-02-14)
+
+
+### Bug Fixes
+
+* ia-content ([#95](https://github.com/italia/design-comuni-pagine-statiche/issues/95)) ([8ba1662](https://github.com/italia/design-comuni-pagine-statiche/commit/8ba1662bef830ad351c7efea370f2363b59b429a))
+* index wrong links ([#91](https://github.com/italia/design-comuni-pagine-statiche/issues/91)) ([e18d7c7](https://github.com/italia/design-comuni-pagine-statiche/commit/e18d7c7a1dcc835a752a0f73d43f9a2c369aa489))
+* removed global rules ([#98](https://github.com/italia/design-comuni-pagine-statiche/issues/98)) ([d9027e5](https://github.com/italia/design-comuni-pagine-statiche/commit/d9027e5c48009a2db819f4559067878d5615523a))
+* template paths ([a9735cd](https://github.com/italia/design-comuni-pagine-statiche/commit/a9735cd8c8f8a4b1d24076c936194cdae08e23da))
+* various fixes on structure, sidebar menu, header, navscroll, content, nav tabs, spacing
+
+
+### Features
+
+* upgrade bsi ([#93](https://github.com/italia/design-comuni-pagine-statiche/issues/93)) ([b65a3d8](https://github.com/italia/design-comuni-pagine-statiche/commit/b65a3d868260f268fe0189602ff736b8861d7a7d))
+
+
+
 ## [2.1.2](https://github.com/italia/design-comuni-pagine-statiche/compare/v2.1.1...v2.1.2) (2022-11-28)
 
 

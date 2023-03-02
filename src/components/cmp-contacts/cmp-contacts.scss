@@ -9,7 +9,7 @@
   }
 
   .contact-list li{
-    @include font(16, 18);
+    font-size: 1rem;
     margin: 1rem 0;
     color: get-color(primary, main);
     font-weight: 400;

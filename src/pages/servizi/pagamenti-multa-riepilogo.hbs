@@ -1,0 +1,102 @@
+{{#>cmp-base/base title="Pagamenti - Nome del Comune" headerActive3=true}}
+<main>
+  <div class="container" id="main-container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Servizi" active="Pagamenti"
+        }}
+        {{> cmp-heading/cmp-heading
+        title="Pagamento multa"
+        description="Hai bisogno di assistenza?
+        <a href='' class='title-small-semi-bold t-primary'>Contattaci</a>"
+        }}
+      </div>
+
+      <div class="col-12">
+        {{> cmp-info-progress/cmp-info-progress
+        step-list=pagamenti-dovuti-multa.info-progress.step-4
+        step-num="4"
+        step-title="Riepilogo"
+        step-tot="4"
+        }}
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+
+        {{>cmp-callout/callout
+        calloutType="warning"
+        icon="it-horn"
+        calloutTitle="Attenzione"
+        calloutText="Le informazioni che hai fornito hanno valore di dichiarazione.<span class='d-lg-block'> Verifica che siano corrette.</span>"
+        textClass="titillium text-paragraph"
+        }}
+
+        <h2 class="title-xxlarge mb-4 mt-40">Dati Generali</h2>
+
+        {{#>cmp-card/cmp-card-content-box
+        class="mb-0"
+        bg-grey=true
+        h3-title=true
+        h3-class="mb-0"
+        margin-class="mb-4"
+        card-title="Effettuato da"
+        }}
+
+        {{>cmp-info-summary/cmp-info-summary-no-modify
+        class="mb-4 mb-lg-30 p-3 p-lg-4"
+        info-title="Giulia Bianchi"
+        info=true
+        disservizio-page=true
+        info-list=pagamenti-dovuti-multa.confermare-riepilogo-informazioni-inserite.info-1.list
+        }}
+
+        {{>cmp-info-summary/cmp-info-summary-no-modify
+        class="p-3 p-lg-4"
+        info-title="Indirizzo"
+        info=true
+        disservizio-page=true
+        info-list=pagamenti-dovuti-multa.confermare-riepilogo-informazioni-inserite.info-1.indirizzo
+        }}
+        {{/cmp-card/cmp-card-content-box}}
+
+        <h2 class="title-xxlarge mb-4 pt-3 pt-lg-0">Dati specifici del servizio</h2>
+
+        <div>
+          {{#>cmp-card/cmp-card-content-box
+          class="mb-0"
+          bg-grey=true
+          h3-title=true
+          h3-class="mb-0"
+          margin-class="mb-4"
+          card-title="Estremi della multa"
+          }}
+          {{>cmp-info-summary/cmp-info-summary-no-modify
+          class="p-3 p-lg-4"
+          header-class="pb-2"
+          info=true
+          disservizio-page=true
+          info-list=pagamenti-dovuti-multa.confermare-riepilogo-informazioni-inserite.multa-info-1.list
+          }}
+          {{/cmp-card/cmp-card-content-box}}
+        </div>
+        {{>cmp-nav-steps/cmp-nav-steps next=true modalId="modal-terms" saveBtn=true aria-label-save="del pagamento multa"}}
+      </div>
+    </div>
+  </div>
+
+
+  <div class="bg-grey-card shadow-contacts">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6 offset-lg-3 p-contacts">
+          {{>cmp-contacts/cmp-contacts}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{>cmp-modal/modal-terms-and-conditions}}
+</main>
+{{/cmp-base/base }}

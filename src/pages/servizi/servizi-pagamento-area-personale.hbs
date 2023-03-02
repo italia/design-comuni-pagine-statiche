@@ -1,4 +1,4 @@
-{{#>base/base title="Area personale - Nome del Comune" logged=true}}
+{{#>cmp-base/base title="Area personale - Nome del Comune" logged=true}}
 <main>
   <div class="container" id="main-container">
     <div class="row justify-content-center">
@@ -57,7 +57,7 @@
                 id="3"
                 description-class="text-truncate"}}
 
-                {{>partials/button/button label="Vedi altri messaggi" class="btn-xs btn-me btn-label
+                {{> cmp-button/cmp-button label="Vedi altri messaggi" class="btn-xs btn-me btn-label
                 t-primary px-0"}}
                 {{/cmp-card/cmp-card-content-box}}
               </div>
@@ -92,7 +92,7 @@
                 date="01/10/2022"
                 icon="it-files"}}
 
-                {{>partials/button/button label="Vedi altre attività" class="btn-xs btn-me btn-label
+                {{> cmp-button/cmp-button label="Vedi altre attività" class="btn-xs btn-me btn-label
                 t-primary px-0"}}
                 {{/cmp-card/cmp-card-content-box}}
               </div>
@@ -116,10 +116,10 @@
                 id-input="pratiche"
                 id-dropdown="pratiche"
                 }}
-                {{>cmp-accordion/cmp-accordion
+                {{> cmp-accordion/cmp-accordion
                 accordion=servizi-pagamento.area-personale.pratiche
                 }}
-                {{>partials/button/button label="Vedi altre pratiche" class="accordion-view-more mb-2 pt-3 t-primary
+                {{> cmp-button/cmp-button label="Vedi altre pratiche" class="accordion-view-more mb-2 pt-3 t-primary
                 title-xsmall-semi-bold
                 ps-lg-3"}}
               </section>
@@ -131,10 +131,10 @@
                 id-input="pagamenti"
                 id-dropdown="pagamenti"
                 }}
-                {{>cmp-accordion/cmp-accordion
+                {{> cmp-accordion/cmp-accordion
                 accordion=servizi-pagamento.area-personale.pagamenti
                 }}
-                {{>partials/button/button label="Vedi altri pagamenti" class="accordion-view-more mb-2 t-primary
+                {{> cmp-button/cmp-button label="Vedi altri pagamenti" class="accordion-view-more mb-2 t-primary
                 title-xsmall-semi-bold
                 ps-lg-3"}}
               </section>
@@ -164,4 +164,4 @@
   online e perfeziona la pratica." subtitle="Graduatoria 2022/23" link="Graduatoria Scuola dell'infanzia per l'anno
   scolastico 2022/23" }}
 </main>
-{{/base/base }}
+{{/cmp-base/base }}

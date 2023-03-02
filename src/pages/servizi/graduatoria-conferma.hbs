@@ -1,0 +1,75 @@
+{{#>cmp-base/base title="Richiesta inviata - Nome del Comune" headerActive3=true}}
+<main>
+  <div class="container" id="main-container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Servizi" active="Iscrizioni"}}
+        {{>cmp-heading/cmp-heading
+        title="Richiesta inviata"
+        subTitle="Grazie, abbiamo ricevuto la tua richiesta per la pratica <strong>iscrizione alla scuola
+          dell’infanzia.</strong></p>
+        <p class='subtitle-small pt-3 pt-lg-4'>Abbiamo inviato il riepilogo all’email:<br>
+          <strong>giulia.bianchi@gmail.com</strong>"
+          iconTitle="it-check-circle"
+          iconClass="mr-10 big-lg-icon mb-1"
+          iconBtn="it-download"
+          button=true
+          label="Scarica la ricevuta (PDF 100KB)"
+          outline-primary=true
+          sm=true
+          }}
+      </div>
+    </div>
+
+    <hr class="d-none d-lg-block mt-3 mb-40">
+    <div class="row">
+      <div class="d-none d-sm-none d-lg-block col-lg-3">
+        {{>cmp-navscroll/cmp-navscroll
+        accordion-title="INDICE DELLA PAGINA"
+        link-list=iscrizione-graduatoria.finalizzare-procedura.navscroll
+        }}
+      </div>
+
+      <div class="col-12 col-lg-8 offset-lg-1">
+        <div class="it-page-sections-container">
+          <section class="it-page-section" id="next-step">
+          {{>cmp-timeline/cmp-timeline
+          title="Prossimi passi"
+          timeline=iscrizione-graduatoria.finalizzare-procedura.timeline
+          label="<a class='t-primary' href='#'>Consulta la richiesta</a> nella tua area riservata."
+          }}
+          </section>
+
+          <section class="it-page-section" id="related-service">
+          {{>cmp-icon-list/cmp-icon-list
+          title="Servizi correlati"
+          titleClass="mb-3"
+          icon-list=iscrizione-graduatoria.finalizzare-procedura.servizi-correlati
+          }}
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-primary">
+    <div class="container">
+      <div class="row d-flex justify-content-center bg-primary">
+        <div class="col-12 col-lg-6 p-lg-0 px-4">
+          {{>cmp-rating/cmp-rating id-title="rating"}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-grey-card shadow-contacts">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6 offset-lg-3 p-contacts">
+          {{>cmp-contacts/cmp-contacts}}
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{{/cmp-base/base }}

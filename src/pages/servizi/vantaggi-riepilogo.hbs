@@ -1,0 +1,155 @@
+{{#>cmp-base/base title="Servizi sociali - Nome del Comune" headerActive3=true}}
+<main>
+  <div class="container" id="main-container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Servizi" active="Servizi sociali"}}
+        {{> cmp-heading/cmp-heading
+        title="Richiesta assegno di maternità"
+        description="Hai bisogno di assistenza?
+        <a href='' class='title-small-semi-bold t-primary'>Contattaci</a>"
+        title-class="w-75"}}
+      </div>
+
+      <div class="col-12">
+        {{> cmp-info-progress/cmp-info-progress
+        step-list=vantaggi-economici.conferma-riepilogo-informazioni-inserite.step-list.step-3
+        step-num="3"
+        step-title="Riepilogo"
+        step-tot="3"
+        }}
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-8">
+
+        {{>cmp-callout/callout
+        calloutType="warning"
+        icon="it-horn"
+        calloutTitle="Attenzione"
+        calloutText="Le informazioni che hai fornito hanno valore di dichiarazione.<span class='d-lg-block'> Verifica che siano corrette.</span>"
+        textClass="titillium text-paragraph"
+        }}
+
+        <h2 class="title-xxlarge mb-4 mt-40">Dati Generali</h2>
+
+        {{#>cmp-card/cmp-card-content-box
+        class="mb-0"
+        bg-grey=true
+        h3-title=true
+        h3-class="mb-0"
+        margin-class="mb-4"
+        card-title="Richiedente" }}
+
+        {{>cmp-info-summary/cmp-info-summary
+        class="mb-4 mb-lg-30 p-3 p-lg-4"
+        info-title="Julie Crampton Smith"
+        info=true
+        info-list=vantaggi-economici.conferma-riepilogo-informazioni-inserite.anagrafica.info
+        }}
+
+        {{>cmp-info-summary/cmp-info-summary
+        class="mb-4 mb-lg-30 p-3 p-lg-4"
+        info-title="Indirizzo"
+        info=true
+        info-list=vantaggi-economici.conferma-riepilogo-informazioni-inserite.indirizzo.info
+        }}
+
+        {{>cmp-info-summary/cmp-info-summary
+        class="mb-4 mb-lg-30 p-3 p-lg-4"
+        info-title="Contatti"
+        info=true
+        info-list=vantaggi-economici.conferma-riepilogo-informazioni-inserite.contatti.info
+        }}
+
+        {{>cmp-info-summary/cmp-info-summary
+        class="p-3 p-lg-4 mb-0"
+        info-title="Documenti"
+        info=true
+        info-list=vantaggi-economici.conferma-riepilogo-informazioni-inserite.documenti.info
+        }}
+
+        {{/cmp-card/cmp-card-content-box}}
+
+        <div class="pt-3 pt-lg-0"">
+          {{#>cmp-card/cmp-card-content-box
+          class="mb-0"
+          bg-grey=true
+          h3-title=true
+          h3-class="mb-0"
+          margin-class="mb-4"
+          card-title="Minore" }}
+
+          {{>cmp-info-summary/cmp-info-summary
+          class="mb-4 mb-lg-30 p-3 p-lg-4"
+          info-title="Luigi Rossi"
+          info=true
+          info-list=vantaggi-economici.conferma-riepilogo-informazioni-inserite.anagrafica-2.info
+          }}
+
+
+          {{>cmp-info-summary/cmp-info-summary
+          class="p-3 p-lg-4"
+          info-title="Documenti"
+          info=true
+          info-list=vantaggi-economici.conferma-riepilogo-informazioni-inserite.documenti-2.info
+          }}
+          {{/cmp-card/cmp-card-content-box}}
+        </div>
+
+        <div class="pt-3 pt-lg-0"">
+          {{#>cmp-card/cmp-card-content-box
+          class="mb-0"
+          bg-grey=true
+          h3-title=true
+          h3-class="mb-0"
+          card-title="ISEE" }}
+
+          {{>cmp-info-summary/cmp-info-summary
+          class="p-3 p-lg-4"
+          info-title="ISEE: 18.000,00€"
+          info=true
+          info-list=vantaggi-economici.conferma-riepilogo-informazioni-inserite.isee.info
+          }}
+
+          {{/cmp-card/cmp-card-content-box}}
+        </div>
+
+
+        <div class="pt-3 pt-lg-0"">
+          {{#>cmp-card/cmp-card-content-box
+          class="mb-0"
+          bg-grey=true
+          h3-title=true
+          h3-class="mb-0"
+          card-title="Conto bancario per l’accredito" }}
+
+          {{>cmp-info-summary/cmp-info-summary
+          class="p-3 p-lg-4"
+          info-title="Intesa Sanpaolo"
+          info=true
+          info-list=vantaggi-economici.conferma-riepilogo-informazioni-inserite.conto-bancario.info
+          }}
+          {{/cmp-card/cmp-card-content-box}}
+        </div>
+
+        {{>cmp-nav-steps/cmp-nav-steps next=true modalId="modal-terms" saveBtn=true aria-label-save="per l'assegno di maternità"}}
+      </div>
+    </div>
+  </div>
+
+
+  <div class="bg-grey-card shadow-contacts">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6 offset-lg-3 p-contacts">
+          {{>cmp-contacts/cmp-contacts}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{>cmp-modal/modal-terms-and-conditions}}
+</main>
+{{/cmp-base/base }}

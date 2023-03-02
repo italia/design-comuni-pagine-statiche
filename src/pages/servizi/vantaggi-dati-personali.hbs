@@ -1,0 +1,172 @@
+{{#>cmp-base/base title="Servizi sociali - Nome del Comune" headerActive3=true}}
+<main>
+  <div class="container" id="main-container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Servizi" active="Servizi sociali"}}
+        {{> cmp-heading/cmp-heading
+        title="Assegno di maternità"
+        subTitle="Inserisci le informazioni necessarie per richiedere l’assegno di maternità.<br>Potrai ricontrollare
+        tutti i dati nel riepilogo, prima di inviare la richiesta."
+        title-class="w-75"
+        description="Hai bisogno di assistenza? <a class='title-small-semi-bold t-primary' href='#'>Contattaci</a>"
+        desClass="mt-lg-2"
+        }}
+      </div>
+      <div class="col-12">
+        {{> cmp-info-progress/cmp-info-progress
+        step-list=vantaggi-economici.controllare-dati-personali.step-list.step-2
+        step-num="2"
+        step-title="Dati generali"
+        step-tot="3"
+        }}
+      </div>
+    </div>
+    <div class="steppers-content" aria-live="polite">
+      <div class="row">
+        <div class="col-12 col-lg-3 mb-4 d-none d-lg-block">
+          {{>cmp-navscroll/cmp-navscroll accordion-title="INFORMAZIONI RICHIESTE" id="one"
+          link-list=vantaggi-economici.controllare-dati-personali.navscroll
+          br-none="true"}}
+        </div>
+
+        <div class="col-12 col-lg-8 offset-lg-1 mt-2 mt-lgo-0">
+          {{> cmp-alert-box/cmp-alert-box warning=true message="Ci sono alcune informazioni mancanti o errate"
+          alertSpan-class="title-small-semi-bold"
+          description-class="mb-1"
+          class="mb-50"
+          alert-link-list=vantaggi-economici.controllare-dati-personali.anagrafica.alert-list}}
+
+          <div class="it-page-sections-container">
+            <section class="it-page-section" id="applicant-info">
+              {{#>cmp-card/cmp-card-content-box
+              h2-class="mb-1"
+              bg-grey=true
+              card-title="Richiedente"
+              subtitle="Informazione su di te"
+              margin-class="mb-40"
+              }}
+
+              {{> cmp-info-button-card/cmp-info-button-card big-title="Julie Crampton Smith"
+              label-2="Codice Fiscale <br> <span>CRMJLU92H52Z826N</span>"
+              warning=true
+              show-more-anagrafica-2=true
+              anagrafica=vantaggi-economici.controllare-dati-personali.anagrafica.info
+              indirizzo=vantaggi-economici.controllare-dati-personali.indirizzo.info
+              contatti=vantaggi-economici.controllare-dati-personali.contatti.info
+              documenti=vantaggi-economici.controllare-dati-personali.documenti.info
+              btnIndirizzo=true
+              acc-open=true
+              collapse-id="collapse-1"
+              modalId="modal-address"
+              btn-label-text="Correggi"}}
+              {{/cmp-card/cmp-card-content-box}}
+            </section>
+
+            <section class="it-page-section" id="minor">
+              {{#>cmp-card/cmp-card-content-box bg-grey=true
+              card-title="Minore"
+              header-m0=true
+              h2-class="mb-1"
+              subtitle="Informazioni sul minore per cui chiedi l’assegno di maternità"
+              margin-class="mb-40"
+              }}
+
+              <div class="bg-white mt-3" id="minor-warning">
+                <p class="title-xsmall py-4 px-3">Nessun dato disponibile. Aggiungi un minore per proseguire con la
+                  richiesta.</p>
+              </div>
+
+              {{> cmp-button/cmp-button label="Aggiungi minore"
+              iconBtn="it-plus-circle"
+              sm=true
+              class="plus-text mt-20 p-0"
+              modalId="modal-minor"}}
+              {{/cmp-card/cmp-card-content-box}}
+            </section>
+
+            <section class="it-page-section" id="isee-info">
+              {{#>cmp-card/cmp-card-content-box bg-grey=true
+              card-title="ISEE"
+              h2-class="mb-1"
+              subtitle="Informazioni sul valore dell’ISEE del tuo nucleo familiare basato sulla tua ultima
+              dichiarazione"
+              margin-class="mb-40"
+              }}
+
+              {{> cmp-info-button-card/cmp-info-button-card big-title="ISEE: 18.000,00€" label-2="Scadenza ISEE <br>
+              <span>01/03/2022</span>"
+              isee-success=true
+              show-more-isee="true"
+              collapse-id="collapse2"
+              modalId="modal-isee"
+              }}
+              {{/cmp-card/cmp-card-content-box}}
+            </section>
+
+            <section class="it-page-section" id="bank-account">
+              {{#>cmp-card/cmp-card-content-box bg-grey=true
+              card-title="Conto bancario per l’accredito"
+              h2-class="mb-1"
+              subtitle="Seleziona o aggiungi il conto su cui vuoi ricevere l'assegno"}}
+
+              {{> cmp-info-button-card/cmp-info-button-card radio=true group="bank-accounts" idRadio="accounts"
+              radio-title="Intesa Sanpaolo"
+              label-2="Iban <br> <span>IT12 3456 7890 123456</span>"
+              show-accordion-bank="true"
+              info-title="Intesa Sanpaolo"
+              acc-open=true
+              conto-bancario=vantaggi-economici.controllare-dati-personali.conto-bancario.info
+              warningMessage="Dato mancante"
+              collapse-id="collapse-bank-1"
+              modalId="modal-bank-account"
+              btn=true
+              btn-label-text="Aggiungi"
+              no-header=true
+              }}
+
+              {{> cmp-info-button-card/cmp-info-button-card radio=true group="bank-accounts" idRadio="accounts-2"
+              radio-title="Banca Popolare di Roma"
+              label-2="Iban <br> <span>IT12 3456 7890 123456</span>"
+              info-title="Banca Popolare di Roma"
+              show-accordion-bank="true"
+              collapse-id="collapse-bank-2"
+              conto-bancario=vantaggi-economici.controllare-dati-personali.conto-bancario.info-2
+              modalId="modal-bank-account"
+              }}
+
+              {{> cmp-button/cmp-button label="Aggiungi conto bancario"
+              iconBtn="it-plus-circle"
+              sm=true
+              class="plus-text mt-20 p-0"
+              modalId="modal-bank-account"}}
+
+              {{/cmp-card/cmp-card-content-box}}
+            </section>
+          </div>
+
+          {{>cmp-nav-steps/cmp-nav-steps save="true" saveBtn=true aria-label-save="per l'assegno di maternità"
+          modalId="modal-save-1"
+          }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-grey-card shadow-contacts">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6 offset-lg-3 p-contacts">
+          {{>cmp-contacts/cmp-contacts}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{>cmp-modal/modal-bank-account}}
+  {{>cmp-modal/modal-address}}
+  {{>cmp-modal/modal-minor}}
+  {{>cmp-modal/modal-save}}
+
+</main>
+{{/cmp-base/base }}

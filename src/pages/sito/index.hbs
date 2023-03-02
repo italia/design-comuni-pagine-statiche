@@ -1,353 +1,485 @@
-{{#>base/base-index title="Index"}}
-  <main>
+{{#>cmp-base/base-index title="Index"}}
+<main>
   <div class="container px-4 my-4">
     <div class="row">
       <div class="col-12 px-lg-4 py-lg-2">
-        <h1>I template HTML per il sito comunale</h1>
+        <h1>I templates HTML per il sito comunale</h1>
+        <span class="text-muted fw-semibold">Versione {{version}}</span>
+        <ul class="nav nav-tabs auto mt-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Sito</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/servizi/">Servizi</a>
+          </li>
+        </ul>
       </div>
-      <div class="col-12 px-lg-4 py-lg-2">
-        <em>Versione {{version}}</em>
+      
+      <div class="col-12 col-md-4 px-lg-4 py-lg-2 sticky-top">
+        <nav class="navbar it-navscroll-wrapper navbar-expand-lg it-top-navscroll it-right-side" data-bs-navscroll>
+          <button class="custom-navbar-toggler" type="button" aria-controls="navbarNavB" aria-expanded="false"
+            aria-label="Toggle navigation" data-bs-toggle="navbarcollapsible" data-bs-target="#navbarNavB"><span
+              class="it-list"></span>Indice templates
+          </button>
+          <div class="navbar-collapsable" id="navbarNavB">
+            <div class="overlay"></div>
+            <div class="close-div visually-hidden">
+              <button class="btn close-menu" type="button"><span class="it-close"></span>close
+              </button>
+            </div>
+            <a class="it-back-button" href="#"><svg class="icon icon-sm icon-primary align-top">
+                <use href="/bootstrap-italia/dist/svg/sprites.svg#it-chevron-left"></use>
+              </svg><span>Back </span></a>
+            <div class="menu-wrapper">
+              <div class="link-list-wrapper">
+                <h3>INDICE</h3>
+                <ul class="link-list">
+                  <li class="nav-item active">
+                    <a class="nav-link active" href="#generali"><span>Generali</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#amministrazione"><span>Amministrazione</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#novita"><span>Novità</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#servizi"><span>Servizi</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#eventi"><span>Vivere il Comune </span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#appuntamento"><span>Prenotazione Appuntamento</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#assistenza"><span>Richiesta Assistenza</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#segnalazione"><span>Segnalazione Disservizio</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
       </div>
-    </div>
 
-    <div class="row mt-5">
-      <div class="col-12 px-lg-4 pt-4 pb-2">
-        <h2>Sito Pubblico</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <div class="it-list-wrapper">
-          <ul class="it-list">
-            <li>
-              <a href="template-homepage.html" target="_blank" class="list-item" data-focus-mouse="false">
-                <div class="it-right-zone">
-                  <span class="text">Homepage
-                    <em>template-homepage.html</em>
-                  </span>
-                  <span class="it-multiple"><span class="metadata">Apri in una nuova pagina</span></span>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="template-amministrazione.html" target="_blank" class="list-item" data-focus-mouse="false">
-                <div class="it-right-zone">
-                  <span class="text">Amministrazione
-                    <em>template-amministrazione.html</em>
-                  </span>
-                  <span class="it-multiple"><span class="metadata">Apri in una nuova pagina</span></span>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="template-argomenti.html" target="_blank" class="list-item" data-focus-mouse="false">
-                <div class="it-right-zone">
-                  <span class="text">Argomenti
-                    <em>template-argomenti.html</em>
-                  </span>
-                  <span class="it-multiple"><span class="metadata">Apri in una nuova pagina</span></span>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="template-argomenti-argomento.html" target="_blank" class="list-item" data-focus-mouse="false">
-                <div class="it-right-zone">
-                  <span class="text">Argomento
-                    <em>template-argomenti-argomento.html</em>
-                  </span>
-                  <span class="it-multiple"><span class="metadata">Apri in una nuova pagina</span></span>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="template-documenti.html" target="_blank" class="list-item" data-focus-mouse="false">
-                <div class="it-right-zone">
-                  <span class="text">Documenti
-                    <em>template-documenti.html</em>
-                  </span>
-                  <span class="it-multiple"><span class="metadata">Apri in una nuova
-                      pagina</span></span>
-                </div>
-              </a>
-            </li>
-            {{!-- <li>
-              <a href="template-lista-contenuti-categorie.html" target="_blank" class="list-item" data-focus-mouse="false">
-                <div class="it-right-zone">
-                  <span class="text">Lista con contenuti e categorie
-                    <em>template-lista-contenuti-categorie.html</em>
-                  </span>
-                  <span class="it-multiple"><span class="metadata">Apri in una nuova
-                      pagina</span></span>
-                </div>
-              </a>
-            </li> --}}
-            {{!-- <li>
-              <a href="template-lista-solo-contenuti.html" target="_blank" class="list-item" data-focus-mouse="false">
-                <div class="it-right-zone">
-                  <span class="text">Lista solo contenuti
-                    <em>template-lista-solo-contenuti.html</em>
-                  </span>
-                  <span class="it-multiple"><span class="metadata">Apri in una nuova
-                      pagina</span></span>
-                </div>
-              </a>
-            </li> --}}
-            {{!-- <li>
-              <a href="template-lista-solo-categorie.html" target="_blank" class="list-item" data-focus-mouse="false">
-                <div class="it-right-zone">
-                  <span class="text">Lista solo categorie
-                    <em>template-lista-solo-categorie.html</em>
-                  </span>
-                  <span class="it-multiple"><span class="metadata">Apri in una nuova
-                      pagina</span></span>
-                </div>
-              </a>
-            </li> --}}
-            <li>
-              <a href="template-novita.html" target="_blank" class="list-item" data-focus-mouse="false">
-                <div class="it-right-zone">
-                  <span class="text">Novità
-                    <em>template-novita.html</em>
-                  </span>
-                  <span class="it-multiple"><span class="metadata">Apri in una nuova
-                      pagina</span></span>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="template-evento.html" target="_blank" class="list-item" data-focus-mouse="false">
-                <div class="it-right-zone">
-                  <span class="text">Evento
-                    <em>template-evento.html</em>
-                  </span>
-                  <span class="it-multiple"><span class="metadata">Apri in una nuova
-                      pagina</span></span>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="template-novita-notizia.html" target="_blank" class="list-item" data-focus-mouse="false">
-                <div class="it-right-zone">
-                  <span class="text">Notizia
-                    <em>template-novita-notizia.html</em>
-                  </span>
-                  <span class="it-multiple"><span class="metadata">Apri in una nuova
-                      pagina</span></span>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="template-servizi.html" target="_blank" class="list-item" data-focus-mouse="false">
-                <div class="it-right-zone">
-                  <span class="text">Servizi
-                    <em>template-servizi.html</em>
-                  </span>
-                  <span class="it-multiple"><span class="metadata">Apri in una nuova
-                      pagina</span></span>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="template-servizi-servizio.html" target="_blank" class="list-item" data-focus-mouse="false">
-                <div class="it-right-zone">
-                  <span class="text">Categoria di servizio
-                    <em>template-servizi-servizio.html</em>
-                  </span>
-                  <span class="it-multiple"><span class="metadata">Apri in una nuova
-                      pagina</span></span>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="template-dettaglio-servizio.html" target="_blank" class="list-item" data-focus-mouse="false">
-                <div class="it-right-zone">
-                  <span class="text">Scheda servizio
-                    <em>template-dettaglio-servizio.html</em>
-                  </span>
-                  <span class="it-multiple"><span class="metadata">Apri in una nuova
-                      pagina</span></span>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="template-risultati.html" target="_blank" class="list-item" data-focus-mouse="false">
-                <div class="it-right-zone">
-                  <span class="text">Risultati di ricerca
-                    <em>template-risultati.html</em>
-                  </span>
-                  <span class="it-multiple"><span class="metadata">Apri in una nuova
-                      pagina</span></span>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="template-vivi.html" target="_blank" class="list-item" data-focus-mouse="false">
-                <div class="it-right-zone">
-                  <span class="text">Vivi il Comune
-                    <em>template-vivi.html</em>
-                  </span>
-                  <span class="it-multiple"><span class="metadata">Apri in una nuova
-                      pagina</span></span>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="domande-frequenti.html" target="_blank" class="list-item" data-focus-mouse="false">
-                <div class="it-right-zone">
-                  <span class="text">Domande frequenti
-                    <em>domande-frequenti.html</em>
-                  </span>
-                  <span class="it-multiple"><span class="metadata">Apri in una nuova
-                      pagina</span></span>
-                </div>
-              </a>
-            </li>
-          </ul>
+      <div class="col-12 col-md-8 px-lg-4 py-lg-2">
+        <div class="my-5">
+          <div class="it-list-wrapper it-page-sections-container">
+
+            <section id="generali" class="it-page-section">
+              <h2 id="generali" class="text-secondary">Generali</h2>
+              <ul class="it-list mb-5">
+                <li>
+                  <a href="homepage.html" target="_blank" class="list-item" data-focus-mouse="false">
+                    <div class="it-right-zone">
+                      <span class="text">Homepage
+                        <em>La homepage del sito comunale</em>
+                      </span>
+                      <span class="it-multiple"><span class="metadata">homepage.html</span></span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="domande-frequenti.html" target="_blank" class="list-item" data-focus-mouse="false">
+                    <div class="it-right-zone">
+                      <span class="text">Domande frequenti (FAQ)
+                        <em>La pagina per la presentazione delle domande frequenti (FAQ)</em>
+                      </span>
+                      <span class="it-multiple"><span class="metadata">domande-frequenti.html</span></span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="risultati-ricerca.html" target="_blank" class="list-item" data-focus-mouse="false">
+                    <div class="it-right-zone">
+                      <span class="text">Risultati di ricerca
+                        <em>La pagina per la presentazione dei risultati di ricerca</em>
+                      </span>
+                      <span class="it-multiple"><span class="metadata">risultati-ricerca.html</span></span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="argomenti.html" target="_blank" class="list-item" data-focus-mouse="false">
+                    <div class="it-right-zone">
+                      <span class="text">Argomenti
+                        <em>La pagina con la lista di tutti gli argomenti a cui sono associati i contenuti del sito</em>
+                      </span>
+                      <span class="it-multiple"><span class="metadata">argomenti.html</span></span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="argomento.html" target="_blank" class="list-item" data-focus-mouse="false">
+                    <div class="it-right-zone">
+                      <span class="text">Argomento
+                        <em>La pagina di presentazione dei contenuti di uno specifico argomento</em>
+                      </span>
+                      <span class="it-multiple"><span class="metadata">argomento.html</span></span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </section>
+            
+            <section id="amministrazione" class="it-page-section">
+              <h2 class="text-secondary">Amministrazione</h2>
+              <ul class="it-list mb-5">
+                <li>
+                  <a href="amministrazione.html" target="_blank" class="list-item" data-focus-mouse="false">
+                    <div class="it-right-zone">
+                      <span class="text">Amministrazione
+                        <em>La pagina lista di primo livello per la sezione Amministrazione</em>
+                      </span>
+                      <span class="it-multiple"><span class="metadata">amministrazione.html</span></span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="documenti-dati.html" target="_blank" class="list-item" data-focus-mouse="false">
+                    <div class="it-right-zone">
+                      <span class="text">Documenti e dati
+                        <em>La pagina principale della sottosezione Documenti e dati</em>
+                      </span>
+                      <span class="it-multiple"><span class="metadata">documenti-dati.html</span></span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </section>
+
+            <section id="novita" class="it-page-section"></section>
+            <h2 class="text-secondary">Novità</h2>
+            <ul class="it-list mb-5">
+              <li>
+                <a href="novita.html" target="_blank" class="list-item" data-focus-mouse="false">
+                  <div class="it-right-zone">
+                    <span class="text">Novità
+                      <em>La pagina lista di primo livello per la sezione Novità</em>
+                    </span>
+                    <span class="it-multiple"><span class="metadata">novita.html</span></span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="novita-dettaglio.html" target="_blank" class="list-item" data-focus-mouse="false">
+                  <div class="it-right-zone">
+                    <span class="text">Notizia, Comunicato, Avviso
+                      <em>La pagina di dettaglio per le notizie, i comunicati e gli avvisi</em>
+                    </span>
+                    <span class="it-multiple"><span class="metadata">novita-dettaglio.html</span></span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+
+            <section id="servizi" class="it-page-section"></section>
+            <h2 class="text-secondary">Servizi</h2>
+            <ul class="it-list mb-5">
+              <li>
+                <a href="servizi.html" target="_blank" class="list-item" data-focus-mouse="false">
+                  <div class="it-right-zone">
+                    <span class="text">Servizi
+                      <em>La pagina lista di primo livello per la sezione Servizi</em>
+                    </span>
+                    <span class="it-multiple"><span class="metadata">servizi.html</span></span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="categoria-servizio.html" target="_blank" class="list-item" data-focus-mouse="false">
+                  <div class="it-right-zone">
+                    <span class="text">Categoria di servizio - pagina di secondo livello
+                      <em>La pagina dei servizi appartenenti a una specifica categoria</em>
+                    </span>
+                    <span class="it-multiple"><span class="metadata">categoria-servizio.html</span></span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="dettaglio-servizio.html" target="_blank" class="list-item" data-focus-mouse="false">
+                  <div class="it-right-zone">
+                    <span class="text">Scheda servizio
+                      <em>La pagina di dettaglio di un servizio specifico</em>
+                    </span>
+                    <span class="it-multiple"><span class="metadata">servizio-dettaglio.html</span></span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+
+            <section id="eventi" class="it-page-section">
+              <h2 class="text-secondary">Vivere il Comune</h2>
+              <ul class="it-list mb-5">
+                <li>
+                  <a href="eventi.html" target="_blank" class="list-item" data-focus-mouse="false">
+                    <div class="it-right-zone">
+                      <span class="text">Eventi
+                        <em>La pagina lista di primo livello per la sezione Vivere il Comune</em>
+                      </span>
+                      <span class="it-multiple"><span class="metadata">eventi.html</span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="evento-dettaglio.html" target="_blank" class="list-item" data-focus-mouse="false">
+                    <div class="it-right-zone">
+                      <span class="text">Evento
+                        <em>La pagina di dettaglio di un evento</em>
+                      </span>
+                      <span class="it-multiple"><span class="metadata">evento-dettaglio.html</span></span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </section>
+
+            {{!--
+            <h2 class="text-secondary">Pagine Lista</h2>
+            <ul>
+              <li>
+                <a href="lista-contenuti-categorie.html" target="_blank" class="list-item" data-focus-mouse="false">
+                  <div class="it-right-zone">
+                    <span class="text">Lista con contenuti e categorie
+                      <em>lista-contenuti-categorie.html</em>
+                    </span>
+                    <span class="it-multiple"><span class="metadata"></span></span>
+                  </div>
+                </a>
+              </li> --}}
+              {{!-- <li>
+                <a href="lista-solo-contenuti.html" target="_blank" class="list-item" data-focus-mouse="false">
+                  <div class="it-right-zone">
+                    <span class="text">Lista solo contenuti
+                      <em>lista-solo-contenuti.html</em>
+                    </span>
+                    <span class="it-multiple"><span class="metadata"></span></span>
+                  </div>
+                </a>
+              </li> --}}
+              {{!-- <li>
+                <a href="lista-solo-categorie.html" target="_blank" class="list-item" data-focus-mouse="false">
+                  <div class="it-right-zone">
+                    <span class="text">Lista solo categorie
+                      <em>lista-solo-categorie.html</em>
+                    </span>
+                    <span class="it-multiple"><span class="metadata"></span></span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            --}}
+
+            <section id="appuntamento" class="it-page-section">
+              <h2 id="appuntamento" class="text-secondary">Prenotazione Appuntamento</h2>
+              <p>Templates specifici per la funzionalità di prenotazione appuntamento</p>
+              <ul class="it-list mb-5">
+                <li>
+                  <a href="appuntamento-01-ufficio.html" target="_blank" class="list-item" data-focus-mouse="false">
+                    <div class="it-right-zone">
+                      <span class="text">Step 1 - Selezione ufficio (1 di 2)
+                        <em>La schermata di selezione di un ufficio</em>
+                      </span>
+                      <span class="it-multiple"><span class="metadata">appuntamento-01-ufficio.html</span></span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="appuntamento-01-ufficio-luogo.html" target="_blank" class="list-item" data-focus-mouse="false">
+                    <div class="it-right-zone">
+                      <span class="text">Step 1 - Selezione ufficio (2 di 2)
+                        <em>La schermata di selezione tra più sedi dello stesso ufficio</em>
+                      </span>
+                      <span class="it-multiple"><span class="metadata">appuntamento-01-ufficio-luogo.html</span></span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="appuntamento-02-data-orario.html" target="_blank" class="list-item" data-focus-mouse="false">
+                    <div class="it-right-zone">
+                      <span class="text">Step 2 - Scelta appuntamento
+                        <em>La schermata di selezione della data e ora dell'appuntamento</em>
+                      </span>
+                      <span class="it-multiple"><span class="metadata">appuntamento-02-data-orario.html</span></span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="appuntamento-03-dettagli.html" target="_blank" class="list-item" data-focus-mouse="false">
+                    <div class="it-right-zone">
+                      <span class="text">Step 3 - Selezione del motivo e aggiunta dei dettagli
+                        <em>La schermata di selezione del motivo dell'appuntamento e integrazione della richiesta con maggiori
+                          dettagli</em>
+                      </span>
+                      <span class="it-multiple"><span class="metadata">appuntamento-03-dettagli.html</span></span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="appuntamento-04-richiedente.html" target="_blank" class="list-item" data-focus-mouse="false">
+                    <div class="it-right-zone">
+                      <span class="text">Step 4 - Aggiunta delle informazioni personali (utente non autenticato)
+                        <em>La schermata di inserimento delle informazioni personali senza essersi autenticato tramite identità
+                          digitale</em>
+                      </span>
+                      <span class="it-multiple"><span class="metadata">appuntamento-04-richiedente.html</span></span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="appuntamento-04-richiedente-autenticato.html" target="_blank" class="list-item" data-focus-mouse="false">
+                    <div class="it-right-zone">
+                      <span class="text">Step 4 - Aggiunta delle informazioni personali (utente autenticato)
+                        <em>La schermata per verificare le informazioni personali provenienti da identità digitale</em>
+                      </span>
+                      <span class="it-multiple"><span class="metadata">appuntamento-04-richiedente-autenticato.html</span></span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="appuntamento-05-riepilogo.html" target="_blank" class="list-item" data-focus-mouse="false">
+                    <div class="it-right-zone">
+                      <span class="text">Step 5 - Riepilogo delle informazioni inserite
+                        <em>La schermata di riepilogo delle informazioni inserite, con la possibilità di confermarle o tornare
+                          indietro per effettuare una modifica</em>
+                      </span>
+                      <span class="it-multiple"><span class="metadata">appuntamento-05-riepilogo.html</span></span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="appuntamento-06-conferma.html" target="_blank" class="list-item" data-focus-mouse="false">
+                    <div class="it-right-zone">
+                      <span class="text">Step 6 - Conferma dell'appuntamento
+                        <em>La schermata con la conferma della prenotazione appuntamento e il riepilogo di data, ora, cosa serve e
+                          indirizzo dell'ufficio</em>
+                      </span>
+                      <span class="it-multiple"><span class="metadata">appuntamento-06-conferma.html</span></span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </section>            
+
+            <section id="assistenza" class="it-page-section">
+              <h2 class="text-secondary">Richiesta Assistenza</h2>
+              <p>Templates specifici per la funzionalità di richiesta assistenza</p>
+              <ul class="it-list mb-5">
+                <li>
+                  <a href="assistenza-01-dati.html" target="_blank" class="list-item"
+                    data-focus-mouse="false">
+                    <div class="it-right-zone">
+                      <span class="text">Step 1 - Inserimento dei dati
+                        <em>La schermata per inserire le informazioni personali del richiedente (nome, cognome, email) e i dettagli della richiesta (categoria di servizio, servizio specifico e ulteriori informazioni testuali)
+                        </em>
+                      </span>
+                      <span class="it-multiple"><span class="metadata">assistenza-01-dati.html</span></span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="assistenza-02-conferma.html" target="_blank" class="list-item" data-focus-mouse="false">
+                    <div class="it-right-zone">
+                      <span class="text">Step 2 - Conferma invio richiesta
+                        <em>La schermata con la conferma dell'avvenuta richiesta di assistenza</em>
+                      </span>
+                      <span class="it-multiple"><span class="metadata">assistenza-02-conferma.html</span></span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </section>
+
+            <section id="segnalazione" class="it-page-section">
+              <h2 class="text-secondary">Segnalazione Disservizio</h2>
+              <p>Templates specifici per la funzionalità di segnalazione disservizio</p>
+              <ul class="it-list mb-5">
+                <li>
+                  <a href="segnalazione-dettaglio.html" target="_blank" class="list-item"
+                    data-focus-mouse="false">
+                    <div class="it-right-zone">
+                      <span class="text">Scheda del servizio di segnalazione
+                        <em>La scheda di presentazione del servizio di segnalazione con tutte le informazioni necessarie, l’accesso alla funzionalità e l’accesso alla lista di tutte le segnalazioni</em>
+                      </span>
+                      <span class="it-multiple"><span class="metadata">segnalazione-dettaglio.html</span></span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="segnalazione-01-privacy.html" target="_blank" class="list-item"
+                    data-focus-mouse="false">
+                    <div class="it-right-zone">
+                      <span class="text">Step 1 - Acconsentire al trattamento dei dati personali
+                        <em>La schermata con l’informativa privacy e la possibilità di acconsentire al trattamento dei dati</em>
+                      </span>
+                      <span class="it-multiple"><span class="metadata">segnalazione-01-privacy.html</span></span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="segnalazione-02-dati.html" target="_blank" class="list-item"
+                    data-focus-mouse="false">
+                    <div class="it-right-zone">
+                      <span class="text">Step 2 - Inserimento dei dati di segnalazione
+                        <em>La schermata per l’inserimento di luogo, i dettagli del disservizio, gli allegati e i dati dell’autore della segnalazione</em>
+                      </span>
+                      <span class="it-multiple"><span class="metadata">segnalazione-02-dati.html</span></span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="segnalazione-03-riepilogo.html" target="_blank" class="list-item"
+                    data-focus-mouse="false">
+                    <div class="it-right-zone">
+                      <span class="text">Step 3 - Riepilogo delle informazioni inserite
+                        <em>La schermata di riepilogo delle informazioni inserite con la possibilità di confermare o tornare indietro per modificarle</em>
+                      </span>
+                      <span class="it-multiple"><span class="metadata">segnalazione-03-riepilogo.html</span></span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="segnalazione-04-conferma.html" target="_blank" class="list-item"
+                    data-focus-mouse="false">
+                    <div class="it-right-zone">
+                      <span class="text">Step 4 - Conferma invio segnalazione
+                        <em>segnalazione-04-conferma.html</em>
+                      </span>
+                      <span class="it-multiple"><span class="metadata">segnalazione-04-conferma.html</span></span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="segnalazione-area-personale.html" target="_blank" class="list-item" data-focus-mouse="false">
+                    <div class="it-right-zone">
+                      <span class="text">Segnalazione disservizio - Area personale
+                        <em>La schermata dell’area personale con la segnalazione disservizio appena effettuata tra le ultime attività</em>
+                      </span>
+                      <span class="it-multiple"><span class="metadata">segnalazione-area-personale.html</span></span>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="segnalazioni-elenco.html" target="_blank" class="list-item"
+                    data-focus-mouse="false">
+                    <div class="it-right-zone">
+                      <span class="text">Elenco delle segnalazioni
+                        <em>La schermata con l’elenco e la mappa con tutte le segnalazioni ricevute dal comune, filtrabili per tipologia</em>
+                      </span>
+                      <span class="it-multiple"><span class="metadata">segnalazioni-elenco.html</span></span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </section>
+
+          </div>
         </div>
       </div>
     </div>
-
-    <div class="row mt-4">
-      <div class="col-12 px-lg-4 pt-4 pb-2">
-        <h3>Sito Pubblico: Prenota Appuntamento</h3>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <div class="it-list-wrapper">
-          <ul class="it-list">
-            <li>
-              <a href="prenota-appuntamento-inserire-dati-specifici-servizio.html" target="_blank" class="list-item" data-focus-mouse="false">
-                <div class="it-right-zone">
-                  <span class="text">Inserire i dati specifici del servizio
-                    <em>prenota-appuntamento-inserire-dati-specifici-servizio.html</em>
-                  </span>
-                  <span class="it-multiple"><span class="metadata">Apri in una nuova
-                      pagina</span></span>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="prenota-appuntamento-inserire-dati-specifici-servizio-var-1.html" target="_blank" class="list-item" data-focus-mouse="false">
-                <div class="it-right-zone">
-                  <span class="text">Inserire i dati specifici del servizio variante-1
-                    <em>prenota-appuntamento-inserire-dati-specifici-servizio-var-1.html</em>
-                  </span>
-                  <span class="it-multiple"><span class="metadata">Apri in una nuova
-                      pagina</span></span>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="prenota-appuntamento-inserire-dati-specifici-servizio-step-2.html" target="_blank" class="list-item" data-focus-mouse="false">
-                <div class="it-right-zone">
-                  <span class="text">Inserire i dati specifici del servizio Step 2
-                    <em>prenota-appuntamento-inserire-dati-specifici-servizio-step-2.html</em>
-                  </span>
-                  <span class="it-multiple"><span class="metadata">Apri in una nuova
-                      pagina</span></span>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="prenota-appuntamento-inserire-dati-specifici-servizio-step-3.html" target="_blank" class="list-item" data-focus-mouse="false">
-                <div class="it-right-zone">
-                  <span class="text">Inserire i dati specifici del servizio Step 3
-                    <em>prenota-appuntamento-inserire-dati-specifici-servizio-step-3.html</em>
-                  </span>
-                  <span class="it-multiple"><span class="metadata">Apri in una nuova
-                      pagina</span></span>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="prenota-appuntamento-controllare-dati-personali.html" target="_blank" class="list-item" data-focus-mouse="false">
-                <div class="it-right-zone">
-                  <span class="text">Inserire/Controllare i dati personali
-                    <em>prenota-appuntamento-controllare-dati-personali.html</em>
-                  </span>
-                  <span class="it-multiple"><span class="metadata">Apri in una nuova
-                      pagina</span></span>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="prenota-appuntamento-controllare-dati-personali-var-1.html" target="_blank" class="list-item" data-focus-mouse="false">
-                <div class="it-right-zone">
-                  <span class="text">Inserire/Controllare i dati personali variante-1
-                    <em>prenota-appuntamento-controllare-dati-personali-var-1.html</em>
-                  </span>
-                  <span class="it-multiple"><span class="metadata">Apri in una nuova
-                      pagina</span></span>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="prenota-appuntamento-conferma-riepilogo-informazioni-inserite.html" target="_blank" class="list-item" data-focus-mouse="false">
-                <div class="it-right-zone">
-                  <span class="text">Confermare riepilogo informazioni inserite
-                    <em>prenota-appuntamento-conferma-riepilogo-informazioni-inserite.html</em>
-                  </span>
-                  <span class="it-multiple"><span class="metadata">Apri in una nuova
-                      pagina</span></span>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="prenota-appuntamento-finalizzare-procedura.html" target="_blank" class="list-item" data-focus-mouse="false">
-                <div class="it-right-zone">
-                  <span class="text">Finalizzare procedura
-                    <em>prenota-appuntamento-finalizzare-procedura.html</em>
-                  </span>
-                  <span class="it-multiple"><span class="metadata">Apri in una nuova
-                      pagina</span></span>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="row mt-5">
-      <div class="col-12 px-lg-4 pt-4 pb-2">
-        <h3>Sito Pubblico: Richiedi Assistenza</h3>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <div class="it-list-wrapper">
-          <ul class="it-list">
-            <li>
-              <a href="richiedi-assistenza-controllare-dati-personali.html" target="_blank" class="list-item" data-focus-mouse="false">
-                <div class="it-right-zone">
-                  <span class="text">Inserire/Controllare i dati personali
-                    <em>richiedi-assistenza-controllare-dati-personali.html</em>
-                  </span>
-                  <span class="it-multiple"><span class="metadata">Apri in una nuova
-                      pagina</span></span>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="richiedi-assistenza-finalizzare-procedura.html" target="_blank" class="list-item" data-focus-mouse="false">
-                <div class="it-right-zone">
-                  <span class="text">Finalizzare procedura
-                    <em>richiedi-assistenza-finalizzare-procedura.html</em>
-                  </span>
-                  <span class="it-multiple"><span class="metadata">Apri in una nuova
-                      pagina</span></span>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
   </div>
-  </main>
-
-
-
-  {{/base/base-index }}
+</main>
+{{/cmp-base/base-index }}

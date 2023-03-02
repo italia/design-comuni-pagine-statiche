@@ -1,0 +1,71 @@
+{{#>cmp-base/base title="Pagamenti - Nome del Comune" headerActive3=true}}
+<main>
+  <div class="container" id="main-container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Servizi" active="Pagamenti"}}
+        {{> cmp-heading/cmp-heading
+        title="Pagamento multa"
+        subTitle="Inserisci le informazioni necessarie per il pagamento della multa.<br class='d-none d-md-block'> Potrai ricontrollare tutti i dati nel riepilogo, prima di effettuare il pagamento."
+        description="Hai bisogno di assistenza? <a class='title-small-semi-bold t-primary' href='#'>Contattaci</a>"
+        desClass="mt-lg-2"
+        }}
+      </div>
+      <div class="col-12">
+        {{> cmp-info-progress/cmp-info-progress
+        step-list=pagamenti-dovuti-multa.info-progress.step-2
+        step-num="2"
+        step-tot="4"
+        step-title="Dati generali"
+        subtitle="I campi contraddistinti dal simbolo asterisco sono obbligatori"
+        classSubtitle="mt-40 mb-3"
+        }}
+      </div>
+    </div>
+    <div class="steppers-content" aria-live="polite">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8">
+
+            {{#>cmp-card/cmp-card-content-box
+            class="p-big"
+            bg-grey=true
+            h2-class="mb-1"
+            header-mo=true
+            card-title="Effettuato da"
+            subtitle="Informazioni sulla persona che effettua il pagamento, che può essere diversa da chi ha ricevuto la
+            multa."
+            margin-class="mb-0"
+            }}
+            {{> cmp-info-button-card/cmp-info-button-card group="beneficiaries"
+            big-title="Giulia Rossi"
+            label-2="Codice Fiscale <br> <span>GLABNC72H25H501Y</span>"
+            show-more-anagrafica-3="true"
+            info-anagrafica=pagamenti-dovuti-multa.controllare-dati-personali.anagrafica
+            info-indirizzi=pagamenti-dovuti-multa.controllare-dati-personali.indirizzi
+            anagrafica-indirizzo=true
+            collapse-id="collapse-benef-1"
+            modalId="modal-documents"
+            disservizio-page=true
+            }}
+            {{/cmp-card/cmp-card-content-box}}
+        
+          {{>cmp-nav-steps/cmp-nav-steps save="true" saveBtn=true
+          modalId="modal-save-1"
+          aria-label-save="del pagamento multa"}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-grey-card shadow-contacts">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6 offset-lg-3 p-contacts">
+          {{>cmp-contacts/cmp-contacts}}
+        </div>
+      </div>
+    </div>
+
+  {{>cmp-modal/modal-save}}
+</main>
+{{/cmp-base/base }}

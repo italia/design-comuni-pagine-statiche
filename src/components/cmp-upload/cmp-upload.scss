@@ -1,0 +1,70 @@
+.cmp-upload {
+  .upload-file-list .upload-file {
+    max-width: 100%;
+
+    p {
+      margin-left: 0.625rem;
+
+      @include media-breakpoint-up(sm){
+        margin-left: 0.56rem;
+      }
+    }
+  }
+
+
+  span.splide__sr {
+    display: none;
+  }
+
+  .upload[type=file]+label {
+    @include font(16, 16);
+    padding: 0.75rem 1.5rem;
+
+    @include media-breakpoint-up(sm){
+      padding: 0.67rem 1.33rem;
+    }
+
+    @include media-breakpoint-up(md) {
+      max-width: 21.11rem;
+    }
+
+    svg {
+      margin-right: 0.75rem;
+
+      @include media-breakpoint-up(sm){
+        margin-right: 0.67rem;
+      }
+    }
+  }
+
+  &__label {
+    font-family: Titillium Web;
+    color: get-color(dark, grey);
+    @include font(14, 16);
+    font-weight: 700;
+    line-height: 1.71;
+    margin-left: 0.5rem;
+
+    @include media-breakpoint-up(sm){
+      margin-left: 0.44rem;
+    }
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0.22rem;
+    }
+  }
+
+  &__info {
+    font-family: Titillium Web;
+    color: get-color(dark, grey);
+    @include font(14, 16);
+    font-weight: 400;
+    line-height: 1.5;
+    margin-left: 0.5rem;
+  }
+}
+
+.modal .modal-dialog .modal-content .modal-body p:not(.cmp-upload__info) {
+  font-size: 1rem;
+  font-weight: 600;
+}

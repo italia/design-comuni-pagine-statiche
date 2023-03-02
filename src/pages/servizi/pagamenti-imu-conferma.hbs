@@ -1,0 +1,48 @@
+{{#>cmp-base/base title="Pagamenti - Nome del Comune" headerActive3=true}}
+<main>
+  <div class="container" id="main-container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        {{> cmp-breadcrumbs/cmp-breadcrumbs link1="Servizi" active="Pagamenti"}}
+        {{>cmp-heading/cmp-heading
+        title="Documento creato"
+        subTitle="Il documento F24 per la <strong>richiesta AN4059281 calcolo IMU</strong> è stato generato.</p>
+        <p class='pt-3 pt-lg-4 mb-0'>Abbiamo inviato il riepilogo all’email:<br>
+          <strong>giulia.rossi@gmail.com</strong>"
+          iconTitle="it-check-circle"
+          iconClass="mr-10 big-lg-icon mb-1"
+          iconBtn="it-download"
+          button=true
+          label="Scarica F24 (PDF 100KB)"
+          outline-primary=true
+          sm=true
+          }}
+        <p class="mt-4 mt-lg-3 mb-40 mb-lg-100">
+          <a class='t-primary' href='#'>Consulta la richiesta</a>
+          nella tua area riservata.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-primary">
+    <div class="container">
+      <div class="row d-flex justify-content-center bg-primary">
+        <div class="col-12 col-lg-6 p-lg-0 px-4">
+          {{>cmp-rating/cmp-rating}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-grey-card shadow-contacts">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6 offset-lg-3 p-contacts">
+          {{>cmp-contacts/cmp-contacts}}
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{{/cmp-base/base }}

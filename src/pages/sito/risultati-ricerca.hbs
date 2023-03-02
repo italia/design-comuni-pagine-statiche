@@ -1,0 +1,165 @@
+{{#>cmp-base/base title="Risultati di ricerca - Nome del Comune"}}
+  <main>
+    <h1 class="visually-hidden" id="search-container">Ricerca</h1>
+    <div class="container" id="main-container">
+      <div class="mb-md-5">
+        {{> cmp-breadcrumbs/cmp-breadcrumbs
+        active="Ricerca"
+        }}
+      </div>
+    </div>
+
+    <div class="container">
+      {{>cmp-input-search-button/cmp-input-search-button placeholder="Pagamento TARI" marginClass="mt-2 mb-4 mb-lg-50"
+    id="search-bar"}}
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-3 d-none d-lg-block scroll-filter-wrapper">
+          <h2 class="visually-hidden" id="filter">filtri da applicare</h2>
+          {{> cmp-category-list/category-list category=categories-results-filter h3-title=true}}
+        </div>
+        <div class="col-lg-8 offset-lg-1">
+          <div class="d-flex justify-content-between align-items-center border-bottom border-light pb-3 mb-2">
+            <h2 class="visually-hidden" id="search-result">Risultati di ricerca</h2>
+            <span class="search-results u-grey-light"><span class="numResult">645</span> Risultati</span>
+            {{> cmp-button/cmp-button label="Filtra" label-class="t-primary title-xsmall-semi-bold ms-1"
+          iconBtn="it-funnel" class="p-0 pe-2 d-lg-none" xs=true modalId="modal-categories"}}
+
+            <button type="button" class="btn d-none d-lg-block btn-result" disabled>Rimuovi tutti i filtri</button>
+          </div>
+
+          <div class="container p-0">
+            <div class="row flex-column-reverse flex-lg-row">
+              <div class="col-12  pt-3">
+                {{>cmp-card-latest-messages/cmp-card-latest-messages
+              category="Servizi"
+              green-title-big="Consegna contenitori rifiuti"
+              description="Consegna dei contenitori per il corretto conferimento dei rifiuti nel sistema di raccolta
+              porta a porta."
+              cmp-card-class="mb-30"
+              cardRounded=true
+              category-class="text-uppercase"
+              }}
+
+                {{>cmp-card-latest-messages/cmp-card-latest-messages
+              category="Servizi"
+              green-title-big="Consegna contenitori rifiuti"
+              description="Consegna dei contenitori per il corretto conferimento dei rifiuti nel sistema di raccolta
+              porta a porta."
+              cmp-card-class="mb-30"
+              cardRounded=true
+              category-class="text-uppercase"
+              }}
+
+                {{>cmp-card-latest-messages/cmp-card-latest-messages
+              category="Servizi"
+              green-title-big="Conferimento rifiuti presso isole ecologiche mobili"
+              description="Le isole ecologiche mobili sono dei piccoli eco-centri nei quali è possibile conferire
+              rifiuti di piccole dimensioni"
+              cmp-card-class="mb-30"
+              cardRounded=true
+              category-class="text-uppercase"
+              }}
+
+                {{>cmp-card-latest-messages/cmp-card-latest-messages
+              category="Servizi"
+              green-title-big="Chiedere un rimborso Tari (Tassa sui rifiuti)"
+              description="Come chiedere un rimborso per la Tassa sui rifiuti (Tari)."
+              cmp-card-class="mb-30"
+              cardRounded=true
+              category-class="text-uppercase"
+              }}
+
+                {{>cmp-card-latest-messages/cmp-card-latest-messages
+              category="NOVITÀ"
+              green-title-big="Agevolazioni tariffarie a favore delle categorie svantaggiate"
+              description="Da lunedì 16 dicembre sarà possibile richiedere o rinnovare gli abbonamenti"
+              cmp-card-class="mb-30"
+              cardRounded=true
+              category-class="text-uppercase"
+              }}
+                {{>cmp-card-latest-messages/cmp-card-latest-messages
+              category="NOVITÀ"
+              green-title-big="Accertamenti TaRi: il sindaco e l’assessore fanno il punto"
+              description="Circa 17mila le utenze che hanno presentato spontaneamente autodenuncia al Comune e che ora
+              fanno la raccolta differenziata."
+              cmp-card-class="mb-30"
+              cardRounded=true
+              category-class="text-uppercase"
+              }}
+                {{>cmp-card-latest-messages/cmp-card-latest-messages
+              category="NOVITÀ"
+              green-title-big="Accordo tra Cin-Tirrenia e continuità territoriale"
+              description="A partire dal 25 febbraio 2019 sarà possibile acquistare l’abbonamento mensile CTM di marzo
+              con le nuove tariffe agevolate."
+              cmp-card-class="mb-30"
+              cardRounded=true
+              category-class="text-uppercase"
+              }}
+                {{>cmp-card-latest-messages/cmp-card-latest-messages
+              category="NOVITÀ"
+              green-title-big="Accertamento TARI"
+              description="Risultati degli accertamenti TARI"
+              cmp-card-class="mb-30"
+              cardRounded=true
+              category-class="text-uppercase"
+              }}
+                {{>cmp-card-latest-messages/cmp-card-latest-messages
+              category="NOVITÀ"
+              green-title-big="Agevolazioni tariffarie a carattere sociale delle utenze del Servizio Idrico Integrato"
+              description="Pubblicato bando, allegati e modulistica"
+              cmp-card-class="mb-30"
+              cardRounded=true
+              category-class="text-uppercase"
+              }}
+                {{>cmp-card-latest-messages/cmp-card-latest-messages
+              category="NOVITÀ"
+              green-title-big="La TARI scende del 17,7%"
+              description="I dati diffusi dall’Osservatorio prezzi e tariffe di Cittadinanzattiva"
+              cmp-card-class="mb-4"
+              cardRounded=true
+              category-class="text-uppercase"
+              }}
+              </div>
+            </div>
+          </div>
+
+          <div class="container p-0">
+            <div class="d-flex justify-content-center">
+              {{> cmp-button/cmp-button
+                outline-primary="true"
+                class="pt-15 pb-15 pl-90 pr-90 mb-30 mb-lg-50 full-mb text-button"
+                label="Carica altri risultati"
+                }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-primary">
+      <div class="container">
+        <div class="row d-flex justify-content-center bg-primary">
+          <div class="col-12 col-lg-6">
+            {{>cmp-rating/cmp-rating public-template=true}}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-grey-card shadow-contacts">
+      <div class="container">
+        <div class="row d-flex justify-content-center p-contacts">
+          <div class="col-12 col-lg-6">
+            {{>cmp-contacts/cmp-contacts city-problems=true}}
+          </div>
+        </div>
+      </div>
+    </div>
+
+{{!--     {{> cmp-modal/modal-filter-categories categories=categories-results-filter}} --}}
+    {{>cmp-modal/modal-clickMap}}
+  </main>
+  {{/cmp-base/base}}

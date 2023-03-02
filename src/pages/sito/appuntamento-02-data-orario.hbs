@@ -1,0 +1,94 @@
+{{#>cmp-base/base title="Prenotazioni - Nome del Comune" headerActive3=true}}
+<main>
+  <div class="container" id="main-container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        {{> cmp-breadcrumbs/cmp-breadcrumbs active="Prenotazione appuntamento"}}
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        {{>cmp-hero/cmp-hero
+        hero-title="Prenotazione appuntamento"
+        wrapper-class="pt-0 ps-0 pb-3 pb-lg-4"}}
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    {{> cmp-info-progress/cmp-info-progress
+    step-list=step-list.prenota-appuntamento-step-2
+    step-num="2"
+    step-tot="5"
+    step-title="Data e orario"
+    classSubtitle="mt-40 mb-3"
+    subtitle="I campi contraddistinti dal simbolo asterisco sono obbligatori"
+    }}
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-3 d-lg-block mb-4 d-none ">
+        {{>cmp-navscroll/cmp-navscroll
+        accordion-title="INFORMAZIONI RICHIESTE" id="one"
+        link-list=link-list.prenota-appuntamento-step-2}}
+      </div>
+      <div class="col-12 col-lg-8 offset-lg-1">
+        <div class="steppers-content" aria-live="polite">
+          <div class="it-page-sections-container">
+            <section class="it-page-section" id="appointment-available">
+              {{#>cmp-card/cmp-card-content-box
+              class="p-big"
+              bg-grey=true
+              h2-class="mb-2"
+              card-title="Appuntamenti disponibili*"
+              margin-class="mb-40"
+              }}
+              {{>cmp-select/select class="p-0 mt-1" id="appointment" label-text="Seleziona un mese"
+              label-hidden=true placeholder="Seleziona un mese"
+              select-option-list=prenotazione-appuntamento.controllare-dati-personali.appuntamenti-disponibili.select}}
+              {{>cmp-card-radio-list/cmp-card-radio-list
+              radio-list=prenotazione-appuntamento.controllare-dati-personali.appuntamenti-disponibili.radio-list }}
+
+              {{/cmp-card/cmp-card-content-box}}
+            </section>
+
+            <section class="it-page-section" id="office">
+              {{#>cmp-card/cmp-card-content-box
+              class="p-big"
+              bg-grey=true
+              h2-class="mb-0"
+              card-title="Ufficio"
+              }}
+
+              {{>cmp-info-summary/cmp-info-summary-no-modify
+              class="mb-4 mb-lg-30 p-4"
+              info-title="Municipalità 1 - Chiaia, Posillipo, S. Ferdinando"
+              info=true
+              info-list=prenotazione-appuntamento.inserire-dati-specifici-2.list}}
+
+              {{/cmp-card/cmp-card-content-box}}
+            </section>
+          </div>
+          {{> cmp-nav-steps/cmp-nav-steps save="true" aria-label-save="di prenotazione appuntamento"}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="bg-grey-card shadow-contacts">
+    <div class="container">
+      <div class="row d-flex justify-content-center p-contacts">
+        <div class="col-12 col-lg-6">
+          {{>cmp-contacts/cmp-contacts-trasversali faq=true assistance=true}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+{{/cmp-base/base }}

@@ -1,0 +1,46 @@
+{{#>cmp-base/base title="Richiesta assistenza - Nome del Comune" headerActive3=true}}
+<main>
+  <div class="container" id="main-container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        {{> cmp-breadcrumbs/cmp-breadcrumbs active="Richiesta assistenza"}}
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        {{>cmp-hero/cmp-hero
+        hero-title="Richiesta inviata"
+        icon="it-check-circle"
+        iconClass="mr-10 icon-sm mb-1"
+        hero-text="La richiesta di assistenza è stata inviata con successo, sarai ricontattato presto.<br><br>
+        Abbiamo inviato il riepilogo all’email:<br>
+        <strong>giulia.bianchi@gmail.com</strong>"
+        wrapper-class="pt-0 ps-0 pb-40 pb-lg-60"}}
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-primary">
+    <div class="container">
+      <div class="row d-flex justify-content-center bg-primary">
+        <div class="col-12 col-lg-6">
+          {{>cmp-rating/cmp-rating}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-grey-card shadow-contacts">
+    <div class="container">
+      <div class="row d-flex justify-content-center p-contacts">
+        <div class="col-12 col-lg-6">
+          {{>cmp-contacts/cmp-contacts-trasversali faq=true appointment=true}}
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{{/cmp-base/base }}

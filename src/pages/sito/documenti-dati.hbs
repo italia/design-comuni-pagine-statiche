@@ -1,0 +1,237 @@
+{{#>cmp-base/base title="Documenti - Nome del Comune" headerActive1=true}}
+<main>
+  <div class="container" id="main-container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        {{>cmp-breadcrumbs/cmp-breadcrumbs link1="Amministrazione" active="Documenti e Dati"}}
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center row-shadow">
+      <div class="col-12 col-lg-10">
+        {{>cmp-hero/cmp-hero
+        hero-title="Documenti e Dati"
+        hero-text="Donec in consequat nunc. Duis semper fermentum lacus, ac condimentum justo auctor a. Nam erat erat,
+        porta vel pharetra in, ullamcorper vel turpis."
+        wrapper-class="pt-0 ps-0 pb-4 pb-lg-60"}}
+      </div>
+    </div>
+  </div>
+
+  <div class="container py-5">
+    <h2 class="title-xxlarge mb-4">In evidenza</h2>
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-4">
+        <div class="card-wrapper rounded shadow-sm border border-light pb-0">
+          <div class="card bg-none no-after">
+            <div class="card-body">
+              <div class="categoryicon-top">
+                <svg class="icon icon-sm" aria-hidden="true">
+                  <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-file"></use>
+                </svg>
+                <span class="text fw-semibold">
+                  <a href="#" class="text-decoration-none">Bandi e avvisi</a></span>
+              </div>
+              <a href="#" class="text-decoration-none">
+                <h3 class="card-title h5 ">Avviso per richiedere il bonus idrico integrativo 2022</h3>
+              </a>
+              <p class="card-text">Avviata la procedura per richiedere il contributo finalizzato alla riduzione dei costi della bolletta dell'acqua o delle situazioni di morosità pregresse.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="card-wrapper rounded shadow-sm border border-light pb-0">
+          <div class="card bg-none no-after">
+            <div class="card-body">
+              <div class="categoryicon-top">
+                <svg class="icon icon-sm" aria-hidden="true">
+                  <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-file"></use>
+                </svg>
+                <span class="text fw-semibold">
+                  <a href="#" class="text-decoration-none">Bandi e avvisi</a></span>
+              </div>
+              <a href="#" class="text-decoration-none">
+                <h3 class="card-title h5 ">Borsa di studio nazionale, anno scolastico 2021/2022</h3>
+              </a>
+              <p class="card-text">Il contributo è rivolto agli studenti iscritti nelle scuole secondarie di secondo grado, statali e paritarie, resdienti nel comune.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-lg-4">
+        <div class="card-wrapper rounded shadow-sm border border-light pb-0">
+          <div class="card bg-none no-after">
+            <div class="card-body">
+              <div class="categoryicon-top">
+                <svg class="icon icon-sm" aria-hidden="true">
+                  <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-file"></use>
+                </svg>
+                <span class="text fw-semibold">
+                  <a href="#" class="text-decoration-none">Bandi e avvisi</a>
+                  </span>
+              </div>
+              <a href="#" class="text-decoration-none">
+                <h3 class="card-title h5 ">Avviso iscrizioni al servizio di mensa scolastica per l'anno 2022/2023</h3>
+              </a>
+              <p class="card-text">Le iscrizioni al servizio sono aperte per nuovi iscritti e riconferme.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-grey-card py-5">
+    <div class="container">
+        <h2 class="title-xxlarge mb-4">Esplora i documenti</h2>
+        {{> cmp-input-search/input-search
+        id="autocomplete-three"
+        label-text="cerca"
+        placeholder-text="Cerca per parola chiave"
+        btnSearch=true
+        search-subtitle=true
+        text-subtitle="62 notizie trovate in ordine alfabetico"
+        text-subtitle-class="u-grey-light text-paragraph-card mt-2 mb-30 mt-lg-3 mb-lg-40"
+        wrapper-class="mb-0"
+        icon-class="icon-primary"
+        }}
+        
+
+      {{>cmp-list-card-img/cmp-list-card-img-hr cards=cards.card-all-news rowClass="pb-4"}}
+      <p class="text-center text-paragraph-regular-medium mt-4 mb-0">Nessun altro risultato</p>
+    </div>
+  </div>
+
+
+  <div class="container py-5" id="argomento">
+    <h2 class="title-xxlarge mb-4">Esplora per categoria</h2>
+    <div class="row g-4">
+      <div class="col-md-6 col-xl-4">
+        {{>cmp-card/cmp-card-simple
+        borderlight=true
+        classTitle="title-xlarge"
+        classText="description"
+        card-title="Accordi tra enti"
+        card-text="Gli accordi del Comune con altre istituzioni, fondazioni ed enti."
+        }}
+      </div>
+
+      <div class="col-md-6 col-xl-4">
+        {{>cmp-card/cmp-card-simple
+        borderlight=true
+        classTitle="title-xlarge"
+        classText="description"
+        card-title="Atti normativi"
+        card-text="Statuto, regolamenti dell'Ente e altre norme ufficiali."
+        }}
+      </div>
+
+      <div class="col-md-6 col-xl-4">
+        {{>cmp-card/cmp-card-simple
+        borderlight=true
+        classTitle="title-xlarge"
+        classText="description"
+        card-title="Dataset"
+        card-text="Le statistiche e i dati strutturati riguardanti le attività produttive, la qualità della vita e la popolazione del
+        Comune."
+        }}
+      </div>
+
+      <div class="col-md-6 col-xl-4">
+        {{>cmp-card/cmp-card-simple
+        borderlight=true
+        classTitle="title-xlarge"
+        classText="description"
+        card-title="Documenti Albo Pretorio"
+        card-text="Gli atti amministrativi per i quali è previsto l'obbligo di pubblicità legale."
+        }}
+      </div>
+
+      <div class="col-md-6 col-xl-4">
+        {{>cmp-card/cmp-card-simple
+        borderlight=true
+        classTitle="title-xlarge"
+        classText="description"
+        card-title="Documenti attività politica"
+        card-text="Sedute, ordini del giorno e interrogazioni degli organi di governo comunali."
+        }}
+      </div>
+
+      <div class="col-md-6 col-xl-4">
+        {{>cmp-card/cmp-card-simple
+        borderlight=true
+        classTitle="title-xlarge"
+        classText="description"
+        card-title="Documenti funzionamento interno"
+        card-text="I regolamenti interni, i provvedimenti dirigenziali e i codici disciplinari degli organi di indirizzo politico."
+        }}
+      </div>
+
+      <div class="col-md-6 col-xl-4">
+        {{>cmp-card/cmp-card-simple
+        borderlight=true
+        classTitle="title-xlarge"
+        classText="description"
+        card-title="Documenti tecnici di supporto"
+        card-text="I rapporti tecnici e la documentazione di progetto."
+        }}
+      </div>
+
+      <div class="col-md-6 col-xl-4">
+        {{>cmp-card/cmp-card-simple
+        borderlight=true
+        classTitle="title-xlarge"
+        classText="description"
+        card-title="Documenti di programmazione e rendicontazione"
+        card-text="Rendiconti, procedure, bilanci consuntivi e preventivi."
+        }}
+      </div>
+
+      <div class="col-md-6 col-xl-4">
+        {{>cmp-card/cmp-card-simple
+        borderlight=true
+        classTitle="title-xlarge"
+        classText="description"
+        card-title="Istanze"
+        card-text="Le richieste private rivolte agli organi amministrativi o giurisdizionali del Comune."
+        }}
+      </div>
+
+      <div class="col-md-6 col-xl-4">
+        {{>cmp-card/cmp-card-simple
+        borderlight=true
+        classTitle="title-xlarge"
+        classText="description"
+        card-title="Modulistica"
+        card-text="Tutti i moduli predisposti per la stesura di documenti o scritture."
+        }}
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-primary">
+    <div class="container">
+      <div class="row d-flex justify-content-center bg-primary">
+        <div class="col-12 col-lg-6">
+          {{>cmp-rating/cmp-rating public-template=true}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-grey-card shadow-contacts">
+    <div class="container">
+      <div class="row d-flex justify-content-center p-contacts">
+        <div class="col-12 col-lg-6">
+          {{>cmp-contacts/cmp-contacts city-problems=true}}
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{{/cmp-base/base }}
