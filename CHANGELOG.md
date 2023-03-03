@@ -1,3 +1,19 @@
+# [2.3.0](https://github.com/italia/design-comuni-pagine-statiche/compare/v2.2.0...v2.3.0) (2023-03-03)
+
+
+### Bug Fixes
+
+* homepage-layout ([#104](https://github.com/italia/design-comuni-pagine-statiche/issues/104)) ([394a181](https://github.com/italia/design-comuni-pagine-statiche/commit/394a181d0fdadf71498276c6ceb74281fbeb1c43))
+* layout spacing and typography ([#106](https://github.com/italia/design-comuni-pagine-statiche/issues/106)) ([38645c8](https://github.com/italia/design-comuni-pagine-statiche/commit/38645c81c6834507b5dc8923396df411d973b93c))
+* template news ([#102](https://github.com/italia/design-comuni-pagine-statiche/issues/102)) ([b05316d](https://github.com/italia/design-comuni-pagine-statiche/commit/b05316da53219516d52297f680372b9b6d21be33))
+
+
+### Features
+
+* add new `data-element`s ([6ace4cf](https://github.com/italia/design-comuni-pagine-statiche/commit/6ace4cf23b859268db6cc630550d4a04528d357d))
+
+
+
 # [2.2.0](https://github.com/italia/design-comuni-pagine-statiche/compare/v2.1.2...v2.2.0) (2023-02-14)
 
 

@@ -1,7 +1,7 @@
 {
   "name": "design-comuni-pagine-statiche",
   "description": "Template HTML del progetto per la realizzazione dei siti web dei Comuni Italiani",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "author": "Presidenza del Consiglio dei Ministri",
   "license": "BSD-3-Clause",
   "scripts": {
