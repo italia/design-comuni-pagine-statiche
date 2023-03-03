@@ -525,7 +525,7 @@
             <div class="it-page-sections-container">
             <section class="it-page-section mb-30" id="who-needs">
               <h2 class="mb-3">A chi è rivolto</h2>
-              <div class="richtext-wrapper lora">
+              <div class="richtext-wrapper lora" data-element="service-addressed">
                 <ul>
                   <li><span>Bambini di età compresa tra i 3 e i 5 anni compiuti o da compiere entro il 31 dicembre di ogni anno.</span></li>
                   <li><span>Bambini che compiranno i 3 anni dopo il 31 dicembre e, comunque, entro e non oltre il 30 aprile dell’anno successivo (ammissione anticipata).</span></li>
@@ -535,7 +535,7 @@
     
             <section class="it-page-section mb-30" id="description">
               <h2 class="mb-3" data-element="service-description">Descrizione</h2>
-              <div class="richtext-wrapper lora">
+              <div class="richtext-wrapper lora" data-element="service-extended-description">
                 <p>Le domande di iscrizione devono essere presentate alle scuole nei mesi di
                 gennaio/febbraio.
                 L'Amministrazione pubblica un avviso con le modalità di accesso e i termini di presentazione della domanda.
@@ -550,7 +550,7 @@
     
             <section class="it-page-section mb-30" id="how-to">
               <h2 class="mb-3">Come fare</h2>
-              <div class="richtext-wrapper lora">
+              <div class="richtext-wrapper lora" data-element="service-how-to">
                 <p> Puoi presentare la richiesta di iscrizione esclusivamente online dalle ore
                 10:00 del 4 gennaio 2022 alle 20:00
                 del 4 febbraio 2022. I posti assegnati vanno accettati entro 15 giorni dalla pubblicazione della
@@ -561,7 +561,7 @@
     
             <section class="it-page-section mb-30 has-bg-grey p-3" id="needed">
               <h2 class="mb-3">Cosa serve</h2>
-              <div class="richtext-wrapper lora">
+              <div class="richtext-wrapper lora" data-element="service-needed">
                 <p>Per accedere al servizio, assicurati di avere:</p>
                 <ul>
                   <li><span>SPID (Sistema Pubblico per la gestione dell'Identità Digitale), Carta identità
@@ -575,7 +575,7 @@
     
             <section class="it-page-section mb-30" id="obtain">
               <h2 class="mb-3">Cosa si ottiene</h2>
-              <div class="richtext-wrapper lora">
+              <div class="richtext-wrapper lora" data-element="service-achieved">
                 <p>Se - in base ai requisiti e alla graduatoria - la richiesta verrà accettata,
                 sarà possibile perfezionare l’iscrizione all’asilo.</p>
               </div>
@@ -584,11 +584,11 @@
             <section class="it-page-section mb-30" id="deadlines">
               <div class="cmp-timeline">
                 <h2 class="title-xxlarge mb-3">Tempi e scadenze</h2>
-                  <div class="richtext-wrapper lora">
+                  <div class="richtext-wrapper lora" data-element="service-calendar-text">
                     <p>Le graduatorie verranno aggiornate ogni mese con nuove assegnazioni e trasferimenti in base ai
                         posti disponibili.</p>
                   </div>
-                <div class="calendar-vertical mb-3">
+                <div class="calendar-vertical mb-3" data-element="service-calendar-list">
                     <div class="calendar-date">
                       <h3 class="calendar-date-day">
                         <small class="calendar-date-day__year">2022</small>
@@ -650,7 +650,7 @@
                 tabella allegata al bando.</p>
               </div>
               <div class="cmp-icon-link">
-                <a class="list-item icon-left d-inline-block" href="#" aria-label="Scarica Tabella rette in base al reddito " title="Scarica Tabella rette in base al reddito ">
+                <a class="list-item icon-left d-inline-block" href="#" aria-label="Scarica Tabella rette in base al reddito " title="Scarica Tabella rette in base al reddito " data-element="service-file">
                   <span class="list-item-title-icon-wrapper">
                     <svg class="icon icon-primary icon-sm me-1" aria-hidden="true">
                       <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-clip"></use>
@@ -663,14 +663,14 @@
     
             <section class="it-page-section mb-30 has-bg-grey p-4" id="submit-request">
               <h2 class="mb-3">Accedi al servizio</h2>
-              <p class="text-paragraph lora mb-4">Puoi richiedere l’iscrizione alla Scuola dell’infanzia direttamente online
+              <p class="text-paragraph lora mb-4" data-element="service-generic-access">Puoi richiedere l’iscrizione alla Scuola dell’infanzia direttamente online
                 tramite identità digitale.</p>
-              <button type="button" class="btn btn-primary mobile-full">
+              <button type="button" class="btn btn-primary mobile-full" data-element="service-online-access">
                 <span>Richiedi iscrizione online</span>
               </button>
-              <p class="text-paragraph lora mt-4">Oppure, puoi prenotare un appuntamento e presentarti presso gli uffici.
+              <p class="text-paragraph lora mt-4" data-element="service-generic-access">Oppure, puoi prenotare un appuntamento e presentarti presso gli uffici.
               </p>
-              <button type="button" class="btn btn-outline-primary t-primary bg-white mobile-full">
+              <button type="button" class="btn btn-outline-primary t-primary bg-white mobile-full" data-element="service-booking-access">
                 <span>Prenota appuntamento</span>
               </button>
             </section>
@@ -763,13 +763,13 @@
                 <div class="card shadow card-wrapper" data-element="feedback">
                   <div class="cmp-rating__card-first">
                     <div class="card-header border-0">
-                        <h2 class="title-medium-2-semi-bold mb-0">Quanto è stato facile usare questo servizio?</h2>
+                        <h2 class="title-medium-2-semi-bold mb-0" data-element="feedback-title">Quanto è stato facile usare questo servizio?</h2>
                     </div>
                     <div class="card-body">
                       <fieldset class="rating">
                         <legend class="visually-hidden">Valuta da 1 a 5 stelle la pagina</legend>
                         <input type="radio" id="star5a" name="ratingA" value="5">
-                        <label class="full rating-star active" for="star5a">
+                        <label class="full rating-star active" for="star5a" data-element="feedback-rate-5">
                           <svg class="icon icon-sm" role="img" aria-labelledby="first-star" viewBox="0 0 24 24" id="it-star-full" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 1.7L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"/>
                             <path fill="none" d="M0 0h24v24H0z"/>
@@ -777,7 +777,7 @@
                           <span class="visually-hidden" id="first-star">Valuta 5 stelle su 5</span>
                         </label>
                         <input type="radio" id="star4a" name="ratingA" value="4">
-                        <label class="full rating-star active" for="star4a">
+                        <label class="full rating-star active" for="star4a" data-element="feedback-rate-4">
                           <svg class="icon icon-sm" role="img" aria-labelledby="second-star" viewBox="0 0 24 24" id="it-star-full" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 1.7L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"/>
                             <path fill="none" d="M0 0h24v24H0z"/>
@@ -785,7 +785,7 @@
                           <span class="visually-hidden" id="second-star">Valuta 4 stelle su 5</span>
                         </label>
                         <input type="radio" id="star3a" name="ratingA" value="3">
-                        <label class="full rating-star active" for="star3a">
+                        <label class="full rating-star active" for="star3a" data-element="feedback-rate-3">
                           <svg class="icon icon-sm" role="img" aria-labelledby="third-star" viewBox="0 0 24 24" id="it-star-full" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 1.7L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"/>
                             <path fill="none" d="M0 0h24v24H0z"/>
@@ -793,7 +793,7 @@
                           <span class="visually-hidden" id="third-star">Valuta 3 stelle su 5</span>
                         </label>
                         <input type="radio" id="star2a" name="ratingA" value="2">
-                        <label class="full rating-star active" for="star2a">
+                        <label class="full rating-star active" for="star2a" data-element="feedback-rate-2">
                           <svg class="icon icon-sm" role="img" aria-labelledby="fourth-star" viewBox="0 0 24 24" id="it-star-full" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 1.7L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"/>
                             <path fill="none" d="M0 0h24v24H0z"/>
@@ -801,7 +801,7 @@
                           <span class="visually-hidden" id="fourth-star">Valuta 2 stelle su 5</span>
                         </label>
                         <input type="radio" id="star1a" name="ratingA" value="1">
-                        <label class="full rating-star active" for="star1a">
+                        <label class="full rating-star active" for="star1a" data-element="feedback-rate-1">
                           <svg class="icon icon-sm" role="img" aria-labelledby="fifth-star" viewBox="0 0 24 24" id="it-star-full" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 1.7L9.5 9.2H1.6L8 13.9l-2.4 7.6 6.4-4.7 6.4 4.7-2.4-7.6 6.4-4.7h-7.9L12 1.7z"/>
                             <path fill="none" d="M0 0h24v24H0z"/>
@@ -820,10 +820,10 @@
                   <div class="form-rating d-none">
                     <div class="d-none" data-step="1">
                       <div class="cmp-steps-rating">
-                        <fieldset class="fieldset-rating-one d-none">
+                        <fieldset class="fieldset-rating-one d-none" data-element="feedback-rating-positive">
                           <div class="iscrizioni-header w-100">
                             <h3 class="step-title d-flex align-items-center justify-content-between drop-shadow">
-                              <legend class="d-block d-lg-inline">
+                              <legend class="d-block d-lg-inline" data-element="feedback-rating-question">
                                 Quali sono stati gli aspetti che hai preferito?
                               </legend>
                               <span class="step">1/2</span>
@@ -836,23 +836,23 @@
                                   <div class="form-check m-0">
                                     <div class="radio-body border-bottom border-light cmp-radio-list__item">
                                       <input name="rating1" type="radio" id="radio-1">
-                                      <label for="radio-1" class="active">Le indicazioni erano chiare</label>
+                                      <label for="radio-1" class="active" data-element="feedback-rating-answer">Le indicazioni erano chiare</label>
                                     </div>
                                     <div class="radio-body border-bottom border-light cmp-radio-list__item">
                                       <input name="rating1" type="radio" id="radio-2">
-                                      <label for="radio-2" class="active">Le indicazioni erano complete</label>
+                                      <label for="radio-2" class="active" data-element="feedback-rating-answer">Le indicazioni erano complete</label>
                                     </div>
                                     <div class="radio-body border-bottom border-light cmp-radio-list__item">
                                       <input name="rating1" type="radio" id="radio-3">
-                                      <label for="radio-3" class="active">Capivo sempre che stavo procedendo correttamente</label>
+                                      <label for="radio-3" class="active" data-element="feedback-rating-answer">Capivo sempre che stavo procedendo correttamente</label>
                                     </div>
                                     <div class="radio-body border-bottom border-light cmp-radio-list__item">
                                       <input name="rating1" type="radio" id="radio-4">
-                                      <label for="radio-4" class="active">Non ho avuto problemi tecnici</label>
+                                      <label for="radio-4" class="active" data-element="feedback-rating-answer">Non ho avuto problemi tecnici</label>
                                     </div>
                                     <div class="radio-body border-bottom border-light cmp-radio-list__item">
                                       <input name="rating1" type="radio" id="radio-5">
-                                      <label for="radio-4" class="active">Altro</label>
+                                      <label for="radio-4" class="active" data-element="feedback-rating-answer">Altro</label>
                                     </div>
                                   </div>
                                 </div>
@@ -860,10 +860,10 @@
                             </div>
                           </div>
                         </fieldset>
-                        <fieldset class="fieldset-rating-two d-none">
+                        <fieldset class="fieldset-rating-two d-none" data-element="feedback-rating-negative">
                           <div class="iscrizioni-header w-100">
                             <h3 class="step-title d-flex align-items-center justify-content-between drop-shadow">
-                              <legend class="d-block d-lg-inline">
+                              <legend class="d-block d-lg-inline" data-element="feedback-rating-question">
                                 Dove hai incontrato le maggiori difficoltà?
                               </legend>
                               <span class="step">1/2</span>
@@ -876,23 +876,23 @@
                                   <div class="form-check m-0">
                                     <div class="radio-body border-bottom border-light cmp-radio-list__item">
                                       <input name="rating2" type="radio" id="radio-5">
-                                      <label for="radio-5" class="active">A volte le indicazioni non erano chiare</label>
+                                      <label for="radio-5" class="active" data-element="feedback-rating-answer">A volte le indicazioni non erano chiare</label>
                                     </div>
                                     <div class="radio-body border-bottom border-light cmp-radio-list__item">
                                       <input name="rating2" type="radio" id="radio-6">
-                                      <label for="radio-6" class="active">A volte le indicazioni non erano complete</label>
+                                      <label for="radio-6" class="active" data-element="feedback-rating-answer">A volte le indicazioni non erano complete</label>
                                     </div>
                                     <div class="radio-body border-bottom border-light cmp-radio-list__item">
                                       <input name="rating2" type="radio" id="radio-7">
-                                      <label for="radio-7" class="active">A volte non capivo se stavo procedendo correttamente</label>
+                                      <label for="radio-7" class="active" data-element="feedback-rating-answer">A volte non capivo se stavo procedendo correttamente</label>
                                     </div>
                                     <div class="radio-body border-bottom border-light cmp-radio-list__item">
                                       <input name="rating2" type="radio" id="radio-8">
-                                      <label for="radio-8" class="active">Ho avuto problemi tecnici</label>
+                                      <label for="radio-8" class="active" data-element="feedback-rating-answer">Ho avuto problemi tecnici</label>
                                     </div>
                                     <div class="radio-body border-bottom border-light cmp-radio-list__item">
                                       <input name="rating2" type="radio" id="radio-9">
-                                      <label for="radio-8" class="active">Altro</label>
+                                      <label for="radio-8" class="active" data-element="feedback-rating-answer">Altro</label>
                                     </div>
                                   </div>
                                 </div>
@@ -916,7 +916,7 @@
                           <div class="cmp-steps-rating__body">
                             <div class="form-group">
                               <label for="formGroupExampleInputWithHelp" class="">Dettaglio</label>
-                              <input type="text" class="form-control" id="formGroupExampleInputWithHelp" aria-describedby="formGroupExampleInputWithHelpDescription" maxlength="200">
+                              <input type="text" class="form-control" id="formGroupExampleInputWithHelp" aria-describedby="formGroupExampleInputWithHelpDescription" maxlength="200" data-element="feedback-input-text">
                               <small id="formGroupExampleInputWithHelpDescription" class="form-text">
                                 Inserire massimo 200 caratteri</small>
                             </div>
@@ -1328,7 +1328,7 @@
                       <a href="#" data-element="privacy-policy-link">Informativa privacy</a>
                     </li>
                     <li>
-                      <a href="#">Note legali</a>
+                      <a href="#" data-element="legal-notes">Note legali</a>
                     </li>
                     <li>
                       <a href="#" data-element="accessibility-link">Dichiarazione di accessibilità</a>
