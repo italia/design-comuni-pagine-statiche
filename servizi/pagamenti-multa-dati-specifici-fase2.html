@@ -296,55 +296,32 @@
           </div>
     
           <div class="col-12">
-            <div class="cmp-info-progress d-flex" data-progress="">
-            
-              <!-- Desktop -->
-              <div class="info-progress-wrapper d-none d-lg-flex w-100 px-3 flex-column justify-content-end completed">
-                <div class="info-progress-body d-flex justify-content-between align-self-end align-items-end w-100 py-3">
-                  <span class="d-block h-100 title-medium text-uppercase">Informativa sulla privacy</span>
-            
-                  <svg class="d-block icon icon-primary icon-sm" aria-hidden="true">
-                    <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-check"></use>
-                  </svg>
-            
-                </div>
-              </div>
-              <!-- Desktop -->
-              <div class="info-progress-wrapper d-none d-lg-flex w-100 px-3 flex-column justify-content-end completed">
-                <div class="info-progress-body d-flex justify-content-between align-self-end align-items-end w-100 py-3">
-                  <span class="d-block h-100 title-medium text-uppercase">Dati generali</span>
-            
-                  <svg class="d-block icon icon-primary icon-sm" aria-hidden="true">
-                    <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-check"></use>
-                  </svg>
-            
-                </div>
-              </div>
-              <!-- Desktop -->
-              <div class="info-progress-wrapper d-none d-lg-flex w-100 px-3 flex-column justify-content-end step-active">
-                <div class="info-progress-body d-flex justify-content-between align-self-end align-items-end w-100 py-3">
-                  <span class="d-block h-100 title-medium text-uppercase">Dati specifici del servizio</span>
-            
-            
-                </div>
-              </div>
-              <!-- Desktop -->
-              <div class="info-progress-wrapper d-none d-lg-flex w-100 px-3 flex-column justify-content-end">
-                <div class="info-progress-body d-flex justify-content-between align-self-end align-items-end w-100 py-3">
-                  <span class="d-block h-100 title-medium text-uppercase">Pagamento</span>
-            
-            
-                </div>
-              </div>
-            
-              <!-- Mobile -->
-              <div class="iscrizioni-header d-lg-none w-100">
-                <h4 class="step-title d-flex align-items-center justify-content-between drop-shadow">
-                  <span class="d-block d-lg-inline">
+            <div class="steppers">
+              <div class="steppers-header">
+                <ul>
+                  <li class="confirmed">
+                    Informativa sulla privacy
+                    <svg class="icon steppers-success" aria-hidden="true">
+                      <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-check"></use>
+                    </svg>
+                    <span class="visually-hidden">Confermato</span>
+                  </li>
+                  <li class="confirmed">
+                    Dati generali
+                    <svg class="icon steppers-success" aria-hidden="true">
+                      <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-check"></use>
+                    </svg>
+                    <span class="visually-hidden">Confermato</span>
+                  </li>
+                  <li class="active">
                     Dati specifici del servizio
-                  </span>
-                  <span class="step">3/4</span>
-                </h4>
+                    <span class="visually-hidden">Attivo</span>
+                  </li>
+                  <li class="">
+                    Pagamento
+                  </li>
+                </ul>
+                <span class="steppers-index" aria-hidden="true">3/4</span>
               </div>
             </div>
           </div>
