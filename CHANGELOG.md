@@ -1,3 +1,12 @@
+## [2.3.1](https://github.com/italia/design-comuni-pagine-statiche/compare/v2.3.0...v2.3.1) (2023-03-03)
+
+
+### Bug Fixes
+
+* stepper component matches bootstrap italia ([199476d](https://github.com/italia/design-comuni-pagine-statiche/commit/199476d033bdf8900de98c3ebf14a1ae83d443d8))
+
+
+
 # [2.3.0](https://github.com/italia/design-comuni-pagine-statiche/compare/v2.2.0...v2.3.0) (2023-03-03)
 
 
