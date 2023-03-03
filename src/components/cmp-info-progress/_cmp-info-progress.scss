@@ -1,68 +1,7 @@
-.cmp-info-progress {
+.steppers {
   margin-bottom: 1.5rem;
 
   @include media-breakpoint-up(sm) {
     margin-bottom: 2.222rem;
-  }
-
-  .info-progress-body {
-    border-bottom: 2px solid transparent;
-  }
-
-  .info-progress-wrapper {
-    &:first-child {
-      border-left: 1px solid #E7EAED;
-    }
-
-    &:not(:last-child) {
-      border-right: 1px solid #E7EAED;
-    }
-  }
-
-  .completed{
-    .title-medium {
-      font-weight: 700;
-      color: get-color(primary, main);
-    }
-  }
-
-  .step-active {
-    .title-medium {
-      font-weight: 700;
-      color: get-color(primary, main);
-    }
-
-      .info-progress-body {
-        border-bottom: 2px solid get-color(primary, main);;
-      }
-  }
-
-  .iscrizioni-header {
-    .drop-shadow {
-      box-shadow: 0 0.9375rem 1.325rem -0.9rem rgba(0, 0, 0, 0.1);
-    }
-
-    .step-wrapper {
-      @include font(24, 24);
-      font-weight: 700;
-      line-height: 30px;
-    }
-
-    .step-title {
-      @include font(18, 18);
-      font-weight: 600;
-      line-height: 2;
-      padding: 0.875rem 0;
-
-      @include media-breakpoint-up(sm) {
-        padding: 0.777rem 0;
-      }
-    }
-
-    .step {
-      @include font(14, 14);
-      font-weight: 600;
-      line-height: 1.5;
-    }
   }
 }
