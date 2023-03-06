@@ -1,11 +1,11 @@
 <div class="cmp-timeline">
   <h2 class="title-xxlarge mb-3" {{#if id-title}}id="{{id-title}}"{{/if}}>{{title}}</h2>
   {{#if description}}
-    <div class="richtext-wrapper {{#if lora}}lora{{/if}}">
+    <div class="richtext-wrapper {{#if lora}}lora{{/if}}" data-element="service-calendar-text">
       <p>{{description}}</p>
     </div>
   {{/if}}
-  <div class="calendar-vertical mb-3">
+  <div class="calendar-vertical mb-3" data-element="service-calendar-list">
     {{#each timeline as |date|}}
       <div class="calendar-date">
         <h3 class="calendar-date-day">
