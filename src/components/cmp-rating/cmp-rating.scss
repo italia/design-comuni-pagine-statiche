@@ -73,12 +73,13 @@
         padding: 0.78rem;
         margin-bottom: 2.111rem;
       }
+    }
 
-      legend {
-        @include font(18, 18);
-        font-weight: 600;
-        line-height: 36px;
-      }
+    legend {
+      @include font(18, 18);
+      font-weight: 600;
+      line-height: 36px;
+      overflow: unset;
     }
   }
 
