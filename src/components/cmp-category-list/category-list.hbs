@@ -1,8 +1,8 @@
 {{#if isMobile}}
 {{#each category as |filter|}}
   <fieldset>
+    <legend class="h6 text-uppercase category-list__title">{{filter.title}}</legend>
     <div class="categoy-list pb-4">
-      <legend class="h6 text-uppercase category-list__title">{{filter.title}}</legend>
       <ul>
         {{#each filter.list as |checkbox|}}
           <li>
@@ -21,8 +21,8 @@
 {{else}}
 {{#each category as |filter|}}
   <fieldset>
+    <legend class="h6 text-uppercase category-list__title">{{filter.title}}</legend>
     <div class="categoy-list pb-4">
-      <legend class="h6 text-uppercase category-list__title">{{filter.title}}</legend>
       <ul>
         {{#each filter.list as |checkbox|}}
           <li>
