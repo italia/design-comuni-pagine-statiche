@@ -22,13 +22,13 @@
         </div>
         <div class="card-body ">
           <div class="category-top cmp-list-card-img__body">
-            <a class="text-decoration-none fw-bold cmp-list-card-img__body-heading-title" href="#">{{card.category}}</a>
+            <a class="text-decoration-none fw-bold" href="#">{{card.category}}</a>
             {{#if card.category-date}}
             <span class="data">{{card.category-date}}</span>
             {{/if}}
           </div>
-          <h3 class="cmp-list-card-img__body-title "><a href="#" class="text-decoration-none">{{card.title}}</a></h3>
-          <p class="cmp-list-card-img__body-description">{{card.description}}</p>
+          <h3 class=""><a href="#" class="text-decoration-none">{{card.title}}</a></h3>
+          <p class="text-secondary">{{card.description}}</p>
 
           <a class="read-more t-primary text-uppercase cmp-list-card-img__body-link" href="#" aria-label="Leggi di più sulla pagina di {{card.title}}">
             <span class="text">{{card.link}}</span>
