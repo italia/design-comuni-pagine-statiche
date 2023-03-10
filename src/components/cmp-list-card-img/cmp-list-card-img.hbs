@@ -2,16 +2,14 @@
 {{#each cards as |card|}}
   <div class="col-lg-6 col-xl-4">
     <!--start card-->
-    <div class="card-wrapper shadow-sm rounded cmp-list-card-img">
-      <div class="card card-img no-after rounded">
-        <div class="img-responsive-wrapper {{#if img-path}}cmp-list-card-img__wrapper{{/if}}">
-          <div class="img-responsive img-responsive-panoramic h-100 {{imgClass}}">
-            {{#if img-path}}
+    <div class="card-wrapper shadow-sm rounded">
+      <div class="card no-after rounded">
+        {{#if img-path}}
+        <div class="img-responsive-wrapper">
+          <div class="img-responsive img-responsive-panoramic {{imgClass}}">
             <figure class="img-wrapper">
-              <img class="rounded-top img-fluid" src="{{card.img-path}}"
-                title="titolo immagine" alt="descrizione immagine">
+              <img class="" src="{{card.img-path}}" title="titolo immagine" alt="descrizione immagine">
             </figure>
-            {{/if}}
             {{#if card.tag}}
             <div class="card-calendar d-flex flex-column justify-content-center">
               <span class="card-date">{{card.date}}</span>
@@ -20,6 +18,7 @@
             {{/if}}
           </div>
         </div>
+        {{/if}}
         <div class="card-body ">
           <div class="category-top cmp-list-card-img__body">
             <a class="text-decoration-none fw-bold" href="#">{{card.category}}</a>

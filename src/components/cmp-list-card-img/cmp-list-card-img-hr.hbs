@@ -1,12 +1,16 @@
 <div class="row g-4">
   {{#each cards as |card|}}
   <div class="col-md-6 col-xl-4">
-    <div class="card-wrapper border border-light rounded shadow-sm cmp-list-card-img cmp-list-card-img-hr">
+    <div class="card-wrapper border border-light rounded shadow-sm">
       <div class="card no-after rounded">
         <div class="row g-2 g-md-0 flex-md-column">
           {{#if img-path}}
-          <div class="col-12">
-            <img class="rounded-top img-fluid img-responsive" src="{{img-path}}" title="titolo immagine" alt="descrizione immagine">
+          <div class="img-responsive-wrapper">
+            <div class="img-responsive img-responsive-panoramic {{imgClass}}">
+              <figure class="img-wrapper">
+                <img class="" src="{{img-path}}" title="titolo immagine" alt="descrizione immagine">
+              </figure>
+            </div>
           </div>
           {{/if}}
           <div class="col-12">
