@@ -122,60 +122,69 @@
     ],
     "card-news": [
       {
-        "category-date": "18 MAG 2022",
-        "title": "Tramvia, chiusure notturne in via Valfonda",
-        "description": "Da lunedì chiusa via Valfonda. In programma anche divieti di transito di notte in via Vittorio Emanuele II e via Pisacane.",
-        "img-path": "../assets/images/notizie-tramvia.png"
+        "category": "NOTIZIE",
+        "category-date": "28 FEB 2023",
+        "title": "Sport nel verde: le iniziative della prossima edizione",
+        "description": "Le informazioni per partecipare all’iniziativa rivolta a tutte le fasce d’età per promuovere l’attività motoria nelle aree verdi della città",
+        "img-path": "../assets/images/notizia-sport-nel-verde.png"
       },
       {
-        "category-date": "03 MAG 2022",
-        "title": "Tramvia, dibattito aperto a tutti i cittadini",
-        "description": "Tutte le informazioni utili sui principali cantieri attivi in città Tutte le informazioni utili sui principali cantieri attivi in città Tutte le informazioni utili sui cantieri.",
-        "img-path": "../assets/images/notizie-tramvia-2.png"
+        "category": "NOTIZIE",
+        "category-date": "10 GEN 2023",
+        "title": "Torneo di beneficienza “Tutti in pista”",
+        "description": "Dal 2 al 3 giugno torna il torneo di beneficienza “Tutti in pista”. La raccolta fondi finanzierà progetti sportivi per ragazzi e ragazze",
+        "img-path": "../assets/images/notizia-torneo-bici.png"
       },
       {
-        "category-date": "30 MAR 2022",
-        "title": "Tramvia, chiusure notturne in via Valfonda",
+        "category": "AVVISI",
+        "category-date": "10 FEB 2023",
+        "title": "Chiusa per ristrutturazione la piscina Minghetti",
         "imgClass": "pb-0",
-        "description": "Da lunedì chiusa via Valfonda. In programma anche divieti di transito di notte in via Vittorio Emanuele II e via Pisacane."
+        "description": "Partiti i lavori per l’adeguamento dell’impianto. La riapertura è prevista per giugno 2023."
       }
     ],
     "card-all-news": [
       {
-        "category-date": "18 MAG 2022",
-        "title": "Tramvia, chiusure notturne in via Valfonda",
-        "description": "Da lunedì chiusa via Valfonda. In programma anche divieti di transito di notte in via Vittorio Emanuele II e via Pisacane.",
-        "img-path": "../assets/images/notizie-tramvia.png"
+        "category": "NOTIZIE",
+        "category-date": "28 FEB 2023",
+        "title": "Dialoghi in Biblioteca - 'Il viaggio delle donne'",
+        "description": "Presentazione del libro di Alessandra Beltrame per la rassegna 'Dialoghi in Biblioteca0 alla Joppi",
+        "img-path": "../assets/images/notizia-dialoghi-biblioteca.png"
       },
       {
+        "category": "NOTIZIE",
         "category-date": "03 MAG 2022",
-        "title": "Tramvia, dibattito aperto a tutti i cittadini",
-        "description": "Tutte le informazioni utili sui principali cantieri attivi in città Tutte le informazioni utili sui principali cantieri attivi in città Tutte le informazioni utili sui cantieri.",
-        "img-path": "../assets/images/notizie-tramvia-2.png"
+        "title": "I giovedì dei piccoli”",
+        "description": "Attività dedicate ai più piccoli in tutte le ludoteche comunali",
+        "img-path": "../assets/images/notizia-ludoteca.png"
       },
       {
-        "category-date": "30 MAR 2022",
-        "title": "Tramvia, chiusure notturne in via Valfonda",
-        "imgClass": "pb-0",
-        "description": "Da lunedì chiusa via Valfonda. In programma anche divieti di transito di notte in via Vittorio Emanuele II e via Pisacane."
+        "category": "COMUNICATI",
+        "category-date": "1 MAR 2023",
+        "title": "Messa in sicurezza del silos vecchio di viale La Playa",
+        "description": "I lavori saranno consegnati con procedura d’urgenza e prevedono una durata di 33 giorni naturali e consecutivi",
+        "img-path": "../assets/images/notizia-sicurezza.png"
       },
       {
-        "category-date": "30 MAR 2022",
-        "title": "Tramvia, chiusure notturne in via Valfonda",
-        "imgClass": "pb-0",
-        "description": "Da lunedì chiusa via Valfonda. In programma anche divieti di transito di notte in via Vittorio Emanuele II e via Pisacane."
+        "category": "NOTIZIE",
+        "category-date": "27 FEB 2023",
+        "title": "Iniziano le asfaltature dei controviali in Viale Venezia",
+        "description": "A partire da lunedì 27.02.2023 e fino a venerdì 17.03.2023 sarà eseguito il rifacimento della pavimentazione bituminosa dei controviali Nord e Sud",
+        "img-path": "../assets/images/notizia-asfaltatura.png"
       },
       {
+        "category": "AVVISI",
         "category-date": "18 MAG 2022",
-        "title": "Tramvia, chiusure notturne in via Valfonda",
-        "description": "Da lunedì chiusa via Valfonda. In programma anche divieti di transito di notte in via Vittorio Emanuele II e via Pisacane.",
-        "img-path": "../assets/images/notizie-tramvia-3.png"
+        "title": "Avviso per adesione strutture convenzionate nido",
+        "description": "Le strutture per la prima infanzia (asili nido), che offrono i loro servizi nel territorio comunale, possono richiedere di convenzionarsi con il Comune per l'anno educativo 2023/2024.",
+        "imgClass": "pb-0"
       },
       {
-        "category-date": "03 MAG 2022",
-        "title": "Tramvia, dibattito aperto a tutti i cittadini",
-        "description": "In questi giorni si sono aperti o apriranno cantieri che prevedono lavori di risistemazione del fondo stradale,  di riqualificazione di spazi verdi.",
-        "img-path": "../assets/images/notizie-tramvia-4.png"
+        "category": "NOTIZIE",
+        "category-date": "07 FEB 2022",
+        "title": "Via San Paolo: sgomberata la baraccopoli",
+        "description": "Polizia municipale al lavoro tutta la giornata di sabato 4 febbraio",
+        "img-path": "../assets/images/notizia-sgombero.png"
       }
     ]
   }
