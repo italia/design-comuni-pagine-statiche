@@ -21,62 +21,61 @@
     </div>
 
     <div class="container py-5">
-      <h2 class="title-xxlarge mb-4">In evidenza</h2>
+      <h2 class="text-secondary mb-4">In evidenza</h2>
       {{>cmp-list-card-img/cmp-list-card-img-hr cards=cards.card-news}}
     </div>
 
     <div class="bg-grey-card py-5">
       <div class="container">
-        <h2 class="title-xxlarge mb-4">Esplora tutte le novità</h2>
+        <h2 class="text-secondary mb-4">Esplora tutte le novità</h2>
         {{> cmp-input-search/input-search
             id="autocomplete-three"
             placeholder-text="Cerca per parola chiave"
             btnSearch=true
             label-text="cerca"
-            search-subtitle=true
+            search-subtitle=false
             text-subtitle="63 novità trovate in ordine alfabetico"
             text-subtitle-class="u-grey-light text-paragraph-card mt-2 mb-30 mt-lg-3 mb-lg-40"
-            wrapper-class="mb-0"
             icon-class="icon-primary"
-          }}
+        }}
         {{>cmp-list-card-img/cmp-list-card-img-hr cards=cards.card-all-news rowClass="pb-4"}}
-        <p class="text-center text-paragraph-regular-medium mt-4 mb-0">Nessun altro risultato</p>
+
       </div>
     </div>
 
 
     <div class="container py-5" id="argomento">
-      <h2 class="title-xxlarge mb-4">Esplora per categoria</h2>
+      <h2 class="text-secondary mb-4">Esplora per categoria</h2>
       <div class="row g-4">
 
         <div class="col-md-6 col-xl-4">
-          {{>cmp-card/cmp-card-simple
-        borderlight=true
-        classTitle="title-xlarge"
-        card-title="Notizie"
-        data-element="news-category-link"
-        card-text="Gli ultimi aggiornamenti sugli avvenimenti e la vita culturale nel Comune."
-        }}
+          {{> cmp-card/cmp-card-simple
+              borderlight=true
+              classTitle="title-xlarge"
+              card-title="Notizie"
+              data-element="news-category-link"
+              card-text="Gli ultimi aggiornamenti sugli avvenimenti e la vita culturale nel Comune."
+          }}
         </div>
 
         <div class="col-md-6 col-xl-4">
-          {{>cmp-card/cmp-card-simple
-        borderlight=true
-        classTitle="title-xlarge"
-        card-title="Comunicati"
-        data-element="news-category-link"
-        card-text="Le comunicazioni ufficiali del Sindaco, degli organi politici e degli uffici comunali."
-        }}
+          {{> cmp-card/cmp-card-simple
+              borderlight=true
+              classTitle="title-xlarge"
+              card-title="Comunicati"
+              data-element="news-category-link"
+              card-text="Le comunicazioni ufficiali del Sindaco, degli organi politici e degli uffici comunali."
+          }}
         </div>
 
         <div class="col-md-6 col-xl-4">
-          {{>cmp-card/cmp-card-simple
-        borderlight=true
-        classTitle="title-xlarge"
-        card-title="Avvisi"
-        data-element="news-category-link"
-        card-text="Bandi di gara, avvisi di concorso e tutte le opportunità per cittadini e imprese."
-        }}
+          {{> cmp-card/cmp-card-simple
+              borderlight=true
+              classTitle="title-xlarge"
+              card-title="Avvisi"
+              data-element="news-category-link"
+              card-text="Bandi di gara, avvisi di concorso e tutte le opportunità per cittadini e imprese."
+          }}
         </div>
       </div>
     </div>
