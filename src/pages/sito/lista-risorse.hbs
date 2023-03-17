@@ -12,8 +12,9 @@
     <div class="row justify-content-center row-shadow">
       <div class="col-12 col-lg-10">
         {{>cmp-hero/cmp-hero
-        hero-title="Notizie"
-        hero-text="Tutte le novità comunali per i cittadini per restare aggiornati."
+        hero-title="Titolo della pagina lista con risorse in evidenza e lista risorse"
+        hero-text="Breve sommario dei contenuti presenti in questa pagina, generalmene intesa con la descrizione della tipologia di
+        contenuti"
         wrapper-class="pt-0 ps-0 pb-4 pb-lg-60"}}
       </div>
     </div>
@@ -38,7 +39,37 @@
         icon-class="icon-primary"
       }}
       {{>cmp-list-card-img/cmp-list-card-img-hr cards=cards.card-all-news}}
-      <p class="text-center text-paragraph-regular-medium mt-4 mb-0">Nessun altro risultato</p>
+      
+      <div class="row my-4">
+        <nav class="pagination-wrapper justify-content-center" aria-label="Navigazione centrata">
+          <ul class="pagination">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" tabindex="-1" aria-hidden="true">
+                <svg class="icon icon-primary">
+                  <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-chevron-left"></use>
+                </svg>
+                <span class="visually-hidden">Pagina precedente</span>
+              </a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-current="page">
+                <span class="d-inline-block d-sm-none">Pagina </span>1
+              </a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">
+                <span class="visually-hidden">Pagina successiva</span>
+                <svg class="icon icon-primary">
+                  <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-chevron-right"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
     </div>
   </div>
 
