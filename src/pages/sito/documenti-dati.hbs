@@ -22,66 +22,7 @@
   <div class="container py-5">
     <h2 class="title-xxlarge mb-4">In evidenza</h2>
     <div class="row g-4">
-      <div class="col-sm-6 col-lg-4">
-        <div class="card-wrapper rounded shadow-sm border border-light pb-0">
-          <div class="card bg-none no-after">
-            <div class="card-body">
-              <div class="categoryicon-top">
-                <svg class="icon icon-sm" aria-hidden="true">
-                  <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-file"></use>
-                </svg>
-                <span class="text fw-semibold">
-                  <a href="#" class="text-decoration-none">Bandi e avvisi</a></span>
-              </div>
-              <a href="#" class="text-decoration-none">
-                <h3 class="card-title h4">Avviso per richiedere il bonus idrico integrativo 2022</h3>
-              </a>
-              <p class="text-secondary">Avviata la procedura per richiedere il contributo finalizzato alla riduzione dei costi della bolletta dell'acqua o delle situazioni di morosità pregresse.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-6 col-lg-4">
-        <div class="card-wrapper rounded shadow-sm border border-light pb-0">
-          <div class="card bg-none no-after">
-            <div class="card-body">
-              <div class="categoryicon-top">
-                <svg class="icon icon-sm" aria-hidden="true">
-                  <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-file"></use>
-                </svg>
-                <span class="text fw-semibold">
-                  <a href="#" class="text-decoration-none">Bandi e avvisi</a></span>
-              </div>
-              <a href="#" class="text-decoration-none">
-                <h3 class="card-title h4">Borsa di studio nazionale, anno scolastico 2021/2022</h3>
-              </a>
-              <p class="text-secondary">Il contributo è rivolto agli studenti iscritti nelle scuole secondarie di secondo grado, statali e paritarie, resdienti nel comune.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-6 col-lg-4">
-        <div class="card-wrapper rounded shadow-sm border border-light pb-0">
-          <div class="card bg-none no-after">
-            <div class="card-body">
-              <div class="categoryicon-top">
-                <svg class="icon icon-sm" aria-hidden="true">
-                  <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-file"></use>
-                </svg>
-                <span class="text fw-semibold">
-                  <a href="#" class="text-decoration-none">Bandi e avvisi</a>
-                  </span>
-              </div>
-              <a href="#" class="text-decoration-none">
-                <h3 class="card-title h4">Avviso iscrizioni al servizio di mensa scolastica per l'anno 2022/2023</h3>
-              </a>
-              <p class="text-secondary">Le iscrizioni al servizio sono aperte per nuovi iscritti e riconferme.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      {{>cmp-list-card-img/cmp-list-card cards=cards.card-docs rowClass="pb-4"}}
     </div>
   </div>
 
@@ -94,14 +35,14 @@
         placeholder-text="Cerca per parola chiave"
         btnSearch=true
         search-subtitle=true
-        text-subtitle="62 notizie trovate in ordine alfabetico"
+        text-subtitle="3 documenti trovati in ordine alfabetico"
         text-subtitle-class="u-grey-light text-paragraph-card mt-2 mb-30 mt-lg-3 mb-lg-40"
         wrapper-class="mb-0"
         icon-class="icon-primary"
         }}
         
 
-      {{>cmp-list-card-img/cmp-list-card-img-hr cards=cards.card-all-news rowClass="pb-4"}}
+      {{>cmp-list-card-img/cmp-list-card cards=cards.card-docs rowClass="pb-4"}}
       <p class="text-center text-paragraph-regular-medium mt-4 mb-0">Nessun altro risultato</p>
     </div>
   </div>

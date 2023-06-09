@@ -186,6 +186,24 @@
         "description": "Polizia municipale al lavoro tutta la giornata di sabato 4 febbraio",
         "img-path": "../assets/images/notizia-sgombero.png"
       }
+    ],
+    "card-docs": [
+      {
+        "category": "Modulistica",
+        "title": "Certificato di destinazione urbanistica",
+        "description": "Modello di domanda per richiedere il certificato di destinazione urbanistica"
+      },
+      {
+        "category": "Atto normativo",
+        "title": "Contributo una tantum per i nati nell'anno 2022",
+        "description": "Avviso per richiedere il contributo economico destinato ai nati nell'anno 2022 e residenti nel tuo Comune"
+      },
+      {
+        "category": "Documento Albro Pretorio",
+        "category-date": "28/02/2023",
+        "title": "Accesso agli atti documentale",
+        "description": "L'accesso agli atti è il diritto riconosciuto ed esercitato da tutti i soggetti che dimostrano di avere un interesse diretto, concreto e attuale"
+      }
     ]
   }
 }
