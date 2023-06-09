@@ -3,26 +3,21 @@
   <div class="col-md-6 col-xl-4">
     <div class="card-wrapper border border-light rounded shadow-sm pb-0">
       <div class="card no-after rounded">
-        <div class="row g-2 g-md-0 flex-md-column">
-          <div class="col-12">
-            <div class="card-body rounded-top">
-              {{#if card.category}}
-              <div class="categoryicon-top">
-                <svg class="icon icon-sm" aria-hidden="true">
-                  <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-file"></use>
-                </svg>
-                <span class="text fw-semibold">
-                  <a class="category text-decoration-none" href="#">{{card.category}}</a>
-                </span>
-              </div>
-              
-              {{/if}}
-              <a href="#" class="text-decoration-none" data-element="news-category-link">
-                <h3 class="card-title h4">{{card.title}}</h3>
-              </a>
-              <p class="text-secondary mb-0">{{card.description}}</p>
-            </div>
-          </div>
+        <div class="card-body rounded-top">
+          {{#if card.category}}
+          <div class="categoryicon-top">
+            <svg class="icon icon-sm" aria-hidden="true">
+              <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-file"></use>
+            </svg>
+            <span class="text fw-semibold">
+              <a class="category text-decoration-none" href="#">{{card.category}}</a>
+            </span>
+          </div> 
+          {{/if}}
+          <a href="#" class="text-decoration-none" data-element="news-category-link">
+            <h3 class="card-title h4">{{card.title}}</h3>
+          </a>
+          <p class="text-secondary mb-0">{{card.description}}</p>
         </div>
       </div>
     </div>
