@@ -2,7 +2,7 @@
 {{#each cards as |card|}}
   <div class="col-lg-6 col-xl-4">
     <!--start card-->
-    <div class="card-wrapper shadow-sm rounded">
+    <div class="card-wrapper border border-light rounded shadow-sm">
       <div class="card no-after rounded">
         {{#if img-path}}
         <div class="img-responsive-wrapper">
@@ -20,16 +20,16 @@
         </div>
         {{/if}}
         <div class="card-body">
-          <div class="category-top cmp-list-card-img__body">
-            <a class="text-decoration-none fw-bold" href="#">{{card.category}}</a>
+          <div class="category-top">
+            <a class="category text-decoration-none" href="#">{{card.category}}</a>
             {{#if card.category-date}}
             <span class="data">{{card.category-date}}</span>
             {{/if}}
           </div>
-          <h3 class=""><a href="#" class="text-decoration-none">{{card.title}}</a></h3>
-          <p class="text-secondary">{{card.description}}</p>
+          <h3 class="card-title"><a href="#" class="text-decoration-none">{{card.title}}</a></h3>
+          <p class="card-text text-secondary pb-3">{{card.description}}</p>
 
-          <a class="read-more t-primary text-uppercase cmp-list-card-img__body-link" href="#" aria-label="Leggi di più sulla pagina di {{card.title}}">
+          <a class="read-more t-primary text-uppercase" href="#" aria-label="Leggi di più sulla pagina di {{card.title}}">
             <span class="text">{{card.link}}</span>
             <span class="visually-hidden">su Lorem ipsum dolor sit amet, consectetur adipiscing elit…</span>
             <svg class="icon icon-primary icon-xs ml-10">
