@@ -32,7 +32,7 @@
           <a class="read-more t-primary text-uppercase" href="#" aria-label="Leggi di più sulla pagina di {{card.title}}">
             <span class="text">{{card.link}}</span>
             <span class="visually-hidden">su Lorem ipsum dolor sit amet, consectetur adipiscing elit…</span>
-            <svg class="icon icon-primary icon-xs ml-10">
+            <svg class="icon icon-inverse icon-xs ml-10">
               <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#{{card.icon}}"></use>
             </svg>
           </a>
@@ -43,15 +43,27 @@
 {{/each}}
   <!--end card-->
 
-  {{#if buttonNext}}
-  <div class="d-flex justify-content-end">
-    {{#if btn-data-element}}
-    {{>cmp-button/cmp-button data-element=btn-data-element primary="true" class="px-5 py-3 full-mb" aria-label=aria-label }}
-    {{else}}
-    {{>cmp-button/cmp-button primary="true" class="px-5 py-3 full-mb" aria-label=aria-label }}
-    {{/if}}
-  </div>
+{{#if button-next}}
+<div class="d-flex justify-content-end">
+  {{#if btn-data-element}}
+  <a href="#" class="btn btn-outline-primary full-mb" aria-label=aria-label data-element=btn-data-element>
+    {{btn-label}} 
+    <svg class="icon icon-primary icon-xs ml-10">
+      <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-arrow-right"></use>
+    </svg>
+  </a>
+  {{!-- {{>cmp-button/cmp-button data-element=btn-data-element primary="true" class="px-5 py-3 full-mb" aria-label=aria-label }} --}}
+  {{else}}
+    <a href="#" class="btn btn-outline-primary full-mb" aria-label=aria-label>
+      {{btn-label}}
+      <svg class="icon icon-primary icon-xs ml-10">
+        <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-arrow-right"></use>
+      </svg>
+    </a>
+  {{!-- {{>cmp-button/cmp-button primary="true" class="px-5 py-3 full-mb" aria-label=aria-label }} --}}
   {{/if}}
+</div>
+{{/if}}
 
 </div>
 
