@@ -46,7 +46,7 @@
 {{#if button-next}}
 <div class="d-flex justify-content-end">
   {{#if btn-data-element}}
-  <a href="#" class="btn btn-outline-primary full-mb" aria-label=aria-label data-element=btn-data-element>
+  <a href="#" class="btn btn-outline-primary full-mb" data-element={{btn-data-element}}>
     {{btn-label}} 
     <svg class="icon icon-primary icon-xs ml-10">
       <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-arrow-right"></use>
@@ -54,7 +54,7 @@
   </a>
   {{!-- {{>cmp-button/cmp-button data-element=btn-data-element primary="true" class="px-5 py-3 full-mb" aria-label=aria-label }} --}}
   {{else}}
-    <a href="#" class="btn btn-outline-primary full-mb" aria-label=aria-label>
+    <a href="#" class="btn btn-outline-primary full-mb">
       {{btn-label}}
       <svg class="icon icon-primary icon-xs ml-10">
         <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-arrow-right"></use>
