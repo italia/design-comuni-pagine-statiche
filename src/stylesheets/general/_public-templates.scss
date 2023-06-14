@@ -284,13 +284,13 @@ a.read-more {
   }
 }
 
-.sport-wrapper,
-.office-section,
-.contact-section {
-  .card.card-teaser-info {
-    border-left: 8px solid rgba(0, 122, 82, 0.1);
-  }
+// .sport-wrapper,
+// .office-section,
+// .contact-section {
+.card.card-teaser-info {
+  border-left: 8px solid rgba(0, 122, 82, 0.1);
 }
+// }
 
 .border-semi-dark {
   border-color: #455B71;
