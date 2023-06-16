@@ -42,6 +42,15 @@
     }
   }
 
+  .it-brand-wrapper .icon image {
+    width: 48px;
+    height: 48px;
+    @include media-breakpoint-up(lg) {
+      width: 82px;
+      height: 82px;
+    }
+  }
+
   .navbar .navbar-collapsable .navbar-nav li a.nav-link.active {
     @include media-breakpoint-down(md) {
       background-color: rgba($color: #007A52, $alpha: 0.05);
