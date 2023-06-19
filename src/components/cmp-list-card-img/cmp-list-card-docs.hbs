@@ -14,7 +14,7 @@
             </span>
           </div> 
           {{/if}}
-          <a href="#" class="text-decoration-none" data-element="news-category-link">
+          <a {{#if card.url}} href="{{card.url}} {{else}} href="#"{{/if}} class="text-decoration-none" data-element="news-category-link">
             <h3 class="card-title h4">{{card.title}}</h3>
           </a>
           <p class="text-secondary mb-0">{{card.description}}</p>
