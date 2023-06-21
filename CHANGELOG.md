@@ -1,3 +1,19 @@
+## [2.3.2](https://github.com/italia/design-comuni-pagine-statiche/compare/v2.3.1...v2.3.2) (2023-06-21)
+
+
+### Bug Fixes
+
+* added page list templates ([#113](https://github.com/italia/design-comuni-pagine-statiche/issues/113)) ([3e49246](https://github.com/italia/design-comuni-pagine-statiche/commit/3e492467c0c9d15b32651ff38939aaa14b22adb2))
+* component rating ([#124](https://github.com/italia/design-comuni-pagine-statiche/issues/124)) ([92cf3ad](https://github.com/italia/design-comuni-pagine-statiche/commit/92cf3ad52f09603473a744d4591d418d721455a8)), closes [#117](https://github.com/italia/design-comuni-pagine-statiche/issues/117)
+* content and design bugs ([#122](https://github.com/italia/design-comuni-pagine-statiche/issues/122)) ([21d1f0f](https://github.com/italia/design-comuni-pagine-statiche/commit/21d1f0f37d337ce28db68a95188e50bd7617a746))
+* data-element in service page ([#125](https://github.com/italia/design-comuni-pagine-statiche/issues/125)) ([ed4324b](https://github.com/italia/design-comuni-pagine-statiche/commit/ed4324bea4aa5bfb4a5f2499bf7c2cfee9720795))
+* novita template update ([#111](https://github.com/italia/design-comuni-pagine-statiche/issues/111)) ([ab95d8d](https://github.com/italia/design-comuni-pagine-statiche/commit/ab95d8da1f042f5bd342fc02cce0a4c097676f48))
+* typo and thumbnail ([#112](https://github.com/italia/design-comuni-pagine-statiche/issues/112)) ([d6a2136](https://github.com/italia/design-comuni-pagine-statiche/commit/d6a2136e80260cefea2a49496f08d163e5987cc9))
+* Updated rating title [#114](https://github.com/italia/design-comuni-pagine-statiche/issues/114) ([#120](https://github.com/italia/design-comuni-pagine-statiche/issues/120)) ([ebcb906](https://github.com/italia/design-comuni-pagine-statiche/commit/ebcb906b1d4df088d02e44b0ebbdc045ea4d0d0e))
+* updated the brand logo ([#121](https://github.com/italia/design-comuni-pagine-statiche/issues/121)) ([4855ce5](https://github.com/italia/design-comuni-pagine-statiche/commit/4855ce578b18a9038daf95c846c88cdfbb004cbf))
+
+
+
 ## [2.3.1](https://github.com/italia/design-comuni-pagine-statiche/compare/v2.3.0...v2.3.1) (2023-03-03)
 
 
