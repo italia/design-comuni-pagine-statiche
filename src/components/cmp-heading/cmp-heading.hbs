@@ -19,7 +19,7 @@
   {{/if}}
 
   {{#if subTitle}}
-  <p class="subtitle-small {{pClass}}">{{{subTitle}}}</p>
+  <p class="subtitle-small {{pClass}}" {{#if data-element}}data-element="{{data-element}}"{{/if}}>{{{subTitle}}}</p>
   {{/if}}
 
   {{#if label-tag}}
