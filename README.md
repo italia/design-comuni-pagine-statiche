@@ -15,7 +15,7 @@ Come _templating language_ è stato usato Handlebars, insieme a fogli di stile i
 
 ### Installazione e Sviluppo
 
-Per iniziare, è necessario installare le dipendenze del progetto:
+Per iniziare, è necessario `utilizzare una versione di Node uguale o superiore a 18` e installare le dipendenze del progetto:
 
 ```node
 
