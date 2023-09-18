@@ -103,8 +103,4 @@
     "progressbar.js": "^1.1.0",
     "uuid": "^8.3.2"
   }
-
-,"_resolved": "https://registry.npmjs.org/bootstrap-italia/-/bootstrap-italia-2.3.5.tgz"
-,"_integrity": "sha512-wboQrCC5ajO9niu8Z2LNMoFZA0eDgIXhf3VUrDPjGhE0V6gf3M7KxOz0IZwDzP8BK9TkoPtKI0zQlbJozBvUAQ=="
-,"_from": "bootstrap-italia@2.3.5"
 }
