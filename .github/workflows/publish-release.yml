@@ -11,10 +11,10 @@ jobs:
         with:
           fetch-depth: 0
           ref: main
-      - name: Use Node.js 14.x 🪢
+      - name: Use Node.js 18.x 🪢
         uses: actions/setup-node@v1
         with:
-          node-version: 14.x
+          node-version: 18.x
       - name: git config
         run: |
           git config user.name "${GITHUB_ACTOR}"
