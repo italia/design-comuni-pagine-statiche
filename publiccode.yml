@@ -2,7 +2,7 @@
 # metadata file that makes public software easily discoverable.
 # More info at https://github.com/publiccodeyml/publiccode.yml
 
-publiccodeYmlVersion: '0.3'
+publiccodeYmlVersion: '0.2'
 categories:
   - it-development
 description:
@@ -47,7 +47,7 @@ localisation:
     - it
   localisationReady: true
 logo: |-
-  https://raw.githubusercontent.com/italia/design-comuni-pagine-statiche/main/public/icons/logo-comune.svg
+  https://raw.githubusercontent.com/italia/design-comuni-pagine-statiche/main/src/images/logo-comune.svg
 maintenance:
   contacts:
     - name: Francesco Improta
