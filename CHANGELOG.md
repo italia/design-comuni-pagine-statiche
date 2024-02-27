@@ -1,3 +1,16 @@
+## [2.3.3](https://github.com/italia/design-comuni-pagine-statiche/compare/v2.3.2...v2.3.3) (2024-02-27)
+
+
+### Bug Fixes
+
+* breadcrumb path ([#142](https://github.com/italia/design-comuni-pagine-statiche/issues/142)) ([374ba8d](https://github.com/italia/design-comuni-pagine-statiche/commit/374ba8d037b1229979fb4afe43ca4277cf5f0fdf))
+* breadcrumb path ([#148](https://github.com/italia/design-comuni-pagine-statiche/issues/148)) ([02d1d8f](https://github.com/italia/design-comuni-pagine-statiche/commit/02d1d8f4fa7d88640a32439c15e035bad09e4b19))
+* links path ([#134](https://github.com/italia/design-comuni-pagine-statiche/issues/134)) ([98d390e](https://github.com/italia/design-comuni-pagine-statiche/commit/98d390e386e6c7405b227f416c64a68c4765be6a))
+* metatag audience name with audience type ([51db98c](https://github.com/italia/design-comuni-pagine-statiche/commit/51db98c339f26d3a0f6815c4a5d7550e9fc4c134))
+* nodejs 18 build ([447a6e4](https://github.com/italia/design-comuni-pagine-statiche/commit/447a6e4f9253214b88c0cfb90f7b526ef9d2de34))
+
+
+
 ## [2.3.2](https://github.com/italia/design-comuni-pagine-statiche/compare/v2.3.1...v2.3.2) (2023-06-21)
 
 
