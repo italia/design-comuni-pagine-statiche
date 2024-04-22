@@ -37,12 +37,32 @@
           h2-class="mb-0"
           margin-class="mb-0"
           header-m0=true
-          card-title="Codice avviso"
+          card-title="Avvisi di pagamento"
           required-icon=true
           }}
           <p class="subtitle-small pb-4 mb-0">Inserisci il codice di 18 cifre presente nell’avviso della multa.
             <a href="#" class="t-primary d-block d-lg-inline">Dove trovare il codice</a>
           </p>
+
+          <h3 class="h4 mb-3">Avvisi disponibili</h3>
+          <div class="cmp-card-radio mb-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="form-check m-0">
+                  <div class="radio-body border-bottom border-light pb-2">
+                    <input name="rate" type="radio" id="rate-1" required="">
+                    <label for="rate-1">Targa: CK 345 HB<br>Avviso: 3456 5678 1234 9012 53</label>
+                  </div>
+                  <div class="radio-body">
+                    <input name="rate" type="radio" id="rate-2">
+                    <label for="rate-2" class="active">Targa: CK 345 HB<br>Avviso: 5678 9012 3456 1234 323</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="h4 mb-3">Inserisci un codice avviso</h3>
           <div class="bg-white">
             {{> cmp-input/input type="text" id="code" name="code" label="Codice avviso" required=true
             formClass="mb-0 mt-0"}}
