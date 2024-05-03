@@ -340,7 +340,7 @@
       <div class="card has-bkg-grey shadow-sm p-4 pt-lg-30 pb-lg-30 pl-lg-30 pr-lg-30">
         <div class="card-header border-0 p-0 mb-lg-30 m-0">
           <div class="d-flex">
-                <h2 class="title-xxlarge mb-0 icon-required">Codice avviso</h2>
+                <h2 class="title-xxlarge mb-0 icon-required">Avvisi di pagamento</h2>
           </div>
     
     
@@ -349,20 +349,37 @@
         </div>
         <div class="card-body p-0">
           
-                    <p class="subtitle-small pb-3 mb-4">Inserisci il codice di 18 cifre presente nell’avviso della multa.
+                    <p class="subtitle-small pb-3 mb-4">Seleziona un codice avviso tra quelli già disponibili oppure inseriscilo
+                      manualmente.
                       <a href="#" class="t-primary d-block d-lg-inline mt-1">Dove trovare il codice</a>
                     </p>
           
-               
-                      
-                        <div class="form-group cmp-input mb-4 mb-lg-30 mt-0">
-                          <label class="cmp-input__label" for="code">Codice avviso*</label>
-                           <input type="text" class="form-control just-validate-success-field" id="code" name="code" required value="1234 5678 9012 3456 78 ">
+                    <h3 class="h4 mb-3">Avvisi disponibili</h3>
+                    <div class="cmp-card-radio mb-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="form-check m-0">
+                            <div class="radio-body border-bottom border-light pb-2">
+                              <input name="rate" type="radio" id="rate-1" required="">
+                              <label for="rate-1">Targa: CK 345 HB<br>Avviso: 3456 5678 1234 9012 53</label>
+                            </div>
+                            <div class="radio-body">
+                              <input name="rate" type="radio" id="rate-2">
+                              <label for="rate-2" class="active">Targa: CK 345 HB<br>Avviso: 5678 9012 3456 1234 323</label>
+                            </div>
+                          </div>
                         </div>
-                      
-                      
+                      </div>
+                    </div>
           
-          
+                    <h3 class="h4 mb-3">Inserisci un codice avviso</h3>
+                    
+                      <div class="form-group cmp-input mb-4 mb-lg-30 mt-0">
+                        <label class="cmp-input__label" for="code">Codice avviso*</label>
+                         <input type="text" class="form-control just-validate-success-field" id="code" name="code" required value="1234 5678 9012 3456 78 ">
+                      </div>
+                    
+                    
           
                     <div class="cmp-info-summary bg-white p-3 p-lg-4 mb-4 mb-lg-30">
                       <div class="card">
