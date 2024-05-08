@@ -64,7 +64,7 @@
   },
   "dependencies": {
     "@splidejs/splide": "^4.0.1",
-    "bootstrap-italia": "^2.3.5",
+    "bootstrap-italia": "^2.8.5",
     "chalk": "^2.4.2",
     "clear": "^0.1.0",
     "command-line-args": "^5.2.1",
