@@ -1,13 +1,12 @@
 .it-footer {
   .footer-heading-title {
-    @include font(14, 14);
-    font-weight: 700;
-    line-height: 1.5;
+    font-size: .875rem;
+    line-height: 1rem;
     text-transform: uppercase;
 
     @include media-breakpoint-up(md) {
-      margin-bottom: 0.889rem;
-      padding-bottom: 0.889rem;
+      margin-bottom: 0.875rem;
+      padding-bottom: 0.875rem;
       border-bottom: 1px solid rgba($color: #fff, $alpha: 0.5);
     }
   }
@@ -26,10 +25,6 @@
 
   .it-brand-wrapper {
     padding: 0;
-  }
-
-  a {
-    color: #fff;
   }
 
   .logo-wrapper {
@@ -51,42 +46,31 @@
 
   a {
     @include font(16, 16);
+    color: $gray-300;
     text-decoration: underline;
 
     &:hover {
-      text-decoration: none;
       color: #fff;
     }
   }
 
-  .footer-list {
-    a {
-      line-height: 2;
-      color: #fff;
-    }
-
-    &+.footer-heading-title {
-      margin-top: 2.667rem;
-    }
+  .footer-list +.footer-heading-title {
+    margin-top: 2.5rem;
   }
 
   .footer-info {
-    @include font(16, 16);
+    font-size: 1rem;
     line-height: 1.5;
   }
 
   .footer-bottom {
-    margin-top: 1.667rem;
-    padding-top: 1.333rem;
-    padding-bottom: 2.5rem;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     border-top: 1px solid rgba($color: #fff, $alpha: 0.5);
 
-    a {
-      line-height: 1.5;
-
-      &+a {
-        margin-left: 5rem;
-      }
+    a + a {
+      margin-left: 2rem;
     }
   }
 }
