@@ -42,7 +42,7 @@ const stylelint = new StyleLintPlugin();
 
 // Extract CSS
 const cssExtract = new MiniCssExtractPlugin({
-  filename: 'assets/css/style.css',
+  filename: 'assets/css/bootstrap-italia-comuni.css',
 });
 
 // Webpack bar

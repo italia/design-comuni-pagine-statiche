@@ -8,7 +8,7 @@ module.exports = {
   context: path.join(config.root, config.paths.src),
   entry: [
     path.join(config.root, config.paths.src, 'javascripts/scripts.js'),
-    path.join(config.root, config.paths.src, 'stylesheets/styles.scss'),
+    path.join(config.root, config.paths.src, 'stylesheets/bootstrap-italia-comuni.scss'),
   ],
   optimization: {
     minimize: true,
