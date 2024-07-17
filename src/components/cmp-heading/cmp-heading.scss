@@ -19,16 +19,15 @@
   
       @include media-breakpoint-up(md) {
         width: 18.889rem;
-        margin-top: 1.4rem;
       }
     }
   }
 
   &__tag {
-    margin: 1.563rem 0 0.625rem 0;
+    margin: 1.5rem 0 0.625rem 0;
 
     @include media-breakpoint-up(md) {
-      margin: 1.389rem 0;
+      margin: 1.25rem 0;
     }
   }
 
