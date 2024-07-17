@@ -86,7 +86,7 @@ async function runSetup() {
       '// Load CSS Reset from NPM\n'
       + '@import "~' + questions.cssreset + '"\n';
 
-    fs.writeFile(path.join(ROOT, '/src/stylesheets/styles.scss'), cssContent, (err) => {});
+    fs.writeFile(path.join(ROOT, '/src/stylesheets/bootstrap-italia-comuni.scss'), cssContent, (err) => {});
   }
 
   // Add jQuery to scripts

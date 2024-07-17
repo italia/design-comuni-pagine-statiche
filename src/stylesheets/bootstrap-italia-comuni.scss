@@ -1,0 +1,245 @@
+// SETTINGS ------------------------------------------------------------------------------- //
+
+// PRIMARY COLOR
+// set the primary color by changing Hue, Saturation, Brightness values
+$primary-h: 160;
+$primary-s: 100;
+$primary-b: 48;
+
+// BS ITALIA - VERSION
+// useful to check for the current version
+@import '../../node_modules/bootstrap-italia/src/scss/custom/version';
+
+// BS ITALIA - FUNCTIONS & COLORS
+@import '../../node_modules/bootstrap-italia/src/scss/functions';
+@import '../../node_modules/bootstrap-italia/src/scss/utilities/colors_vars';
+
+// COMUNI - VARIABLES
+@import 'variables';
+
+// BS ITALIA - VARIABLES
+@import "../../node_modules/bootstrap-italia/src/scss/variables";
+
+// BS 5 ----------------------------------------------------------------------------------- //
+
+// BS5 Configuration
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/mixins';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/mixins/buttons';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/mixins/text-emphasis';
+@import '../../node_modules/bootstrap/scss/maps';
+@import '../../node_modules/bootstrap/scss/utilities';
+
+// BS5 Layout & components
+@import '../../node_modules/bootstrap/scss/root';
+@import '../../node_modules/bootstrap/scss/reboot';
+@import '../../node_modules/bootstrap/scss/type';
+@import '../../node_modules/bootstrap/scss/images';
+@import '../../node_modules/bootstrap/scss/containers';
+@import '../../node_modules/bootstrap/scss/grid';
+@import '../../node_modules/bootstrap/scss/tables';
+@import '../../node_modules/bootstrap/scss/forms';
+@import '../../node_modules/bootstrap/scss/buttons';
+@import '../../node_modules/bootstrap/scss/transitions';
+@import '../../node_modules/bootstrap/scss/dropdown';
+@import '../../node_modules/bootstrap/scss/button-group';
+@import '../../node_modules/bootstrap/scss/nav';
+@import '../../node_modules/bootstrap/scss/navbar';
+@import '../../node_modules/bootstrap/scss/card';
+@import '../../node_modules/bootstrap/scss/accordion';
+@import '../../node_modules/bootstrap/scss/breadcrumb';
+@import '../../node_modules/bootstrap/scss/pagination';
+@import '../../node_modules/bootstrap/scss/badge';
+@import '../../node_modules/bootstrap/scss/alert';
+@import '../../node_modules/bootstrap/scss/progress';
+@import '../../node_modules/bootstrap/scss/list-group';
+@import '../../node_modules/bootstrap/scss/close';
+@import '../../node_modules/bootstrap/scss/toasts';
+@import '../../node_modules/bootstrap/scss/modal';
+@import '../../node_modules/bootstrap/scss/tooltip';
+@import '../../node_modules/bootstrap/scss/popover';
+@import '../../node_modules/bootstrap/scss/carousel';
+@import '../../node_modules/bootstrap/scss/spinners';
+@import '../../node_modules/bootstrap/scss/offcanvas';
+@import '../../node_modules/bootstrap/scss/placeholders';
+
+// Helpers
+@import '../../node_modules/bootstrap/scss/helpers';
+
+// Utilities
+@import '../../node_modules/bootstrap/scss/utilities/api';
+
+// BS ITALIA ----------------------------------------------------------------------------------- //
+
+// Custom styles
+@import '../../node_modules/bootstrap-italia/src/scss/custom/type';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/grid';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/tables';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/breadcrumb';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/modal';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/accordion';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/carousel';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/calendar';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/alert';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/buttons';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/font';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/forms';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/form-input-file';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/form-input-number';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/form-input-upload';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/form-toggles';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/form-password';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/form-select';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/form-transfer';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/dropdown';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/pager';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/tab';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/cookiebar';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/hero';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/forward';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/back-to-top';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/autocomplete';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/linklist';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/navigation';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/skiplinks';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/affix';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/sidebar';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/sidebarthemes';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/megamenu';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/bottomnav';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/navscroll';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/navscrolltheme';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/callout';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/toolbar';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/sections';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/notifications';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/avatar';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/thumbnav';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/steppers';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/card';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/imgresponsive';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/overlay-panel';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/progress-donuts';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/progress-bars';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/progress-spinners';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/gridlist';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/popover';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/tooltip';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/list';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/chips';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/rating';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/dimmer';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/timeline';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/anchor';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/map';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/point-list';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/rating-list';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/badge';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/figcaption';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/sticky';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/print';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/code';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/images';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/just-validate';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/accessible-autocomplete';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/page-scroll';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/form-datepicker';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/timepicker';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/headerslim';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/headerslimtheme';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/headercenter';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/headercentertheme';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/headernavbar';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/headernavbartheme';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/header';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/footer';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/navigationtheme';
+@import '../../node_modules/bootstrap-italia/src/scss/custom/componente-base';
+
+// utilities
+@import '../../node_modules/bootstrap-italia/src/scss/utilities/text-colors';
+@import "../../node_modules/bootstrap-italia/src/scss/utilities/colors.scss";
+@import '../../node_modules/bootstrap-italia/src/scss/utilities/focus';
+@import '../../node_modules/bootstrap-italia/src/scss/utilities/icons';
+
+// splide carousel
+@import '@splidejs/splide/src/css/core/index';
+
+// COMUNI - CUSTOM STYLES
+// Custom styles specifically designed for ‘Modello Comuni‘
+
+@import "custom/comuni-custom";
+
+@import "base/color";
+@import "base/functions";
+@import "base/mixins";
+@import "base/reset";
+@import "base/fonts";
+@import "headings/all";
+@import "base/global";
+
+@import "general/splide";
+@import "general/public-templates";
+
+//components
+// @import "../components/documents-alert/documents-alert";
+@import "../components/cmp-header/cmp-header";
+@import "../components/cmp-footer/cmp-footer";
+@import "../components/cmp-breadcrumbs/cmp-breadcrumbs";
+@import "../components/cmp-heading/cmp-heading";
+@import "../components/cmp-card/cmp-card";
+@import "../components/cmp-info-button-card/cmp-info-button-card";
+@import "../components/cmp-alert-box/cmp-alert-box";
+@import "../components/cmp-modal/cmp-modal";
+@import "../components/cmp-modal/cmp-modal-header-search";
+@import "../components/cmp-modal/modal-categories";
+@import "../components/cmp-modal/modal-address";
+@import "../components/cmp-card-radio/cmp-card-radio";
+@import "../components/cmp-nav-steps/cmp-nav-steps";
+@import "../components/cmp-info-progress/cmp-info-progress";
+@import "../components/cmp-icon-card/cmp-icon-card";
+@import "../components/cmp-info-summary/cmp-info-summary";
+@import "../components/cmp-ul-list/cmp-ul-list";
+@import "../components/cmp-card-img/cmp-card-img";
+@import "../components/cmp-navscroll/cmp-navscroll";
+@import "../components/cmp-card-latest-messages/cmp-card-latest-message";
+@import "../components/cmp-icon-link/cmp-icon-link";
+@import "../components/cmp-contacts/cmp-contacts";
+@import "../components/cmp-rating/cmp-rating";
+@import "../components/cmp-carousel/cmp-carousel";
+@import "../components/cmp-disclaimer/cmp-disclaimer";
+@import "../components/cmp-timeline/cmp-timeline";
+@import "../components/cmp-button/cmp-button";
+@import "../components/cmp-tag/cmp-tag";
+@import "../components/cmp-input/input";
+@import "../components/cmp-checkbox/checkbox";
+@import "../components/cmp-text-button/cmp-text-button";
+@import "../components/cmp-icon-list/cmp-icon-list";
+@import "../components/cmp-select/select";
+@import "../components/cmp-upload/cmp-upload";
+@import "../components/cmp-nav-tab/cmp-nav-tab";
+@import "../components/cmp-accordion/cmp-accordion";
+@import "../components/cmp-filter/cmp-filter";
+@import "../components/cmp-input-search/input-search";
+@import "../components/cmp-dropdown/dropdown";
+@import "../components/cmp-input-autocomplete/input-autocomplete";
+@import "../components/cmp-text-area/text.area";
+@import "../components/cmp-map/cmp-map";
+@import "../components/cmp-hero/cmp-hero";
+@import "../components/cmp-hero-img/cmp-hero-img";
+@import "../components/cmp-list-card-img/cmp-list-card-img";
+
+@import "../components/cmp-info-radio/cmp-info-radio";
+@import "../components/cmp-input-search-button/cmp-input-search-button";
+@import "../components/cmp-category-list/category-list";
+@import "../components/cmp-input-calendar/input-calendar";
+@import "../components/cmp-toggle/toggle";
+@import "../components/cmp-info-checkbox/cmp-info-checkbox";
+@import "../components/cmp-callout/callout";
+@import "../components/cmp-modal/cmp-modal-scrollable";
+@import "../components/cmp-card-radio-list/cmp-card-radio-list";
+@import "../components/cmp-tot/cmp-tot";
+
+@import "../components/cmp-card-teaser/cmp-card-teaser";
+@import "general/print";
