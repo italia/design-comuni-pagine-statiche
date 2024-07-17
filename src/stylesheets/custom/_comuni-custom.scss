@@ -7,6 +7,10 @@ body {
   color: $btn-comuni-primary-hover;
 }
 
+a.text-decoration-none:hover {
+  text-decoration: underline !important;
+}
+
 //FOOTER
 .it-footer-main {
   background-color: $footer-comuni-bg-color;
