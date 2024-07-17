@@ -13,11 +13,11 @@
     margin-top: 1rem;
 
     @include media-breakpoint-up(sm) {
-     margin-top: 0.89rem;
+     margin-top: 0.875rem;
     }
 
     @include media-breakpoint-up(lg) {
-      margin-top: 1.78rem;
+      margin-top: 1.75rem;
     }
   }
 
@@ -59,12 +59,12 @@
     color: get-color(black, main);
 
     @include media-breakpoint-up(sm) {
-      padding-bottom: 0.44rem;
+      padding-bottom: 0.5rem;
     }
 
     @include media-breakpoint-up(md) {
       line-height: 1;
-      padding-bottom: 0.89rem;
+      padding-bottom: 0.875rem;
     }
   }
 
@@ -81,7 +81,7 @@
 
     @include media-breakpoint-up(md) {
       line-height: 1;
-      padding-bottom: 0.89rem;
+      padding-bottom: 0.875rem;
     }
   }
 
