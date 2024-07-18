@@ -1,15 +1,15 @@
 .modal-address {
 
-  input[type=text]{
+  input[type=text] {
     font-weight: 600;
     font-size: 1rem;
 
-    &#residence{
-      background-color: get-color(lighten,grey);
+    &#residence {
+      background-color: get-color(lighten, grey);
     }
 
-    &::placeholder{
-      color: get-color(black,main);
+    &::placeholder {
+      color: get-color(black, main);
     }
   }
 
@@ -48,6 +48,6 @@
 
     vertical-align: unset;
     margin: unset;
-   float: unset;
+    float: unset;
   }
 }
