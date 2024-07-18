@@ -28,16 +28,16 @@
     @include font(18, 48);
     display: flex;
     align-items: center;
-    box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
     padding: 1.125rem 1.5rem;
     font-weight: 600;
     line-height: 1.5;
     color: get-color(light, grey);
-    margin-bottom: 4.375rem;
+    margin-bottom: 4rem;
 
     @include media-breakpoint-up(sm) {
-      padding: 1rem 1.33rem;
-      margin-bottom: 3.89rem;
+      padding: 1rem 1.25rem;
+      margin-bottom: 3.5rem;
     }
 
     @include media-breakpoint-up(md) {
@@ -111,7 +111,7 @@
 
     input {
       background-color: #fff;
-      @include font(16, 40);
+      @include font(16, 32);
 
       @include media-breakpoint-up(md) {
         height: auto;
