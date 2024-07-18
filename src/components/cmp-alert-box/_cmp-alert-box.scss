@@ -2,10 +2,6 @@
   border-left: 2px solid get-color(error, main);
   padding-left: 1rem;
 
-  @include media-breakpoint-up(sm) {
-    padding-left: 0.889rem;
-  }
-
   .alert-box-icon {
     display: flex;
     align-items: center;
@@ -16,24 +12,16 @@
     svg {
       fill: get-color(error, main);
       margin-right: 0.625rem;
-
-      @include media-breakpoint-up(sm) {
-        margin-right: 0.555rem;
-      }
     }
   }
 
   .description {
     @include font(16, 16);
-    margin-top: 0.313rem;
+    margin-top: 0.5rem;
     line-height: 1.5;
-
-    @include media-breakpoint-up(sm) {
-      margin-top: 0.277rem;
-    }
   }
 
-  p{
+  p {
     margin: 0;
   }
 }
@@ -41,13 +29,8 @@
 .cmp-warning-box{
   padding-left: 1rem;
   margin-top: 1rem;
-
-  @include media-breakpoint-up(sm) {
-    padding-left: 0.889rem;
-    margin-top: 0.889rem;
-  }
   
-  p{
+  p {
     margin: 0;
   }
 
@@ -58,37 +41,22 @@
     text-transform: uppercase;
 
     svg {
-      max-width: 1.25;
+      max-width: 1.25rem;
       max-height: 1.5rem;
       fill: get-color(warning, main);
       margin-right: 0.25rem;
-
-      @include media-breakpoint-up(sm) {
-        max-width: 1.333rem;
-        max-height: 1.333rem;
-        margin-right: 0.22rem;
-      }
     }
   }
 
   .description {
-    @include font(14, 18);
-    margin-top: 0.313rem;
-    line-height: 1.2;
-
-    @include media-breakpoint-up(sm) {
-      margin-top: 0.277rem;
-    }
+    @include font(16, 16);
+    margin-top: 0.5rem;
+    line-height: 1.5;
 
     &.description-warning{
-      margin-top: 0.313rem;
-      margin-right: 0.313rem;
+      margin-top: 0.5rem;
+      margin-right: 0.5rem;
       font-weight: 400;
-
-      @include media-breakpoint-up(sm) {
-        margin-top: 0.277rem;
-        margin-right: 0.277rem;
-      }
     }
   }
 }
