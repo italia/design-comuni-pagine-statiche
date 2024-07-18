@@ -1,6 +1,12 @@
 body {
   color: $color-text-secondary;
 }
+
+// reset line-height for list of objects
+ul {
+  line-height: normal;
+}
+
 //BUTTONS
 .btn-primary,
 .btn-primary:hover {
