@@ -1,16 +1,21 @@
 .card-teaser {
   .teaser-content {
-    padding: 16px 24px;
+    padding: 1rem 1.5rem;
+  }
+
+  .card-body .card-title {
+    @include font(20, 24);
   }
 
   .card-body .card-text {
     font-family: $font-family-sans-serif;
+    font-size: 1rem;
   }
 
   .category-top {
     text-transform: uppercase;
     color: #435a70;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
   }
 
   .card-image {
