@@ -1,5 +1,10 @@
 .cmp-card-latest-messages{
-  p{
+
+  .card {
+    border: 1px solid get-color(light-grey, grey);
+  }
+
+  p {
     margin: 0;
   }
 
@@ -12,7 +17,7 @@
   }
 
   .green-title-big {
-    @include font(24, 24);
+    font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.2;
   }
