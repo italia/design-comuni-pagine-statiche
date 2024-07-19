@@ -63,7 +63,7 @@
       }
 
       svg {
-        fill: get-color(primary, main);
+        fill: $primary;
       }
     }
   }
@@ -87,13 +87,13 @@
       right: auto;
       transform: translateY(-50%);
       .icon{
-        fill: get-color(primary, main)
+        fill: $primary
       }
     }
 
     .input-group-prepend {
       svg {
-        fill: get-color(primary, main);
+        fill: $primary;
 
         @include media-breakpoint-down(xs) {
           width: 1rem;
@@ -147,7 +147,7 @@
 
       a {
         @include font(18, 18);
-        color: get-color(primary, main);
+        color: $primary;
         line-height: 1.5;
         text-decoration: underline;
 

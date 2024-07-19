@@ -68,7 +68,7 @@
         }
 
         .accordion-header .accordion-button {
-          color: get-color(primary, main);
+          color: $primary;
           @include font(14, 14);
           font-weight: 600;
           line-height: 1.6;

@@ -111,7 +111,7 @@
       }
 
       @include media-breakpoint-up(md) {
-        fill: get-color(primary, main);
+        fill: $primary;
       }
     }
   }

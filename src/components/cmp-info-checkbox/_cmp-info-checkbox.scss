@@ -17,7 +17,7 @@
   }
 
   &.has-border-green {
-    outline: 2px solid get-color(primary, main);
+    outline: 2px solid $primary;
   }
 
   .card {
@@ -47,7 +47,7 @@
   }
 
   .form-check [type=checkbox]:not(:checked)+label::after {
-    border-color: get-color(primary, main);
+    border-color: $primary;
   }
 
   .form-check [type=checkbox] + label:after {

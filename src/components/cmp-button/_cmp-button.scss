@@ -1,19 +1,19 @@
 .plus-icon {
   transform: rotate(45deg);
   max-width: 20px;
-  color: get-color(primary, main);
+  color: $primary;
 }
 
 .plus-text {
   display: flex;
   align-items: center;
-  color: get-color(primary, main);
+  color: $primary;
   gap: 7px;
   @include font(16, 16);
   font-weight: 600;
 
   &:hover {
-    color: get-color(primary, main);
+    color: $primary;
   }
 }
 

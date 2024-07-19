@@ -15,7 +15,7 @@
 
     .input-group-prepend {
       svg {
-        fill: get-color(primary, main);
+        fill: $primary;
 
         @include media-breakpoint-down(sm) {
           width: 1rem;

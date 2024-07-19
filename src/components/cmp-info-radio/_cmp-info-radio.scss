@@ -7,7 +7,7 @@
   }
 
   &.has-border-green {
-    outline: 2px solid get-color(primary, main);
+    outline: 2px solid $primary;
   }
 
   .info-wrapper {

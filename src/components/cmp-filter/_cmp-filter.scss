@@ -43,6 +43,6 @@
   .filter-wrapper button span {
     @include font(14, 16);
     font-weight: 600;
-    color: get-color(primary, main);
+    color: $primary;
   }
 }

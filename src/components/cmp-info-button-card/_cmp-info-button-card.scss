@@ -6,7 +6,7 @@
   }
 
   &.has-border-green {
-    outline: 2px solid get-color(primary, main);
+    outline: 2px solid $primary;
   }
 
   &.radio-card:not(:first-of-type) {
@@ -22,7 +22,7 @@
   }
 
   .form-check [type=radio]:not(:checked)+label::before {
-    border-color: get-color(primary, main);
+    border-color: $primary;
   }
 
   .radio-card {
