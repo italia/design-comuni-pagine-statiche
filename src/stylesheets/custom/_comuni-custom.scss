@@ -25,12 +25,16 @@ a.text-decoration-none:hover {
   background-color: $footer-comuni-bg-color;
 }
 
+.card {
+  border: 1px solid get-color(light-grey, grey);
+}
+
 //card bg
 .card.card-bg-dark {
   background-color: $card-comuni-bg-dark;
 }
 
-//card-teaser exeption
+//card-teaser
 .card-teaser .link-list-wrapper ul li a .icon-primary {
   fill: $link-list-comuni-color !important;
 }
