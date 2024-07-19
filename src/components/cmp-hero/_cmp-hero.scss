@@ -21,23 +21,21 @@
     }
   }
 
-  .it-hero-wrapper .it-hero-text-wrapper .hero-title{
+  .it-hero-wrapper .it-hero-text-wrapper .hero-title {
     @include font(40, 48);
     font-weight: 700;
     line-height: 48px;
     margin-bottom: 1rem;
   }
 
-  .it-hero-wrapper .it-hero-text-wrapper .hero-text{
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 28px;
+  .it-hero-wrapper .it-hero-text-wrapper .hero-text {
     max-width: 600px;
-    color: get-color(black, main);
 
     p {
-      color: get-color(black, main);
-      font-family: "Titillium Web" !important;
+      @include font(20, 24);
+      line-height: 1.5;
+      color: $color-text-secondary;
+      font-family: $font-family-sans-serif;
     }
   }
 }
