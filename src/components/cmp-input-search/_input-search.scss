@@ -1,27 +1,23 @@
-.cmp-input-search{
+.input-group .input-group-text {
+  height: 100%;
+}
+
+.cmp-input-search {
   .form-group {
     position: relative;
-    margin-bottom: 2.5rem;
-
-    @include media-breakpoint-up(sm) {
-      margin-bottom: 2.222rem;
-    }
+    margin-bottom: 2rem;
 
     @include media-breakpoint-up(lg) {
-      margin-bottom: 0.889rem;
+      margin-bottom: 1rem;
     }
 
     input {
-      padding-left: 2.8rem;
+      padding-left: 2.5rem;
       background-color: #fff;
-
-      @include media-breakpoint-up(sm) {
-        padding-left: 2.5rem;
-      }
     }
 
     label{
-      @include font(16,16);
+      font-size: 1rem;
       font-weight: 700;
       
       &.label-visible{
