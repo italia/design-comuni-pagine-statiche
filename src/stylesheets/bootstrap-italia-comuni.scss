@@ -169,14 +169,14 @@ $primary-b: 48;
 // COMUNI - CUSTOM STYLES
 // Custom styles specifically designed for ‘Modello Comuni‘
 
-@import "custom/comuni-custom";
-
 @import "base/color";
 @import "base/functions";
 @import "base/mixins";
 @import "base/reset";
 @import "headings/all";
 @import "base/global";
+@import "custom/comuni-custom";
+
 
 @import "general/splide";
 @import "general/public-templates";
