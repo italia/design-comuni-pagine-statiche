@@ -20,45 +20,25 @@
         padding: 0.5rem 0;
 
         @include media-breakpoint-up(sm) {
-          padding: 14px 0;
+          padding: 1rem 0;
         }
 
         li {
 
           &+li {
             margin-top: .75rem;
-
-            @include media-breakpoint-up(sm) {
-              margin-top: .67rem;
-            }
-          }
-
-          &:first-child {
-            margin-top: .375rem;
-
-            @include media-breakpoint-up(sm) {
-              margin-top: .33rem;
-            }
           }
 
           &:not(:last-child) {
             margin-bottom: 0.75rem;
-
-            @include media-breakpoint-up(sm) {
-              margin-bottom: 0.67rem;
-            }
           }
 
           a {
-            padding: 0 24px;
+            padding: 0 1.5rem;
             line-height: 1.5;
 
             &:hover span {
               color: $color-text-primary-hover;
-            }
-
-            &.active {
-              padding: 0 24px;
             }
           }
         }
@@ -73,9 +53,9 @@
 
         .accordion-header .accordion-button {
           color: $primary;
-          @include font(14, 14);
+          font-size: .875rem;
           font-weight: 600;
-          line-height: 1.6;
+          line-height: 1.5;
           display: flex;
           justify-content: space-between;
           align-items: center;
@@ -90,5 +70,5 @@
 }
 
 aside .cmp-navscroll .navbar.it-navscroll-wrapper .link-list-wrapper ul li a.active {
-  border-left: 2px solid #007a52;
+  border-left: 2px solid $primary;
 }
