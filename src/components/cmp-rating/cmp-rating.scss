@@ -1,15 +1,6 @@
 .cmp-rating {
   padding: 1.5rem 0;
 
-  @include media-breakpoint-up(sm) {
-    padding: 1.33rem 0;
-  }
-
-  /* .shadow-rating {
-    box-shadow: inset 0 -1.3rem 0.125rem -0.9rem rgb(0 0 0 / 5%);
-  }
- */
-
   .rating > label svg {
     fill: #7d97b0;
   }
@@ -26,12 +17,8 @@
   .card {
     padding: 1rem;
 
-    @include media-breakpoint-up(sm) {
-      padding: 0.89rem;
-    }
-
     @include media-breakpoint-up(lg) {
-      padding: 1.78rem;
+      padding: 1.5rem;
     }
 
     &::after {
@@ -42,10 +29,6 @@
   .card-header {
     padding: 0;
     margin-bottom: 1.25rem;
-
-    @include media-breakpoint-up(sm) {
-      margin-bottom: 1.11rem;
-    }
   }
 
   .card-body {
@@ -66,20 +49,18 @@
 
   .cmp-steps-rating {
     .step-title {
-      padding: 0.875rem;
-      margin-bottom: 2.375rem;
-
-      @include media-breakpoint-up(sm) {
-        padding: 0.78rem;
-        margin-bottom: 2.111rem;
-      }
+      padding: .875rem 0;
     }
 
     legend {
-      @include font(18, 18);
+      font-size: 1.125rem;
       font-weight: 600;
-      line-height: 36px;
+      line-height: 1.5;
       overflow: unset;
+    }
+
+    &__body {
+      padding: 1.5rem 0;
     }
   }
 
@@ -91,7 +72,7 @@
     .small-title {
       @include font(20, 20);
       font-weight: 600;
-      line-height: 1.55;
+      line-height: 1.5;
     }
 
     .step-wrapper {
@@ -103,7 +84,7 @@
     .step-title {
       @include font(18, 18);
       font-weight: 600;
-      line-height: 2;
+      line-height: 1.5;
     }
 
     .step {
@@ -125,20 +106,12 @@
 
     &__item:not(:last-child) {
       margin-bottom: 1rem;
-
-      @include media-breakpoint-up(sm) {
-        margin-bottom: 0.89rem;
-      }
     }
 
     .form-check [type="checkbox"] + label,
     .form-check [type="radio"] + label {
       height: auto;
       margin-bottom: 1.25rem;
-
-      @include media-breakpoint-up(sm) {
-        margin-bottom: 1.11rem;
-      }
     }
   }
 }
