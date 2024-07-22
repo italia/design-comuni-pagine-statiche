@@ -53,8 +53,12 @@
             padding: 0 24px;
             line-height: 1.5;
 
+            &:hover span {
+              color: $color-text-primary-hover;
+            }
+
             &.active {
-              padding: 0 24px 0 22px;
+              padding: 0 24px;
             }
           }
         }
