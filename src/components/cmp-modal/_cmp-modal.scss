@@ -73,20 +73,12 @@
 
     &-content {
       margin: 1.5rem 0;
-
-      @include media-breakpoint-up(sm) {
-        margin: 1.33rem 0;
-      }
     }
 
     &-title {
       width: 100%;
       margin-top: 1.5rem;
       @include font(24,28);
-
-      @include media-breakpoint-up(sm) {
-        margin-top: 1.33rem;
-      }
     }
 
     &-link {
