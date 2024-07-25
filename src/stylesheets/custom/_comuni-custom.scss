@@ -4,6 +4,10 @@ ul {
 }
 
 //BUTTONS
+.btn:hover {
+  color: $color-text-primary-hover;
+}
+
 .btn-primary,
 .btn-primary:hover {
   color: $btn-comuni-primary-hover;
