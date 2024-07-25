@@ -3,11 +3,7 @@
     color: get-color(light, grey);
     @include font(24, 32);
     font-weight: 600;
-    line-height: 1.875;
-
-    @include media-breakpoint-up(md) {
-      line-height: 2.222;
-    }
+    line-height: 1.25;
   }
 
   .card {
@@ -16,22 +12,12 @@
     }
 
     .card-body {
-      padding: 1.111rem 1rem 1rem 1rem;
+      padding: 1rem;
     }
 
     &.card-bg {
-      margin-left: .75rem;
-      margin-right: .75rem;
-
-      @include media-breakpoint-up(sm) {
-        margin-left: .67rem;
-        margin-right: .67rem;
-      }
-
-      @include media-breakpoint-up(lg) {
-        margin-left: .44rem;
-        margin-right: .44rem;
-      }
+      margin-left: 0.75rem;
+      margin-right: 0.75rem;
     }
   }
 
@@ -49,11 +35,7 @@
       color: get-color(light, grey);
       @include font(20, 24);
       font-weight: 600;
-      line-height: 1.5;
-
-      @include media-breakpoint-up(md) {
-        line-height: 1.54;
-      }
+      line-height: 1.25;
     }
   }
 
@@ -73,19 +55,11 @@
       @include font(16, 16);
       font-weight: 700;
       line-height: 1.5;
-
-      @include media-breakpoint-up(sm) {
-        margin-top: 0.89rem;
-      }
     }
   }
 
   .link-list li a svg {
     margin-left: 1rem;
-
-    @include media-breakpoint-up(sm) {
-      margin-left: 0.89rem;
-    }
   }
 
   &.carousel-4-card {
@@ -109,7 +83,7 @@
 }
 
 .it-carousel-wrapper .splide__pagination.page {
-  width: .75rem;
-  height: .75rem;
-  margin: 0 .25rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  margin: 0 0.25rem;
 }
