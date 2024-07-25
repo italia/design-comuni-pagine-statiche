@@ -12,3 +12,9 @@ $card-teaser-border: rgba(0, 122, 82, 0.1);
 $footer-comuni-bg-color: #202a2e;
 $link-list-comuni-color: #455a64;
 $link-list-hover-color: $primary;
+
+// CSS variables
+
+:root {
+  --bs-link-hover-color: #{$color-text-primary-hover};
+}
