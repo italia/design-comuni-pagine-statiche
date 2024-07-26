@@ -18,34 +18,12 @@
 }
 
 .btn {
-  // color: #fff;
-
-  // &:hover, &:focus {
-  //   color: #fff;
-  // }
-
-  // &:active {
-  //   &:focus {
-  //     box-shadow: unset;
-  //   }
-  // }
-
-  // &.btn-outline-primary:not(:disabled):not(.disabled):active {
-  //   box-shadow: inset 0 0 0 2px #007a52;
-  //   outline: unset;
-  // }
-
   &.mobile-full {
     width: 100%;
-
     @include media-breakpoint-up(md) {
       width: 50%;
     }
   }
-
-//   &.bg-white:hover {
-//     text-decoration: underline;
-// }
 
   &.full-mb {
     @include media-breakpoint-down(md) {
