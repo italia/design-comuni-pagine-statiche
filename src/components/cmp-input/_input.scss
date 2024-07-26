@@ -5,17 +5,17 @@
     margin-top: 2rem;
   }
 
-  input{
-    &.form-control{
+  input {
+    &.form-control {
       background-size: 70px 45% !important;
     }
 
     &.just-validate-success-field,
-    &.is-invalid{
+    &.is-invalid {
       background-color: #fff;
     }
 
-    &.is-invalid + .d-flex .form-text{
+    &.is-invalid + .d-flex .form-text {
       display: none;
     }
 
