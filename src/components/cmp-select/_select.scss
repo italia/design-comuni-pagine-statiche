@@ -2,11 +2,6 @@
   background-color: #fff;
   padding: 1rem;
 
-  @include media-breakpoint-up(sm) {
-    padding: 0.889rem;
-  }
-
-
   label.hidden {
     //visually-hidden
     position: absolute !important;
@@ -19,7 +14,6 @@
     white-space: nowrap !important;
     border: 0 !important;
   }
-
 }
 
 .select-wrapper {
@@ -30,18 +24,10 @@
   }
 
   label {
-    @include font(16, 16);
-    font-weight: 600;
-    line-height: 1.2;
     color: get-color(dark, grey);
     margin-left: 4px;
-    opacity: .9;
     mix-blend-mode: normal;
-    padding-bottom: 0.625rem;
-
-    @include media-breakpoint-up(sm) {
-      padding-bottom: 0.56rem;
-    }
+    padding-bottom: 0.5rem;
   }
 
   select {
