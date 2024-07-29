@@ -6,9 +6,6 @@
   }
 
   input {
-    &.form-control {
-      background-size: 70px 45% !important;
-    }
 
     &.just-validate-success-field,
     &.is-invalid {
@@ -18,11 +15,6 @@
     &.is-invalid + .d-flex .form-text {
       display: none;
     }
-
-  }
-
-  input[type=text] {
-    @include font(18, 18);
   }
 
   .clean-input {
@@ -32,13 +24,7 @@
   }
 
   &__text {
-    @include font(14, 16);
-    font-weight: 400;
-    line-height: 1.5;
-    color: get-color(dark, grey);
-    margin-left: 8px;
-    opacity: .9;
-    mix-blend-mode: normal;
+    color: $color-text-muted;
   }
 
   &__icon-input {
@@ -59,8 +45,4 @@
   .form-group label {
     color: #455A64;
   }
-}
-
-.form-feedback.just-validate-error-label{
-  color: #CE2740;
 }
