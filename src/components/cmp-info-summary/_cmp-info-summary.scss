@@ -28,11 +28,6 @@
       padding-top: 0.5rem;
       padding-bottom: 0.5rem;
 
-      @include media-breakpoint-up(md) {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-      }
-
       &:not(:last-child) {
         border-bottom: 1px solid;
       }
@@ -43,7 +38,7 @@
 
       &.border-unset{
         border-bottom: unset !important;
-        padding: 0.25rem 0 0 0;
+        padding: 0;
       }
     }
 
