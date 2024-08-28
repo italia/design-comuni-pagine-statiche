@@ -2,7 +2,7 @@
   padding: 1rem;
 
   @include media-breakpoint-up(sm) {
-    padding: 0.889rem;
+    padding: 0.875rem;
   }
 
   .text-area .focus--mouse {
@@ -30,7 +30,7 @@
       border: none;
       border-bottom: 1px solid get-color(dark, grey);
       resize: none;
-      @include font(16, 16);
+      font-size: 1rem;
 
       &.form-control {
         box-shadow: unset;
