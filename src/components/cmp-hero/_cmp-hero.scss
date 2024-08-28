@@ -4,11 +4,8 @@
     .icon {
       position: relative;
       top: 12px;
-      &.big-lg-icon{
+      &.big-lg-icon {
         width: 1.75rem;
-        @include media-breakpoint-up(md) {
-          width: 1.833rem;
-        }
       }
     }
   }
