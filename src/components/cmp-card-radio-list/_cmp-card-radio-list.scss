@@ -1,14 +1,10 @@
 .cmp-card-radio-list {
   .radio-body {
-    @include font(16, 16);
+    font-size: 1rem;
     font-weight: 600;
     line-height: 1.5;
     color: get-color(black, main);
     padding: 0.75rem 0;
-
-    @include media-breakpoint-up(sm) {
-      padding-bottom: 0.67rem;
-    }
   }
 
   .form-check label {
@@ -24,5 +20,4 @@
   .form-check [type=radio]+label {
     padding-left: 45px;
   }
-
 }
