@@ -2,10 +2,6 @@
   position: relative;
   margin-top: 1rem;
 
-  @include media-breakpoint-up(sm) {
-    margin-top: 0.89rem;
-  }
-
   &.has-border-green {
     outline: 2px solid $primary;
   }
@@ -14,18 +10,14 @@
     padding: 0.5rem 0;
     border-bottom: 1px solid get-color(light-grey, grey);
 
-    @include media-breakpoint-up(sm) {
-      padding: 0.44rem 0;
-    }
-
     &__label {
-      @include font(14, 14);
-      line-height: 1.28;
+      font-size: 0.875rem;
+      line-height: 1.25;
       font-weight: 400;
     }
 
     &__value {
-      @include font(16, 16);
+      font-size: 1rem;
       line-height: 1.5;
       font-weight: 600;
       margin-bottom: 0;
@@ -43,13 +35,10 @@
     user-select: none;
     margin-bottom: .25rem;
     display: block;
-
-    @include media-breakpoint-up(sm) {
-      margin-bottom: .22rem;
-    }
 }
 
-.form-check [type=radio]+label::after, .form-check [type=radio]+label::before {
+.form-check [type=radio]+label::after, 
+.form-check [type=radio]+label::before {
   content: "";
   right: 0;
   top: 0;
@@ -59,26 +48,17 @@
   .big-title {
     @include font(24, 32);
     font-weight: 600;
-    line-height: 1.17;
+    line-height: 1.25;
     padding-bottom: 0.5rem;
     max-width: 85%;
     color: get-color(black, main);
-
-    @include media-breakpoint-up(md) {
-      line-height: 1;
-      padding-bottom: 0.89rem;
-    }
   }
 
   .name {
-    @include font(18, 18);
+    font-size: 1.125rem;
     line-height: 1.5;
     font-weight: 700;
     margin-bottom: 0.5rem;
-
-    @include media-breakpoint-up(sm) {
-      margin-bottom: 0.44rem;
-    }
   }
 
   .card-info {
@@ -86,16 +66,8 @@
     line-height: 1.5;
     margin: 0.25rem 0;
 
-    @include media-breakpoint-up(sm) {
-      margin: 0.22rem 0;
-    }
-
     &+.card-info {
       margin-top: 0.25rem;
-
-      @include media-breakpoint-up(sm) {
-        margin: 0.22rem 0;
-      }
     }
 
     span {
@@ -104,4 +76,3 @@
     }
   }
 }
-
