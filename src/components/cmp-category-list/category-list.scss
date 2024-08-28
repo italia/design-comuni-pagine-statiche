@@ -1,18 +1,5 @@
-.category-list {
-  &__title {
-    @include font(16, 16);
-    color:get-color(light,grey);
-    font-family: Titillium Web;
-    font-weight: 600;
-    line-height: 1.5;
-    padding-left: 0;
-  }
-  &__list{
-    @include font(16, 16);
-    font-family: Titillium Web;
-    font-weight: 600;
-    line-height: 1.5;
-  }
+.category-list__title {
+  color:get-color(light,grey);
 }
 
 .scroll-filter-wrapper {
