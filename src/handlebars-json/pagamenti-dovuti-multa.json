@@ -18,7 +18,7 @@
           "completed": false
         },
         {
-          "title": "Pagamento",
+          "title": "Riepilogo",
           "active": false,
           "completed": false
         }
@@ -40,7 +40,7 @@
           "completed": false
         },
         {
-          "title": "Pagamento",
+          "title": "Riepilogo",
           "active": false,
           "completed": false
         }
@@ -62,7 +62,7 @@
           "completed": false
         },
         {
-          "title": "Pagamento",
+          "title": "Riepilogo",
           "active": false,
           "completed": false
         }
@@ -84,7 +84,7 @@
           "completed": true
         },
         {
-          "title": "Pagamento",
+          "title": "Riepilogo",
           "active": true,
           "completed": false
         }
