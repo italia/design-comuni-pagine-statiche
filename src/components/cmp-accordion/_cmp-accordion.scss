@@ -4,14 +4,6 @@
 
     &:first-child {
       margin-top: 1rem;
-
-      @include media-breakpoint-up(sm) {
-        margin-top: 0.89rem;
-      }
-
-      @include media-breakpoint-up(md) {
-        margin-top: 0;
-      }
     }
 
     &.has-border {
@@ -19,25 +11,10 @@
       padding: 1rem;
       border-radius: 4px;
 
-      @include media-breakpoint-up(sm){
-        padding: 0.89rem;
-      }
-
       &:not(:last-child) {
-        margin-bottom: 1.875rem;
-        @include media-breakpoint-up(sm){
-          margin-bottom: 1.67rem;
-        }
-      }
-
-      @include media-breakpoint-up(lg) {
-        padding: 1.33rem;
+        margin-bottom: 1.5rem;
       }
     }
-  }
-
-  @include media-breakpoint-up(md) {
-    padding: 1.33rem 0 0;
   }
 }
 
@@ -46,27 +23,14 @@
 }
 
 .accordion-header {
-
   .accordion-button {
-    @include font(14, 14);
-    line-height: 1.5;
+    font-size: 1rem;
     padding: 0;
     padding-top: 1rem;
     border-top: 0;
 
-    @include media-breakpoint-up(sm) {
-      padding-top: 0.89rem;
-    }
-
-
-    @include media-breakpoint-up(md) {
-      @include font(18, 18);
-      line-height: 1.56;
-      padding-top: 1.33rem;
-    }
-
     &:not(.collapsed){
-      color: get-color(primary, main);
+      color: $primary;
 
       .icon {
         transform: rotate(180deg);
@@ -87,24 +51,16 @@
     color: rgba(25, 25, 25, 0.7);
 
     @include media-breakpoint-up(lg) {
-      padding-left: 0.889rem;
-      padding-bottom: 1.555rem;
+      padding-left: 0.5rem;
+      padding-bottom: 1.5rem;
     }
   }
 
   .accordion-header {
     .accordion-button {
-      font-size: 1rem;
-      padding: 0.875rem .75rem 0 .75rem;
+      @include font(16, 18);
+      padding: 1rem;
       border-top: 1px solid get-color(light-grey, grey) !important;
-
-      @include media-breakpoint-up(sm) {
-        padding-left: 0.875rem 0 0;
-      }
-
-      @include media-breakpoint-up(lg) {
-        padding: 0.777rem 0 0 0.889rem;
-      }
 
       &::after {
         content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23006e4a'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
@@ -114,7 +70,7 @@
       }
 
       &:not(.collapsed) {
-        color: get-color(primary, main);
+        color: $primary;
 
         .icon{
           transform: rotate(0);
@@ -183,7 +139,7 @@
 
     .link-list {
       .shadow {
-        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2)!important;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2)!important;
         border-radius: 4px;
         padding: 4px 0 4px 4px;
 
@@ -193,12 +149,6 @@
 
         &:not(:first-child) {
           margin: .5rem 0;
-        }
-
-        .list-item-title{
-          @include media-breakpoint-up(md) {
-            font-size: .89rem !important;
-          }
         }
 
         .icon {
@@ -218,10 +168,6 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-
-    @include media-breakpoint-up(lg) {
-      font-size: 1rem;
-    }
   }
 
   button {
@@ -240,17 +186,4 @@
       @include font(11, 13);
     }
   }
-
-  &.faq {
-    .accordion-button, .accordion-body {
-      padding: 1rem 1.5rem;
-
-      @include media-breakpoint-up(sm) {
-        padding: 0.889rem 1.333rem;
-      }
-    }
-  }
-}
-.accordion-view-more {
-  padding-left: .75rem;
 }

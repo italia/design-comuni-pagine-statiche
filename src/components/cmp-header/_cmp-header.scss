@@ -1,22 +1,4 @@
 .it-header-wrapper {
-  @include media-breakpoint-up(lg) {
-    font-size: 18px;
-  }
-
-  .it-nav-wrapper .it-header-navbar-wrapper nav {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .navbar .navbar-collapsable .navbar-nav li a.nav-link {
-    // @include media-breakpoint-up(lg) {
-    //   padding: 13px 10px;
-    // }
-
-    @include media-breakpoint-up(xl) {
-      padding: 0.89rem 1.33rem;
-    }
-  }
 
   .navbar .navbar-collapsable .menu-wrapper .navbar-nav {
     @include media-breakpoint-up(lg) {
@@ -30,16 +12,18 @@
     }
   }
 
-  .navbar .navbar-collapsable .navbar-nav.navbar-secondary li:last-child a {
-    padding-right: 0;
+  .navbar .navbar-collapsable .navbar-nav li.nav-item a.nav-link {
+    font-weight: $font-weight-semibold;
+    padding: 12px 16px;
   }
 
-  .it-header-slim-wrapper .it-header-slim-wrapper-content a {
-    background-color: transparent;
+  .navbar .navbar-collapsable .navbar-nav.navbar-secondary li.nav-item a.nav-link {
+    font-weight: inherit;
+    font-size: 1rem;
+  }
 
-    &:hover {
-      text-decoration: underline !important;
-    }
+  .navbar .navbar-collapsable .navbar-nav.navbar-secondary .icon {
+    fill: #fff;
   }
 
   .it-brand-wrapper .icon image {
@@ -127,7 +111,7 @@
       }
 
       @include media-breakpoint-up(md) {
-        fill: get-color(primary, main);
+        fill: $primary;
       }
     }
   }
@@ -137,7 +121,7 @@
     .it-socials {
       margin-top: 30px;
       padding: 0 24px;
-      color: #007A52;
+      color: $primary;
 
       @include media-breakpoint-up(lg) {
         display: none;
@@ -155,7 +139,7 @@
 
           a {
             svg {
-              fill: #007A52 !important;
+              fill: $primary !important;
             }
           }
         }
@@ -194,7 +178,7 @@
     .logo-hamburger {
       display: flex;
       align-items: center;
-      color: #007A52;
+      color: $primary;
       padding: 32px 50px 16px 24px;
 
       @include media-breakpoint-up(sm) {
@@ -206,7 +190,7 @@
       }
 
       .icon {
-        fill: #007A52;
+        fill: $primary;
         margin-right: 16px;
       }
 

@@ -1,29 +1,10 @@
-.cmp-timeline {
-  margin-top: 1.5rem;
-
-  @include media-breakpoint-up(sm) {
-    margin-top: 1.33rem;
-  }
-
-  @include media-breakpoint-up(lg) {
-    margin-top: 0;
-  }
-  
+.cmp-timeline {  
   .info-text {
-    font-size: 1rem;
     color: get-color(light, grey);
-    font-weight: 600;
-    line-height: 1.5;
-
-    @include media-breakpoint-up(md){
-      line-height: 1.56;
-    }
   }
 }
 
 .calendar-vertical {
-  color: hsl(160deg, 100%, 24%);
-
   &::after {
     display: block;
     clear: both;
@@ -37,21 +18,14 @@
   & .calendar-date-description {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.17);
     width: 100%;
-    margin: 0 0 1.5rem 0.813rem;
+    margin: 0 0 1.5rem 0.875rem;
     overflow: hidden;
-  
-    @include media-breakpoint-up(sm) {
-      margin: 0 0 1.33rem 0.72rem;
-    }
 
     & .calendar-date-description-content {
-      padding: 1.25rem 1rem 1.25rem 1.5rem;
+      padding: 1rem 1.5rem;
       position: relative;
       z-index: 0;
-    
-      @include media-breakpoint-up(sm) {
-        padding: 1.11rem 0.89rem 1.11rem 1.33rem;
-      }
+      color: $color-text-secondary;
 
       &:before {
         content: "";
@@ -62,10 +36,6 @@
         top: 0;
         left: 0;
         background-color: #f0f8f5;
-      
-        @include media-breakpoint-up(sm) {
-          width: 0.44rem;
-        }
       }
 
       & span {
@@ -75,15 +45,16 @@
   }
 
   & .calendar-date-day {
-    width: 4.06rem;
+    width: 4rem;
     flex-shrink: 0;
     position: relative;
     z-index: 0;
-    padding: 0;
     padding-right: 1rem;
+    margin-bottom: 0;
+    color: $primary;
 
     & p {
-      font-family: "Roboto Mono", monospace!important;
+      font-family: $font-family-monospace;
       font-size: 2.5rem;
       line-height: 1;
       margin: 0 0 5px 0;
@@ -113,15 +84,9 @@
       position: absolute;
       z-index: 1;
       top: 1.875rem;
-      right: 0.2px;
+      right: 1px;
       background-color: hsl(160deg, 100%, 24%);
       border-radius: 5px;
-    
-      @include media-breakpoint-down(md) {
-        width: 0.56rem;
-        height: 0.56rem;
-        top: 1.56rem;
-      }
     }
 
     &__month{
@@ -136,20 +101,6 @@
       font-weight: 400;
     }
   }
-
-
-@include media-breakpoint-down(md) {
-  .calendar-vertical .calendar-date .calendar-date-day span {
-    font-size: 2rem;
-    font-weight: 100 !important;
-  }
-}
-
-@include media-breakpoint-up(lg) {
-  .calendar-vertical .calendar-date .calendar-date-day small {
-    @include font(16, 16);
-  }
-}
 }
 
 .calendar-date:last-child {

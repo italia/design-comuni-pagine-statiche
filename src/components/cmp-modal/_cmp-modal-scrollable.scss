@@ -1,9 +1,6 @@
 .cmp-modal-scrollable {
 
   .modal .modal-dialog {
-    @include media-breakpoint-down(md){
-    //  margin: 1.33rem;
-    }
 }
   .btn-close {
     background: rgba(0, 0, 0, 0)
@@ -14,26 +11,16 @@
   &__header {
     margin: 1.5rem 0;
 
-    @include media-breakpoint-up(sm) {
-      margin: 1.33rem 0;
-    }
     &-title {
       @include font(24, 28);
       font-weight: 600;
-      line-height: 1.167;
-
-      @include media-breakpoint-up(md) {
-        line-height: 1.42;
-      }
+      line-height: 1.25;
     }
+
     &-info {
       @include font(14, 16);
       font-weight: 400;
-      line-height: 1.28;
-
-      @include media-breakpoint-up(md) {
-        line-height: 1.25;
-      }
+      line-height: 1.5;
     }
   }
 }

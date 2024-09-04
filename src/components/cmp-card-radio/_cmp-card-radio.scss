@@ -7,20 +7,11 @@
   & [type=radio]+label {
     font-size: 1rem;
     margin: 1rem 0;
-    padding-left: 2.625rem;
+    padding-left: 2.5rem;
     font-weight: 600;
-
-    @include media-breakpoint-up(sm) {
-      margin: 0.889rem 0;
-      padding-left: 2.32rem;
-    }
   }
 
   .card-teaser {
     padding: 1rem;
-
-    @include media-breakpoint-up(sm) {
-      padding: 1.333rem;
-    }
   }
 }

@@ -1,17 +1,13 @@
-.cmp-text-button{
+.cmp-text-button {
   margin-top: 2rem;
-
-  @include media-breakpoint-up(sm) {
-    margin-top: 1.78rem;
-  }
 
   &:last-child {
     @include media-breakpoint-up (md) {
-      margin-bottom: 2.22rem;
+      margin-bottom: 2rem;
     }
 
     @include media-breakpoint-up (lg) {
-      margin-bottom: 4.44rem;
+      margin-bottom: 4rem;
     }
   }
 
@@ -21,19 +17,14 @@
           margin: 1rem 0 2.5rem;
 
           @include media-breakpoint-up(sm) {
-            margin: 0.89rem 0 2.22rem;
+            margin: 1rem 0 2rem;
           }
 
           @include media-breakpoint-up(md) {
-            margin: 0 0 0 1.33rem;
+            margin: 0 0 0 1.5rem;
           }
         }
       }
-    }
-
-    .simple-link {
-      @include font(16, 16);
-      font-weight: 400;
     }
   }
 

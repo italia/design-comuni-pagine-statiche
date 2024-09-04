@@ -20,11 +20,11 @@ body {
   text-decoration: underline;
 }
 
-.t-primary{
-  color: get-color(primary,main);
+.t-primary {
+  color: $primary;
 }
 
-.t-alert{
+.t-alert {
   color: get-color(alert,main);
 }
 

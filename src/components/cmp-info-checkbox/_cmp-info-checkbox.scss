@@ -1,6 +1,6 @@
 .cmp-info-checkbox {
 
-  p{
+  p {
     margin-bottom: 0;
   }
 
@@ -17,20 +17,17 @@
   }
 
   &.has-border-green {
-    outline: 2px solid get-color(primary, main);
+    outline: 2px solid $primary;
   }
 
   .card {
     padding: 1rem;
 
-    @include media-breakpoint-up(sm) {
-      padding: 0.89rem;
-    }
-
     @include media-breakpoint-up(lg) {
-      padding: 1.33rem;
+      padding: 1.5rem;
     }
   }
+  
   .card-header {
    padding: 0;
    margin-bottom: 0;
@@ -47,7 +44,7 @@
   }
 
   .form-check [type=checkbox]:not(:checked)+label::after {
-    border-color: get-color(primary, main);
+    border-color: $primary;
   }
 
   .form-check [type=checkbox] + label:after {
@@ -62,25 +59,16 @@
     right: 0;
   }
 
-
   .form-check.form-check-group [type=checkbox]:checked+label::before {
-    right: 11px;
+    right: 12px;
   }
 
   .info-wrapper {
     padding: 0.25rem 0;
-
-    @include media-breakpoint-up(sm) {
-      padding: 0.22rem 0;
-    }
   }
 
   .info-wrapper-payment {
-    padding: 0.56rem 0;
-
-    @include media-breakpoint-up(sm) {
-      padding: 0.5rem 0;
-    }
+    padding: 0.5rem 0;
   }
 
   .info-wrapper,

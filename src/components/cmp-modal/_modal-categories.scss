@@ -1,9 +1,9 @@
 .categories-modal {
   .modal-header {
-    border-bottom: 1px solid get-color(primary, main);
+    border-bottom: 1px solid $primary;
   }
 
   .modal-footer {
-    border-top: 1px solid get-color(primary, main);
+    border-top: 1px solid $primary;
   }
 }

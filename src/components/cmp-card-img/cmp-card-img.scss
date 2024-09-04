@@ -1,26 +1,11 @@
-.cmp-card-img{
+.cmp-card-img {
   display: flex;
-/*   &::before{
-    content: "";
-    width: 10px;
-    height: auto;
-    background-color: get-color(primary-grey, grey);
-    border-radius: 10px 0 0 10px;
-    border-right: 1px solid get-color(primary-grey, grey);
-  } */
 
   .card {
     padding: 1.25rem 1rem;
 
-    @include media-breakpoint-up(sm) {
-      padding: 1.11rem 0.89rem;
-    }
-
-    &.card-teaser-info{
-      border-left: 8px solid rgba(0, 122, 82, 0.1);
+    &.card-teaser-info {
+      border-left: 8px solid $card-teaser-border;
     }
   }
-
 }
-
-

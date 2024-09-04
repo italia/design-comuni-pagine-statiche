@@ -4,31 +4,22 @@
   }
 
   &__success-message {
-    @include font(18, 18);
+    @include font(16, 18);
     font-weight: 600;
-    line-height: 1.56;
-    letter-spacing: 0px;
+    line-height: 1.5;
+    letter-spacing: 0;
     text-align: left;
     margin-left: 0.625rem;
-
-    @include media-breakpoint-up(sm) {
-      margin-left: 0.56rem;
-    }
   }
 
   .modal .modal-dialog .modal-content .modal-header h4 {
     @include font(24, 28);
     font-weight: 600;
-    line-height: 1.167;
-
-    @include media-breakpoint-up(sm) {
-      line-height: 1.43;
-    }
+    line-height: 1.25;
 
     &.title-mini {
       @include media-breakpoint-up(sm) {
-        font-size: 1.33rem;
-        line-height: 1.67;
+        font-size: 1.25rem;
       }
     }
   }
@@ -42,18 +33,14 @@
     padding-bottom: 1.5rem;
 
     @include media-breakpoint-up(sm) {
-      padding-top: 1.33rem;
-      padding-bottom: 1.33rem;
+      padding-top: 1.25rem;
+      padding-bottom: 1.25rem;
     }
   }
 
   .modal .modal-dialog .modal-content .modal-body {
     padding-bottom: 1.5rem;
     color: get-color(black, main);
-
-    @include media-breakpoint-up(sm) {
-      padding-bottom: 1.33rem;
-    }
   }
 
   .modal .modal-dialog .modal-content .modal-header h5 {
@@ -68,19 +55,15 @@
     }
 
     .modal-dialog {
-      // margin: 3rem 1.5rem;
 
       @include media-breakpoint-up(sm) {
         margin: auto;
-        // margin: 2.67rem 1.33rem;
-   /*      max-width: 38.89rem; */
       }
     }
 
     .modal-dialog.small {
       @include media-breakpoint-up(sm) {
         margin: auto;
-  /*       max-width: 19.44rem; */
       }
     }
   }
@@ -90,31 +73,12 @@
 
     &-content {
       margin: 1.5rem 0;
-
-      @include media-breakpoint-up(sm) {
-        margin: 1.33rem 0;
-      }
     }
 
     &-title {
       width: 100%;
       margin-top: 1.5rem;
       @include font(24,28);
-
-      @include media-breakpoint-up(sm) {
-        margin-top: 1.33rem;
-      }
-    }
-
-    &-info {
-      @include font(14, 16);
-      align-self: start;
-      font-weight: 400;
-      line-height: 1.28;
-
-      &.header-font {
-        line-height: 1.5;
-      }
     }
 
     &-link {
@@ -122,18 +86,12 @@
       margin-top: 1.125rem;
       height: 1.5rem;
       width: 100%;
-
-      @include media-breakpoint-up(sm) {
-        margin-top: 1.11rem;
-        height: 1.33rem;
-      }
     }
   }
 
   .modal-footer.shadow {
-    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.5);
   }
-
 
   #modal-vehicle-data {
     input::placeholder {

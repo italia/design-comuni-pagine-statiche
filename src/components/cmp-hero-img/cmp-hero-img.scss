@@ -3,11 +3,7 @@
     color: get-color(light, grey);
     display: flex;
     justify-content: center;
-    margin-top: 1.375rem;
-
-    @include media-breakpoint-up(md) {
-      margin-top: 1.333rem;
-    }
+    margin-top: 1.5rem;
   }
 }
 

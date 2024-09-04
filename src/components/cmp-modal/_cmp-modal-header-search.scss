@@ -28,22 +28,21 @@
     @include font(18, 48);
     display: flex;
     align-items: center;
-    box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
     padding: 1.125rem 1.5rem;
     font-weight: 600;
-    line-height: 1.5;
+    line-height: 1.25;
     color: get-color(light, grey);
-    margin-bottom: 4.375rem;
+    margin-bottom: 4rem;
 
     @include media-breakpoint-up(sm) {
-      padding: 1rem 1.33rem;
-      margin-bottom: 3.89rem;
+      padding: 1rem 1.25rem;
+      margin-bottom: 3.5rem;
     }
 
     @include media-breakpoint-up(md) {
       box-shadow: none;
       justify-content: space-between;
-      line-height: 1.1;
     }
 
     h2 {
@@ -52,7 +51,7 @@
       line-height: 1.5;
       
       @include media-breakpoint-up(md) {
-        line-height: 1.1;
+        line-height: 1.25;
       }
     }
     
@@ -60,11 +59,11 @@
       margin-right: 1.5rem;
 
       @include media-breakpoint-up(sm) {
-        margin-right: 1.33rem;
+        margin-right: 1.25rem;
       }
 
       svg {
-        fill: get-color(primary, main);
+        fill: $primary;
       }
     }
   }
@@ -88,13 +87,13 @@
       right: auto;
       transform: translateY(-50%);
       .icon{
-        fill: get-color(primary, main)
+        fill: $primary
       }
     }
 
     .input-group-prepend {
       svg {
-        fill: get-color(primary, main);
+        fill: $primary;
 
         @include media-breakpoint-down(xs) {
           width: 1rem;
@@ -129,18 +128,14 @@
     padding: 1.125rem 1.5rem;
 
     @include media-breakpoint-up(sm) {
-      padding: 1rem 1.33rem;
+      padding: 1rem 1.25rem;
     }
     .other-link-title {
-      @include font(14, 14);
+      font-size: .875rem;
       font-weight: 600;
-      line-height: 1.5;
+      line-height: 1;
       color: get-color(black, main);
       margin-bottom: 1rem;
-
-      @include media-breakpoint-up(sm) {
-        margin-bottom: 0.89rem;
-      }
     }
   }
 
@@ -148,15 +143,11 @@
     li {
       & + li {
         margin-top: 1rem;
-
-        @include media-breakpoint-up(sm) {
-          margin-top: 0.89rem;
-        }
       }
 
       a {
         @include font(18, 18);
-        color: get-color(primary, main);
+        color: $primary;
         line-height: 1.5;
         text-decoration: underline;
 

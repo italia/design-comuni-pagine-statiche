@@ -1,6 +1,6 @@
 .chip {
   &:not(.chip-disabled) {
-    border-color: #007a52;
+    border-color: $primary;
     background: #fff;
 
     &.chip-danger {
@@ -9,14 +9,14 @@
   }
   
   .chip-label {
-    color: #007A52;
+    color: $primary;
   }
 
   &:is(a) {
     text-decoration: none;
 
     &:hover:not(.chip-disabled) {
-      background-color: #007A52;
+      background-color: $primary;
 
       .chip-label {
         color: #fff;
@@ -27,10 +27,10 @@
   &:is(div) {
     &:hover:not(.chip-disabled) {
       background-color: transparent;
-      border-color: #007A52;
+      border-color: $primary;
 
       .chip-label {
-        color: #007A52;
+        color: $primary;
       }
     }
 

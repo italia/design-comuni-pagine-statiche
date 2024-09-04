@@ -1,6 +1,8 @@
 .cmp-icon-card {
 
   .card {
+    border: 1px solid get-color(light-grey, grey);
+
     &.notice-border {
       border-left: 1px solid get-color(notice, main);
     }
@@ -25,5 +27,4 @@
   .date-xsmall {
     opacity: .7;
   }
-
 }

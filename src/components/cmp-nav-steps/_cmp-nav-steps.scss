@@ -1,14 +1,13 @@
 .cmp-nav-steps {
   box-shadow: 0 -0.6375rem 1.125rem -0.9rem rgb(0,0,0,0.1);
-  margin-top: 3.875rem;
+  margin-top: 2rem;
 
   @include media-breakpoint-up(sm){
-    margin-top: 3.44rem;
+    margin-top: 2.5rem;
   }
 
   @include media-breakpoint-up(md) {
-    border-top: 1px solid get-color(card,grey);
-    margin-top: 2.22rem;
+    border-top: 1px solid get-color(light-grey,grey);
     box-shadow: unset;
   }
 
@@ -16,56 +15,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.625rem 0 3.125rem 0;
-
-    @include media-breakpoint-up(sm) {
-      padding: 0.56rem 0 2.78rem 0;
-    }
-
-    @include media-breakpoint-up(md) {
-      padding: 0.89rem 0 4.44rem 0;
-    }
+    padding: .5rem 0 2.5rem 0;
   }
+}
 
-  .btn:not(:first-child) {
-    padding: 0.625rem 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-
-    .icon.icon-sm {
-      width: 1.3rem;
-      height: 1.3rem;
-    }
-
-    @include media-breakpoint-up(sm){
-      padding: 0.56rem 0.89rem;
-
-      .icon.icon-sm {
-        width: 1.167rem;
-        height: 1.167rem;
-      }
-    }
-
-    @include media-breakpoint-up(md) {
-      width: 8.89rem;
-    }
-
-  }
-
-  .btn.center{
-    min-width: 5rem;
-
-    @include media-breakpoint-up(sm) {
-      min-width: 4.44rem;
-    }
-  }
-
-  .btn.send{
-    min-width: 6.125rem;
-
-    @include media-breakpoint-up(sm) {
-      min-width: 5.44rem;
-    }
-  }
+.steppers .steppers-header {
+  margin-bottom: 2rem;
 }

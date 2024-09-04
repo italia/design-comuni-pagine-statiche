@@ -6,23 +6,23 @@
   }
 
   &.has-border-green {
-    outline: 2px solid get-color(primary, main);
+    outline: 2px solid $primary;
   }
 
   &.radio-card:not(:first-of-type) {
     margin-top: 1rem;
 
     @include media-breakpoint-up(sm) {
-     margin-top: 0.89rem;
+     margin-top: 0.875rem;
     }
 
     @include media-breakpoint-up(lg) {
-      margin-top: 1.78rem;
+      margin-top: 1.75rem;
     }
   }
 
   .form-check [type=radio]:not(:checked)+label::before {
-    border-color: get-color(primary, main);
+    border-color: $primary;
   }
 
   .radio-card {
@@ -53,25 +53,25 @@
   .big-title {
     @include font(28, 32);
     font-weight: 700;
-    line-height: 1.14;
+    line-height: 1.25;
     max-width: 85%;
     padding-bottom: 0.5rem;
     color: get-color(black, main);
 
     @include media-breakpoint-up(sm) {
-      padding-bottom: 0.44rem;
+      padding-bottom: 0.5rem;
     }
 
     @include media-breakpoint-up(md) {
       line-height: 1;
-      padding-bottom: 0.89rem;
+      padding-bottom: 0.875rem;
     }
   }
 
   .meium-title {
     @include font(20, 32);
     font-weight: 700;
-    line-height: 1.14;
+    line-height: 1.25;
     padding-bottom: 0.5rem;
     color: get-color(black, main);
 
@@ -81,21 +81,15 @@
 
     @include media-breakpoint-up(md) {
       line-height: 1;
-      padding-bottom: 0.89rem;
+      padding-bottom: 0.875rem;
     }
   }
-
-
 
   .name {
     @include font(18, 18);
     line-height: 1.5;
     font-weight: 700;
     margin-bottom: 0.5rem;
-
-    @include media-breakpoint-up(sm) {
-      margin-bottom: 0.44rem;
-    }
   }
 
   .card-info {
@@ -103,20 +97,12 @@
     line-height: 1.5;
     padding: 0.5rem 0;
 
-    @include media-breakpoint-up(sm) {
-      padding: 0.44rem 0;
-    }
-
     &:not(:last-child) {
       border-bottom: 1px solid #E5E5E5;
     }
 
     &+.card-info {
       margin-top: 0.25rem;
-
-      @include media-breakpoint-up(sm) {
-        margin-top: 0.22rem;
-      }
     }
 
     span {
@@ -127,10 +113,6 @@
 
   .cmp-alert-box {
     margin-top: 1rem;
-
-    @include media-breakpoint-up(sm) {
-      margin-top: 0.89rem;
-    }
   }
 
   .accordion-button {
