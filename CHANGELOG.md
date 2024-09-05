@@ -1,3 +1,19 @@
+# [2.4.0](https://github.com/italia/design-comuni-pagine-statiche/compare/v2.3.4...v2.4.0) (2024-09-05)
+
+
+### Bug Fixes
+
+* json path ([#162](https://github.com/italia/design-comuni-pagine-statiche/issues/162)) ([1e7a9f4](https://github.com/italia/design-comuni-pagine-statiche/commit/1e7a9f47ad9ef9097d3c1c87782e7c1dc9f63d20))
+* node version in description and add nvmrc ([#163](https://github.com/italia/design-comuni-pagine-statiche/issues/163)) ([d2ed799](https://github.com/italia/design-comuni-pagine-statiche/commit/d2ed79967a84264331be0f5506dcac597488785e))
+* page index ([#165](https://github.com/italia/design-comuni-pagine-statiche/issues/165)) ([2066283](https://github.com/italia/design-comuni-pagine-statiche/commit/2066283c7c55068066463479e28cea3129302a88))
+
+
+### Features
+
+* upgrade bsi ([4a28b51](https://github.com/italia/design-comuni-pagine-statiche/commit/4a28b51001d95ebc7ea66da04fd89697b5a332f9))
+
+
+
 ## [2.3.3](https://github.com/italia/design-comuni-pagine-statiche/compare/v2.3.2...v2.3.3) (2024-02-27)
 
 
