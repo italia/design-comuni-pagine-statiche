@@ -24,6 +24,15 @@ nav.pagination-wrapper {
       font-weight: $pager-font-weight;
       text-align: center;
     }
+    &.justify-content-end {
+      display: grid;
+    }
+    &.justify-content-center {
+      width: 100%;
+      .pagination {
+        justify-content: center;
+      }
+    }
   }
 
   //jump to page
@@ -37,7 +46,7 @@ nav.pagination-wrapper {
     }
     &.active {
       label {
-        font-size: 0.8rem;
+        font-size: 0.875rem;
       }
     }
   }

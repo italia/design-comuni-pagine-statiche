@@ -109,6 +109,9 @@ class Cookiebar extends BaseComponent {
   }*/
 
   static clearCookie() {
+    if (typeof document === 'undefined') {
+      return
+    }
     document.cookie = COOKIE_NAME + '=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
   }
 
@@ -148,7 +151,10 @@ class Cookiebar extends BaseComponent {
     var exdate = new Date();
     exdate.setDate(exdate.getDate() + COOKIE_EXPIRE);
     var c_value = escape(COOKIE_VALUE) + ('; expires=' + exdate.toUTCString());
-    document.cookie = COOKIE_NAME + '=' + c_value + '; path=/';
+    if (typeof document === 'undefined') {
+      return
+    }
+    document.cookie = COOKIE_NAME + '=' + c_value + '; path=/; SameSite=Strict';
   }
 
   _getRootElement(element) {
@@ -228,6 +234,9 @@ class Cookiebar extends BaseComponent {
   }
 
   static _getCookieEU() {
+    if (typeof document === 'undefined') {
+      return
+    }
     var i,
       x,
       y,
@@ -269,6 +278,9 @@ EventHandler.on(document, EVENT_CLICK_DATA_API, SELECTOR_ACCEPT, function (event
 EventHandler.on(window, EVENT_LOAD_DATA_API, function () {
   const consent = Cookiebar._getCookieEU();
   if (!consent) {
+    if (typeof document === 'undefined') {
+      return
+    }
     const cookiebars = document.querySelectorAll(SELECTOR_COOKIE_BAR);
     cookiebars.forEach((bar) => {
       const instance = Cookiebar.getOrCreateInstance(bar);

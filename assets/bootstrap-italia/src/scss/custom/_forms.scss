@@ -11,9 +11,6 @@ fieldset {
     display: block;
     max-width: 100%;
     width: auto;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
     padding: 0 $input-spacing-x;
     z-index: 1;
     font-size: $small-font-size;
@@ -39,7 +36,6 @@ fieldset {
   label {
     background-color: transparent;
     position: absolute;
-    font-weight: 600;
     line-height: calc(#{$input-height} - 1px);
     transition: 0.2s ease-out;
     top: 0;
@@ -49,15 +45,32 @@ fieldset {
     display: block;
     max-width: 100%;
     width: auto;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
     padding: 0 $input-spacing-x;
     z-index: 1;
     &.active {
       transform: translateY(-75%);
+      font-weight: 600;
       font-size: $small-font-size;
       color: $input-label-color;
+    }
+    &:not(.active) {
+      & + .input-number-currency {
+        .input-group-text {
+          display: none;
+        }
+      }
+      & + .input-number-percentage {
+        .input-group-text {
+          display: none;
+        }
+      }
+    }
+  }
+
+  input:is([type='radio']),
+  input:is([type='checkbox']) {
+    & + label.active {
+      transform: translateY(0%);
     }
   }
 
@@ -74,7 +87,6 @@ fieldset {
 }
 
 ::placeholder {
-  font-weight: 600;
   color: $input-color-placeholder;
 }
 
@@ -94,28 +106,27 @@ textarea {
   border-radius: 0;
   padding: $input-spacing-y $input-spacing-x;
   outline: 0;
-  height: $input-height;
   width: 100%;
   box-shadow: none;
   transition: none;
-  font-weight: 700;
   -webkit-appearance: none;
   -webkit-border-radius: 0;
   &::placeholder {
     color: $input-color-placeholder;
-    font-weight: 600;
   }
 }
 
 textarea {
   border: 1px solid $input-border;
   height: auto;
+  font-size: 1rem;
 }
 
 .form-control {
   background-position: center right !important;
   background-repeat: no-repeat !important;
   background-size: 45px 45% !important;
+  min-height: 2.5rem;
   &:disabled,
   &[readonly] {
     cursor: not-allowed;
@@ -168,7 +179,7 @@ textarea {
   display: none;
   width: 100%;
   margin-top: 0.25rem;
-  font-size: 0.777rem;
+  font-size: 0.75rem;
   color: $warning;
 }
 
@@ -183,10 +194,8 @@ textarea {
   .input-group-text {
     padding: $input-spacing-y $input-spacing-x;
     border-bottom: 1px solid $input-border;
-    height: 100%;
-  }
-
-  .input-group-prepend {
+    border-radius: 0;
+    min-height: 2.5rem;
     margin-right: 0;
 
     .icon {
@@ -221,9 +230,7 @@ textarea {
 
 .input-group-lg {
   & > .form-control,
-  & > .input-group-prepend > .input-group-text,
   & > .input-group-append > .input-group-text,
-  & > .input-group-prepend > .btn,
   & > .input-group-append > .btn {
     padding: 0 1rem;
     border-radius: 0;
@@ -232,8 +239,14 @@ textarea {
 
 .form-check {
   padding-left: 0;
-  margin-top: 0.5rem;
   position: relative;
+  margin-bottom: 0.5rem;
+
+  // add vertical spacing for consequential elements
+  & + & {
+    margin-top: 0.5rem;
+  }
+
   [type='checkbox'],
   [type='radio'] {
     position: absolute;
@@ -245,14 +258,15 @@ textarea {
 
     + label {
       position: relative;
-      padding-left: 36px;
+      padding-left: 2rem;
       cursor: pointer;
       display: inline-block;
-      height: 32px;
-      line-height: 32px;
       font-size: 1rem;
+      font-weight: $font-weight-semibold;
       user-select: none;
-      margin-bottom: 0.5rem;
+      @include media-breakpoint-up(sm) {
+        font-size: 1.125rem;
+      }
     }
 
     //focus
@@ -283,7 +297,7 @@ textarea {
       height: 17px;
       border: 1px solid #e6e9f2;
       border-radius: 1px;
-      margin: 2px 5px;
+      margin: 2px 4px;
       transform: rotateZ(37deg);
       transform-origin: 100% 100%;
     }
@@ -292,12 +306,12 @@ textarea {
       border-radius: 4px;
       height: 20px;
       width: 20px;
-      margin: 6px 5px;
+      margin: 4px;
       top: 0;
     }
 
     &:checked + label::before {
-      top: 6px;
+      top: 4px;
       left: 1px;
       width: 8px;
       height: 13px;
@@ -357,8 +371,8 @@ textarea {
         left: 0;
         top: 0;
         margin: 5px;
-        width: 22px;
-        height: 22px;
+        width: 20px;
+        height: 20px;
         z-index: 0;
         border-radius: 50%;
         border-style: solid;
@@ -419,15 +433,15 @@ textarea {
 
   // gruppi
   &.form-check-group {
-    padding: 0 0 8px 0;
-    margin-bottom: 16px;
+    padding: 0 0 1rem 0;
+    margin-bottom: 1rem;
     box-shadow: inset 0 -1px 0 0 rgba(1, 1, 1, 0.1);
 
     [type='checkbox'] + label,
     [type='radio'] + label {
       position: static;
       padding-left: 0;
-      padding-right: 52px;
+      padding-right: 3.25rem;
 
       &::after,
       &::before {
@@ -445,22 +459,22 @@ textarea {
     }
 
     .form-text {
-      margin: 0;
-      padding-right: 52px;
       display: block;
-      margin-bottom: $v-gap * 2;
+      padding-right: 3.25rem;
+      margin-bottom: 0.5rem;
     }
 
-    label {
-      font-weight: 600;
-    }
+    // label {
+    //   font-weight: 600;
+    // }
+
     input.semi-checked:not(:checked) + label::before {
       right: 19px;
       left: auto;
     }
   }
   input.semi-checked:not(:checked) + label::before {
-    top: 13px;
+    top: 11px;
     left: 4px;
     width: 12px;
     height: 2px;

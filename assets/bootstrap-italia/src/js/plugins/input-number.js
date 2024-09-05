@@ -1,7 +1,6 @@
 import BaseComponent from 'bootstrap/js/src/base-component'
 import EventHandler from 'bootstrap/js/src/dom/event-handler'
 import SelectorEngine from 'bootstrap/js/src/dom/selector-engine'
-//import Manipulator from 'bootstrap/js/src/dom/manipulator'
 
 import InputLabel from './input-label'
 
@@ -12,16 +11,11 @@ const DATA_API_KEY = '.data-api'
 
 const EVENT_CLICK = `click${EVENT_KEY}`
 const EVENT_CHANGE = `change${EVENT_KEY}`
+const EVENT_INPUT = `input`
 
-//const EVENT_FOCUS_DATA_API = `focus${EVENT_KEY}${DATA_API_KEY}`
 const EVENT_CLICK_DATA_API = `click${EVENT_KEY}${DATA_API_KEY}`
-const EVENT_MOUSEDOWN_DATA_API = `mousedown${EVENT_KEY}${DATA_API_KEY}`
-const EVENT_KEYUP_DATA_API = `keyup${EVENT_KEY}${DATA_API_KEY}`
 
 const CLASS_NAME_ADAPTIVE = 'input-number-adaptive'
-const CLASS_NAME_PERCENTAGE = 'input-number-percentage'
-const CLASS_NAME_CURRENCY = 'input-number-currency'
-//const CLASS_NAME_INCREMENT = 'input-number-add'
 const CLASS_NAME_DECREMENT = 'input-number-sub'
 
 const SELECTOR_WRAPPER = '.input-number'
@@ -61,6 +55,7 @@ class InputNumber extends BaseComponent {
         EventHandler.on(btn, EVENT_CLICK, (evt) => {
           evt.preventDefault()
           this._incrDecr(btn.classList.contains(CLASS_NAME_DECREMENT))
+          this._label._labelOut()
         })
       })
 
@@ -71,25 +66,17 @@ class InputNumber extends BaseComponent {
   _inputResize() {
     if (this._wrapperElement.classList.contains(CLASS_NAME_ADAPTIVE)) {
       let newWidth = null
-      //let newWidthIE = null
-      if (!this._wrapperElement.classList.contains(CLASS_NAME_PERCENTAGE)) {
-        newWidth = 'calc(44px + ' + this._element.value.length + 'ch)'
-        //newWidthIE = 'calc(44px + (1.5 * ' + this._element.value.length + 'ch))'
-      }
-      if (this._wrapperElement.classList.contains(CLASS_NAME_CURRENCY)) {
-        newWidth = 'calc(40px + 44px + ' + this._element.value.length + 'ch)'
-        //newWidthIE = 'calc(40px + 44px + (1.5 * ' + this._element.value.length + 'ch))'
-      }
+      newWidth = 'calc(70px + ' + this._element.value.length + 'ch)'
 
       if (newWidth) {
         this._element.style.width = newWidth
-        //IE - this._element.style.width = calcIe
       }
     }
   }
 
   _incrDecr(isDecr) {
-    const inputVal = parseFloat(this._element.value)
+    var inputVal = 0
+    if (this._element.value !== '') inputVal = parseFloat(this._element.value)
 
     if (!isNaN(inputVal)) {
       //get step
@@ -100,6 +87,7 @@ class InputNumber extends BaseComponent {
 
       this._element.value = inputVal + step * (isDecr ? -1 : 1)
       EventHandler.trigger(this._element, EVENT_CHANGE)
+      EventHandler.trigger(this._element, EVENT_INPUT)
     }
   }
 
@@ -132,35 +120,6 @@ class InputNumber extends BaseComponent {
  * ------------------------------------------------------------------------
  */
 
-/*const inputs = SelectorEngine.find(SELECTOR_INPUT)
-inputs.forEach((input) => {
-  EventHandler.one(input, EVENT_FOCUS_DATA_API, (evt) => {
-    evt.preventDefault()
-    InputNumber.getOrCreateInstance(input)
-    EventHandler.trigger(input, 'focus')
-  })
-})
-
-const inputsButtons = SelectorEngine.find(SELECTOR_WRAPPER + ' ' + SELECTOR_BTN)
-inputsButtons.forEach((button) => {
-  EventHandler.one(button, EVENT_CLICK_DATA_API, (evt) => {
-    if (button.classList.contains(CLASS_NAME_INCREMENT) || button.classList.contains(CLASS_NAME_DECREMENT)) {
-      const wrapper = button.closest(SELECTOR_WRAPPER)
-      if (wrapper) {
-        const input = SelectorEngine.findOne(SELECTOR_INPUT, wrapper)
-        if (input) {
-          const inputNumber = InputNumber.getInstance(input)
-          if (!inputNumber) {
-            evt.preventDefault()
-            InputNumber.getOrCreateInstance(input)
-            EventHandler.trigger(button, 'click')
-          }
-        }
-      }
-    }
-  })
-})*/
-
 const createInput = (element) => {
   if (element && element.matches(SELECTOR_INPUT) && element.parentNode.querySelector(SELECTOR_BTN)) {
     return InputNumber.getOrCreateInstance(element)
@@ -168,25 +127,23 @@ const createInput = (element) => {
   return null
 }
 
-EventHandler.on(document, EVENT_MOUSEDOWN_DATA_API, SELECTOR_INPUT + ', label', function () {
-  const target = InputLabel.getInputFromLabel(this) || this
-  createInput(target)
-})
-EventHandler.on(document, EVENT_KEYUP_DATA_API, SELECTOR_INPUT + ', label', function () {
-  const target = InputLabel.getInputFromLabel(this) || this
-  const element = createInput(target)
-  if (element && element._label) {
-    element._label._labelOut()
-  }
-})
-EventHandler.on(document, EVENT_CLICK_DATA_API, SELECTOR_BTN, function () {
-  const wrapper = this.closest(SELECTOR_WRAPPER)
-  if (wrapper) {
-    const input = SelectorEngine.findOne(SELECTOR_INPUT, wrapper)
-    if (input) {
-      InputNumber.getOrCreateInstance(input)
+if (typeof document !== 'undefined') {
+  document.addEventListener('DOMContentLoaded', function () {
+    var frmel = document.querySelectorAll(SELECTOR_INPUT + ', label')
+    frmel.forEach(function (item) {
+      const target = InputLabel.getInputFromLabel(item) || item
+      createInput(target)
+    })
+  })
+  EventHandler.on(document, EVENT_CLICK_DATA_API, SELECTOR_BTN, function () {
+    const wrapper = this.closest(SELECTOR_WRAPPER)
+    if (wrapper) {
+      const input = SelectorEngine.findOne(SELECTOR_INPUT, wrapper)
+      if (input) {
+        InputNumber.getOrCreateInstance(input)
+      }
     }
-  }
-})
+  })
+}
 
 export default InputNumber

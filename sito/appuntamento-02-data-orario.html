@@ -8,8 +8,8 @@
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="">
-    <link rel="stylesheet" href="../assets/bootstrap-italia/dist/css/bootstrap-italia-comuni.min.css">
-  <link href="../assets/css/style.css" rel="stylesheet"></head>
+    <link rel="stylesheet" href="../assets/bootstrap-italia/dist/css/bootstrap-italia.min.css">
+  <link href="../assets/css/bootstrap-italia-comuni.css" rel="stylesheet"></head>
 
   <body>
     <div class="skiplink">
@@ -207,8 +207,12 @@
                                   <a class="nav-link" href="../sito/argomento.html">Polizia locale</a>
                                 </li>
                                 <li class="nav-item">
-                                  <a class="nav-link" href="../sito/argomenti.html" data-element="all-topics">
-                                    <span class="fw-bold">Tutti gli argomenti</span>
+                                  <a class="nav-link" href="argomenti.html" data-element="all-topics">
+                                    <span>Tutti gli argomenti 
+                                      <svg class="icon icon-sm">
+                                        <use xlink:href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-chevron-right"></use>
+                                      </svg>
+                                    </span>
                                   </a>
                                 </li>
                               </ul>
@@ -355,12 +359,12 @@
                               <ul class="link-list" data-element="page-index">
                                 <li class="nav-item">
                                   <a class="nav-link" href="#appointment-available">
-                                    <span class="title-medium">Appuntamenti disponibili</span>
+                                    <span>Appuntamenti disponibili</span>
                                   </a>
                                 </li>
                                 <li class="nav-item">
                                   <a class="nav-link" href="#office">
-                                    <span class="title-medium">Ufficio</span>
+                                    <span>Ufficio</span>
                                   </a>
                                 </li>
                               </ul>
@@ -379,7 +383,7 @@
                 <section class="it-page-section" id="appointment-available">
     <div class="cmp-card mb-40">
       <div class="card has-bkg-grey shadow-sm p-big">
-        <div class="card-header border-0 p-0 mb-lg-30">
+        <div class="card-header border-0 p-0 mb-lg-20">
           <div class="d-flex">
                 <h2 class="title-xxlarge mb-2">Appuntamenti disponibili*</h2>
           </div>
@@ -439,7 +443,7 @@
                 <section class="it-page-section" id="office">
     <div class="cmp-card">
       <div class="card has-bkg-grey shadow-sm p-big">
-        <div class="card-header border-0 p-0 mb-lg-30">
+        <div class="card-header border-0 p-0 mb-lg-20">
           <div class="d-flex">
                 <h2 class="title-xxlarge mb-0">Ufficio</h2>
           </div>
@@ -640,7 +644,7 @@
           </div>
           <div class="row">
             <div class="col-md-3 footer-items-wrapper">
-              <h3 class="footer-heading-title">Amministrazione</h3>
+              <h4 class="footer-heading-title">Amministrazione</h4>
               <ul class="footer-list">
                 <li>
                   <a href="#">Organi di governo</a>
@@ -666,7 +670,7 @@
               </ul>
             </div>
             <div class="col-md-6 footer-items-wrapper">
-              <h3 class="footer-heading-title">Categorie di servizio</h3>
+              <h4 class="footer-heading-title">Categorie di servizio</h4>
               <div class="row">
                 <div class="col-md-6">
                   <ul class="footer-list">
@@ -724,7 +728,7 @@
               </div>
             </div>
             <div class="col-md-3 footer-items-wrapper">
-              <h3 class="footer-heading-title">Novità</h3>
+              <h4 class="footer-heading-title">Novità</h4>
               <ul class="footer-list">
                 <li>
                   <a href="#">Notizie</a>
@@ -736,7 +740,7 @@
                   <a href="#">Avvisi</a>
                 </li>
               </ul>
-              <h3 class="footer-heading-title">Vivere il comune</h3>
+              <h4 class="footer-heading-title">Vivere il comune</h4>
               <ul class="footer-list">
                 <li>
                   <a href="#">Luoghi</a>
@@ -747,7 +751,7 @@
               </ul>
             </div>
             <div class="col-md-9 mt-md-4 footer-items-wrapper">
-              <h3 class="footer-heading-title">Contatti</h3>
+              <h4 class="footer-heading-title">Contatti</h4>
               <div class="row">
                 <div class="col-md-4">
                   <p class="footer-info">Comune di Nome Comune<br>
@@ -795,7 +799,7 @@
               </div>
             </div>
             <div class="col-md-3 mt-md-4 footer-items-wrapper">
-              <h3 class="footer-heading-title">Seguici su</h3>
+              <h4 class="footer-heading-title">Seguici su</h4>
               <ul class="list-inline text-start social">
                 <li class="list-inline-item">
                   <a class="p-1 text-white" href="#" target="_blank">
