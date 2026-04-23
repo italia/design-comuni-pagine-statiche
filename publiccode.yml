@@ -1,61 +1,67 @@
-# This repository adheres to the publiccode.yml standard by including this 
-# metadata file that makes public software easily discoverable.
-# More info at https://github.com/publiccodeyml/publiccode.yml
-
-publiccodeYmlVersion: '0.2'
-categories:
-  - it-development
-description:
-  it:
-    documentation: 'https://designers.italia.it/kit/comuni'
-    features:
-      - Template Sito Web
-      - PNRR
-      - PNRR/Misura/1.4.1
-      - PNRR/Beneficiari/Comuni
-    genericName: Template HTML per i Comuni Italiani
-    longDescription: |
-      I template HTML rendono più semplice l'adozione del modello di sito web e dei servizi digitali per i Comuni Italiani. Il codice HTML/CSS e Javascript dei template è pronto all'uso e già validato in termini di accessibilità e conformità alle
-      Linee guida di design per i servizi web della PA. I template sono costruiti sulle
-      fondamenta dello UI Kit e dalla libreria Bootstrap Italia.
-
-
-      Sulla pagina del Modello Comuni su Designers Italia è possibile trovare ulteriori risorse a supporto, come la documentazione tecnica e i prototipi a media e alta definizione.
-    shortDescription: I template HTML del modello per i siti web e i servizi digitali dei Comuni Italiani
-developmentStatus: stable
-intendedAudience:
-  countries:
-    - it
-it:
-  conforme:
-    gdpr: true
-    lineeGuidaDesign: true
-    misureMinimeSicurezza: true
-    modelloInteroperabilita: false
-  countryExtensionVersion: '0.2'
-  piattaforme:
-    anpr: false
-    cie: true
-    pagopa: true
-    spid: true
-  riuso:
-    codiceIPA: pcm
-legal:
-  license: BSD-3-Clause
-localisation:
-  availableLanguages:
-    - it
-  localisationReady: true
-logo: |-
-  https://raw.githubusercontent.com/italia/design-comuni-pagine-statiche/main/src/images/logo-comune.svg
-maintenance:
-  contacts:
-    - name: Francesco Improta
-  type: community
-name: Sito web e servizi digitali dei Comuni Italiani
+publiccodeYmlVersion: 0.5.0
+name: Template HTML per i siti e i servizi comunali
+applicationSuite: Modello Comuni di Designers Italia
+url: https://github.com/italia/design-comuni-pagine-statiche
+isBasedOn: https://github.com/italia/bootstrap-italia
+softwareVersion: "v2.4.0 "
+releaseDate: 2024-09-05
 platforms:
   - web
-releaseDate: '2024-09-05'
-softwareVersion: v2.4.0
+categories:
+  - it-development
+  - design
+organisation:
+  uri: https://github.com/italia
+  name: Dipartimento per la trasformazione digitale
+roadmap: https://github.com/orgs/italia/projects/16/views/1?filterQuery=repo%3Aitalia%2Fdesign-comuni-pagine-statiche
+developmentStatus: stable
 softwareType: standalone/web
-url: 'https://github.com/italia/design-comuni-pagine-statiche'
+intendedAudience:
+  countries:
+    - IT
+description:
+  it-IT:
+    shortDescription: Codice pronto all'uso per creare rapidamente il front-end dei
+      siti e dei servizi digitali comunali in modo accessibile e coerente.
+    longDescription: >-
+      I template HTML del Modello Comuni mettono a disposizione pagine statiche
+      esemplificative e codice pronto all'uso per realizzare il front-end del
+      sito e dei servizi digitali comunali. Sono costruiti sulle fondamenta di
+      UI Kit Italia e Bootstrap Italia e permettono di lavorare in modo
+      indipendente dalle soluzioni tecnologiche adottate dall'amministrazione. I
+      template sono già validati in termini di accessibilità e conformità alle
+      Linee guida di design per i siti internet e i servizi digitali della PA e
+      Linee guida sull'accessibilità degli strumenti informatici, facilitando
+      l'adozione del modello di sito istituzionale dei Comuni e velocizzando la
+      realizzazione delle interfacce web.
+
+
+      [Vai alle anteprime dei template
+      HTML](https://italia.github.io/design-comuni-pagine-statiche/)
+
+      [Vai alla documentazione del Modello
+      Comuni](https://designers.italia.it/modelli/comuni/)
+    documentation: https://github.com/italia/design-comuni-pagine-statiche/blob/main/README.md
+    features:
+      - Codice HTML, CSS e JavaScript pronto all'uso per realizzare il front-end
+        del sito e dei servizi comunali
+      - Esempi di pagine e interfacce per il sito e i servizi comunali
+      - Integra i fondamenti di UI Kit Italia e Bootstrap Italia
+      - Garantisce accessibilità e conformità alle Linee guida di design per i
+        siti internet e servizi digitali della PA
+      - Aderenza al modello di sito comunale di Designers Italia
+legal:
+  license: BSD-3-Clause-Clear
+maintenance:
+  type: community
+  contacts:
+    - name: Designers Italia
+      email: contatti@designers.italia.it
+localisation:
+  localisationReady: false
+  availableLanguages:
+    - it
+IT:
+  countryExtensionVersion: "1.0"
+  piattaforme:
+    anpr: false
