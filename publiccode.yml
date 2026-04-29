@@ -11,7 +11,7 @@ categories:
   - it-development
   - design
 organisation:
-  uri: https://github.com/italia
+  uri: urn:x-italian-pa:pcm
   name: Dipartimento per la trasformazione digitale
 roadmap: https://github.com/orgs/italia/projects/16/views/1?filterQuery=repo%3Aitalia%2Fdesign-comuni-pagine-statiche
 developmentStatus: stable
