@@ -69,7 +69,7 @@
     "clear": "^0.1.0",
     "command-line-args": "^5.2.1",
     "enquirer": "^2.3.1",
-    "figlet": "^1.2.3",
+    "figlet": "^1.11.3",
     "ftp-deploy": "^2.3.3",
     "just-validate": "^3.8.1",
     "raw-loader": "^4.0.2",
